@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TWP SR</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0f1117; color: #e0e0e0; font-family: 'Segoe UI', system-ui, sans-serif; padding: 24px; }
+  .container { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 24px; font-weight: 600; margin-bottom: 4px; color: #fff; }
+  .subtitle { color: #888; font-size: 13px; margin-bottom: 20px; }
+  .toolbar { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .btn { color: #fff; border: none; padding: 8px 16px; border-radius: 6px;
+         font-size: 13px; cursor: pointer; font-weight: 500; transition: background 0.15s; }
+  .btn-top { background: #2563eb; }
+  .btn-top:hover { background: #1d4ed8; }
+  .btn-all { background: #7c3aed; }
+  .btn-all:hover { background: #6d28d9; }
+  .btn-scan { background: #059669; }
+  .btn-scan:hover { background: #047857; }
+  .btn:disabled { background: #333 !important; color: #666; cursor: not-allowed; }
+  .btn.running { background: #d97706 !important; animation: pulse 1.5s infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.7; } }
+  .status-box { font-size: 12px; color: #9ca3af; font-family: 'Cascadia Code', 'Consolas', monospace;
+                margin-bottom: 12px; background: #1a1d27; padding: 8px 12px; border-radius: 6px;
+                display: none; white-space: pre-wrap; line-height: 1.6; border-left: 3px solid #d97706; }
+  .search { background: #1a1d27; border: 1px solid #2a2d37; color: #e0e0e0; padding: 8px 12px;
+            border-radius: 6px; font-size: 13px; width: 180px; outline: none; }
+  .search:focus { border-color: #2563eb; }
+  table { width: 100%; border-collapse: collapse; }
+  thead th { text-align: left; padding: 8px 12px; font-size: 11px; text-transform: uppercase;
+             letter-spacing: 0.5px; color: #6b7280; border-bottom: 1px solid #1e2130;
+             position: sticky; top: 0; background: #0f1117; z-index: 1; }
+  tbody td { padding: 7px 12px; font-size: 14px; border-bottom: 1px solid #1a1d27; }
+  tbody tr:hover { background: #1a1d27; }
+  .rank-cell { font-weight: 600; color: #f59e0b; }
+  .rank-1 { color: #ffd700; font-size: 16px; }
+  .rank-2 { color: #c0c0c0; font-size: 15px; }
+  .rank-3 { color: #cd7f32; font-size: 15px; }
+  .guild-cell { color: #8b5cf6; font-weight: 500; }
+  .player-cell { color: #fff; font-weight: 500; }
+  .count { background: #1a1d27; padding: 4px 10px; border-radius: 12px; font-size: 12px; color: #6b7280; }
+  .guild-filter { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 12px; }
+  .guild-tag { background: #1a1d27; border: 1px solid #2a2d37; color: #8b5cf6; padding: 3px 10px;
+               border-radius: 12px; font-size: 11px; cursor: pointer; transition: all 0.15s; font-weight: 500; }
+  .guild-tag:hover { border-color: #8b5cf6; }
+  .guild-tag.active { background: #8b5cf6; color: #fff; border-color: #8b5cf6; }
+  .progress-bar { height: 3px; background: #1a1d27; border-radius: 2px; margin-bottom: 12px; display: none; }
+  .progress-fill { height: 100%; background: #d97706; border-radius: 2px; transition: width 0.3s; width: 0%; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>TWP SR</h1>
+  <div class="subtitle" id="timestamp">Loading...</div>
+
+  <div class="toolbar">
+    <button class="btn btn-top" id="topBtn" onclick="refreshRankings()">Refresh Rankings</button>
+    <button class="btn btn-all" id="allBtn" onclick="fullScan()">Full Scan</button>
+    <span style="color:#333">|</span>
+    <input class="search" id="playerInput" placeholder="Player name..." onkeydown="if(event.key==='Enter')scanPlayer()">
+    <button class="btn btn-scan" id="scanBtn" onclick="scanPlayer()">Scan Player</button>
+    <span style="flex-grow:1"></span>
+    <input class="search" id="search" placeholder="Filter..." oninput="filterTable()" style="width:140px">
+    <span class="count" id="count"></span>
+  </div>
+  <div class="progress-bar" id="progressBar"><div class="progress-fill" id="progressFill"></div></div>
+  <div class="status-box" id="statusBox"></div>
+  <div class="guild-filter" id="guildFilter"></div>
+
+  <table>
+    <thead><tr><th>#</th><th>Rank</th><th>Player</th><th>Guild</th></tr></thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</div>
+
+<script>
+let allData = [];
+let activeGuild = null;
+let isRunning = false;
+
+const BATCH_SIZE = 40; // players per API call
+const STORAGE_KEY = "twpsr_data";
+const STORAGE_TS_KEY = "twpsr_timestamp";
+
+function saveToStorage() {
+  const ts = document.getElementById("timestamp").textContent;
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(allData));
+  localStorage.setItem(STORAGE_TS_KEY, ts);
+}
+
+async function loadData() {
+  // Try localStorage first (has user additions + refreshes)
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (stored) {
+    try {
+      allData = JSON.parse(stored);
+      document.getElementById("timestamp").textContent = localStorage.getItem(STORAGE_TS_KEY) || "";
+      buildGuildFilter();
+      filterTable();
+      return;
+    } catch(e) {}
+  }
+  // Fall back to baked-in data
+  try {
+    const resp = await fetch("/data/na_sr_results.json");
+    const data = await resp.json();
+    allData = data.results || [];
+    document.getElementById("timestamp").textContent = "Last updated: " + (data.timestamp || "never");
+    saveToStorage();
+  } catch(e) {
+    document.getElementById("timestamp").textContent = "No data yet - click Refresh or Full Scan";
+  }
+  buildGuildFilter();
+  filterTable();
+}
+
+function buildGuildFilter() {
+  const guilds = {};
+  allData.forEach(r => { guilds[r.guild] = (guilds[r.guild] || 0) + 1; });
+  const sorted = Object.entries(guilds).sort((a,b) => b[1] - a[1]);
+  const container = document.getElementById("guildFilter");
+  container.innerHTML = "";
+  sorted.forEach(([g, c]) => {
+    const tag = document.createElement("span");
+    tag.className = "guild-tag";
+    tag.textContent = g + " (" + c + ")";
+    tag.onclick = () => {
+      if (activeGuild === g) { activeGuild = null; tag.classList.remove("active"); }
+      else {
+        document.querySelectorAll(".guild-tag").forEach(t => t.classList.remove("active"));
+        activeGuild = g; tag.classList.add("active");
+      }
+      filterTable();
+    };
+    container.appendChild(tag);
+  });
+}
+
+function filterTable() {
+  const q = document.getElementById("search").value.toLowerCase();
+  const tbody = document.getElementById("tbody");
+  let html = "";
+  let shown = 0;
+  allData.forEach((r) => {
+    if (q && !r.name.toLowerCase().includes(q) && !r.guild.toLowerCase().includes(q)) return;
+    if (activeGuild && r.guild !== activeGuild) return;
+    shown++;
+    const rc = r.NASrPlayers <= 3 ? " rank-" + r.NASrPlayers : "";
+    html += "<tr><td>" + shown + "</td><td class='rank-cell" + rc + "'>#" + r.NASrPlayers +
+            "</td><td class='player-cell'>" + r.name + "</td><td class='guild-cell'>" + r.guild + "</td></tr>";
+  });
+  tbody.innerHTML = html;
+  document.getElementById("count").textContent = shown + " players";
+}
+
+function setRunning(running, btn) {
+  isRunning = running;
+  const topBtn = document.getElementById("topBtn");
+  const allBtn = document.getElementById("allBtn");
+  topBtn.disabled = running; allBtn.disabled = running;
+  document.getElementById("progressBar").style.display = running ? "block" : "none";
+  document.getElementById("statusBox").style.display = running ? "block" : "none";
+  if (!running) {
+    topBtn.className = "btn btn-top"; topBtn.textContent = "Refresh Rankings";
+    allBtn.className = "btn btn-all"; allBtn.textContent = "Full Scan";
+    setTimeout(() => {
+      document.getElementById("statusBox").style.display = "none";
+      document.getElementById("progressBar").style.display = "none";
+    }, 3000);
+  }
+}
+
+function setProgress(pct, msg) {
+  document.getElementById("progressFill").style.width = pct + "%";
+  document.getElementById("statusBox").textContent = msg;
+}
+
+async function checkBatch(names) {
+  const resp = await fetch("/api/check", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({names})
+  });
+  return await resp.json();
+}
+
+async function refreshRankings() {
+  if (isRunning) return;
+  const btn = document.getElementById("topBtn");
+  btn.className = "btn running"; btn.textContent = "Refreshing...";
+  setRunning(true);
+
+  const names = allData.map(r => r.name);
+  if (names.length === 0) {
+    setProgress(0, "No existing data - use Full Scan first");
+    setRunning(false);
+    return;
+  }
+
+  const results = {};
+  const batches = [];
+  for (let i = 0; i < names.length; i += BATCH_SIZE) {
+    batches.push(names.slice(i, i + BATCH_SIZE));
+  }
+
+  for (let i = 0; i < batches.length; i++) {
+    setProgress(((i + 1) / batches.length) * 100,
+      `Checking batch ${i + 1}/${batches.length} (${Object.keys(results).length} ranked so far)`);
+    const data = await checkBatch(batches[i]);
+    data.results.forEach(r => { results[r.name] = r; });
+  }
+
+  allData = Object.values(results).sort((a, b) => a.NASrPlayers - b.NASrPlayers);
+  document.getElementById("timestamp").textContent = "Last updated: " + new Date().toLocaleString();
+  saveToStorage();
+  buildGuildFilter();
+  filterTable();
+  setProgress(100, `Done! ${allData.length} ranked players found.`);
+  setRunning(false);
+}
+
+async function fullScan() {
+  if (isRunning) return;
+  const btn = document.getElementById("allBtn");
+  btn.className = "btn running"; btn.textContent = "Scanning...";
+  setRunning(true);
+
+  // Step 1: Get all guild member names
+  setProgress(0, "Fetching guild member lists...");
+  let allNames;
+  try {
+    const resp = await fetch("/api/guilds");
+    const data = await resp.json();
+    allNames = data.names;
+    setProgress(5, `Got ${allNames.length} players from ${data.guilds.length} guilds`);
+  } catch(e) {
+    setProgress(0, "Failed to fetch guilds: " + e.message);
+    setRunning(false);
+    return;
+  }
+
+  // Step 2: Check in batches
+  const results = {};
+  const batches = [];
+  for (let i = 0; i < allNames.length; i += BATCH_SIZE) {
+    batches.push(allNames.slice(i, i + BATCH_SIZE));
+  }
+
+  for (let i = 0; i < batches.length; i++) {
+    const pct = 5 + ((i + 1) / batches.length) * 95;
+    setProgress(pct,
+      `Batch ${i + 1}/${batches.length} | ${i * BATCH_SIZE}/${allNames.length} checked | ${Object.keys(results).length} ranked`);
+    try {
+      const data = await checkBatch(batches[i]);
+      data.results.forEach(r => { results[r.name] = r; });
+    } catch(e) {
+      setProgress(pct, `Batch ${i + 1} failed, continuing...`);
+    }
+  }
+
+  allData = Object.values(results).sort((a, b) => a.NASrPlayers - b.NASrPlayers);
+  document.getElementById("timestamp").textContent = "Last updated: " + new Date().toLocaleString();
+  saveToStorage();
+  buildGuildFilter();
+  filterTable();
+  setProgress(100, `Done! ${allData.length} ranked players from ${allNames.length} checked.`);
+  setRunning(false);
+}
+
+async function scanPlayer() {
+  const input = document.getElementById("playerInput");
+  const name = input.value.trim();
+  if (!name || isRunning) return;
+
+  const btn = document.getElementById("scanBtn");
+  btn.disabled = true; btn.textContent = "Checking...";
+  const sb = document.getElementById("statusBox");
+  sb.style.display = "block";
+  sb.textContent = `Looking up ${name}...`;
+
+  try {
+    const data = await checkBatch([name]);
+    if (data.results.length > 0) {
+      const r = data.results[0];
+      sb.textContent = `${r.name} (${r.guild}) — TWP SR: #${r.NASrPlayers}`;
+      sb.style.borderLeftColor = "#059669";
+      // Add or update in table
+      const idx = allData.findIndex(x => x.name === r.name);
+      if (idx >= 0) { allData[idx] = r; } else { allData.push(r); }
+      allData.sort((a, b) => a.NASrPlayers - b.NASrPlayers);
+      saveToStorage();
+      buildGuildFilter();
+      filterTable();
+    } else if (data.errors && data.errors.length > 0) {
+      sb.textContent = `Player "${name}" not found or error: ${data.errors[0].detail}`;
+      sb.style.borderLeftColor = "#dc2626";
+    } else {
+      sb.textContent = `${name} — not ranked on TWP SR`;
+      sb.style.borderLeftColor = "#6b7280";
+    }
+  } catch(e) {
+    sb.textContent = "Error: " + e.message;
+    sb.style.borderLeftColor = "#dc2626";
+  }
+
+  btn.disabled = false; btn.textContent = "Scan Player";
+  setTimeout(() => { sb.style.borderLeftColor = "#d97706"; }, 5000);
+  input.value = "";
+}
+
+loadData();
+</script>
+</body>
+</html>
