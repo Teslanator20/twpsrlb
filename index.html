@@ -59,6 +59,9 @@
     <button class="btn btn-top" id="topBtn" onclick="refreshRankings()">Refresh Rankings</button>
     <button class="btn btn-all" id="allBtn" onclick="fullScan()">Full Scan</button>
     <span style="color:#333">|</span>
+    <input class="search" id="topXInput" type="number" min="1" placeholder="X" style="width:60px;text-align:center" onkeydown="if(event.key==='Enter')refreshTopX()">
+    <button class="btn btn-top" id="topXBtn" onclick="refreshTopX()">Refresh Top X</button>
+    <span style="color:#333">|</span>
     <input class="search" id="playerInput" placeholder="Player name..." onkeydown="if(event.key==='Enter')scanPlayer()">
     <button class="btn btn-scan" id="scanBtn" onclick="scanPlayer()">Scan Player</button>
     <span style="flex-grow:1"></span>
@@ -163,12 +166,14 @@ function setRunning(running, btn) {
   isRunning = running;
   const topBtn = document.getElementById("topBtn");
   const allBtn = document.getElementById("allBtn");
-  topBtn.disabled = running; allBtn.disabled = running;
+  const topXBtn = document.getElementById("topXBtn");
+  topBtn.disabled = running; allBtn.disabled = running; topXBtn.disabled = running;
   document.getElementById("progressBar").style.display = running ? "block" : "none";
   document.getElementById("statusBox").style.display = running ? "block" : "none";
   if (!running) {
     topBtn.className = "btn btn-top"; topBtn.textContent = "Refresh Rankings";
     allBtn.className = "btn btn-all"; allBtn.textContent = "Full Scan";
+    topXBtn.className = "btn btn-top"; topXBtn.textContent = "Refresh Top X";
     setTimeout(() => {
       document.getElementById("statusBox").style.display = "none";
       document.getElementById("progressBar").style.display = "none";
@@ -188,6 +193,44 @@ async function checkBatch(names) {
     body: JSON.stringify({names})
   });
   return await resp.json();
+}
+
+async function refreshTopX() {
+  const x = parseInt(document.getElementById("topXInput").value);
+  if (!x || x < 1) { alert("Enter a number for X"); return; }
+  if (isRunning) return;
+  const btn = document.getElementById("topXBtn");
+  btn.className = "btn running"; btn.textContent = "Refreshing...";
+  setRunning(true);
+
+  const names = allData.slice(0, x).map(r => r.name);
+  const kept = allData.slice(x); // keep players beyond X unchanged
+
+  const results = {};
+  const batches = [];
+  for (let i = 0; i < names.length; i += BATCH_SIZE) {
+    batches.push(names.slice(i, i + BATCH_SIZE));
+  }
+
+  for (let i = 0; i < batches.length; i++) {
+    setProgress(((i + 1) / batches.length) * 100,
+      `Checking top ${x}: batch ${i + 1}/${batches.length} (${Object.keys(results).length} ranked so far)`);
+    const data = await checkBatch(batches[i]);
+    data.results.forEach(r => { results[r.name] = r; });
+  }
+
+  // Merge: refreshed top X + unchanged rest, dedup by name
+  const refreshed = Object.values(results);
+  const refreshedNames = new Set(refreshed.map(r => r.name));
+  const merged = [...refreshed, ...kept.filter(r => !refreshedNames.has(r.name))];
+  allData = merged.sort((a, b) => a.NASrPlayers - b.NASrPlayers);
+  document.getElementById("timestamp").textContent = "Last updated: " + new Date().toLocaleString();
+  saveToStorage();
+  buildGuildFilter();
+  filterTable();
+  setProgress(100, `Done! Refreshed top ${x} — ${allData.length} total ranked.`);
+  btn.className = "btn btn-top"; btn.textContent = "Refresh Top X";
+  setRunning(false);
 }
 
 async function refreshRankings() {
