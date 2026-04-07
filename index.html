@@ -91,27 +91,31 @@ function saveToStorage() {
 }
 
 async function loadData() {
-  // Try localStorage first (has user additions + refreshes)
-  const stored = localStorage.getItem(STORAGE_KEY);
-  if (stored) {
-    try {
-      allData = JSON.parse(stored);
-      document.getElementById("timestamp").textContent = localStorage.getItem(STORAGE_TS_KEY) || "";
-      buildGuildFilter();
-      filterTable();
-      return;
-    } catch(e) {}
-  }
-  // Fall back to baked-in data
+  // Always fetch server data first, merge with localStorage additions
+  let serverData = [];
+  let serverTs = "";
   try {
     const resp = await fetch("/data/na_sr_results.json");
     const data = await resp.json();
-    allData = data.results || [];
-    document.getElementById("timestamp").textContent = "Last updated: " + (data.timestamp || "never");
-    saveToStorage();
-  } catch(e) {
-    document.getElementById("timestamp").textContent = "No data yet - click Refresh or Full Scan";
+    serverData = data.results || [];
+    serverTs = data.timestamp || "never";
+  } catch(e) {}
+
+  // Merge: server data as base, add any localStorage-only players on top
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (stored) {
+    try {
+      const localData = JSON.parse(stored);
+      const serverNames = new Set(serverData.map(r => r.name));
+      for (const r of localData) {
+        if (!serverNames.has(r.name)) serverData.push(r);
+      }
+    } catch(e) {}
   }
+
+  allData = serverData.sort((a, b) => a.NASrPlayers - b.NASrPlayers);
+  document.getElementById("timestamp").textContent = "Last updated: " + (serverTs || "never");
+  saveToStorage();
   buildGuildFilter();
   filterTable();
 }
