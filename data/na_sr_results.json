@@ -20,7 +20,7 @@
     "Frmr"
   ],
   "staff_checked": 127,
-  "ranked_players": 58,
+  "ranked_players": 59,
   "results": [
     {
       "name": "15h",
@@ -51,6 +51,11 @@
       "name": "kiLLsecure",
       "guild": "Frmr",
       "NASrPlayers": 6
+    },
+    {
+      "name": "Lucyfall",
+      "guild": "Zamn",
+      "NASrPlayers": 7
     },
     {
       "name": "MFLR5",
