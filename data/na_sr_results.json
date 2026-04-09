@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-07 20:26:47",
+  "timestamp": "2026-04-10 01:29:23",
   "guilds_checked": [
     "Zamn",
     "SEQ",
@@ -25,552 +25,662 @@
     {
       "name": "15h",
       "guild": "SEQ",
-      "NASrPlayers": 1
-    },
-    {
-      "name": "Polar87",
-      "guild": "SEQ",
-      "NASrPlayers": 2
+      "NASrPlayers": 1,
+      "unknownRaids": 219
     },
     {
       "name": "Teslanator",
       "guild": "SEQ",
-      "NASrPlayers": 3
+      "NASrPlayers": 2,
+      "unknownRaids": 216
     },
     {
       "name": "NEMQNJAA",
       "guild": "SEQ",
-      "NASrPlayers": 4
+      "NASrPlayers": 3,
+      "unknownRaids": 0
+    },
+    {
+      "name": "Polar87",
+      "guild": "SEQ",
+      "NASrPlayers": 4,
+      "unknownRaids": 201
     },
     {
       "name": "MFLR5",
       "guild": "Zamn",
-      "NASrPlayers": 7
-    },
-    {
-      "name": "kiLLsecure",
-      "guild": "Frmr",
-      "NASrPlayers": 9
+      "NASrPlayers": 6,
+      "unknownRaids": 0
     },
     {
       "name": "Autosmord",
       "guild": "HSP",
-      "NASrPlayers": 12
-    },
-    {
-      "name": "dwagonic",
-      "guild": "Zamn",
-      "NASrPlayers": 14
+      "NASrPlayers": 7,
+      "unknownRaids": 103
     },
     {
       "name": "SaltyHobo",
       "guild": "SEQ",
-      "NASrPlayers": 15
+      "NASrPlayers": 8,
+      "unknownRaids": 102
     },
     {
       "name": "Csm1tty",
       "guild": "HSP",
-      "NASrPlayers": 19
-    },
-    {
-      "name": "seekeyace",
-      "guild": "HSP",
-      "NASrPlayers": 20
-    },
-    {
-      "name": "Badpoopy",
-      "guild": "HSP",
-      "NASrPlayers": 23
+      "NASrPlayers": 10,
+      "unknownRaids": 78
     },
     {
       "name": "PhoMz",
       "guild": "Zamn",
-      "NASrPlayers": 26
-    },
-    {
-      "name": "Plus1",
-      "guild": "Zamn",
-      "NASrPlayers": 29
-    },
-    {
-      "name": "iHadNever",
-      "guild": "ANO",
-      "NASrPlayers": 30
-    },
-    {
-      "name": "PiglinRose",
-      "guild": "ANO",
-      "NASrPlayers": 31
-    },
-    {
-      "name": "GnamBoy",
-      "guild": "Nia",
-      "NASrPlayers": 34
-    },
-    {
-      "name": "RukasuTT",
-      "guild": "Aeq",
-      "NASrPlayers": 37
-    },
-    {
-      "name": "NoPoet",
-      "guild": "AVO",
-      "NASrPlayers": 44
-    },
-    {
-      "name": "Inxialot",
-      "guild": "Nia",
-      "NASrPlayers": 48
-    },
-    {
-      "name": "Potatoking726",
-      "guild": "ANO",
-      "NASrPlayers": 50
-    },
-    {
-      "name": "Biscuitdogs",
-      "guild": "HSP",
-      "NASrPlayers": 51
-    },
-    {
-      "name": "Twigbones",
-      "guild": "HSP",
-      "NASrPlayers": 56
-    },
-    {
-      "name": "Xyruh",
-      "guild": "Frmr",
-      "NASrPlayers": 57
-    },
-    {
-      "name": "Turkeyuwuosu",
-      "guild": "Nia",
-      "NASrPlayers": 60
-    },
-    {
-      "name": "theoplegends",
-      "guild": "SEQ",
-      "NASrPlayers": 67
-    },
-    {
-      "name": "linnyflower",
-      "guild": "AIn",
-      "NASrPlayers": 67
-    },
-    {
-      "name": "sum00",
-      "guild": "AVO",
-      "NASrPlayers": 70
-    },
-    {
-      "name": "Vlctor",
-      "guild": "HSP",
-      "NASrPlayers": 78
-    },
-    {
-      "name": "pnoot",
-      "guild": "Zamn",
-      "NASrPlayers": 79
-    },
-    {
-      "name": "villainessbian",
-      "guild": "ANO",
-      "NASrPlayers": 81
-    },
-    {
-      "name": "paRtifire",
-      "guild": "SEQ",
-      "NASrPlayers": 84
-    },
-    {
-      "name": "Tsarista",
-      "guild": "HSP",
-      "NASrPlayers": 86
-    },
-    {
-      "name": "Voidrim",
-      "guild": "Zamn",
-      "NASrPlayers": 87
-    },
-    {
-      "name": "gnsp",
-      "guild": "AVO",
-      "NASrPlayers": 91
-    },
-    {
-      "name": "LesbianDream",
-      "guild": "N/A",
-      "NASrPlayers": 91
-    },
-    {
-      "name": "fweshy_",
-      "guild": "BFS",
-      "NASrPlayers": 97
-    },
-    {
-      "name": "skyrimfan1",
-      "guild": "Frmr",
-      "NASrPlayers": 98
-    },
-    {
-      "name": "Sparked_embers",
-      "guild": "PUN",
-      "NASrPlayers": 100
-    },
-    {
-      "name": "catgirlscarlet",
-      "guild": "SEQ",
-      "NASrPlayers": 103
-    },
-    {
-      "name": "JulianH06",
-      "guild": "SEQ",
-      "NASrPlayers": 104
-    },
-    {
-      "name": "DoctorAgency",
-      "guild": "BFS",
-      "NASrPlayers": 106
-    },
-    {
-      "name": "Werveh",
-      "guild": "HSP",
-      "NASrPlayers": 109
-    },
-    {
-      "name": "blaides",
-      "guild": "Zamn",
-      "NASrPlayers": 110
-    },
-    {
-      "name": "unplase111",
-      "guild": "BFS",
-      "NASrPlayers": 114
-    },
-    {
-      "name": "The_PixelChicken",
-      "guild": "AVO",
-      "NASrPlayers": 122
-    },
-    {
-      "name": "Otuclop",
-      "guild": "Nia",
-      "NASrPlayers": 127
-    },
-    {
-      "name": "DarkofFire",
-      "guild": "AVO",
-      "NASrPlayers": 133
-    },
-    {
-      "name": "GebutterteWurst",
-      "guild": "ANO",
-      "NASrPlayers": 138
-    },
-    {
-      "name": "GooseCore",
-      "guild": "Aeq",
-      "NASrPlayers": 143
-    },
-    {
-      "name": "QuantMan",
-      "guild": "Aeq",
-      "NASrPlayers": 145
+      "NASrPlayers": 17,
+      "unknownRaids": 60
     },
     {
       "name": "omotaco",
       "guild": "SEQ",
-      "NASrPlayers": 148
+      "NASrPlayers": 21,
+      "unknownRaids": 50
+    },
+    {
+      "name": "Badpoopy",
+      "guild": "HSP",
+      "NASrPlayers": 29,
+      "unknownRaids": 41
     },
     {
       "name": "LoubiOP",
       "guild": "SEQ",
-      "NASrPlayers": 150
+      "NASrPlayers": 34,
+      "unknownRaids": 38
     },
     {
-      "name": "aafor",
-      "guild": "Aeq",
-      "NASrPlayers": 153
-    },
-    {
-      "name": "_toriares",
-      "guild": "ETKW",
-      "NASrPlayers": 153
-    },
-    {
-      "name": "Obstacles_",
-      "guild": "SEQ",
-      "NASrPlayers": 154
-    },
-    {
-      "name": "Nergi",
-      "guild": "ANO",
-      "NASrPlayers": 158
-    },
-    {
-      "name": "Dern_",
-      "guild": "Aeq",
-      "NASrPlayers": 160
-    },
-    {
-      "name": "SmileyAlec",
-      "guild": "SEQ",
-      "NASrPlayers": 161
-    },
-    {
-      "name": "AngieTape",
-      "guild": "AIn",
-      "NASrPlayers": 166
-    },
-    {
-      "name": "tctcc",
-      "guild": "Aeq",
-      "NASrPlayers": 170
-    },
-    {
-      "name": "keplyr",
-      "guild": "QZZ",
-      "NASrPlayers": 176
-    },
-    {
-      "name": "Darkrenga",
-      "guild": "Aeq",
-      "NASrPlayers": 178
-    },
-    {
-      "name": "AKGoggles",
-      "guild": "HSP",
-      "NASrPlayers": 179
-    },
-    {
-      "name": "Mqria_",
-      "guild": "AVO",
-      "NASrPlayers": 183
-    },
-    {
-      "name": "owoSilver",
-      "guild": "AVO",
-      "NASrPlayers": 188
-    },
-    {
-      "name": "LaxMiu",
-      "guild": "Nia",
-      "NASrPlayers": 190
-    },
-    {
-      "name": "_Winteria",
-      "guild": "PUN",
-      "NASrPlayers": 196
-    },
-    {
-      "name": "Kynku",
-      "guild": "HSP",
-      "NASrPlayers": 198
-    },
-    {
-      "name": "TheEnderMan250",
-      "guild": "SOVR",
-      "NASrPlayers": 198
-    },
-    {
-      "name": "Robbedoesgek",
-      "guild": "Aeq",
-      "NASrPlayers": 199
-    },
-    {
-      "name": "MiLeren",
-      "guild": "TAq",
-      "NASrPlayers": 204
-    },
-    {
-      "name": "g17fcH_3D",
-      "guild": "PUN",
-      "NASrPlayers": 217
-    },
-    {
-      "name": "Glacade",
-      "guild": "SEQ",
-      "NASrPlayers": 219
-    },
-    {
-      "name": "YouAreRexist",
-      "guild": "SEQ",
-      "NASrPlayers": 222
+      "name": "blaides",
+      "guild": "Zamn",
+      "NASrPlayers": 35,
+      "unknownRaids": 38
     },
     {
       "name": "Aethei",
       "guild": "ANO",
-      "NASrPlayers": 229
+      "NASrPlayers": 39,
+      "unknownRaids": 34
     },
     {
-      "name": "guywhyII",
-      "guild": "TAq",
-      "NASrPlayers": 230
-    },
-    {
-      "name": "Excalibus_",
-      "guild": "Nia",
-      "NASrPlayers": 232
-    },
-    {
-      "name": "Warze",
+      "name": "Plus1",
       "guild": "Zamn",
-      "NASrPlayers": 233
+      "NASrPlayers": 43,
+      "unknownRaids": 33
     },
     {
-      "name": "gunplafan123",
+      "name": "iHadNever",
       "guild": "ANO",
-      "NASrPlayers": 239
+      "NASrPlayers": 44,
+      "unknownRaids": 30
     },
     {
-      "name": "_Chipla",
-      "guild": "ANO",
-      "NASrPlayers": 242
+      "name": "kiLLsecure",
+      "guild": "Frmr",
+      "NASrPlayers": 51,
+      "unknownRaids": 31
     },
     {
-      "name": "chaoman12345",
-      "guild": "PROF",
-      "NASrPlayers": 242
+      "name": "dwagonic",
+      "guild": "Zamn",
+      "NASrPlayers": 52,
+      "unknownRaids": 28
     },
     {
-      "name": "cowiu",
-      "guild": "ETKW",
-      "NASrPlayers": 243
-    },
-    {
-      "name": "superkat1403",
-      "guild": "Aeq",
-      "NASrPlayers": 245
-    },
-    {
-      "name": "Panfahh",
-      "guild": "Aeq",
-      "NASrPlayers": 247
-    },
-    {
-      "name": "FishuPancakes",
+      "name": "seekeyace",
       "guild": "HSP",
-      "NASrPlayers": 252
+      "NASrPlayers": 54,
+      "unknownRaids": 27
+    },
+    {
+      "name": "theoplegends",
+      "guild": "SEQ",
+      "NASrPlayers": 58,
+      "unknownRaids": 26
+    },
+    {
+      "name": "JulianH06",
+      "guild": "SEQ",
+      "NASrPlayers": 62,
+      "unknownRaids": 26
+    },
+    {
+      "name": "Werveh",
+      "guild": "HSP",
+      "NASrPlayers": 63,
+      "unknownRaids": 24
+    },
+    {
+      "name": "Voidrim",
+      "guild": "Zamn",
+      "NASrPlayers": 64,
+      "unknownRaids": 24
+    },
+    {
+      "name": "GooseCore",
+      "guild": "Aeq",
+      "NASrPlayers": 67,
+      "unknownRaids": 22
+    },
+    {
+      "name": "Twigbones",
+      "guild": "HSP",
+      "NASrPlayers": 68,
+      "unknownRaids": 26
+    },
+    {
+      "name": "Biscuitdogs",
+      "guild": "HSP",
+      "NASrPlayers": 70,
+      "unknownRaids": 24
+    },
+    {
+      "name": "Turkeyuwuosu",
+      "guild": "Nia",
+      "NASrPlayers": 75,
+      "unknownRaids": 23
+    },
+    {
+      "name": "aafor",
+      "guild": "Aeq",
+      "NASrPlayers": 76,
+      "unknownRaids": 20
+    },
+    {
+      "name": "PiglinRose",
+      "guild": "ANO",
+      "NASrPlayers": 77,
+      "unknownRaids": 22
+    },
+    {
+      "name": "NoPoet",
+      "guild": "AVO",
+      "NASrPlayers": 83,
+      "unknownRaids": 22
+    },
+    {
+      "name": "Nergi",
+      "guild": "ANO",
+      "NASrPlayers": 85,
+      "unknownRaids": 19
+    },
+    {
+      "name": "Xyruh",
+      "guild": "Frmr",
+      "NASrPlayers": 88,
+      "unknownRaids": 18
+    },
+    {
+      "name": "Otuclop",
+      "guild": "Nia",
+      "NASrPlayers": 94,
+      "unknownRaids": 17
+    },
+    {
+      "name": "Potatoking726",
+      "guild": "ANO",
+      "NASrPlayers": 99,
+      "unknownRaids": 16
+    },
+    {
+      "name": "GnamBoy",
+      "guild": "Nia",
+      "NASrPlayers": 100,
+      "unknownRaids": 18
+    },
+    {
+      "name": "Inxialot",
+      "guild": "Nia",
+      "NASrPlayers": 103,
+      "unknownRaids": 17
+    },
+    {
+      "name": "DoctorAgency",
+      "guild": "BFS",
+      "NASrPlayers": 106,
+      "unknownRaids": 15
+    },
+    {
+      "name": "Obstacles_",
+      "guild": "SEQ",
+      "NASrPlayers": 107,
+      "unknownRaids": 15
+    },
+    {
+      "name": "catgirlscarlet",
+      "guild": "SEQ",
+      "NASrPlayers": 116,
+      "unknownRaids": 15
     },
     {
       "name": "otsukaree",
       "guild": "ETKW",
-      "NASrPlayers": 261
+      "NASrPlayers": 117,
+      "unknownRaids": 14
     },
     {
-      "name": "nekoyu_",
-      "guild": "ETKW",
-      "NASrPlayers": 267
-    },
-    {
-      "name": "Doomdots",
-      "guild": "SEQ",
-      "NASrPlayers": 271
-    },
-    {
-      "name": "Foxfulz",
-      "guild": "TAq",
-      "NASrPlayers": 273
-    },
-    {
-      "name": "Skywn_",
-      "guild": "HSP",
-      "NASrPlayers": 275
-    },
-    {
-      "name": "darkbasil",
+      "name": "_Chipla",
       "guild": "ANO",
-      "NASrPlayers": 281
+      "NASrPlayers": 125,
+      "unknownRaids": 13
+    },
+    {
+      "name": "SmileyAlec",
+      "guild": "SEQ",
+      "NASrPlayers": 127,
+      "unknownRaids": 13
+    },
+    {
+      "name": "RukasuTT",
+      "guild": "Aeq",
+      "NASrPlayers": 128,
+      "unknownRaids": 13
+    },
+    {
+      "name": "tctcc",
+      "guild": "Aeq",
+      "NASrPlayers": 133,
+      "unknownRaids": 0
+    },
+    {
+      "name": "sum00",
+      "guild": "AVO",
+      "NASrPlayers": 134,
+      "unknownRaids": 16
+    },
+    {
+      "name": "skyrimfan1",
+      "guild": "Frmr",
+      "NASrPlayers": 135,
+      "unknownRaids": 13
+    },
+    {
+      "name": "fweshy_",
+      "guild": "BFS",
+      "NASrPlayers": 151,
+      "unknownRaids": 13
+    },
+    {
+      "name": "LesbianDream",
+      "guild": "HSP",
+      "NASrPlayers": 156,
+      "unknownRaids": 11
+    },
+    {
+      "name": "gunplafan123",
+      "guild": "ANO",
+      "NASrPlayers": 157,
+      "unknownRaids": 10
+    },
+    {
+      "name": "pnoot",
+      "guild": "Zamn",
+      "NASrPlayers": 173,
+      "unknownRaids": 10
     },
     {
       "name": "N3phyr",
       "guild": "ETKW",
-      "NASrPlayers": 284
+      "NASrPlayers": 174,
+      "unknownRaids": 11
     },
     {
-      "name": "Mkjurki",
-      "guild": "AVO",
-      "NASrPlayers": 285
-    },
-    {
-      "name": "lLou_",
-      "guild": "PROF",
-      "NASrPlayers": 286
-    },
-    {
-      "name": "RoSeNur",
-      "guild": "AVO",
-      "NASrPlayers": 287
-    },
-    {
-      "name": "MelonTheLegend",
-      "guild": "Aeq",
-      "NASrPlayers": 292
-    },
-    {
-      "name": "MikuJuk",
-      "guild": "PUN",
-      "NASrPlayers": 297
-    },
-    {
-      "name": "sweeeeeeeeeeeeem",
+      "name": "Vlctor",
       "guild": "HSP",
-      "NASrPlayers": 303
+      "NASrPlayers": 175,
+      "unknownRaids": 11
     },
     {
-      "name": "Calluum",
+      "name": "villainessbian",
       "guild": "ANO",
-      "NASrPlayers": 307
+      "NASrPlayers": 176,
+      "unknownRaids": 9
+    },
+    {
+      "name": "guywhyII",
+      "guild": "TAq",
+      "NASrPlayers": 180,
+      "unknownRaids": 9
+    },
+    {
+      "name": "Tsarista",
+      "guild": "HSP",
+      "NASrPlayers": 184,
+      "unknownRaids": 9
+    },
+    {
+      "name": "The_PixelChicken",
+      "guild": "AVO",
+      "NASrPlayers": 191,
+      "unknownRaids": 9
+    },
+    {
+      "name": "paRtifire",
+      "guild": "SEQ",
+      "NASrPlayers": 199,
+      "unknownRaids": 0
+    },
+    {
+      "name": "LaxMiu",
+      "guild": "Nia",
+      "NASrPlayers": 226,
+      "unknownRaids": 7
+    },
+    {
+      "name": "QuantMan",
+      "guild": "Aeq",
+      "NASrPlayers": 230,
+      "unknownRaids": 7
+    },
+    {
+      "name": "cowiu",
+      "guild": "ETKW",
+      "NASrPlayers": 240,
+      "unknownRaids": 7
+    },
+    {
+      "name": "gnsp",
+      "guild": "AVO",
+      "NASrPlayers": 241,
+      "unknownRaids": 8
+    },
+    {
+      "name": "unplase111",
+      "guild": "BFS",
+      "NASrPlayers": 249,
+      "unknownRaids": 7
+    },
+    {
+      "name": "linnyflower",
+      "guild": "AIn",
+      "NASrPlayers": 274,
+      "unknownRaids": 6
+    },
+    {
+      "name": "Foxfulz",
+      "guild": "TAq",
+      "NASrPlayers": 301,
+      "unknownRaids": 6
+    },
+    {
+      "name": "GebutterteWurst",
+      "guild": "ANO",
+      "NASrPlayers": 307,
+      "unknownRaids": 6
+    },
+    {
+      "name": "MiLeren",
+      "guild": "TAq",
+      "NASrPlayers": 318,
+      "unknownRaids": 5
+    },
+    {
+      "name": "Skywn_",
+      "guild": "HSP",
+      "NASrPlayers": 332,
+      "unknownRaids": 5
+    },
+    {
+      "name": "Excalibus_",
+      "guild": "Nia",
+      "NASrPlayers": 340,
+      "unknownRaids": 5
+    },
+    {
+      "name": "DarkofFire",
+      "guild": "AVO",
+      "NASrPlayers": 351,
+      "unknownRaids": 5
+    },
+    {
+      "name": "_Winteria",
+      "guild": "PUN",
+      "NASrPlayers": 371,
+      "unknownRaids": 0
+    },
+    {
+      "name": "TheEnderMan250",
+      "guild": "SOVR",
+      "NASrPlayers": 373,
+      "unknownRaids": 4
+    },
+    {
+      "name": "owoSilver",
+      "guild": "AVO",
+      "NASrPlayers": 388,
+      "unknownRaids": 5
+    },
+    {
+      "name": "Warze",
+      "guild": "Zamn",
+      "NASrPlayers": 394,
+      "unknownRaids": 4
     },
     {
       "name": "StayLocked",
       "guild": "AVO",
-      "NASrPlayers": 308
+      "NASrPlayers": 398,
+      "unknownRaids": 5
     },
     {
-      "name": "TKGlover",
+      "name": "nekoyu_",
       "guild": "ETKW",
-      "NASrPlayers": 314
-    },
-    {
-      "name": "WynnicWither",
-      "guild": "Nia",
-      "NASrPlayers": 315
-    },
-    {
-      "name": "Fountainboy",
-      "guild": "ANO",
-      "NASrPlayers": 322
-    },
-    {
-      "name": "Costep",
-      "guild": "ANO",
-      "NASrPlayers": 326
-    },
-    {
-      "name": "Tammitikari",
-      "guild": "Nia",
-      "NASrPlayers": 330
-    },
-    {
-      "name": "1c3_Sp1k3s",
-      "guild": "BFS",
-      "NASrPlayers": 337
-    },
-    {
-      "name": "BusyEXE",
-      "guild": "AVO",
-      "NASrPlayers": 338
-    },
-    {
-      "name": "GreenV1",
-      "guild": "PUN",
-      "NASrPlayers": 341
+      "NASrPlayers": 401,
+      "unknownRaids": 4
     },
     {
       "name": "Volkzz101",
       "guild": "GsW",
-      "NASrPlayers": 342
+      "NASrPlayers": 406,
+      "unknownRaids": 0
+    },
+    {
+      "name": "Dern_",
+      "guild": "Aeq",
+      "NASrPlayers": 411,
+      "unknownRaids": 4
+    },
+    {
+      "name": "Sparked_embers",
+      "guild": "PUN",
+      "NASrPlayers": 426,
+      "unknownRaids": 4
+    },
+    {
+      "name": "AngieTape",
+      "guild": "AIn",
+      "NASrPlayers": 430,
+      "unknownRaids": 0
+    },
+    {
+      "name": "chaoman12345",
+      "guild": "PROF",
+      "NASrPlayers": 431,
+      "unknownRaids": 4
+    },
+    {
+      "name": "_toriares",
+      "guild": "ETKW",
+      "NASrPlayers": 501,
+      "unknownRaids": 3
+    },
+    {
+      "name": "Darkrenga",
+      "guild": "Aeq",
+      "NASrPlayers": 531,
+      "unknownRaids": 3
+    },
+    {
+      "name": "keplyr",
+      "guild": "QZZ",
+      "NASrPlayers": 539,
+      "unknownRaids": 3
+    },
+    {
+      "name": "BusyEXE",
+      "guild": "AVO",
+      "NASrPlayers": 566,
+      "unknownRaids": 3
+    },
+    {
+      "name": "Glacade",
+      "guild": "SEQ",
+      "NASrPlayers": 604,
+      "unknownRaids": 2
+    },
+    {
+      "name": "darkbasil",
+      "guild": "ANO",
+      "NASrPlayers": 687,
+      "unknownRaids": 2
+    },
+    {
+      "name": "AKGoggles",
+      "guild": "HSP",
+      "NASrPlayers": 694,
+      "unknownRaids": 2
+    },
+    {
+      "name": "TKGlover",
+      "guild": "ETKW",
+      "NASrPlayers": 703,
+      "unknownRaids": 2
+    },
+    {
+      "name": "WynnicWither",
+      "guild": "Nia",
+      "NASrPlayers": 703,
+      "unknownRaids": 2
+    },
+    {
+      "name": "Mqria_",
+      "guild": "AVO",
+      "NASrPlayers": 710,
+      "unknownRaids": 2
+    },
+    {
+      "name": "Kynku",
+      "guild": "HSP",
+      "NASrPlayers": 754,
+      "unknownRaids": 1
+    },
+    {
+      "name": "Robbedoesgek",
+      "guild": "Aeq",
+      "NASrPlayers": 768,
+      "unknownRaids": 1
+    },
+    {
+      "name": "g17fcH_3D",
+      "guild": "PUN",
+      "NASrPlayers": 802,
+      "unknownRaids": 0
+    },
+    {
+      "name": "YouAreRexist",
+      "guild": "SEQ",
+      "NASrPlayers": 816,
+      "unknownRaids": 1
+    },
+    {
+      "name": "superkat1403",
+      "guild": "Aeq",
+      "NASrPlayers": 853,
+      "unknownRaids": 1
+    },
+    {
+      "name": "Panfahh",
+      "guild": "Aeq",
+      "NASrPlayers": 859,
+      "unknownRaids": 1
+    },
+    {
+      "name": "FishuPancakes",
+      "guild": "HSP",
+      "NASrPlayers": 870,
+      "unknownRaids": 1
+    },
+    {
+      "name": "Doomdots",
+      "guild": "SEQ",
+      "NASrPlayers": 905,
+      "unknownRaids": 1
+    },
+    {
+      "name": "lLou_",
+      "guild": "PROF",
+      "NASrPlayers": 929,
+      "unknownRaids": 1
+    },
+    {
+      "name": "Mkjurki",
+      "guild": "AVO",
+      "NASrPlayers": 932,
+      "unknownRaids": 1
+    },
+    {
+      "name": "RoSeNur",
+      "guild": "AVO",
+      "NASrPlayers": 937,
+      "unknownRaids": 1
+    },
+    {
+      "name": "MelonTheLegend",
+      "guild": "Aeq",
+      "NASrPlayers": 960,
+      "unknownRaids": 1
+    },
+    {
+      "name": "MikuJuk",
+      "guild": "PUN",
+      "NASrPlayers": 962,
+      "unknownRaids": 1
+    },
+    {
+      "name": "sweeeeeeeeeeeeem",
+      "guild": "HSP",
+      "NASrPlayers": 984,
+      "unknownRaids": 1
+    },
+    {
+      "name": "Calluum",
+      "guild": "ANO",
+      "NASrPlayers": 987,
+      "unknownRaids": 1
+    },
+    {
+      "name": "Fountainboy",
+      "guild": "ANO",
+      "NASrPlayers": 1036,
+      "unknownRaids": 1
+    },
+    {
+      "name": "Costep",
+      "guild": "ANO",
+      "NASrPlayers": 1041,
+      "unknownRaids": 1
+    },
+    {
+      "name": "Tammitikari",
+      "guild": "Nia",
+      "NASrPlayers": 1043,
+      "unknownRaids": 0
+    },
+    {
+      "name": "1c3_Sp1k3s",
+      "guild": "BFS",
+      "NASrPlayers": 1063,
+      "unknownRaids": 1
+    },
+    {
+      "name": "GreenV1",
+      "guild": "PUN",
+      "NASrPlayers": 1079,
+      "unknownRaids": 1
     }
   ]
 }
