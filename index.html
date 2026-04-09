@@ -50,6 +50,21 @@
   .guild-tag.active { background: #8b5cf6; color: #fff; border-color: #8b5cf6; }
   .progress-bar { height: 3px; background: #1a1d27; border-radius: 2px; margin-bottom: 12px; display: none; }
   .progress-fill { height: 100%; background: #d97706; border-radius: 2px; transition: width 0.3s; width: 0%; }
+  .tab-bar { display: flex; gap: 0; margin-bottom: 16px; }
+  .tab { padding: 8px 20px; font-size: 13px; font-weight: 600; cursor: pointer; border: 1px solid #2a2d37;
+         background: #1a1d27; color: #6b7280; transition: all 0.15s; }
+  .tab:first-child { border-radius: 6px 0 0 6px; }
+  .tab:last-child { border-radius: 0 6px 6px 0; }
+  .tab.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+  .tab:not(.active):hover { color: #e0e0e0; }
+  .sr-cell { color: #f59e0b; font-weight: 600; }
+  .raids-cell { color: #9ca3af; }
+  .members-cell { color: #6b7280; }
+  .guild-expand { cursor: pointer; }
+  .guild-expand:hover { background: #1e2130; }
+  .member-row { background: #13151d; }
+  .member-row td { font-size: 13px; color: #9ca3af; padding: 5px 12px; }
+  .member-row .player-cell { color: #c0c0c0; }
 </style>
 </head>
 <body>
@@ -57,6 +72,12 @@
   <h1>TWP SR</h1>
   <div class="subtitle" id="timestamp">Loading...</div>
 
+  <div class="tab-bar">
+    <div class="tab active" onclick="switchTab('players')">Player SR</div>
+    <div class="tab" onclick="switchTab('guilds')">Guild SR</div>
+  </div>
+
+  <div id="playersView">
   <div class="toolbar">
     <button class="btn btn-top" id="topBtn" onclick="refreshRankings()">Refresh Rankings</button>
     <button class="btn btn-all" id="allBtn" onclick="fullScan()">Full Scan</button>
@@ -78,12 +99,74 @@
     <thead><tr><th>#</th><th>Rank</th><th>Player</th><th>Guild</th><th>Unknown Raids</th></tr></thead>
     <tbody id="tbody"></tbody>
   </table>
+  </div>
+
+  <div id="guildsView" style="display:none">
+    <table>
+      <thead><tr><th>#</th><th>Guild</th><th>Total SR</th><th>Total Raids</th><th>Members</th></tr></thead>
+      <tbody id="guildTbody"></tbody>
+    </table>
+  </div>
 </div>
 
 <script>
 let allData = [];
 let activeGuild = null;
 let isRunning = false;
+let currentTab = 'players';
+let expandedGuilds = new Set();
+
+function switchTab(tab) {
+  currentTab = tab;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelector(`.tab[onclick="switchTab('${tab}')"]`).classList.add('active');
+  document.getElementById('playersView').style.display = tab === 'players' ? '' : 'none';
+  document.getElementById('guildsView').style.display = tab === 'guilds' ? '' : 'none';
+  if (tab === 'guilds') renderGuildLeaderboard();
+}
+
+function renderGuildLeaderboard() {
+  const guilds = {};
+  allData.forEach(r => {
+    if (!guilds[r.guild]) guilds[r.guild] = { guild: r.guild, totalRaids: 0, members: [] };
+    const raids = r.totalRaids || 0;
+    guilds[r.guild].totalRaids += raids;
+    guilds[r.guild].members.push(r);
+  });
+  const sorted = Object.values(guilds).sort((a, b) => b.totalRaids - a.totalRaids);
+  const tbody = document.getElementById('guildTbody');
+  let html = '';
+  sorted.forEach((g, i) => {
+    const rank = i + 1;
+    const sr = (g.totalRaids * 110).toLocaleString();
+    const rc = rank <= 3 ? ' rank-' + rank : '';
+    const expanded = expandedGuilds.has(g.guild);
+    html += `<tr class="guild-expand" onclick="toggleGuild('${g.guild}')">` +
+      `<td class="rank-cell${rc}">${rank}</td>` +
+      `<td class="guild-cell">${expanded ? '▾' : '▸'} ${g.guild}</td>` +
+      `<td class="sr-cell">${sr}</td>` +
+      `<td class="raids-cell">${g.totalRaids.toLocaleString()}</td>` +
+      `<td class="members-cell">${g.members.length}</td></tr>`;
+    if (expanded) {
+      const membersSorted = g.members.slice().sort((a, b) => (b.totalRaids || 0) - (a.totalRaids || 0));
+      membersSorted.forEach(m => {
+        const mr = m.totalRaids || 0;
+        html += `<tr class="member-row"><td></td>` +
+          `<td class="player-cell">${m.name}</td>` +
+          `<td class="sr-cell">${(mr * 110).toLocaleString()}</td>` +
+          `<td class="raids-cell">${mr.toLocaleString()}</td>` +
+          `<td></td></tr>`;
+      });
+    }
+  });
+  tbody.innerHTML = html;
+}
+
+function toggleGuild(guild) {
+  if (expandedGuilds.has(guild)) expandedGuilds.delete(guild);
+  else expandedGuilds.add(guild);
+  renderGuildLeaderboard();
+}
 
 const BATCH_SIZE = 40; // players per API call
 const STORAGE_KEY = "twpsr_data";
