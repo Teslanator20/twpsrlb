@@ -62,10 +62,12 @@ class handler(BaseHTTPRequestHandler):
                 if na_sr is not None:
                     guild = data.get("guild")
                     pfx = guild.get("prefix", "?") if guild else "N/A"
+                    unknown_raids = data.get("globalData", {}).get("raids", {}).get("list", {}).get("unknown", 0)
                     results.append({
                         "name": data.get("username", name),
                         "guild": pfx,
                         "NASrPlayers": na_sr,
+                        "unknownRaids": unknown_raids,
                     })
             elif code != 404:
                 errors.append({"name": name, "code": code, "detail": str(data)[:100] if data else ""})

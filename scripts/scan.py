@@ -88,7 +88,8 @@ def check_player(name):
     if na_sr is not None:
         guild = data.get("guild")
         pfx = guild.get("prefix", "?") if guild else "N/A"
-        return {"name": data.get("username", name), "guild": pfx, "NASrPlayers": na_sr}
+        unknown_raids = data.get("globalData", {}).get("raids", {}).get("list", {}).get("unknown", 0)
+        return {"name": data.get("username", name), "guild": pfx, "NASrPlayers": na_sr, "unknownRaids": unknown_raids}
     return None
 
 def check_players(names, label, results):

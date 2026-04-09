@@ -75,7 +75,7 @@
   <div class="guild-filter" id="guildFilter"></div>
 
   <table>
-    <thead><tr><th>#</th><th>Rank</th><th>Player</th><th>Guild</th></tr></thead>
+    <thead><tr><th>#</th><th>Rank</th><th>Player</th><th>Guild</th><th>Unknown Raids</th></tr></thead>
     <tbody id="tbody"></tbody>
   </table>
 </div>
@@ -157,8 +157,10 @@ function filterTable() {
     if (activeGuild && r.guild !== activeGuild) return;
     shown++;
     const rc = r.NASrPlayers <= 3 ? " rank-" + r.NASrPlayers : "";
+    const ur = r.unknownRaids != null ? r.unknownRaids : "—";
     html += "<tr><td>" + shown + "</td><td class='rank-cell" + rc + "'>#" + r.NASrPlayers +
-            "</td><td class='player-cell'>" + r.name + "</td><td class='guild-cell'>" + r.guild + "</td></tr>";
+            "</td><td class='player-cell'>" + r.name + "</td><td class='guild-cell'>" + r.guild +
+            "</td><td>" + ur + "</td></tr>";
   });
   tbody.innerHTML = html;
   document.getElementById("count").textContent = shown + " players";
