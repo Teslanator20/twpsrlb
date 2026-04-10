@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-10 03:00:21",
+  "timestamp": "2026-04-10 03:42:13",
   "guilds_checked": [
     "Zamn",
     "SEQ",
@@ -17,10 +17,11 @@
     "BFS",
     "TAq",
     "PROF",
-    "Frmr"
+    "Frmr",
+    "Maya"
   ],
   "staff_checked": 129,
-  "ranked_players": 282,
+  "ranked_players": 286,
   "results": [
     {
       "name": "15h",
@@ -95,9 +96,9 @@
     {
       "name": "1n_L",
       "guild": "Maya",
-      "NASrPlayers": 14,
-      "unknownRaids": 71,
-      "totalRaids": 5922
+      "NASrPlayers": 13,
+      "unknownRaids": 73,
+      "totalRaids": 5924
     },
     {
       "name": "Shironappa",
@@ -338,6 +339,13 @@
       "totalRaids": 7135
     },
     {
+      "name": "NeverEmo",
+      "guild": "Maya",
+      "NASrPlayers": 77,
+      "unknownRaids": 21,
+      "totalRaids": 2501
+    },
+    {
       "name": "aafor",
       "guild": "Aeq",
       "NASrPlayers": 78,
@@ -483,6 +491,13 @@
       "NASrPlayers": 132,
       "unknownRaids": 13,
       "totalRaids": 2825
+    },
+    {
+      "name": "NMML",
+      "guild": "Maya",
+      "NASrPlayers": 133,
+      "unknownRaids": 12,
+      "totalRaids": 637
     },
     {
       "name": "SmileyAlec",
@@ -1157,6 +1172,13 @@
       "totalRaids": 1278
     },
     {
+      "name": "TaffyNya",
+      "guild": "Maya",
+      "NASrPlayers": 490,
+      "unknownRaids": 3,
+      "totalRaids": 1165
+    },
+    {
       "name": "AWBSquirrel",
       "guild": "AVO",
       "NASrPlayers": 499,
@@ -1239,6 +1261,13 @@
       "NASrPlayers": 594,
       "unknownRaids": 2,
       "totalRaids": 1072
+    },
+    {
+      "name": "wadsqe1234",
+      "guild": "Maya",
+      "NASrPlayers": 594,
+      "unknownRaids": 2,
+      "totalRaids": 6601
     },
     {
       "name": "Cybersoap62",
