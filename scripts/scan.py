@@ -15,7 +15,7 @@ GUILD_PREFIXES = [
     "Zamn", "SEQ", "Aeq", "HSP", "ETKW", "ANO",
     "AVO", "ESI", "Nia", "Ico", "Eden",
     "SOVR", "PUN", "BFS", "TAq", "PROF",
-    "Frmr", "caelxsti", "1n_L",
+    "Frmr",
 ]
 
 STAFF_NAMES = [
@@ -44,6 +44,7 @@ STAFF_NAMES = [
     "JohnBleu", "JokeOfJoke", "Julinho", "LesbianDream", "Lunatic_Lady",
     "QwertyKat14", "RafaelGomes", "Rexshell", "SixL__", "Soulbound",
     "Volkzz101", "yuliqn", "Naraka00", "MilkeeW", "Jekie",
+    "caelxsti", "1n_L",
 ]
 
 _rate_remaining = 50
