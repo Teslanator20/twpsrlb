@@ -103,7 +103,7 @@
 
   <div id="guildsView" style="display:none">
     <table>
-      <thead><tr><th>#</th><th>Guild</th><th>Total SR</th><th>Total Raids</th><th>Members</th></tr></thead>
+      <thead><tr><th>#</th><th>Guild</th><th>Unknown SR</th><th>Unknown Raids</th><th>Members</th></tr></thead>
       <tbody id="guildTbody"></tbody>
     </table>
   </div>
@@ -128,29 +128,29 @@ function switchTab(tab) {
 function renderGuildLeaderboard() {
   const guilds = {};
   allData.forEach(r => {
-    if (!guilds[r.guild]) guilds[r.guild] = { guild: r.guild, totalRaids: 0, members: [] };
-    const raids = r.totalRaids || 0;
-    guilds[r.guild].totalRaids += raids;
+    if (!guilds[r.guild]) guilds[r.guild] = { guild: r.guild, unknownRaids: 0, members: [] };
+    const raids = r.unknownRaids || 0;
+    guilds[r.guild].unknownRaids += raids;
     guilds[r.guild].members.push(r);
   });
-  const sorted = Object.values(guilds).sort((a, b) => b.totalRaids - a.totalRaids);
+  const sorted = Object.values(guilds).sort((a, b) => b.unknownRaids - a.unknownRaids);
   const tbody = document.getElementById('guildTbody');
   let html = '';
   sorted.forEach((g, i) => {
     const rank = i + 1;
-    const sr = (g.totalRaids * 110).toLocaleString();
+    const sr = (g.unknownRaids * 110).toLocaleString();
     const rc = rank <= 3 ? ' rank-' + rank : '';
     const expanded = expandedGuilds.has(g.guild);
     html += `<tr class="guild-expand" onclick="toggleGuild('${g.guild}')">` +
       `<td class="rank-cell${rc}">${rank}</td>` +
       `<td class="guild-cell">${expanded ? '▾' : '▸'} ${g.guild}</td>` +
       `<td class="sr-cell">${sr}</td>` +
-      `<td class="raids-cell">${g.totalRaids.toLocaleString()}</td>` +
+      `<td class="raids-cell">${g.unknownRaids.toLocaleString()}</td>` +
       `<td class="members-cell">${g.members.length}</td></tr>`;
     if (expanded) {
-      const membersSorted = g.members.slice().sort((a, b) => (b.totalRaids || 0) - (a.totalRaids || 0));
+      const membersSorted = g.members.slice().sort((a, b) => (b.unknownRaids || 0) - (a.unknownRaids || 0));
       membersSorted.forEach(m => {
-        const mr = m.totalRaids || 0;
+        const mr = m.unknownRaids || 0;
         html += `<tr class="member-row"><td></td>` +
           `<td class="player-cell">${m.name}</td>` +
           `<td class="sr-cell">${(mr * 110).toLocaleString()}</td>` +
