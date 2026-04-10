@@ -183,7 +183,7 @@ async function loadData() {
   let serverData = [];
   let serverTs = "";
   try {
-    const resp = await fetch("/data/na_sr_results.json");
+    const resp = await fetch("/data/na_sr_results.json?t=" + Date.now());
     const data = await resp.json();
     serverData = data.results || [];
     serverTs = data.timestamp || "never";
