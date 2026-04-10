@@ -9,7 +9,7 @@ GUILD_PREFIXES = [
     "Zamn", "SEQ", "Aeq", "HSP", "ETKW", "ANO",
     "AVO", "ESI", "Nia", "Ico", "Eden",
     "SOVR", "PUN", "BFS", "TAq", "PROF",
-    "Frmr",
+    "Frmr", "Maya",
 ]
 
 STAFF_NAMES = [
