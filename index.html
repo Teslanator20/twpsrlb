@@ -548,9 +548,23 @@ function snapshotsBefore(snaps, msAgo) {
   return best;
 }
 function findPlayerByUuid(snap, uuid) {
-  // restricted players all share uuid "redacted" → can't reliably identify them across snapshots
   if (!uuid || uuid === "redacted") return null;
   return (snap.players || []).find(p => p.uuid === uuid) || null;
+}
+
+// finds matching player in a past snapshot using either uuid or
+// (for restricted players) their N-th position among restricted entries
+function findPlayerInSnap(snap, currentPlayer) {
+  if (!currentPlayer) return null;
+  if (!currentPlayer.restricted) {
+    return findPlayerByUuid(snap, currentPlayer.uuid);
+  }
+  const idx = currentPlayer.restrictedIdx;
+  if (idx == null) return null;
+  const restrictedInSnap = (snap.players || [])
+    .filter(p => p.restricted)
+    .sort((a, b) => a.rank - b.rank);
+  return restrictedInSnap[idx] || null;
 }
 function downsample(arr, max) {
   if (arr.length <= max) return arr;
@@ -574,9 +588,11 @@ function applyAliases(players, aliases) {
   for (const p of players) {
     if (p.restricted) {
       p.alias = aliases?.[i] ?? null;
+      p.restrictedIdx = i;
       i++;
     } else {
       p.alias = null;
+      p.restrictedIdx = null;
     }
   }
 }
@@ -603,13 +619,13 @@ let rangeDays = Number(localStorage.getItem("rangeDays") || 7);
 function rangeLabel() { return rangeDays === 1 ? "24 h" : `${rangeDays} d`; }
 
 // ─── Delta helpers ─────────────────────────────────────
-function srDelta(snaps, uuid, msAgo) {
+function deltaForPlayer(snaps, player, field, msAgo) {
   if (!snaps.length) return null;
-  const cur = snaps[snaps.length - 1];
   const past = snapshotsBefore(snaps, msAgo);
   if (!past) return null;
-  const a = findPlayerByUuid(cur, uuid)?.sr;
-  const b = findPlayerByUuid(past, uuid)?.sr;
+  const cur = snaps[snaps.length - 1];
+  const a = findPlayerInSnap(cur, player)?.[field];
+  const b = findPlayerInSnap(past, player)?.[field];
   if (a == null || b == null) return null;
   return a - b;
 }
@@ -626,21 +642,20 @@ function linearRegression(pts) {
   const slope = (sxy - n*mx*my) / den;
   return { slope, n };
 }
-function computeRace(snaps, uuidL, uuidR, days, field = "sr") {
+function computeRace(snaps, playerL, playerR, days, field = "sr") {
   if (snaps.length < 2) return null;
-  if (!uuidL || !uuidR || uuidL === "redacted" || uuidR === "redacted") return null;
   const cutoff = Date.now() - days*86400_000;
   const win = snaps.filter(s => new Date(s.ts).getTime() >= cutoff);
   if (win.length < 2) return null;
   const pts = win.map(s => ({
     x: new Date(s.ts).getTime(),
-    y: (findPlayerByUuid(s, uuidL)?.[field] ?? 0) - (findPlayerByUuid(s, uuidR)?.[field] ?? 0),
+    y: (findPlayerInSnap(s, playerL)?.[field] ?? 0) - (findPlayerInSnap(s, playerR)?.[field] ?? 0),
   }));
   const reg = linearRegression(pts);
   if (!reg) return null;
   const dayRate = reg.slope * 86400_000;
   const cur = snaps[snaps.length - 1];
-  const gap_now = (findPlayerByUuid(cur, uuidL)?.[field] ?? 0) - (findPlayerByUuid(cur, uuidR)?.[field] ?? 0);
+  const gap_now = (findPlayerInSnap(cur, playerL)?.[field] ?? 0) - (findPlayerInSnap(cur, playerR)?.[field] ?? 0);
   const trendDelta = pts[pts.length - 1].y - pts[0].y;
   const shrinking = (gap_now > 0 && dayRate < 0) || (gap_now < 0 && dayRate > 0);
   let etaText = "—", etaSub = "need more data";
@@ -720,8 +735,8 @@ function renderTop8Spotlight(cur, snaps) {
     const next = top8[i + 1];
     if (next) {
       const gap = (p.completions ?? 0) - (next.completions ?? 0);
-      const r7  = computeRace(snaps, p.uuid, next.uuid, 7, "completions");
-      const r24 = computeRace(snaps, p.uuid, next.uuid, 1, "completions");
+      const r7  = computeRace(snaps, p, next, 7, "completions");
+      const r24 = computeRace(snaps, p, next, 1, "completions");
       const best = r7 || r24;
       const eta = best?.etaText ?? "—";
       const pillFor = (r, label) => {
@@ -757,7 +772,7 @@ function renderTop8Spotlight(cur, snaps) {
   const pts = downsample(recentSnaps(snaps, rangeDays), 180);
   const datasets = top8.map((p, i) => ({
     label: (p.alias || p.name) ?? `#${p.rank}`,
-    data: pts.map(s => findPlayerByUuid(s, p.uuid)?.completions ?? null),
+    data: pts.map(s => findPlayerInSnap(s, p)?.completions ?? null),
     borderColor: cols[i] || c.ink,
     backgroundColor: "transparent",
     borderWidth: 1.8, pointRadius: 0, tension: .25, spanGaps: true,
@@ -781,8 +796,8 @@ function renderLeaderboard(cur, snaps) {
 
   tbody.innerHTML = cur.players.map((p, idx) => {
     const next = cur.players[idx + 1];
-    const d24 = srDelta(snaps, p.uuid, 86400_000);
-    const d7  = srDelta(snaps, p.uuid, 7*86400_000);
+    const d24 = deltaForPlayer(snaps, p, "sr", 86400_000);
+    const d7  = deltaForPlayer(snaps, p, "sr", 7*86400_000);
     const gapToLeader = idx === 0 ? 0 : topSr - p.sr;
     const gapToNext   = next ? p.sr - next.sr : null;
     const rankCls = p.rank === 1 ? "r1" : p.rank === 2 ? "r2" : p.rank === 3 ? "r3" : "";
@@ -839,7 +854,7 @@ function renderPlayerTrends(cur, snaps) {
         labels: pts.map(s => timeLabel(s.ts)),
         datasets: [{
           label: p.name ?? `#${p.rank}`,
-          data: pts.map(s => findPlayerByUuid(s, p.uuid)?.completions ?? null),
+          data: pts.map(s => findPlayerInSnap(s, p)?.completions ?? null),
           borderColor: color,
           backgroundColor: "transparent",
           borderWidth: 1.6, pointRadius: 0, tension: .25, spanGaps: true,
