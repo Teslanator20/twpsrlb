@@ -377,6 +377,47 @@
     text-transform: uppercase; color: var(--muted);
   }
 
+  /* ─── chart modal ──────────────────────────────────── */
+  .chartable { cursor: zoom-in; }
+  .modal {
+    position: fixed; inset: 0; z-index: 1000;
+    background: rgba(0,0,0,0.55);
+    display: flex; align-items: center; justify-content: center;
+    padding: 32px;
+    animation: fadein .15s ease;
+  }
+  .modal.hidden { display: none; }
+  @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+  .modal-content {
+    background: var(--card); color: var(--ink);
+    border: 1px solid var(--rule); border-radius: 16px;
+    width: min(1200px, 96vw); max-height: 92vh;
+    padding: 22px 26px; display: flex; flex-direction: column;
+    box-shadow: 0 16px 56px rgba(0,0,0,0.4);
+  }
+  .modal-head {
+    display: flex; align-items: center; gap: 14px;
+    padding-bottom: 14px; margin-bottom: 16px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .modal-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variation-settings: 'opsz' 96, 'wght' 500;
+    font-size: 20px; line-height: 1; flex: 1;
+  }
+  .modal-close {
+    background: transparent; border: 1px solid var(--rule);
+    border-radius: 999px; width: 36px; height: 36px;
+    cursor: pointer; color: var(--muted);
+    font-size: 18px; line-height: 1;
+    transition: color .15s, border-color .15s;
+  }
+  .modal-close:hover { color: var(--ink); border-color: var(--ink); }
+  .modal-canvas-wrap {
+    position: relative; flex: 1; min-height: 480px;
+    height: calc(92vh - 120px);
+  }
+
   @media (max-width: 720px) {
     .wrap { padding: 32px 18px 56px; }
     .theme-toggle { top: 20px; right: 18px; }
@@ -430,17 +471,29 @@
           <th class="num">Gap to next</th>
           <th class="num">Completions</th>
           <th class="num">Gambits</th>
+          <th class="num">Avg G</th>
         </tr>
       </thead>
-      <tbody id="lb-body"><tr><td colspan="9" class="skeleton">loading…</td></tr></tbody>
+      <tbody id="lb-body"><tr><td colspan="10" class="skeleton">loading…</td></tr></tbody>
     </table>
   </div>
 
   <!-- PER-PLAYER TRENDS -->
-  <h2 id="h2-trends">Per-player SR — last 7 days</h2>
+  <h2 id="h2-trends">Per-player completions — last 7 days</h2>
   <section class="player-trends" id="player-trends"></section>
 
   <footer>refreshes every 5 minutes · fruma sr leaderboard</footer>
+</div>
+
+<!-- chart modal -->
+<div class="modal hidden" id="chart-modal" onclick="if(event.target.id==='chart-modal') closeChartModal()">
+  <div class="modal-content">
+    <div class="modal-head">
+      <div class="modal-title" id="modal-title">Chart</div>
+      <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+    </div>
+    <div class="modal-canvas-wrap"><canvas id="modal-chart"></canvas></div>
+  </div>
 </div>
 
 <script>
@@ -647,14 +700,17 @@ function renderTop8Spotlight(cur, snaps) {
       const r7  = computeRace(snaps, p.uuid, next.uuid, 7);
       const r24 = computeRace(snaps, p.uuid, next.uuid, 1);
       const best = r7 || r24;
-      const trendCls = best && best.trendDelta !== 0
-        ? (((gap >= 0 && best.trendDelta > 0) || (gap < 0 && best.trendDelta < 0)) ? "up" : "down")
-        : "";
       const eta = best?.etaText ?? "—";
-      const trendText = best ? `${fmtSigned(best.trendDelta)} ${best === r7 ? "7d" : "24h"}` : "—";
+      const pillFor = (r, label) => {
+        if (!r) return `<span class="pill">— ${label}</span>`;
+        const cls = r.trendDelta === 0 ? "" :
+                    ((gap >= 0 && r.trendDelta > 0) || (gap < 0 && r.trendDelta < 0)) ? "up" : "down";
+        return `<span class="pill ${cls}">${fmtSigned(r.trendDelta)} ${label}</span>`;
+      };
       listHtml += `<div class="t6-gap">
         <span class="gap-val">+${fmt(Math.abs(gap))}</span>
-        <span class="pill ${trendCls}">${trendText}</span>
+        ${pillFor(r24, "24h")}
+        ${pillFor(r7,  "7d")}
         <span class="pill">ETA ${eta}</span>
       </div>`;
     }
@@ -719,6 +775,7 @@ function renderLeaderboard(cur, snaps) {
       <td class="num">${gapToNext == null ? "—" : "+" + fmt(gapToNext)}</td>
       <td class="num">${fmt(p.completions)}</td>
       <td class="num">${fmt(p.gambits)}</td>
+      <td class="num">${p.completions ? (p.gambits / p.completions / 4).toFixed(2) : "—"}</td>
     </tr>`;
   }).join("");
 }
@@ -726,15 +783,17 @@ function renderLeaderboard(cur, snaps) {
 // ─── Per-player trends ────────────────────────────────
 function renderPlayerTrends(cur, snaps) {
   const wrap = document.getElementById("player-trends");
-  document.getElementById("h2-trends").textContent = `Per-player SR — last ${rangeLabel()}`;
+  document.getElementById("h2-trends").textContent = `Per-player completions — last ${rangeLabel()}`;
   const c = colors();
   const pts = downsample(recentSnaps(snaps, rangeDays), 100);
+  const cols = top8Colors();
 
   wrap.innerHTML = cur.players.slice(0, 9).map((p, i) => {
     const id = `pt-${i}`;
-    return `<div class="pt-card">
+    const avgG = p.completions ? (p.gambits / p.completions / 4) : 0;
+    return `<div class="pt-card" data-chart="${id}" data-title="#${p.rank} ${(p.name ?? "hidden").replace(/"/g,'')} — completions">
       <div class="pt-title">#${p.rank} ${nameOrHidden(p)}</div>
-      <div class="pt-sub">${fmt(p.sr)} SR · ${fmt(p.completions)} compl.</div>
+      <div class="pt-sub">${fmt(p.completions)} compl. · avg G ${avgG.toFixed(2)}</div>
       <div class="pt-canvas" id="${id}-wrap"><canvas id="${id}"></canvas></div>
     </div>`;
   }).join("");
@@ -750,14 +809,15 @@ function renderPlayerTrends(cur, snaps) {
     }
     wrapEl.classList.remove("empty");
     const ctx = document.getElementById(id).getContext("2d");
+    const color = cols[i] || c.ink;
     charts[id] = new Chart(ctx, {
       type: "line",
       data: {
         labels: pts.map(s => timeLabel(s.ts)),
         datasets: [{
           label: p.name ?? `#${p.rank}`,
-          data: pts.map(s => findPlayerByUuid(s, p.uuid)?.sr ?? null),
-          borderColor: p.rank === 1 ? c.leader : (p.rank === 2 ? c.runner : c.ink),
+          data: pts.map(s => findPlayerByUuid(s, p.uuid)?.completions ?? null),
+          borderColor: color,
           backgroundColor: "transparent",
           borderWidth: 1.6, pointRadius: 0, tension: .25, spanGaps: true,
         }],
@@ -796,6 +856,57 @@ async function load() {
 }
 load();
 setInterval(load, 60_000);
+
+// ─── Chart modal ───────────────────────────────────────
+function openChartModal(srcKey, title) {
+  const src = charts[srcKey];
+  if (!src) return;
+  destroyChart("modal");
+  document.getElementById("modal-title").textContent = title;
+  document.getElementById("chart-modal").classList.remove("hidden");
+
+  const c = colors();
+  const ctx = document.getElementById("modal-chart").getContext("2d");
+  // deep-ish clone data (preserve dataset colors etc)
+  const data = {
+    labels: src.data.labels.slice(),
+    datasets: src.data.datasets.map(d => ({ ...d, data: d.data.slice() })),
+  };
+  charts.modal = new Chart(ctx, {
+    type: src.config.type,
+    data,
+    options: { ...baseOpts(c),
+               plugins: { ...baseOpts(c).plugins,
+                          legend: { display: data.datasets.length > 1, position: "bottom",
+                                    labels: { color: c.muted, font: { family: "Inter", size: 11 }, boxWidth: 12, boxHeight: 12 } } } },
+  });
+}
+function closeChartModal() {
+  document.getElementById("chart-modal").classList.add("hidden");
+  destroyChart("modal");
+}
+document.getElementById("modal-close").addEventListener("click", closeChartModal);
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeChartModal(); });
+
+// click handlers — delegate by container
+document.addEventListener("click", e => {
+  const card = e.target.closest("[data-chart]");
+  if (!card) return;
+  const key = card.dataset.chart;
+  const title = card.dataset.title || "Chart";
+  openChartModal(key, title);
+});
+
+// mark expandable charts: assign data-chart to wrapping containers after first render
+function markExpandable() {
+  // top 8 spotlight chart
+  const sp = document.querySelector('#spot8 .spot-chart');
+  if (sp) { sp.setAttribute("data-chart", "top8"); sp.setAttribute("data-title", "Top 8 — SR over time"); sp.classList.add("chartable"); }
+  // per-player trend cards already have data-chart in renderPlayerTrends
+  document.querySelectorAll(".pt-card").forEach(card => card.classList.add("chartable"));
+}
+const _origRender = render;
+render = function(data) { _origRender(data); markExpandable(); };
 </script>
 </body>
 </html>
