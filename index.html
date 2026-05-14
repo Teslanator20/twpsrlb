@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Fruma SR Players — Race</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --paper:        #f4efe1;
+    --paper-shade:  #ece6d2;
+    --card:         #fffaec;
+    --ink:          #1c1814;
+    --ink-soft:     #3d3a33;
+    --muted:        #8d8472;
+    --rule:         #d6cdb5;
+    --rule-strong:  #1c1814;
+    --leader:       #b8892c;
+    --runner:       #3a8b3a;
+    --highlight:    #b94a4a;
+    --up:           #3a8b3a;
+    --down:         #b94a4a;
+    --pulse:        #5a8a4a;
+    --grid:         rgba(28,24,20,0.08);
+    --grid-mute:    rgba(28,24,20,0.05);
+    --vignette:     rgba(0,0,0,0.035);
+  }
+  html[data-theme="dark"] {
+    --paper:        #16140f;
+    --paper-shade:  #1f1c15;
+    --card:         #1d1a14;
+    --ink:          #ece6d2;
+    --ink-soft:     #c8c1ac;
+    --muted:        #8a8270;
+    --rule:         #3a342a;
+    --rule-strong:  #ece6d2;
+    --leader:       #d4a04a;
+    --runner:       #5fbf5f;
+    --highlight:    #e07878;
+    --up:           #5fbf5f;
+    --down:         #e07878;
+    --pulse:        #7eb56a;
+    --grid:         rgba(236,230,210,0.08);
+    --grid-mute:    rgba(236,230,210,0.04);
+    --vignette:     rgba(255,245,220,0.04);
+  }
+
+  * { box-sizing: border-box; }
+  html { background: var(--paper); transition: background-color .3s; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-feature-settings: 'tnum' 1, 'cv11' 1;
+    -webkit-font-smoothing: antialiased;
+    background-image: radial-gradient(ellipse at 50% -10%, var(--vignette), transparent 55%);
+    transition: background-color .3s, color .3s;
+  }
+  ::selection { background: var(--ink); color: var(--paper); }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 56px 36px 80px; position: relative; }
+
+  .theme-toggle {
+    position: absolute; top: 32px; right: 36px;
+    background: transparent; border: 1px solid var(--rule);
+    border-radius: 999px; padding: 7px 14px 7px 12px;
+    font: 500 11px/1 'Inter'; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--muted); cursor: pointer;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: color .2s, border-color .2s;
+  }
+  .theme-toggle:hover { color: var(--ink); border-color: var(--ink); }
+  .theme-toggle .glyph {
+    width: 11px; height: 11px; border-radius: 50%;
+    background: var(--ink); box-shadow: inset -3px -3px 0 0 var(--paper);
+    transition: background .2s, box-shadow .2s;
+  }
+  html[data-theme="dark"] .theme-toggle .glyph {
+    background: var(--paper); box-shadow: inset -3px -3px 0 0 var(--paper-shade);
+  }
+
+  .masthead { margin-bottom: 26px; }
+  .eyebrow {
+    font: 600 11px/1 'Inter'; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--muted); margin: 0 0 11px;
+  }
+  h1 {
+    margin: 0; font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(34px, 5.5vw, 52px); line-height: 1.02;
+    letter-spacing: -.015em;
+    font-variation-settings: 'opsz' 96, 'wght' 500;
+  }
+  h1 em { font-style: italic; font-variation-settings: 'opsz' 96, 'wght' 420; }
+
+  .meta {
+    margin-top: 14px; padding: 11px 0;
+    border-top: 1px solid var(--rule-strong);
+    border-bottom: 1px solid var(--rule);
+    display: flex; flex-wrap: wrap; gap: 14px 26px;
+    font: 500 11px/1 'Inter';
+    letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+  }
+  .meta strong { color: var(--ink); font-weight: 600; letter-spacing: .04em; }
+  .meta .pulse {
+    display: inline-block; width: 6px; height: 6px;
+    background: var(--pulse); border-radius: 50%;
+    margin-right: 7px; transform: translateY(-1px);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+
+  h2 {
+    margin: 48px 0 16px;
+    font: 600 11.5px/1 'Inter'; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--muted);
+    padding-bottom: 8px; border-bottom: 1px solid var(--rule);
+  }
+
+  /* floating range bar */
+  .range-floating {
+    position: fixed; bottom: 20px; right: 20px; z-index: 50;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 5px 6px 5px 14px;
+    background: var(--card); border: 1px solid var(--rule);
+    border-radius: 999px;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.14), 0 2px 6px rgba(0,0,0,0.06);
+  }
+  html[data-theme="dark"] .range-floating {
+    box-shadow: 0 6px 22px rgba(0,0,0,0.55), 0 2px 6px rgba(0,0,0,0.4);
+  }
+  .range-floating .lbl-mini {
+    font: 600 10px/1 'Inter'; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .range-floating button {
+    background: transparent; border: 0;
+    padding: 6px 13px; border-radius: 999px;
+    font: 600 10.5px/1 'Inter';
+    letter-spacing: .14em; text-transform: uppercase;
+    color: var(--muted); cursor: pointer;
+    transition: background .15s, color .15s;
+  }
+  .range-floating button:hover { color: var(--ink); }
+  .range-floating button.active { background: var(--paper-shade); color: var(--ink); }
+  @media (max-width: 720px) {
+    .range-floating { bottom: 14px; right: 14px; padding: 4px 4px 4px 11px; }
+    .range-floating .lbl-mini { display: none; }
+  }
+
+  /* ─── top 6 spotlight ─────────────────────────────────── */
+  .top6-grid {
+    display: grid; grid-template-columns: 1fr 1.4fr; gap: 28px;
+    align-items: stretch;
+  }
+  .top6-list { display: flex; flex-direction: column; gap: 4px; }
+  .t6-row {
+    display: grid; grid-template-columns: 56px 1fr auto;
+    align-items: baseline; gap: 14px;
+    padding: 10px 14px; border-radius: 10px;
+    background: var(--paper-shade);
+  }
+  .t6-row .t6-rank {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variation-settings: 'opsz' 96, 'wght' 580;
+    font-size: 22px; line-height: 1;
+  }
+  .t6-row .t6-name {
+    font-family: 'Fraunces', Georgia, serif; font-size: 17px;
+    font-variation-settings: 'opsz' 24, 'wght' 520;
+  }
+  .t6-row .t6-sr {
+    font-weight: 600; font-size: 16px;
+    font-variant-numeric: tabular-nums lining-nums; color: var(--ink);
+  }
+  .t6-gap {
+    display: flex; align-items: center; gap: 8px;
+    padding: 4px 14px 4px 56px;
+    font-size: 11px; font-weight: 500; color: var(--muted);
+    letter-spacing: .02em;
+  }
+  .t6-gap .gap-val {
+    font-variant-numeric: tabular-nums lining-nums;
+    font-weight: 600; color: var(--ink-soft);
+  }
+  .t6-gap .pill {
+    padding: 1px 8px; border-radius: 999px;
+    background: var(--card); border: 1px solid var(--rule);
+    font-weight: 500;
+  }
+  .t6-gap .pill.up   { color: var(--up); }
+  .t6-gap .pill.down { color: var(--down); }
+
+  /* ─── spotlight (legacy used by #1 vs #2; kept for fallbacks) ─── */
+  .spot {
+    margin-top: 30px; padding: 28px 32px;
+    background: var(--card); border: 1px solid var(--rule);
+    border-radius: 14px;
+  }
+  .spot-head {
+    display: flex; align-items: baseline; gap: 14px;
+    padding-bottom: 16px; margin-bottom: 18px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .spot-title {
+    font-family: 'Fraunces', Georgia, serif; font-size: 24px;
+    font-variation-settings: 'opsz' 96, 'wght' 540; color: var(--ink);
+  }
+  .spot-sub {
+    font: 500 11px/1 'Inter'; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--muted); margin-left: auto;
+  }
+  .spot-grid {
+    display: grid; grid-template-columns: 1fr 1.3fr; gap: 28px;
+    align-items: stretch;
+  }
+  .spot-side { display: flex; flex-direction: column; gap: 12px; }
+  .spot-row {
+    display: grid; grid-template-columns: 1fr auto auto;
+    align-items: baseline; gap: 12px;
+    padding: 8px 0; border-bottom: 1px dotted var(--rule);
+  }
+  .spot-row:last-child { border-bottom: 0; }
+  .spot-row .pname {
+    font-family: 'Fraunces', Georgia, serif; font-size: 19px;
+    font-variation-settings: 'opsz' 24, 'wght' 540;
+  }
+  .spot-row.leader .pname { color: var(--leader); }
+  .spot-row.runner .pname { color: var(--runner); }
+  .spot-row .val {
+    font-size: 22px; font-weight: 600;
+    font-variant-numeric: tabular-nums lining-nums;
+    color: var(--ink); letter-spacing: -.01em;
+  }
+  .spot-row .rk { font-size: 11px; color: var(--muted); font-weight: 500; }
+  .spot-gap-block {
+    margin-top: 6px; padding: 14px 16px;
+    background: var(--paper-shade); border-radius: 10px;
+  }
+  .spot-gap-label {
+    font: 600 10.5px/1 'Inter'; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 8px;
+  }
+  .spot-gap-val {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variation-settings: 'opsz' 96, 'wght' 500;
+    font-size: 30px; line-height: 1;
+    font-variant-numeric: tabular-nums lining-nums; color: var(--ink);
+  }
+  .spot-gap-meta {
+    margin-top: 8px; font-size: 12px; color: var(--muted);
+    display: flex; flex-wrap: wrap; gap: 12px;
+  }
+  .spot-gap-meta .pill {
+    padding: 2px 8px; border-radius: 999px;
+    background: var(--card); border: 1px solid var(--rule);
+    font-weight: 500;
+  }
+  .spot-gap-meta .pill.up   { color: var(--up); }
+  .spot-gap-meta .pill.down { color: var(--down); }
+  .spot-chart { height: 220px; position: relative; }
+  .spot-bottom {
+    margin-top: 18px; padding-top: 18px;
+    border-top: 1px solid var(--rule);
+    display: grid; grid-template-columns: 2fr 1fr; gap: 24px;
+  }
+  .spot-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums lining-nums; }
+  .spot-table th {
+    text-align: left; font: 600 10.5px/1 'Inter';
+    letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); padding: 6px 8px 8px 0;
+  }
+  .spot-table th.num { text-align: right; padding-right: 8px; padding-left: 4px; }
+  .spot-table td {
+    padding: 8px 8px 8px 0; font-size: 13.5px;
+    border-bottom: 1px dotted var(--rule);
+  }
+  .spot-table td.num { text-align: right; padding-right: 8px; padding-left: 4px; font-weight: 600; }
+  .spot-table tr:last-child td { border-bottom: 0; }
+  .spot-table td.leader { color: var(--leader); font-weight: 600; }
+  .spot-table td.runner { color: var(--runner); font-weight: 600; }
+  .spot-gambits { display: flex; flex-direction: column; gap: 6px; }
+  .spot-gambits .lbl {
+    font: 600 10.5px/1 'Inter'; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 4px;
+  }
+  .spot-gambits .gline {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 14px; padding: 5px 0; border-bottom: 1px dotted var(--rule);
+  }
+  .spot-gambits .gline:last-child { border-bottom: 0; }
+  .spot-gambits .gline .who.leader { color: var(--leader); font-weight: 600; }
+  .spot-gambits .gline .who.runner { color: var(--runner); font-weight: 600; }
+  .spot-gambits .gline .gv { font-weight: 600; }
+
+  @media (max-width: 820px) {
+    .spot-grid   { grid-template-columns: 1fr; }
+    .spot-chart  { height: 180px; }
+    .spot-bottom { grid-template-columns: 1fr; gap: 18px; }
+  }
+
+  /* ─── leaderboard table ─────────────────────────────────── */
+  .lbtable-wrap {
+    background: var(--card); border: 1px solid var(--rule);
+    border-radius: 12px; padding: 12px 22px;
+  }
+  .lbtable {
+    width: 100%; border-collapse: collapse;
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+  .lbtable th {
+    text-align: left; font: 600 10.5px/1 'Inter';
+    letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+    padding: 10px 10px 10px 0; border-bottom: 1px solid var(--rule);
+  }
+  .lbtable th.num { text-align: right; padding-right: 10px; padding-left: 6px; }
+  .lbtable td {
+    padding: 11px 10px 11px 0; font-size: 14px; color: var(--ink);
+    border-bottom: 1px dotted var(--rule);
+  }
+  .lbtable td.num { text-align: right; padding-right: 10px; padding-left: 6px; }
+  .lbtable tr:last-child td { border-bottom: 0; }
+  .lbtable .rank { width: 56px; color: var(--muted); font-weight: 600; }
+  .lbtable .rank.r1 { color: var(--leader); font-weight: 700; }
+  .lbtable .rank.r2 { color: var(--runner); font-weight: 700; }
+  .lbtable .rank.r3 { color: var(--ink-soft); font-weight: 700; }
+  .lbtable .pname {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variation-settings: 'opsz' 24, 'wght' 520;
+    font-size: 16px;
+  }
+  .lbtable tr.highlight td { background: var(--paper-shade); }
+  .lbtable tr.highlight .pname { color: var(--highlight); }
+  .lbtable .restricted {
+    font-style: italic; color: var(--muted); font-weight: 400;
+  }
+  .lbtable .delta {
+    font-size: 11.5px; font-weight: 500; color: var(--muted);
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+  .lbtable .delta.up { color: var(--up); }
+  .lbtable .delta.down { color: var(--down); }
+  .lbtable .gap-meta { color: var(--muted); font-size: 11.5px; font-weight: 500; margin-left: 4px; }
+
+  /* ─── per-player trends grid ──────────────────────────── */
+  .player-trends { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .pt-card {
+    background: var(--card); border: 1px solid var(--rule);
+    border-radius: 10px; padding: 14px;
+  }
+  .pt-title {
+    font: 600 10.5px/1 'Inter'; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 6px;
+  }
+  .pt-sub { font-size: 11px; color: var(--muted); margin-bottom: 8px; }
+  .pt-canvas { position: relative; height: 110px; }
+  .pt-canvas.empty::after {
+    content: attr(data-empty); position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted); font-style: italic; font-size: 11px;
+    text-align: center; padding: 0 12px;
+  }
+  .pt-canvas.empty canvas { opacity: 0; }
+  @media (max-width: 900px) { .player-trends { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .player-trends { grid-template-columns: 1fr; } }
+
+  /* skeleton */
+  .skeleton { color: var(--muted); font-style: italic; padding: 28px; text-align: center; }
+
+  footer {
+    margin-top: 64px; padding-top: 16px;
+    border-top: 1px solid var(--rule-strong);
+    font: 500 10.5px/1 'Inter'; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--muted);
+  }
+
+  @media (max-width: 720px) {
+    .wrap { padding: 32px 18px 56px; }
+    .theme-toggle { top: 20px; right: 18px; }
+    .lbtable th, .lbtable td { font-size: 12.5px; padding: 8px 4px; }
+    .lbtable .pname { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+    <span class="glyph"></span><span id="theme-label">Dark</span>
+  </button>
+
+  <header class="masthead">
+    <div class="eyebrow">Wynncraft &nbsp;·&nbsp; Fruma SR Players</div>
+    <h1>The Fruma <em>Race</em></h1>
+    <div class="meta">
+      <span><span class="pulse"></span>Live</span>
+      <span>Top <strong id="count">—</strong> tracked</span>
+      <span>Updated <strong id="updated">…</strong></span>
+      <span>Refreshes every 5 minutes</span>
+    </div>
+  </header>
+
+  <!-- floating range -->
+  <div class="range-floating" id="range-bar">
+    <span class="lbl-mini">View</span>
+    <button data-range="1">24h</button>
+    <button data-range="7" class="active">7d</button>
+    <button data-range="14">14d</button>
+  </div>
+
+  <!-- TOP 8 SPOTLIGHT -->
+  <h2>Top 8 Race</h2>
+  <section class="spot" id="spot8"><div class="skeleton">loading…</div></section>
+
+  <!-- LEADERBOARD -->
+  <h2>Full Leaderboard</h2>
+  <div class="lbtable-wrap">
+    <table class="lbtable">
+      <thead>
+        <tr>
+          <th class="rank">#</th>
+          <th>Player</th>
+          <th class="num">SR</th>
+          <th class="num">Δ 24h</th>
+          <th class="num">Δ 7d</th>
+          <th class="num">Gap to leader</th>
+          <th class="num">Gap to next</th>
+          <th class="num">Completions</th>
+          <th class="num">Gambits</th>
+        </tr>
+      </thead>
+      <tbody id="lb-body"><tr><td colspan="9" class="skeleton">loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <!-- PER-PLAYER TRENDS -->
+  <h2 id="h2-trends">Per-player SR — last 7 days</h2>
+  <section class="player-trends" id="player-trends"></section>
+
+  <footer>refreshes every 5 minutes · fruma sr leaderboard</footer>
+</div>
+
+<script>
+// ─── Theme ─────────────────────────────────────────────
+(function () {
+  const stored = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+})();
+function syncTheme() {
+  const cur = document.documentElement.getAttribute("data-theme");
+  document.getElementById("theme-label").textContent = cur === "dark" ? "Light" : "Dark";
+}
+syncTheme();
+document.getElementById("theme-toggle").addEventListener("click", () => {
+  const cur = document.documentElement.getAttribute("data-theme");
+  const next = cur === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  localStorage.setItem("theme", next);
+  syncTheme();
+  if (lastData) render(lastData);
+});
+
+// ─── Helpers ───────────────────────────────────────────
+const fmt = n => (n ?? 0).toLocaleString("en-US");
+const fmtSigned = n => (n >= 0 ? "+" : "−") + fmt(Math.abs(n));
+function timeAgo(iso) {
+  if (!iso) return "—";
+  const d = (Date.now() - new Date(iso).getTime()) / 1000;
+  if (d < 60) return `${Math.floor(d)} sec ago`;
+  if (d < 3600) return `${Math.floor(d/60)} min ago`;
+  if (d < 86400) return `${Math.floor(d/3600)} h ago`;
+  return `${Math.floor(d/86400)} d ago`;
+}
+function cssVar(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+function recentSnaps(snaps, days) {
+  const cutoff = Date.now() - days * 86400_000;
+  const r = snaps.filter(s => new Date(s.ts).getTime() > cutoff);
+  return r.length > 1 ? r : snaps;
+}
+function snapshotsBefore(snaps, msAgo) {
+  const target = Date.now() - msAgo;
+  let best = null;
+  for (const s of snaps) {
+    const t = new Date(s.ts).getTime();
+    if (t <= target && (!best || t > new Date(best.ts).getTime())) best = s;
+  }
+  return best;
+}
+function findPlayerByUuid(snap, uuid) {
+  return (snap.players || []).find(p => p.uuid === uuid) || null;
+}
+function downsample(arr, max) {
+  if (arr.length <= max) return arr;
+  const step = arr.length / max;
+  const out = [];
+  for (let i = 0; i < max; i++) out.push(arr[Math.floor(i * step)]);
+  if (out[out.length-1] !== arr[arr.length-1]) out.push(arr[arr.length-1]);
+  return out;
+}
+function timeLabel(iso) {
+  return new Date(iso).toLocaleString("en-US", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false });
+}
+function nameOrHidden(p) { return p.restricted ? `<span class="restricted">hidden</span>` : (p.name ?? "—"); }
+
+// ─── State ─────────────────────────────────────────────
+const charts = {};
+let lastData = null;
+let highlightNames = new Set();
+let rangeDays = Number(localStorage.getItem("rangeDays") || 7);
+
+(function () {
+  document.querySelectorAll("#range-bar button").forEach(b => {
+    if (Number(b.dataset.range) === rangeDays) b.classList.add("active");
+    else b.classList.remove("active");
+    b.addEventListener("click", () => {
+      rangeDays = Number(b.dataset.range);
+      localStorage.setItem("rangeDays", String(rangeDays));
+      document.querySelectorAll("#range-bar button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      if (lastData) render(lastData);
+    });
+  });
+})();
+function rangeLabel() { return rangeDays === 1 ? "24 h" : `${rangeDays} d`; }
+
+// ─── Delta helpers ─────────────────────────────────────
+function srDelta(snaps, uuid, msAgo) {
+  if (!snaps.length) return null;
+  const cur = snaps[snaps.length - 1];
+  const past = snapshotsBefore(snaps, msAgo);
+  if (!past) return null;
+  const a = findPlayerByUuid(cur, uuid)?.sr;
+  const b = findPlayerByUuid(past, uuid)?.sr;
+  if (a == null || b == null) return null;
+  return a - b;
+}
+
+// ─── Regression for ETA ────────────────────────────────
+function linearRegression(pts) {
+  const n = pts.length;
+  if (n < 2) return null;
+  let sx=0,sy=0,sxy=0,sxx=0;
+  for (const p of pts) { sx+=p.x; sy+=p.y; sxy+=p.x*p.y; sxx+=p.x*p.x; }
+  const mx = sx/n, my = sy/n;
+  const den = sxx - n*mx*mx;
+  if (den === 0) return null;
+  const slope = (sxy - n*mx*my) / den;
+  return { slope, n };
+}
+function computeRace(snaps, uuidL, uuidR, days) {
+  if (snaps.length < 2) return null;
+  const cutoff = Date.now() - days*86400_000;
+  const win = snaps.filter(s => new Date(s.ts).getTime() >= cutoff);
+  if (win.length < 2) return null;
+  const pts = win.map(s => ({
+    x: new Date(s.ts).getTime(),
+    y: (findPlayerByUuid(s, uuidL)?.sr ?? 0) - (findPlayerByUuid(s, uuidR)?.sr ?? 0),
+  }));
+  const reg = linearRegression(pts);
+  if (!reg) return null;
+  const dayRate = reg.slope * 86400_000;
+  const cur = snaps[snaps.length - 1];
+  const gap_now = (findPlayerByUuid(cur, uuidL)?.sr ?? 0) - (findPlayerByUuid(cur, uuidR)?.sr ?? 0);
+  const trendDelta = pts[pts.length - 1].y - pts[0].y;
+  const shrinking = (gap_now > 0 && dayRate < 0) || (gap_now < 0 && dayRate > 0);
+  let etaText = "—", etaSub = "need more data";
+  if (shrinking) {
+    const d = Math.abs(gap_now) / Math.abs(dayRate);
+    etaText = d < 1 ? `~ ${(d*24).toFixed(1)} h` : `~ ${d.toFixed(1)} d`;
+    etaSub = `closing — ${reg.n} pts over ${days}d`;
+  } else if (Math.abs(dayRate) < 1) {
+    etaText = "stable"; etaSub = `flat — ${reg.n} pts over ${days}d`;
+  } else {
+    etaText = "pulling away"; etaSub = `widening — ${reg.n} pts over ${days}d`;
+  }
+  return { dayRate, etaText, etaSub, trendDelta, n: reg.n };
+}
+
+// ─── Chart base ────────────────────────────────────────
+function colors() {
+  return {
+    leader: cssVar("--leader"), runner: cssVar("--runner"),
+    ink: cssVar("--ink"), muted: cssVar("--muted"),
+    grid: cssVar("--grid"), gridMute: cssVar("--grid-mute"),
+    up: cssVar("--up"), down: cssVar("--down"),
+    paper: cssVar("--paper"),
+  };
+}
+function baseOpts(c) {
+  return {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: "index", intersect: false },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: c.ink, titleColor: c.paper, bodyColor: c.paper,
+        borderWidth: 0, padding: 10, boxPadding: 4,
+        titleFont: { family: "Inter", size: 11, weight: 600 },
+        bodyFont:  { family: "Inter", size: 12 },
+        callbacks: { label: ctx => `${ctx.dataset.label}: ${(ctx.parsed.y ?? ctx.parsed).toLocaleString("en-US")}` },
+      },
+    },
+    scales: {
+      x: { ticks: { color: c.muted, font: { family: "Inter", size: 10 }, maxRotation: 0, autoSkip: true, maxTicksLimit: 8, padding: 6 },
+           grid: { color: c.gridMute, drawTicks: false }, border: { color: c.gridMute } },
+      y: { grace: '8%',
+           ticks: { color: c.muted, font: { family: "Inter", size: 10 }, callback: v => Number(v).toLocaleString("en-US"), padding: 6 },
+           grid: { color: c.grid, drawTicks: false }, border: { color: c.gridMute } },
+    },
+  };
+}
+function destroyChart(key) { if (charts[key]) { charts[key].destroy(); delete charts[key]; } }
+
+// ─── Top 8 Spotlight ───────────────────────────────────
+const TOP8_COLORS_LIGHT = ["#b8892c", "#3a8b3a", "#8a5530", "#4a8a8a", "#6e5d8a", "#7d6f5a", "#a55d4a", "#5a7a4a"];
+const TOP8_COLORS_DARK  = ["#d4a04a", "#5fbf5f", "#c2864e", "#6fb5b5", "#9f8cbf", "#b09f80", "#d68874", "#88b870"];
+
+function top8Colors() {
+  return document.documentElement.getAttribute("data-theme") === "dark"
+    ? TOP8_COLORS_DARK : TOP8_COLORS_LIGHT;
+}
+
+function renderTop8Spotlight(cur, snaps) {
+  const el = document.getElementById("spot8");
+  const top8 = (cur.players || []).slice(0, 8);
+  if (top8.length < 2) {
+    el.innerHTML = `<div class="skeleton">Need at least 2 ranked players.</div>`;
+    return;
+  }
+  const cols = top8Colors();
+
+  let listHtml = "";
+  top8.forEach((p, i) => {
+    const col = cols[i] || cssVar("--muted");
+    listHtml += `<div class="t6-row">
+      <span class="t6-rank" style="color:${col}">#${p.rank}</span>
+      <span class="t6-name" style="color:${col}">${nameOrHidden(p)}</span>
+      <span class="t6-sr">${fmt(p.sr)}</span>
+    </div>`;
+    const next = top8[i + 1];
+    if (next) {
+      const gap = (p.sr ?? 0) - (next.sr ?? 0);
+      const r7  = computeRace(snaps, p.uuid, next.uuid, 7);
+      const r24 = computeRace(snaps, p.uuid, next.uuid, 1);
+      const best = r7 || r24;
+      const trendCls = best && best.trendDelta !== 0
+        ? (((gap >= 0 && best.trendDelta > 0) || (gap < 0 && best.trendDelta < 0)) ? "up" : "down")
+        : "";
+      const eta = best?.etaText ?? "—";
+      const trendText = best ? `${fmtSigned(best.trendDelta)} ${best === r7 ? "7d" : "24h"}` : "—";
+      listHtml += `<div class="t6-gap">
+        <span class="gap-val">+${fmt(Math.abs(gap))}</span>
+        <span class="pill ${trendCls}">${trendText}</span>
+        <span class="pill">ETA ${eta}</span>
+      </div>`;
+    }
+  });
+
+  el.innerHTML = `
+    <div class="spot-head">
+      <span class="spot-title">Top 8 Race</span>
+      <span class="spot-sub">${nameOrHidden(top8[0])} leads</span>
+    </div>
+    <div class="top6-grid">
+      <div class="top6-list">${listHtml}</div>
+      <div class="spot-chart"><canvas id="top8-chart"></canvas></div>
+    </div>
+  `;
+
+  // chart: 8 lines
+  destroyChart("top8");
+  if (snaps.length < 2) return;
+  const c = colors();
+  const pts = downsample(recentSnaps(snaps, rangeDays), 180);
+  const datasets = top8.map((p, i) => ({
+    label: p.name ?? `#${p.rank}`,
+    data: pts.map(s => findPlayerByUuid(s, p.uuid)?.sr ?? null),
+    borderColor: cols[i] || c.ink,
+    backgroundColor: "transparent",
+    borderWidth: 1.8, pointRadius: 0, tension: .25, spanGaps: true,
+  }));
+  const ctx = document.getElementById("top8-chart").getContext("2d");
+  charts.top8 = new Chart(ctx, {
+    type: "line",
+    data: { labels: pts.map(s => timeLabel(s.ts)), datasets },
+    options: { ...baseOpts(c),
+               plugins: { ...baseOpts(c).plugins,
+                          legend: { display: true, position: "bottom",
+                                    labels: { color: c.muted, font: { family: "Inter", size: 10 }, boxWidth: 10, boxHeight: 10 } } } },
+  });
+}
+
+// ─── Leaderboard table ─────────────────────────────────
+function renderLeaderboard(cur, snaps) {
+  const tbody = document.getElementById("lb-body");
+  const top = cur.players?.[0];
+  const topSr = top?.sr ?? 0;
+
+  tbody.innerHTML = cur.players.map((p, idx) => {
+    const next = cur.players[idx + 1];
+    const d24 = srDelta(snaps, p.uuid, 86400_000);
+    const d7  = srDelta(snaps, p.uuid, 7*86400_000);
+    const gapToLeader = idx === 0 ? 0 : topSr - p.sr;
+    const gapToNext   = next ? p.sr - next.sr : null;
+    const rankCls = p.rank === 1 ? "r1" : p.rank === 2 ? "r2" : p.rank === 3 ? "r3" : "";
+    const highlight = (!p.restricted && highlightNames.has((p.name || "").toLowerCase()))
+      ? "highlight" : "";
+    return `<tr class="${highlight}">
+      <td class="rank ${rankCls}">${p.rank}</td>
+      <td><span class="pname">${nameOrHidden(p)}</span></td>
+      <td class="num">${fmt(p.sr)}</td>
+      <td class="num delta ${d24 == null ? "" : (d24 > 0 ? "up" : d24 < 0 ? "down" : "")}">${d24 == null ? "—" : fmtSigned(d24)}</td>
+      <td class="num delta ${d7  == null ? "" : (d7  > 0 ? "up" : d7  < 0 ? "down" : "")}">${d7  == null ? "—" : fmtSigned(d7)}</td>
+      <td class="num">${idx === 0 ? "—" : "−" + fmt(gapToLeader)}</td>
+      <td class="num">${gapToNext == null ? "—" : "+" + fmt(gapToNext)}</td>
+      <td class="num">${fmt(p.completions)}</td>
+      <td class="num">${fmt(p.gambits)}</td>
+    </tr>`;
+  }).join("");
+}
+
+// ─── Per-player trends ────────────────────────────────
+function renderPlayerTrends(cur, snaps) {
+  const wrap = document.getElementById("player-trends");
+  document.getElementById("h2-trends").textContent = `Per-player SR — last ${rangeLabel()}`;
+  const c = colors();
+  const pts = downsample(recentSnaps(snaps, rangeDays), 100);
+
+  wrap.innerHTML = cur.players.slice(0, 9).map((p, i) => {
+    const id = `pt-${i}`;
+    return `<div class="pt-card">
+      <div class="pt-title">#${p.rank} ${nameOrHidden(p)}</div>
+      <div class="pt-sub">${fmt(p.sr)} SR · ${fmt(p.completions)} compl.</div>
+      <div class="pt-canvas" id="${id}-wrap"><canvas id="${id}"></canvas></div>
+    </div>`;
+  }).join("");
+
+  cur.players.slice(0, 9).forEach((p, i) => {
+    const id = `pt-${i}`;
+    destroyChart(id);
+    const wrapEl = document.getElementById(`${id}-wrap`);
+    if (pts.length < 2) {
+      wrapEl.classList.add("empty");
+      wrapEl.setAttribute("data-empty", "Collecting data…");
+      return;
+    }
+    wrapEl.classList.remove("empty");
+    const ctx = document.getElementById(id).getContext("2d");
+    charts[id] = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: pts.map(s => timeLabel(s.ts)),
+        datasets: [{
+          label: p.name ?? `#${p.rank}`,
+          data: pts.map(s => findPlayerByUuid(s, p.uuid)?.sr ?? null),
+          borderColor: p.rank === 1 ? c.leader : (p.rank === 2 ? c.runner : c.ink),
+          backgroundColor: "transparent",
+          borderWidth: 1.6, pointRadius: 0, tension: .25, spanGaps: true,
+        }],
+      },
+      options: { ...baseOpts(c),
+                 scales: { x: { display: false }, y: { ...baseOpts(c).scales.y, ticks: { ...baseOpts(c).scales.y.ticks, maxTicksLimit: 4 } } } },
+    });
+  });
+}
+
+// ─── Main render ──────────────────────────────────────
+function render(data) {
+  lastData = data;
+  const snaps = data.snapshots || [];
+  if (!snaps.length) return;
+  const cur = snaps[snaps.length - 1];
+
+  highlightNames = new Set((data.config?.highlight || []).map(s => s.toLowerCase()));
+  document.getElementById("count").textContent = cur.players.length;
+  document.getElementById("updated").textContent = timeAgo(data.updated || cur.ts);
+
+  renderTop8Spotlight(cur, snaps);
+  renderLeaderboard(cur, snaps);
+  renderPlayerTrends(cur, snaps);
+}
+
+async function load() {
+  try {
+    const r = await fetch("snapshots.json?_=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    render(await r.json());
+  } catch (e) {
+    document.getElementById("updated").textContent = "error";
+    console.error(e);
+  }
+}
+load();
+setInterval(load, 60_000);
+</script>
+</body>
+</html>
