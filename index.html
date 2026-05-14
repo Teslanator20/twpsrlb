@@ -548,6 +548,8 @@ function snapshotsBefore(snaps, msAgo) {
   return best;
 }
 function findPlayerByUuid(snap, uuid) {
+  // restricted players all share uuid "redacted" → can't reliably identify them across snapshots
+  if (!uuid || uuid === "redacted") return null;
   return (snap.players || []).find(p => p.uuid === uuid) || null;
 }
 function downsample(arr, max) {
@@ -624,20 +626,21 @@ function linearRegression(pts) {
   const slope = (sxy - n*mx*my) / den;
   return { slope, n };
 }
-function computeRace(snaps, uuidL, uuidR, days) {
+function computeRace(snaps, uuidL, uuidR, days, field = "sr") {
   if (snaps.length < 2) return null;
+  if (!uuidL || !uuidR || uuidL === "redacted" || uuidR === "redacted") return null;
   const cutoff = Date.now() - days*86400_000;
   const win = snaps.filter(s => new Date(s.ts).getTime() >= cutoff);
   if (win.length < 2) return null;
   const pts = win.map(s => ({
     x: new Date(s.ts).getTime(),
-    y: (findPlayerByUuid(s, uuidL)?.sr ?? 0) - (findPlayerByUuid(s, uuidR)?.sr ?? 0),
+    y: (findPlayerByUuid(s, uuidL)?.[field] ?? 0) - (findPlayerByUuid(s, uuidR)?.[field] ?? 0),
   }));
   const reg = linearRegression(pts);
   if (!reg) return null;
   const dayRate = reg.slope * 86400_000;
   const cur = snaps[snaps.length - 1];
-  const gap_now = (findPlayerByUuid(cur, uuidL)?.sr ?? 0) - (findPlayerByUuid(cur, uuidR)?.sr ?? 0);
+  const gap_now = (findPlayerByUuid(cur, uuidL)?.[field] ?? 0) - (findPlayerByUuid(cur, uuidR)?.[field] ?? 0);
   const trendDelta = pts[pts.length - 1].y - pts[0].y;
   const shrinking = (gap_now > 0 && dayRate < 0) || (gap_now < 0 && dayRate > 0);
   let etaText = "—", etaSub = "need more data";
@@ -712,13 +715,13 @@ function renderTop8Spotlight(cur, snaps) {
     listHtml += `<div class="t6-row">
       <span class="t6-rank" style="color:${col}">#${p.rank}</span>
       <span class="t6-name" style="color:${col}">${nameOrHidden(p)}</span>
-      <span class="t6-sr">${fmt(p.sr)}</span>
+      <span class="t6-sr">${fmt(p.completions)} <span style="color:var(--muted);font-size:11px;font-weight:500;letter-spacing:.02em;margin-left:4px">compl.</span></span>
     </div>`;
     const next = top8[i + 1];
     if (next) {
-      const gap = (p.sr ?? 0) - (next.sr ?? 0);
-      const r7  = computeRace(snaps, p.uuid, next.uuid, 7);
-      const r24 = computeRace(snaps, p.uuid, next.uuid, 1);
+      const gap = (p.completions ?? 0) - (next.completions ?? 0);
+      const r7  = computeRace(snaps, p.uuid, next.uuid, 7, "completions");
+      const r24 = computeRace(snaps, p.uuid, next.uuid, 1, "completions");
       const best = r7 || r24;
       const eta = best?.etaText ?? "—";
       const pillFor = (r, label) => {
@@ -739,7 +742,7 @@ function renderTop8Spotlight(cur, snaps) {
   el.innerHTML = `
     <div class="spot-head">
       <span class="spot-title">Top 8 Race</span>
-      <span class="spot-sub">${nameOrHidden(top8[0])} leads</span>
+      <span class="spot-sub">by completions · ${nameOrHidden(top8[0])} leads</span>
     </div>
     <div class="top6-grid">
       <div class="top6-list">${listHtml}</div>
@@ -747,14 +750,14 @@ function renderTop8Spotlight(cur, snaps) {
     </div>
   `;
 
-  // chart: 8 lines
+  // chart: 8 lines (completions over time)
   destroyChart("top8");
   if (snaps.length < 2) return;
   const c = colors();
   const pts = downsample(recentSnaps(snaps, rangeDays), 180);
   const datasets = top8.map((p, i) => ({
-    label: p.name ?? `#${p.rank}`,
-    data: pts.map(s => findPlayerByUuid(s, p.uuid)?.sr ?? null),
+    label: (p.alias || p.name) ?? `#${p.rank}`,
+    data: pts.map(s => findPlayerByUuid(s, p.uuid)?.completions ?? null),
     borderColor: cols[i] || c.ink,
     backgroundColor: "transparent",
     borderWidth: 1.8, pointRadius: 0, tension: .25, spanGaps: true,
@@ -922,7 +925,7 @@ document.addEventListener("click", e => {
 function markExpandable() {
   // top 8 spotlight chart
   const sp = document.querySelector('#spot8 .spot-chart');
-  if (sp) { sp.setAttribute("data-chart", "top8"); sp.setAttribute("data-title", "Top 8 — SR over time"); sp.classList.add("chartable"); }
+  if (sp) { sp.setAttribute("data-chart", "top8"); sp.setAttribute("data-title", "Top 8 — completions over time"); sp.classList.add("chartable"); }
   // per-player trend cards already have data-chart in renderPlayerTrends
   document.querySelectorAll(".pt-card").forEach(card => card.classList.add("chartable"));
 }
