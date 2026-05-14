@@ -795,7 +795,7 @@ function renderLeaderboard(cur, snaps) {
       <td class="num">${gapToNext == null ? "—" : "+" + fmt(gapToNext)}</td>
       <td class="num">${fmt(p.completions)}</td>
       <td class="num">${fmt(p.gambits)}</td>
-      <td class="num">${p.completions ? (p.gambits / p.completions / 4).toFixed(2) : "—"}</td>
+      <td class="num">${p.completions ? (p.gambits / p.completions).toFixed(2) : "—"}</td>
     </tr>`;
   }).join("");
 }
@@ -810,7 +810,7 @@ function renderPlayerTrends(cur, snaps) {
 
   wrap.innerHTML = cur.players.slice(0, 9).map((p, i) => {
     const id = `pt-${i}`;
-    const avgG = p.completions ? (p.gambits / p.completions / 4) : 0;
+    const avgG = p.completions ? (p.gambits / p.completions) : 0;
     return `<div class="pt-card" data-chart="${id}" data-title="#${p.rank} ${(p.name ?? "hidden").replace(/"/g,'')} — completions">
       <div class="pt-title">#${p.rank} ${nameOrHidden(p)}</div>
       <div class="pt-sub">${fmt(p.completions)} compl. · avg G ${avgG.toFixed(2)}</div>
