@@ -2,5 +2,6 @@
   "leaderboard": "frumaSrPlayers",
   "raidName": "Fruma",
   "resultLimit": 20,
-  "highlight": ["Teslanator"]
+  "highlight": ["Teslanator"],
+  "restrictedAliases": ["soraksgn"]
 }

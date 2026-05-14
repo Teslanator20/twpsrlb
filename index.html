@@ -337,6 +337,10 @@
   .lbtable .restricted {
     font-style: italic; color: var(--muted); font-weight: 400;
   }
+  .restricted-tag {
+    color: var(--muted); font-size: 11px; vertical-align: super;
+    margin-left: 2px; font-weight: 400;
+  }
   .lbtable .delta {
     font-size: 11.5px; font-weight: 500; color: var(--muted);
     font-variant-numeric: tabular-nums lining-nums;
@@ -557,7 +561,23 @@ function downsample(arr, max) {
 function timeLabel(iso) {
   return new Date(iso).toLocaleString("en-US", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false });
 }
-function nameOrHidden(p) { return p.restricted ? `<span class="restricted">hidden</span>` : (p.name ?? "—"); }
+function nameOrHidden(p) {
+  if (!p.restricted) return p.name ?? "—";
+  if (p.alias) return `${p.alias}<span class="restricted-tag" title="API restricted — alias from config">*</span>`;
+  return `<span class="restricted">hidden</span>`;
+}
+
+function applyAliases(players, aliases) {
+  let i = 0;
+  for (const p of players) {
+    if (p.restricted) {
+      p.alias = aliases?.[i] ?? null;
+      i++;
+    } else {
+      p.alias = null;
+    }
+  }
+}
 
 // ─── State ─────────────────────────────────────────────
 const charts = {};
@@ -763,8 +783,8 @@ function renderLeaderboard(cur, snaps) {
     const gapToLeader = idx === 0 ? 0 : topSr - p.sr;
     const gapToNext   = next ? p.sr - next.sr : null;
     const rankCls = p.rank === 1 ? "r1" : p.rank === 2 ? "r2" : p.rank === 3 ? "r3" : "";
-    const highlight = (!p.restricted && highlightNames.has((p.name || "").toLowerCase()))
-      ? "highlight" : "";
+    const displayName = (p.alias || p.name || "").toLowerCase();
+    const highlight = highlightNames.has(displayName) ? "highlight" : "";
     return `<tr class="${highlight}">
       <td class="rank ${rankCls}">${p.rank}</td>
       <td><span class="pname">${nameOrHidden(p)}</span></td>
@@ -836,6 +856,7 @@ function render(data) {
   const cur = snaps[snaps.length - 1];
 
   highlightNames = new Set((data.config?.highlight || []).map(s => s.toLowerCase()));
+  applyAliases(cur.players, data.config?.restrictedAliases || []);
   document.getElementById("count").textContent = cur.players.length;
   document.getElementById("updated").textContent = timeAgo(data.updated || cur.ts);
 
