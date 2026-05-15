@@ -635,15 +635,27 @@ let rangeDays = Number(localStorage.getItem("rangeDays") || 7);
 function rangeLabel() { return rangeDays === 1 ? "24 h" : `${rangeDays} d`; }
 
 // ─── Delta helpers ─────────────────────────────────────
+function pastOrOldest(snaps, msAgo) {
+  let past = snapshotsBefore(snaps, msAgo);
+  if (!past && snaps.length > 1) past = snaps[0];
+  return past;
+}
 function deltaForPlayer(snaps, player, field, msAgo) {
   if (!snaps.length) return null;
-  const past = snapshotsBefore(snaps, msAgo);
-  if (!past) return null;
+  const past = pastOrOldest(snaps, msAgo);
   const cur = snaps[snaps.length - 1];
+  if (!past || past === cur) return null;
   const a = findPlayerInSnap(cur, player)?.[field];
   const b = findPlayerInSnap(past, player)?.[field];
   if (a == null || b == null) return null;
   return a - b;
+}
+function elapsedDaysSince(snaps, msAgo) {
+  if (snaps.length < 2) return 0;
+  const past = pastOrOldest(snaps, msAgo);
+  const cur = snaps[snaps.length - 1];
+  if (!past || past === cur) return 0;
+  return (new Date(cur.ts) - new Date(past.ts)) / 86400_000;
 }
 
 // ─── Regression for ETA ────────────────────────────────
@@ -668,8 +680,8 @@ function timeToCatchUp(snaps, chaser, leader, days = 7) {
   const gap = l_cur - c_cur;
   if (gap <= 0) return { text: "passed", ahead: true };
 
-  const past = snapshotsBefore(snaps, days * 86400_000);
-  if (!past) return { text: "—", ahead: false, nodata: true };
+  const past = pastOrOldest(snaps, days * 86400_000);
+  if (!past || past === cur) return { text: "—", ahead: false, nodata: true };
   const c_past = findPlayerInSnap(past, chaser)?.completions;
   const l_past = findPlayerInSnap(past, leader)?.completions;
   if (c_past == null || l_past == null) return { text: "—", ahead: false, nodata: true };
@@ -776,18 +788,21 @@ function renderTop8Spotlight(cur, snaps) {
 
     const d24 = deltaForPlayer(snaps, p, "completions", 86400_000);
     const d7  = deltaForPlayer(snaps, p, "completions", 7 * 86400_000);
-    const avgPerDay = d7 != null ? d7 / 7 : null;
+    const elapsed7 = elapsedDaysSince(snaps, 7 * 86400_000);
+    const avgPerDay = d7 != null && elapsed7 > 0.01 ? d7 / Math.max(elapsed7, 0.01) : null;
+    const elapsed24 = elapsedDaysSince(snaps, 86400_000);
 
     const dCls = v => v == null ? "muted" : (v > 0 ? "up" : v < 0 ? "down" : "muted");
+    const partialNote = (h, target) => h < target ? ` (partial — ${h < 1 ? (h*24).toFixed(1)+"h" : h.toFixed(1)+"d"} elapsed)` : "";
     const d24Html = d24 == null
-      ? `<span class="pill muted" title="Completions in last 24h — not enough data yet">— 24h</span>`
-      : `<span class="pill ${dCls(d24)}" title="${meName} did ${fmt(Math.abs(d24))} completions in last 24h">${fmtSigned(d24)} 24h</span>`;
+      ? `<span class="pill muted" title="No data yet">— 24h</span>`
+      : `<span class="pill ${dCls(d24)}" title="${meName} did ${fmt(Math.abs(d24))} completions in last 24h${partialNote(elapsed24, 1)}">${fmtSigned(d24)} 24h</span>`;
     const d7Html = d7 == null
-      ? `<span class="pill muted" title="Completions in last 7d — not enough data yet">— 7d</span>`
-      : `<span class="pill ${dCls(d7)}" title="${meName} did ${fmt(Math.abs(d7))} completions in last 7d">${fmtSigned(d7)} 7d</span>`;
+      ? `<span class="pill muted" title="No data yet">— 7d</span>`
+      : `<span class="pill ${dCls(d7)}" title="${meName} did ${fmt(Math.abs(d7))} completions in last 7d${partialNote(elapsed7, 7)}">${fmtSigned(d7)} 7d</span>`;
     const avgHtml = avgPerDay == null
-      ? `<span class="pill muted" title="Average completions per day — need 7d of data">— /day</span>`
-      : `<span class="pill" title="Average completions per day (7d ÷ 7)">~${avgPerDay.toFixed(1)} /day</span>`;
+      ? `<span class="pill muted" title="Average completions per day — no data yet">— /day</span>`
+      : `<span class="pill" title="Average completions per day over ${elapsed7 < 1 ? (elapsed7*24).toFixed(1)+'h' : elapsed7.toFixed(1)+'d'} of tracked history">~${avgPerDay.toFixed(1)} /day</span>`;
 
     const upPill = (() => {
       if (!above) return `<span class="pill muted" title="Already #1 — no one above">↑ —</span>`;
