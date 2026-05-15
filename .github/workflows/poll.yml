@@ -1,4 +1,4 @@
-name: Poll Fruma SR Leaderboard
+name: Poll SR Leaderboards
 
 on:
   schedule:
@@ -20,16 +20,25 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - run: node poll.js
+      - name: Poll Fruma
+        env:
+          CONFIG_FILE: config.json
+          HISTORY_FILE: snapshots.json
+        run: node poll.js
+      - name: Poll NoL
+        env:
+          CONFIG_FILE: config-nol.json
+          HISTORY_FILE: snapshots-nol.json
+        run: node poll.js
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add snapshots.json
+          git add snapshots.json snapshots-nol.json
           if git diff --staged --quiet; then
             echo "No changes"
           else
-            git commit -m "chore: append fruma snapshot"
+            git commit -m "chore: append snapshots"
             for i in 1 2 3; do
               git pull --rebase origin main && git push && break
               echo "Retry $i"

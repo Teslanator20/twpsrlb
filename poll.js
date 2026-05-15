@@ -1,10 +1,10 @@
 import { readFile, writeFile } from "node:fs/promises";
 
-const CONFIG_FILE  = "config.json";
-const HISTORY_FILE = "snapshots.json";
+const CONFIG_FILE  = process.env.CONFIG_FILE  || "config.json";
+const HISTORY_FILE = process.env.HISTORY_FILE || "snapshots.json";
 const RETAIN_DAYS  = 14;
 const TIMEOUT_MS   = 25_000;
-const UA = "twp-fruma-tracker/1.0";
+const UA = "twp-leaderboard-tracker/1.0";
 
 async function fetchJson(url) {
   const ctrl = new AbortController();
@@ -59,7 +59,7 @@ async function main() {
 
   await writeFile(HISTORY_FILE, JSON.stringify(history, null, 2) + "\n");
   const top = players[0];
-  console.log(`OK ${lb} top=${top?.name ?? "?"} sr=${top?.sr ?? 0} (n=${players.length}, snaps=${history.snapshots.length})`);
+  console.log(`OK ${lb} -> ${HISTORY_FILE} top=${top?.name ?? "?"} sr=${top?.sr ?? 0} (n=${players.length}, snaps=${history.snapshots.length})`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
