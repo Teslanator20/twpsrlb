@@ -151,6 +151,115 @@
     .range-floating .lbl-mini { display: none; }
   }
 
+  /* ─── projection slider ──────────────────────────────── */
+  .proj-bar {
+    margin: 18px 0 10px;
+    padding: 14px 18px 12px;
+    background: var(--card); border: 1px solid var(--rule);
+    border-radius: 14px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+    transition: border-color .2s, background .2s, box-shadow .2s;
+  }
+  .proj-bar.is-projecting {
+    border-color: var(--up);
+    box-shadow: 0 0 0 1px var(--up) inset, 0 6px 18px rgba(0,0,0,0.06);
+  }
+  .proj-bar.is-rewinding {
+    border-color: var(--runner);
+    box-shadow: 0 0 0 1px var(--runner) inset, 0 6px 18px rgba(0,0,0,0.06);
+  }
+  .proj-bar.is-rewinding .proj-value { color: var(--runner); }
+  .proj-head {
+    display: flex; align-items: baseline; gap: 14px;
+    margin-bottom: 10px;
+  }
+  .proj-eyebrow {
+    font: 600 10px/1 'Inter'; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .proj-value {
+    font: 700 18px/1 'Fraunces', serif;
+    color: var(--ink); letter-spacing: -.01em;
+    flex: 1;
+  }
+  .proj-bar.is-projecting .proj-value { color: var(--up); }
+  .proj-reset {
+    background: transparent; border: 1px solid var(--rule);
+    padding: 5px 11px; border-radius: 999px;
+    font: 600 10.5px/1 'Inter'; letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted); cursor: pointer;
+    transition: color .15s, border-color .15s, background .15s;
+  }
+  .proj-reset:hover { color: var(--ink); border-color: var(--ink-soft); }
+  .proj-bar:not(.is-projecting):not(.is-rewinding) .proj-reset { opacity: .4; pointer-events: none; }
+  .proj-track { position: relative; padding: 4px 0 2px; }
+  .proj-track input[type=range] {
+    width: 100%; -webkit-appearance: none; appearance: none;
+    background: transparent; height: 22px; margin: 0;
+    cursor: grab;
+  }
+  .proj-track input[type=range]:active { cursor: grabbing; }
+  .proj-track input[type=range]::-webkit-slider-runnable-track {
+    height: 4px; border-radius: 999px;
+    background:
+      linear-gradient(to right, transparent 0%, transparent calc(var(--proj-zero, 50%) - 1px), var(--ink-soft) calc(var(--proj-zero, 50%) - 1px), var(--ink-soft) calc(var(--proj-zero, 50%) + 1px), transparent calc(var(--proj-zero, 50%) + 1px)),
+      linear-gradient(to right,
+        var(--grid) 0%,
+        var(--grid) var(--proj-fill-start, 50%),
+        var(--proj-fill-color, var(--up)) var(--proj-fill-start, 50%),
+        var(--proj-fill-color, var(--up)) var(--proj-fill-end, 50%),
+        var(--grid) var(--proj-fill-end, 50%),
+        var(--grid) 100%);
+  }
+  .proj-track input[type=range]::-moz-range-track {
+    height: 4px; border-radius: 999px;
+    background: linear-gradient(to right,
+        var(--grid) 0%,
+        var(--grid) var(--proj-fill-start, 50%),
+        var(--proj-fill-color, var(--up)) var(--proj-fill-start, 50%),
+        var(--proj-fill-color, var(--up)) var(--proj-fill-end, 50%),
+        var(--grid) var(--proj-fill-end, 50%),
+        var(--grid) 100%);
+  }
+  .proj-track input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none;
+    width: 18px; height: 18px; border-radius: 50%;
+    background: var(--paper); border: 2px solid var(--proj-fill-color, var(--up));
+    margin-top: -7px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+    transition: transform .15s;
+  }
+  .proj-track input[type=range]::-moz-range-thumb {
+    width: 18px; height: 18px; border-radius: 50%;
+    background: var(--paper); border: 2px solid var(--proj-fill-color, var(--up));
+    box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+  }
+  .proj-track input[type=range]:hover::-webkit-slider-thumb { transform: scale(1.1); }
+  .proj-ticks {
+    display: flex; justify-content: space-between;
+    margin-top: 4px;
+    font: 600 9.5px/1 'Inter'; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .proj-note {
+    margin-top: 6px;
+    font: 400 11px/1.4 'Inter'; color: var(--muted);
+  }
+  .lb-projected-note {
+    display: inline-block; margin-left: 8px;
+    font: 600 10px/1 'Inter'; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--up);
+    padding: 3px 8px; border: 1px solid var(--up); border-radius: 999px;
+  }
+  .lb-projected-note.historical {
+    color: var(--runner); border-color: var(--runner);
+  }
+  @media (max-width: 720px) {
+    .proj-bar { padding: 12px 14px 10px; }
+    .proj-value { font-size: 16px; }
+  }
+
   /* ─── top 6 spotlight ─────────────────────────────────── */
   .top6-grid {
     display: grid; grid-template-columns: 1fr 1.4fr; gap: 28px;
@@ -472,12 +581,28 @@
     <button data-range="14">14d</button>
   </div>
 
+  <!-- TIME SLIDER -->
+  <div class="proj-bar" id="proj-bar">
+    <div class="proj-head">
+      <span class="proj-eyebrow" id="proj-eyebrow">Time</span>
+      <span class="proj-value" id="proj-value">Now</span>
+      <button class="proj-reset" id="proj-reset" type="button" title="Reset to now" aria-label="Reset to now">Reset</button>
+    </div>
+    <div class="proj-track">
+      <input type="range" id="proj-slider" min="-30" max="30" step="1" value="0" aria-label="Time slider: rewind to past snapshot or project into future">
+      <div class="proj-ticks">
+        <span>−30d</span><span>−14d</span><span>now</span><span>+14d</span><span>+30d</span>
+      </div>
+    </div>
+    <div class="proj-note" id="proj-note">Drag left to rewind, right to project · projection uses each player's 7d rate</div>
+  </div>
+
   <!-- TOP 8 SPOTLIGHT -->
   <h2>Top 8 Race</h2>
   <section class="spot" id="spot8"><div class="skeleton">loading…</div></section>
 
   <!-- LEADERBOARD -->
-  <h2>Full Leaderboard</h2>
+  <h2>Full Leaderboard<span class="lb-projected-note" id="lb-proj-badge" style="display:none">Projected</span></h2>
   <div class="lbtable-wrap">
     <table class="lbtable">
       <thead>
@@ -550,12 +675,16 @@ function timeAgo(iso) {
 }
 function cssVar(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
 function recentSnaps(snaps, days) {
-  const cutoff = Date.now() - days * 86400_000;
+  if (!snaps.length) return snaps;
+  const refTs = new Date(snaps[snaps.length - 1].ts).getTime();
+  const cutoff = refTs - days * 86400_000;
   const r = snaps.filter(s => new Date(s.ts).getTime() > cutoff);
   return r.length > 1 ? r : snaps;
 }
 function snapshotsBefore(snaps, msAgo) {
-  const target = Date.now() - msAgo;
+  if (!snaps.length) return null;
+  const refTs = new Date(snaps[snaps.length - 1].ts).getTime();
+  const target = refTs - msAgo;
   let best = null;
   for (const s of snaps) {
     const t = new Date(s.ts).getTime();
@@ -618,6 +747,7 @@ const charts = {};
 let lastData = null;
 let highlightNames = new Set();
 let rangeDays = Number(localStorage.getItem("rangeDays") || 7);
+let projectionDays = 0;
 
 (function () {
   document.querySelectorAll("#range-bar button").forEach(b => {
@@ -633,6 +763,121 @@ let rangeDays = Number(localStorage.getItem("rangeDays") || 7);
   });
 })();
 function rangeLabel() { return rangeDays === 1 ? "24 h" : `${rangeDays} d`; }
+
+// ─── Time slider ───────────────────────────────────────
+const projSlider = {
+  el: null, valueLbl: null, noteLbl: null, bar: null, resetBtn: null,
+  init() {
+    this.el = document.getElementById("proj-slider");
+    this.valueLbl = document.getElementById("proj-value");
+    this.noteLbl = document.getElementById("proj-note");
+    this.bar = document.getElementById("proj-bar");
+    this.resetBtn = document.getElementById("proj-reset");
+
+    this.el.addEventListener("input", () => {
+      projectionDays = Number(this.el.value) || 0;
+      this.paint();
+      if (lastData) render(lastData);
+    });
+    this.resetBtn.addEventListener("click", () => {
+      projectionDays = 0;
+      this.el.value = "0";
+      this.paint();
+      if (lastData) render(lastData);
+    });
+    this.paint();
+  },
+  // Clamp slider min to actual history available (in days, rounded up so user can always reach oldest snapshot).
+  updateRange(snaps) {
+    if (!snaps || !snaps.length) return;
+    const oldestTs = new Date(snaps[0].ts).getTime();
+    const newestTs = new Date(snaps[snaps.length - 1].ts).getTime();
+    const daysBack = (newestTs - oldestTs) / 86400_000;
+    const min = -Math.max(1, Math.ceil(daysBack));
+    this.el.min = String(min);
+    if (projectionDays < min) {
+      projectionDays = min;
+      this.el.value = String(min);
+    }
+    this.paint();
+  },
+  paint() {
+    const min = Number(this.el.min) || -30;
+    const max = Number(this.el.max) || 30;
+    const span = max - min;
+    const zeroPct = ((0 - min) / span) * 100;
+    const valPct = ((projectionDays - min) / span) * 100;
+    const fillStart = Math.min(zeroPct, valPct);
+    const fillEnd = Math.max(zeroPct, valPct);
+    this.el.style.setProperty("--proj-zero", zeroPct + "%");
+    this.el.style.setProperty("--proj-fill-start", fillStart + "%");
+    this.el.style.setProperty("--proj-fill-end", fillEnd + "%");
+
+    this.bar.classList.remove("is-projecting", "is-rewinding");
+    if (projectionDays === 0) {
+      this.el.style.setProperty("--proj-fill-color", "var(--up)");
+      this.valueLbl.textContent = "Now";
+      this.noteLbl.textContent = "Drag left to rewind, right to project · projection uses each player's 7d rate";
+    } else if (projectionDays > 0) {
+      this.el.style.setProperty("--proj-fill-color", "var(--up)");
+      this.bar.classList.add("is-projecting");
+      const d = projectionDays;
+      const future = new Date(Date.now() + d * 86400_000);
+      const dateStr = future.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+      this.valueLbl.textContent = `+${d} day${d === 1 ? "" : "s"} · ${dateStr}`;
+      this.noteLbl.textContent = "Projected values assume each player keeps their 7d rate. Rank reshuffled by projected SR.";
+    } else {
+      this.el.style.setProperty("--proj-fill-color", "var(--runner)");
+      this.bar.classList.add("is-rewinding");
+      const d = -projectionDays;
+      const past = new Date(Date.now() - d * 86400_000);
+      const dateStr = past.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+      this.valueLbl.textContent = `−${d} day${d === 1 ? "" : "s"} · ${dateStr}`;
+      this.noteLbl.textContent = "Showing the actual snapshot from that point in history.";
+    }
+  },
+};
+projSlider.init();
+
+// project a single player's stats forward by `days` using their 7d rate
+function projectPlayer(p, snaps, days) {
+  if (!days || snaps.length < 2) return { ...p, _projected: false };
+  const past = pastOrOldest(snaps, 7 * 86400_000);
+  const cur = snaps[snaps.length - 1];
+  if (!past || past === cur) return { ...p, _projected: false };
+  const pastP = findPlayerInSnap(past, p);
+  if (!pastP) return { ...p, _projected: false };
+  const dt = (new Date(cur.ts) - new Date(past.ts)) / 86400_000;
+  if (dt <= 0) return { ...p, _projected: false };
+  const srRate = ((p.sr ?? 0) - (pastP.sr ?? 0)) / dt;
+  const cRate  = ((p.completions ?? 0) - (pastP.completions ?? 0)) / dt;
+  const gRate  = ((p.gambits ?? 0) - (pastP.gambits ?? 0)) / dt;
+  return {
+    ...p,
+    sr: Math.max(0, Math.round((p.sr ?? 0) + srRate * days)),
+    completions: Math.max(0, Math.round((p.completions ?? 0) + cRate * days)),
+    gambits: Math.max(0, Math.round((p.gambits ?? 0) + gRate * days)),
+    _projected: true,
+    _origRank: p.rank,
+  };
+}
+
+// build a projected "current" snapshot: stats projected, list re-sorted by SR, ranks reassigned
+function buildProjectedCur(cur, snaps, days) {
+  if (!days) return cur;
+  const projected = (cur.players || []).map(p => projectPlayer(p, snaps, days));
+  projected.sort((a, b) => (b.sr ?? 0) - (a.sr ?? 0));
+  projected.forEach((p, i) => { p.rank = i + 1; });
+  return { ...cur, players: projected, _projected: true };
+}
+
+// rewind: return snaps truncated to the cutoff so the last entry is the historical "now"
+function rewoundSnaps(snaps, daysBack) {
+  if (daysBack <= 0 || !snaps.length) return snaps;
+  const cutoffMs = new Date(snaps[snaps.length - 1].ts).getTime() - daysBack * 86400_000;
+  const sliced = snaps.filter(s => new Date(s.ts).getTime() <= cutoffMs);
+  return sliced.length ? sliced : [snaps[0]];
+}
 
 // ─── Delta helpers ─────────────────────────────────────
 function pastOrOldest(snaps, msAgo) {
@@ -957,16 +1202,45 @@ function render(data) {
   lastData = data;
   const snaps = data.snapshots || [];
   if (!snaps.length) return;
-  const cur = snaps[snaps.length - 1];
-
   highlightNames = new Set((data.config?.highlight || []).map(s => s.toLowerCase()));
-  applyAliases(cur.players, data.config?.restrictedAliases || []);
-  document.getElementById("count").textContent = cur.players.length;
-  document.getElementById("updated").textContent = timeAgo(data.updated || cur.ts);
+  const aliases = data.config?.restrictedAliases || [];
 
-  renderTop8Spotlight(cur, snaps);
-  renderLeaderboard(cur, snaps);
-  renderPlayerTrends(cur, snaps);
+  projSlider.updateRange(snaps);
+
+  let viewCur, viewSnaps;
+  if (projectionDays < 0) {
+    viewSnaps = rewoundSnaps(snaps, -projectionDays);
+    viewCur = viewSnaps[viewSnaps.length - 1];
+    applyAliases(viewCur.players, aliases);
+  } else {
+    viewSnaps = snaps;
+    const cur = snaps[snaps.length - 1];
+    applyAliases(cur.players, aliases);
+    viewCur = buildProjectedCur(cur, snaps, projectionDays);
+  }
+
+  document.getElementById("count").textContent = viewCur.players.length;
+  document.getElementById("updated").textContent = timeAgo(data.updated || snaps[snaps.length - 1].ts);
+
+  const badge = document.getElementById("lb-proj-badge");
+  if (badge) {
+    if (projectionDays > 0) {
+      badge.style.display = "inline-block";
+      badge.classList.remove("historical");
+      badge.textContent = `Projected +${projectionDays}d`;
+    } else if (projectionDays < 0) {
+      badge.style.display = "inline-block";
+      badge.classList.add("historical");
+      badge.textContent = `Historical ${-projectionDays}d ago`;
+    } else {
+      badge.style.display = "none";
+      badge.classList.remove("historical");
+    }
+  }
+
+  renderTop8Spotlight(viewCur, viewSnaps);
+  renderLeaderboard(viewCur, viewSnaps);
+  renderPlayerTrends(viewCur, viewSnaps);
 }
 
 async function load() {
