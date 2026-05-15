@@ -771,7 +771,9 @@ function top8Colors() {
 
 function renderTop8Spotlight(cur, snaps) {
   const el = document.getElementById("spot8");
-  const top8 = (cur.players || []).slice(0, 8);
+  const top8 = (cur.players || [])
+    .slice(0, 8)
+    .sort((a, b) => (b.completions ?? 0) - (a.completions ?? 0));
   if (top8.length < 2) {
     el.innerHTML = `<div class="skeleton">Need at least 2 ranked players.</div>`;
     return;
