@@ -809,14 +809,14 @@ function renderTop8Spotlight(cur, snaps) {
 function renderLeaderboard(cur, snaps) {
   const tbody = document.getElementById("lb-body");
   const top = cur.players?.[0];
-  const topSr = top?.sr ?? 0;
+  const topCompl = top?.completions ?? 0;
 
   tbody.innerHTML = cur.players.map((p, idx) => {
     const next = cur.players[idx + 1];
     const d24 = deltaForPlayer(snaps, p, "completions", 86400_000);
     const d7  = deltaForPlayer(snaps, p, "completions", 7*86400_000);
-    const gapToLeader = idx === 0 ? 0 : topSr - p.sr;
-    const gapToNext   = next ? p.sr - next.sr : null;
+    const gapToLeader = idx === 0 ? 0 : topCompl - (p.completions ?? 0);
+    const gapToNext   = next ? (p.completions ?? 0) - (next.completions ?? 0) : null;
     const rankCls = p.rank === 1 ? "r1" : p.rank === 2 ? "r2" : p.rank === 3 ? "r3" : "";
     const displayName = (p.alias || p.name || "").toLowerCase();
     const highlight = highlightNames.has(displayName) ? "highlight" : "";
