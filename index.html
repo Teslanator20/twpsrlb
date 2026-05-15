@@ -754,19 +754,25 @@ function renderTop8Spotlight(cur, snaps) {
       const r24 = computeRace(snaps, p, next, 1, "completions");
       const best = r7 || r24;
       const eta = best?.etaText ?? "—";
+      const leaderName = nameOrHidden(p).replace(/<[^>]*>/g, '');
+      const chaserName = nameOrHidden(next).replace(/<[^>]*>/g, '');
       const pillFor = (r, label) => {
-        if (!r) return `<span class="pill" title="Not enough data in this window">— ${label}</span>`;
+        if (!r) return `<span class="pill" title="Not enough data in this window">— Δ ${label}</span>`;
         const cls = r.trendDelta === 0 ? "" :
                     ((gap >= 0 && r.trendDelta > 0) || (gap < 0 && r.trendDelta < 0)) ? "up" : "down";
-        const dir = cls === "up" ? "leader pulling away" : cls === "down" ? "chaser closing the gap" : "stable";
-        const tt = `Gap change in last ${label}: ${fmtSigned(r.trendDelta)} completions (${dir})`;
-        return `<span class="pill ${cls}" title="${tt}">${fmtSigned(r.trendDelta)} ${label}</span>`;
+        const arrow = cls === "up" ? "↑" : cls === "down" ? "↓" : "·";
+        const dir = cls === "up"
+          ? `${leaderName} pulled away by ${fmt(Math.abs(r.trendDelta))}`
+          : cls === "down"
+            ? `${chaserName} closed gap by ${fmt(Math.abs(r.trendDelta))}`
+            : "gap unchanged";
+        return `<span class="pill ${cls}" title="${dir} in last ${label}">${arrow} ${fmt(Math.abs(r.trendDelta))} ${label}</span>`;
       };
-      listHtml += `<div class="t6-gap" title="Race between #${p.rank} ${nameOrHidden(p).replace(/<[^>]*>/g,'')} and #${next.rank} ${nameOrHidden(next).replace(/<[^>]*>/g,'')}">
-        <span class="gap-val" title="Current completion gap (${nameOrHidden(p).replace(/<[^>]*>/g,'')} is ahead by this many runs)">+${fmt(Math.abs(gap))}</span>
+      listHtml += `<div class="t6-gap">
+        <span class="gap-val" title="${leaderName} is ahead of ${chaserName} by ${fmt(Math.abs(gap))} completions">Gap ${fmt(Math.abs(gap))}</span>
         ${pillFor(r24, "24h")}
         ${pillFor(r7,  "7d")}
-        <span class="pill" title="Estimated time until tied at current 7d trend">ETA ${eta}</span>
+        <span class="pill" title="Estimated time until tied (7d trend)">ETA ${eta}</span>
       </div>`;
     }
   });
