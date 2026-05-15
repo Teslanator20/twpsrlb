@@ -158,11 +158,20 @@
   }
   .top6-list { display: flex; flex-direction: column; gap: 4px; }
   .t6-row {
-    display: grid; grid-template-columns: 56px 1fr auto;
+    display: grid; grid-template-columns: 56px 1fr auto auto;
     align-items: baseline; gap: 14px;
     padding: 10px 14px; border-radius: 10px;
     background: var(--paper-shade);
   }
+  .t6-delta {
+    font-size: 11.5px; font-weight: 500;
+    color: var(--ink-soft);
+    font-variant-numeric: tabular-nums lining-nums;
+    padding: 2px 8px; border-radius: 999px;
+    background: var(--card);
+  }
+  .t6-delta.up   { color: var(--up); }
+  .t6-delta.down { color: var(--down); }
   .t6-row .t6-rank {
     font-family: 'Fraunces', Georgia, serif;
     font-variation-settings: 'opsz' 96, 'wght' 580;
@@ -469,8 +478,8 @@
           <th class="rank">#</th>
           <th>Player</th>
           <th class="num">SR</th>
-          <th class="num">Δ 24h</th>
-          <th class="num">Δ 7d</th>
+          <th class="num" title="Completions in last 24h">Compl 24h</th>
+          <th class="num" title="Completions in last 7d">Compl 7d</th>
           <th class="num">Gap to leader</th>
           <th class="num">Gap to next</th>
           <th class="num">Completions</th>
@@ -727,10 +736,16 @@ function renderTop8Spotlight(cur, snaps) {
   let listHtml = "";
   top8.forEach((p, i) => {
     const col = cols[i] || cssVar("--muted");
+    const d24 = deltaForPlayer(snaps, p, "completions", 86400_000);
+    const d24Cls = d24 == null ? "" : (d24 > 0 ? "up" : d24 < 0 ? "down" : "");
+    const d24Html = d24 == null
+      ? `<span class="t6-delta" title="Completions in last 24h (not enough data yet)">— 24h</span>`
+      : `<span class="t6-delta ${d24Cls}" title="Completions done in last 24h">${fmtSigned(d24)} 24h</span>`;
     listHtml += `<div class="t6-row">
       <span class="t6-rank" style="color:${col}">#${p.rank}</span>
       <span class="t6-name" style="color:${col}">${nameOrHidden(p)}</span>
       <span class="t6-sr">${fmt(p.completions)} <span style="color:var(--muted);font-size:11px;font-weight:500;letter-spacing:.02em;margin-left:4px">compl.</span></span>
+      ${d24Html}
     </div>`;
     const next = top8[i + 1];
     if (next) {
@@ -798,8 +813,8 @@ function renderLeaderboard(cur, snaps) {
 
   tbody.innerHTML = cur.players.map((p, idx) => {
     const next = cur.players[idx + 1];
-    const d24 = deltaForPlayer(snaps, p, "sr", 86400_000);
-    const d7  = deltaForPlayer(snaps, p, "sr", 7*86400_000);
+    const d24 = deltaForPlayer(snaps, p, "completions", 86400_000);
+    const d7  = deltaForPlayer(snaps, p, "completions", 7*86400_000);
     const gapToLeader = idx === 0 ? 0 : topSr - p.sr;
     const gapToNext   = next ? p.sr - next.sr : null;
     const rankCls = p.rank === 1 ? "r1" : p.rank === 2 ? "r2" : p.rank === 3 ? "r3" : "";
