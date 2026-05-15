@@ -157,11 +157,16 @@
     align-items: stretch;
   }
   .top6-list { display: flex; flex-direction: column; gap: 4px; }
-  .t6-row {
-    display: grid; grid-template-columns: 56px 1fr auto auto;
-    align-items: baseline; gap: 14px;
-    padding: 10px 14px; border-radius: 10px;
+  .t6-player {
     background: var(--paper-shade);
+    border-radius: 10px;
+    padding: 10px 14px 12px;
+    display: flex; flex-direction: column;
+    gap: 8px;
+  }
+  .t6-row {
+    display: grid; grid-template-columns: 56px 1fr auto;
+    align-items: baseline; gap: 14px;
   }
   .t6-delta {
     font-size: 11.5px; font-weight: 500;
@@ -185,23 +190,25 @@
     font-weight: 600; font-size: 16px;
     font-variant-numeric: tabular-nums lining-nums; color: var(--ink);
   }
-  .t6-gap {
-    display: flex; align-items: center; gap: 8px;
-    padding: 4px 14px 4px 56px;
-    font-size: 11px; font-weight: 500; color: var(--muted);
+  .t6-stats {
+    display: flex; flex-wrap: wrap; gap: 5px;
+    padding-left: 70px; /* align under name column */
+  }
+  .t6-stats .pill {
+    padding: 2px 9px; border-radius: 999px;
+    background: var(--card); border: 1px solid var(--rule);
+    font-size: 11px; font-weight: 500; color: var(--ink-soft);
+    font-variant-numeric: tabular-nums lining-nums;
     letter-spacing: .02em;
   }
-  .t6-gap .gap-val {
-    font-variant-numeric: tabular-nums lining-nums;
-    font-weight: 600; color: var(--ink-soft);
+  .t6-stats .pill.up   { color: var(--up);   border-color: rgba(58,139,58,0.25); }
+  .t6-stats .pill.down { color: var(--down); border-color: rgba(185,74,74,0.25); }
+  .t6-stats .pill.muted { color: var(--muted); }
+  html[data-theme="dark"] .t6-stats .pill.up   { border-color: rgba(95,191,95,0.25); }
+  html[data-theme="dark"] .t6-stats .pill.down { border-color: rgba(224,120,120,0.3); }
+  @media (max-width: 600px) {
+    .t6-stats { padding-left: 0; }
   }
-  .t6-gap .pill {
-    padding: 1px 8px; border-radius: 999px;
-    background: var(--card); border: 1px solid var(--rule);
-    font-weight: 500;
-  }
-  .t6-gap .pill.up   { color: var(--up); }
-  .t6-gap .pill.down { color: var(--down); }
 
   /* ─── spotlight (legacy used by #1 vs #2; kept for fallbacks) ─── */
   .spot {
@@ -651,6 +658,32 @@ function linearRegression(pts) {
   const slope = (sxy - n*mx*my) / den;
   return { slope, n };
 }
+// time until `chaser` overtakes `leader` in completions, based on rates over `days`
+function timeToCatchUp(snaps, chaser, leader, days = 7) {
+  if (!chaser || !leader || snaps.length < 2) return null;
+  const cur = snaps[snaps.length - 1];
+  const c_cur = findPlayerInSnap(cur, chaser)?.completions;
+  const l_cur = findPlayerInSnap(cur, leader)?.completions;
+  if (c_cur == null || l_cur == null) return null;
+  const gap = l_cur - c_cur;
+  if (gap <= 0) return { text: "passed", ahead: true };
+
+  const past = snapshotsBefore(snaps, days * 86400_000);
+  if (!past) return { text: "—", ahead: false, nodata: true };
+  const c_past = findPlayerInSnap(past, chaser)?.completions;
+  const l_past = findPlayerInSnap(past, leader)?.completions;
+  if (c_past == null || l_past == null) return { text: "—", ahead: false, nodata: true };
+  const dt_days = (new Date(cur.ts) - new Date(past.ts)) / 86400_000;
+  if (dt_days <= 0) return null;
+
+  const c_rate = (c_cur - c_past) / dt_days;
+  const l_rate = (l_cur - l_past) / dt_days;
+  const net = c_rate - l_rate;
+  if (net <= 0) return { text: "—", ahead: false };
+  const d = gap / net;
+  return { text: d < 1 ? `~ ${(d*24).toFixed(1)}h` : `~ ${d.toFixed(1)}d`, ahead: false };
+}
+
 function computeRace(snaps, playerL, playerR, days, field = "sr") {
   if (snaps.length < 2) return null;
   const cutoff = Date.now() - days*86400_000;
@@ -733,48 +766,61 @@ function renderTop8Spotlight(cur, snaps) {
   }
   const cols = top8Colors();
 
+  const strip = s => (s ?? "").replace(/<[^>]*>/g, '');
   let listHtml = "";
   top8.forEach((p, i) => {
     const col = cols[i] || cssVar("--muted");
+    const above = i > 0 ? top8[i - 1] : null;
+    const below = i < top8.length - 1 ? top8[i + 1] : null;
+    const meName = strip(nameOrHidden(p));
+
     const d24 = deltaForPlayer(snaps, p, "completions", 86400_000);
-    const d24Cls = d24 == null ? "" : (d24 > 0 ? "up" : d24 < 0 ? "down" : "");
+    const d7  = deltaForPlayer(snaps, p, "completions", 7 * 86400_000);
+    const avgPerDay = d7 != null ? d7 / 7 : null;
+
+    const dCls = v => v == null ? "muted" : (v > 0 ? "up" : v < 0 ? "down" : "muted");
     const d24Html = d24 == null
-      ? `<span class="t6-delta" title="Completions in last 24h (not enough data yet)">— 24h</span>`
-      : `<span class="t6-delta ${d24Cls}" title="Completions done in last 24h">${fmtSigned(d24)} 24h</span>`;
-    listHtml += `<div class="t6-row">
-      <span class="t6-rank" style="color:${col}">#${p.rank}</span>
-      <span class="t6-name" style="color:${col}">${nameOrHidden(p)}</span>
-      <span class="t6-sr">${fmt(p.completions)} <span style="color:var(--muted);font-size:11px;font-weight:500;letter-spacing:.02em;margin-left:4px">compl.</span></span>
-      ${d24Html}
+      ? `<span class="pill muted" title="Completions in last 24h — not enough data yet">— 24h</span>`
+      : `<span class="pill ${dCls(d24)}" title="${meName} did ${fmt(Math.abs(d24))} completions in last 24h">${fmtSigned(d24)} 24h</span>`;
+    const d7Html = d7 == null
+      ? `<span class="pill muted" title="Completions in last 7d — not enough data yet">— 7d</span>`
+      : `<span class="pill ${dCls(d7)}" title="${meName} did ${fmt(Math.abs(d7))} completions in last 7d">${fmtSigned(d7)} 7d</span>`;
+    const avgHtml = avgPerDay == null
+      ? `<span class="pill muted" title="Average completions per day — need 7d of data">— /day</span>`
+      : `<span class="pill" title="Average completions per day (7d ÷ 7)">~${avgPerDay.toFixed(1)} /day</span>`;
+
+    const upPill = (() => {
+      if (!above) return `<span class="pill muted" title="Already #1 — no one above">↑ —</span>`;
+      const eta = timeToCatchUp(snaps, p, above, 7);
+      const aboveName = strip(nameOrHidden(above));
+      if (!eta) return `<span class="pill muted" title="Time until ${meName} overtakes ${aboveName} — no data">↑ —</span>`;
+      if (eta.nodata || eta.text === "—") return `<span class="pill muted" title="${meName} not gaining on ${aboveName}">↑ —</span>`;
+      return `<span class="pill up" title="Time until ${meName} overtakes ${aboveName} (7d trend)">↑ ${eta.text}</span>`;
+    })();
+
+    const downPill = (() => {
+      if (!below) return `<span class="pill muted" title="Bottom of tracked top 8 — no one below">↓ —</span>`;
+      const eta = timeToCatchUp(snaps, below, p, 7);
+      const belowName = strip(nameOrHidden(below));
+      if (!eta) return `<span class="pill muted" title="Time until ${belowName} overtakes ${meName} — no data">↓ —</span>`;
+      if (eta.nodata || eta.text === "—") return `<span class="pill muted" title="${belowName} not gaining on ${meName}">↓ —</span>`;
+      return `<span class="pill down" title="Time until ${belowName} overtakes ${meName} (7d trend)">↓ ${eta.text}</span>`;
+    })();
+
+    listHtml += `<div class="t6-player">
+      <div class="t6-row">
+        <span class="t6-rank" style="color:${col}">#${p.rank}</span>
+        <span class="t6-name" style="color:${col}">${nameOrHidden(p)}</span>
+        <span class="t6-sr">${fmt(p.completions)} <span style="color:var(--muted);font-size:11px;font-weight:500;letter-spacing:.02em;margin-left:4px">compl.</span></span>
+      </div>
+      <div class="t6-stats">
+        ${d24Html}
+        ${d7Html}
+        ${avgHtml}
+        ${upPill}
+        ${downPill}
+      </div>
     </div>`;
-    const next = top8[i + 1];
-    if (next) {
-      const gap = (p.completions ?? 0) - (next.completions ?? 0);
-      const r7  = computeRace(snaps, p, next, 7, "completions");
-      const r24 = computeRace(snaps, p, next, 1, "completions");
-      const best = r7 || r24;
-      const eta = best?.etaText ?? "—";
-      const leaderName = nameOrHidden(p).replace(/<[^>]*>/g, '');
-      const chaserName = nameOrHidden(next).replace(/<[^>]*>/g, '');
-      const pillFor = (r, label) => {
-        if (!r) return `<span class="pill" title="Not enough data in this window">— Δ ${label}</span>`;
-        const cls = r.trendDelta === 0 ? "" :
-                    ((gap >= 0 && r.trendDelta > 0) || (gap < 0 && r.trendDelta < 0)) ? "up" : "down";
-        const arrow = cls === "up" ? "↑" : cls === "down" ? "↓" : "·";
-        const dir = cls === "up"
-          ? `${leaderName} pulled away by ${fmt(Math.abs(r.trendDelta))}`
-          : cls === "down"
-            ? `${chaserName} closed gap by ${fmt(Math.abs(r.trendDelta))}`
-            : "gap unchanged";
-        return `<span class="pill ${cls}" title="${dir} in last ${label}">${arrow} ${fmt(Math.abs(r.trendDelta))} ${label}</span>`;
-      };
-      listHtml += `<div class="t6-gap">
-        <span class="gap-val" title="${leaderName} is ahead of ${chaserName} by ${fmt(Math.abs(gap))} completions">Gap ${fmt(Math.abs(gap))}</span>
-        ${pillFor(r24, "24h")}
-        ${pillFor(r7,  "7d")}
-        <span class="pill" title="Estimated time until tied (7d trend)">ETA ${eta}</span>
-      </div>`;
-    }
   });
 
   el.innerHTML = `
