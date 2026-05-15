@@ -224,7 +224,9 @@
     background:
       linear-gradient(to right, transparent 0%, transparent calc(var(--proj-zero, 50%) - 1px), var(--ink-soft) calc(var(--proj-zero, 50%) - 1px), var(--ink-soft) calc(var(--proj-zero, 50%) + 1px), transparent calc(var(--proj-zero, 50%) + 1px)),
       linear-gradient(to right,
-        var(--grid) 0%,
+        var(--rule) 0%,
+        var(--rule) var(--proj-lock-pct, 0%),
+        var(--grid) var(--proj-lock-pct, 0%),
         var(--grid) var(--proj-fill-start, 50%),
         var(--proj-fill-color, var(--up)) var(--proj-fill-start, 50%),
         var(--proj-fill-color, var(--up)) var(--proj-fill-end, 50%),
@@ -234,7 +236,9 @@
   .proj-track input[type=range]::-moz-range-track {
     height: 4px; border-radius: 999px;
     background: linear-gradient(to right,
-        var(--grid) 0%,
+        var(--rule) 0%,
+        var(--rule) var(--proj-lock-pct, 0%),
+        var(--grid) var(--proj-lock-pct, 0%),
         var(--grid) var(--proj-fill-start, 50%),
         var(--proj-fill-color, var(--up)) var(--proj-fill-start, 50%),
         var(--proj-fill-color, var(--up)) var(--proj-fill-end, 50%),
@@ -792,6 +796,7 @@ function rangeLabel() { return rangeDays === 1 ? "24 h" : `${rangeDays} d`; }
 // ─── Time slider ───────────────────────────────────────
 const projSlider = {
   el: null, valueLbl: null, noteLbl: null, bar: null, resetBtn: null,
+  maxBackDays: 0,  // most days of history we can actually rewind
   init() {
     this.el = document.getElementById("proj-slider");
     this.valueLbl = document.getElementById("proj-value");
@@ -800,7 +805,13 @@ const projSlider = {
     this.resetBtn = document.getElementById("proj-reset");
 
     this.el.addEventListener("input", () => {
-      projectionDays = Number(this.el.value) || 0;
+      let v = Number(this.el.value) || 0;
+      // lock: can't rewind further than we have data
+      if (v < -this.maxBackDays) {
+        v = -this.maxBackDays;
+        this.el.value = String(v);
+      }
+      projectionDays = v;
       this.paint();
       if (lastData) render(lastData);
     });
@@ -812,31 +823,34 @@ const projSlider = {
     });
     this.paint();
   },
-  // Clamp slider min to actual history available (in days, rounded up so user can always reach oldest snapshot).
+  // Compute how far back we can scrub. Slider min stays fixed so "now" stays centered;
+  // we just clamp the value if user tries to drag past available history.
   updateRange(snaps) {
     if (!snaps || !snaps.length) return;
     const oldestTs = new Date(snaps[0].ts).getTime();
     const newestTs = new Date(snaps[snaps.length - 1].ts).getTime();
     const daysBack = (newestTs - oldestTs) / 86400_000;
-    const min = -Math.max(1, Math.ceil(daysBack));
-    this.el.min = String(min);
-    if (projectionDays < min) {
-      projectionDays = min;
-      this.el.value = String(min);
+    this.maxBackDays = Math.max(1, Math.ceil(daysBack));
+    if (projectionDays < -this.maxBackDays) {
+      projectionDays = -this.maxBackDays;
+      this.el.value = String(projectionDays);
     }
     this.paint();
   },
   paint() {
-    const min = Number(this.el.min) || -30;
-    const max = Number(this.el.max) || 30;
+    const min = Number(this.el.min) || -60;
+    const max = Number(this.el.max) || 60;
     const span = max - min;
     const zeroPct = ((0 - min) / span) * 100;
     const valPct = ((projectionDays - min) / span) * 100;
     const fillStart = Math.min(zeroPct, valPct);
     const fillEnd = Math.max(zeroPct, valPct);
+    const lockBoundary = -this.maxBackDays;
+    const lockPct = this.maxBackDays > 0 ? Math.max(0, ((lockBoundary - min) / span) * 100) : 0;
     this.el.style.setProperty("--proj-zero", zeroPct + "%");
     this.el.style.setProperty("--proj-fill-start", fillStart + "%");
     this.el.style.setProperty("--proj-fill-end", fillEnd + "%");
+    this.el.style.setProperty("--proj-lock-pct", lockPct + "%");
 
     this.bar.classList.remove("is-projecting", "is-rewinding");
     if (projectionDays === 0) {
