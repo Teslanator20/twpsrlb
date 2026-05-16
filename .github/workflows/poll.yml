@@ -30,11 +30,26 @@ jobs:
           CONFIG_FILE: config-nol.json
           HISTORY_FILE: snapshots-nol.json
         run: node poll.js
+      - name: Poll NoG
+        env:
+          CONFIG_FILE: config-nog.json
+          HISTORY_FILE: snapshots-nog.json
+        run: node poll.js
+      - name: Poll TCC
+        env:
+          CONFIG_FILE: config-tcc.json
+          HISTORY_FILE: snapshots-tcc.json
+        run: node poll.js
+      - name: Poll TNA
+        env:
+          CONFIG_FILE: config-tna.json
+          HISTORY_FILE: snapshots-tna.json
+        run: node poll.js
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add snapshots.json snapshots-nol.json
+          git add snapshots.json snapshots-nol.json snapshots-nog.json snapshots-tcc.json snapshots-tna.json
           if git diff --staged --quiet; then
             echo "No changes"
           else
