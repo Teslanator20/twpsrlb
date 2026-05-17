@@ -25419,9 +25419,214 @@
           "restricted": false
         }
       ]
+    },
+    {
+      "ts": "2026-05-17T02:30:25.033Z",
+      "players": [
+        {
+          "rank": 1,
+          "name": "Fuguh",
+          "uuid": "54ab36f0-a21e-48ca-9009-596bbdcb42b2",
+          "sr": 7114450,
+          "completions": 27390,
+          "gambits": 81871,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 2,
+          "name": "bannedandwiped",
+          "uuid": "ffe53be7-a705-4328-b401-470309fc1132",
+          "sr": 2642260,
+          "completions": 10228,
+          "gambits": 30040,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 3,
+          "name": "RealAlex",
+          "uuid": "b7454a9d-ea64-4dea-a4ef-c544d6861b7c",
+          "sr": 2095690,
+          "completions": 8108,
+          "gambits": 23842,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 4,
+          "name": "Werveh",
+          "uuid": "6f4f32f8-d6ba-4511-bc18-172679b720b2",
+          "sr": 2004570,
+          "completions": 7747,
+          "gambits": 22905,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 5,
+          "name": "EscimoCandy",
+          "uuid": "0f41a838-d315-4dad-aa39-916dfd037363",
+          "sr": 1846230,
+          "completions": 7212,
+          "gambits": 20592,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 6,
+          "name": "0110jimmy",
+          "uuid": "4791eb57-3607-4647-8d4f-59aaa879c5a4",
+          "sr": 1750590,
+          "completions": 6977,
+          "gambits": 18738,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 7,
+          "name": null,
+          "uuid": "redacted",
+          "sr": 1442800,
+          "completions": 5589,
+          "gambits": 16391,
+          "supportRank": null,
+          "restricted": true
+        },
+        {
+          "rank": 8,
+          "name": "GaztheCat",
+          "uuid": "66efb975-31b4-499e-9b46-a34980edd8ee",
+          "sr": 1322820,
+          "completions": 5220,
+          "gambits": 14406,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 9,
+          "name": "MFLR5",
+          "uuid": "822cfbc6-e4c2-4b1d-9879-4cd8206f8a90",
+          "sr": 1315640,
+          "completions": 5160,
+          "gambits": 14501,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 10,
+          "name": null,
+          "uuid": "redacted",
+          "sr": 1258390,
+          "completions": 4894,
+          "gambits": 14102,
+          "supportRank": null,
+          "restricted": true
+        },
+        {
+          "rank": 11,
+          "name": "Invincitron2000",
+          "uuid": "1f120e50-77bb-4417-abad-eadf63fc2f1d",
+          "sr": 1256780,
+          "completions": 5090,
+          "gambits": 12591,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 12,
+          "name": "NG_Life",
+          "uuid": "3af095ea-0549-4da6-a61e-92e4f176bdd1",
+          "sr": 1191820,
+          "completions": 4649,
+          "gambits": 13186,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 13,
+          "name": "_Skriptz",
+          "uuid": "f3ee7558-7135-4a3d-9f96-d88ec759ce49",
+          "sr": 1112130,
+          "completions": 4397,
+          "gambits": 12030,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 14,
+          "name": "TigerSquirrel52",
+          "uuid": "c7e2e86a-3aaa-49c6-a79c-6b3d3952ea41",
+          "sr": 1098600,
+          "completions": 4410,
+          "gambits": 11461,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 15,
+          "name": "BatteryTheKid",
+          "uuid": "aa2c027f-c36e-450a-bcdd-d270f044fab1",
+          "sr": 1078690,
+          "completions": 4169,
+          "gambits": 12305,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 16,
+          "name": "Shear",
+          "uuid": "bc315d6d-af99-40b6-bdbd-8bd4da9937b3",
+          "sr": 1038110,
+          "completions": 4121,
+          "gambits": 11145,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 17,
+          "name": "ArmutPoire",
+          "uuid": "4b9dda33-e4ac-4cf2-948e-2b6e5048cf56",
+          "sr": 1032020,
+          "completions": 4123,
+          "gambits": 10867,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 18,
+          "name": "Mathcr0ft",
+          "uuid": "7aff1b44-bb27-48db-a9b1-dba56410c857",
+          "sr": 989340,
+          "completions": 3854,
+          "gambits": 11086,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 19,
+          "name": "_Wolf1882_",
+          "uuid": "fff76942-ad67-4efa-9ce3-a235d6d56090",
+          "sr": 901650,
+          "completions": 3524,
+          "gambits": 10040,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 20,
+          "name": "koprr",
+          "uuid": "72250a1d-144c-48d8-8223-1209ffcaf82d",
+          "sr": 882350,
+          "completions": 3500,
+          "gambits": 9474,
+          "supportRank": "champion",
+          "restricted": false
+        }
+      ]
     }
   ],
-  "updated": "2026-05-17T02:25:16.993Z",
+  "updated": "2026-05-17T02:30:25.033Z",
   "config": {
     "leaderboard": "colossusSrPlayers",
     "raidName": "TCC",
