@@ -150674,9 +150674,214 @@
           "restricted": false
         }
       ]
+    },
+    {
+      "ts": "2026-05-19T03:40:23.948Z",
+      "players": [
+        {
+          "rank": 1,
+          "name": "LegitNube",
+          "uuid": "478bc9fb-c0ce-485a-8479-0f71fb77ca65",
+          "sr": 3051660,
+          "completions": 11760,
+          "gambits": 35028,
+          "supportRank": "hero",
+          "restricted": false
+        },
+        {
+          "rank": 2,
+          "name": "IzaDeval",
+          "uuid": "19b4c944-70aa-4ae7-9b18-445cc4ba1618",
+          "sr": 2938990,
+          "completions": 11463,
+          "gambits": 32926,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 3,
+          "name": null,
+          "uuid": "redacted",
+          "sr": 2549990,
+          "completions": 9835,
+          "gambits": 29220,
+          "supportRank": null,
+          "restricted": true
+        },
+        {
+          "rank": 4,
+          "name": "spaisuiker",
+          "uuid": "4262f65f-3926-496d-8f36-a777e9613cff",
+          "sr": 2351340,
+          "completions": 9088,
+          "gambits": 26777,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 5,
+          "name": "BestSkillOwner",
+          "uuid": "4f267a1d-991c-4c10-beb0-08a67cc9df25",
+          "sr": 2056790,
+          "completions": 8037,
+          "gambits": 22872,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 6,
+          "name": "Act1vateWindows",
+          "uuid": "2f3a3d99-94d2-4f3f-9d8b-ea7e7998669b",
+          "sr": 1911670,
+          "completions": 7839,
+          "gambits": 18891,
+          "supportRank": "heroplus",
+          "restricted": false
+        },
+        {
+          "rank": 7,
+          "name": "Saile17",
+          "uuid": "7cde81cb-1d54-498b-a6be-4c34459ff7fa",
+          "sr": 1891070,
+          "completions": 7288,
+          "gambits": 21701,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 8,
+          "name": "PeanutsYeah",
+          "uuid": "dfdb1715-d956-4444-a5ab-9d23446a0928",
+          "sr": 1890960,
+          "completions": 7341,
+          "gambits": 21343,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 9,
+          "name": "PyroKlee",
+          "uuid": "90f02478-5804-4c3f-874d-81b64704983d",
+          "sr": 1886370,
+          "completions": 7460,
+          "gambits": 20379,
+          "supportRank": "heroplus",
+          "restricted": false
+        },
+        {
+          "rank": 10,
+          "name": "Csm1tty",
+          "uuid": "641582aa-5697-4336-8871-084d9281cf03",
+          "sr": 1883790,
+          "completions": 7283,
+          "gambits": 21433,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 11,
+          "name": "100000Beards",
+          "uuid": "268fb20f-9eb6-40f4-bf75-0c2da4d83947",
+          "sr": 1809960,
+          "completions": 6969,
+          "gambits": 20831,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 12,
+          "name": "GaztheCat",
+          "uuid": "66efb975-31b4-499e-9b46-a34980edd8ee",
+          "sr": 1785610,
+          "completions": 7050,
+          "gambits": 19498,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 13,
+          "name": "Eigha",
+          "uuid": "f804840f-9a7f-498c-8c55-023552be8d0b",
+          "sr": 1774910,
+          "completions": 6948,
+          "gambits": 19749,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 14,
+          "name": "Necryo",
+          "uuid": "9e4bf8e3-8943-40fa-9adf-c5d71d0a1638",
+          "sr": 1688780,
+          "completions": 6619,
+          "gambits": 18638,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 15,
+          "name": "Lucyfall",
+          "uuid": "e9c4e9d4-ed01-4198-adab-33672d59522a",
+          "sr": 1686860,
+          "completions": 6574,
+          "gambits": 18908,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 16,
+          "name": "fitterkarma",
+          "uuid": "2f9154e0-faa2-45de-b7ee-c3212bb4ab1c",
+          "sr": 1601510,
+          "completions": 6184,
+          "gambits": 18314,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 17,
+          "name": "keallor",
+          "uuid": "844fd252-7a74-458e-aeae-5732a0f69df3",
+          "sr": 1580730,
+          "completions": 6155,
+          "gambits": 17707,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 18,
+          "name": "FraekInMuscle",
+          "uuid": "c4a6940d-5c50-4a06-97a5-0d705abe826b",
+          "sr": 1515920,
+          "completions": 5961,
+          "gambits": 16484,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 19,
+          "name": "BatteryTheKid",
+          "uuid": "aa2c027f-c36e-450a-bcdd-d270f044fab1",
+          "sr": 1492500,
+          "completions": 5775,
+          "gambits": 17001,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 20,
+          "name": "NekoShabeta",
+          "uuid": "f05d3fa5-1c2c-4acf-8925-af1d4894d3d7",
+          "sr": 1433600,
+          "completions": 5669,
+          "gambits": 15543,
+          "supportRank": "champion",
+          "restricted": false
+        }
+      ]
     }
   ],
-  "updated": "2026-05-19T03:35:22.527Z",
+  "updated": "2026-05-19T03:40:23.948Z",
   "config": {
     "leaderboard": "namelessSrPlayers",
     "raidName": "TNA",
