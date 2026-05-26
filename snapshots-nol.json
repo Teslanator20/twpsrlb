@@ -648418,9 +648418,13 @@
     {
       "ts": "2026-05-26T06:45:33.568Z",
       "players": []
+    },
+    {
+      "ts": "2026-05-26T06:50:31.352Z",
+      "players": []
     }
   ],
-  "updated": "2026-05-26T06:45:33.568Z",
+  "updated": "2026-05-26T06:50:31.352Z",
   "config": {
     "leaderboard": "orphionSrPlayers",
     "raidName": "NoL",
