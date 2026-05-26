@@ -689414,9 +689414,13 @@
           "restricted": false
         }
       ]
+    },
+    {
+      "ts": "2026-05-26T06:45:33.155Z",
+      "players": []
     }
   ],
-  "updated": "2026-05-26T06:40:32.112Z",
+  "updated": "2026-05-26T06:45:33.155Z",
   "config": {
     "leaderboard": "frumaSrPlayers",
     "raidName": "Fruma",

@@ -648414,9 +648414,13 @@
           "restricted": false
         }
       ]
+    },
+    {
+      "ts": "2026-05-26T06:45:33.568Z",
+      "players": []
     }
   ],
-  "updated": "2026-05-26T06:40:32.502Z",
+  "updated": "2026-05-26T06:45:33.568Z",
   "config": {
     "leaderboard": "orphionSrPlayers",
     "raidName": "NoL",
