@@ -694141,9 +694141,214 @@
           "restricted": false
         }
       ]
+    },
+    {
+      "ts": "2026-05-27T03:05:29.434Z",
+      "players": [
+        {
+          "rank": 1,
+          "name": "blaides",
+          "uuid": "6b5d3e61-ca0e-43db-b939-7198829087a6",
+          "sr": 6390010,
+          "completions": 24803,
+          "gambits": 72342,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 2,
+          "name": "5up3rZ",
+          "uuid": "85b76ef2-b488-4a6c-834b-118c28b7e77c",
+          "sr": 5192680,
+          "completions": 20821,
+          "gambits": 54009,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 3,
+          "name": "Badpoopy",
+          "uuid": "f7250993-78e3-4317-87e5-5c0ddd5f16d7",
+          "sr": 4471520,
+          "completions": 17363,
+          "gambits": 50574,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 4,
+          "name": "Twigbones",
+          "uuid": "4599d707-c3e1-4f85-80b4-9182196ff208",
+          "sr": 4213010,
+          "completions": 16339,
+          "gambits": 47682,
+          "supportRank": "hero",
+          "restricted": false
+        },
+        {
+          "rank": 5,
+          "name": "Warze",
+          "uuid": "47313073-790d-43d8-b22b-8024ff248db3",
+          "sr": 3655590,
+          "completions": 14375,
+          "gambits": 39942,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 6,
+          "name": "declara",
+          "uuid": "a0b9513f-95e4-49a7-ac19-79ec8641c275",
+          "sr": 3523000,
+          "completions": 13703,
+          "gambits": 39629,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 7,
+          "name": "Csm1tty",
+          "uuid": "641582aa-5697-4336-8871-084d9281cf03",
+          "sr": 2935430,
+          "completions": 11472,
+          "gambits": 32468,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 8,
+          "name": "nabbywad",
+          "uuid": "d389b9cc-a6cb-40f1-83f9-b88ed71727e0",
+          "sr": 2924800,
+          "completions": 11451,
+          "gambits": 32537,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 9,
+          "name": "seekeyace",
+          "uuid": "24a616c5-6150-440c-8470-7dc2b89eece5",
+          "sr": 2841060,
+          "completions": 10935,
+          "gambits": 32723,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 10,
+          "name": "skywwn",
+          "uuid": "e6c674b7-6656-42e8-9c02-feb5ea97e94e",
+          "sr": 2690190,
+          "completions": 10713,
+          "gambits": 28404,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 11,
+          "name": "Dwagonic",
+          "uuid": "e9e1fc53-61f3-4838-937f-22d386ef25d3",
+          "sr": 2635160,
+          "completions": 10212,
+          "gambits": 29908,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 12,
+          "name": "FishuPancakes",
+          "uuid": "8c008c4c-fb17-44f6-9609-5ff574d2ce48",
+          "sr": 2572960,
+          "completions": 10359,
+          "gambits": 26138,
+          "supportRank": "hero",
+          "restricted": false
+        },
+        {
+          "rank": 13,
+          "name": "BatteryTheKid",
+          "uuid": "aa2c027f-c36e-450a-bcdd-d270f044fab1",
+          "sr": 2440180,
+          "completions": 9422,
+          "gambits": 27908,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 14,
+          "name": null,
+          "uuid": "redacted",
+          "sr": 2165620,
+          "completions": 8342,
+          "gambits": 24904,
+          "supportRank": null,
+          "restricted": true
+        },
+        {
+          "rank": 15,
+          "name": "EstrogenizedCat",
+          "uuid": "2d79e9a4-7368-4578-b9d2-05be0056395b",
+          "sr": 2051780,
+          "completions": 7920,
+          "gambits": 23434,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 16,
+          "name": "sadobunny",
+          "uuid": "c2ee88db-0ca3-4929-95e4-7e1f83f3e4f1",
+          "sr": 1955050,
+          "completions": 7729,
+          "gambits": 21014,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 17,
+          "name": "Pandamonium",
+          "uuid": "d530499f-69d9-4421-8357-dbfde7dd1714",
+          "sr": 1707810,
+          "completions": 6570,
+          "gambits": 19697,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 18,
+          "name": "AlexNewmoon",
+          "uuid": "8b8c5ac9-e1a9-4865-8868-85e1bdffccda",
+          "sr": 1665280,
+          "completions": 6494,
+          "gambits": 18526,
+          "supportRank": "hero",
+          "restricted": false
+        },
+        {
+          "rank": 19,
+          "name": "Wintel_",
+          "uuid": "69a797e7-a2cc-4a51-8589-59ff4a9759ff",
+          "sr": 1569260,
+          "completions": 6271,
+          "gambits": 16396,
+          "supportRank": "champion",
+          "restricted": false
+        },
+        {
+          "rank": 20,
+          "name": "kittycat317",
+          "uuid": "510f93ad-43aa-4b9b-912d-d52954c59604",
+          "sr": 1471370,
+          "completions": 5791,
+          "gambits": 16106,
+          "supportRank": "champion",
+          "restricted": false
+        }
+      ]
     }
   ],
-  "updated": "2026-05-27T03:00:46.651Z",
+  "updated": "2026-05-27T03:05:29.434Z",
   "config": {
     "leaderboard": "orphionSrPlayers",
     "raidName": "NoL",
