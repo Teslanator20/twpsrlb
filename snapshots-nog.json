@@ -708905,9 +708905,13 @@
     {
       "ts": "2026-05-28T10:30:41.689Z",
       "players": []
+    },
+    {
+      "ts": "2026-05-28T10:35:31.681Z",
+      "players": []
     }
   ],
-  "updated": "2026-05-28T10:30:41.689Z",
+  "updated": "2026-05-28T10:35:31.681Z",
   "config": {
     "leaderboard": "grootslangSrPlayers",
     "raidName": "NoG",
