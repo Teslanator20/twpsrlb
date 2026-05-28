@@ -708901,9 +708901,13 @@
           "restricted": false
         }
       ]
+    },
+    {
+      "ts": "2026-05-28T10:30:41.689Z",
+      "players": []
     }
   ],
-  "updated": "2026-05-28T10:25:32.432Z",
+  "updated": "2026-05-28T10:30:41.689Z",
   "config": {
     "leaderboard": "grootslangSrPlayers",
     "raidName": "NoG",

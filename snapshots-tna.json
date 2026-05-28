@@ -708901,9 +708901,13 @@
           "restricted": false
         }
       ]
+    },
+    {
+      "ts": "2026-05-28T10:30:42.465Z",
+      "players": []
     }
   ],
-  "updated": "2026-05-28T10:25:33.214Z",
+  "updated": "2026-05-28T10:30:42.465Z",
   "config": {
     "leaderboard": "namelessSrPlayers",
     "raidName": "TNA",

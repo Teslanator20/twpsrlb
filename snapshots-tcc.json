@@ -708901,9 +708901,13 @@
           "restricted": false
         }
       ]
+    },
+    {
+      "ts": "2026-05-28T10:30:42.082Z",
+      "players": []
     }
   ],
-  "updated": "2026-05-28T10:25:32.826Z",
+  "updated": "2026-05-28T10:30:42.082Z",
   "config": {
     "leaderboard": "colossusSrPlayers",
     "raidName": "TCC",
