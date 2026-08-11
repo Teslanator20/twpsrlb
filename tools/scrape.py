@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Holt fuer jeden legendaeren Raid-Boss die Top-5-Counter von Pokebattler.
+"""Holt fuer jeden legendaeren Raid-Boss die Counter-Rangliste von Pokebattler.
 
 Zwei Konfigurationen:
   solo  -> numParty=1, friendLevel=FRIENDSHIP_LEVEL_0   (keine Team-Power, kein Freundschaftsbonus)
@@ -16,7 +16,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, "data")
 API = "https://fight.pokebattler.com"
-TOP_N = 5
+TOP_N = 30  # Pokebattler liefert 30 Konter; gefiltert wird spaeter in build.py
 
 CONFIGS = {
     "solo": {"numParty": "1", "friendLevel": "FRIENDSHIP_LEVEL_0"},

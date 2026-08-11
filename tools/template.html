@@ -75,7 +75,7 @@
   }
 
   .wrap {
-    max-width: 1180px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 20px 96px;
     display: flex;
@@ -166,11 +166,11 @@
     text-wrap: balance;
   }
 
-  .sec-head p { margin: 0; color: var(--ink-2); max-width: 66ch; }
+  .sec-head p { margin: 0; color: var(--ink-2); max-width: 70ch; }
 
-  /* ---------- Rangliste ---------- */
+  /* ---------- Ranglisten ---------- */
 
-  .boards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+  .boards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; }
 
   .board {
     background: var(--surface);
@@ -183,6 +183,7 @@
   .board-head { padding: 14px 18px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 2px; }
   .board-team .board-head { background: var(--team-wash); }
   .board-solo .board-head { background: var(--solo-wash); }
+  .board-mega .board-head { background: var(--surface-2); }
 
   .board-head b { font-family: var(--display); font-size: 1.02rem; letter-spacing: -.01em; }
   .board-team .board-head b { color: var(--team); }
@@ -191,11 +192,11 @@
 
   .row {
     display: grid;
-    grid-template-columns: 30px 1fr auto;
+    grid-template-columns: 26px 1fr auto;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     width: 100%;
-    padding: 9px 18px;
+    padding: 9px 16px;
     border: 0;
     border-top: 1px solid var(--line-soft);
     background: none;
@@ -203,7 +204,6 @@
     font: inherit;
     text-align: left;
     cursor: pointer;
-    position: relative;
   }
 
   .row:first-of-type { border-top: 0; }
@@ -212,6 +212,7 @@
   .row[aria-pressed="true"] { background: var(--surface-2); }
   .board-team .row[aria-pressed="true"] { box-shadow: inset 3px 0 0 var(--team); }
   .board-solo .row[aria-pressed="true"] { box-shadow: inset 3px 0 0 var(--solo); }
+  .board-mega .row[aria-pressed="true"] { box-shadow: inset 3px 0 0 var(--ink); }
 
   .rank {
     font-family: var(--mono);
@@ -228,6 +229,8 @@
   .bar i { display: block; height: 100%; border-radius: 2px; }
   .board-team .bar i { background: var(--team-bar); }
   .board-solo .bar i { background: var(--solo-bar); }
+  .bar.bar-team i { background: var(--team-bar); }
+  .bar.bar-solo i { background: var(--solo-bar); }
 
   .n {
     display: flex;
@@ -240,20 +243,29 @@
   .n em { font-style: normal; font-size: 1.05rem; font-weight: 600; }
   .n small { font-size: 11px; color: var(--ink-3); }
 
+  /* Zwei Zaehlungen nebeneinander in der Mega-Spalte */
+  .duo { display: flex; gap: 12px; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  .duo div { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.2; }
+  .duo em { font-style: normal; font-size: 1.02rem; font-weight: 600; }
+  .duo .v-team em { color: var(--team); }
+  .duo .v-solo em { color: var(--solo); }
+  .duo small { font-size: 9.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+
+  .duo-bars { display: flex; flex-direction: column; gap: 2px; }
+
   .move {
     display: inline-block;
-    min-width: 3.4em;
+    min-width: 3.2em;
     font-family: var(--mono);
     font-size: 11px;
     color: var(--ink-3);
   }
 
-  /* Der Akzent markiert, wo das Pokemon besser abschneidet als in der anderen Spalte. */
   .board-team .move.up { color: var(--team); }
   .board-solo .move.up { color: var(--solo); }
   .move.down { color: var(--ink-3); opacity: .75; }
 
-  .board-more { padding: 10px 18px; border-top: 1px solid var(--line-soft); }
+  .board-more { padding: 10px 16px; border-top: 1px solid var(--line-soft); }
 
   .board-more button {
     font: inherit;
@@ -346,8 +358,11 @@
 
   .boss-cols { display: grid; grid-template-columns: 1fr 1fr; }
 
-  .col { padding: 12px 18px 16px; display: flex; flex-direction: column; gap: 8px; }
+  .col { padding: 12px 18px 16px; display: flex; flex-direction: column; gap: 14px; }
   .col + .col { border-left: 1px solid var(--line-soft); }
+
+  .block { display: flex; flex-direction: column; gap: 8px; }
+  .block + .block { border-top: 1px dashed var(--line-soft); padding-top: 12px; }
 
   .col-label {
     font-family: var(--mono);
@@ -358,6 +373,7 @@
 
   .col-team .col-label { color: var(--team); }
   .col-solo .col-label { color: var(--solo); }
+  .block-mega .col-label { color: var(--ink-3); }
 
   ol.picks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; counter-reset: p; }
 
@@ -386,7 +402,7 @@
 
   li.hit .pk b { box-shadow: inset 0 -.55em 0 var(--hl, transparent); }
 
-  .no-data { font-size: .88rem; color: var(--ink-3); font-style: italic; }
+  .no-data { font-size: .88rem; color: var(--ink-3); font-style: italic; margin: 0; }
 
   .empty { padding: 28px; text-align: center; color: var(--ink-3); font-family: var(--mono); font-size: 13px; }
 
@@ -400,8 +416,14 @@
 
   footer { color: var(--ink-3); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 16px; }
 
+  @media (max-width: 1080px) {
+    .boards { grid-template-columns: 1fr 1fr; }
+    .board-mega { grid-column: 1 / -1; }
+  }
+
   @media (max-width: 760px) {
     .boards, .boss-cols { grid-template-columns: 1fr; }
+    .board-mega { grid-column: auto; }
     .col + .col { border-left: 0; border-top: 1px solid var(--line-soft); }
     .wrap { gap: 44px; }
   }
@@ -416,10 +438,10 @@
     <p class="eyebrow">Pokémon GO · Stufe-5-Raids · Datenbasis Pokebattler</p>
     <h1>Welche Angreifer landen am häufigsten in den Top&nbsp;5?</h1>
     <p class="lede">
-      Für jeden legendären und mysteriösen Stufe-5-Raidboss wurden die fünf besten Konter abgefragt –
-      einmal <b>mit Team-Power und bestem Freund</b>, einmal <b>ohne beides</b>. Die Ranglisten zählen,
-      wie oft ein Pokémon dabei einen der fünf Plätze belegt. Wer oben steht, ist im Raid am
-      vielseitigsten einsetzbar.
+      Für jeden legendären und mysteriösen Stufe-5-Raidboss wurden die fünf besten Konter ermittelt –
+      einmal <b>mit Team-Power und bestem Freund</b>, einmal <b>ohne beides</b>. Mega-Entwicklungen
+      laufen dabei außer Konkurrenz: Sie stehen in einer <b>eigenen dritten Spalte</b>, damit die
+      Rangliste zeigt, was ohne Mega-Energie tatsächlich zur Verfügung steht.
     </p>
     <div class="tiles" id="tiles"></div>
   </header>
@@ -428,8 +450,9 @@
     <div class="sec-head">
       <h2>Die vielseitigsten Konter</h2>
       <p>
-        Zählung über alle ausgewerteten Bosse. <b>#1</b> zeigt, wie oft das Pokémon der beste Konter war;
-        der Pfeil den Rangunterschied zur jeweils anderen Spalte. Ein Klick filtert die Boss-Liste unten.
+        Zählung über alle ausgewerteten Bosse. <b>#1</b> zeigt, wie oft das Pokémon der beste Konter
+        seines Pools war; der Pfeil den Rangunterschied zur jeweils anderen Konfiguration. Ein Klick
+        auf eine Zeile filtert die Boss-Liste weiter unten.
       </p>
     </div>
     <div class="boards">
@@ -448,6 +471,14 @@
         </div>
         <div id="list-solo"></div>
         <div class="board-more"><button type="button" data-more="solo">Alle anzeigen</button></div>
+      </div>
+      <div class="board board-mega">
+        <div class="board-head">
+          <b>Nur Mega-Entwicklungen</b>
+          <span id="head-mega"></span>
+        </div>
+        <div id="list-mega"></div>
+        <div class="board-more"><button type="button" data-more="mega">Alle anzeigen</button></div>
       </div>
     </div>
   </section>
@@ -476,21 +507,24 @@
         <p>
           Pokebattler-Raid-API, Stufe-5-Raid, Angreifer auf Level 40, Strategie
           <code>CINEMATIC_ATTACK_WHEN_POSSIBLE</code>, Ausweichen nach Reaktionszeit, kein Wetterbonus,
-          zufälliges Boss-Attackenset, sortiert nach Estimator.
+          zufälliges Boss-Attackenset, sortiert nach Estimator. Pokebattler liefert je Abfrage die
+          30 besten Konter; daraus sind die Top 5 je Pool gebildet.
         </p>
       </div>
       <div>
-        <h3>Die zwei Spalten</h3>
+        <h3>Die drei Spalten</h3>
         <ul>
-          <li><b>Mit Team-Power &amp; bestem Freund:</b> <code>numParty=2</code>, <code>friendLevel=FRIENDSHIP_LEVEL_4</code></li>
-          <li><b>Ohne beides:</b> <code>numParty=1</code>, <code>friendLevel=FRIENDSHIP_LEVEL_0</code></li>
+          <li><b>Mit Team-Power &amp; bestem Freund:</b> <code>numParty=2</code>, <code>friendLevel=FRIENDSHIP_LEVEL_4</code> – ohne Megas</li>
+          <li><b>Ohne beides:</b> <code>numParty=1</code>, <code>friendLevel=FRIENDSHIP_LEVEL_0</code> – ohne Megas</li>
+          <li><b>Nur Megas:</b> dieselben zwei Konfigurationen, aber ausschließlich Mega- und Protoformen</li>
         </ul>
       </div>
       <div>
         <h3>Grenzen</h3>
         <ul id="caveats">
-          <li>Der Angreifer-Pool ist Pokebattlers Standard – er enthält auch Mega-, Krypto- und noch nicht veröffentlichte Formen.</li>
-          <li>Gezählt wird jede Form einzeln: Mega-Mewtu Y und Mewtu sind getrennte Einträge.</li>
+          <li>Als Mega zählen alle Mega-Entwicklungen sowie Proto-Groudon und Proto-Kyogre – in Pokémon GO dieselbe Mechanik.</li>
+          <li>Der übrige Angreifer-Pool ist Pokebattlers Standard und enthält auch Krypto- und noch nicht veröffentlichte Formen.</li>
+          <li>Jede Form zählt einzeln: Schwarzes Kyurem und Kyurem sind getrennte Einträge.</li>
           <li>Team-Power ist mit Gruppengröße 2 simuliert; größere Gruppen rechnet die API nicht in der verfügbaren Zeit durch.</li>
         </ul>
       </div>
@@ -511,7 +545,11 @@
     dark: "#5c4a3f", steel: "#77808c", fairy: "#c25c96"
   };
 
-  const state = { more: { team: false, solo: false }, filter: null, query: "" };
+  /* Welche Trefferlisten eines Bosses zu welcher Spalte gehoeren. */
+  const BOARD_KEYS = { team: ["team"], solo: ["solo"], mega: ["teamMega", "soloMega"] };
+  const LABEL = { team: "mit Team-Power", solo: "ohne Boni", mega: "Megas" };
+
+  const state = { more: { team: false, solo: false, mega: false }, filter: null, query: "" };
   const el = (id) => document.getElementById(id);
 
   function chips(types) {
@@ -521,19 +559,19 @@
   }
 
   /* --- Kopfzahlen --- */
-  const totalPicks = DATA.covered.team * 5 + DATA.covered.solo * 5;
   const pool = new Set([...DATA.ranking.team, ...DATA.ranking.solo].map(r => r.id));
   el("tiles").innerHTML = [
     [DATA.bosses.length, "Raidbosse", false],
-    [totalPicks, "vergebene Top-5-Plätze", false],
-    [pool.size, "verschiedene Konter", false],
-    [DATA.ranking.team[0].name, "häufigster Konter", true]
+    [pool.size, "Konter ohne Megas", false],
+    [DATA.ranking.mega.length, "Megas in den Top 5", false],
+    [DATA.ranking.team[0].name, "häufigster Konter ohne Mega", true]
   ].map(([v, l, txt]) =>
     "<div class='tile'><b" + (txt ? " class='txt'" : "") + ">" + v + "</b><span>" + l + "</span></div>"
   ).join("");
 
   el("head-team").textContent = DATA.covered.team + " Bosse · numParty=2 · Level 4";
   el("head-solo").textContent = DATA.covered.solo + " Bosse · numParty=1 · kein Bonus";
+  el("head-mega").textContent = "beide Konfigurationen im Vergleich";
 
   /* --- Ranglisten --- */
   const rankIndex = {
@@ -541,58 +579,89 @@
     solo: new Map(DATA.ranking.solo.map((r, i) => [r.id, i]))
   };
 
+  function moveMark(mode, id, i) {
+    const other = mode === "team" ? "solo" : "team";
+    const oi = rankIndex[other].get(id);
+    if (oi === undefined) return '<span class="move up">neu</span>';
+    if (oi === i) return '<span class="move">–</span>';
+    const d = oi - i;
+    return '<span class="move ' + (d > 0 ? "up" : "down") + '">' + (d > 0 ? "▲" : "▼") + Math.abs(d) + "</span>";
+  }
+
+  function rowShell(mode, r, i, right) {
+    const on = state.filter && state.filter.id === r.id && state.filter.mode === mode;
+    return '<button type="button" class="row" data-mode="' + mode + '" data-id="' + r.id +
+      '" aria-pressed="' + (on ? "true" : "false") + '">' +
+      '<span class="rank">' + (i + 1) + "</span>" +
+      '<span class="who"><b>' + r.name + "</b>" + chips(r.types) + right.bars + "</span>" +
+      right.value + "</button>";
+  }
+
   function renderBoard(mode) {
     const rows = DATA.ranking[mode];
     const shown = state.more[mode] ? rows : rows.slice(0, 15);
-    const max = rows[0].count;
-    const other = mode === "team" ? "solo" : "team";
+    let html;
 
-    el("list-" + mode).innerHTML = shown.map((r, i) => {
-      const oi = rankIndex[other].get(r.id);
-      let mv = '<span class="move">–</span>';
-      if (oi === undefined) {
-        mv = '<span class="move ' + (mode === "team" ? "up" : "down") + '">neu</span>';
-      } else if (oi !== i) {
-        const d = oi - i;
-        mv = '<span class="move ' + (d > 0 ? "up" : "down") + '">' + (d > 0 ? "▲" : "▼") + Math.abs(d) + "</span>";
-      }
-      const on = state.filter && state.filter.id === r.id && state.filter.mode === mode;
-      return '<button type="button" class="row" data-mode="' + mode + '" data-id="' + r.id +
-        '" aria-pressed="' + (on ? "true" : "false") + '">' +
-        '<span class="rank">' + (i + 1) + "</span>" +
-        '<span class="who"><b>' + r.name + "</b>" + chips(r.types) +
-        '<span class="bar"><i style="width:' + (r.count / max * 100).toFixed(1) + '%"></i></span></span>' +
-        '<span class="n">' + mv + "<em>" + r.count + "</em><small>× · #1: " + r.first + "</small></span>" +
-        "</button>";
-    }).join("");
+    if (mode === "mega") {
+      const max = Math.max(...rows.map(r => Math.max(r.team, r.solo)));
+      html = shown.map((r, i) => rowShell(mode, r, i, {
+        bars: '<span class="duo-bars">' +
+          '<span class="bar bar-team"><i style="width:' + (r.team / max * 100).toFixed(1) + '%"></i></span>' +
+          '<span class="bar bar-solo"><i style="width:' + (r.solo / max * 100).toFixed(1) + '%"></i></span></span>',
+        value: '<span class="duo">' +
+          '<div class="v-team"><em>' + r.team + '</em><small>m. Boni</small></div>' +
+          '<div class="v-solo"><em>' + r.solo + '</em><small>o. Boni</small></div></span>'
+      })).join("");
+    } else {
+      const max = rows[0].count;
+      html = shown.map((r, i) => rowShell(mode, r, i, {
+        bars: '<span class="bar"><i style="width:' + (r.count / max * 100).toFixed(1) + '%"></i></span>',
+        value: '<span class="n">' + moveMark(mode, r.id, i) +
+          "<em>" + r.count + "</em><small>× · #1: " + r.first + "</small></span>"
+      })).join("");
+    }
 
+    el("list-" + mode).innerHTML = html;
     const btn = document.querySelector('[data-more="' + mode + '"]');
     btn.textContent = state.more[mode] ? "Weniger anzeigen" : "Alle " + rows.length + " anzeigen";
   }
 
   /* --- Boss-Liste --- */
-  function pickList(picks, mode) {
+  function pickList(picks, wash) {
     if (!picks) {
       return '<p class="no-data">Pokebattler konnte diese Kombination nicht berechnen (Zeitüberschreitung der API).</p>';
     }
-    const hl = mode === "team" ? "var(--team-wash)" : "var(--solo-wash)";
+    if (!picks.length) return '<p class="no-data">Kein Treffer in den 30 besten Kontern.</p>';
     return '<ol class="picks">' + picks.map(p => {
       const hit = state.filter && state.filter.id === p.id;
-      return "<li" + (hit ? ' class="hit" style="--hl:' + hl + '"' : "") + '><span class="pk"><b>' + p.name +
+      return "<li" + (hit ? ' class="hit" style="--hl:' + wash + '"' : "") + '><span class="pk"><b>' + p.name +
         "</b><small>" + p.moves + "</small></span><span class='est'>" + p.estimator.toFixed(2) + "</span></li>";
     }).join("") + "</ol>";
   }
 
+  function bossColumn(boss, mode) {
+    const wash = mode === "team" ? "var(--team-wash)" : "var(--solo-wash)";
+    const head = mode === "team" ? "Mit Team-Power &amp; bestem Freund" : "Ohne Boni";
+    return '<div class="col col-' + mode + '">' +
+      '<div class="block"><span class="col-label">' + head + ' · ohne Megas</span>' +
+      pickList(boss[mode], wash) + "</div>" +
+      '<div class="block block-mega"><span class="col-label">Megas</span>' +
+      pickList(boss[mode === "team" ? "teamMega" : "soloMega"], wash) + "</div></div>";
+  }
+
+  function matchesFilter(boss) {
+    if (!state.filter) return true;
+    return BOARD_KEYS[state.filter.mode].some(k => {
+      const picks = boss[k];
+      return picks && picks.some(p => p.id === state.filter.id);
+    });
+  }
+
   function renderBosses() {
     const q = state.query.trim().toLowerCase();
-    const list = DATA.bosses.filter(b => {
-      if (q && !b.name.toLowerCase().includes(q) && !b.id.toLowerCase().includes(q)) return false;
-      if (state.filter) {
-        const picks = b[state.filter.mode];
-        if (!picks || !picks.some(p => p.id === state.filter.id)) return false;
-      }
-      return true;
-    });
+    const list = DATA.bosses.filter(b =>
+      (!q || b.name.toLowerCase().includes(q) || b.id.toLowerCase().includes(q)) && matchesFilter(b)
+    );
 
     el("count-note").textContent = list.length + " von " + DATA.bosses.length + " Bossen";
     el("bosses").innerHTML = list.length === 0
@@ -600,9 +669,7 @@
       : list.map(b =>
         '<article class="boss"><div class="boss-head"><b>' + b.name + "</b>" + chips(b.types) +
         '<span class="dex">Nr. ' + b.num + '</span></div><div class="boss-cols">' +
-        '<div class="col col-team"><span class="col-label">Mit Team-Power &amp; bestem Freund</span>' + pickList(b.team, "team") + "</div>" +
-        '<div class="col col-solo"><span class="col-label">Ohne Boni</span>' + pickList(b.solo, "solo") + "</div>" +
-        "</div></article>"
+        bossColumn(b, "team") + bossColumn(b, "solo") + "</div></article>"
       ).join("");
   }
 
@@ -612,13 +679,12 @@
     const pill = el("pill");
     if (f) {
       const name = DATA.ranking[f.mode].find(r => r.id === f.id).name;
-      el("pill-text").textContent = name + " · " + (f.mode === "team" ? "mit Team-Power" : "ohne Boni");
+      el("pill-text").textContent = name + " · " + LABEL[f.mode];
       pill.classList.add("on");
     } else {
       pill.classList.remove("on");
     }
-    renderBoard("team");
-    renderBoard("solo");
+    ["team", "solo", "mega"].forEach(renderBoard);
     renderBosses();
   }
 
@@ -641,14 +707,13 @@
   el("search").addEventListener("input", (ev) => { state.query = ev.target.value; renderBosses(); });
 
   if (DATA.missing.length) {
-    el("caveats").insertAdjacentHTML("beforeend", "<li>Ohne Daten in einer Spalte: " +
-      DATA.missing.map(m => m.name + " (" + (m.mode === "team" ? "mit Team-Power" : "ohne Boni") + ")").join(", ") + ".</li>");
+    el("caveats").insertAdjacentHTML("beforeend", "<li>Ohne Daten in einer Konfiguration: " +
+      DATA.missing.map(m => m.name + " (" + LABEL[m.mode] + ")").join(", ") + ".</li>");
   }
 
   el("footer").innerHTML = "Simulationsdaten von <a href='https://www.pokebattler.com/'>Pokebattler</a>, abgerufen am " +
     DATA.generated.split("-").reverse().join(".") + ". Pokémon ist eine Marke von Nintendo/Creatures Inc./GAME FREAK inc.";
 
-  renderBoard("team");
-  renderBoard("solo");
+  ["team", "solo", "mega"].forEach(renderBoard);
   renderBosses();
 </script>

@@ -83,13 +83,35 @@ def dex_num(pid):
     return (POKEDEX.get(pid) or {}).get("pokedex", {}).get("pokemonNum", 9999)
 
 
+def is_mega(pid):
+    """Mega-Entwicklungen und Protoformen - in Pokemon GO dieselbe Mechanik."""
+    return "_MEGA" in pid or pid.endswith("_PRIMAL")
+
+
+TOP_N = 5
+MODES = ("team", "solo")
+# Der Schluessel im Boss-Eintrag je Konfiguration und Angreifer-Pool.
+KEYS = {("team", False): "team", ("solo", False): "solo",
+        ("team", True): "teamMega", ("solo", True): "soloMega"}
+
+
 def main():
     raw = json.load(open(os.path.join(DATA, "counters.json")))
 
+    def counter(c):
+        return {
+            "id": c["pokemonId"],
+            "name": pokemon_name(c["pokemonId"]),
+            "estimator": c["estimator"],
+            "moves": "%s / %s" % (move_name(c["fastMove"]), move_name(c["chargedMove"])),
+        }
+
     bosses = []
-    tally = {"solo": collections.Counter(), "team": collections.Counter()}
-    top1 = {"solo": collections.Counter(), "team": collections.Counter()}
-    points = {"solo": collections.Counter(), "team": collections.Counter()}
+    tally, top1, points = {}, {}, {}
+    for key in KEYS.values():
+        tally[key] = collections.Counter()
+        top1[key] = collections.Counter()
+        points[key] = collections.Counter()
 
     for boss_id in sorted(raw, key=lambda b: (dex_num(b), b)):
         entry = {
@@ -98,53 +120,67 @@ def main():
             "num": dex_num(boss_id),
             "types": types_of(boss_id),
         }
-        for mode in ("solo", "team"):
-            lst = raw[boss_id].get(mode)
-            if not lst:
-                entry[mode] = None
-                continue
-            entry[mode] = [
-                {
-                    "id": c["pokemonId"],
-                    "name": pokemon_name(c["pokemonId"]),
-                    "estimator": c["estimator"],
-                    "moves": "%s / %s" % (move_name(c["fastMove"]), move_name(c["chargedMove"])),
-                }
-                for c in lst
-            ]
-            for rank, c in enumerate(lst):
-                tally[mode][c["pokemonId"]] += 1
-                points[mode][c["pokemonId"]] += 5 - rank
-                if rank == 0:
-                    top1[mode][c["pokemonId"]] += 1
+        for mode in MODES:
+            full = raw[boss_id].get(mode)
+            for mega in (False, True):
+                key = KEYS[(mode, mega)]
+                if not full:
+                    entry[key] = None
+                    continue
+                picks = [c for c in full if is_mega(c["pokemonId"]) == mega][:TOP_N]
+                entry[key] = [counter(c) for c in picks]
+                for rank, c in enumerate(picks):
+                    pid = c["pokemonId"]
+                    tally[key][pid] += 1
+                    points[key][pid] += TOP_N - rank
+                    if rank == 0:
+                        top1[key][pid] += 1
         bosses.append(entry)
 
-    def ranking(mode):
-        rows = []
-        for pid, count in tally[mode].most_common():
-            rows.append(
-                {
-                    "id": pid,
-                    "name": pokemon_name(pid),
-                    "count": count,
-                    "first": top1[mode][pid],
-                    "points": points[mode][pid],
-                    "types": types_of(pid),
-                }
-            )
+    def ranking(key):
+        rows = [
+            {
+                "id": pid,
+                "name": pokemon_name(pid),
+                "count": count,
+                "first": top1[key][pid],
+                "points": points[key][pid],
+                "types": types_of(pid),
+            }
+            for pid, count in tally[key].items()
+        ]
         rows.sort(key=lambda r: (-r["count"], -r["points"], r["name"]))
         return rows
 
-    covered = {m: sum(1 for b in bosses if b[m]) for m in ("solo", "team")}
+    def mega_ranking():
+        """Eine Zeile je Mega, mit beiden Zaehlungen nebeneinander."""
+        ids = set(tally["teamMega"]) | set(tally["soloMega"])
+        rows = [
+            {
+                "id": pid,
+                "name": pokemon_name(pid),
+                "types": types_of(pid),
+                "team": tally["teamMega"][pid],
+                "solo": tally["soloMega"][pid],
+                "teamFirst": top1["teamMega"][pid],
+                "soloFirst": top1["soloMega"][pid],
+                "points": points["teamMega"][pid] + points["soloMega"][pid],
+            }
+            for pid in ids
+        ]
+        rows.sort(key=lambda r: (-(r["team"] + r["solo"]), -r["points"], r["name"]))
+        return rows
+
+    covered = {m: sum(1 for b in bosses if b[m]) for m in MODES}
     missing = [
         {"id": b["id"], "name": b["name"], "mode": m}
-        for b in bosses for m in ("solo", "team") if not b[m]
+        for b in bosses for m in MODES if not b[m]
     ]
 
     data = {
         "generated": datetime.date.today().isoformat(),
         "bosses": bosses,
-        "ranking": {"solo": ranking("solo"), "team": ranking("team")},
+        "ranking": {"team": ranking("team"), "solo": ranking("solo"), "mega": mega_ranking()},
         "covered": covered,
         "missing": missing,
     }
@@ -153,8 +189,11 @@ def main():
         json.dump(data, fh, ensure_ascii=False, indent=1)
     print("Bosse: %d | solo: %d | team: %d | fehlend: %d"
           % (len(bosses), covered["solo"], covered["team"], len(missing)))
-    print("Top 5 solo:", [(r["name"], r["count"]) for r in data["ranking"]["solo"][:5]])
-    print("Top 5 team:", [(r["name"], r["count"]) for r in data["ranking"]["team"][:5]])
+    for label in ("team", "solo"):
+        print("Top 5 %s (ohne Megas):" % label,
+              [(r["name"], r["count"]) for r in data["ranking"][label][:5]])
+    print("Top 5 Megas:",
+          [(r["name"], r["team"], r["solo"]) for r in data["ranking"]["mega"][:5]])
     return data
 
 
