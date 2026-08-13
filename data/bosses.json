@@ -306,5 +306,165 @@
  {
   "id": "REGIELEKI",
   "tier": "RAID_LEVEL_ELITE"
+ },
+ {
+  "id": "ABOMASNOW_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "ABSOL_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "AERODACTYL_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "AGGRON_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "ALAKAZAM_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "ALTARIA_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "AMPHAROS_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "AUDINO_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "BANETTE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "BEEDRILL_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "BLASTOISE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "BLAZIKEN_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "CAMERUPT_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "CHARIZARD_MEGA_X",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "CHARIZARD_MEGA_Y",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "GARCHOMP_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "GARDEVOIR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "GENGAR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "GLALIE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "GYARADOS_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "HERACROSS_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "HOUNDOOM_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "KANGASKHAN_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "LOPUNNY_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "LUCARIO_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "MANECTRIC_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "MEDICHAM_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "METAGROSS_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "PIDGEOT_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "PINSIR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "SABLEYE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "SALAMENCE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "SCEPTILE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "SCIZOR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "SHARPEDO_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "SLOWBRO_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "STEELIX_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "SWAMPERT_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "TYRANITAR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "VENUSAUR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
  }
 ]

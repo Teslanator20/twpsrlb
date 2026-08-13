@@ -85,7 +85,9 @@ def dex_num(pid):
 
 def tier_label(tier, pid):
     if tier == "RAID_LEVEL_MEGA_5":
-        return "Proto-Raid" if pid.endswith("_PRIMAL") else "Mega-Raid"
+        return "Proto-Raid" if pid.endswith("_PRIMAL") else "Mega-Raid (legendär)"
+    if tier == "RAID_LEVEL_MEGA":
+        return "Mega-Raid"
     if tier == "RAID_LEVEL_ELITE":
         return "Elite-Raid"
     return "Stufe 5"
@@ -127,12 +129,20 @@ def main():
     tiers = {b["id"]: b["tier"] for b in json.load(open(os.path.join(DATA, "bosses.json")))}
 
     def counter(c):
+        """Ein Pokemon = ein Eintrag, darunter seine besten Attackensets mit eigenem Estimator."""
         return {
             "id": c["pokemonId"],
             "name": pokemon_name(c["pokemonId"]),
             "estimator": c["estimator"],
-            "moves": "%s / %s" % (move_name(c["fastMove"]), move_name(c["chargedMove"])),
+            "sets": [
+                {
+                    "moves": "%s / %s" % (move_name(m["fastMove"]), move_name(m["chargedMove"])),
+                    "estimator": m["estimator"],
+                }
+                for m in c["movesets"]
+            ],
         }
+
 
     bosses = []
     # tally[variant][key] usw. - eine Zaehlung je Krypto-Variante und Pool.

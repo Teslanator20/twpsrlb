@@ -18,10 +18,13 @@ RARITIES = {"POKEMON_RARITY_LEGENDARY", "POKEMON_RARITY_MYTHIC"}
 
 # API-Stufe -> Pokebattler-Listen, die darauf abgebildet werden. Reihenfolge = Prioritaet:
 # ein Boss, der in mehreren Listen steht, bekommt die erste passende Stufe.
+# rare_only=True beschraenkt auf legendaere und mysterioese Pokemon; Mega-Raids nehmen
+# wir vollstaendig mit, dort ist die Mega-Form selbst das Auswahlkriterium.
 GROUPS = [
-    ("RAID_LEVEL_5", ("RAID_LEVEL_5", "RAID_LEVEL_5_LEGACY")),
-    ("RAID_LEVEL_MEGA_5", ("RAID_LEVEL_MEGA_5", "RAID_LEVEL_MEGA_5_LEGACY")),
-    ("RAID_LEVEL_ELITE", ("RAID_LEVEL_ELITE", "RAID_LEVEL_ELITE_LEGACY")),
+    ("RAID_LEVEL_5", ("RAID_LEVEL_5", "RAID_LEVEL_5_LEGACY"), True),
+    ("RAID_LEVEL_MEGA_5", ("RAID_LEVEL_MEGA_5", "RAID_LEVEL_MEGA_5_LEGACY"), True),
+    ("RAID_LEVEL_ELITE", ("RAID_LEVEL_ELITE", "RAID_LEVEL_ELITE_LEGACY"), True),
+    ("RAID_LEVEL_MEGA", ("RAID_LEVEL_MEGA", "RAID_LEVEL_MEGA_LEGACY"), False),
 ]
 
 # Formen, die nur Alias einer anderen ID in derselben Liste sind.
@@ -42,18 +45,18 @@ def main():
     by_list = {t["tier"]: {r["pokemon"] for r in t["raids"]} for t in raids}
 
     assigned = {}
-    for tier, lists in GROUPS:
+    for tier, lists, rare_only in GROUPS:
         for name in lists:
             for pid in sorted(by_list.get(name, ())):
                 if pid in assigned or pid in ALIASES:
                     continue
                 if pid.endswith(EXCLUDE_SUFFIX):
                     continue
-                if pokemon.get(pid, {}).get("rarity") not in RARITIES:
+                if rare_only and pokemon.get(pid, {}).get("rarity") not in RARITIES:
                     continue
                 assigned[pid] = tier
 
-    order = {tier: i for i, (tier, _) in enumerate(GROUPS)}
+    order = {tier: i for i, (tier, _, _) in enumerate(GROUPS)}
     bosses = [
         {"id": pid, "tier": tier}
         for pid, tier in sorted(assigned.items(), key=lambda kv: (order[kv[1]], kv[0]))
@@ -69,7 +72,7 @@ def main():
     with open(os.path.join(DATA, "pokemon.json"), "w") as fh:
         json.dump(slim, fh)
 
-    for tier, _ in GROUPS:
+    for tier, _, _ in GROUPS:
         ids = [b["id"] for b in bosses if b["tier"] == tier]
         print("%-22s %2d  %s" % (tier, len(ids), ", ".join(ids) if len(ids) < 15 else "…"))
     print("gesamt: %d" % len(bosses))

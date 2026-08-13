@@ -17,6 +17,7 @@ ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, "data")
 API = "https://fight.pokebattler.com"
 TOP_N = 30  # Pokebattler liefert 30 Konter; gefiltert wird spaeter in build.py
+MOVESETS_N = 3  # je Konter die drei besten Attackensets
 
 CONFIGS = {
     "solo": {"numParty": "1", "friendLevel": "FRIENDSHIP_LEVEL_0"},
@@ -57,17 +58,27 @@ def fetch(url, attempts=5):
 
 
 def top_counters(payload, n=TOP_N):
-    """Pokebattler sortiert die Counter aufsteigend (schlechtester zuerst)."""
+    """Pokebattler sortiert die Counter aufsteigend (schlechtester zuerst).
+
+    Je Konter werden die besten MOVESETS_N Attackensets behalten - ein Pokemon bleibt
+    dabei ein Eintrag, seine Attackensets stehen darunter.
+    """
     defenders = payload["attackers"][0]["randomMove"]["defenders"]
     best = []
     for entry in reversed(defenders[-n:]):
-        move = min(entry["byMove"], key=lambda m: m["result"]["estimator"])
+        moves = sorted(entry["byMove"], key=lambda m: m["result"]["estimator"])[:MOVESETS_N]
         best.append(
             {
                 "pokemonId": entry["pokemonId"],
-                "estimator": round(move["result"]["estimator"], 4),
-                "fastMove": move["move1"],
-                "chargedMove": move["move2"],
+                "estimator": round(moves[0]["result"]["estimator"], 4),
+                "movesets": [
+                    {
+                        "fastMove": m["move1"],
+                        "chargedMove": m["move2"],
+                        "estimator": round(m["result"]["estimator"], 4),
+                    }
+                    for m in moves
+                ],
             }
         )
     return best

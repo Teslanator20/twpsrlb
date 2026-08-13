@@ -1,6 +1,7 @@
-# Pokémon GO – Counter-Rangliste der legendären Raidbosse
+# Pokémon GO – Counter-Rangliste der Raidbosse
 
-Auswertung der **Top-5-Konter aller legendären und mysteriösen Raidbosse** auf Basis der
+Auswertung der **Top-5-Konter aller legendären und mysteriösen Raidbosse sowie aller
+Mega- und Proto-Raids** auf Basis der
 [Pokebattler](https://www.pokebattler.com/)-Simulations-API – einmal **mit Team-Power und
 bestem Freund**, einmal **ohne beides**. Auf der Angreiferseite laufen Mega-Entwicklungen
 außer Konkurrenz und stehen in einer eigenen dritten Spalte.
@@ -10,15 +11,16 @@ mit drei Ranglisten nebeneinander plus einer durchsuchbaren Detailansicht pro Bo
 
 ## Was drin steht
 
-* **77 Raidbosse** – alle legendären und mysteriösen Bosse, die schon in Raids aufgetreten sind,
-  jeder in seiner eigenen Raid-Stufe:
-  * **69 Stufe-5-Bosse**, inklusive Formen wie Giratina Urform, Necrozma Morgenschwingen,
-    Zacian König des Schwertes oder Deoxys in allen vier Formen
-  * **7 Mega- und Proto-Raids**: Proto-Groudon, Proto-Kyogre, Mega-Mewtu X und Y,
+* **117 Raidbosse**, die schon in Raids aufgetreten sind, jeder in seiner eigenen Raid-Stufe:
+  * **69 Stufe-5-Bosse** (legendär und mysteriös), inklusive Formen wie Giratina Urform,
+    Necrozma Morgenschwingen, Zacian König des Schwertes oder Deoxys in allen vier Formen
+  * **40 Mega-Raids**: von Mega-Bisaflor bis Mega-Knakrack, auch die nicht-legendären
+  * **7 legendäre Mega- und Proto-Raids**: Proto-Groudon, Proto-Kyogre, Mega-Mewtu X und Y,
     Mega-Rayquaza, Mega-Latias, Mega-Latios
   * **1 Elite-Raid**: Regieleki
-* Pro Boss die **fünf besten Konter je Konfiguration und Pool** mit Attackenset und Estimator –
-  also vier Listen pro Boss: mit/ohne Boni, jeweils ohne Megas und nur Megas.
+* Pro Boss die **fünf besten Konter je Konfiguration und Pool** – also vier Listen pro Boss:
+  mit/ohne Boni, jeweils ohne Megas und nur Megas. Jedes Pokémon ist **ein Eintrag**; darunter
+  stehen seine **drei besten Attackensets mit jeweils eigenem Estimator**.
 * Drei **Häufigkeitsranglisten**: wie oft ein Pokémon in den Top 5 landet, wie oft es Platz 1
   belegt und wie stark sich sein Rang zwischen den beiden Konfigurationen verschiebt.
   Die Mega-Spalte zeigt beide Zählungen nebeneinander.
@@ -26,8 +28,8 @@ mit drei Ranglisten nebeneinander plus einer durchsuchbaren Detailansicht pro Bo
   Spalten genommen und lassen sich per Klick einblenden. Beide Varianten sind vorberechnet,
   das Umschalten läuft ohne Nachladen.
 * Ein Klick auf ein Pokémon in einer Rangliste öffnet darunter eine **Attackenset-Auswertung**:
-  mit welchem Set es seine Platzierungen geholt hat, in beiden Konfigurationen, mit Anteil und
-  den zugehörigen Bossen. Bei Mega-Mewtu Y sind das sechs verschiedene Lade-Attacken.
+  mit welchem Set es seine Platzierungen geholt hat, in beiden Konfigurationen, mit Anzahl,
+  Anteil und den zugehörigen Bossen. Bei Mega-Mewtu Y sind das sechs verschiedene Lade-Attacken.
 
 ## Die drei Spalten
 
@@ -37,14 +39,19 @@ mit drei Ranglisten nebeneinander plus einer durchsuchbaren Detailansicht pro Bo
 | **Ohne Boni** | nein | keine | ohne Megas | `numParty=1`, `friendLevel=FRIENDSHIP_LEVEL_0` |
 | **Nur Megas** | beide Konfigurationen im Vergleich | | nur Megas | – |
 
-Sonst identisch: jeder Boss in seiner eigenen Raid-Stufe (`RAID_LEVEL_5`, `RAID_LEVEL_MEGA_5`
-oder `RAID_LEVEL_ELITE`), Angreifer auf Level 40, Strategie
+Sonst identisch: jeder Boss in seiner eigenen Raid-Stufe (`RAID_LEVEL_5`, `RAID_LEVEL_MEGA`,
+`RAID_LEVEL_MEGA_5` oder `RAID_LEVEL_ELITE`), Angreifer auf Level 40, Strategie
 `CINEMATIC_ATTACK_WHEN_POSSIBLE`, Ausweichen nach Reaktionszeit, kein Wetterbonus,
 zufälliges Boss-Attackenset, sortiert nach Estimator.
 
-Pokebattler liefert je Abfrage die 30 besten Konter. `scrape.py` speichert diese Liste
-vollständig, `build.py` filtert daraus die Top 5 je Pool – und zwar zweimal: einmal ohne
-Krypto-Formen (`noShadow`, die Standardansicht) und einmal mit (`withShadow`).
+Pokebattler liefert je Abfrage die 30 besten Konter, jeder mit 6 bis 10 durchsimulierten
+Attackensets. `scrape.py` speichert die 30 Konter mit ihren jeweils **drei besten** Sets,
+`build.py` filtert daraus die Top 5 je Pool – und zwar zweimal: einmal ohne Krypto-Formen
+(`noShadow`, die Standardansicht) und einmal mit (`withShadow`).
+
+Gezählt wird immer **pro Pokémon**, nicht pro Attackenset: Mega-Mewtu Y mit Spukball und
+Mega-Mewtu Y mit Eisstrahl sind ein Eintrag in der Rangliste. Welches Set wie oft zum Zug
+kam, zeigt die Klick-Box.
 
 Als Mega zählen alle IDs mit `_MEGA` sowie Proto-Groudon und Proto-Kyogre (`_PRIMAL`) –
 in Pokémon GO dieselbe Mechanik. Als Krypto zählen alle IDs mit `_SHADOW_FORM`. Auf die
@@ -113,14 +120,15 @@ npx vercel deploy --prod   # im Repo-Wurzelverzeichnis, fragt beim ersten Mal na
   (aktuelle + Legacy-Listen). Angekündigte, aber unveröffentlichte Mega-Bosse wie Mega-Diancie,
   Mega-Darkrai, Mega-Heatran, Mega-Zeraora und Mega-Zygarde fehlen deshalb.
 * Krypto-Raidbosse sind nicht dabei – die gehören in eine eigene Auswertung.
-* Die Top 5 je Pool stammen aus den 30 gelieferten Kontern. Das reicht fast immer:
-  bei den Megas hat nur Hoopa Unbound ohne Boni weniger als 5, und ohne Krypto-Formen
-  bleiben median 11 nutzbare Nicht-Megas übrig – nur bei Entei ohne Boni sind es 4.
+* Die Top 5 je Pool stammen aus den 30 gelieferten Kontern. Das reicht fast immer; wo nach
+  dem Filtern weniger als 5 übrig bleiben, ist die Liste entsprechend kürzer.
 * Team-Power ist mit Gruppengröße 2 simuliert. `numParty=3` und `numParty=4` beantwortet die
   Pokebattler-API nicht innerhalb ihres 30-Sekunden-Timeouts.
-* Für **Rüstungs-Mewtu**, **Deoxys (Normalform)** und **Regieleki** liefert die API in der
-  Team-Power-Variante dauerhaft eine Zeitüberschreitung. Diese drei Felder bleiben leer und sind
-  auf der Seite als solche gekennzeichnet.
+* Für sechs Bosse liefert die API in der Team-Power-Variante dauerhaft eine Zeitüberschreitung:
+  **Rüstungs-Mewtu**, **Deoxys (Normalform)**, **Regieleki**, **Mega-Absol**, **Mega-Bibor** und
+  **Mega-Firnontor**. Bei den drei Megas dürfte der Grund sein, dass sie mit Team-Power und
+  bestem Freund so leicht sind, dass fast der komplette Angreifer-Pool gewinnt und die Simulation
+  ausufert. Diese sechs Felder bleiben leer und sind auf der Seite als solche gekennzeichnet.
 
 Daten von Pokebattler. Pokémon ist eine Marke von Nintendo/Creatures Inc./GAME FREAK inc.
 Dieses Projekt steht in keiner Verbindung zu Niantic oder Nintendo.
