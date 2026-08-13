@@ -80,6 +80,23 @@ RETRY_FAILED=1 python3 tools/scrape.py   # nimmt die null-Einträge erneut in An
 Das lohnt sich, weil Pokebattler teure Simulationen nach dem ersten `504` im Hintergrund
 weiterrechnet und beim nächsten Versuch oft sofort ausliefert.
 
+## Deployment
+
+Die Seite ist statisches HTML ohne Build-Schritt – `index.html` liegt im Repo-Wurzelverzeichnis.
+Damit läuft sie auf jedem Static-Host ohne Konfiguration.
+
+**Vercel, per GitHub-Import:** auf [vercel.com/new](https://vercel.com/new) das Repo auswählen,
+Framework Preset `Other`, Build Command und Output Directory leer lassen, deployen. Jeder
+weitere Push auf `main` deployt automatisch.
+
+**Vercel, per CLI:**
+
+```bash
+npx vercel deploy --prod   # im Repo-Wurzelverzeichnis, fragt beim ersten Mal nach dem Login
+```
+
+**GitHub Pages:** im Repo unter Settings → Pages als Quelle `main` / `/ (root)` wählen.
+
 ## Einschränkungen
 
 * Der Angreifer-Pool ist Pokebattlers Standard. Er enthält auch Krypto- und noch nicht
