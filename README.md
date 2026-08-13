@@ -18,6 +18,9 @@ mit drei Ranglisten nebeneinander plus einer durchsuchbaren Detailansicht pro Bo
 * Drei **Häufigkeitsranglisten**: wie oft ein Pokémon in den Top 5 landet, wie oft es Platz 1
   belegt und wie stark sich sein Rang zwischen den beiden Konfigurationen verschiebt.
   Die Mega-Spalte zeigt beide Zählungen nebeneinander.
+* Ein Klick auf ein Pokémon in einer Rangliste öffnet darunter eine **Attackenset-Auswertung**:
+  mit welchem Set es seine Platzierungen geholt hat, in beiden Konfigurationen, mit Anteil und
+  den zugehörigen Bossen. Bei Mega-Mewtu Y sind das sechs verschiedene Lade-Attacken.
 
 ## Die drei Spalten
 

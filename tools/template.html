@@ -282,6 +282,82 @@
 
   .board-more button:hover { color: var(--ink); }
 
+  /* ---------- Attackenset-Panel ---------- */
+
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .panel-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px;
+    padding: 13px 18px;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .panel-head b { font-family: var(--display); font-size: 1.05rem; letter-spacing: -.01em; }
+
+  .panel-head .pool {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+
+  .panel-head button {
+    margin-left: auto;
+    font: inherit;
+    font-family: var(--mono);
+    font-size: 12px;
+    border: 0;
+    background: none;
+    color: var(--ink-3);
+    cursor: pointer;
+    padding: 2px 4px;
+  }
+
+  .panel-head button:hover { color: var(--ink); }
+
+  .panel-hint { padding: 15px 18px; margin: 0; color: var(--ink-3); font-size: .92rem; }
+
+  .panel-cols { display: grid; grid-template-columns: 1fr 1fr; }
+
+  .panel-col { padding: 14px 18px 18px; display: flex; flex-direction: column; gap: 13px; }
+  .panel-col + .panel-col { border-left: 1px solid var(--line-soft); }
+
+  .panel-col > .col-label { display: flex; gap: 7px; align-items: baseline; }
+  .panel-col > .col-label span { letter-spacing: 0; text-transform: none; color: var(--ink-3); }
+  .panel-team > .col-label { color: var(--team); }
+  .panel-solo > .col-label { color: var(--solo); }
+
+  .ms { display: flex; flex-direction: column; gap: 5px; }
+  .ms-top { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: baseline; }
+  .ms-top b { font-weight: 600; font-size: .93rem; }
+
+  .ms-n {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: .95rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .ms-n small { font-size: 11px; font-weight: 400; color: var(--ink-3); }
+  .panel-team .ms-n { color: var(--team); }
+  .panel-solo .ms-n { color: var(--solo); }
+  .panel-team .bar i { background: var(--team-bar); }
+  .panel-solo .bar i { background: var(--solo-bar); }
+
+  .ms-bosses { font-size: 11.5px; line-height: 1.45; color: var(--ink-3); }
+
   /* ---------- Typ-Chips ---------- */
 
   .chips { display: flex; flex-wrap: wrap; gap: 4px; }
@@ -422,9 +498,9 @@
   }
 
   @media (max-width: 760px) {
-    .boards, .boss-cols { grid-template-columns: 1fr; }
+    .boards, .boss-cols, .panel-cols { grid-template-columns: 1fr; }
     .board-mega { grid-column: auto; }
-    .col + .col { border-left: 0; border-top: 1px solid var(--line-soft); }
+    .col + .col, .panel-col + .panel-col { border-left: 0; border-top: 1px solid var(--line-soft); }
     .wrap { gap: 44px; }
   }
 
@@ -452,7 +528,7 @@
       <p>
         Zählung über alle ausgewerteten Bosse. <b>#1</b> zeigt, wie oft das Pokémon der beste Konter
         seines Pools war; der Pfeil den Rangunterschied zur jeweils anderen Konfiguration. Ein Klick
-        auf eine Zeile filtert die Boss-Liste weiter unten.
+        auf eine Zeile zeigt ihre häufigsten Attackensets und filtert die Boss-Liste weiter unten.
       </p>
     </div>
     <div class="boards">
@@ -481,6 +557,7 @@
         <div class="board-more"><button type="button" data-more="mega">Alle anzeigen</button></div>
       </div>
     </div>
+    <div class="panel" id="panel"></div>
   </section>
 
   <section>
@@ -626,6 +703,60 @@
     btn.textContent = state.more[mode] ? "Weniger anzeigen" : "Alle " + rows.length + " anzeigen";
   }
 
+  /* --- Attackenset-Panel --- */
+
+  /* Zaehlt, mit welchem Attackenset ein Pokemon seine Platzierungen geholt hat. */
+  function movesetStats(id, mega) {
+    const out = {};
+    for (const mode of ["team", "solo"]) {
+      const key = mega ? (mode === "team" ? "teamMega" : "soloMega") : mode;
+      const map = new Map();
+      for (const boss of DATA.bosses) {
+        for (const p of boss[key] || []) {
+          if (p.id !== id) continue;
+          if (!map.has(p.moves)) map.set(p.moves, []);
+          map.get(p.moves).push(boss.name);
+        }
+      }
+      out[mode] = [...map.entries()]
+        .map(([moves, bosses]) => ({ moves, bosses }))
+        .sort((a, b) => b.bosses.length - a.bosses.length || a.moves.localeCompare(b.moves));
+    }
+    return out;
+  }
+
+  function panelColumn(mode, sets) {
+    const total = sets.reduce((s, x) => s + x.bosses.length, 0);
+    const head = mode === "team" ? "Mit Team-Power &amp; bestem Freund" : "Ohne Boni";
+    const body = total === 0
+      ? '<p class="no-data">In dieser Konfiguration in keinen Top 5.</p>'
+      : sets.map(s => {
+        const n = s.bosses.length;
+        return '<div class="ms"><div class="ms-top"><b>' + s.moves + "</b>" +
+          '<span class="ms-n">' + n + "× <small>" + Math.round(n / total * 100) + "%</small></span></div>" +
+          '<span class="bar"><i style="width:' + (n / total * 100).toFixed(1) + '%"></i></span>' +
+          '<span class="ms-bosses">' + s.bosses.join(" · ") + "</span></div>";
+      }).join("");
+    return '<div class="panel-col panel-' + mode + '"><span class="col-label">' + head +
+      (total ? " <span>" + total + " Platzierungen</span>" : "") + "</span>" + body + "</div>";
+  }
+
+  function renderPanel() {
+    const p = el("panel");
+    if (!state.filter) {
+      p.innerHTML = '<p class="panel-hint">Klicke oben auf ein Pokémon, um zu sehen, mit welchen ' +
+        "Attackensets es seine Platzierungen geholt hat – und gegen welche Bosse.</p>";
+      return;
+    }
+    const { id, mode } = state.filter;
+    const row = DATA.ranking[mode].find(r => r.id === id);
+    const stats = movesetStats(id, mode === "mega");
+    p.innerHTML = '<div class="panel-head"><b>' + row.name + "</b>" +
+      '<span class="pool">Attackensets · ' + (mode === "mega" ? "Mega-Pool" : "Pool ohne Megas") + "</span>" +
+      '<button type="button" data-panel-clear>Auswahl aufheben ✕</button></div>' +
+      '<div class="panel-cols">' + panelColumn("team", stats.team) + panelColumn("solo", stats.solo) + "</div>";
+  }
+
   /* --- Boss-Liste --- */
   function pickList(picks, wash) {
     if (!picks) {
@@ -685,10 +816,12 @@
       pill.classList.remove("on");
     }
     ["team", "solo", "mega"].forEach(renderBoard);
+    renderPanel();
     renderBosses();
   }
 
   document.addEventListener("click", (ev) => {
+    if (ev.target.closest("[data-panel-clear]")) { setFilter(null); return; }
     const row = ev.target.closest(".row");
     if (row) {
       const same = state.filter && state.filter.id === row.dataset.id && state.filter.mode === row.dataset.mode;
@@ -715,5 +848,6 @@
     DATA.generated.split("-").reverse().join(".") + ". Pokémon ist eine Marke von Nintendo/Creatures Inc./GAME FREAK inc.";
 
   ["team", "solo", "mega"].forEach(renderBoard);
+  renderPanel();
   renderBosses();
 </script>
