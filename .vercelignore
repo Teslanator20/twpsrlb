@@ -1,0 +1,5 @@
+# Die Seite braucht nur index.html und data.json. Rohdaten und Skripte
+# bleiben im Repo, muessen aber nicht mit ausgeliefert werden.
+data/
+tools/
+README.md
