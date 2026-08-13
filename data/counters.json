@@ -8599,7 +8599,8 @@
     "fastMove": "DRAGON_TAIL_FAST",
     "chargedMove": "DYNAMAX_CANNON"
    }
-  ]
+  ],
+  "team": null
  },
  "MOLTRES": {
   "solo": [
@@ -21593,7 +21594,8 @@
     "fastMove": "ASTONISH_FAST",
     "chargedMove": "SHADOW_BALL"
    }
-  ]
+  ],
+  "team": null
  },
  "DEOXYS_ATTACK_FORM": {
   "solo": [
@@ -24888,5 +24890,2752 @@
     "chargedMove": "BUG_BUZZ"
    }
   ]
+ },
+ "GROUDON_PRIMAL": {
+  "solo": [
+   {
+    "pokemonId": "KYOGRE_PRIMAL",
+    "estimator": 2.902,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "SURF"
+   },
+   {
+    "pokemonId": "SWAMPERT_MEGA",
+    "estimator": 3.2243,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "KYOGRE_SHADOW_FORM",
+    "estimator": 3.2376,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "SURF"
+   },
+   {
+    "pokemonId": "BLASTOISE_MEGA",
+    "estimator": 3.5876,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "GYARADOS_MEGA",
+    "estimator": 3.6703,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "AQUA_TAIL"
+   },
+   {
+    "pokemonId": "GYARADOS_SHADOW_FORM",
+    "estimator": 3.6869,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "AQUA_TAIL"
+   },
+   {
+    "pokemonId": "KYOGRE",
+    "estimator": 3.6975,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "SURF"
+   },
+   {
+    "pokemonId": "GOLISOPOD",
+    "estimator": 3.8191,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "RAZOR_SHELL"
+   },
+   {
+    "pokemonId": "STARMIE_MEGA",
+    "estimator": 3.8345,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "SURF"
+   },
+   {
+    "pokemonId": "KINGLER_SHADOW_FORM",
+    "estimator": 3.9106,
+    "fastMove": "BUBBLE_FAST",
+    "chargedMove": "RAZOR_SHELL"
+   },
+   {
+    "pokemonId": "GYARADOS",
+    "estimator": 3.9421,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "AQUA_TAIL"
+   },
+   {
+    "pokemonId": "PRIMARINA",
+    "estimator": 4.0632,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "GRENINJA_SHADOW_FORM",
+    "estimator": 4.1046,
+    "fastMove": "BUBBLE_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "SAMUROTT_SHADOW_FORM",
+    "estimator": 4.1499,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "RAYQUAZA_MEGA",
+    "estimator": 4.2433,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DRAGON_ASCENT"
+   },
+   {
+    "pokemonId": "SWAMPERT_SHADOW_FORM",
+    "estimator": 4.2722,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "INTELEON",
+    "estimator": 4.3281,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "FERALIGATR_SHADOW_FORM",
+    "estimator": 4.342,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "SALAMENCE_MEGA",
+    "estimator": 4.3588,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "HYDRO_PUMP"
+   },
+   {
+    "pokemonId": "GROUDON_PRIMAL",
+    "estimator": 4.3611,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "PRECIPICE_BLADES"
+   },
+   {
+    "pokemonId": "REGIGIGAS_SHADOW_FORM",
+    "estimator": 4.3678,
+    "fastMove": "HIDDEN_POWER_WATER_FAST",
+    "chargedMove": "CRUSH_GRIP"
+   },
+   {
+    "pokemonId": "GARCHOMP_MEGA",
+    "estimator": 4.3782,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "EARTH_POWER"
+   },
+   {
+    "pokemonId": "SWAMPERT",
+    "estimator": 4.4248,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "MILOTIC_SHADOW_FORM",
+    "estimator": 4.4651,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "SURF"
+   },
+   {
+    "pokemonId": "REGIGIGAS",
+    "estimator": 4.5003,
+    "fastMove": "HIDDEN_POWER_WATER_FAST",
+    "chargedMove": "CRUSH_GRIP"
+   },
+   {
+    "pokemonId": "KINGLER",
+    "estimator": 4.5012,
+    "fastMove": "BUBBLE_FAST",
+    "chargedMove": "RAZOR_SHELL"
+   },
+   {
+    "pokemonId": "SLOWBRO_MEGA",
+    "estimator": 4.5706,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "SURF"
+   },
+   {
+    "pokemonId": "CRAWDAUNT_SHADOW_FORM",
+    "estimator": 4.5713,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "RAZOR_SHELL"
+   },
+   {
+    "pokemonId": "PALKIA_ORIGIN_FORM",
+    "estimator": 4.579,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "AQUA_TAIL"
+   },
+   {
+    "pokemonId": "FERALIGATR",
+    "estimator": 4.5955,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   }
+  ],
+  "team": [
+   {
+    "pokemonId": "KYOGRE_PRIMAL",
+    "estimator": 2.2204,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "ORIGIN_PULSE"
+   },
+   {
+    "pokemonId": "SWAMPERT_MEGA",
+    "estimator": 2.4042,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "KYOGRE_SHADOW_FORM",
+    "estimator": 2.5197,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "ORIGIN_PULSE"
+   },
+   {
+    "pokemonId": "BLASTOISE_MEGA",
+    "estimator": 2.5746,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "GROUDON_PRIMAL",
+    "estimator": 2.6582,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "PRECIPICE_BLADES"
+   },
+   {
+    "pokemonId": "SALAMENCE_MEGA",
+    "estimator": 2.745,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "HYDRO_PUMP"
+   },
+   {
+    "pokemonId": "GARCHOMP_MEGA",
+    "estimator": 2.8373,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "EARTHQUAKE"
+   },
+   {
+    "pokemonId": "GYARADOS",
+    "estimator": 2.8697,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "HYDRO_PUMP"
+   },
+   {
+    "pokemonId": "STARMIE_MEGA",
+    "estimator": 2.8798,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "SURF"
+   },
+   {
+    "pokemonId": "KYOGRE",
+    "estimator": 2.8862,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "ORIGIN_PULSE"
+   },
+   {
+    "pokemonId": "SALAMENCE_SHADOW_FORM",
+    "estimator": 2.8933,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "HYDRO_PUMP"
+   },
+   {
+    "pokemonId": "GYARADOS_SHADOW_FORM",
+    "estimator": 2.9002,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "HYDRO_PUMP"
+   },
+   {
+    "pokemonId": "GYARADOS_MEGA",
+    "estimator": 2.9671,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "HYDRO_PUMP"
+   },
+   {
+    "pokemonId": "INTELEON",
+    "estimator": 3.0166,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "SWAMPERT_SHADOW_FORM",
+    "estimator": 3.1024,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "KINGLER_SHADOW_FORM",
+    "estimator": 3.1416,
+    "fastMove": "BUBBLE_FAST",
+    "chargedMove": "CRABHAMMER"
+   },
+   {
+    "pokemonId": "PRIMARINA",
+    "estimator": 3.1464,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "FERALIGATR_SHADOW_FORM",
+    "estimator": 3.165,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "GRENINJA_SHADOW_FORM",
+    "estimator": 3.1816,
+    "fastMove": "BUBBLE_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "SAMUROTT_SHADOW_FORM",
+    "estimator": 3.198,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "GOLISOPOD",
+    "estimator": 3.2064,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "RAZOR_SHELL"
+   },
+   {
+    "pokemonId": "PALKIA_ORIGIN_FORM",
+    "estimator": 3.2622,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "HYDRO_PUMP"
+   },
+   {
+    "pokemonId": "QUAQUAVAL",
+    "estimator": 3.268,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "SWAMPERT",
+    "estimator": 3.2897,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "SLOWBRO_MEGA",
+    "estimator": 3.3219,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "SURF"
+   },
+   {
+    "pokemonId": "FERALIGATR",
+    "estimator": 3.3872,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_CANNON"
+   },
+   {
+    "pokemonId": "RAYQUAZA_MEGA",
+    "estimator": 3.441,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DRAGON_ASCENT"
+   },
+   {
+    "pokemonId": "VOLCANION",
+    "estimator": 3.4635,
+    "fastMove": "WATER_GUN_FAST",
+    "chargedMove": "HYDRO_PUMP"
+   },
+   {
+    "pokemonId": "GROUDON_SHADOW_FORM",
+    "estimator": 3.5181,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "PRECIPICE_BLADES"
+   },
+   {
+    "pokemonId": "MILOTIC_SHADOW_FORM",
+    "estimator": 3.5425,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "SURF"
+   }
+  ]
+ },
+ "KYOGRE_PRIMAL": {
+  "solo": [
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 4.2892,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "THUNDERBOLT"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 4.4335,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "THUNDERBOLT"
+   },
+   {
+    "pokemonId": "VENUSAUR_MEGA",
+    "estimator": 4.608,
+    "fastMove": "VINE_WHIP_FAST",
+    "chargedMove": "FRENZY_PLANT"
+   },
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 4.7261,
+    "fastMove": "POISON_JAB_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "ZARUDE",
+    "estimator": 4.7276,
+    "fastMove": "VINE_WHIP_FAST",
+    "chargedMove": "POWER_WHIP"
+   },
+   {
+    "pokemonId": "REGIGIGAS_SHADOW_FORM",
+    "estimator": 4.868,
+    "fastMove": "HIDDEN_POWER_ELECTRIC_FAST",
+    "chargedMove": "CRUSH_GRIP"
+   },
+   {
+    "pokemonId": "RAICHU_MEGA_Y",
+    "estimator": 4.8768,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "RAIKOU_SHADOW_FORM",
+    "estimator": 4.9565,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "KYUREM_BLACK_FORM",
+    "estimator": 5.0563,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "FUSION_BOLT"
+   },
+   {
+    "pokemonId": "ZEKROM",
+    "estimator": 5.089,
+    "fastMove": "CHARGE_BEAM_FAST",
+    "chargedMove": "FUSION_BOLT"
+   },
+   {
+    "pokemonId": "ZERAORA",
+    "estimator": 5.1139,
+    "fastMove": "SPARK_FAST",
+    "chargedMove": "PLASMA_FISTS"
+   },
+   {
+    "pokemonId": "CHESNAUGHT_SHADOW_FORM",
+    "estimator": 5.1338,
+    "fastMove": "VINE_WHIP_FAST",
+    "chargedMove": "FRENZY_PLANT"
+   },
+   {
+    "pokemonId": "KARTANA",
+    "estimator": 5.1535,
+    "fastMove": "RAZOR_LEAF_FAST",
+    "chargedMove": "LEAF_BLADE"
+   },
+   {
+    "pokemonId": "SCEPTILE_MEGA",
+    "estimator": 5.1959,
+    "fastMove": "BULLET_SEED_FAST",
+    "chargedMove": "FRENZY_PLANT"
+   },
+   {
+    "pokemonId": "MAGNEZONE_SHADOW_FORM",
+    "estimator": 5.2693,
+    "fastMove": "SPARK_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "TANGROWTH_SHADOW_FORM",
+    "estimator": 5.2847,
+    "fastMove": "VINE_WHIP_FAST",
+    "chargedMove": "POWER_WHIP"
+   },
+   {
+    "pokemonId": "MANECTRIC_MEGA",
+    "estimator": 5.3216,
+    "fastMove": "THUNDER_FANG_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "XURKITREE",
+    "estimator": 5.3761,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "DISCHARGE"
+   },
+   {
+    "pokemonId": "REGIGIGAS",
+    "estimator": 5.3813,
+    "fastMove": "HIDDEN_POWER_ELECTRIC_FAST",
+    "chargedMove": "CRUSH_GRIP"
+   },
+   {
+    "pokemonId": "RAIKOU",
+    "estimator": 5.397,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "VENUSAUR_SHADOW_FORM",
+    "estimator": 5.4188,
+    "fastMove": "VINE_WHIP_FAST",
+    "chargedMove": "FRENZY_PLANT"
+   },
+   {
+    "pokemonId": "ELECTIVIRE_SHADOW_FORM",
+    "estimator": 5.44,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "RILLABOOM",
+    "estimator": 5.4762,
+    "fastMove": "RAZOR_LEAF_FAST",
+    "chargedMove": "FRENZY_PLANT"
+   },
+   {
+    "pokemonId": "RAICHU_MEGA_X",
+    "estimator": 5.5291,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "MEWTWO_SHADOW_FORM",
+    "estimator": 5.6407,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "THUNDERBOLT"
+   },
+   {
+    "pokemonId": "VICTREEBEL_MEGA",
+    "estimator": 5.6483,
+    "fastMove": "MAGICAL_LEAF_FAST",
+    "chargedMove": "LEAF_BLADE"
+   },
+   {
+    "pokemonId": "ZAPDOS_SHADOW_FORM",
+    "estimator": 5.6657,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "THUNDERBOLT"
+   },
+   {
+    "pokemonId": "AMPHAROS_MEGA",
+    "estimator": 5.8134,
+    "fastMove": "VOLT_SWITCH_FAST",
+    "chargedMove": "THUNDER_PUNCH"
+   },
+   {
+    "pokemonId": "KELDEO",
+    "estimator": 5.8347,
+    "fastMove": "LOW_KICK_FAST",
+    "chargedMove": "SECRET_SWORD"
+   },
+   {
+    "pokemonId": "GALLADE_MEGA",
+    "estimator": 5.8957,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "LEAF_BLADE"
+   }
+  ],
+  "team": [
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 3.3304,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "THUNDERBOLT"
+   },
+   {
+    "pokemonId": "KYUREM_BLACK_FORM",
+    "estimator": 3.404,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "FUSION_BOLT"
+   },
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 3.4351,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 3.444,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "THUNDERBOLT"
+   },
+   {
+    "pokemonId": "VENUSAUR_MEGA",
+    "estimator": 3.4901,
+    "fastMove": "VINE_WHIP_FAST",
+    "chargedMove": "FRENZY_PLANT"
+   },
+   {
+    "pokemonId": "ZEKROM",
+    "estimator": 3.5309,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "FUSION_BOLT"
+   },
+   {
+    "pokemonId": "REGIELEKI",
+    "estimator": 3.5895,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "THUNDER_CAGE"
+   },
+   {
+    "pokemonId": "RAICHU_MEGA_Y",
+    "estimator": 3.6656,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "NECROZMA_DAWN_WINGS_FORM",
+    "estimator": 3.6703,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "MOONGEIST_BEAM"
+   },
+   {
+    "pokemonId": "ZARUDE",
+    "estimator": 3.6738,
+    "fastMove": "VINE_WHIP_FAST",
+    "chargedMove": "POWER_WHIP"
+   },
+   {
+    "pokemonId": "REGIGIGAS_SHADOW_FORM",
+    "estimator": 3.7046,
+    "fastMove": "ZEN_HEADBUTT_FAST",
+    "chargedMove": "CRUSH_GRIP"
+   },
+   {
+    "pokemonId": "SCEPTILE_MEGA",
+    "estimator": 3.7244,
+    "fastMove": "FURY_CUTTER_FAST",
+    "chargedMove": "FRENZY_PLANT"
+   },
+   {
+    "pokemonId": "RAIKOU_SHADOW_FORM",
+    "estimator": 3.7671,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "ZERAORA",
+    "estimator": 3.7726,
+    "fastMove": "SPARK_FAST",
+    "chargedMove": "PLASMA_FISTS"
+   },
+   {
+    "pokemonId": "CHESNAUGHT_SHADOW_FORM",
+    "estimator": 3.8819,
+    "fastMove": "VINE_WHIP_FAST",
+    "chargedMove": "FRENZY_PLANT"
+   },
+   {
+    "pokemonId": "MAGNEZONE_SHADOW_FORM",
+    "estimator": 3.9931,
+    "fastMove": "SPARK_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "ELECTIVIRE_SHADOW_FORM",
+    "estimator": 4.0134,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "XURKITREE",
+    "estimator": 4.0273,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "POWER_WHIP"
+   },
+   {
+    "pokemonId": "VENUSAUR_SHADOW_FORM",
+    "estimator": 4.0503,
+    "fastMove": "VINE_WHIP_FAST",
+    "chargedMove": "FRENZY_PLANT"
+   },
+   {
+    "pokemonId": "TANGROWTH_SHADOW_FORM",
+    "estimator": 4.0621,
+    "fastMove": "VINE_WHIP_FAST",
+    "chargedMove": "POWER_WHIP"
+   },
+   {
+    "pokemonId": "KELDEO",
+    "estimator": 4.0832,
+    "fastMove": "LOW_KICK_FAST",
+    "chargedMove": "SECRET_SWORD"
+   },
+   {
+    "pokemonId": "PALKIA_ORIGIN_FORM",
+    "estimator": 4.0868,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "SPACIAL_REND"
+   },
+   {
+    "pokemonId": "REGIGIGAS",
+    "estimator": 4.1268,
+    "fastMove": "HIDDEN_POWER_ELECTRIC_FAST",
+    "chargedMove": "CRUSH_GRIP"
+   },
+   {
+    "pokemonId": "RAICHU_MEGA_X",
+    "estimator": 4.1339,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "KARTANA",
+    "estimator": 4.1831,
+    "fastMove": "RAZOR_LEAF_FAST",
+    "chargedMove": "LEAF_BLADE"
+   },
+   {
+    "pokemonId": "RAIKOU",
+    "estimator": 4.2123,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "WILD_CHARGE"
+   },
+   {
+    "pokemonId": "GROUDON_PRIMAL",
+    "estimator": 4.2343,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "PRECIPICE_BLADES"
+   },
+   {
+    "pokemonId": "MEWTWO_SHADOW_FORM",
+    "estimator": 4.2674,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "THUNDERBOLT"
+   },
+   {
+    "pokemonId": "AMPHAROS_MEGA",
+    "estimator": 4.3216,
+    "fastMove": "CHARGE_BEAM_FAST",
+    "chargedMove": "ZAP_CANNON"
+   },
+   {
+    "pokemonId": "ZAPDOS_SHADOW_FORM",
+    "estimator": 4.3361,
+    "fastMove": "THUNDER_SHOCK_FAST",
+    "chargedMove": "THUNDERBOLT"
+   }
+  ]
+ },
+ "LATIAS_MEGA": {
+  "solo": [
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 3.4387,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "RAYQUAZA_MEGA",
+    "estimator": 3.4542,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "GARCHOMP_MEGA",
+    "estimator": 3.6323,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "KYUREM_BLACK_FORM",
+    "estimator": 3.7862,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "FREEZE_SHOCK"
+   },
+   {
+    "pokemonId": "NECROZMA_DAWN_WINGS_FORM",
+    "estimator": 3.7965,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "MOONGEIST_BEAM"
+   },
+   {
+    "pokemonId": "KYUREM_WHITE_FORM",
+    "estimator": 4.0012,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "ICE_BURN"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 4.1558,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "GARCHOMP_SHADOW_FORM",
+    "estimator": 4.2801,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "TYRANITAR_MEGA",
+    "estimator": 4.3507,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "SALAMENCE_MEGA",
+    "estimator": 4.41,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "ZACIAN_CROWNED_SWORD_FORM",
+    "estimator": 4.4895,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "PLAY_ROUGH"
+   },
+   {
+    "pokemonId": "LATIOS_MEGA",
+    "estimator": 4.5056,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRAGON_CLAW"
+   },
+   {
+    "pokemonId": "GARDEVOIR_MEGA",
+    "estimator": 4.5311,
+    "fastMove": "CHARM_FAST",
+    "chargedMove": "DAZZLING_GLEAM"
+   },
+   {
+    "pokemonId": "DIALGA_ORIGIN_FORM",
+    "estimator": 4.5571,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "ROAR_OF_TIME"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 4.6128,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_SHADOW_FORM",
+    "estimator": 4.6644,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "HAXORUS_SHADOW_FORM",
+    "estimator": 4.6808,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "DIALGA_SHADOW_FORM",
+    "estimator": 4.6896,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "DRAGONITE_MEGA",
+    "estimator": 4.7409,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "HERACROSS_MEGA",
+    "estimator": 4.8589,
+    "fastMove": "FURY_CUTTER_FAST",
+    "chargedMove": "MEGAHORN"
+   },
+   {
+    "pokemonId": "GENGAR_MEGA",
+    "estimator": 4.8878,
+    "fastMove": "LICK_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "PALKIA_ORIGIN_FORM",
+    "estimator": 4.8896,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "SPACIAL_REND"
+   },
+   {
+    "pokemonId": "GARCHOMP",
+    "estimator": 4.9082,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "BANETTE_MEGA",
+    "estimator": 4.9982,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "BAXCALIBUR",
+    "estimator": 5.0019,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "GLAIVE_RUSH"
+   },
+   {
+    "pokemonId": "RAYQUAZA",
+    "estimator": 5.0149,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "LATIAS_MEGA",
+    "estimator": 5.0634,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "OUTRAGE"
+   },
+   {
+    "pokemonId": "HOUNDOOM_MEGA",
+    "estimator": 5.0668,
+    "fastMove": "SNARL_FAST",
+    "chargedMove": "FOUL_PLAY"
+   },
+   {
+    "pokemonId": "HYDREIGON_SHADOW_FORM",
+    "estimator": 5.076,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "SCEPTILE_MEGA",
+    "estimator": 5.1201,
+    "fastMove": "FURY_CUTTER_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   }
+  ],
+  "team": [
+   {
+    "pokemonId": "NECROZMA_DAWN_WINGS_FORM",
+    "estimator": 2.2666,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "MOONGEIST_BEAM"
+   },
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 2.4592,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "KYUREM_BLACK_FORM",
+    "estimator": 2.6366,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "FREEZE_SHOCK"
+   },
+   {
+    "pokemonId": "RAYQUAZA_MEGA",
+    "estimator": 2.9585,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "DIALGA_ORIGIN_FORM",
+    "estimator": 3.0064,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "ROAR_OF_TIME"
+   },
+   {
+    "pokemonId": "DIALGA_SHADOW_FORM",
+    "estimator": 3.0576,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_SHADOW_FORM",
+    "estimator": 3.0699,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "PALKIA_ORIGIN_FORM",
+    "estimator": 3.079,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "SPACIAL_REND"
+   },
+   {
+    "pokemonId": "KYUREM_WHITE_FORM",
+    "estimator": 3.1073,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "ICE_BURN"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 3.1627,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "ZACIAN_CROWNED_SWORD_FORM",
+    "estimator": 3.1805,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "BEHEMOTH_BLADE"
+   },
+   {
+    "pokemonId": "DRAGONITE_MEGA",
+    "estimator": 3.2144,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "GARCHOMP_MEGA",
+    "estimator": 3.2154,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "SALAMENCE_MEGA",
+    "estimator": 3.224,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "HERACROSS_MEGA",
+    "estimator": 3.2829,
+    "fastMove": "FURY_CUTTER_FAST",
+    "chargedMove": "MEGAHORN"
+   },
+   {
+    "pokemonId": "NECROZMA_DUSK_MANE_FORM",
+    "estimator": 3.3695,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "SUNSTEEL_STRIKE"
+   },
+   {
+    "pokemonId": "TYRANITAR_MEGA",
+    "estimator": 3.3763,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 3.4188,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "GENGAR_MEGA",
+    "estimator": 3.5283,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "GIRATINA_SHADOW_FORM",
+    "estimator": 3.5305,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_FORM",
+    "estimator": 3.5497,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "BAXCALIBUR",
+    "estimator": 3.5588,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "GLAIVE_RUSH"
+   },
+   {
+    "pokemonId": "LATIOS_MEGA",
+    "estimator": 3.5672,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRAGON_CLAW"
+   },
+   {
+    "pokemonId": "LATIAS_MEGA",
+    "estimator": 3.5746,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "OUTRAGE"
+   },
+   {
+    "pokemonId": "GROUDON_PRIMAL",
+    "estimator": 3.5766,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "PRECIPICE_BLADES"
+   },
+   {
+    "pokemonId": "KYUREM",
+    "estimator": 3.6143,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "GLACIATE"
+   },
+   {
+    "pokemonId": "LUNALA",
+    "estimator": 3.6313,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "RESHIRAM_SHADOW_FORM",
+    "estimator": 3.6469,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "DIALGA",
+    "estimator": 3.6717,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "RESHIRAM",
+    "estimator": 3.6724,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   }
+  ]
+ },
+ "LATIOS_MEGA": {
+  "solo": [
+   {
+    "pokemonId": "RAYQUAZA_MEGA",
+    "estimator": 2.7608,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 2.8066,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "GARCHOMP_MEGA",
+    "estimator": 3.1135,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "KYUREM_BLACK_FORM",
+    "estimator": 3.169,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "FREEZE_SHOCK"
+   },
+   {
+    "pokemonId": "NECROZMA_DAWN_WINGS_FORM",
+    "estimator": 3.1999,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "MOONGEIST_BEAM"
+   },
+   {
+    "pokemonId": "KYUREM_WHITE_FORM",
+    "estimator": 3.4492,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "ICE_BURN"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 3.499,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "TYRANITAR_MEGA",
+    "estimator": 3.6101,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "SALAMENCE_MEGA",
+    "estimator": 3.6252,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "GARCHOMP_SHADOW_FORM",
+    "estimator": 3.647,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "HAXORUS_SHADOW_FORM",
+    "estimator": 3.671,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 3.7405,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "GARDEVOIR_MEGA",
+    "estimator": 3.7534,
+    "fastMove": "CHARM_FAST",
+    "chargedMove": "DAZZLING_GLEAM"
+   },
+   {
+    "pokemonId": "DIALGA_ORIGIN_FORM",
+    "estimator": 3.7695,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "ROAR_OF_TIME"
+   },
+   {
+    "pokemonId": "SCEPTILE_MEGA",
+    "estimator": 3.7742,
+    "fastMove": "FURY_CUTTER_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "LATIOS_MEGA",
+    "estimator": 3.8046,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRAGON_CLAW"
+   },
+   {
+    "pokemonId": "RAYQUAZA",
+    "estimator": 3.8194,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "DRAGONITE_MEGA",
+    "estimator": 3.8393,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "HERACROSS_MEGA",
+    "estimator": 3.9492,
+    "fastMove": "FURY_CUTTER_FAST",
+    "chargedMove": "MEGAHORN"
+   },
+   {
+    "pokemonId": "GROUDON_PRIMAL",
+    "estimator": 3.9572,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "PRECIPICE_BLADES"
+   },
+   {
+    "pokemonId": "BAXCALIBUR",
+    "estimator": 3.9583,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "GLAIVE_RUSH"
+   },
+   {
+    "pokemonId": "DRAGONITE_SHADOW_FORM",
+    "estimator": 3.9636,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DRAGON_CLAW"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_SHADOW_FORM",
+    "estimator": 3.965,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "ZACIAN_CROWNED_SWORD_FORM",
+    "estimator": 3.9661,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "PLAY_ROUGH"
+   },
+   {
+    "pokemonId": "LUNALA",
+    "estimator": 3.9713,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "SALAMENCE_SHADOW_FORM",
+    "estimator": 4.0133,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "PINSIR_MEGA",
+    "estimator": 4.0134,
+    "fastMove": "BUG_BITE_FAST",
+    "chargedMove": "X_SCISSOR"
+   },
+   {
+    "pokemonId": "LATIOS_SHADOW_FORM",
+    "estimator": 4.0982,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRAGON_CLAW"
+   },
+   {
+    "pokemonId": "GARCHOMP",
+    "estimator": 4.1233,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "HAXORUS",
+    "estimator": 4.1235,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   }
+  ],
+  "team": [
+   {
+    "pokemonId": "NECROZMA_DAWN_WINGS_FORM",
+    "estimator": 1.8954,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "MOONGEIST_BEAM"
+   },
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 2.0188,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "KYUREM_BLACK_FORM",
+    "estimator": 2.2003,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "FREEZE_SHOCK"
+   },
+   {
+    "pokemonId": "DIALGA_ORIGIN_FORM",
+    "estimator": 2.391,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "ROAR_OF_TIME"
+   },
+   {
+    "pokemonId": "RAYQUAZA_MEGA",
+    "estimator": 2.4015,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_SHADOW_FORM",
+    "estimator": 2.5253,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "KYUREM_WHITE_FORM",
+    "estimator": 2.5817,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "ICE_BURN"
+   },
+   {
+    "pokemonId": "DRAGONITE_MEGA",
+    "estimator": 2.6152,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "SALAMENCE_MEGA",
+    "estimator": 2.6205,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 2.6372,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "DIALGA_SHADOW_FORM",
+    "estimator": 2.6713,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "GARCHOMP_MEGA",
+    "estimator": 2.6842,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "HERACROSS_MEGA",
+    "estimator": 2.7398,
+    "fastMove": "FURY_CUTTER_FAST",
+    "chargedMove": "MEGAHORN"
+   },
+   {
+    "pokemonId": "NECROZMA_DUSK_MANE_FORM",
+    "estimator": 2.7536,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SUNSTEEL_STRIKE"
+   },
+   {
+    "pokemonId": "PALKIA_ORIGIN_FORM",
+    "estimator": 2.7715,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "SPACIAL_REND"
+   },
+   {
+    "pokemonId": "ZACIAN_CROWNED_SWORD_FORM",
+    "estimator": 2.7716,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "BEHEMOTH_BLADE"
+   },
+   {
+    "pokemonId": "GIRATINA_SHADOW_FORM",
+    "estimator": 2.8384,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "TYRANITAR_MEGA",
+    "estimator": 2.8507,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 2.8689,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "DRAGONITE_SHADOW_FORM",
+    "estimator": 2.8798,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "BAXCALIBUR",
+    "estimator": 2.9719,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "GLAIVE_RUSH"
+   },
+   {
+    "pokemonId": "RESHIRAM_SHADOW_FORM",
+    "estimator": 2.9721,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "DIALGA",
+    "estimator": 2.9784,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_FORM",
+    "estimator": 2.9881,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "LUNALA",
+    "estimator": 2.9954,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "GENGAR_MEGA",
+    "estimator": 3.0042,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "SALAMENCE_SHADOW_FORM",
+    "estimator": 3.0062,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "KYUREM",
+    "estimator": 3.008,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "GLACIATE"
+   },
+   {
+    "pokemonId": "LATIAS_MEGA",
+    "estimator": 3.017,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "OUTRAGE"
+   },
+   {
+    "pokemonId": "LATIOS_MEGA",
+    "estimator": 3.0725,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRAGON_CLAW"
+   }
+  ]
+ },
+ "MEWTWO_MEGA_X": {
+  "solo": [
+   {
+    "pokemonId": "NECROZMA_DAWN_WINGS_FORM",
+    "estimator": 2.8254,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "MOONGEIST_BEAM"
+   },
+   {
+    "pokemonId": "RAYQUAZA_MEGA",
+    "estimator": 2.8423,
+    "fastMove": "AIR_SLASH_FAST",
+    "chargedMove": "DRAGON_ASCENT"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 3.0147,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 3.2647,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_SHADOW_FORM",
+    "estimator": 3.4483,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "MOLTRES_SHADOW_FORM",
+    "estimator": 3.5708,
+    "fastMove": "WING_ATTACK_FAST",
+    "chargedMove": "FLY"
+   },
+   {
+    "pokemonId": "GARDEVOIR_MEGA",
+    "estimator": 3.6169,
+    "fastMove": "CHARM_FAST",
+    "chargedMove": "DAZZLING_GLEAM"
+   },
+   {
+    "pokemonId": "LUNALA",
+    "estimator": 3.7802,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "ZACIAN_CROWNED_SWORD_FORM",
+    "estimator": 3.7808,
+    "fastMove": "AIR_SLASH_FAST",
+    "chargedMove": "PLAY_ROUGH"
+   },
+   {
+    "pokemonId": "YVELTAL",
+    "estimator": 3.8366,
+    "fastMove": "GUST_FAST",
+    "chargedMove": "OBLIVION_WING"
+   },
+   {
+    "pokemonId": "GENGAR_MEGA",
+    "estimator": 3.8813,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "MOLTRES",
+    "estimator": 3.9133,
+    "fastMove": "WING_ATTACK_FAST",
+    "chargedMove": "FLY"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_FORM",
+    "estimator": 3.9251,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "GIRATINA_SHADOW_FORM",
+    "estimator": 3.9254,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "MEWTWO_SHADOW_FORM",
+    "estimator": 3.9745,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "SALAMENCE_SHADOW_FORM",
+    "estimator": 4.0323,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "FLY"
+   },
+   {
+    "pokemonId": "RAYQUAZA",
+    "estimator": 4.035,
+    "fastMove": "AIR_SLASH_FAST",
+    "chargedMove": "DRAGON_ASCENT"
+   },
+   {
+    "pokemonId": "ARTICUNO_GALARIAN_FORM",
+    "estimator": 4.0448,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "FLY"
+   },
+   {
+    "pokemonId": "TAPU_LELE",
+    "estimator": 4.0696,
+    "fastMove": "ASTONISH_FAST",
+    "chargedMove": "NATURES_MADNESS"
+   },
+   {
+    "pokemonId": "SALAMENCE_MEGA",
+    "estimator": 4.0955,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "FLY"
+   },
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 4.1134,
+    "fastMove": "POISON_JAB_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "HO_OH_SHADOW_FORM",
+    "estimator": 4.1268,
+    "fastMove": "HIDDEN_POWER_FLYING_FAST",
+    "chargedMove": "BRAVE_BIRD"
+   },
+   {
+    "pokemonId": "ALAKAZAM_MEGA",
+    "estimator": 4.1432,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "REGIGIGAS_SHADOW_FORM",
+    "estimator": 4.1627,
+    "fastMove": "HIDDEN_POWER_FLYING_FAST",
+    "chargedMove": "CRUSH_GRIP"
+   },
+   {
+    "pokemonId": "NECROZMA_DUSK_MANE_FORM",
+    "estimator": 4.1717,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SUNSTEEL_STRIKE"
+   },
+   {
+    "pokemonId": "LUGIA_SHADOW_FORM",
+    "estimator": 4.1811,
+    "fastMove": "EXTRASENSORY_FAST",
+    "chargedMove": "FLY"
+   },
+   {
+    "pokemonId": "BANETTE_MEGA",
+    "estimator": 4.209,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "CHANDELURE_SHADOW_FORM",
+    "estimator": 4.3409,
+    "fastMove": "HEX_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "DARKRAI_SHADOW_FORM",
+    "estimator": 4.3587,
+    "fastMove": "SNARL_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "MEWTWO",
+    "estimator": 4.3714,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   }
+  ],
+  "team": [
+   {
+    "pokemonId": "NECROZMA_DAWN_WINGS_FORM",
+    "estimator": 1.6985,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "MOONGEIST_BEAM"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_SHADOW_FORM",
+    "estimator": 2.2887,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "RAYQUAZA_MEGA",
+    "estimator": 2.3161,
+    "fastMove": "AIR_SLASH_FAST",
+    "chargedMove": "DRAGON_ASCENT"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 2.3245,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 2.5386,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_FORM",
+    "estimator": 2.6025,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "GIRATINA_SHADOW_FORM",
+    "estimator": 2.6046,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "NECROZMA_DUSK_MANE_FORM",
+    "estimator": 2.6594,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SUNSTEEL_STRIKE"
+   },
+   {
+    "pokemonId": "LUNALA",
+    "estimator": 2.7611,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "ARTICUNO_GALARIAN_FORM",
+    "estimator": 2.7661,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "BRAVE_BIRD"
+   },
+   {
+    "pokemonId": "ZACIAN_CROWNED_SWORD_FORM",
+    "estimator": 2.8093,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "BEHEMOTH_BLADE"
+   },
+   {
+    "pokemonId": "GENGAR_MEGA",
+    "estimator": 2.8733,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 2.944,
+    "fastMove": "POISON_JAB_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "MEWTWO_SHADOW_FORM",
+    "estimator": 2.949,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "MOLTRES_SHADOW_FORM",
+    "estimator": 2.9589,
+    "fastMove": "WING_ATTACK_FAST",
+    "chargedMove": "FLY"
+   },
+   {
+    "pokemonId": "KYUREM_BLACK_FORM",
+    "estimator": 2.9787,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "FREEZE_SHOCK"
+   },
+   {
+    "pokemonId": "ALAKAZAM_MEGA",
+    "estimator": 3.0019,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "SALAMENCE_SHADOW_FORM",
+    "estimator": 3.005,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "FLY"
+   },
+   {
+    "pokemonId": "GARDEVOIR_MEGA",
+    "estimator": 3.0319,
+    "fastMove": "CHARM_FAST",
+    "chargedMove": "DAZZLING_GLEAM"
+   },
+   {
+    "pokemonId": "GIRATINA",
+    "estimator": 3.0445,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "YVELTAL",
+    "estimator": 3.1248,
+    "fastMove": "SUCKER_PUNCH_FAST",
+    "chargedMove": "OBLIVION_WING"
+   },
+   {
+    "pokemonId": "BANETTE_MEGA",
+    "estimator": 3.1601,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "SALAMENCE_MEGA",
+    "estimator": 3.1615,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "FLY"
+   },
+   {
+    "pokemonId": "METAGROSS_MEGA",
+    "estimator": 3.1927,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "METEOR_MASH"
+   },
+   {
+    "pokemonId": "RAYQUAZA",
+    "estimator": 3.2463,
+    "fastMove": "AIR_SLASH_FAST",
+    "chargedMove": "DRAGON_ASCENT"
+   },
+   {
+    "pokemonId": "MOLTRES",
+    "estimator": 3.262,
+    "fastMove": "WING_ATTACK_FAST",
+    "chargedMove": "FLY"
+   },
+   {
+    "pokemonId": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+    "estimator": 3.2878,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "BEHEMOTH_BASH"
+   },
+   {
+    "pokemonId": "TAPU_LELE",
+    "estimator": 3.2951,
+    "fastMove": "ASTONISH_FAST",
+    "chargedMove": "NATURES_MADNESS"
+   },
+   {
+    "pokemonId": "MOLTRES_GALARIAN_FORM",
+    "estimator": 3.2993,
+    "fastMove": "SUCKER_PUNCH_FAST",
+    "chargedMove": "BRAVE_BIRD"
+   },
+   {
+    "pokemonId": "MEWTWO",
+    "estimator": 3.3774,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   }
+  ]
+ },
+ "MEWTWO_MEGA_Y": {
+  "solo": [
+   {
+    "pokemonId": "NECROZMA_DAWN_WINGS_FORM",
+    "estimator": 3.0274,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "MOONGEIST_BEAM"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 3.2957,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "TYRANITAR_MEGA",
+    "estimator": 3.5458,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 3.6103,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_SHADOW_FORM",
+    "estimator": 3.7059,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "TYRANITAR_SHADOW_FORM",
+    "estimator": 3.7803,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "LUNALA",
+    "estimator": 3.8892,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "GENGAR_MEGA",
+    "estimator": 3.9618,
+    "fastMove": "LICK_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "DARKRAI_SHADOW_FORM",
+    "estimator": 4.0076,
+    "fastMove": "SNARL_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "ABSOL_MEGA",
+    "estimator": 4.0367,
+    "fastMove": "SNARL_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "HOUNDOOM_MEGA",
+    "estimator": 4.0706,
+    "fastMove": "SNARL_FAST",
+    "chargedMove": "FOUL_PLAY"
+   },
+   {
+    "pokemonId": "HYDREIGON_SHADOW_FORM",
+    "estimator": 4.088,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 4.1873,
+    "fastMove": "POISON_JAB_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "MEWTWO_SHADOW_FORM",
+    "estimator": 4.2076,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "REGIGIGAS_SHADOW_FORM",
+    "estimator": 4.239,
+    "fastMove": "HIDDEN_POWER_BUG_FAST",
+    "chargedMove": "CRUSH_GRIP"
+   },
+   {
+    "pokemonId": "GIRATINA_SHADOW_FORM",
+    "estimator": 4.3156,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_FORM",
+    "estimator": 4.3344,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+    "estimator": 4.3362,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "BEHEMOTH_BASH"
+   },
+   {
+    "pokemonId": "TYRANITAR",
+    "estimator": 4.346,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "PINSIR_MEGA",
+    "estimator": 4.387,
+    "fastMove": "FURY_CUTTER_FAST",
+    "chargedMove": "X_SCISSOR"
+   },
+   {
+    "pokemonId": "HYDREIGON",
+    "estimator": 4.3925,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "SALAMENCE_SHADOW_FORM",
+    "estimator": 4.4073,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "SALAMENCE_MEGA",
+    "estimator": 4.4366,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "ALAKAZAM_MEGA",
+    "estimator": 4.4386,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "RAYQUAZA_MEGA",
+    "estimator": 4.4511,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DRAGON_ASCENT"
+   },
+   {
+    "pokemonId": "ZACIAN_CROWNED_SWORD_FORM",
+    "estimator": 4.4686,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "BEHEMOTH_BLADE"
+   },
+   {
+    "pokemonId": "SCIZOR_MEGA",
+    "estimator": 4.4857,
+    "fastMove": "FURY_CUTTER_FAST",
+    "chargedMove": "X_SCISSOR"
+   },
+   {
+    "pokemonId": "GYARADOS_MEGA",
+    "estimator": 4.5421,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "CRUNCH"
+   },
+   {
+    "pokemonId": "GARDEVOIR_MEGA",
+    "estimator": 4.558,
+    "fastMove": "CHARGE_BEAM_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "GHOLDENGO",
+    "estimator": 4.578,
+    "fastMove": "HEX_FAST",
+    "chargedMove": "SHADOW_BALL"
+   }
+  ],
+  "team": [
+   {
+    "pokemonId": "NECROZMA_DAWN_WINGS_FORM",
+    "estimator": 1.79,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "MOONGEIST_BEAM"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_SHADOW_FORM",
+    "estimator": 2.3227,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 2.5097,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "GIRATINA_SHADOW_FORM",
+    "estimator": 2.6859,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "GIRATINA_ORIGIN_FORM",
+    "estimator": 2.6947,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 2.7528,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "NECROZMA_DUSK_MANE_FORM",
+    "estimator": 2.7926,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SUNSTEEL_STRIKE"
+   },
+   {
+    "pokemonId": "TYRANITAR_MEGA",
+    "estimator": 2.816,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "LUNALA",
+    "estimator": 2.8292,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "ZACIAN_CROWNED_SWORD_FORM",
+    "estimator": 2.8724,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "BEHEMOTH_BLADE"
+   },
+   {
+    "pokemonId": "TYRANITAR_SHADOW_FORM",
+    "estimator": 2.9886,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "GENGAR_MEGA",
+    "estimator": 3.0215,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 3.0238,
+    "fastMove": "POISON_JAB_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "HERACROSS_MEGA",
+    "estimator": 3.0724,
+    "fastMove": "FURY_CUTTER_FAST",
+    "chargedMove": "MEGAHORN"
+   },
+   {
+    "pokemonId": "GIRATINA",
+    "estimator": 3.0847,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_FORCE"
+   },
+   {
+    "pokemonId": "HYDREIGON_SHADOW_FORM",
+    "estimator": 3.199,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "KYUREM_BLACK_FORM",
+    "estimator": 3.2075,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "FREEZE_SHOCK"
+   },
+   {
+    "pokemonId": "MEWTWO_SHADOW_FORM",
+    "estimator": 3.2374,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+    "estimator": 3.2901,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "BEHEMOTH_BASH"
+   },
+   {
+    "pokemonId": "ALAKAZAM_MEGA",
+    "estimator": 3.3251,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "SALAMENCE_MEGA",
+    "estimator": 3.4117,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "BANETTE_MEGA",
+    "estimator": 3.4155,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "TYRANITAR",
+    "estimator": 3.4171,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "DARKRAI_SHADOW_FORM",
+    "estimator": 3.4509,
+    "fastMove": "SNARL_FAST",
+    "chargedMove": "SHADOW_BALL"
+   },
+   {
+    "pokemonId": "ABSOL_MEGA",
+    "estimator": 3.4624,
+    "fastMove": "SNARL_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "METAGROSS_MEGA",
+    "estimator": 3.4633,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "METEOR_MASH"
+   },
+   {
+    "pokemonId": "HYDREIGON",
+    "estimator": 3.4704,
+    "fastMove": "BITE_FAST",
+    "chargedMove": "BRUTAL_SWING"
+   },
+   {
+    "pokemonId": "HOUNDOOM_MEGA",
+    "estimator": 3.4772,
+    "fastMove": "SNARL_FAST",
+    "chargedMove": "FOUL_PLAY"
+   },
+   {
+    "pokemonId": "METAGROSS_SHADOW_FORM",
+    "estimator": 3.5099,
+    "fastMove": "SHADOW_CLAW_FAST",
+    "chargedMove": "METEOR_MASH"
+   },
+   {
+    "pokemonId": "PINSIR_MEGA",
+    "estimator": 3.5804,
+    "fastMove": "BUG_BITE_FAST",
+    "chargedMove": "X_SCISSOR"
+   }
+  ]
+ },
+ "RAYQUAZA_MEGA": {
+  "solo": [
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 2.3272,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "ICE_BEAM"
+   },
+   {
+    "pokemonId": "KYUREM_WHITE_FORM",
+    "estimator": 2.3273,
+    "fastMove": "ICE_FANG_FAST",
+    "chargedMove": "ICE_BURN"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 2.525,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "ICE_BEAM"
+   },
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 2.6662,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "GARDEVOIR_MEGA",
+    "estimator": 2.6682,
+    "fastMove": "CHARM_FAST",
+    "chargedMove": "TRIPLE_AXEL"
+   },
+   {
+    "pokemonId": "RAYQUAZA_MEGA",
+    "estimator": 2.7358,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "GARCHOMP_MEGA",
+    "estimator": 2.7408,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "KYUREM_BLACK_FORM",
+    "estimator": 2.7515,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "FREEZE_SHOCK"
+   },
+   {
+    "pokemonId": "AURORUS_SHADOW_FORM",
+    "estimator": 2.7741,
+    "fastMove": "FROST_BREATH_FAST",
+    "chargedMove": "WEATHER_BALL_ICE"
+   },
+   {
+    "pokemonId": "MAMOSWINE_SHADOW_FORM",
+    "estimator": 2.8379,
+    "fastMove": "POWDER_SNOW_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "ABOMASNOW_MEGA",
+    "estimator": 2.8532,
+    "fastMove": "POWDER_SNOW_FAST",
+    "chargedMove": "WEATHER_BALL_ICE"
+   },
+   {
+    "pokemonId": "REGIGIGAS_SHADOW_FORM",
+    "estimator": 2.9493,
+    "fastMove": "HIDDEN_POWER_ICE_FAST",
+    "chargedMove": "CRUSH_GRIP"
+   },
+   {
+    "pokemonId": "MAMOSWINE",
+    "estimator": 3.0007,
+    "fastMove": "POWDER_SNOW_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "GLALIE_MEGA",
+    "estimator": 3.0227,
+    "fastMove": "FROST_BREATH_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "CETITAN",
+    "estimator": 3.0544,
+    "fastMove": "ICE_SHARD_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "MEWTWO_SHADOW_FORM",
+    "estimator": 3.0809,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "ICE_BEAM"
+   },
+   {
+    "pokemonId": "AURORUS",
+    "estimator": 3.1497,
+    "fastMove": "FROST_BREATH_FAST",
+    "chargedMove": "WEATHER_BALL_ICE"
+   },
+   {
+    "pokemonId": "KYOGRE_PRIMAL",
+    "estimator": 3.1972,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "GLACEON",
+    "estimator": 3.2062,
+    "fastMove": "FROST_BREATH_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "WEAVILE_SHADOW_FORM",
+    "estimator": 3.2161,
+    "fastMove": "ICE_SHARD_FAST",
+    "chargedMove": "TRIPLE_AXEL"
+   },
+   {
+    "pokemonId": "DIANCIE_MEGA",
+    "estimator": 3.2681,
+    "fastMove": "ROCK_THROW_FAST",
+    "chargedMove": "ROCK_SLIDE"
+   },
+   {
+    "pokemonId": "ARTICUNO_SHADOW_FORM",
+    "estimator": 3.3246,
+    "fastMove": "FROST_BREATH_FAST",
+    "chargedMove": "TRIPLE_AXEL"
+   },
+   {
+    "pokemonId": "REGIGIGAS",
+    "estimator": 3.3379,
+    "fastMove": "HIDDEN_POWER_ICE_FAST",
+    "chargedMove": "CRUSH_GRIP"
+   },
+   {
+    "pokemonId": "BAXCALIBUR",
+    "estimator": 3.3416,
+    "fastMove": "ICE_FANG_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "WALREIN_SHADOW_FORM",
+    "estimator": 3.4205,
+    "fastMove": "FROST_BREATH_FAST",
+    "chargedMove": "ICICLE_SPEAR"
+   },
+   {
+    "pokemonId": "WEAVILE",
+    "estimator": 3.4282,
+    "fastMove": "ICE_SHARD_FAST",
+    "chargedMove": "TRIPLE_AXEL"
+   },
+   {
+    "pokemonId": "GARCHOMP_SHADOW_FORM",
+    "estimator": 3.4373,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "STARMIE_MEGA",
+    "estimator": 3.4528,
+    "fastMove": "HIDDEN_POWER_ICE_FAST",
+    "chargedMove": "ICE_BEAM"
+   },
+   {
+    "pokemonId": "VANILLUXE",
+    "estimator": 3.5402,
+    "fastMove": "FROST_BREATH_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "ARTICUNO",
+    "estimator": 3.5972,
+    "fastMove": "FROST_BREATH_FAST",
+    "chargedMove": "TRIPLE_AXEL"
+   }
+  ],
+  "team": [
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 1.7602,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "ICE_BEAM"
+   },
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 1.8967,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "KYUREM_WHITE_FORM",
+    "estimator": 1.901,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "ICE_BURN"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 1.9173,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "ICE_BEAM"
+   },
+   {
+    "pokemonId": "KYUREM_BLACK_FORM",
+    "estimator": 1.9461,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "FREEZE_SHOCK"
+   },
+   {
+    "pokemonId": "DIALGA_ORIGIN_FORM",
+    "estimator": 2.0289,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "ROAR_OF_TIME"
+   },
+   {
+    "pokemonId": "ZACIAN_CROWNED_SWORD_FORM",
+    "estimator": 2.1475,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "BEHEMOTH_BLADE"
+   },
+   {
+    "pokemonId": "GARDEVOIR_MEGA",
+    "estimator": 2.3041,
+    "fastMove": "CHARM_FAST",
+    "chargedMove": "TRIPLE_AXEL"
+   },
+   {
+    "pokemonId": "DIALGA_SHADOW_FORM",
+    "estimator": 2.3133,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "NECROZMA_DUSK_MANE_FORM",
+    "estimator": 2.3142,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "SUNSTEEL_STRIKE"
+   },
+   {
+    "pokemonId": "MEWTWO_SHADOW_FORM",
+    "estimator": 2.3158,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "ICE_BEAM"
+   },
+   {
+    "pokemonId": "MAMOSWINE_SHADOW_FORM",
+    "estimator": 2.3266,
+    "fastMove": "POWDER_SNOW_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "RAYQUAZA_MEGA",
+    "estimator": 2.3685,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "GARCHOMP_MEGA",
+    "estimator": 2.3731,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "AURORUS_SHADOW_FORM",
+    "estimator": 2.4017,
+    "fastMove": "FROST_BREATH_FAST",
+    "chargedMove": "WEATHER_BALL_ICE"
+   },
+   {
+    "pokemonId": "DIALGA",
+    "estimator": 2.4191,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "REGICE_SHADOW_FORM",
+    "estimator": 2.4431,
+    "fastMove": "LOCK_ON_FAST",
+    "chargedMove": "BLIZZARD"
+   },
+   {
+    "pokemonId": "KYOGRE_PRIMAL",
+    "estimator": 2.4478,
+    "fastMove": "WATERFALL_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "ABOMASNOW_MEGA",
+    "estimator": 2.4573,
+    "fastMove": "POWDER_SNOW_FAST",
+    "chargedMove": "WEATHER_BALL_ICE"
+   },
+   {
+    "pokemonId": "GLALIE_MEGA",
+    "estimator": 2.4696,
+    "fastMove": "FROST_BREATH_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "KYUREM",
+    "estimator": 2.4724,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "GLACIATE"
+   },
+   {
+    "pokemonId": "MAMOSWINE",
+    "estimator": 2.4859,
+    "fastMove": "POWDER_SNOW_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "GENESECT_CHILL_FORM",
+    "estimator": 2.5002,
+    "fastMove": "METAL_CLAW_FAST",
+    "chargedMove": "TECHNO_BLAST_CHILL"
+   },
+   {
+    "pokemonId": "GIGALITH_SHADOW_FORM",
+    "estimator": 2.5248,
+    "fastMove": "LOCK_ON_FAST",
+    "chargedMove": "METEOR_BEAM"
+   },
+   {
+    "pokemonId": "TYRANITAR_MEGA",
+    "estimator": 2.5673,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "STONE_EDGE"
+   },
+   {
+    "pokemonId": "CETITAN",
+    "estimator": 2.5769,
+    "fastMove": "ICE_SHARD_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "MEWTWO",
+    "estimator": 2.607,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "ICE_BEAM"
+   },
+   {
+    "pokemonId": "GLACEON",
+    "estimator": 2.6211,
+    "fastMove": "FROST_BREATH_FAST",
+    "chargedMove": "AVALANCHE"
+   },
+   {
+    "pokemonId": "DRAGONITE_MEGA",
+    "estimator": 2.6438,
+    "fastMove": "DRAGON_BREATH_FAST",
+    "chargedMove": "DRACO_METEOR"
+   },
+   {
+    "pokemonId": "WEAVILE_SHADOW_FORM",
+    "estimator": 2.6711,
+    "fastMove": "ICE_SHARD_FAST",
+    "chargedMove": "TRIPLE_AXEL"
+   }
+  ]
+ },
+ "REGIELEKI": {
+  "solo": [
+   {
+    "pokemonId": "GROUDON_PRIMAL",
+    "estimator": 1.8315,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "PRECIPICE_BLADES"
+   },
+   {
+    "pokemonId": "GARCHOMP_MEGA",
+    "estimator": 2.0914,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "EARTH_POWER"
+   },
+   {
+    "pokemonId": "GROUDON_SHADOW_FORM",
+    "estimator": 2.1332,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "PRECIPICE_BLADES"
+   },
+   {
+    "pokemonId": "GARCHOMP_SHADOW_FORM",
+    "estimator": 2.2096,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "EARTH_POWER"
+   },
+   {
+    "pokemonId": "EXCADRILL_SHADOW_FORM",
+    "estimator": 2.3307,
+    "fastMove": "MUD_SLAP_FAST",
+    "chargedMove": "SCORCHING_SANDS"
+   },
+   {
+    "pokemonId": "RHYPERIOR_SHADOW_FORM",
+    "estimator": 2.3493,
+    "fastMove": "MUD_SLAP_FAST",
+    "chargedMove": "EARTHQUAKE"
+   },
+   {
+    "pokemonId": "MAMOSWINE_SHADOW_FORM",
+    "estimator": 2.4538,
+    "fastMove": "MUD_SLAP_FAST",
+    "chargedMove": "HIGH_HORSEPOWER"
+   },
+   {
+    "pokemonId": "GROUDON",
+    "estimator": 2.4623,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "PRECIPICE_BLADES"
+   },
+   {
+    "pokemonId": "LANDORUS_THERIAN_FORM",
+    "estimator": 2.4786,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "SANDSEAR_STORM"
+   },
+   {
+    "pokemonId": "REGIGIGAS_SHADOW_FORM",
+    "estimator": 2.5113,
+    "fastMove": "HIDDEN_POWER_GROUND_FAST",
+    "chargedMove": "CRUSH_GRIP"
+   },
+   {
+    "pokemonId": "ETERNATUS",
+    "estimator": 2.6035,
+    "fastMove": "POISON_JAB_FAST",
+    "chargedMove": "DYNAMAX_CANNON"
+   },
+   {
+    "pokemonId": "GARCHOMP",
+    "estimator": 2.6051,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "EARTH_POWER"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_Y",
+    "estimator": 2.6096,
+    "fastMove": "CONFUSION_FAST",
+    "chargedMove": "PSYSTRIKE"
+   },
+   {
+    "pokemonId": "GOLURK_SHADOW_FORM",
+    "estimator": 2.6379,
+    "fastMove": "MUD_SLAP_FAST",
+    "chargedMove": "EARTH_POWER"
+   },
+   {
+    "pokemonId": "MEWTWO_MEGA_X",
+    "estimator": 2.648,
+    "fastMove": "COUNTER_FAST",
+    "chargedMove": "PSYSTRIKE"
+   },
+   {
+    "pokemonId": "RHYDON_SHADOW_FORM",
+    "estimator": 2.7225,
+    "fastMove": "MUD_SLAP_FAST",
+    "chargedMove": "EARTHQUAKE"
+   },
+   {
+    "pokemonId": "EXCADRILL",
+    "estimator": 2.7291,
+    "fastMove": "MUD_SLAP_FAST",
+    "chargedMove": "SCORCHING_SANDS"
+   },
+   {
+    "pokemonId": "SWAMPERT_MEGA",
+    "estimator": 2.741,
+    "fastMove": "MUD_SHOT_FAST",
+    "chargedMove": "EARTHQUAKE"
+   },
+   {
+    "pokemonId": "RHYPERIOR",
+    "estimator": 2.7718,
+    "fastMove": "MUD_SLAP_FAST",
+    "chargedMove": "EARTHQUAKE"
+   },
+   {
+    "pokemonId": "TORTERRA_SHADOW_FORM",
+    "estimator": 2.7857,
+    "fastMove": "MUD_SLAP_FAST",
+    "chargedMove": "EARTHQUAKE"
+   },
+   {
+    "pokemonId": "MAMOSWINE",
+    "estimator": 2.8071,
+    "fastMove": "MUD_SLAP_FAST",
+    "chargedMove": "HIGH_HORSEPOWER"
+   },
+   {
+    "pokemonId": "RAYQUAZA_MEGA",
+    "estimator": 2.8133,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "BREAKING_SWIPE"
+   },
+   {
+    "pokemonId": "DONPHAN_SHADOW_FORM",
+    "estimator": 2.8244,
+    "fastMove": "MUD_SLAP_FAST",
+    "chargedMove": "EARTHQUAKE"
+   },
+   {
+    "pokemonId": "KYUREM_BLACK_FORM",
+    "estimator": 2.8682,
+    "fastMove": "DRAGON_TAIL_FAST",
+    "chargedMove": "FREEZE_SHOCK"
+   },
+   {
+    "pokemonId": "NECROZMA_DAWN_WINGS_FORM",
+    "estimator": 2.883,
+    "fastMove": "PSYCHO_CUT_FAST",
+    "chargedMove": "MOONGEIST_BEAM"
+   },
+   {
+    "pokemonId": "GOLEM_SHADOW_FORM",
+    "estimator": 2.8917,
+    "fastMove": "MUD_SLAP_FAST",
+    "chargedMove": "EARTHQUAKE"
+   },
+   {
+    "pokemonId": "HIPPOWDON_SHADOW_FORM",
+    "estimator": 2.9173,
+    "fastMove": "SAND_ATTACK_FAST",
+    "chargedMove": "SCORCHING_SANDS"
+   },
+   {
+    "pokemonId": "REGIGIGAS",
+    "estimator": 2.9188,
+    "fastMove": "HIDDEN_POWER_GROUND_FAST",
+    "chargedMove": "CRUSH_GRIP"
+   },
+   {
+    "pokemonId": "URSALUNA_SHADOW_FORM",
+    "estimator": 2.9279,
+    "fastMove": "TACKLE_FAST",
+    "chargedMove": "HIGH_HORSEPOWER"
+   },
+   {
+    "pokemonId": "RHYDON",
+    "estimator": 3.0982,
+    "fastMove": "MUD_SLAP_FAST",
+    "chargedMove": "EARTHQUAKE"
+   }
+  ],
+  "team": null
  }
 }

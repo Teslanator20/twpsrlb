@@ -83,6 +83,14 @@ def dex_num(pid):
     return (POKEDEX.get(pid) or {}).get("pokedex", {}).get("pokemonNum", 9999)
 
 
+def tier_label(tier, pid):
+    if tier == "RAID_LEVEL_MEGA_5":
+        return "Proto-Raid" if pid.endswith("_PRIMAL") else "Mega-Raid"
+    if tier == "RAID_LEVEL_ELITE":
+        return "Elite-Raid"
+    return "Stufe 5"
+
+
 def is_mega(pid):
     """Mega-Entwicklungen und Protoformen - in Pokemon GO dieselbe Mechanik."""
     return "_MEGA" in pid or pid.endswith("_PRIMAL")
@@ -97,6 +105,7 @@ KEYS = {("team", False): "team", ("solo", False): "solo",
 
 def main():
     raw = json.load(open(os.path.join(DATA, "counters.json")))
+    tiers = {b["id"]: b["tier"] for b in json.load(open(os.path.join(DATA, "bosses.json")))}
 
     def counter(c):
         return {
@@ -114,11 +123,14 @@ def main():
         points[key] = collections.Counter()
 
     for boss_id in sorted(raw, key=lambda b: (dex_num(b), b)):
+        tier = tiers.get(boss_id, "RAID_LEVEL_5")
         entry = {
             "id": boss_id,
             "name": pokemon_name(boss_id),
             "num": dex_num(boss_id),
             "types": types_of(boss_id),
+            "tier": tier_label(tier, boss_id),
+            "special": tier != "RAID_LEVEL_5",
         }
         for mode in MODES:
             full = raw[boss_id].get(mode)

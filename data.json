@@ -15,6 +15,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ZACIAN_CROWNED_SWORD_FORM",
@@ -158,6 +160,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KYUREM_BLACK_FORM",
@@ -301,6 +305,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "GIGALITH_SHADOW_FORM",
@@ -440,6 +446,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -579,6 +587,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": null,
    "teamMega": null,
    "solo": [
@@ -647,6 +657,292 @@
    ]
   },
   {
+   "id": "MEWTWO_MEGA_X",
+   "name": "Mega-Mewtu X",
+   "num": 150,
+   "types": [
+    {
+     "id": "psychic",
+     "name": "Psycho"
+    },
+    {
+     "id": "fighting",
+     "name": "Kampf"
+    }
+   ],
+   "tier": "Mega-Raid",
+   "special": true,
+   "team": [
+    {
+     "id": "NECROZMA_DAWN_WINGS_FORM",
+     "name": "Necrozma - Morgenschwingen",
+     "estimator": 1.6985,
+     "moves": "Psychoklinge / Schattenstrahl"
+    },
+    {
+     "id": "GIRATINA_ORIGIN_SHADOW_FORM",
+     "name": "Crypto-Giratina Origin",
+     "estimator": 2.2887,
+     "moves": "Dunkelklaue / Schemenkraft"
+    },
+    {
+     "id": "GIRATINA_ORIGIN_FORM",
+     "name": "Giratina - Urform",
+     "estimator": 2.6025,
+     "moves": "Dunkelklaue / Schemenkraft"
+    },
+    {
+     "id": "GIRATINA_SHADOW_FORM",
+     "name": "Crypto Giratina",
+     "estimator": 2.6046,
+     "moves": "Dunkelklaue / Schemenkraft"
+    },
+    {
+     "id": "NECROZMA_DUSK_MANE_FORM",
+     "name": "Necrozma - Abendmähne",
+     "estimator": 2.6594,
+     "moves": "Psychoklinge / Stahlgestirn"
+    }
+   ],
+   "teamMega": [
+    {
+     "id": "RAYQUAZA_MEGA",
+     "name": "Mega-Rayquaza",
+     "estimator": 2.3161,
+     "moves": "Luftschnitt / Zenitstürmer"
+    },
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 2.3245,
+     "moves": "Psychoklinge / Spukball"
+    },
+    {
+     "id": "MEWTWO_MEGA_X",
+     "name": "Mega-Mewtu X",
+     "estimator": 2.5386,
+     "moves": "Psychoklinge / Spukball"
+    },
+    {
+     "id": "GENGAR_MEGA",
+     "name": "Mega-Gengar",
+     "estimator": 2.8733,
+     "moves": "Dunkelklaue / Spukball"
+    },
+    {
+     "id": "ALAKAZAM_MEGA",
+     "name": "Mega-Simsala",
+     "estimator": 3.0019,
+     "moves": "Psychoklinge / Spukball"
+    }
+   ],
+   "solo": [
+    {
+     "id": "NECROZMA_DAWN_WINGS_FORM",
+     "name": "Necrozma - Morgenschwingen",
+     "estimator": 2.8254,
+     "moves": "Psychoklinge / Schattenstrahl"
+    },
+    {
+     "id": "GIRATINA_ORIGIN_SHADOW_FORM",
+     "name": "Crypto-Giratina Origin",
+     "estimator": 3.4483,
+     "moves": "Dunkelklaue / Schemenkraft"
+    },
+    {
+     "id": "MOLTRES_SHADOW_FORM",
+     "name": "Crypto Lavados",
+     "estimator": 3.5708,
+     "moves": "Flügelschlag / Fliegen"
+    },
+    {
+     "id": "LUNALA",
+     "name": "Lunala",
+     "estimator": 3.7802,
+     "moves": "Dunkelklaue / Spukball"
+    },
+    {
+     "id": "ZACIAN_CROWNED_SWORD_FORM",
+     "name": "Zacian - König des Schwertes",
+     "estimator": 3.7808,
+     "moves": "Luftschnitt / Knuddler"
+    }
+   ],
+   "soloMega": [
+    {
+     "id": "RAYQUAZA_MEGA",
+     "name": "Mega-Rayquaza",
+     "estimator": 2.8423,
+     "moves": "Luftschnitt / Zenitstürmer"
+    },
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 3.0147,
+     "moves": "Psychoklinge / Spukball"
+    },
+    {
+     "id": "MEWTWO_MEGA_X",
+     "name": "Mega-Mewtu X",
+     "estimator": 3.2647,
+     "moves": "Psychoklinge / Spukball"
+    },
+    {
+     "id": "GARDEVOIR_MEGA",
+     "name": "Mega-Guardevoir",
+     "estimator": 3.6169,
+     "moves": "Charme / Zauberschein"
+    },
+    {
+     "id": "GENGAR_MEGA",
+     "name": "Mega-Gengar",
+     "estimator": 3.8813,
+     "moves": "Dunkelklaue / Spukball"
+    }
+   ]
+  },
+  {
+   "id": "MEWTWO_MEGA_Y",
+   "name": "Mega-Mewtu Y",
+   "num": 150,
+   "types": [
+    {
+     "id": "psychic",
+     "name": "Psycho"
+    }
+   ],
+   "tier": "Mega-Raid",
+   "special": true,
+   "team": [
+    {
+     "id": "NECROZMA_DAWN_WINGS_FORM",
+     "name": "Necrozma - Morgenschwingen",
+     "estimator": 1.79,
+     "moves": "Psychoklinge / Schattenstrahl"
+    },
+    {
+     "id": "GIRATINA_ORIGIN_SHADOW_FORM",
+     "name": "Crypto-Giratina Origin",
+     "estimator": 2.3227,
+     "moves": "Dunkelklaue / Schemenkraft"
+    },
+    {
+     "id": "GIRATINA_SHADOW_FORM",
+     "name": "Crypto Giratina",
+     "estimator": 2.6859,
+     "moves": "Dunkelklaue / Schemenkraft"
+    },
+    {
+     "id": "GIRATINA_ORIGIN_FORM",
+     "name": "Giratina - Urform",
+     "estimator": 2.6947,
+     "moves": "Dunkelklaue / Schemenkraft"
+    },
+    {
+     "id": "NECROZMA_DUSK_MANE_FORM",
+     "name": "Necrozma - Abendmähne",
+     "estimator": 2.7926,
+     "moves": "Dunkelklaue / Stahlgestirn"
+    }
+   ],
+   "teamMega": [
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 2.5097,
+     "moves": "Psychoklinge / Spukball"
+    },
+    {
+     "id": "MEWTWO_MEGA_X",
+     "name": "Mega-Mewtu X",
+     "estimator": 2.7528,
+     "moves": "Psychoklinge / Spukball"
+    },
+    {
+     "id": "TYRANITAR_MEGA",
+     "name": "Mega-Despotar",
+     "estimator": 2.816,
+     "moves": "Biss / Wirbler"
+    },
+    {
+     "id": "GENGAR_MEGA",
+     "name": "Mega-Gengar",
+     "estimator": 3.0215,
+     "moves": "Dunkelklaue / Spukball"
+    },
+    {
+     "id": "HERACROSS_MEGA",
+     "name": "Mega-Skaraborn",
+     "estimator": 3.0724,
+     "moves": "Zornklinge / Vielender"
+    }
+   ],
+   "solo": [
+    {
+     "id": "NECROZMA_DAWN_WINGS_FORM",
+     "name": "Necrozma - Morgenschwingen",
+     "estimator": 3.0274,
+     "moves": "Dunkelklaue / Schattenstrahl"
+    },
+    {
+     "id": "GIRATINA_ORIGIN_SHADOW_FORM",
+     "name": "Crypto-Giratina Origin",
+     "estimator": 3.7059,
+     "moves": "Dunkelklaue / Schemenkraft"
+    },
+    {
+     "id": "TYRANITAR_SHADOW_FORM",
+     "name": "Crypto Despotar",
+     "estimator": 3.7803,
+     "moves": "Biss / Wirbler"
+    },
+    {
+     "id": "LUNALA",
+     "name": "Lunala",
+     "estimator": 3.8892,
+     "moves": "Dunkelklaue / Spukball"
+    },
+    {
+     "id": "DARKRAI_SHADOW_FORM",
+     "name": "Crypto Darkrai",
+     "estimator": 4.0076,
+     "moves": "Standpauke / Spukball"
+    }
+   ],
+   "soloMega": [
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 3.2957,
+     "moves": "Psychoklinge / Spukball"
+    },
+    {
+     "id": "TYRANITAR_MEGA",
+     "name": "Mega-Despotar",
+     "estimator": 3.5458,
+     "moves": "Biss / Wirbler"
+    },
+    {
+     "id": "MEWTWO_MEGA_X",
+     "name": "Mega-Mewtu X",
+     "estimator": 3.6103,
+     "moves": "Psychoklinge / Spukball"
+    },
+    {
+     "id": "GENGAR_MEGA",
+     "name": "Mega-Gengar",
+     "estimator": 3.9618,
+     "moves": "Schlecker / Spukball"
+    },
+    {
+     "id": "ABSOL_MEGA",
+     "name": "Mega-Absol",
+     "estimator": 4.0367,
+     "moves": "Standpauke / Wirbler"
+    }
+   ]
+  },
+  {
    "id": "RAIKOU",
    "name": "Raikou",
    "num": 243,
@@ -656,6 +952,8 @@
      "name": "Elektro"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "GROUDON_SHADOW_FORM",
@@ -795,6 +1093,8 @@
      "name": "Feuer"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "GROUDON_SHADOW_FORM",
@@ -934,6 +1234,8 @@
      "name": "Wasser"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "REGIELEKI",
@@ -1077,6 +1379,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -1220,6 +1524,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "TYRANTRUM_SHADOW_FORM",
@@ -1359,6 +1665,8 @@
      "name": "Gestein"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ZACIAN_CROWNED_SWORD_FORM",
@@ -1498,6 +1806,8 @@
      "name": "Eis"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ZACIAN_CROWNED_SWORD_FORM",
@@ -1637,6 +1947,8 @@
      "name": "Stahl"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "GROUDON_SHADOW_FORM",
@@ -1780,6 +2092,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -1910,6 +2224,151 @@
    ]
   },
   {
+   "id": "LATIAS_MEGA",
+   "name": "Mega-Latias",
+   "num": 380,
+   "types": [
+    {
+     "id": "dragon",
+     "name": "Drache"
+    },
+    {
+     "id": "psychic",
+     "name": "Psycho"
+    }
+   ],
+   "tier": "Mega-Raid",
+   "special": true,
+   "team": [
+    {
+     "id": "NECROZMA_DAWN_WINGS_FORM",
+     "name": "Necrozma - Morgenschwingen",
+     "estimator": 2.2666,
+     "moves": "Metallklaue / Schattenstrahl"
+    },
+    {
+     "id": "ETERNATUS",
+     "name": "Endynalos",
+     "estimator": 2.4592,
+     "moves": "Drachenrute / Dynamax-Kanone"
+    },
+    {
+     "id": "KYUREM_BLACK_FORM",
+     "name": "Schwarzes Kyurem",
+     "estimator": 2.6366,
+     "moves": "Dunkelklaue / Frostvolt"
+    },
+    {
+     "id": "DIALGA_ORIGIN_FORM",
+     "name": "Dialga - Origin",
+     "estimator": 3.0064,
+     "moves": "Feuerodem / Zeitenlärm"
+    },
+    {
+     "id": "DIALGA_SHADOW_FORM",
+     "name": "Crypto Dialga",
+     "estimator": 3.0576,
+     "moves": "Feuerodem / Draco Meteor"
+    }
+   ],
+   "teamMega": [
+    {
+     "id": "RAYQUAZA_MEGA",
+     "name": "Mega-Rayquaza",
+     "estimator": 2.9585,
+     "moves": "Drachenrute / Breitseite"
+    },
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 3.1627,
+     "moves": "Psychoklinge / Spukball"
+    },
+    {
+     "id": "DRAGONITE_MEGA",
+     "name": "Mega-Dragoran",
+     "estimator": 3.2144,
+     "moves": "Feuerodem / Draco Meteor"
+    },
+    {
+     "id": "GARCHOMP_MEGA",
+     "name": "Mega-Knakrack",
+     "estimator": 3.2154,
+     "moves": "Drachenrute / Breitseite"
+    },
+    {
+     "id": "SALAMENCE_MEGA",
+     "name": "Mega-Brutalanda",
+     "estimator": 3.224,
+     "moves": "Biss / Draco Meteor"
+    }
+   ],
+   "solo": [
+    {
+     "id": "ETERNATUS",
+     "name": "Endynalos",
+     "estimator": 3.4387,
+     "moves": "Drachenrute / Dynamax-Kanone"
+    },
+    {
+     "id": "KYUREM_BLACK_FORM",
+     "name": "Schwarzes Kyurem",
+     "estimator": 3.7862,
+     "moves": "Drachenrute / Frostvolt"
+    },
+    {
+     "id": "NECROZMA_DAWN_WINGS_FORM",
+     "name": "Necrozma - Morgenschwingen",
+     "estimator": 3.7965,
+     "moves": "Dunkelklaue / Schattenstrahl"
+    },
+    {
+     "id": "KYUREM_WHITE_FORM",
+     "name": "Weißes Kyurem",
+     "estimator": 4.0012,
+     "moves": "Feuerodem / Frosthauch"
+    },
+    {
+     "id": "GARCHOMP_SHADOW_FORM",
+     "name": "Crypto Knakrack",
+     "estimator": 4.2801,
+     "moves": "Drachenrute / Breitseite"
+    }
+   ],
+   "soloMega": [
+    {
+     "id": "RAYQUAZA_MEGA",
+     "name": "Mega-Rayquaza",
+     "estimator": 3.4542,
+     "moves": "Drachenrute / Breitseite"
+    },
+    {
+     "id": "GARCHOMP_MEGA",
+     "name": "Mega-Knakrack",
+     "estimator": 3.6323,
+     "moves": "Drachenrute / Breitseite"
+    },
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 4.1558,
+     "moves": "Psychoklinge / Spukball"
+    },
+    {
+     "id": "TYRANITAR_MEGA",
+     "name": "Mega-Despotar",
+     "estimator": 4.3507,
+     "moves": "Biss / Wirbler"
+    },
+    {
+     "id": "SALAMENCE_MEGA",
+     "name": "Mega-Brutalanda",
+     "estimator": 4.41,
+     "moves": "Drachenrute / Draco Meteor"
+    }
+   ]
+  },
+  {
    "id": "LATIOS",
    "name": "Latios",
    "num": 381,
@@ -1923,6 +2382,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -2053,6 +2514,151 @@
    ]
   },
   {
+   "id": "LATIOS_MEGA",
+   "name": "Mega-Latios",
+   "num": 381,
+   "types": [
+    {
+     "id": "dragon",
+     "name": "Drache"
+    },
+    {
+     "id": "psychic",
+     "name": "Psycho"
+    }
+   ],
+   "tier": "Mega-Raid",
+   "special": true,
+   "team": [
+    {
+     "id": "NECROZMA_DAWN_WINGS_FORM",
+     "name": "Necrozma - Morgenschwingen",
+     "estimator": 1.8954,
+     "moves": "Dunkelklaue / Schattenstrahl"
+    },
+    {
+     "id": "ETERNATUS",
+     "name": "Endynalos",
+     "estimator": 2.0188,
+     "moves": "Drachenrute / Dynamax-Kanone"
+    },
+    {
+     "id": "KYUREM_BLACK_FORM",
+     "name": "Schwarzes Kyurem",
+     "estimator": 2.2003,
+     "moves": "Dunkelklaue / Frostvolt"
+    },
+    {
+     "id": "DIALGA_ORIGIN_FORM",
+     "name": "Dialga - Origin",
+     "estimator": 2.391,
+     "moves": "Feuerodem / Zeitenlärm"
+    },
+    {
+     "id": "GIRATINA_ORIGIN_SHADOW_FORM",
+     "name": "Crypto-Giratina Origin",
+     "estimator": 2.5253,
+     "moves": "Dunkelklaue / Schemenkraft"
+    }
+   ],
+   "teamMega": [
+    {
+     "id": "RAYQUAZA_MEGA",
+     "name": "Mega-Rayquaza",
+     "estimator": 2.4015,
+     "moves": "Drachenrute / Breitseite"
+    },
+    {
+     "id": "DRAGONITE_MEGA",
+     "name": "Mega-Dragoran",
+     "estimator": 2.6152,
+     "moves": "Feuerodem / Draco Meteor"
+    },
+    {
+     "id": "SALAMENCE_MEGA",
+     "name": "Mega-Brutalanda",
+     "estimator": 2.6205,
+     "moves": "Biss / Draco Meteor"
+    },
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 2.6372,
+     "moves": "Psychoklinge / Spukball"
+    },
+    {
+     "id": "GARCHOMP_MEGA",
+     "name": "Mega-Knakrack",
+     "estimator": 2.6842,
+     "moves": "Drachenrute / Breitseite"
+    }
+   ],
+   "solo": [
+    {
+     "id": "ETERNATUS",
+     "name": "Endynalos",
+     "estimator": 2.8066,
+     "moves": "Drachenrute / Dynamax-Kanone"
+    },
+    {
+     "id": "KYUREM_BLACK_FORM",
+     "name": "Schwarzes Kyurem",
+     "estimator": 3.169,
+     "moves": "Drachenrute / Frostvolt"
+    },
+    {
+     "id": "NECROZMA_DAWN_WINGS_FORM",
+     "name": "Necrozma - Morgenschwingen",
+     "estimator": 3.1999,
+     "moves": "Dunkelklaue / Schattenstrahl"
+    },
+    {
+     "id": "KYUREM_WHITE_FORM",
+     "name": "Weißes Kyurem",
+     "estimator": 3.4492,
+     "moves": "Feuerodem / Frosthauch"
+    },
+    {
+     "id": "GARCHOMP_SHADOW_FORM",
+     "name": "Crypto Knakrack",
+     "estimator": 3.647,
+     "moves": "Drachenrute / Breitseite"
+    }
+   ],
+   "soloMega": [
+    {
+     "id": "RAYQUAZA_MEGA",
+     "name": "Mega-Rayquaza",
+     "estimator": 2.7608,
+     "moves": "Drachenrute / Breitseite"
+    },
+    {
+     "id": "GARCHOMP_MEGA",
+     "name": "Mega-Knakrack",
+     "estimator": 3.1135,
+     "moves": "Drachenrute / Breitseite"
+    },
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 3.499,
+     "moves": "Psychoklinge / Spukball"
+    },
+    {
+     "id": "TYRANITAR_MEGA",
+     "name": "Mega-Despotar",
+     "estimator": 3.6101,
+     "moves": "Biss / Wirbler"
+    },
+    {
+     "id": "SALAMENCE_MEGA",
+     "name": "Mega-Brutalanda",
+     "estimator": 3.6252,
+     "moves": "Drachenrute / Draco Meteor"
+    }
+   ]
+  },
+  {
    "id": "KYOGRE",
    "name": "Kyogre",
    "num": 382,
@@ -2062,6 +2668,8 @@
      "name": "Wasser"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KYUREM_BLACK_FORM",
@@ -2192,6 +2800,147 @@
    ]
   },
   {
+   "id": "KYOGRE_PRIMAL",
+   "name": "Proto-Kyogre",
+   "num": 382,
+   "types": [
+    {
+     "id": "water",
+     "name": "Wasser"
+    }
+   ],
+   "tier": "Proto-Raid",
+   "special": true,
+   "team": [
+    {
+     "id": "KYUREM_BLACK_FORM",
+     "name": "Schwarzes Kyurem",
+     "estimator": 3.404,
+     "moves": "Dunkelklaue / Kreuzdonner"
+    },
+    {
+     "id": "ETERNATUS",
+     "name": "Endynalos",
+     "estimator": 3.4351,
+     "moves": "Drachenrute / Dynamax-Kanone"
+    },
+    {
+     "id": "ZEKROM",
+     "name": "Zekrom",
+     "estimator": 3.5309,
+     "moves": "Feuerodem / Kreuzdonner"
+    },
+    {
+     "id": "REGIELEKI",
+     "name": "Regieleki",
+     "estimator": 3.5895,
+     "moves": "Donnerschock / Blitzgefängnis"
+    },
+    {
+     "id": "NECROZMA_DAWN_WINGS_FORM",
+     "name": "Necrozma - Morgenschwingen",
+     "estimator": 3.6703,
+     "moves": "Psychoklinge / Schattenstrahl"
+    }
+   ],
+   "teamMega": [
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 3.3304,
+     "moves": "Psychoklinge / Donnerblitz"
+    },
+    {
+     "id": "MEWTWO_MEGA_X",
+     "name": "Mega-Mewtu X",
+     "estimator": 3.444,
+     "moves": "Psychoklinge / Donnerblitz"
+    },
+    {
+     "id": "VENUSAUR_MEGA",
+     "name": "Mega-Bisaflor",
+     "estimator": 3.4901,
+     "moves": "Rankenhieb / Flora-Statue"
+    },
+    {
+     "id": "RAICHU_MEGA_Y",
+     "name": "Mega-Raichu Y",
+     "estimator": 3.6656,
+     "moves": "Donnerschock / Stromstoß"
+    },
+    {
+     "id": "SCEPTILE_MEGA",
+     "name": "Mega-Gewaldro",
+     "estimator": 3.7244,
+     "moves": "Zornklinge / Flora-Statue"
+    }
+   ],
+   "solo": [
+    {
+     "id": "ETERNATUS",
+     "name": "Endynalos",
+     "estimator": 4.7261,
+     "moves": "Gifthieb / Dynamax-Kanone"
+    },
+    {
+     "id": "ZARUDE",
+     "name": "Zarude",
+     "estimator": 4.7276,
+     "moves": "Rankenhieb / Blattgeißel"
+    },
+    {
+     "id": "REGIGIGAS_SHADOW_FORM",
+     "name": "Crypto Regigigas",
+     "estimator": 4.868,
+     "moves": "Kraftreserve / Quetschgriff"
+    },
+    {
+     "id": "RAIKOU_SHADOW_FORM",
+     "name": "Crypto Raikou",
+     "estimator": 4.9565,
+     "moves": "Donnerschock / Stromstoß"
+    },
+    {
+     "id": "KYUREM_BLACK_FORM",
+     "name": "Schwarzes Kyurem",
+     "estimator": 5.0563,
+     "moves": "Drachenrute / Kreuzdonner"
+    }
+   ],
+   "soloMega": [
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 4.2892,
+     "moves": "Psychoklinge / Donnerblitz"
+    },
+    {
+     "id": "MEWTWO_MEGA_X",
+     "name": "Mega-Mewtu X",
+     "estimator": 4.4335,
+     "moves": "Psychoklinge / Donnerblitz"
+    },
+    {
+     "id": "VENUSAUR_MEGA",
+     "name": "Mega-Bisaflor",
+     "estimator": 4.608,
+     "moves": "Rankenhieb / Flora-Statue"
+    },
+    {
+     "id": "RAICHU_MEGA_Y",
+     "name": "Mega-Raichu Y",
+     "estimator": 4.8768,
+     "moves": "Donnerschock / Stromstoß"
+    },
+    {
+     "id": "SCEPTILE_MEGA",
+     "name": "Mega-Gewaldro",
+     "estimator": 5.1959,
+     "moves": "Kugelsaat / Flora-Statue"
+    }
+   ]
+  },
+  {
    "id": "GROUDON",
    "name": "Groudon",
    "num": 383,
@@ -2201,6 +2950,8 @@
      "name": "Boden"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KYUREM_BLACK_FORM",
@@ -2331,6 +3082,151 @@
    ]
   },
   {
+   "id": "GROUDON_PRIMAL",
+   "name": "Proto-Groudon",
+   "num": 383,
+   "types": [
+    {
+     "id": "ground",
+     "name": "Boden"
+    },
+    {
+     "id": "fire",
+     "name": "Feuer"
+    }
+   ],
+   "tier": "Proto-Raid",
+   "special": true,
+   "team": [
+    {
+     "id": "KYOGRE_SHADOW_FORM",
+     "name": "Crypto Kyogre",
+     "estimator": 2.5197,
+     "moves": "Kaskade / Ursprungswoge"
+    },
+    {
+     "id": "GYARADOS",
+     "name": "Garados",
+     "estimator": 2.8697,
+     "moves": "Kaskade / Hydropumpe"
+    },
+    {
+     "id": "KYOGRE",
+     "name": "Kyogre",
+     "estimator": 2.8862,
+     "moves": "Kaskade / Ursprungswoge"
+    },
+    {
+     "id": "SALAMENCE_SHADOW_FORM",
+     "name": "Crypto Brutalanda",
+     "estimator": 2.8933,
+     "moves": "Biss / Hydropumpe"
+    },
+    {
+     "id": "GYARADOS_SHADOW_FORM",
+     "name": "Crypto Garados",
+     "estimator": 2.9002,
+     "moves": "Kaskade / Hydropumpe"
+    }
+   ],
+   "teamMega": [
+    {
+     "id": "KYOGRE_PRIMAL",
+     "name": "Proto-Kyogre",
+     "estimator": 2.2204,
+     "moves": "Kaskade / Ursprungswoge"
+    },
+    {
+     "id": "SWAMPERT_MEGA",
+     "name": "Mega-Sumpex",
+     "estimator": 2.4042,
+     "moves": "Aquaknarre / Aquahaubitze"
+    },
+    {
+     "id": "BLASTOISE_MEGA",
+     "name": "Mega-Turtok",
+     "estimator": 2.5746,
+     "moves": "Aquaknarre / Aquahaubitze"
+    },
+    {
+     "id": "GROUDON_PRIMAL",
+     "name": "Proto-Groudon",
+     "estimator": 2.6582,
+     "moves": "Lehmschuss / Abgrundsklinge"
+    },
+    {
+     "id": "SALAMENCE_MEGA",
+     "name": "Mega-Brutalanda",
+     "estimator": 2.745,
+     "moves": "Biss / Hydropumpe"
+    }
+   ],
+   "solo": [
+    {
+     "id": "KYOGRE_SHADOW_FORM",
+     "name": "Crypto Kyogre",
+     "estimator": 3.2376,
+     "moves": "Kaskade / Surfer"
+    },
+    {
+     "id": "GYARADOS_SHADOW_FORM",
+     "name": "Crypto Garados",
+     "estimator": 3.6869,
+     "moves": "Kaskade / Nassschweif"
+    },
+    {
+     "id": "KYOGRE",
+     "name": "Kyogre",
+     "estimator": 3.6975,
+     "moves": "Kaskade / Surfer"
+    },
+    {
+     "id": "GOLISOPOD",
+     "name": "Tectass",
+     "estimator": 3.8191,
+     "moves": "Kaskade / Kalkklinge"
+    },
+    {
+     "id": "KINGLER_SHADOW_FORM",
+     "name": "Crypto Kingler",
+     "estimator": 3.9106,
+     "moves": "Blubber / Kalkklinge"
+    }
+   ],
+   "soloMega": [
+    {
+     "id": "KYOGRE_PRIMAL",
+     "name": "Proto-Kyogre",
+     "estimator": 2.902,
+     "moves": "Kaskade / Surfer"
+    },
+    {
+     "id": "SWAMPERT_MEGA",
+     "name": "Mega-Sumpex",
+     "estimator": 3.2243,
+     "moves": "Aquaknarre / Aquahaubitze"
+    },
+    {
+     "id": "BLASTOISE_MEGA",
+     "name": "Mega-Turtok",
+     "estimator": 3.5876,
+     "moves": "Aquaknarre / Aquahaubitze"
+    },
+    {
+     "id": "GYARADOS_MEGA",
+     "name": "Mega-Garados",
+     "estimator": 3.6703,
+     "moves": "Kaskade / Nassschweif"
+    },
+    {
+     "id": "STARMIE_MEGA",
+     "name": "Mega-Starmie",
+     "estimator": 3.8345,
+     "moves": "Aquaknarre / Surfer"
+    }
+   ]
+  },
+  {
    "id": "RAYQUAZA",
    "name": "Rayquaza",
    "num": 384,
@@ -2344,6 +3240,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KYUREM_BLACK_FORM",
@@ -2474,6 +3372,151 @@
    ]
   },
   {
+   "id": "RAYQUAZA_MEGA",
+   "name": "Mega-Rayquaza",
+   "num": 384,
+   "types": [
+    {
+     "id": "dragon",
+     "name": "Drache"
+    },
+    {
+     "id": "flying",
+     "name": "Flug"
+    }
+   ],
+   "tier": "Mega-Raid",
+   "special": true,
+   "team": [
+    {
+     "id": "ETERNATUS",
+     "name": "Endynalos",
+     "estimator": 1.8967,
+     "moves": "Drachenrute / Dynamax-Kanone"
+    },
+    {
+     "id": "KYUREM_WHITE_FORM",
+     "name": "Weißes Kyurem",
+     "estimator": 1.901,
+     "moves": "Feuerodem / Frosthauch"
+    },
+    {
+     "id": "KYUREM_BLACK_FORM",
+     "name": "Schwarzes Kyurem",
+     "estimator": 1.9461,
+     "moves": "Drachenrute / Frostvolt"
+    },
+    {
+     "id": "DIALGA_ORIGIN_FORM",
+     "name": "Dialga - Origin",
+     "estimator": 2.0289,
+     "moves": "Feuerodem / Zeitenlärm"
+    },
+    {
+     "id": "ZACIAN_CROWNED_SWORD_FORM",
+     "name": "Zacian - König des Schwertes",
+     "estimator": 2.1475,
+     "moves": "Metallklaue / Gigantenhieb"
+    }
+   ],
+   "teamMega": [
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 1.7602,
+     "moves": "Psychoklinge / Eisstrahl"
+    },
+    {
+     "id": "MEWTWO_MEGA_X",
+     "name": "Mega-Mewtu X",
+     "estimator": 1.9173,
+     "moves": "Psychoklinge / Eisstrahl"
+    },
+    {
+     "id": "GARDEVOIR_MEGA",
+     "name": "Mega-Guardevoir",
+     "estimator": 2.3041,
+     "moves": "Charme / Dreifach-Axel"
+    },
+    {
+     "id": "RAYQUAZA_MEGA",
+     "name": "Mega-Rayquaza",
+     "estimator": 2.3685,
+     "moves": "Drachenrute / Breitseite"
+    },
+    {
+     "id": "GARCHOMP_MEGA",
+     "name": "Mega-Knakrack",
+     "estimator": 2.3731,
+     "moves": "Drachenrute / Breitseite"
+    }
+   ],
+   "solo": [
+    {
+     "id": "KYUREM_WHITE_FORM",
+     "name": "Weißes Kyurem",
+     "estimator": 2.3273,
+     "moves": "Eiszahn / Frosthauch"
+    },
+    {
+     "id": "ETERNATUS",
+     "name": "Endynalos",
+     "estimator": 2.6662,
+     "moves": "Drachenrute / Dynamax-Kanone"
+    },
+    {
+     "id": "KYUREM_BLACK_FORM",
+     "name": "Schwarzes Kyurem",
+     "estimator": 2.7515,
+     "moves": "Drachenrute / Frostvolt"
+    },
+    {
+     "id": "AURORUS_SHADOW_FORM",
+     "name": "Crypto Amagarga",
+     "estimator": 2.7741,
+     "moves": "Eisesodem / Meteorologe"
+    },
+    {
+     "id": "MAMOSWINE_SHADOW_FORM",
+     "name": "Crypto Mamutel",
+     "estimator": 2.8379,
+     "moves": "Pulverschnee / Lawine"
+    }
+   ],
+   "soloMega": [
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 2.3272,
+     "moves": "Psychoklinge / Eisstrahl"
+    },
+    {
+     "id": "MEWTWO_MEGA_X",
+     "name": "Mega-Mewtu X",
+     "estimator": 2.525,
+     "moves": "Psychoklinge / Eisstrahl"
+    },
+    {
+     "id": "GARDEVOIR_MEGA",
+     "name": "Mega-Guardevoir",
+     "estimator": 2.6682,
+     "moves": "Charme / Dreifach-Axel"
+    },
+    {
+     "id": "RAYQUAZA_MEGA",
+     "name": "Mega-Rayquaza",
+     "estimator": 2.7358,
+     "moves": "Drachenrute / Breitseite"
+    },
+    {
+     "id": "GARCHOMP_MEGA",
+     "name": "Mega-Knakrack",
+     "estimator": 2.7408,
+     "moves": "Drachenrute / Breitseite"
+    }
+   ]
+  },
+  {
    "id": "DEOXYS",
    "name": "Deoxys",
    "num": 386,
@@ -2483,6 +3526,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": null,
    "teamMega": null,
    "solo": [
@@ -2560,6 +3605,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "GIRATINA_ORIGIN_SHADOW_FORM",
@@ -2699,6 +3746,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -2838,6 +3887,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -2977,6 +4028,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -3116,6 +4169,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -3255,6 +4310,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -3398,6 +4455,8 @@
      "name": "Drache"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "GROUDON_SHADOW_FORM",
@@ -3541,6 +4600,8 @@
      "name": "Drache"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "GROUDON_SHADOW_FORM",
@@ -3684,6 +4745,8 @@
      "name": "Drache"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ETERNATUS",
@@ -3827,6 +4890,8 @@
      "name": "Drache"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ETERNATUS",
@@ -3970,6 +5035,8 @@
      "name": "Stahl"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "GROUDON_SHADOW_FORM",
@@ -4109,6 +5176,8 @@
      "name": "Normal"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KELDEO",
@@ -4252,6 +5321,8 @@
      "name": "Drache"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -4395,6 +5466,8 @@
      "name": "Drache"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ETERNATUS",
@@ -4534,6 +5607,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -4673,6 +5748,8 @@
      "name": "Unlicht"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KELDEO",
@@ -4816,6 +5893,8 @@
      "name": "Kampf"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "GROUDON_SHADOW_FORM",
@@ -4959,6 +6038,8 @@
      "name": "Kampf"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ZACIAN_CROWNED_SWORD_FORM",
@@ -5102,6 +6183,8 @@
      "name": "Kampf"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "RAYQUAZA",
@@ -5241,6 +6324,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KYUREM_BLACK_FORM",
@@ -5380,6 +6465,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KYUREM_BLACK_FORM",
@@ -5523,6 +6610,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KYUREM_BLACK_FORM",
@@ -5666,6 +6755,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KYUREM_BLACK_FORM",
@@ -5809,6 +6900,8 @@
      "name": "Feuer"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ETERNATUS",
@@ -5952,6 +7045,8 @@
      "name": "Elektro"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ETERNATUS",
@@ -6095,6 +7190,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KYUREM_BLACK_FORM",
@@ -6238,6 +7335,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KYUREM_BLACK_FORM",
@@ -6381,6 +7480,8 @@
      "name": "Eis"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ZACIAN_CROWNED_SWORD_FORM",
@@ -6524,6 +7625,8 @@
      "name": "Stahl"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "RESHIRAM_SHADOW_FORM",
@@ -6667,6 +7770,8 @@
      "name": "Stahl"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "RESHIRAM_SHADOW_FORM",
@@ -6810,6 +7915,8 @@
      "name": "Stahl"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "RESHIRAM_SHADOW_FORM",
@@ -6953,6 +8060,8 @@
      "name": "Stahl"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "RESHIRAM_SHADOW_FORM",
@@ -7096,6 +8205,8 @@
      "name": "Stahl"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "RESHIRAM_SHADOW_FORM",
@@ -7235,6 +8346,8 @@
      "name": "Fee"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ZACIAN_CROWNED_SWORD_FORM",
@@ -7378,6 +8491,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KYUREM_BLACK_FORM",
@@ -7521,6 +8636,8 @@
      "name": "Unlicht"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ESCAVALIER_SHADOW_FORM",
@@ -7658,6 +8775,8 @@
      "name": "Fee"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "GROUDON_SHADOW_FORM",
@@ -7801,6 +8920,8 @@
      "name": "Fee"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DUSK_MANE_FORM",
@@ -7944,6 +9065,8 @@
      "name": "Fee"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ZACIAN_CROWNED_SWORD_FORM",
@@ -8087,6 +9210,8 @@
      "name": "Fee"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "REGIELEKI",
@@ -8226,6 +9351,8 @@
      "name": "Psycho"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -8369,6 +9496,8 @@
      "name": "Geist"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -8512,6 +9641,8 @@
      "name": "Stahl"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "NECROZMA_DAWN_WINGS_FORM",
@@ -8655,6 +9786,8 @@
      "name": "Stahl"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "GROUDON_SHADOW_FORM",
@@ -8794,6 +9927,8 @@
      "name": "Fee"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ZACIAN_CROWNED_SWORD_FORM",
@@ -8937,6 +10072,8 @@
      "name": "Stahl"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "KELDEO",
@@ -9076,6 +10213,8 @@
      "name": "Kampf"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "MEWTWO_SHADOW_FORM",
@@ -9206,6 +10345,85 @@
    ]
   },
   {
+   "id": "REGIELEKI",
+   "name": "Regieleki",
+   "num": 894,
+   "types": [
+    {
+     "id": "electric",
+     "name": "Elektro"
+    }
+   ],
+   "tier": "Elite-Raid",
+   "special": true,
+   "team": null,
+   "teamMega": null,
+   "solo": [
+    {
+     "id": "GROUDON_SHADOW_FORM",
+     "name": "Crypto Groudon",
+     "estimator": 2.1332,
+     "moves": "Lehmschuss / Abgrundsklinge"
+    },
+    {
+     "id": "GARCHOMP_SHADOW_FORM",
+     "name": "Crypto Knakrack",
+     "estimator": 2.2096,
+     "moves": "Lehmschuss / Erdkräfte"
+    },
+    {
+     "id": "EXCADRILL_SHADOW_FORM",
+     "name": "Crypto Stalobor",
+     "estimator": 2.3307,
+     "moves": "Lehmschelle / Brandsand"
+    },
+    {
+     "id": "RHYPERIOR_SHADOW_FORM",
+     "name": "Crypto Rihornior",
+     "estimator": 2.3493,
+     "moves": "Lehmschelle / Erdbeben"
+    },
+    {
+     "id": "MAMOSWINE_SHADOW_FORM",
+     "name": "Crypto Mamutel",
+     "estimator": 2.4538,
+     "moves": "Lehmschelle / Pferdestärke"
+    }
+   ],
+   "soloMega": [
+    {
+     "id": "GROUDON_PRIMAL",
+     "name": "Proto-Groudon",
+     "estimator": 1.8315,
+     "moves": "Lehmschuss / Abgrundsklinge"
+    },
+    {
+     "id": "GARCHOMP_MEGA",
+     "name": "Mega-Knakrack",
+     "estimator": 2.0914,
+     "moves": "Lehmschuss / Erdkräfte"
+    },
+    {
+     "id": "MEWTWO_MEGA_Y",
+     "name": "Mega-Mewtu Y",
+     "estimator": 2.6096,
+     "moves": "Konfusion / Psychostoß"
+    },
+    {
+     "id": "MEWTWO_MEGA_X",
+     "name": "Mega-Mewtu X",
+     "estimator": 2.648,
+     "moves": "Konter / Psychostoß"
+    },
+    {
+     "id": "SWAMPERT_MEGA",
+     "name": "Mega-Sumpex",
+     "estimator": 2.741,
+     "moves": "Lehmschuss / Erdbeben"
+    }
+   ]
+  },
+  {
    "id": "REGIDRAGO",
    "name": "Regidrago",
    "num": 895,
@@ -9215,6 +10433,8 @@
      "name": "Drache"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ETERNATUS",
@@ -9358,6 +10578,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ZACIAN_CROWNED_SWORD_FORM",
@@ -9501,6 +10723,8 @@
      "name": "Flug"
     }
    ],
+   "tier": "Stufe 5",
+   "special": false,
    "team": [
     {
      "id": "ZACIAN_CROWNED_SWORD_FORM",
@@ -9634,28 +10858,11 @@
  "ranking": {
   "team": [
    {
-    "id": "ZACIAN_CROWNED_SWORD_FORM",
-    "name": "Zacian - König des Schwertes",
-    "count": 29,
-    "first": 10,
-    "points": 102,
-    "types": [
-     {
-      "id": "fairy",
-      "name": "Fee"
-     },
-     {
-      "id": "steel",
-      "name": "Stahl"
-     }
-    ]
-   },
-   {
     "id": "NECROZMA_DAWN_WINGS_FORM",
     "name": "Necrozma - Morgenschwingen",
-    "count": 26,
-    "first": 14,
-    "points": 95,
+    "count": 31,
+    "first": 18,
+    "points": 116,
     "types": [
      {
       "id": "psychic",
@@ -9668,11 +10875,28 @@
     ]
    },
    {
+    "id": "ZACIAN_CROWNED_SWORD_FORM",
+    "name": "Zacian - König des Schwertes",
+    "count": 30,
+    "first": 10,
+    "points": 103,
+    "types": [
+     {
+      "id": "fairy",
+      "name": "Fee"
+     },
+     {
+      "id": "steel",
+      "name": "Stahl"
+     }
+    ]
+   },
+   {
     "id": "KYUREM_BLACK_FORM",
     "name": "Schwarzes Kyurem",
-    "count": 24,
-    "first": 11,
-    "points": 91,
+    "count": 28,
+    "first": 12,
+    "points": 105,
     "types": [
      {
       "id": "dragon",
@@ -9687,9 +10911,9 @@
    {
     "id": "NECROZMA_DUSK_MANE_FORM",
     "name": "Necrozma - Abendmähne",
-    "count": 24,
+    "count": 26,
     "first": 1,
-    "points": 78,
+    "points": 80,
     "types": [
      {
       "id": "psychic",
@@ -9704,13 +10928,30 @@
    {
     "id": "ETERNATUS",
     "name": "Endynalos",
-    "count": 18,
-    "first": 6,
-    "points": 63,
+    "count": 22,
+    "first": 7,
+    "points": 80,
     "types": [
      {
       "id": "poison",
       "name": "Gift"
+     },
+     {
+      "id": "dragon",
+      "name": "Drache"
+     }
+    ]
+   },
+   {
+    "id": "GIRATINA_ORIGIN_SHADOW_FORM",
+    "name": "Crypto-Giratina Origin",
+    "count": 17,
+    "first": 1,
+    "points": 54,
+    "types": [
+     {
+      "id": "ghost",
+      "name": "Geist"
      },
      {
       "id": "dragon",
@@ -9732,15 +10973,15 @@
     ]
    },
    {
-    "id": "GIRATINA_ORIGIN_SHADOW_FORM",
-    "name": "Crypto-Giratina Origin",
+    "id": "DIALGA_ORIGIN_FORM",
+    "name": "Dialga - Origin",
     "count": 14,
-    "first": 1,
-    "points": 45,
+    "first": 0,
+    "points": 30,
     "types": [
      {
-      "id": "ghost",
-      "name": "Geist"
+      "id": "steel",
+      "name": "Stahl"
      },
      {
       "id": "dragon",
@@ -9766,6 +11007,23 @@
     ]
    },
    {
+    "id": "KYUREM_WHITE_FORM",
+    "name": "Weißes Kyurem",
+    "count": 12,
+    "first": 0,
+    "points": 39,
+    "types": [
+     {
+      "id": "dragon",
+      "name": "Drache"
+     },
+     {
+      "id": "ice",
+      "name": "Eis"
+     }
+    ]
+   },
+   {
     "id": "RESHIRAM_SHADOW_FORM",
     "name": "Crypto Reshiram",
     "count": 11,
@@ -9779,40 +11037,6 @@
      {
       "id": "fire",
       "name": "Feuer"
-     }
-    ]
-   },
-   {
-    "id": "KYUREM_WHITE_FORM",
-    "name": "Weißes Kyurem",
-    "count": 11,
-    "first": 0,
-    "points": 35,
-    "types": [
-     {
-      "id": "dragon",
-      "name": "Drache"
-     },
-     {
-      "id": "ice",
-      "name": "Eis"
-     }
-    ]
-   },
-   {
-    "id": "DIALGA_ORIGIN_FORM",
-    "name": "Dialga - Origin",
-    "count": 11,
-    "first": 0,
-    "points": 24,
-    "types": [
-     {
-      "id": "steel",
-      "name": "Stahl"
-     },
-     {
-      "id": "dragon",
-      "name": "Drache"
      }
     ]
    },
@@ -9834,6 +11058,23 @@
     ]
    },
    {
+    "id": "DIALGA_SHADOW_FORM",
+    "name": "Crypto Dialga",
+    "count": 9,
+    "first": 0,
+    "points": 18,
+    "types": [
+     {
+      "id": "steel",
+      "name": "Stahl"
+     },
+     {
+      "id": "dragon",
+      "name": "Drache"
+     }
+    ]
+   },
+   {
     "id": "KELDEO",
     "name": "Keldeo",
     "count": 8,
@@ -9851,19 +11092,15 @@
     ]
    },
    {
-    "id": "DIALGA_SHADOW_FORM",
-    "name": "Crypto Dialga",
-    "count": 8,
-    "first": 0,
-    "points": 17,
+    "id": "REGIELEKI",
+    "name": "Regieleki",
+    "count": 7,
+    "first": 2,
+    "points": 24,
     "types": [
      {
-      "id": "steel",
-      "name": "Stahl"
-     },
-     {
-      "id": "dragon",
-      "name": "Drache"
+      "id": "electric",
+      "name": "Elektro"
      }
     ]
    },
@@ -9881,19 +11118,6 @@
      {
       "id": "fire",
       "name": "Feuer"
-     }
-    ]
-   },
-   {
-    "id": "REGIELEKI",
-    "name": "Regieleki",
-    "count": 6,
-    "first": 2,
-    "points": 22,
-    "types": [
-     {
-      "id": "electric",
-      "name": "Elektro"
      }
     ]
    },
@@ -10022,6 +11246,19 @@
     ]
    },
    {
+    "id": "KYOGRE_SHADOW_FORM",
+    "name": "Crypto Kyogre",
+    "count": 4,
+    "first": 1,
+    "points": 9,
+    "types": [
+     {
+      "id": "water",
+      "name": "Wasser"
+     }
+    ]
+   },
+   {
     "id": "KYUREM",
     "name": "Kyurem",
     "count": 4,
@@ -10035,6 +11272,23 @@
      {
       "id": "ice",
       "name": "Eis"
+     }
+    ]
+   },
+   {
+    "id": "GIRATINA_SHADOW_FORM",
+    "name": "Crypto Giratina",
+    "count": 4,
+    "first": 0,
+    "points": 7,
+    "types": [
+     {
+      "id": "ghost",
+      "name": "Geist"
+     },
+     {
+      "id": "dragon",
+      "name": "Drache"
      }
     ]
    },
@@ -10103,15 +11357,53 @@
     ]
    },
    {
-    "id": "KYOGRE_SHADOW_FORM",
-    "name": "Crypto Kyogre",
+    "id": "GIRATINA_ORIGIN_FORM",
+    "name": "Giratina - Urform",
     "count": 3,
     "first": 0,
-    "points": 4,
+    "points": 6,
     "types": [
      {
-      "id": "water",
-      "name": "Wasser"
+      "id": "ghost",
+      "name": "Geist"
+     },
+     {
+      "id": "dragon",
+      "name": "Drache"
+     }
+    ]
+   },
+   {
+    "id": "ZEKROM",
+    "name": "Zekrom",
+    "count": 2,
+    "first": 0,
+    "points": 6,
+    "types": [
+     {
+      "id": "dragon",
+      "name": "Drache"
+     },
+     {
+      "id": "electric",
+      "name": "Elektro"
+     }
+    ]
+   },
+   {
+    "id": "SALAMENCE_SHADOW_FORM",
+    "name": "Crypto Brutalanda",
+    "count": 2,
+    "first": 0,
+    "points": 5,
+    "types": [
+     {
+      "id": "dragon",
+      "name": "Drache"
+     },
+     {
+      "id": "flying",
+      "name": "Flug"
      }
     ]
    },
@@ -10193,23 +11485,6 @@
      {
       "id": "rock",
       "name": "Gestein"
-     }
-    ]
-   },
-   {
-    "id": "GIRATINA_SHADOW_FORM",
-    "name": "Crypto Giratina",
-    "count": 2,
-    "first": 0,
-    "points": 2,
-    "types": [
-     {
-      "id": "ghost",
-      "name": "Geist"
-     },
-     {
-      "id": "dragon",
-      "name": "Drache"
      }
     ]
    },
@@ -10316,15 +11591,15 @@
     ]
    },
    {
-    "id": "SALAMENCE_SHADOW_FORM",
-    "name": "Crypto Brutalanda",
+    "id": "GYARADOS",
+    "name": "Garados",
     "count": 1,
     "first": 0,
-    "points": 3,
+    "points": 4,
     "types": [
      {
-      "id": "dragon",
-      "name": "Drache"
+      "id": "water",
+      "name": "Wasser"
      },
      {
       "id": "flying",
@@ -10346,6 +11621,19 @@
     ]
    },
    {
+    "id": "KYOGRE",
+    "name": "Kyogre",
+    "count": 1,
+    "first": 0,
+    "points": 3,
+    "types": [
+     {
+      "id": "water",
+      "name": "Wasser"
+     }
+    ]
+   },
+   {
     "id": "GLIMMORA",
     "name": "Lumiflora",
     "count": 1,
@@ -10359,23 +11647,6 @@
      {
       "id": "poison",
       "name": "Gift"
-     }
-    ]
-   },
-   {
-    "id": "ZEKROM",
-    "name": "Zekrom",
-    "count": 1,
-    "first": 0,
-    "points": 3,
-    "types": [
-     {
-      "id": "dragon",
-      "name": "Drache"
-     },
-     {
-      "id": "electric",
-      "name": "Elektro"
      }
     ]
    },
@@ -10529,6 +11800,23 @@
     ]
    },
    {
+    "id": "GYARADOS_SHADOW_FORM",
+    "name": "Crypto Garados",
+    "count": 1,
+    "first": 0,
+    "points": 1,
+    "types": [
+     {
+      "id": "water",
+      "name": "Wasser"
+     },
+     {
+      "id": "flying",
+      "name": "Flug"
+     }
+    ]
+   },
+   {
     "id": "MAGNEZONE_SHADOW_FORM",
     "name": "Crypto Magnezone",
     "count": 1,
@@ -10606,23 +11894,6 @@
     ]
    },
    {
-    "id": "GIRATINA_ORIGIN_FORM",
-    "name": "Giratina - Urform",
-    "count": 1,
-    "first": 0,
-    "points": 1,
-    "types": [
-     {
-      "id": "ghost",
-      "name": "Geist"
-     },
-     {
-      "id": "dragon",
-      "name": "Drache"
-     }
-    ]
-   },
-   {
     "id": "GARCHOMP",
     "name": "Knakrack",
     "count": 1,
@@ -10642,28 +11913,11 @@
   ],
   "solo": [
    {
-    "id": "KYUREM_WHITE_FORM",
-    "name": "Weißes Kyurem",
-    "count": 18,
-    "first": 10,
-    "points": 68,
-    "types": [
-     {
-      "id": "dragon",
-      "name": "Drache"
-     },
-     {
-      "id": "ice",
-      "name": "Eis"
-     }
-    ]
-   },
-   {
     "id": "NECROZMA_DAWN_WINGS_FORM",
     "name": "Necrozma - Morgenschwingen",
-    "count": 17,
-    "first": 12,
-    "points": 77,
+    "count": 21,
+    "first": 14,
+    "points": 93,
     "types": [
      {
       "id": "psychic",
@@ -10678,9 +11932,9 @@
    {
     "id": "ETERNATUS",
     "name": "Endynalos",
-    "count": 17,
-    "first": 10,
-    "points": 70,
+    "count": 21,
+    "first": 13,
+    "points": 89,
     "types": [
      {
       "id": "poison",
@@ -10693,11 +11947,28 @@
     ]
    },
    {
+    "id": "KYUREM_WHITE_FORM",
+    "name": "Weißes Kyurem",
+    "count": 21,
+    "first": 11,
+    "points": 77,
+    "types": [
+     {
+      "id": "dragon",
+      "name": "Drache"
+     },
+     {
+      "id": "ice",
+      "name": "Eis"
+     }
+    ]
+   },
+   {
     "id": "KYUREM_BLACK_FORM",
     "name": "Schwarzes Kyurem",
-    "count": 17,
+    "count": 21,
     "first": 0,
-    "points": 64,
+    "points": 76,
     "types": [
      {
       "id": "dragon",
@@ -10712,9 +11983,9 @@
    {
     "id": "TYRANITAR_SHADOW_FORM",
     "name": "Crypto Despotar",
-    "count": 16,
+    "count": 17,
     "first": 0,
-    "points": 44,
+    "points": 47,
     "types": [
      {
       "id": "rock",
@@ -10727,11 +11998,28 @@
     ]
    },
    {
+    "id": "GARCHOMP_SHADOW_FORM",
+    "name": "Crypto Knakrack",
+    "count": 16,
+    "first": 0,
+    "points": 37,
+    "types": [
+     {
+      "id": "dragon",
+      "name": "Drache"
+     },
+     {
+      "id": "ground",
+      "name": "Boden"
+     }
+    ]
+   },
+   {
     "id": "REGIGIGAS_SHADOW_FORM",
     "name": "Crypto Regigigas",
-    "count": 14,
+    "count": 15,
     "first": 1,
-    "points": 30,
+    "points": 33,
     "types": [
      {
       "id": "normal",
@@ -10742,9 +12030,9 @@
    {
     "id": "ZACIAN_CROWNED_SWORD_FORM",
     "name": "Zacian - König des Schwertes",
-    "count": 13,
+    "count": 14,
     "first": 3,
-    "points": 44,
+    "points": 45,
     "types": [
      {
       "id": "fairy",
@@ -10774,16 +12062,12 @@
     ]
    },
    {
-    "id": "GARCHOMP_SHADOW_FORM",
-    "name": "Crypto Knakrack",
+    "id": "GROUDON_SHADOW_FORM",
+    "name": "Crypto Groudon",
     "count": 13,
-    "first": 0,
-    "points": 31,
+    "first": 4,
+    "points": 39,
     "types": [
-     {
-      "id": "dragon",
-      "name": "Drache"
-     },
      {
       "id": "ground",
       "name": "Boden"
@@ -10791,15 +12075,19 @@
     ]
    },
    {
-    "id": "GROUDON_SHADOW_FORM",
-    "name": "Crypto Groudon",
-    "count": 12,
-    "first": 3,
-    "points": 34,
+    "id": "GIRATINA_ORIGIN_SHADOW_FORM",
+    "name": "Crypto-Giratina Origin",
+    "count": 13,
+    "first": 0,
+    "points": 29,
     "types": [
      {
-      "id": "ground",
-      "name": "Boden"
+      "id": "ghost",
+      "name": "Geist"
+     },
+     {
+      "id": "dragon",
+      "name": "Drache"
      }
     ]
    },
@@ -10855,28 +12143,11 @@
     ]
    },
    {
-    "id": "GIRATINA_ORIGIN_SHADOW_FORM",
-    "name": "Crypto-Giratina Origin",
-    "count": 11,
-    "first": 0,
-    "points": 21,
-    "types": [
-     {
-      "id": "ghost",
-      "name": "Geist"
-     },
-     {
-      "id": "dragon",
-      "name": "Drache"
-     }
-    ]
-   },
-   {
     "id": "RHYPERIOR_SHADOW_FORM",
     "name": "Crypto Rihornior",
-    "count": 10,
+    "count": 11,
     "first": 1,
-    "points": 27,
+    "points": 29,
     "types": [
      {
       "id": "ground",
@@ -10923,6 +12194,19 @@
     ]
    },
    {
+    "id": "DARKRAI_SHADOW_FORM",
+    "name": "Crypto Darkrai",
+    "count": 9,
+    "first": 0,
+    "points": 18,
+    "types": [
+     {
+      "id": "dark",
+      "name": "Unlicht"
+     }
+    ]
+   },
+   {
     "id": "HEATRAN_SHADOW_FORM",
     "name": "Crypto Heatran",
     "count": 8,
@@ -10936,19 +12220,6 @@
      {
       "id": "steel",
       "name": "Stahl"
-     }
-    ]
-   },
-   {
-    "id": "DARKRAI_SHADOW_FORM",
-    "name": "Crypto Darkrai",
-    "count": 8,
-    "first": 0,
-    "points": 17,
-    "types": [
-     {
-      "id": "dark",
-      "name": "Unlicht"
      }
     ]
    },
@@ -10972,13 +12243,30 @@
    {
     "id": "RAIKOU_SHADOW_FORM",
     "name": "Crypto Raikou",
-    "count": 5,
+    "count": 6,
     "first": 0,
-    "points": 12,
+    "points": 14,
     "types": [
      {
       "id": "electric",
       "name": "Elektro"
+     }
+    ]
+   },
+   {
+    "id": "MAMOSWINE_SHADOW_FORM",
+    "name": "Crypto Mamutel",
+    "count": 6,
+    "first": 0,
+    "points": 7,
+    "types": [
+     {
+      "id": "ice",
+      "name": "Eis"
+     },
+     {
+      "id": "ground",
+      "name": "Boden"
      }
     ]
    },
@@ -11026,6 +12314,19 @@
      {
       "id": "electric",
       "name": "Elektro"
+     }
+    ]
+   },
+   {
+    "id": "KYOGRE_SHADOW_FORM",
+    "name": "Crypto Kyogre",
+    "count": 4,
+    "first": 2,
+    "points": 15,
+    "types": [
+     {
+      "id": "water",
+      "name": "Wasser"
      }
     ]
    },
@@ -11090,6 +12391,23 @@
     ]
    },
    {
+    "id": "EXCADRILL_SHADOW_FORM",
+    "name": "Crypto Stalobor",
+    "count": 4,
+    "first": 0,
+    "points": 9,
+    "types": [
+     {
+      "id": "ground",
+      "name": "Boden"
+     },
+     {
+      "id": "steel",
+      "name": "Stahl"
+     }
+    ]
+   },
+   {
     "id": "BLAZIKEN_SHADOW_FORM",
     "name": "Crypto Lohgock",
     "count": 4,
@@ -11107,23 +12425,6 @@
     ]
    },
    {
-    "id": "MAMOSWINE_SHADOW_FORM",
-    "name": "Crypto Mamutel",
-    "count": 4,
-    "first": 0,
-    "points": 5,
-    "types": [
-     {
-      "id": "ice",
-      "name": "Eis"
-     },
-     {
-      "id": "ground",
-      "name": "Boden"
-     }
-    ]
-   },
-   {
     "id": "RAMPARDOS_SHADOW_FORM",
     "name": "Crypto Rameidon",
     "count": 3,
@@ -11137,32 +12438,19 @@
     ]
    },
    {
-    "id": "KYOGRE_SHADOW_FORM",
-    "name": "Crypto Kyogre",
-    "count": 3,
-    "first": 1,
-    "points": 10,
-    "types": [
-     {
-      "id": "water",
-      "name": "Wasser"
-     }
-    ]
-   },
-   {
-    "id": "EXCADRILL_SHADOW_FORM",
-    "name": "Crypto Stalobor",
+    "id": "ZARUDE",
+    "name": "Zarude",
     "count": 3,
     "first": 0,
-    "points": 6,
+    "points": 8,
     "types": [
      {
-      "id": "ground",
-      "name": "Boden"
+      "id": "dark",
+      "name": "Unlicht"
      },
      {
-      "id": "steel",
-      "name": "Stahl"
+      "id": "grass",
+      "name": "Pflanze"
      }
     ]
    },
@@ -11184,6 +12472,23 @@
     ]
    },
    {
+    "id": "LUNALA",
+    "name": "Lunala",
+    "count": 3,
+    "first": 0,
+    "points": 5,
+    "types": [
+     {
+      "id": "psychic",
+      "name": "Psycho"
+     },
+     {
+      "id": "ghost",
+      "name": "Geist"
+     }
+    ]
+   },
+   {
     "id": "DIALGA_SHADOW_FORM",
     "name": "Crypto Dialga",
     "count": 3,
@@ -11197,6 +12502,23 @@
      {
       "id": "dragon",
       "name": "Drache"
+     }
+    ]
+   },
+   {
+    "id": "MOLTRES_SHADOW_FORM",
+    "name": "Crypto Lavados",
+    "count": 2,
+    "first": 0,
+    "points": 7,
+    "types": [
+     {
+      "id": "fire",
+      "name": "Feuer"
+     },
+     {
+      "id": "flying",
+      "name": "Flug"
      }
     ]
    },
@@ -11312,19 +12634,19 @@
     ]
    },
    {
-    "id": "ZARUDE",
-    "name": "Zarude",
+    "id": "AURORUS_SHADOW_FORM",
+    "name": "Crypto Amagarga",
     "count": 2,
     "first": 0,
-    "points": 4,
+    "points": 3,
     "types": [
      {
-      "id": "dark",
-      "name": "Unlicht"
+      "id": "rock",
+      "name": "Gestein"
      },
      {
-      "id": "grass",
-      "name": "Pflanze"
+      "id": "ice",
+      "name": "Eis"
      }
     ]
    },
@@ -11406,15 +12728,15 @@
     ]
    },
    {
-    "id": "MOLTRES_SHADOW_FORM",
-    "name": "Crypto Lavados",
+    "id": "GYARADOS_SHADOW_FORM",
+    "name": "Crypto Garados",
     "count": 1,
     "first": 0,
     "points": 4,
     "types": [
      {
-      "id": "fire",
-      "name": "Feuer"
+      "id": "water",
+      "name": "Wasser"
      },
      {
       "id": "flying",
@@ -11487,6 +12809,19 @@
      {
       "id": "flying",
       "name": "Flug"
+     }
+    ]
+   },
+   {
+    "id": "KYOGRE",
+    "name": "Kyogre",
+    "count": 1,
+    "first": 0,
+    "points": 3,
+    "types": [
+     {
+      "id": "water",
+      "name": "Wasser"
      }
     ]
    },
@@ -11572,19 +12907,32 @@
     ]
    },
    {
-    "id": "AURORUS_SHADOW_FORM",
-    "name": "Crypto Amagarga",
+    "id": "GOLISOPOD",
+    "name": "Tectass",
+    "count": 1,
+    "first": 0,
+    "points": 2,
+    "types": [
+     {
+      "id": "bug",
+      "name": "Käfer"
+     },
+     {
+      "id": "water",
+      "name": "Wasser"
+     }
+    ]
+   },
+   {
+    "id": "KINGLER_SHADOW_FORM",
+    "name": "Crypto Kingler",
     "count": 1,
     "first": 0,
     "points": 1,
     "types": [
      {
-      "id": "rock",
-      "name": "Gestein"
-     },
-     {
-      "id": "ice",
-      "name": "Eis"
+      "id": "water",
+      "name": "Wasser"
      }
     ]
    },
@@ -11653,23 +13001,6 @@
     ]
    },
    {
-    "id": "LUNALA",
-    "name": "Lunala",
-    "count": 1,
-    "first": 0,
-    "points": 1,
-    "types": [
-     {
-      "id": "psychic",
-      "name": "Psycho"
-     },
-     {
-      "id": "ghost",
-      "name": "Geist"
-     }
-    ]
-   },
-   {
     "id": "TYRANTRUM",
     "name": "Monargoras",
     "count": 1,
@@ -11731,11 +13062,11 @@
       "name": "Psycho"
      }
     ],
-    "team": 48,
-    "solo": 47,
-    "teamFirst": 18,
-    "soloFirst": 15,
-    "points": 335
+    "team": 54,
+    "solo": 54,
+    "teamFirst": 21,
+    "soloFirst": 18,
+    "points": 388
    },
    {
     "id": "MEWTWO_MEGA_X",
@@ -11750,30 +13081,11 @@
       "name": "Kampf"
      }
     ],
-    "team": 36,
-    "solo": 43,
+    "team": 40,
+    "solo": 48,
     "teamFirst": 4,
     "soloFirst": 6,
-    "points": 237
-   },
-   {
-    "id": "GROUDON_PRIMAL",
-    "name": "Proto-Groudon",
-    "types": [
-     {
-      "id": "ground",
-      "name": "Boden"
-     },
-     {
-      "id": "fire",
-      "name": "Feuer"
-     }
-    ],
-    "team": 27,
-    "solo": 20,
-    "teamFirst": 17,
-    "soloFirst": 5,
-    "points": 161
+    "points": 268
    },
    {
     "id": "TYRANITAR_MEGA",
@@ -11788,11 +13100,30 @@
       "name": "Unlicht"
      }
     ],
-    "team": 22,
-    "solo": 24,
+    "team": 23,
+    "solo": 27,
     "teamFirst": 4,
     "soloFirst": 9,
-    "points": 163
+    "points": 174
+   },
+   {
+    "id": "GROUDON_PRIMAL",
+    "name": "Proto-Groudon",
+    "types": [
+     {
+      "id": "ground",
+      "name": "Boden"
+     },
+     {
+      "id": "fire",
+      "name": "Feuer"
+     }
+    ],
+    "team": 28,
+    "solo": 21,
+    "teamFirst": 17,
+    "soloFirst": 6,
+    "points": 168
    },
    {
     "id": "RAYQUAZA_MEGA",
@@ -11807,11 +13138,11 @@
       "name": "Flug"
      }
     ],
-    "team": 16,
-    "solo": 24,
-    "teamFirst": 8,
-    "soloFirst": 9,
-    "points": 136
+    "team": 20,
+    "solo": 28,
+    "teamFirst": 11,
+    "soloFirst": 12,
+    "points": 170
    },
    {
     "id": "GARCHOMP_MEGA",
@@ -11826,11 +13157,30 @@
       "name": "Boden"
      }
     ],
-    "team": 24,
-    "solo": 15,
+    "team": 27,
+    "solo": 19,
     "teamFirst": 0,
     "soloFirst": 1,
-    "points": 124
+    "points": 141
+   },
+   {
+    "id": "GENGAR_MEGA",
+    "name": "Mega-Gengar",
+    "types": [
+     {
+      "id": "ghost",
+      "name": "Geist"
+     },
+     {
+      "id": "poison",
+      "name": "Gift"
+     }
+    ],
+    "team": 17,
+    "solo": 18,
+    "teamFirst": 1,
+    "soloFirst": 1,
+    "points": 83
    },
    {
     "id": "BLAZIKEN_MEGA",
@@ -11852,25 +13202,6 @@
     "points": 103
    },
    {
-    "id": "GENGAR_MEGA",
-    "name": "Mega-Gengar",
-    "types": [
-     {
-      "id": "ghost",
-      "name": "Geist"
-     },
-     {
-      "id": "poison",
-      "name": "Gift"
-     }
-    ],
-    "team": 15,
-    "solo": 16,
-    "teamFirst": 1,
-    "soloFirst": 1,
-    "points": 76
-   },
-   {
     "id": "LUCARIO_MEGA",
     "name": "Mega-Lucario",
     "types": [
@@ -11888,6 +13219,21 @@
     "teamFirst": 0,
     "soloFirst": 3,
     "points": 71
+   },
+   {
+    "id": "KYOGRE_PRIMAL",
+    "name": "Proto-Kyogre",
+    "types": [
+     {
+      "id": "water",
+      "name": "Wasser"
+     }
+    ],
+    "team": 11,
+    "solo": 11,
+    "teamFirst": 2,
+    "soloFirst": 3,
+    "points": 58
    },
    {
     "id": "DIANCIE_MEGA",
@@ -11928,21 +13274,6 @@
     "points": 58
    },
    {
-    "id": "KYOGRE_PRIMAL",
-    "name": "Proto-Kyogre",
-    "types": [
-     {
-      "id": "water",
-      "name": "Wasser"
-     }
-    ],
-    "team": 10,
-    "solo": 10,
-    "teamFirst": 1,
-    "soloFirst": 2,
-    "points": 48
-   },
-   {
     "id": "RAICHU_MEGA_Y",
     "name": "Mega-Raichu Y",
     "types": [
@@ -11951,30 +13282,11 @@
       "name": "Elektro"
      }
     ],
-    "team": 9,
-    "solo": 9,
+    "team": 10,
+    "solo": 10,
     "teamFirst": 1,
     "soloFirst": 1,
-    "points": 54
-   },
-   {
-    "id": "HERACROSS_MEGA",
-    "name": "Mega-Skaraborn",
-    "types": [
-     {
-      "id": "bug",
-      "name": "Käfer"
-     },
-     {
-      "id": "fighting",
-      "name": "Kampf"
-     }
-    ],
-    "team": 13,
-    "solo": 4,
-    "teamFirst": 5,
-    "soloFirst": 1,
-    "points": 57
+    "points": 58
    },
    {
     "id": "SALAMENCE_MEGA",
@@ -11989,26 +13301,30 @@
       "name": "Flug"
      }
     ],
-    "team": 7,
-    "solo": 7,
+    "team": 10,
+    "solo": 9,
     "teamFirst": 0,
     "soloFirst": 0,
-    "points": 30
+    "points": 37
    },
    {
-    "id": "ABSOL_MEGA",
-    "name": "Mega-Absol",
+    "id": "HERACROSS_MEGA",
+    "name": "Mega-Skaraborn",
     "types": [
      {
-      "id": "dark",
-      "name": "Unlicht"
+      "id": "bug",
+      "name": "Käfer"
+     },
+     {
+      "id": "fighting",
+      "name": "Kampf"
      }
     ],
-    "team": 2,
-    "solo": 12,
-    "teamFirst": 0,
-    "soloFirst": 0,
-    "points": 27
+    "team": 14,
+    "solo": 4,
+    "teamFirst": 5,
+    "soloFirst": 1,
+    "points": 58
    },
    {
     "id": "DRAGONITE_MEGA",
@@ -12023,11 +13339,64 @@
       "name": "Flug"
      }
     ],
-    "team": 9,
+    "team": 11,
     "solo": 4,
     "teamFirst": 0,
     "soloFirst": 0,
-    "points": 29
+    "points": 36
+   },
+   {
+    "id": "ABSOL_MEGA",
+    "name": "Mega-Absol",
+    "types": [
+     {
+      "id": "dark",
+      "name": "Unlicht"
+     }
+    ],
+    "team": 2,
+    "solo": 13,
+    "teamFirst": 0,
+    "soloFirst": 0,
+    "points": 28
+   },
+   {
+    "id": "SWAMPERT_MEGA",
+    "name": "Mega-Sumpex",
+    "types": [
+     {
+      "id": "water",
+      "name": "Wasser"
+     },
+     {
+      "id": "ground",
+      "name": "Boden"
+     }
+    ],
+    "team": 9,
+    "solo": 5,
+    "teamFirst": 0,
+    "soloFirst": 0,
+    "points": 35
+   },
+   {
+    "id": "GARDEVOIR_MEGA",
+    "name": "Mega-Guardevoir",
+    "types": [
+     {
+      "id": "psychic",
+      "name": "Psycho"
+     },
+     {
+      "id": "fairy",
+      "name": "Fee"
+     }
+    ],
+    "team": 4,
+    "solo": 10,
+    "teamFirst": 0,
+    "soloFirst": 0,
+    "points": 26
    },
    {
     "id": "METAGROSS_MEGA",
@@ -12047,44 +13416,6 @@
     "teamFirst": 5,
     "soloFirst": 5,
     "points": 54
-   },
-   {
-    "id": "SWAMPERT_MEGA",
-    "name": "Mega-Sumpex",
-    "types": [
-     {
-      "id": "water",
-      "name": "Wasser"
-     },
-     {
-      "id": "ground",
-      "name": "Boden"
-     }
-    ],
-    "team": 8,
-    "solo": 3,
-    "teamFirst": 0,
-    "soloFirst": 0,
-    "points": 26
-   },
-   {
-    "id": "GARDEVOIR_MEGA",
-    "name": "Mega-Guardevoir",
-    "types": [
-     {
-      "id": "psychic",
-      "name": "Psycho"
-     },
-     {
-      "id": "fairy",
-      "name": "Fee"
-     }
-    ],
-    "team": 3,
-    "solo": 8,
-    "teamFirst": 0,
-    "soloFirst": 0,
-    "points": 18
    },
    {
     "id": "HOUNDOOM_MEGA",
@@ -12140,6 +13471,44 @@
     "points": 15
    },
    {
+    "id": "SCEPTILE_MEGA",
+    "name": "Mega-Gewaldro",
+    "types": [
+     {
+      "id": "grass",
+      "name": "Pflanze"
+     },
+     {
+      "id": "dragon",
+      "name": "Drache"
+     }
+    ],
+    "team": 3,
+    "solo": 4,
+    "teamFirst": 1,
+    "soloFirst": 1,
+    "points": 23
+   },
+   {
+    "id": "VENUSAUR_MEGA",
+    "name": "Mega-Bisaflor",
+    "types": [
+     {
+      "id": "grass",
+      "name": "Pflanze"
+     },
+     {
+      "id": "poison",
+      "name": "Gift"
+     }
+    ],
+    "team": 4,
+    "solo": 3,
+    "teamFirst": 0,
+    "soloFirst": 0,
+    "points": 17
+   },
+   {
     "id": "AERODACTYL_MEGA",
     "name": "Mega-Aerodactyl",
     "types": [
@@ -12159,25 +13528,6 @@
     "points": 19
    },
    {
-    "id": "SCEPTILE_MEGA",
-    "name": "Mega-Gewaldro",
-    "types": [
-     {
-      "id": "grass",
-      "name": "Pflanze"
-     },
-     {
-      "id": "dragon",
-      "name": "Drache"
-     }
-    ],
-    "team": 2,
-    "solo": 3,
-    "teamFirst": 1,
-    "soloFirst": 1,
-    "points": 21
-   },
-   {
     "id": "BEEDRILL_MEGA",
     "name": "Mega-Bibor",
     "types": [
@@ -12195,25 +13545,6 @@
     "teamFirst": 0,
     "soloFirst": 1,
     "points": 14
-   },
-   {
-    "id": "VENUSAUR_MEGA",
-    "name": "Mega-Bisaflor",
-    "types": [
-     {
-      "id": "grass",
-      "name": "Pflanze"
-     },
-     {
-      "id": "poison",
-      "name": "Gift"
-     }
-    ],
-    "team": 3,
-    "solo": 2,
-    "teamFirst": 0,
-    "soloFirst": 0,
-    "points": 11
    },
    {
     "id": "LATIOS_MEGA",
@@ -12250,6 +13581,21 @@
     "points": 5
    },
    {
+    "id": "BLASTOISE_MEGA",
+    "name": "Mega-Turtok",
+    "types": [
+     {
+      "id": "water",
+      "name": "Wasser"
+     }
+    ],
+    "team": 2,
+    "solo": 2,
+    "teamFirst": 0,
+    "soloFirst": 0,
+    "points": 8
+   },
+   {
     "id": "ABOMASNOW_MEGA",
     "name": "Mega-Rexblisar",
     "types": [
@@ -12267,6 +13613,21 @@
     "teamFirst": 0,
     "soloFirst": 0,
     "points": 6
+   },
+   {
+    "id": "ALAKAZAM_MEGA",
+    "name": "Mega-Simsala",
+    "types": [
+     {
+      "id": "psychic",
+      "name": "Psycho"
+     }
+    ],
+    "team": 2,
+    "solo": 1,
+    "teamFirst": 0,
+    "soloFirst": 0,
+    "points": 5
    },
    {
     "id": "PINSIR_MEGA",
@@ -12326,21 +13687,6 @@
     "points": 4
    },
    {
-    "id": "ALAKAZAM_MEGA",
-    "name": "Mega-Simsala",
-    "types": [
-     {
-      "id": "psychic",
-      "name": "Psycho"
-     }
-    ],
-    "team": 1,
-    "solo": 1,
-    "teamFirst": 0,
-    "soloFirst": 0,
-    "points": 4
-   },
-   {
     "id": "PIDGEOT_MEGA",
     "name": "Mega-Tauboss",
     "types": [
@@ -12360,15 +13706,19 @@
     "points": 2
    },
    {
-    "id": "BLASTOISE_MEGA",
-    "name": "Mega-Turtok",
+    "id": "GYARADOS_MEGA",
+    "name": "Mega-Garados",
     "types": [
      {
       "id": "water",
       "name": "Wasser"
+     },
+     {
+      "id": "dark",
+      "name": "Unlicht"
      }
     ],
-    "team": 1,
+    "team": 0,
     "solo": 1,
     "teamFirst": 0,
     "soloFirst": 0,
@@ -12394,6 +13744,25 @@
     "points": 1
    },
    {
+    "id": "STARMIE_MEGA",
+    "name": "Mega-Starmie",
+    "types": [
+     {
+      "id": "water",
+      "name": "Wasser"
+     },
+     {
+      "id": "psychic",
+      "name": "Psycho"
+     }
+    ],
+    "team": 0,
+    "solo": 1,
+    "teamFirst": 0,
+    "soloFirst": 0,
+    "points": 1
+   },
+   {
     "id": "MANECTRIC_MEGA",
     "name": "Mega-Voltenso",
     "types": [
@@ -12411,8 +13780,8 @@
   ]
  },
  "covered": {
-  "team": 67,
-  "solo": 69
+  "team": 74,
+  "solo": 77
  },
  "missing": [
   {
@@ -12423,6 +13792,11 @@
   {
    "id": "DEOXYS",
    "name": "Deoxys",
+   "mode": "team"
+  },
+  {
+   "id": "REGIELEKI",
+   "name": "Regieleki",
    "mode": "team"
   }
  ]

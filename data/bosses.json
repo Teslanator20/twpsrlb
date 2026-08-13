@@ -1,0 +1,310 @@
+[
+ {
+  "id": "ARTICUNO",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "AZELF",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "COBALION",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "CRESSELIA",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "DARKRAI",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "DEOXYS",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "DEOXYS_ATTACK_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "DEOXYS_DEFENSE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "DEOXYS_SPEED_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "DIALGA",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "DIALGA_ORIGIN_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ENAMORUS_INCARNATE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ENAMORUS_THERIAN_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ENTEI",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "GENESECT",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "GENESECT_BURN_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "GENESECT_CHILL_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "GENESECT_DOUSE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "GENESECT_SHOCK_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "GIRATINA_ALTERED_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "GIRATINA_ORIGIN_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "GROUDON",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "HEATRAN",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "HOOPA_UNBOUND_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "HO_OH",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "KYOGRE",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "KYUREM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "LANDORUS_INCARNATE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "LANDORUS_THERIAN_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "LATIAS",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "LATIOS",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "LUGIA",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "MESPRIT",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "MEWTWO",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "MEWTWO_A_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "MOLTRES",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "NECROZMA",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "NECROZMA_DAWN_WINGS_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "NECROZMA_DUSK_MANE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "PALKIA",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "PALKIA_ORIGIN_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "RAIKOU",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "RAYQUAZA",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "REGICE",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "REGIDRAGO",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "REGIGIGAS",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "REGIROCK",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "REGISTEEL",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "RESHIRAM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SUICUNE",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "TAPU_BULU",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "TAPU_FINI",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "TAPU_KOKO",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "TAPU_LELE",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "TERRAKION",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "THUNDURUS_INCARNATE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "THUNDURUS_THERIAN_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "TORNADUS_INCARNATE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "TORNADUS_THERIAN_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "UXIE",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "VIRIZION",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "XERNEAS",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "YVELTAL",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ZACIAN_CROWNED_SWORD_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ZACIAN_HERO_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ZAMAZENTA_HERO_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ZAPDOS",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ZEKROM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "GROUDON_PRIMAL",
+  "tier": "RAID_LEVEL_MEGA_5"
+ },
+ {
+  "id": "KYOGRE_PRIMAL",
+  "tier": "RAID_LEVEL_MEGA_5"
+ },
+ {
+  "id": "LATIAS_MEGA",
+  "tier": "RAID_LEVEL_MEGA_5"
+ },
+ {
+  "id": "LATIOS_MEGA",
+  "tier": "RAID_LEVEL_MEGA_5"
+ },
+ {
+  "id": "MEWTWO_MEGA_X",
+  "tier": "RAID_LEVEL_MEGA_5"
+ },
+ {
+  "id": "MEWTWO_MEGA_Y",
+  "tier": "RAID_LEVEL_MEGA_5"
+ },
+ {
+  "id": "RAYQUAZA_MEGA",
+  "tier": "RAID_LEVEL_MEGA_5"
+ },
+ {
+  "id": "REGIELEKI",
+  "tier": "RAID_LEVEL_ELITE"
+ }
+]

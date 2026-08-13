@@ -430,6 +430,21 @@
   }
 
   .boss-head b { font-family: var(--display); font-size: 1.08rem; font-weight: 700; letter-spacing: -.01em; }
+
+  .tier {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 2px;
+    border: 1px solid var(--line);
+    color: var(--ink-3);
+    white-space: nowrap;
+  }
+
+  .tier.special { border-color: var(--team); color: var(--team); }
+
   .boss-head .dex { font-family: var(--mono); font-size: 12px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
 
   .boss-cols { display: grid; grid-template-columns: 1fr 1fr; }
@@ -514,10 +529,11 @@
     <p class="eyebrow">Pokémon GO · Stufe-5-Raids · Datenbasis Pokebattler</p>
     <h1>Welche Angreifer landen am häufigsten in den Top&nbsp;5?</h1>
     <p class="lede">
-      Für jeden legendären und mysteriösen Stufe-5-Raidboss wurden die fünf besten Konter ermittelt –
-      einmal <b>mit Team-Power und bestem Freund</b>, einmal <b>ohne beides</b>. Mega-Entwicklungen
-      laufen dabei außer Konkurrenz: Sie stehen in einer <b>eigenen dritten Spalte</b>, damit die
-      Rangliste zeigt, was ohne Mega-Energie tatsächlich zur Verfügung steht.
+      Für jeden legendären und mysteriösen Raidboss – Stufe 5, Elite-Raid sowie die Mega- und
+      Proto-Raids – wurden die fünf besten Konter ermittelt: einmal <b>mit Team-Power und bestem
+      Freund</b>, einmal <b>ohne beides</b>. Auf der Angreiferseite laufen Mega-Entwicklungen außer
+      Konkurrenz und stehen in einer <b>eigenen dritten Spalte</b>, damit die Rangliste zeigt, was
+      ohne Mega-Energie tatsächlich zur Verfügung steht.
     </p>
     <div class="tiles" id="tiles"></div>
   </header>
@@ -582,7 +598,9 @@
       <div>
         <h3>Abfrage</h3>
         <p>
-          Pokebattler-Raid-API, Stufe-5-Raid, Angreifer auf Level 40, Strategie
+          Pokebattler-Raid-API, jeder Boss in seiner eigenen Raid-Stufe
+          (<code>RAID_LEVEL_5</code>, <code>RAID_LEVEL_MEGA_5</code>, <code>RAID_LEVEL_ELITE</code>),
+          Angreifer auf Level 40, Strategie
           <code>CINEMATIC_ATTACK_WHEN_POSSIBLE</code>, Ausweichen nach Reaktionszeit, kein Wetterbonus,
           zufälliges Boss-Attackenset, sortiert nach Estimator. Pokebattler liefert je Abfrage die
           30 besten Konter; daraus sind die Top 5 je Pool gebildet.
@@ -599,7 +617,8 @@
       <div>
         <h3>Grenzen</h3>
         <ul id="caveats">
-          <li>Als Mega zählen alle Mega-Entwicklungen sowie Proto-Groudon und Proto-Kyogre – in Pokémon GO dieselbe Mechanik.</li>
+          <li>Als Mega zählen alle Mega-Entwicklungen sowie Proto-Groudon und Proto-Kyogre – in Pokémon GO dieselbe Mechanik. Das gilt für beide Seiten: Sie sind Angreifer im Mega-Pool und selbst Bosse.</li>
+          <li>Berücksichtigt sind nur Bosse, die tatsächlich schon in Raids aufgetreten sind. Angekündigte, aber unveröffentlichte Mega-Bosse wie Mega-Diancie oder Mega-Heatran fehlen daher.</li>
           <li>Der übrige Angreifer-Pool ist Pokebattlers Standard und enthält auch Krypto- und noch nicht veröffentlichte Formen.</li>
           <li>Jede Form zählt einzeln: Schwarzes Kyurem und Kyurem sind getrennte Einträge.</li>
           <li>Team-Power ist mit Gruppengröße 2 simuliert; größere Gruppen rechnet die API nicht in der verfügbaren Zeit durch.</li>
@@ -790,15 +809,17 @@
 
   function renderBosses() {
     const q = state.query.trim().toLowerCase();
-    const list = DATA.bosses.filter(b =>
-      (!q || b.name.toLowerCase().includes(q) || b.id.toLowerCase().includes(q)) && matchesFilter(b)
-    );
+    const list = DATA.bosses.filter(b => {
+      const hay = (b.name + " " + b.id + " " + b.tier).toLowerCase();
+      return (!q || hay.includes(q)) && matchesFilter(b);
+    });
 
     el("count-note").textContent = list.length + " von " + DATA.bosses.length + " Bossen";
     el("bosses").innerHTML = list.length === 0
       ? '<div class="boss empty">Kein Boss passt zu dieser Auswahl.</div>'
       : list.map(b =>
         '<article class="boss"><div class="boss-head"><b>' + b.name + "</b>" + chips(b.types) +
+        '<span class="tier' + (b.special ? " special" : "") + '">' + b.tier + "</span>" +
         '<span class="dex">Nr. ' + b.num + '</span></div><div class="boss-cols">' +
         bossColumn(b, "team") + bossColumn(b, "solo") + "</div></article>"
       ).join("");

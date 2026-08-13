@@ -24,7 +24,7 @@ CONFIGS = {
 }
 
 
-def build_url(boss, cfg):
+def build_url(boss, tier, cfg):
     params = [
         ("sort", "ESTIMATOR"),
         ("weatherCondition", "NO_WEATHER"),
@@ -37,9 +37,9 @@ def build_url(boss, cfg):
     ]
     query = "&".join("%s=%s" % kv for kv in params)
     return (
-        "%s/raids/defenders/%s/levels/RAID_LEVEL_5/attackers/levels/40"
+        "%s/raids/defenders/%s/levels/%s/attackers/levels/40"
         "/strategies/CINEMATIC_ATTACK_WHEN_POSSIBLE/DEFENSE_RANDOM_MC?%s"
-        % (API, boss, query)
+        % (API, boss, tier, query)
     )
 
 
@@ -74,28 +74,39 @@ def top_counters(payload, n=TOP_N):
 
 
 def main():
-    bosses = json.load(open(os.path.join(DATA, "legendary_ids.json")))
+    bosses = json.load(open(os.path.join(DATA, "bosses.json")))
     out_path = os.path.join(DATA, "counters.json")
     results = {}
     if os.path.exists(out_path):
         results = json.load(open(out_path))
 
-    for boss in bosses:
+    # Fehlschlaege stehen als null in der Datei und werden normalerweise uebersprungen,
+    # damit ein Wiederholungslauf nicht jedes Mal in dieselben Timeouts rennt.
+    # RETRY_FAILED=1 nimmt sie erneut in Angriff - teure Sims rechnet Pokebattler nach
+    # dem ersten 504 im Hintergrund weiter und liefert sie beim naechsten Versuch aus.
+    if os.environ.get("RETRY_FAILED"):
+        for done in results.values():
+            for name in [n for n, v in done.items() if not v]:
+                del done[name]
+
+    for entry in bosses:
+        boss, tier = entry["id"], entry["tier"]
         results.setdefault(boss, {})
         for name, cfg in CONFIGS.items():
             if name in results[boss]:
                 continue
             try:
-                data = fetch(build_url(boss, cfg))
+                data = fetch(build_url(boss, tier, cfg))
                 results[boss][name] = top_counters(data)
                 print("ok   %-32s %-4s %s" % (boss, name, results[boss][name][0]["pokemonId"]))
             except Exception as exc:
+                results[boss][name] = None
                 print("FAIL %-32s %-4s %s" % (boss, name, exc))
             json.dump(results, open(out_path, "w"), indent=1)
             sys.stdout.flush()
 
     missing = [
-        (b, c) for b in bosses for c in CONFIGS if c not in results.get(b, {})
+        (b["id"], c) for b in bosses for c in CONFIGS if not results.get(b["id"], {}).get(c)
     ]
     print("fertig. fehlend: %d" % len(missing))
     for m in missing:
