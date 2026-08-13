@@ -553,10 +553,10 @@
     <div class="sec-head">
       <h2>Die vielseitigsten Konter</h2>
       <p>
-        Zählung über alle ausgewerteten Bosse. <b>#1</b> zeigt, wie oft das Pokémon der beste Konter
-        seines Pools war; der Pfeil den Rangunterschied zur jeweils anderen Konfiguration. Ein Klick
-        auf eine Zeile klappt darunter ihre häufigsten Attackensets auf und filtert gleichzeitig
-        die Boss-Liste weiter unten.
+        Gezählt wird jede der <b>fünf</b> Platzierungen über alle ausgewerteten Bosse. <b>#1</b> zeigt,
+        wie oft das Pokémon der beste Konter seines Pools war; der Pfeil den Rangunterschied zur
+        jeweils anderen Konfiguration. Ein Klick auf eine Zeile klappt darunter ihre häufigsten
+        Attackensets auf und filtert gleichzeitig die Boss-Liste weiter unten.
       </p>
       <div class="controls">
         <button type="button" class="switch" id="toggle-shadow" aria-pressed="false">
@@ -565,32 +565,19 @@
         <span class="controls-note" id="shadow-note"></span>
       </div>
     </div>
-    <div class="boards">
-      <div class="board board-team">
-        <div class="board-head">
-          <b>Mit Team-Power &amp; bestem Freund</b>
-          <span id="head-team"></span>
-        </div>
-        <div id="list-team"></div>
-        <div class="board-more"><button type="button" data-more="team">Alle anzeigen</button></div>
-      </div>
-      <div class="board board-solo">
-        <div class="board-head">
-          <b>Ohne Team-Power &amp; ohne Freundschaftsbonus</b>
-          <span id="head-solo"></span>
-        </div>
-        <div id="list-solo"></div>
-        <div class="board-more"><button type="button" data-more="solo">Alle anzeigen</button></div>
-      </div>
-      <div class="board board-mega">
-        <div class="board-head">
-          <b>Nur Mega-Entwicklungen</b>
-          <span id="head-mega"></span>
-        </div>
-        <div id="list-mega"></div>
-        <div class="board-more"><button type="button" data-more="mega">Alle anzeigen</button></div>
-      </div>
+    <div class="boards" id="boards-top5"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Dasselbe, aber nur Platz 1 und 2 gezählt</h2>
+      <p>
+        Identische Auswertung, nur strenger: hier zählt ein Pokémon nur, wenn es beim jeweiligen Boss
+        <b>erster oder zweiter</b> Konter ist. Das trennt die echten Spitzenkonter von denen, die
+        überall auf Platz 4 und 5 mitlaufen. Der Krypto-Schalter oben gilt auch hier.
+      </p>
     </div>
+    <div class="boards" id="boards-top2"></div>
   </section>
 
   <section>
@@ -642,6 +629,14 @@
         </p>
       </div>
       <div>
+        <h3>Zwei Zähltiefen</h3>
+        <p>
+          Der obere Abschnitt zählt jede der fünf Platzierungen, der untere nur Platz 1 und 2.
+          Beide greifen auf dieselben Trefferlisten zu, deshalb stimmen sie immer überein – die
+          strengere Zählung ist eine Teilmenge der lockeren.
+        </p>
+      </div>
+      <div>
         <h3>Grenzen</h3>
         <ul id="caveats">
           <li>Als Mega zählen alle Mega-Entwicklungen sowie Proto-Groudon und Proto-Kyogre – in Pokémon GO dieselbe Mechanik. Das gilt für beide Seiten: Sie sind Angreifer im Mega-Pool und selbst Bosse.</li>
@@ -673,13 +668,31 @@
   const BOARD_KEYS = { team: ["team"], solo: ["solo"], mega: ["teamMega", "soloMega"] };
   const LABEL = { team: "mit Team-Power", solo: "ohne Boni", mega: "Megas" };
 
-  const state = { more: { team: false, solo: false, mega: false }, filter: null, query: "", shadows: false };
+  /* Zwei Abschnitte mit identischem Aufbau, nur mit anderer Zaehltiefe. */
+  const SECTIONS = { top5: 5, top2: 2 };
+  const DEPTH_NOTE = { top5: "alle 5 Plätze", top2: "nur Platz 1–2" };
+  const BOARDS = [
+    { mode: "team", cls: "board-team", title: "Mit Team-Power &amp; bestem Freund",
+      sub: () => DATA.covered.team + " Bosse · numParty=2" },
+    { mode: "solo", cls: "board-solo", title: "Ohne Team-Power &amp; ohne Freundschaftsbonus",
+      sub: () => DATA.covered.solo + " Bosse · numParty=1" },
+    { mode: "mega", cls: "board-mega", title: "Nur Mega-Entwicklungen",
+      sub: () => "beide Konfigurationen im Vergleich" }
+  ];
+
+  const state = {
+    more: { top5: { team: false, solo: false, mega: false },
+            top2: { team: false, solo: false, mega: false } },
+    filter: null, query: "", shadows: false
+  };
   const el = (id) => document.getElementById(id);
 
   /* Krypto-Formen sind standardmaessig aus der Wertung genommen. */
   const variant = () => (state.shadows ? "withShadow" : "noShadow");
-  const RANK = () => DATA.ranking[variant()];
+  const RANK = (sec) => DATA.ranking[variant()][sec];
   const PICKS = (boss) => boss.picks[variant()];
+  /* Die Top-2-Wertung liest dieselben Trefferlisten, nur die ersten zwei Eintraege. */
+  const cut = (picks, sec) => (picks ? picks.slice(0, SECTIONS[sec]) : picks);
 
   function chips(types) {
     return '<span class="chips">' + types.map(t =>
@@ -689,7 +702,7 @@
 
   /* --- Kopfzahlen --- */
   function renderTiles() {
-    const r = RANK();
+    const r = RANK("top5");
     const pool = new Set([...r.team, ...r.solo].map(x => x.id));
     el("tiles").innerHTML = [
       [DATA.bosses.length, "Raidbosse", false],
@@ -701,47 +714,62 @@
     ).join("");
   }
 
-  el("head-team").textContent = DATA.covered.team + " Bosse · numParty=2 · Level 4";
-  el("head-solo").textContent = DATA.covered.solo + " Bosse · numParty=1 · kein Bonus";
-  el("head-mega").textContent = "beide Konfigurationen im Vergleich";
-
   /* --- Ranglisten --- */
-  let rankIndex = {};
-  function indexRanks() {
-    const r = RANK();
-    rankIndex = {
-      team: new Map(r.team.map((x, i) => [x.id, i])),
-      solo: new Map(r.solo.map((x, i) => [x.id, i]))
-    };
+  /* Die Boards beider Abschnitte kommen aus derselben Vorlage. */
+  function renderBoardShells() {
+    for (const sec of Object.keys(SECTIONS)) {
+      el("boards-" + sec).innerHTML = BOARDS.map(b =>
+        '<div class="board ' + b.cls + '">' +
+          '<div class="board-head"><b>' + b.title + "</b><span>" + b.sub() +
+            " · " + DEPTH_NOTE[sec] + "</span></div>" +
+          '<div id="list-' + sec + "-" + b.mode + '"></div>' +
+          '<div class="board-more"><button type="button" data-more="' + b.mode +
+            '" data-sec="' + sec + '"></button></div>' +
+        "</div>"
+      ).join("");
+    }
   }
 
-  function moveMark(mode, id, i) {
+  let rankIndex = {};
+  function indexRanks() {
+    rankIndex = {};
+    for (const sec of Object.keys(SECTIONS)) {
+      const r = RANK(sec);
+      rankIndex[sec] = {
+        team: new Map(r.team.map((x, i) => [x.id, i])),
+        solo: new Map(r.solo.map((x, i) => [x.id, i]))
+      };
+    }
+  }
+
+  function moveMark(sec, mode, id, i) {
     const other = mode === "team" ? "solo" : "team";
-    const oi = rankIndex[other].get(id);
+    const oi = rankIndex[sec][other].get(id);
     if (oi === undefined) return '<span class="move up">neu</span>';
     if (oi === i) return '<span class="move">–</span>';
     const d = oi - i;
     return '<span class="move ' + (d > 0 ? "up" : "down") + '">' + (d > 0 ? "▲" : "▼") + Math.abs(d) + "</span>";
   }
 
-  function rowShell(mode, r, i, right) {
-    const on = state.filter && state.filter.id === r.id && state.filter.mode === mode;
-    return '<button type="button" class="row" data-mode="' + mode + '" data-id="' + r.id +
-      '" aria-expanded="' + (on ? "true" : "false") + '">' +
+  function rowShell(sec, mode, r, i, right) {
+    const f = state.filter;
+    const on = f && f.id === r.id && f.mode === mode && f.sec === sec;
+    return '<button type="button" class="row" data-sec="' + sec + '" data-mode="' + mode +
+      '" data-id="' + r.id + '" aria-expanded="' + (on ? "true" : "false") + '">' +
       '<span class="rank">' + (i + 1) + "</span>" +
       '<span class="who"><b>' + r.name + "</b>" + chips(r.types) + right.bars + "</span>" +
       right.value + '<span class="chev">▾</span></button>' +
-      (on ? drawer(mode, r.id) : "");
+      (on ? drawer(sec, mode, r.id) : "");
   }
 
-  function renderBoard(mode) {
-    const rows = RANK()[mode];
-    const shown = state.more[mode] ? rows : rows.slice(0, 15);
+  function renderBoard(sec, mode) {
+    const rows = RANK(sec)[mode];
+    const shown = state.more[sec][mode] ? rows : rows.slice(0, 15);
     let html;
 
     if (mode === "mega") {
       const max = Math.max(...rows.map(r => Math.max(r.team, r.solo)));
-      html = shown.map((r, i) => rowShell(mode, r, i, {
+      html = shown.map((r, i) => rowShell(sec, mode, r, i, {
         bars: '<span class="duo-bars">' +
           '<span class="bar bar-team"><i style="width:' + (r.team / max * 100).toFixed(1) + '%"></i></span>' +
           '<span class="bar bar-solo"><i style="width:' + (r.solo / max * 100).toFixed(1) + '%"></i></span></span>',
@@ -751,28 +779,34 @@
       })).join("");
     } else {
       const max = rows[0].count;
-      html = shown.map((r, i) => rowShell(mode, r, i, {
+      html = shown.map((r, i) => rowShell(sec, mode, r, i, {
         bars: '<span class="bar"><i style="width:' + (r.count / max * 100).toFixed(1) + '%"></i></span>',
-        value: '<span class="n">' + moveMark(mode, r.id, i) +
+        value: '<span class="n">' + moveMark(sec, mode, r.id, i) +
           "<em>" + r.count + "</em><small>× · #1: " + r.first + "</small></span>"
       })).join("");
     }
 
-    el("list-" + mode).innerHTML = html;
-    const btn = document.querySelector('[data-more="' + mode + '"]');
-    btn.textContent = state.more[mode] ? "Weniger anzeigen" : "Alle " + rows.length + " anzeigen";
+    el("list-" + sec + "-" + mode).innerHTML = html;
+    const btn = document.querySelector('[data-more="' + mode + '"][data-sec="' + sec + '"]');
+    btn.textContent = state.more[sec][mode] ? "Weniger anzeigen" : "Alle " + rows.length + " anzeigen";
+  }
+
+  function renderBoards() {
+    for (const sec of Object.keys(SECTIONS)) {
+      for (const b of BOARDS) renderBoard(sec, b.mode);
+    }
   }
 
   /* --- Attackenset-Panel --- */
 
   /* Zaehlt, mit welchem Attackenset ein Pokemon seine Platzierungen geholt hat. */
-  function movesetStats(id, mega) {
+  function movesetStats(sec, id, mega) {
     const out = {};
     for (const mode of ["team", "solo"]) {
       const key = mega ? (mode === "team" ? "teamMega" : "soloMega") : mode;
       const map = new Map();
       for (const boss of DATA.bosses) {
-        for (const p of PICKS(boss)[key] || []) {
+        for (const p of cut(PICKS(boss)[key], sec) || []) {
           if (p.id !== id) continue;
           // Gezaehlt wird das Set, mit dem das Pokemon die Platzierung geholt hat.
           const moves = p.sets[0].moves;
@@ -807,8 +841,8 @@
 
   /* Die Schublade unter der angeklickten Zeile. In den Konfigurations-Spalten zeigt sie
      deren eigene Wertung, in der Mega-Spalte beide untereinander. */
-  function drawer(mode, id) {
-    const stats = movesetStats(id, mode === "mega");
+  function drawer(sec, mode, id) {
+    const stats = movesetStats(sec, id, mode === "mega");
     const inner = mode === "mega"
       ? drawerBlock("team", stats.team, true) + drawerBlock("solo", stats.solo, true)
       : drawerBlock(mode, stats[mode], false);
@@ -844,10 +878,11 @@
   }
 
   function matchesFilter(boss) {
-    if (!state.filter) return true;
-    return BOARD_KEYS[state.filter.mode].some(k => {
-      const picks = PICKS(boss)[k];
-      return picks && picks.some(p => p.id === state.filter.id);
+    const f = state.filter;
+    if (!f) return true;
+    return BOARD_KEYS[f.mode].some(k => {
+      const picks = cut(PICKS(boss)[k], f.sec);
+      return picks && picks.some(p => p.id === f.id);
     });
   }
 
@@ -873,7 +908,7 @@
   function renderAll() {
     indexRanks();
     renderTiles();
-    ["team", "solo", "mega"].forEach(renderBoard);
+    renderBoards();
     renderBosses();
   }
 
@@ -881,8 +916,9 @@
     state.filter = f;
     const pill = el("pill");
     if (f) {
-      const name = RANK()[f.mode].find(r => r.id === f.id).name;
-      el("pill-text").textContent = name + " · " + LABEL[f.mode];
+      const name = RANK(f.sec)[f.mode].find(r => r.id === f.id).name;
+      el("pill-text").textContent = name + " · " + LABEL[f.mode] +
+        (f.sec === "top2" ? " · nur Top 2" : "");
       pill.classList.add("on");
     } else {
       pill.classList.remove("on");
@@ -900,7 +936,8 @@
       : "Krypto-Formen sind aus der Wertung genommen – sie brauchen Krypto-Steine.";
     indexRanks();
     // Eine Auswahl, die es in der neuen Wertung nicht mehr gibt, wird aufgehoben.
-    if (state.filter && !RANK()[state.filter.mode].some(r => r.id === state.filter.id)) {
+    const f = state.filter;
+    if (f && !RANK(f.sec)[f.mode].some(r => r.id === f.id)) {
       setFilter(null);
       return;
     }
@@ -911,15 +948,17 @@
     if (ev.target.closest("#toggle-shadow")) { setShadows(!state.shadows); return; }
     const row = ev.target.closest(".row");
     if (row) {
-      const same = state.filter && state.filter.id === row.dataset.id && state.filter.mode === row.dataset.mode;
-      setFilter(same ? null : { id: row.dataset.id, mode: row.dataset.mode });
+      const f = state.filter;
+      const d = row.dataset;
+      const same = f && f.id === d.id && f.mode === d.mode && f.sec === d.sec;
+      setFilter(same ? null : { id: d.id, mode: d.mode, sec: d.sec });
       return;
     }
     const more = ev.target.closest("[data-more]");
     if (more) {
-      const m = more.dataset.more;
-      state.more[m] = !state.more[m];
-      renderBoard(m);
+      const { more: m, sec } = more.dataset;
+      state.more[sec][m] = !state.more[sec][m];
+      renderBoard(sec, m);
     }
   });
 
@@ -934,5 +973,6 @@
   el("footer").innerHTML = "Simulationsdaten von <a href='https://www.pokebattler.com/'>Pokebattler</a>, abgerufen am " +
     DATA.generated.split("-").reverse().join(".") + ". Pokémon ist eine Marke von Nintendo/Creatures Inc./GAME FREAK inc.";
 
+  renderBoardShells();
   setShadows(false);
 </script>
