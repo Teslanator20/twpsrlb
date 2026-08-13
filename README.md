@@ -22,6 +22,9 @@ mit drei Ranglisten nebeneinander plus einer durchsuchbaren Detailansicht pro Bo
 * Drei **Häufigkeitsranglisten**: wie oft ein Pokémon in den Top 5 landet, wie oft es Platz 1
   belegt und wie stark sich sein Rang zwischen den beiden Konfigurationen verschiebt.
   Die Mega-Spalte zeigt beide Zählungen nebeneinander.
+* Ein **Schalter für Krypto-Pokémon**, standardmäßig aus: Krypto-Formen sind aus allen drei
+  Spalten genommen und lassen sich per Klick einblenden. Beide Varianten sind vorberechnet,
+  das Umschalten läuft ohne Nachladen.
 * Ein Klick auf ein Pokémon in einer Rangliste öffnet darunter eine **Attackenset-Auswertung**:
   mit welchem Set es seine Platzierungen geholt hat, in beiden Konfigurationen, mit Anteil und
   den zugehörigen Bossen. Bei Mega-Mewtu Y sind das sechs verschiedene Lade-Attacken.
@@ -40,9 +43,12 @@ oder `RAID_LEVEL_ELITE`), Angreifer auf Level 40, Strategie
 zufälliges Boss-Attackenset, sortiert nach Estimator.
 
 Pokebattler liefert je Abfrage die 30 besten Konter. `scrape.py` speichert diese Liste
-vollständig, `build.py` trennt sie in Megas und Nicht-Megas und bildet daraus je Top 5.
+vollständig, `build.py` filtert daraus die Top 5 je Pool – und zwar zweimal: einmal ohne
+Krypto-Formen (`noShadow`, die Standardansicht) und einmal mit (`withShadow`).
+
 Als Mega zählen alle IDs mit `_MEGA` sowie Proto-Groudon und Proto-Kyogre (`_PRIMAL`) –
-in Pokémon GO dieselbe Mechanik.
+in Pokémon GO dieselbe Mechanik. Als Krypto zählen alle IDs mit `_SHADOW_FORM`. Auf die
+Mega-Spalte hat der Krypto-Schalter keinen Einfluss, Krypto-Megas gibt es nicht.
 
 ## Aufbau
 
@@ -55,7 +61,7 @@ data/pokemon.json   abgespeckter Pokedex von Pokebattler (Typen, Nummern, Selten
 data/de_constants.json   deutsche Pokémon- und Attackennamen von Pokebattler
 tools/bosses.py     stellt die Boss-Liste samt Raid-Stufe zusammen und aktualisiert pokemon.json
 tools/scrape.py     holt die Counter von der Pokebattler-API
-tools/build.py      trennt Megas ab, rechnet Ranglisten aus und schreibt data.json
+tools/build.py      trennt Megas und Krypto ab, rechnet Ranglisten aus und schreibt data.json
 tools/render.py     baut index.html aus template.html + data.json
 tools/template.html Vorlage der Website (Platzhalter __DATA__)
 ```
@@ -99,16 +105,17 @@ npx vercel deploy --prod   # im Repo-Wurzelverzeichnis, fragt beim ersten Mal na
 
 ## Einschränkungen
 
-* Der Angreifer-Pool ist Pokebattlers Standard. Er enthält auch Krypto- und noch nicht
-  veröffentlichte Formen; er bildet also ab, was theoretisch am stärksten ist, nicht was jeder
-  im Beutel hat.
+* Der Angreifer-Pool ist Pokebattlers Standard und enthält auch noch nicht veröffentlichte
+  Formen; er bildet also ab, was theoretisch am stärksten ist, nicht was jeder im Beutel hat.
+  Krypto-Formen sind deshalb standardmäßig ausgeblendet.
 * Jede Form zählt einzeln – Schwarzes Kyurem und Kyurem sind getrennte Einträge.
 * Es sind nur Bosse berücksichtigt, die tatsächlich schon in Raids aufgetreten sind
   (aktuelle + Legacy-Listen). Angekündigte, aber unveröffentlichte Mega-Bosse wie Mega-Diancie,
   Mega-Darkrai, Mega-Heatran, Mega-Zeraora und Mega-Zygarde fehlen deshalb.
 * Krypto-Raidbosse sind nicht dabei – die gehören in eine eigene Auswertung.
-* Die Top 5 je Pool stammen aus den 30 gelieferten Kontern. Pro Liste bleiben mindestens
-  13 Nicht-Megas übrig, aber nicht immer 5 Megas – bei einem Boss sind es nur 4.
+* Die Top 5 je Pool stammen aus den 30 gelieferten Kontern. Das reicht fast immer:
+  bei den Megas hat nur Hoopa Unbound ohne Boni weniger als 5, und ohne Krypto-Formen
+  bleiben median 11 nutzbare Nicht-Megas übrig – nur bei Entei ohne Boni sind es 4.
 * Team-Power ist mit Gruppengröße 2 simuliert. `numParty=3` und `numParty=4` beantwortet die
   Pokebattler-API nicht innerhalb ihres 30-Sekunden-Timeouts.
 * Für **Rüstungs-Mewtu**, **Deoxys (Normalform)** und **Regieleki** liefert die API in der

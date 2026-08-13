@@ -96,11 +96,30 @@ def is_mega(pid):
     return "_MEGA" in pid or pid.endswith("_PRIMAL")
 
 
+def is_shadow(pid):
+    return pid.endswith("_SHADOW_FORM")
+
+
 TOP_N = 5
 MODES = ("team", "solo")
 # Der Schluessel im Boss-Eintrag je Konfiguration und Angreifer-Pool.
 KEYS = {("team", False): "team", ("solo", False): "solo",
         ("team", True): "teamMega", ("solo", True): "soloMega"}
+# Jede Auswertung gibt es zweimal: ohne und mit Krypto-Angreifern.
+VARIANTS = {"noShadow": False, "withShadow": True}
+
+
+def select(full, mega, shadows):
+    """Die besten TOP_N Konter aus der 30er-Liste, gefiltert nach Pool."""
+    picks = []
+    for c in full:
+        pid = c["pokemonId"]
+        if is_mega(pid) != mega or (not shadows and is_shadow(pid)):
+            continue
+        picks.append(c)
+        if len(picks) == TOP_N:
+            break
+    return picks
 
 
 def main():
@@ -116,11 +135,11 @@ def main():
         }
 
     bosses = []
+    # tally[variant][key] usw. - eine Zaehlung je Krypto-Variante und Pool.
     tally, top1, points = {}, {}, {}
-    for key in KEYS.values():
-        tally[key] = collections.Counter()
-        top1[key] = collections.Counter()
-        points[key] = collections.Counter()
+    for variant in VARIANTS:
+        for store in (tally, top1, points):
+            store[variant] = {key: collections.Counter() for key in KEYS.values()}
 
     for boss_id in sorted(raw, key=lambda b: (dex_num(b), b)):
         tier = tiers.get(boss_id, "RAID_LEVEL_5")
@@ -131,68 +150,81 @@ def main():
             "types": types_of(boss_id),
             "tier": tier_label(tier, boss_id),
             "special": tier != "RAID_LEVEL_5",
+            "picks": {v: {} for v in VARIANTS},
         }
-        for mode in MODES:
-            full = raw[boss_id].get(mode)
-            for mega in (False, True):
-                key = KEYS[(mode, mega)]
-                if not full:
-                    entry[key] = None
-                    continue
-                picks = [c for c in full if is_mega(c["pokemonId"]) == mega][:TOP_N]
-                entry[key] = [counter(c) for c in picks]
-                for rank, c in enumerate(picks):
-                    pid = c["pokemonId"]
-                    tally[key][pid] += 1
-                    points[key][pid] += TOP_N - rank
-                    if rank == 0:
-                        top1[key][pid] += 1
+        for variant, shadows in VARIANTS.items():
+            for mode in MODES:
+                full = raw[boss_id].get(mode)
+                for mega in (False, True):
+                    key = KEYS[(mode, mega)]
+                    if not full:
+                        entry["picks"][variant][key] = None
+                        continue
+                    picks = select(full, mega, shadows)
+                    entry["picks"][variant][key] = [counter(c) for c in picks]
+                    for rank, c in enumerate(picks):
+                        pid = c["pokemonId"]
+                        tally[variant][key][pid] += 1
+                        points[variant][key][pid] += TOP_N - rank
+                        if rank == 0:
+                            top1[variant][key][pid] += 1
         bosses.append(entry)
 
-    def ranking(key):
+    def ranking(variant, key):
         rows = [
             {
                 "id": pid,
                 "name": pokemon_name(pid),
                 "count": count,
-                "first": top1[key][pid],
-                "points": points[key][pid],
+                "first": top1[variant][key][pid],
+                "points": points[variant][key][pid],
                 "types": types_of(pid),
             }
-            for pid, count in tally[key].items()
+            for pid, count in tally[variant][key].items()
         ]
         rows.sort(key=lambda r: (-r["count"], -r["points"], r["name"]))
         return rows
 
-    def mega_ranking():
+    def mega_ranking(variant):
         """Eine Zeile je Mega, mit beiden Zaehlungen nebeneinander."""
-        ids = set(tally["teamMega"]) | set(tally["soloMega"])
+        ids = set(tally[variant]["teamMega"]) | set(tally[variant]["soloMega"])
         rows = [
             {
                 "id": pid,
                 "name": pokemon_name(pid),
                 "types": types_of(pid),
-                "team": tally["teamMega"][pid],
-                "solo": tally["soloMega"][pid],
-                "teamFirst": top1["teamMega"][pid],
-                "soloFirst": top1["soloMega"][pid],
-                "points": points["teamMega"][pid] + points["soloMega"][pid],
+                "team": tally[variant]["teamMega"][pid],
+                "solo": tally[variant]["soloMega"][pid],
+                "teamFirst": top1[variant]["teamMega"][pid],
+                "soloFirst": top1[variant]["soloMega"][pid],
+                "points": points[variant]["teamMega"][pid] + points[variant]["soloMega"][pid],
             }
             for pid in ids
         ]
         rows.sort(key=lambda r: (-(r["team"] + r["solo"]), -r["points"], r["name"]))
         return rows
 
-    covered = {m: sum(1 for b in bosses if b[m]) for m in MODES}
+    # Ob Daten vorliegen, haengt nicht an der Krypto-Variante.
+    def has(boss, mode):
+        return bool(boss["picks"]["withShadow"][mode])
+
+    covered = {m: sum(1 for b in bosses if has(b, m)) for m in MODES}
     missing = [
         {"id": b["id"], "name": b["name"], "mode": m}
-        for b in bosses for m in MODES if not b[m]
+        for b in bosses for m in MODES if not has(b, m)
     ]
 
     data = {
         "generated": datetime.date.today().isoformat(),
         "bosses": bosses,
-        "ranking": {"team": ranking("team"), "solo": ranking("solo"), "mega": mega_ranking()},
+        "ranking": {
+            variant: {
+                "team": ranking(variant, "team"),
+                "solo": ranking(variant, "solo"),
+                "mega": mega_ranking(variant),
+            }
+            for variant in VARIANTS
+        },
         "covered": covered,
         "missing": missing,
     }
@@ -201,11 +233,13 @@ def main():
         json.dump(data, fh, ensure_ascii=False, indent=1)
     print("Bosse: %d | solo: %d | team: %d | fehlend: %d"
           % (len(bosses), covered["solo"], covered["team"], len(missing)))
-    for label in ("team", "solo"):
-        print("Top 5 %s (ohne Megas):" % label,
-              [(r["name"], r["count"]) for r in data["ranking"][label][:5]])
-    print("Top 5 Megas:",
-          [(r["name"], r["team"], r["solo"]) for r in data["ranking"]["mega"][:5]])
+    for variant in VARIANTS:
+        print("--- %s" % variant)
+        for label in ("team", "solo"):
+            print("  Top 5 %-4s (ohne Megas):" % label,
+                  [(r["name"], r["count"]) for r in data["ranking"][variant][label][:5]])
+        print("  Top 5 Megas:",
+              [(r["name"], r["team"], r["solo"]) for r in data["ranking"][variant]["mega"][:5]])
     return data
 
 

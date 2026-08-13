@@ -168,6 +168,40 @@
 
   .sec-head p { margin: 0; color: var(--ink-2); max-width: 70ch; }
 
+  /* ---------- Krypto-Schalter ---------- */
+
+  .controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 4px; }
+
+  .switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font: inherit;
+    font-size: .9rem;
+    padding: 7px 14px 7px 11px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+
+  .switch:hover { border-color: var(--ink-3); color: var(--ink); }
+  .switch:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  .switch .dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: inset 0 0 0 1.5px var(--ink-3);
+  }
+
+  .switch[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); background: var(--surface-2); }
+  .switch[aria-pressed="true"] .dot { background: var(--ink); box-shadow: none; }
+
+  .controls-note { font-size: .85rem; color: var(--ink-3); }
+
   /* ---------- Ranglisten ---------- */
 
   .boards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; }
@@ -526,7 +560,7 @@
 
 <div class="wrap">
   <header>
-    <p class="eyebrow">Pokémon GO · Stufe-5-Raids · Datenbasis Pokebattler</p>
+    <p class="eyebrow">Pokémon GO · Legendäre Raidbosse · Datenbasis Pokebattler</p>
     <h1>Welche Angreifer landen am häufigsten in den Top&nbsp;5?</h1>
     <p class="lede">
       Für jeden legendären und mysteriösen Raidboss – Stufe 5, Elite-Raid sowie die Mega- und
@@ -546,6 +580,12 @@
         seines Pools war; der Pfeil den Rangunterschied zur jeweils anderen Konfiguration. Ein Klick
         auf eine Zeile zeigt ihre häufigsten Attackensets und filtert die Boss-Liste weiter unten.
       </p>
+      <div class="controls">
+        <button type="button" class="switch" id="toggle-shadow" aria-pressed="false">
+          <span class="dot"></span><span id="toggle-shadow-label">Krypto-Pokémon einblenden</span>
+        </button>
+        <span class="controls-note" id="shadow-note"></span>
+      </div>
     </div>
     <div class="boards">
       <div class="board board-team">
@@ -613,13 +653,19 @@
           <li><b>Ohne beides:</b> <code>numParty=1</code>, <code>friendLevel=FRIENDSHIP_LEVEL_0</code> – ohne Megas</li>
           <li><b>Nur Megas:</b> dieselben zwei Konfigurationen, aber ausschließlich Mega- und Protoformen</li>
         </ul>
+        <p style="margin-top:8px">
+          Krypto-Formen sind standardmäßig aus allen drei Spalten genommen und lassen sich oben
+          per Schalter einblenden. Auf die Mega-Spalte hat das keinen Einfluss – Krypto-Megas
+          gibt es nicht.
+        </p>
       </div>
       <div>
         <h3>Grenzen</h3>
         <ul id="caveats">
           <li>Als Mega zählen alle Mega-Entwicklungen sowie Proto-Groudon und Proto-Kyogre – in Pokémon GO dieselbe Mechanik. Das gilt für beide Seiten: Sie sind Angreifer im Mega-Pool und selbst Bosse.</li>
           <li>Berücksichtigt sind nur Bosse, die tatsächlich schon in Raids aufgetreten sind. Angekündigte, aber unveröffentlichte Mega-Bosse wie Mega-Diancie oder Mega-Heatran fehlen daher.</li>
-          <li>Der übrige Angreifer-Pool ist Pokebattlers Standard und enthält auch Krypto- und noch nicht veröffentlichte Formen.</li>
+          <li>Der übrige Angreifer-Pool ist Pokebattlers Standard und enthält auch noch nicht veröffentlichte Formen.</li>
+          <li>Ohne Krypto-Formen bleiben aus den 30 gelieferten Kontern meist 11 nutzbare übrig, bei Entei ohne Boni nur 4 – dort ist die Liste entsprechend kürzer.</li>
           <li>Jede Form zählt einzeln: Schwarzes Kyurem und Kyurem sind getrennte Einträge.</li>
           <li>Team-Power ist mit Gruppengröße 2 simuliert; größere Gruppen rechnet die API nicht in der verfügbaren Zeit durch.</li>
         </ul>
@@ -645,8 +691,13 @@
   const BOARD_KEYS = { team: ["team"], solo: ["solo"], mega: ["teamMega", "soloMega"] };
   const LABEL = { team: "mit Team-Power", solo: "ohne Boni", mega: "Megas" };
 
-  const state = { more: { team: false, solo: false, mega: false }, filter: null, query: "" };
+  const state = { more: { team: false, solo: false, mega: false }, filter: null, query: "", shadows: false };
   const el = (id) => document.getElementById(id);
+
+  /* Krypto-Formen sind standardmaessig aus der Wertung genommen. */
+  const variant = () => (state.shadows ? "withShadow" : "noShadow");
+  const RANK = () => DATA.ranking[variant()];
+  const PICKS = (boss) => boss.picks[variant()];
 
   function chips(types) {
     return '<span class="chips">' + types.map(t =>
@@ -655,25 +706,32 @@
   }
 
   /* --- Kopfzahlen --- */
-  const pool = new Set([...DATA.ranking.team, ...DATA.ranking.solo].map(r => r.id));
-  el("tiles").innerHTML = [
-    [DATA.bosses.length, "Raidbosse", false],
-    [pool.size, "Konter ohne Megas", false],
-    [DATA.ranking.mega.length, "Megas in den Top 5", false],
-    [DATA.ranking.team[0].name, "häufigster Konter ohne Mega", true]
-  ].map(([v, l, txt]) =>
-    "<div class='tile'><b" + (txt ? " class='txt'" : "") + ">" + v + "</b><span>" + l + "</span></div>"
-  ).join("");
+  function renderTiles() {
+    const r = RANK();
+    const pool = new Set([...r.team, ...r.solo].map(x => x.id));
+    el("tiles").innerHTML = [
+      [DATA.bosses.length, "Raidbosse", false],
+      [pool.size, "Konter ohne Megas", false],
+      [r.mega.length, "Megas in den Top 5", false],
+      [r.team[0].name, "häufigster Konter ohne Mega", true]
+    ].map(([v, l, txt]) =>
+      "<div class='tile'><b" + (txt ? " class='txt'" : "") + ">" + v + "</b><span>" + l + "</span></div>"
+    ).join("");
+  }
 
   el("head-team").textContent = DATA.covered.team + " Bosse · numParty=2 · Level 4";
   el("head-solo").textContent = DATA.covered.solo + " Bosse · numParty=1 · kein Bonus";
   el("head-mega").textContent = "beide Konfigurationen im Vergleich";
 
   /* --- Ranglisten --- */
-  const rankIndex = {
-    team: new Map(DATA.ranking.team.map((r, i) => [r.id, i])),
-    solo: new Map(DATA.ranking.solo.map((r, i) => [r.id, i]))
-  };
+  let rankIndex = {};
+  function indexRanks() {
+    const r = RANK();
+    rankIndex = {
+      team: new Map(r.team.map((x, i) => [x.id, i])),
+      solo: new Map(r.solo.map((x, i) => [x.id, i]))
+    };
+  }
 
   function moveMark(mode, id, i) {
     const other = mode === "team" ? "solo" : "team";
@@ -694,7 +752,7 @@
   }
 
   function renderBoard(mode) {
-    const rows = DATA.ranking[mode];
+    const rows = RANK()[mode];
     const shown = state.more[mode] ? rows : rows.slice(0, 15);
     let html;
 
@@ -731,7 +789,7 @@
       const key = mega ? (mode === "team" ? "teamMega" : "soloMega") : mode;
       const map = new Map();
       for (const boss of DATA.bosses) {
-        for (const p of boss[key] || []) {
+        for (const p of PICKS(boss)[key] || []) {
           if (p.id !== id) continue;
           if (!map.has(p.moves)) map.set(p.moves, []);
           map.get(p.moves).push(boss.name);
@@ -768,7 +826,7 @@
       return;
     }
     const { id, mode } = state.filter;
-    const row = DATA.ranking[mode].find(r => r.id === id);
+    const row = RANK()[mode].find(r => r.id === id);
     const stats = movesetStats(id, mode === "mega");
     p.innerHTML = '<div class="panel-head"><b>' + row.name + "</b>" +
       '<span class="pool">Attackensets · ' + (mode === "mega" ? "Mega-Pool" : "Pool ohne Megas") + "</span>" +
@@ -792,17 +850,18 @@
   function bossColumn(boss, mode) {
     const wash = mode === "team" ? "var(--team-wash)" : "var(--solo-wash)";
     const head = mode === "team" ? "Mit Team-Power &amp; bestem Freund" : "Ohne Boni";
+    const picks = PICKS(boss);
     return '<div class="col col-' + mode + '">' +
       '<div class="block"><span class="col-label">' + head + ' · ohne Megas</span>' +
-      pickList(boss[mode], wash) + "</div>" +
+      pickList(picks[mode], wash) + "</div>" +
       '<div class="block block-mega"><span class="col-label">Megas</span>' +
-      pickList(boss[mode === "team" ? "teamMega" : "soloMega"], wash) + "</div></div>";
+      pickList(picks[mode === "team" ? "teamMega" : "soloMega"], wash) + "</div></div>";
   }
 
   function matchesFilter(boss) {
     if (!state.filter) return true;
     return BOARD_KEYS[state.filter.mode].some(k => {
-      const picks = boss[k];
+      const picks = PICKS(boss)[k];
       return picks && picks.some(p => p.id === state.filter.id);
     });
   }
@@ -826,22 +885,46 @@
   }
 
   /* --- Interaktion --- */
-  function setFilter(f) {
-    state.filter = f;
-    const pill = el("pill");
-    if (f) {
-      const name = DATA.ranking[f.mode].find(r => r.id === f.id).name;
-      el("pill-text").textContent = name + " · " + LABEL[f.mode];
-      pill.classList.add("on");
-    } else {
-      pill.classList.remove("on");
-    }
+  function renderAll() {
+    indexRanks();
+    renderTiles();
     ["team", "solo", "mega"].forEach(renderBoard);
     renderPanel();
     renderBosses();
   }
 
+  function setFilter(f) {
+    state.filter = f;
+    const pill = el("pill");
+    if (f) {
+      const name = RANK()[f.mode].find(r => r.id === f.id).name;
+      el("pill-text").textContent = name + " · " + LABEL[f.mode];
+      pill.classList.add("on");
+    } else {
+      pill.classList.remove("on");
+    }
+    renderAll();
+  }
+
+  function setShadows(on) {
+    state.shadows = on;
+    const btn = el("toggle-shadow");
+    btn.setAttribute("aria-pressed", on ? "true" : "false");
+    el("toggle-shadow-label").textContent = on ? "Krypto-Pokémon ausblenden" : "Krypto-Pokémon einblenden";
+    el("shadow-note").textContent = on
+      ? "Krypto-Formen zählen mit."
+      : "Krypto-Formen sind aus der Wertung genommen – sie brauchen Krypto-Steine.";
+    indexRanks();
+    // Eine Auswahl, die es in der neuen Wertung nicht mehr gibt, wird aufgehoben.
+    if (state.filter && !RANK()[state.filter.mode].some(r => r.id === state.filter.id)) {
+      setFilter(null);
+      return;
+    }
+    renderAll();
+  }
+
   document.addEventListener("click", (ev) => {
+    if (ev.target.closest("#toggle-shadow")) { setShadows(!state.shadows); return; }
     if (ev.target.closest("[data-panel-clear]")) { setFilter(null); return; }
     const row = ev.target.closest(".row");
     if (row) {
@@ -868,7 +951,5 @@
   el("footer").innerHTML = "Simulationsdaten von <a href='https://www.pokebattler.com/'>Pokebattler</a>, abgerufen am " +
     DATA.generated.split("-").reverse().join(".") + ". Pokémon ist eine Marke von Nintendo/Creatures Inc./GAME FREAK inc.";
 
-  ["team", "solo", "mega"].forEach(renderBoard);
-  renderPanel();
-  renderBosses();
+  setShadows(false);
 </script>
