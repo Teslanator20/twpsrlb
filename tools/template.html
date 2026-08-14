@@ -168,6 +168,60 @@
 
   .sec-head p { margin: 0; color: var(--ink-2); max-width: 70ch; }
 
+  /* ---------- Mitlaufende Leiste ---------- */
+
+  .stickybar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 14px;
+    padding: 9px 20px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    transform: translateY(-105%);
+    transition: transform .16s ease;
+  }
+
+  .stickybar.on { transform: none; }
+
+  .stickybar .sb-title {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: .88rem;
+    letter-spacing: -.01em;
+    margin-right: auto;
+  }
+
+  .stickybar .switch { font-size: .82rem; padding: 5px 12px 5px 9px; }
+
+  .sb-filter {
+    display: none;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    padding: 5px 9px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    max-width: 46vw;
+  }
+
+  .sb-filter.on { display: inline-flex; }
+  .sb-filter span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .sb-filter button { font: inherit; border: 0; background: none; color: var(--ink-3); cursor: pointer; padding: 0 2px; }
+  .sb-filter button:hover { color: var(--ink); }
+
+  @media (max-width: 560px) {
+    .stickybar .sb-title { display: none; }
+    .stickybar { justify-content: space-between; }
+  }
+
   /* ---------- Krypto-Schalter ---------- */
 
   .controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 4px; }
@@ -535,6 +589,17 @@
   }
 </style>
 
+<div class="stickybar" id="stickybar">
+  <span class="sb-title">Counter-Rangliste</span>
+  <span class="sb-filter" id="sb-filter">
+    <span id="sb-filter-text"></span>
+    <button type="button" data-clear-filter aria-label="Auswahl aufheben">✕</button>
+  </span>
+  <button type="button" class="switch" data-shadow-toggle aria-pressed="false">
+    <span class="dot"></span><span data-shadow-label>Krypto einblenden</span>
+  </button>
+</div>
+
 <div class="wrap">
   <header>
     <p class="eyebrow">Pokémon GO · Raidbosse &amp; Mega-Raids · Datenbasis Pokebattler</p>
@@ -559,8 +624,8 @@
         Attackensets auf und filtert gleichzeitig die Boss-Liste weiter unten.
       </p>
       <div class="controls">
-        <button type="button" class="switch" id="toggle-shadow" aria-pressed="false">
-          <span class="dot"></span><span id="toggle-shadow-label">Krypto-Pokémon einblenden</span>
+        <button type="button" class="switch" data-shadow-toggle aria-pressed="false">
+          <span class="dot"></span><span data-shadow-label>Krypto-Pokémon einblenden</span>
         </button>
         <span class="controls-note" id="shadow-note"></span>
       </div>
@@ -578,6 +643,18 @@
       </p>
     </div>
     <div class="boards" id="boards-top2"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Und nur Platz 1 gezählt</h2>
+      <p>
+        Die strengste Wertung: hier zählt ein Pokémon nur, wenn es beim jeweiligen Boss der
+        <b>allerbeste</b> Konter ist. Wer hier oben steht, ist nicht nur oft brauchbar, sondern
+        oft die richtige Antwort.
+      </p>
+    </div>
+    <div class="boards" id="boards-top1"></div>
   </section>
 
   <section>
@@ -629,11 +706,11 @@
         </p>
       </div>
       <div>
-        <h3>Zwei Zähltiefen</h3>
+        <h3>Drei Zähltiefen</h3>
         <p>
-          Der obere Abschnitt zählt jede der fünf Platzierungen, der untere nur Platz 1 und 2.
-          Beide greifen auf dieselben Trefferlisten zu, deshalb stimmen sie immer überein – die
-          strengere Zählung ist eine Teilmenge der lockeren.
+          Die drei Abschnitte zählen jede der fünf Platzierungen, nur Platz 1 und 2, und nur
+          Platz 1. Alle greifen auf dieselben Trefferlisten zu, deshalb stimmen sie immer
+          überein – die strengeren Zählungen sind Teilmengen der lockeren.
         </p>
       </div>
       <div>
@@ -669,8 +746,8 @@
   const LABEL = { team: "mit Team-Power", solo: "ohne Boni", mega: "Megas" };
 
   /* Zwei Abschnitte mit identischem Aufbau, nur mit anderer Zaehltiefe. */
-  const SECTIONS = { top5: 5, top2: 2 };
-  const DEPTH_NOTE = { top5: "alle 5 Plätze", top2: "nur Platz 1–2" };
+  const SECTIONS = { top5: 5, top2: 2, top1: 1 };
+  const DEPTH_NOTE = { top5: "alle 5 Plätze", top2: "nur Platz 1–2", top1: "nur Platz 1" };
   const BOARDS = [
     { mode: "team", cls: "board-team", title: "Mit Team-Power &amp; bestem Freund",
       sub: () => DATA.covered.team + " Bosse · numParty=2" },
@@ -681,8 +758,8 @@
   ];
 
   const state = {
-    more: { top5: { team: false, solo: false, mega: false },
-            top2: { team: false, solo: false, mega: false } },
+    more: Object.fromEntries(
+      Object.keys(SECTIONS).map(s => [s, { team: false, solo: false, mega: false }])),
     filter: null, query: "", shadows: false
   };
   const el = (id) => document.getElementById(id);
@@ -781,8 +858,8 @@
       const max = rows[0].count;
       html = shown.map((r, i) => rowShell(sec, mode, r, i, {
         bars: '<span class="bar"><i style="width:' + (r.count / max * 100).toFixed(1) + '%"></i></span>',
-        value: '<span class="n">' + moveMark(sec, mode, r.id, i) +
-          "<em>" + r.count + "</em><small>× · #1: " + r.first + "</small></span>"
+        value: '<span class="n">' + moveMark(sec, mode, r.id, i) + "<em>" + r.count + "</em>" +
+          "<small>×" + (sec === "top1" ? "" : " · #1: " + r.first) + "</small></span>"
       })).join("");
     }
 
@@ -912,25 +989,35 @@
     renderBosses();
   }
 
+  const SEC_NOTE = { top5: "", top2: " · nur Top 2", top1: " · nur Platz 1" };
+
   function setFilter(f) {
     state.filter = f;
     const pill = el("pill");
+    const sb = el("sb-filter");
     if (f) {
       const name = RANK(f.sec)[f.mode].find(r => r.id === f.id).name;
-      el("pill-text").textContent = name + " · " + LABEL[f.mode] +
-        (f.sec === "top2" ? " · nur Top 2" : "");
+      const text = name + " · " + LABEL[f.mode] + SEC_NOTE[f.sec];
+      el("pill-text").textContent = text;
+      el("sb-filter-text").textContent = text;
       pill.classList.add("on");
+      sb.classList.add("on");
     } else {
       pill.classList.remove("on");
+      sb.classList.remove("on");
     }
     renderAll();
   }
 
   function setShadows(on) {
     state.shadows = on;
-    const btn = el("toggle-shadow");
-    btn.setAttribute("aria-pressed", on ? "true" : "false");
-    el("toggle-shadow-label").textContent = on ? "Krypto-Pokémon ausblenden" : "Krypto-Pokémon einblenden";
+    // Der Schalter steht zweimal auf der Seite: im Abschnittskopf und in der Leiste.
+    for (const btn of document.querySelectorAll("[data-shadow-toggle]")) {
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+      const short = btn.closest(".stickybar") ? "Krypto" : "Krypto-Pokémon";
+      btn.querySelector("[data-shadow-label]").textContent =
+        short + (on ? " ausblenden" : " einblenden");
+    }
     el("shadow-note").textContent = on
       ? "Krypto-Formen zählen mit."
       : "Krypto-Formen sind aus der Wertung genommen – sie brauchen Krypto-Steine.";
@@ -945,7 +1032,8 @@
   }
 
   document.addEventListener("click", (ev) => {
-    if (ev.target.closest("#toggle-shadow")) { setShadows(!state.shadows); return; }
+    if (ev.target.closest("[data-shadow-toggle]")) { setShadows(!state.shadows); return; }
+    if (ev.target.closest("[data-clear-filter]")) { setFilter(null); return; }
     const row = ev.target.closest(".row");
     if (row) {
       const f = state.filter;
@@ -963,6 +1051,19 @@
   });
 
   el("pill-clear").addEventListener("click", () => setFilter(null));
+
+  /* Die Leiste erscheint, sobald der Schalter im Abschnittskopf aus dem Blick ist. */
+  const anchor = document.querySelector(".controls");
+  let barOn = false;
+  function syncBar() {
+    const on = anchor.getBoundingClientRect().bottom < 0;
+    if (on !== barOn) {
+      barOn = on;
+      el("stickybar").classList.toggle("on", on);
+    }
+  }
+  addEventListener("scroll", syncBar, { passive: true });
+  addEventListener("resize", syncBar, { passive: true });
   el("search").addEventListener("input", (ev) => { state.query = ev.target.value; renderBosses(); });
 
   if (DATA.missing.length) {
@@ -975,4 +1076,5 @@
 
   renderBoardShells();
   setShadows(false);
+  syncBar();
 </script>

@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-13",
+ "generated": "2026-08-14",
  "bosses": [
   {
    "id": "VENUSAUR_MEGA",
@@ -95538,6 +95538,958 @@
       "points": 2
      }
     ]
+   },
+   "top1": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "count": 25,
+      "first": 25,
+      "points": 25,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "ghost",
+        "name": "Geist"
+       }
+      ]
+     },
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "count": 16,
+      "first": 16,
+      "points": 16,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "count": 15,
+      "first": 15,
+      "points": 15,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "count": 14,
+      "first": 14,
+      "points": 14,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     },
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "count": 9,
+      "first": 9,
+      "points": 9,
+      "types": [
+       {
+        "id": "poison",
+        "name": "Gift"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     },
+     {
+      "id": "LANDORUS_THERIAN_FORM",
+      "name": "Demeteros - Tiergeistform",
+      "count": 8,
+      "first": 8,
+      "points": 8,
+      "types": [
+       {
+        "id": "ground",
+        "name": "Boden"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     },
+     {
+      "id": "RESHIRAM",
+      "name": "Reshiram",
+      "count": 6,
+      "first": 6,
+      "points": 6,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ]
+     },
+     {
+      "id": "NECROZMA_DUSK_MANE_FORM",
+      "name": "Necrozma - Abendmähne",
+      "count": 5,
+      "first": 5,
+      "points": 5,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "REGIELEKI",
+      "name": "Regieleki",
+      "count": 3,
+      "first": 3,
+      "points": 3,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "GIGALITH",
+      "name": "Brockoloss",
+      "count": 2,
+      "first": 2,
+      "points": 2,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "GLIMMORA",
+      "name": "Lumiflora",
+      "count": 2,
+      "first": 2,
+      "points": 2,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     },
+     {
+      "id": "RAYQUAZA",
+      "name": "Rayquaza",
+      "count": 2,
+      "first": 2,
+      "points": 2,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     },
+     {
+      "id": "ESCAVALIER",
+      "name": "Cavalanzas",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "GYARADOS",
+      "name": "Garados",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     },
+     {
+      "id": "KYOGRE",
+      "name": "Kyogre",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       }
+      ]
+     },
+     {
+      "id": "ZARUDE",
+      "name": "Zarude",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "count": 20,
+      "first": 20,
+      "points": 20,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "ghost",
+        "name": "Geist"
+       }
+      ]
+     },
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "count": 18,
+      "first": 18,
+      "points": 18,
+      "types": [
+       {
+        "id": "poison",
+        "name": "Gift"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "count": 16,
+      "first": 16,
+      "points": 16,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     },
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "count": 16,
+      "first": 16,
+      "points": 16,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "count": 10,
+      "first": 10,
+      "points": 10,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "BLACEPHALON",
+      "name": "Kopplosio",
+      "count": 8,
+      "first": 8,
+      "points": 8,
+      "types": [
+       {
+        "id": "fire",
+        "name": "Feuer"
+       },
+       {
+        "id": "ghost",
+        "name": "Geist"
+       }
+      ]
+     },
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "count": 5,
+      "first": 5,
+      "points": 5,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "LANDORUS_THERIAN_FORM",
+      "name": "Demeteros - Tiergeistform",
+      "count": 4,
+      "first": 4,
+      "points": 4,
+      "types": [
+       {
+        "id": "ground",
+        "name": "Boden"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     },
+     {
+      "id": "RAYQUAZA",
+      "name": "Rayquaza",
+      "count": 4,
+      "first": 4,
+      "points": 4,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     },
+     {
+      "id": "GLIMMORA",
+      "name": "Lumiflora",
+      "count": 3,
+      "first": 3,
+      "points": 3,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     },
+     {
+      "id": "KYOGRE",
+      "name": "Kyogre",
+      "count": 2,
+      "first": 2,
+      "points": 2,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       }
+      ]
+     },
+     {
+      "id": "TYRANITAR",
+      "name": "Despotar",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     },
+     {
+      "id": "GROUDON",
+      "name": "Groudon",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "ground",
+        "name": "Boden"
+       }
+      ]
+     },
+     {
+      "id": "KARTANA",
+      "name": "Katagami",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "MEWTWO",
+      "name": "Mewtu",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     },
+     {
+      "id": "NECROZMA_DUSK_MANE_FORM",
+      "name": "Necrozma - Abendmähne",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "REGIELEKI",
+      "name": "Regieleki",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "RESHIRAM",
+      "name": "Reshiram",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ]
+     },
+     {
+      "id": "RHYPERIOR",
+      "name": "Rihornior",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "ground",
+        "name": "Boden"
+       },
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "SHAYMIN_SKY_FORM",
+      "name": "Shaymin - Zenit",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     },
+     {
+      "id": "ZEKROM",
+      "name": "Zekrom",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "ZERAORA",
+      "name": "Zeraora",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     }
+    ],
+    "mega": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ],
+      "team": 31,
+      "solo": 28,
+      "teamFirst": 31,
+      "soloFirst": 28,
+      "points": 59
+     },
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "types": [
+       {
+        "id": "ground",
+        "name": "Boden"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ],
+      "team": 26,
+      "solo": 8,
+      "teamFirst": 26,
+      "soloFirst": 8,
+      "points": 34
+     },
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ],
+      "team": 13,
+      "solo": 18,
+      "teamFirst": 13,
+      "soloFirst": 18,
+      "points": 31
+     },
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "team": 8,
+      "solo": 9,
+      "teamFirst": 8,
+      "soloFirst": 9,
+      "points": 17
+     },
+     {
+      "id": "METAGROSS_MEGA",
+      "name": "Mega-Metagross",
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ],
+      "team": 8,
+      "solo": 7,
+      "teamFirst": 8,
+      "soloFirst": 7,
+      "points": 15
+     },
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ],
+      "team": 4,
+      "solo": 9,
+      "teamFirst": 4,
+      "soloFirst": 9,
+      "points": 13
+     },
+     {
+      "id": "BLAZIKEN_MEGA",
+      "name": "Mega-Lohgock",
+      "types": [
+       {
+        "id": "fire",
+        "name": "Feuer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "team": 3,
+      "solo": 10,
+      "teamFirst": 3,
+      "soloFirst": 10,
+      "points": 13
+     },
+     {
+      "id": "LUCARIO_MEGA",
+      "name": "Mega-Lucario",
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ],
+      "team": 0,
+      "solo": 9,
+      "teamFirst": 0,
+      "soloFirst": 9,
+      "points": 9
+     },
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       }
+      ],
+      "team": 4,
+      "solo": 5,
+      "teamFirst": 4,
+      "soloFirst": 5,
+      "points": 9
+     },
+     {
+      "id": "DIANCIE_MEGA",
+      "name": "Mega-Diancie",
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ],
+      "team": 2,
+      "solo": 5,
+      "teamFirst": 2,
+      "soloFirst": 5,
+      "points": 7
+     },
+     {
+      "id": "HERACROSS_MEGA",
+      "name": "Mega-Skaraborn",
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "team": 6,
+      "solo": 1,
+      "teamFirst": 6,
+      "soloFirst": 1,
+      "points": 7
+     },
+     {
+      "id": "SCEPTILE_MEGA",
+      "name": "Mega-Gewaldro",
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ],
+      "team": 2,
+      "solo": 2,
+      "teamFirst": 2,
+      "soloFirst": 2,
+      "points": 4
+     },
+     {
+      "id": "RAICHU_MEGA_Y",
+      "name": "Mega-Raichu Y",
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ],
+      "team": 2,
+      "solo": 2,
+      "teamFirst": 2,
+      "soloFirst": 2,
+      "points": 4
+     },
+     {
+      "id": "GENGAR_MEGA",
+      "name": "Mega-Gengar",
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 1,
+      "solo": 1,
+      "teamFirst": 1,
+      "soloFirst": 1,
+      "points": 2
+     },
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 1,
+      "points": 1
+     },
+     {
+      "id": "CHARIZARD_MEGA_Y",
+      "name": "Mega-Glurak Y",
+      "types": [
+       {
+        "id": "fire",
+        "name": "Feuer"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ],
+      "team": 1,
+      "solo": 0,
+      "teamFirst": 1,
+      "soloFirst": 0,
+      "points": 1
+     },
+     {
+      "id": "GARDEVOIR_MEGA",
+      "name": "Mega-Guardevoir",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 1,
+      "points": 1
+     },
+     {
+      "id": "GARCHOMP_MEGA",
+      "name": "Mega-Knakrack",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "ground",
+        "name": "Boden"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 1,
+      "points": 1
+     }
+    ]
    }
   },
   "withShadow": {
@@ -100641,6 +101593,993 @@
       "teamFirst": 0,
       "soloFirst": 0,
       "points": 2
+     }
+    ]
+   },
+   "top1": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "count": 22,
+      "first": 22,
+      "points": 22,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "ghost",
+        "name": "Geist"
+       }
+      ]
+     },
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "count": 16,
+      "first": 16,
+      "points": 16,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "count": 14,
+      "first": 14,
+      "points": 14,
+      "types": [
+       {
+        "id": "ground",
+        "name": "Boden"
+       }
+      ]
+     },
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "count": 13,
+      "first": 13,
+      "points": 13,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "count": 9,
+      "first": 9,
+      "points": 9,
+      "types": [
+       {
+        "id": "poison",
+        "name": "Gift"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "count": 9,
+      "first": 9,
+      "points": 9,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     },
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "count": 7,
+      "first": 7,
+      "points": 7,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ]
+     },
+     {
+      "id": "GIGALITH_SHADOW_FORM",
+      "name": "Crypto Brockoloss",
+      "count": 3,
+      "first": 3,
+      "points": 3,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "GIRATINA_ORIGIN_SHADOW_FORM",
+      "name": "Crypto-Giratina Origin",
+      "count": 3,
+      "first": 3,
+      "points": 3,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     },
+     {
+      "id": "NECROZMA_DUSK_MANE_FORM",
+      "name": "Necrozma - Abendmähne",
+      "count": 3,
+      "first": 3,
+      "points": 3,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "REGIELEKI",
+      "name": "Regieleki",
+      "count": 3,
+      "first": 3,
+      "points": 3,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "KYOGRE_SHADOW_FORM",
+      "name": "Crypto Kyogre",
+      "count": 2,
+      "first": 2,
+      "points": 2,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       }
+      ]
+     },
+     {
+      "id": "MEWTWO_SHADOW_FORM",
+      "name": "Crypto Mewtu",
+      "count": 2,
+      "first": 2,
+      "points": 2,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     },
+     {
+      "id": "RAYQUAZA",
+      "name": "Rayquaza",
+      "count": 2,
+      "first": 2,
+      "points": 2,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     },
+     {
+      "id": "ESCAVALIER_SHADOW_FORM",
+      "name": "Crypto Cavalanzas",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "TYRANTRUM_SHADOW_FORM",
+      "name": "Crypto Monargoras",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     },
+     {
+      "id": "TANGROWTH_SHADOW_FORM",
+      "name": "Crypto Tangoloss",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "count": 17,
+      "first": 17,
+      "points": 17,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "ghost",
+        "name": "Geist"
+       }
+      ]
+     },
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "count": 15,
+      "first": 15,
+      "points": 15,
+      "types": [
+       {
+        "id": "poison",
+        "name": "Gift"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "count": 15,
+      "first": 15,
+      "points": 15,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     },
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "count": 15,
+      "first": 15,
+      "points": 15,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "count": 10,
+      "first": 10,
+      "points": 10,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ]
+     },
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "count": 9,
+      "first": 9,
+      "points": 9,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "count": 6,
+      "first": 6,
+      "points": 6,
+      "types": [
+       {
+        "id": "ground",
+        "name": "Boden"
+       }
+      ]
+     },
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "count": 5,
+      "first": 5,
+      "points": 5,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "KYOGRE_SHADOW_FORM",
+      "name": "Crypto Kyogre",
+      "count": 3,
+      "first": 3,
+      "points": 3,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       }
+      ]
+     },
+     {
+      "id": "RHYPERIOR_SHADOW_FORM",
+      "name": "Crypto Rihornior",
+      "count": 3,
+      "first": 3,
+      "points": 3,
+      "types": [
+       {
+        "id": "ground",
+        "name": "Boden"
+       },
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "RAYQUAZA",
+      "name": "Rayquaza",
+      "count": 3,
+      "first": 3,
+      "points": 3,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     },
+     {
+      "id": "MEWTWO_SHADOW_FORM",
+      "name": "Crypto Mewtu",
+      "count": 2,
+      "first": 2,
+      "points": 2,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     },
+     {
+      "id": "REGIGIGAS_SHADOW_FORM",
+      "name": "Crypto Regigigas",
+      "count": 2,
+      "first": 2,
+      "points": 2,
+      "types": [
+       {
+        "id": "normal",
+        "name": "Normal"
+       }
+      ]
+     },
+     {
+      "id": "HYDREIGON_SHADOW_FORM",
+      "name": "Crypto Trikephalo",
+      "count": 2,
+      "first": 2,
+      "points": 2,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     },
+     {
+      "id": "TYRANITAR_SHADOW_FORM",
+      "name": "Crypto Despotar",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     },
+     {
+      "id": "VIKAVOLT_SHADOW_FORM",
+      "name": "Crypto Donarion",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "HEATRAN_SHADOW_FORM",
+      "name": "Crypto Heatran",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "fire",
+        "name": "Feuer"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "TYRANTRUM_SHADOW_FORM",
+      "name": "Crypto Monargoras",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     },
+     {
+      "id": "RAMPARDOS_SHADOW_FORM",
+      "name": "Crypto Rameidon",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "BLACEPHALON",
+      "name": "Kopplosio",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "fire",
+        "name": "Feuer"
+       },
+       {
+        "id": "ghost",
+        "name": "Geist"
+       }
+      ]
+     },
+     {
+      "id": "NECROZMA_DUSK_MANE_FORM",
+      "name": "Necrozma - Abendmähne",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     },
+     {
+      "id": "REGIELEKI",
+      "name": "Regieleki",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "SHAYMIN_SKY_FORM",
+      "name": "Shaymin - Zenit",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     },
+     {
+      "id": "ZEKROM",
+      "name": "Zekrom",
+      "count": 1,
+      "first": 1,
+      "points": 1,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     }
+    ],
+    "mega": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ],
+      "team": 31,
+      "solo": 28,
+      "teamFirst": 31,
+      "soloFirst": 28,
+      "points": 59
+     },
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "types": [
+       {
+        "id": "ground",
+        "name": "Boden"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ],
+      "team": 26,
+      "solo": 8,
+      "teamFirst": 26,
+      "soloFirst": 8,
+      "points": 34
+     },
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ],
+      "team": 13,
+      "solo": 18,
+      "teamFirst": 13,
+      "soloFirst": 18,
+      "points": 31
+     },
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "team": 8,
+      "solo": 9,
+      "teamFirst": 8,
+      "soloFirst": 9,
+      "points": 17
+     },
+     {
+      "id": "METAGROSS_MEGA",
+      "name": "Mega-Metagross",
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ],
+      "team": 8,
+      "solo": 7,
+      "teamFirst": 8,
+      "soloFirst": 7,
+      "points": 15
+     },
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ],
+      "team": 4,
+      "solo": 9,
+      "teamFirst": 4,
+      "soloFirst": 9,
+      "points": 13
+     },
+     {
+      "id": "BLAZIKEN_MEGA",
+      "name": "Mega-Lohgock",
+      "types": [
+       {
+        "id": "fire",
+        "name": "Feuer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "team": 3,
+      "solo": 10,
+      "teamFirst": 3,
+      "soloFirst": 10,
+      "points": 13
+     },
+     {
+      "id": "LUCARIO_MEGA",
+      "name": "Mega-Lucario",
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       },
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ],
+      "team": 0,
+      "solo": 9,
+      "teamFirst": 0,
+      "soloFirst": 9,
+      "points": 9
+     },
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       }
+      ],
+      "team": 4,
+      "solo": 5,
+      "teamFirst": 4,
+      "soloFirst": 5,
+      "points": 9
+     },
+     {
+      "id": "DIANCIE_MEGA",
+      "name": "Mega-Diancie",
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ],
+      "team": 2,
+      "solo": 5,
+      "teamFirst": 2,
+      "soloFirst": 5,
+      "points": 7
+     },
+     {
+      "id": "HERACROSS_MEGA",
+      "name": "Mega-Skaraborn",
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "team": 6,
+      "solo": 1,
+      "teamFirst": 6,
+      "soloFirst": 1,
+      "points": 7
+     },
+     {
+      "id": "SCEPTILE_MEGA",
+      "name": "Mega-Gewaldro",
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ],
+      "team": 2,
+      "solo": 2,
+      "teamFirst": 2,
+      "soloFirst": 2,
+      "points": 4
+     },
+     {
+      "id": "RAICHU_MEGA_Y",
+      "name": "Mega-Raichu Y",
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ],
+      "team": 2,
+      "solo": 2,
+      "teamFirst": 2,
+      "soloFirst": 2,
+      "points": 4
+     },
+     {
+      "id": "GENGAR_MEGA",
+      "name": "Mega-Gengar",
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 1,
+      "solo": 1,
+      "teamFirst": 1,
+      "soloFirst": 1,
+      "points": 2
+     },
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 1,
+      "points": 1
+     },
+     {
+      "id": "CHARIZARD_MEGA_Y",
+      "name": "Mega-Glurak Y",
+      "types": [
+       {
+        "id": "fire",
+        "name": "Feuer"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ],
+      "team": 1,
+      "solo": 0,
+      "teamFirst": 1,
+      "soloFirst": 0,
+      "points": 1
+     },
+     {
+      "id": "GARDEVOIR_MEGA",
+      "name": "Mega-Guardevoir",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 1,
+      "points": 1
+     },
+     {
+      "id": "GARCHOMP_MEGA",
+      "name": "Mega-Knakrack",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "ground",
+        "name": "Boden"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 1,
+      "points": 1
      }
     ]
    }

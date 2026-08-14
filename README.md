@@ -7,8 +7,8 @@ bestem Freund**, einmal **ohne beides**. Auf der Angreiferseite laufen Mega-Entw
 außer Konkurrenz und stehen in einer eigenen dritten Spalte.
 
 Ergebnis ist eine statische Website (`index.html`, keine Abhängigkeiten, kein Build-Tooling)
-mit zwei Ranglisten-Abschnitten – einmal über alle fünf Platzierungen, einmal nur über Platz 1
-und 2 – plus einer durchsuchbaren Detailansicht pro Boss.
+mit drei Ranglisten-Abschnitten – über alle fünf Platzierungen, nur über Platz 1 und 2, und nur
+über Platz 1 – plus einer durchsuchbaren Detailansicht pro Boss.
 
 ## Was drin steht
 
@@ -22,13 +22,14 @@ und 2 – plus einer durchsuchbaren Detailansicht pro Boss.
 * Pro Boss die **fünf besten Konter je Konfiguration und Pool** – also vier Listen pro Boss:
   mit/ohne Boni, jeweils ohne Megas und nur Megas. Jedes Pokémon ist **ein Eintrag**; darunter
   stehen seine **drei besten Attackensets mit jeweils eigenem Estimator**.
-* **Zwei Ranglisten-Abschnitte mit identischem Aufbau**, je drei Spalten: der obere zählt
-  alle fünf Platzierungen, der untere nur Platz 1 und 2. Beide zeigen, wie oft ein Pokémon
+* **Drei Ranglisten-Abschnitte mit identischem Aufbau**, je drei Spalten, nach Zähltiefe:
+  alle fünf Platzierungen, nur Platz 1 und 2, nur Platz 1. Sie zeigen, wie oft ein Pokémon
   gelistet ist, wie oft es Platz 1 belegt und wie stark sich sein Rang zwischen den beiden
   Konfigurationen verschiebt. Die Mega-Spalte zeigt beide Zählungen nebeneinander.
-* Ein **Schalter für Krypto-Pokémon**, standardmäßig aus: Krypto-Formen sind aus allen drei
-  Spalten genommen und lassen sich per Klick einblenden. Beide Varianten sind vorberechnet,
-  das Umschalten läuft ohne Nachladen.
+* Ein **Schalter für Krypto-Pokémon**, standardmäßig aus: Krypto-Formen sind aus allen Spalten
+  genommen und lassen sich per Klick einblenden. Beide Varianten sind vorberechnet, das
+  Umschalten läuft ohne Nachladen. Sobald der Schalter aus dem Blick scrollt, erscheint oben
+  eine **mitlaufende Leiste** mit demselben Schalter und der aktiven Auswahl.
 * Ein Klick auf ein Pokémon in einer Rangliste öffnet darunter eine **Attackenset-Auswertung**:
   mit welchem Set es seine Platzierungen geholt hat, in beiden Konfigurationen, mit Anzahl,
   Anteil und den zugehörigen Bossen. Bei Mega-Mewtu Y sind das sechs verschiedene Lade-Attacken.
@@ -50,8 +51,8 @@ Pokebattler liefert je Abfrage die 30 besten Konter, jeder mit 6 bis 10 durchsim
 Attackensets. `scrape.py` speichert die 30 Konter mit ihren jeweils **drei besten** Sets,
 `build.py` filtert daraus die Top 5 je Pool – und zwar zweimal: einmal ohne Krypto-Formen
 (`noShadow`, die Standardansicht) und einmal mit (`withShadow`). Aus denselben Trefferlisten
-entstehen beide Zähltiefen (`top5` und `top2`), die strengere ist also immer eine Teilmenge
-der lockeren.
+entstehen alle drei Zähltiefen (`top5`, `top2`, `top1`), die strengeren sind also immer
+Teilmengen der lockeren.
 
 Gezählt wird immer **pro Pokémon**, nicht pro Attackenset: Mega-Mewtu Y mit Spukball und
 Mega-Mewtu Y mit Eisstrahl sind ein Eintrag in der Rangliste. Welches Set wie oft zum Zug

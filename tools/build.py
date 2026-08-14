@@ -104,8 +104,8 @@ def is_shadow(pid):
 
 TOP_N = 5
 MODES = ("team", "solo")
-# Dieselbe Auswertung zweimal: ueber alle fuenf Plaetze und nur ueber die ersten zwei.
-DEPTHS = {"top5": 5, "top2": 2}
+# Dieselbe Auswertung in drei Zaehltiefen: alle fuenf Plaetze, nur die ersten zwei, nur Platz 1.
+DEPTHS = {"top5": 5, "top2": 2, "top1": 1}
 # Der Schluessel im Boss-Eintrag je Konfiguration und Angreifer-Pool.
 KEYS = {("team", False): "team", ("solo", False): "solo",
         ("team", True): "teamMega", ("solo", True): "soloMega"}
