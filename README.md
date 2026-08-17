@@ -66,8 +66,9 @@ seine Platzierung nur, wenn es auch die Nicht-Megas schlägt. Gegen Rayquaza etw
 Mega-Mewtu Y mit Eisstrahl hinter beiden Kyurem-Formen und zählt dort nicht als Platz 1.
 
 Als Mega zählen alle IDs mit `_MEGA` sowie Proto-Groudon und Proto-Kyogre (`_PRIMAL`) –
-in Pokémon GO dieselbe Mechanik. Als Krypto zählen alle IDs mit `_SHADOW_FORM`. Auf die
-Mega-Spalte hat der Krypto-Schalter keinen Einfluss, Krypto-Megas gibt es nicht.
+in Pokémon GO dieselbe Mechanik. Als Krypto zählen alle IDs mit `_SHADOW_FORM`. Krypto-Megas
+gibt es nicht, der Krypto-Schalter verändert die Mega-Spalte aber trotzdem: eingeblendete
+Krypto-Formen konkurrieren im Gesamtvergleich mit und drängen Megas aus den Platzierungen.
 
 ## Aufbau
 
