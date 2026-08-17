@@ -608,8 +608,9 @@
       Für jeden Raidboss – alle legendären und mysteriösen sowie alle Mega- und Proto-Raids –
       wurden die fünf besten Konter ermittelt: einmal <b>mit Team-Power und bestem Freund</b>,
       einmal <b>ohne beides</b>. Jedes Pokémon zählt dabei als ein Eintrag, unabhängig davon, mit
-      welchem Attackenset es punktet; ein Klick zeigt die Verteilung. Auf der Angreiferseite laufen
-      Mega-Entwicklungen außer Konkurrenz und stehen in einer <b>eigenen dritten Spalte</b>.
+      welchem Attackenset es punktet; ein Klick zeigt die Verteilung. Die ersten zwei Spalten zeigen,
+      was <b>ohne Mega-Energie</b> zur Verfügung steht; die dritte zählt <b>Mega-Entwicklungen nur
+      dann, wenn sie sich auch gegen die normalen Konter durchsetzen</b>.
     </p>
     <div class="tiles" id="tiles"></div>
   </header>
@@ -697,12 +698,16 @@
         <ul>
           <li><b>Mit Team-Power &amp; bestem Freund:</b> <code>numParty=2</code>, <code>friendLevel=FRIENDSHIP_LEVEL_4</code> – ohne Megas</li>
           <li><b>Ohne beides:</b> <code>numParty=1</code>, <code>friendLevel=FRIENDSHIP_LEVEL_0</code> – ohne Megas</li>
-          <li><b>Nur Megas:</b> dieselben zwei Konfigurationen, aber ausschließlich Mega- und Protoformen</li>
+          <li><b>Megas im Gesamtvergleich:</b> dieselben zwei Konfigurationen, aber nur Mega- und
+            Protoformen – und gezählt wird ihre Position <b>unter allen</b> Kontern, nicht nur unter
+            den Megas</li>
         </ul>
         <p style="margin-top:8px">
-          Krypto-Formen sind standardmäßig aus allen drei Spalten genommen und lassen sich oben
-          per Schalter einblenden. Auf die Mega-Spalte hat das keinen Einfluss – Krypto-Megas
-          gibt es nicht.
+          Der Unterschied ist Absicht: die ersten zwei Spalten beantworten „was nehme ich ohne
+          Mega“, deshalb zählen sie innerhalb ihres Pools. Die Mega-Spalte beantwortet „lohnt sich
+          die Mega-Energie“, deshalb muss ein Mega dort auch die Nicht-Megas schlagen.
+          Krypto-Formen sind standardmäßig aus allen Spalten genommen und lassen sich oben per
+          Schalter einblenden; sie zählen dann auch im Gesamtvergleich mit.
         </p>
       </div>
       <div>
@@ -710,7 +715,8 @@
         <p>
           Die drei Abschnitte zählen jede der fünf Platzierungen, nur Platz 1 und 2, und nur
           Platz 1. Alle greifen auf dieselben Trefferlisten zu, deshalb stimmen sie immer
-          überein – die strengeren Zählungen sind Teilmengen der lockeren.
+          überein – die strengeren Zählungen sind Teilmengen der lockeren. In der Mega-Spalte
+          bezieht sich die Platzierung auf den Gesamtvergleich.
         </p>
       </div>
       <div>
@@ -741,8 +747,6 @@
     dark: "#5c4a3f", steel: "#77808c", fairy: "#c25c96"
   };
 
-  /* Welche Trefferlisten eines Bosses zu welcher Spalte gehoeren. */
-  const BOARD_KEYS = { team: ["team"], solo: ["solo"], mega: ["teamMega", "soloMega"] };
   const LABEL = { team: "mit Team-Power", solo: "ohne Boni", mega: "Megas" };
 
   /* Zwei Abschnitte mit identischem Aufbau, nur mit anderer Zaehltiefe. */
@@ -753,8 +757,8 @@
       sub: () => DATA.covered.team + " Bosse · numParty=2" },
     { mode: "solo", cls: "board-solo", title: "Ohne Team-Power &amp; ohne Freundschaftsbonus",
       sub: () => DATA.covered.solo + " Bosse · numParty=1" },
-    { mode: "mega", cls: "board-mega", title: "Nur Mega-Entwicklungen",
-      sub: () => "beide Konfigurationen im Vergleich" }
+    { mode: "mega", cls: "board-mega", title: "Mega-Entwicklungen im Gesamtvergleich",
+      sub: () => "gegen alle Konter gemessen" }
   ];
 
   const state = {
@@ -768,8 +772,18 @@
   const variant = () => (state.shadows ? "withShadow" : "noShadow");
   const RANK = (sec) => DATA.ranking[variant()][sec];
   const PICKS = (boss) => boss.picks[variant()];
-  /* Die Top-2-Wertung liest dieselben Trefferlisten, nur die ersten zwei Eintraege. */
+  /* Die strengeren Wertungen lesen dieselben Trefferlisten, nur die ersten Eintraege. */
   const cut = (picks, sec) => (picks ? picks.slice(0, SECTIONS[sec]) : picks);
+
+  /* Gesamtvergleich: Megas und Nicht-Megas in einer Reihe. Die Vereinigung der beiden
+     Pool-Spitzen enthaelt die tatsaechlich besten fuenf. */
+  function overall(boss, mode) {
+    const p = PICKS(boss);
+    const plain = p[mode];
+    const megas = p[mode === "team" ? "teamMega" : "soloMega"];
+    if (!plain || !megas) return null;
+    return [...plain, ...megas].sort((a, b) => a.estimator - b.estimator).slice(0, 5);
+  }
 
   function chips(types) {
     return '<span class="chips">' + types.map(t =>
@@ -880,10 +894,10 @@
   function movesetStats(sec, id, mega) {
     const out = {};
     for (const mode of ["team", "solo"]) {
-      const key = mega ? (mode === "team" ? "teamMega" : "soloMega") : mode;
       const map = new Map();
       for (const boss of DATA.bosses) {
-        for (const p of cut(PICKS(boss)[key], sec) || []) {
+        const list = mega ? overall(boss, mode) : PICKS(boss)[mode];
+        for (const p of cut(list, sec) || []) {
           if (p.id !== id) continue;
           // Gezaehlt wird das Set, mit dem das Pokemon die Platzierung geholt hat.
           const moves = p.sets[0].moves;
@@ -957,10 +971,14 @@
   function matchesFilter(boss) {
     const f = state.filter;
     if (!f) return true;
-    return BOARD_KEYS[f.mode].some(k => {
-      const picks = cut(PICKS(boss)[k], f.sec);
-      return picks && picks.some(p => p.id === f.id);
-    });
+    if (f.mode === "mega") {
+      return ["team", "solo"].some(mode => {
+        const picks = cut(overall(boss, mode), f.sec);
+        return picks && picks.some(p => p.id === f.id);
+      });
+    }
+    const picks = cut(PICKS(boss)[f.mode], f.sec);
+    return picks && picks.some(p => p.id === f.id);
   }
 
   function renderBosses() {

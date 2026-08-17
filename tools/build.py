@@ -126,6 +126,15 @@ def select(full, mega, shadows):
     return picks
 
 
+def merge(plain, megas):
+    """Gesamtvergleich: Megas und Nicht-Megas in einer Reihe, bester Estimator zuerst.
+
+    Die Vereinigung der beiden Pool-Spitzen enthaelt die tatsaechlich besten TOP_N,
+    deshalb genuegt es, die zwei fertigen Listen zusammenzulegen.
+    """
+    return sorted(plain + megas, key=lambda c: c["estimator"])[:TOP_N]
+
+
 def main():
     raw = json.load(open(os.path.join(DATA, "counters.json")))
     tiers = {b["id"]: b["tier"] for b in json.load(open(os.path.join(DATA, "bosses.json")))}
@@ -170,20 +179,38 @@ def main():
         for variant, shadows in VARIANTS.items():
             for mode in MODES:
                 full = raw[boss_id].get(mode)
+                pools = {}
                 for mega in (False, True):
                     key = KEYS[(mode, mega)]
                     if not full:
                         entry["picks"][variant][key] = None
                         continue
-                    picks = select(full, mega, shadows)
-                    entry["picks"][variant][key] = [counter(c) for c in picks]
-                    for depth, n in DEPTHS.items():
-                        for rank, c in enumerate(picks[:n]):
-                            pid = c["pokemonId"]
-                            tally[variant][depth][key][pid] += 1
-                            points[variant][depth][key][pid] += n - rank
-                            if rank == 0:
-                                top1[variant][depth][key][pid] += 1
+                    pools[mega] = select(full, mega, shadows)
+                    entry["picks"][variant][key] = [counter(c) for c in pools[mega]]
+                if not full:
+                    continue
+                # Ohne Megas: Position innerhalb des eigenen Pools.
+                key = KEYS[(mode, False)]
+                for depth, n in DEPTHS.items():
+                    for rank, c in enumerate(pools[False][:n]):
+                        pid = c["pokemonId"]
+                        tally[variant][depth][key][pid] += 1
+                        points[variant][depth][key][pid] += n - rank
+                        if rank == 0:
+                            top1[variant][depth][key][pid] += 1
+                # Megas: Position im Gesamtvergleich. Ein Mega zaehlt nur, wenn es sich
+                # auch gegen die Nicht-Megas durchsetzt.
+                key = KEYS[(mode, True)]
+                overall = merge(pools[False], pools[True])
+                for depth, n in DEPTHS.items():
+                    for rank, c in enumerate(overall[:n]):
+                        pid = c["pokemonId"]
+                        if not is_mega(pid):
+                            continue
+                        tally[variant][depth][key][pid] += 1
+                        points[variant][depth][key][pid] += n - rank
+                        if rank == 0:
+                            top1[variant][depth][key][pid] += 1
         bosses.append(entry)
 
     def ranking(variant, depth, key):

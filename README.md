@@ -3,8 +3,8 @@
 Auswertung der **Top-5-Konter aller legendären und mysteriösen Raidbosse sowie aller
 Mega- und Proto-Raids** auf Basis der
 [Pokebattler](https://www.pokebattler.com/)-Simulations-API – einmal **mit Team-Power und
-bestem Freund**, einmal **ohne beides**. Auf der Angreiferseite laufen Mega-Entwicklungen
-außer Konkurrenz und stehen in einer eigenen dritten Spalte.
+bestem Freund**, einmal **ohne beides**. Mega-Entwicklungen stehen in einer eigenen dritten
+Spalte und zählen dort nur, wenn sie sich auch gegen die normalen Konter durchsetzen.
 
 Ergebnis ist eine statische Website (`index.html`, keine Abhängigkeiten, kein Build-Tooling)
 mit drei Ranglisten-Abschnitten – über alle fünf Platzierungen, nur über Platz 1 und 2, und nur
@@ -40,7 +40,7 @@ mit drei Ranglisten-Abschnitten – über alle fünf Platzierungen, nur über Pl
 |---|---|---|---|---|
 | **Mit Boni** | ja (Gruppengröße 2) | bester Freund | ohne Megas | `numParty=2`, `friendLevel=FRIENDSHIP_LEVEL_4` |
 | **Ohne Boni** | nein | keine | ohne Megas | `numParty=1`, `friendLevel=FRIENDSHIP_LEVEL_0` |
-| **Nur Megas** | beide Konfigurationen im Vergleich | | nur Megas | – |
+| **Megas im Gesamtvergleich** | beide Konfigurationen | | nur Megas, gemessen an allen | – |
 
 Sonst identisch: jeder Boss in seiner eigenen Raid-Stufe (`RAID_LEVEL_5`, `RAID_LEVEL_MEGA`,
 `RAID_LEVEL_MEGA_5` oder `RAID_LEVEL_ELITE`), Angreifer auf Level 40, Strategie
@@ -57,6 +57,13 @@ Teilmengen der lockeren.
 Gezählt wird immer **pro Pokémon**, nicht pro Attackenset: Mega-Mewtu Y mit Spukball und
 Mega-Mewtu Y mit Eisstrahl sind ein Eintrag in der Rangliste. Welches Set wie oft zum Zug
 kam, zeigt die Klick-Box.
+
+Die Platzierung wird je Spalte unterschiedlich gemessen, und das ist Absicht. Die ersten zwei
+Spalten beantworten „was nehme ich ohne Mega“ und zählen deshalb innerhalb ihres Pools. Die
+Mega-Spalte beantwortet „lohnt sich die Mega-Energie“ – dort zählt die Position im
+**Gesamtvergleich**: `merge()` legt die Spitzen beider Pools zusammen, und ein Mega bekommt
+seine Platzierung nur, wenn es auch die Nicht-Megas schlägt. Gegen Rayquaza etwa liegt
+Mega-Mewtu Y mit Eisstrahl hinter beiden Kyurem-Formen und zählt dort nicht als Platz 1.
 
 Als Mega zählen alle IDs mit `_MEGA` sowie Proto-Groudon und Proto-Kyogre (`_PRIMAL`) –
 in Pokémon GO dieselbe Mechanik. Als Krypto zählen alle IDs mit `_SHADOW_FORM`. Auf die

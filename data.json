@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-14",
+ "generated": "2026-08-17",
  "bosses": [
   {
    "id": "VENUSAUR_MEGA",
@@ -93272,11 +93272,11 @@
         "name": "Psycho"
        }
       ],
-      "team": 80,
-      "solo": 82,
-      "teamFirst": 31,
-      "soloFirst": 28,
-      "points": 571
+      "team": 49,
+      "solo": 53,
+      "teamFirst": 9,
+      "soloFirst": 12,
+      "points": 331
      },
      {
       "id": "MEWTWO_MEGA_X",
@@ -93291,30 +93291,11 @@
         "name": "Kampf"
        }
       ],
-      "team": 65,
-      "solo": 76,
-      "teamFirst": 8,
-      "soloFirst": 9,
-      "points": 445
-     },
-     {
-      "id": "RAYQUAZA_MEGA",
-      "name": "Mega-Rayquaza",
-      "types": [
-       {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 34,
-      "solo": 44,
-      "teamFirst": 13,
-      "soloFirst": 18,
-      "points": 278
+      "team": 42,
+      "solo": 54,
+      "teamFirst": 6,
+      "soloFirst": 7,
+      "points": 287
      },
      {
       "id": "GROUDON_PRIMAL",
@@ -93329,11 +93310,30 @@
         "name": "Feuer"
        }
       ],
-      "team": 46,
-      "solo": 31,
-      "teamFirst": 26,
+      "team": 33,
+      "solo": 24,
+      "teamFirst": 20,
       "soloFirst": 8,
-      "points": 265
+      "points": 215
+     },
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ],
+      "team": 21,
+      "solo": 32,
+      "teamFirst": 2,
+      "soloFirst": 7,
+      "points": 169
      },
      {
       "id": "GARCHOMP_MEGA",
@@ -93348,30 +93348,11 @@
         "name": "Boden"
        }
       ],
-      "team": 38,
-      "solo": 27,
+      "team": 24,
+      "solo": 22,
       "teamFirst": 0,
-      "soloFirst": 1,
-      "points": 191
-     },
-     {
-      "id": "TYRANITAR_MEGA",
-      "name": "Mega-Despotar",
-      "types": [
-       {
-        "id": "rock",
-        "name": "Gestein"
-       },
-       {
-        "id": "dark",
-        "name": "Unlicht"
-       }
-      ],
-      "team": 28,
-      "solo": 34,
-      "teamFirst": 4,
-      "soloFirst": 9,
-      "points": 212
+      "soloFirst": 0,
+      "points": 123
      },
      {
       "id": "BLAZIKEN_MEGA",
@@ -93386,30 +93367,30 @@
         "name": "Kampf"
        }
       ],
-      "team": 21,
-      "solo": 29,
+      "team": 12,
+      "solo": 26,
       "teamFirst": 3,
       "soloFirst": 10,
-      "points": 169
+      "points": 134
      },
      {
-      "id": "GENGAR_MEGA",
-      "name": "Mega-Gengar",
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
       "types": [
        {
-        "id": "ghost",
-        "name": "Geist"
+        "id": "rock",
+        "name": "Gestein"
        },
        {
-        "id": "poison",
-        "name": "Gift"
+        "id": "dark",
+        "name": "Unlicht"
        }
       ],
-      "team": 24,
-      "solo": 23,
-      "teamFirst": 1,
-      "soloFirst": 1,
-      "points": 112
+      "team": 12,
+      "solo": 26,
+      "teamFirst": 2,
+      "soloFirst": 3,
+      "points": 117
      },
      {
       "id": "LUCARIO_MEGA",
@@ -93424,26 +93405,11 @@
         "name": "Stahl"
        }
       ],
-      "team": 16,
-      "solo": 29,
+      "team": 9,
+      "solo": 21,
       "teamFirst": 0,
-      "soloFirst": 9,
-      "points": 142
-     },
-     {
-      "id": "KYOGRE_PRIMAL",
-      "name": "Proto-Kyogre",
-      "types": [
-       {
-        "id": "water",
-        "name": "Wasser"
-       }
-      ],
-      "team": 18,
-      "solo": 18,
-      "teamFirst": 4,
-      "soloFirst": 5,
-      "points": 96
+      "soloFirst": 7,
+      "points": 80
      },
      {
       "id": "CHARIZARD_MEGA_Y",
@@ -93458,11 +93424,26 @@
         "name": "Flug"
        }
       ],
-      "team": 13,
-      "solo": 19,
+      "team": 7,
+      "solo": 14,
       "teamFirst": 1,
       "soloFirst": 0,
-      "points": 89
+      "points": 66
+     },
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       }
+      ],
+      "team": 8,
+      "solo": 10,
+      "teamFirst": 2,
+      "soloFirst": 4,
+      "points": 55
      },
      {
       "id": "HERACROSS_MEGA",
@@ -93477,83 +93458,11 @@
         "name": "Kampf"
        }
       ],
-      "team": 20,
-      "solo": 8,
-      "teamFirst": 6,
-      "soloFirst": 1,
-      "points": 79
-     },
-     {
-      "id": "DIANCIE_MEGA",
-      "name": "Mega-Diancie",
-      "types": [
-       {
-        "id": "rock",
-        "name": "Gestein"
-       },
-       {
-        "id": "fairy",
-        "name": "Fee"
-       }
-      ],
-      "team": 13,
-      "solo": 14,
+      "team": 12,
+      "solo": 4,
       "teamFirst": 2,
-      "soloFirst": 5,
-      "points": 88
-     },
-     {
-      "id": "SALAMENCE_MEGA",
-      "name": "Mega-Brutalanda",
-      "types": [
-       {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 13,
-      "solo": 14,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 54
-     },
-     {
-      "id": "RAICHU_MEGA_Y",
-      "name": "Mega-Raichu Y",
-      "types": [
-       {
-        "id": "electric",
-        "name": "Elektro"
-       }
-      ],
-      "team": 11,
-      "solo": 13,
-      "teamFirst": 2,
-      "soloFirst": 2,
-      "points": 72
-     },
-     {
-      "id": "GARDEVOIR_MEGA",
-      "name": "Mega-Guardevoir",
-      "types": [
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       },
-       {
-        "id": "fairy",
-        "name": "Fee"
-       }
-      ],
-      "team": 7,
-      "solo": 16,
-      "teamFirst": 0,
       "soloFirst": 1,
-      "points": 47
+      "points": 45
      },
      {
       "id": "METAGROSS_MEGA",
@@ -93568,11 +93477,49 @@
         "name": "Psycho"
        }
       ],
-      "team": 10,
-      "solo": 11,
-      "teamFirst": 8,
-      "soloFirst": 7,
-      "points": 92
+      "team": 7,
+      "solo": 9,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 23
+     },
+     {
+      "id": "DIANCIE_MEGA",
+      "name": "Mega-Diancie",
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ],
+      "team": 5,
+      "solo": 10,
+      "teamFirst": 2,
+      "soloFirst": 4,
+      "points": 49
+     },
+     {
+      "id": "GENGAR_MEGA",
+      "name": "Mega-Gengar",
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 6,
+      "solo": 9,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 34
      },
      {
       "id": "SWAMPERT_MEGA",
@@ -93587,83 +93534,11 @@
         "name": "Boden"
        }
       ],
-      "team": 14,
-      "solo": 7,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 54
-     },
-     {
-      "id": "DRAGONITE_MEGA",
-      "name": "Mega-Dragoran",
-      "types": [
-       {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 13,
+      "team": 7,
       "solo": 4,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 40
-     },
-     {
-      "id": "ABSOL_MEGA",
-      "name": "Mega-Absol",
-      "types": [
-       {
-        "id": "dark",
-        "name": "Unlicht"
-       }
-      ],
-      "team": 2,
-      "solo": 15,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 30
-     },
-     {
-      "id": "SCEPTILE_MEGA",
-      "name": "Mega-Gewaldro",
-      "types": [
-       {
-        "id": "grass",
-        "name": "Pflanze"
-       },
-       {
-        "id": "dragon",
-        "name": "Drache"
-       }
-      ],
-      "team": 8,
-      "solo": 8,
-      "teamFirst": 2,
-      "soloFirst": 2,
-      "points": 44
-     },
-     {
-      "id": "HOUNDOOM_MEGA",
-      "name": "Mega-Hundemon",
-      "types": [
-       {
-        "id": "dark",
-        "name": "Unlicht"
-       },
-       {
-        "id": "fire",
-        "name": "Feuer"
-       }
-      ],
-      "team": 5,
-      "solo": 11,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 25
+      "points": 26
      },
      {
       "id": "CHARIZARD_MEGA_X",
@@ -93678,11 +93553,79 @@
         "name": "Drache"
        }
       ],
-      "team": 7,
+      "team": 3,
       "solo": 7,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 34
+      "points": 10
+     },
+     {
+      "id": "SCEPTILE_MEGA",
+      "name": "Mega-Gewaldro",
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ],
+      "team": 4,
+      "solo": 5,
+      "teamFirst": 1,
+      "soloFirst": 2,
+      "points": 32
+     },
+     {
+      "id": "RAICHU_MEGA_Y",
+      "name": "Mega-Raichu Y",
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ],
+      "team": 3,
+      "solo": 6,
+      "teamFirst": 0,
+      "soloFirst": 1,
+      "points": 21
+     },
+     {
+      "id": "SALAMENCE_MEGA",
+      "name": "Mega-Brutalanda",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ],
+      "team": 2,
+      "solo": 7,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 16
+     },
+     {
+      "id": "ABSOL_MEGA",
+      "name": "Mega-Absol",
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ],
+      "team": 0,
+      "solo": 9,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 14
      },
      {
       "id": "AERODACTYL_MEGA",
@@ -93697,11 +93640,11 @@
         "name": "Flug"
        }
       ],
-      "team": 5,
-      "solo": 5,
+      "team": 2,
+      "solo": 4,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 31
+      "points": 17
      },
      {
       "id": "VENUSAUR_MEGA",
@@ -93716,83 +93659,11 @@
         "name": "Gift"
        }
       ],
-      "team": 6,
-      "solo": 4,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 28
-     },
-     {
-      "id": "AGGRON_MEGA",
-      "name": "Mega-Stolloss",
-      "types": [
-       {
-        "id": "steel",
-        "name": "Stahl"
-       }
-      ],
-      "team": 8,
-      "solo": 1,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 16
-     },
-     {
-      "id": "LATIOS_MEGA",
-      "name": "Mega-Latios",
-      "types": [
-       {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       }
-      ],
-      "team": 4,
+      "team": 2,
       "solo": 3,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 12
-     },
-     {
-      "id": "ABOMASNOW_MEGA",
-      "name": "Mega-Rexblisar",
-      "types": [
-       {
-        "id": "grass",
-        "name": "Pflanze"
-       },
-       {
-        "id": "ice",
-        "name": "Eis"
-       }
-      ],
-      "team": 3,
-      "solo": 4,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 11
-     },
-     {
-      "id": "BEEDRILL_MEGA",
-      "name": "Mega-Bibor",
-      "types": [
-       {
-        "id": "bug",
-        "name": "Käfer"
-       },
-       {
-        "id": "poison",
-        "name": "Gift"
-       }
-      ],
-      "team": 2,
-      "solo": 4,
-      "teamFirst": 0,
-      "soloFirst": 1,
-      "points": 16
+      "points": 14
      },
      {
       "id": "BLASTOISE_MEGA",
@@ -93803,117 +93674,30 @@
         "name": "Wasser"
        }
       ],
-      "team": 3,
+      "team": 2,
       "solo": 3,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 14
+      "points": 13
      },
      {
-      "id": "BANETTE_MEGA",
-      "name": "Mega-Banette",
-      "types": [
-       {
-        "id": "ghost",
-        "name": "Geist"
-       }
-      ],
-      "team": 4,
-      "solo": 2,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 6
-     },
-     {
-      "id": "VICTREEBEL_MEGA",
-      "name": "Mega-Sarzenia",
-      "types": [
-       {
-        "id": "grass",
-        "name": "Pflanze"
-       },
-       {
-        "id": "poison",
-        "name": "Gift"
-       }
-      ],
-      "team": 2,
-      "solo": 2,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 8
-     },
-     {
-      "id": "GALLADE_MEGA",
-      "name": "Mega-Galagladi",
+      "id": "GARDEVOIR_MEGA",
+      "name": "Mega-Guardevoir",
       "types": [
        {
         "id": "psychic",
         "name": "Psycho"
        },
        {
-        "id": "fighting",
-        "name": "Kampf"
-       }
-      ],
-      "team": 3,
-      "solo": 1,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 6
-     },
-     {
-      "id": "ALAKAZAM_MEGA",
-      "name": "Mega-Simsala",
-      "types": [
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       }
-      ],
-      "team": 3,
-      "solo": 1,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 6
-     },
-     {
-      "id": "STARMIE_MEGA",
-      "name": "Mega-Starmie",
-      "types": [
-       {
-        "id": "water",
-        "name": "Wasser"
-       },
-       {
-        "id": "psychic",
-        "name": "Psycho"
+        "id": "fairy",
+        "name": "Fee"
        }
       ],
       "team": 0,
       "solo": 4,
       "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 4
-     },
-     {
-      "id": "PIDGEOT_MEGA",
-      "name": "Mega-Tauboss",
-      "types": [
-       {
-        "id": "normal",
-        "name": "Normal"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 2,
-      "solo": 2,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 4
+      "soloFirst": 1,
+      "points": 8
      },
      {
       "id": "GYARADOS_MEGA",
@@ -93935,19 +93719,42 @@
       "points": 6
      },
      {
-      "id": "MANECTRIC_MEGA",
-      "name": "Mega-Voltenso",
+      "id": "HOUNDOOM_MEGA",
+      "name": "Mega-Hundemon",
       "types": [
        {
-        "id": "electric",
-        "name": "Elektro"
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
        }
       ],
       "team": 0,
       "solo": 3,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 6
+      "points": 5
+     },
+     {
+      "id": "LATIOS_MEGA",
+      "name": "Mega-Latios",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ],
+      "team": 2,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 5
      },
      {
       "id": "PINSIR_MEGA",
@@ -93988,16 +93795,92 @@
       "points": 6
      },
      {
-      "id": "RAICHU_MEGA_X",
-      "name": "Mega-Raichu X",
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
       "types": [
        {
-        "id": "electric",
-        "name": "Elektro"
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 1,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 5
+     },
+     {
+      "id": "ALAKAZAM_MEGA",
+      "name": "Mega-Simsala",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ],
+      "team": 1,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 4
+     },
+     {
+      "id": "DRAGONITE_MEGA",
+      "name": "Mega-Dragoran",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ],
+      "team": 2,
+      "solo": 0,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 3
+     },
+     {
+      "id": "GALLADE_MEGA",
+      "name": "Mega-Galagladi",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
        }
       ],
       "team": 1,
       "solo": 0,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 1
+     },
+     {
+      "id": "VICTREEBEL_MEGA",
+      "name": "Mega-Sarzenia",
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
       "teamFirst": 0,
       "soloFirst": 0,
       "points": 1
@@ -95102,11 +94985,11 @@
         "name": "Psycho"
        }
       ],
-      "team": 49,
-      "solo": 45,
-      "teamFirst": 31,
-      "soloFirst": 28,
-      "points": 153
+      "team": 20,
+      "solo": 25,
+      "teamFirst": 9,
+      "soloFirst": 12,
+      "points": 66
      },
      {
       "id": "MEWTWO_MEGA_X",
@@ -95121,30 +95004,11 @@
         "name": "Kampf"
        }
       ],
-      "team": 36,
-      "solo": 31,
-      "teamFirst": 8,
-      "soloFirst": 9,
-      "points": 84
-     },
-     {
-      "id": "RAYQUAZA_MEGA",
-      "name": "Mega-Rayquaza",
-      "types": [
-       {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
       "team": 18,
-      "solo": 25,
-      "teamFirst": 13,
-      "soloFirst": 18,
-      "points": 74
+      "solo": 21,
+      "teamFirst": 6,
+      "soloFirst": 7,
+      "points": 52
      },
      {
       "id": "GROUDON_PRIMAL",
@@ -95159,49 +95023,30 @@
         "name": "Feuer"
        }
       ],
-      "team": 27,
+      "team": 25,
       "solo": 9,
-      "teamFirst": 26,
+      "teamFirst": 20,
       "soloFirst": 8,
-      "points": 70
+      "points": 62
      },
      {
-      "id": "TYRANITAR_MEGA",
-      "name": "Mega-Despotar",
-      "types": [
-       {
-        "id": "rock",
-        "name": "Gestein"
-       },
-       {
-        "id": "dark",
-        "name": "Unlicht"
-       }
-      ],
-      "team": 12,
-      "solo": 18,
-      "teamFirst": 4,
-      "soloFirst": 9,
-      "points": 43
-     },
-     {
-      "id": "GARCHOMP_MEGA",
-      "name": "Mega-Knakrack",
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
       "types": [
        {
         "id": "dragon",
         "name": "Drache"
        },
        {
-        "id": "ground",
-        "name": "Boden"
+        "id": "flying",
+        "name": "Flug"
        }
       ],
-      "team": 12,
-      "solo": 18,
-      "teamFirst": 0,
-      "soloFirst": 1,
-      "points": 31
+      "team": 5,
+      "solo": 22,
+      "teamFirst": 2,
+      "soloFirst": 7,
+      "points": 36
      },
      {
       "id": "BLAZIKEN_MEGA",
@@ -95216,11 +95061,49 @@
         "name": "Kampf"
        }
       ],
-      "team": 9,
-      "solo": 18,
+      "team": 6,
+      "solo": 14,
       "teamFirst": 3,
       "soloFirst": 10,
-      "points": 40
+      "points": 33
+     },
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ],
+      "team": 4,
+      "solo": 12,
+      "teamFirst": 2,
+      "soloFirst": 3,
+      "points": 21
+     },
+     {
+      "id": "GARCHOMP_MEGA",
+      "name": "Mega-Knakrack",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "ground",
+        "name": "Boden"
+       }
+      ],
+      "team": 6,
+      "solo": 6,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 12
      },
      {
       "id": "LUCARIO_MEGA",
@@ -95235,30 +95118,11 @@
         "name": "Stahl"
        }
       ],
-      "team": 4,
-      "solo": 16,
+      "team": 0,
+      "solo": 11,
       "teamFirst": 0,
-      "soloFirst": 9,
-      "points": 29
-     },
-     {
-      "id": "METAGROSS_MEGA",
-      "name": "Mega-Metagross",
-      "types": [
-       {
-        "id": "steel",
-        "name": "Stahl"
-       },
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       }
-      ],
-      "team": 8,
-      "solo": 9,
-      "teamFirst": 8,
       "soloFirst": 7,
-      "points": 32
+      "points": 18
      },
      {
       "id": "CHARIZARD_MEGA_Y",
@@ -95274,10 +95138,10 @@
        }
       ],
       "team": 4,
-      "solo": 10,
+      "solo": 6,
       "teamFirst": 1,
       "soloFirst": 0,
-      "points": 15
+      "points": 11
      },
      {
       "id": "DIANCIE_MEGA",
@@ -95292,45 +95156,11 @@
         "name": "Fee"
        }
       ],
-      "team": 4,
-      "solo": 8,
-      "teamFirst": 2,
-      "soloFirst": 5,
-      "points": 19
-     },
-     {
-      "id": "RAICHU_MEGA_Y",
-      "name": "Mega-Raichu Y",
-      "types": [
-       {
-        "id": "electric",
-        "name": "Elektro"
-       }
-      ],
-      "team": 5,
+      "team": 2,
       "solo": 5,
       "teamFirst": 2,
-      "soloFirst": 2,
-      "points": 14
-     },
-     {
-      "id": "GENGAR_MEGA",
-      "name": "Mega-Gengar",
-      "types": [
-       {
-        "id": "ghost",
-        "name": "Geist"
-       },
-       {
-        "id": "poison",
-        "name": "Gift"
-       }
-      ],
-      "team": 7,
-      "solo": 3,
-      "teamFirst": 1,
-      "soloFirst": 1,
-      "points": 12
+      "soloFirst": 4,
+      "points": 13
      },
      {
       "id": "KYOGRE_PRIMAL",
@@ -95341,11 +95171,11 @@
         "name": "Wasser"
        }
       ],
-      "team": 4,
-      "solo": 5,
-      "teamFirst": 4,
-      "soloFirst": 5,
-      "points": 18
+      "team": 3,
+      "solo": 4,
+      "teamFirst": 2,
+      "soloFirst": 4,
+      "points": 13
      },
      {
       "id": "HERACROSS_MEGA",
@@ -95360,11 +95190,11 @@
         "name": "Kampf"
        }
       ],
-      "team": 7,
+      "team": 5,
       "solo": 1,
-      "teamFirst": 6,
+      "teamFirst": 2,
       "soloFirst": 1,
-      "points": 15
+      "points": 9
      },
      {
       "id": "SCEPTILE_MEGA",
@@ -95379,30 +95209,11 @@
         "name": "Drache"
        }
       ],
-      "team": 3,
-      "solo": 3,
-      "teamFirst": 2,
+      "team": 2,
+      "solo": 2,
+      "teamFirst": 1,
       "soloFirst": 2,
-      "points": 10
-     },
-     {
-      "id": "DRAGONITE_MEGA",
-      "name": "Mega-Dragoran",
-      "types": [
-       {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 5,
-      "solo": 0,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 5
+      "points": 7
      },
      {
       "id": "SWAMPERT_MEGA",
@@ -95417,61 +95228,19 @@
         "name": "Boden"
        }
       ],
-      "team": 3,
+      "team": 2,
       "solo": 2,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 5
+      "points": 4
      },
      {
-      "id": "SALAMENCE_MEGA",
-      "name": "Mega-Brutalanda",
+      "id": "RAICHU_MEGA_Y",
+      "name": "Mega-Raichu Y",
       "types": [
        {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 1,
-      "solo": 2,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 3
-     },
-     {
-      "id": "BEEDRILL_MEGA",
-      "name": "Mega-Bibor",
-      "types": [
-       {
-        "id": "bug",
-        "name": "Käfer"
-       },
-       {
-        "id": "poison",
-        "name": "Gift"
-       }
-      ],
-      "team": 1,
-      "solo": 1,
-      "teamFirst": 0,
-      "soloFirst": 1,
-      "points": 3
-     },
-     {
-      "id": "GARDEVOIR_MEGA",
-      "name": "Mega-Guardevoir",
-      "types": [
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       },
-       {
-        "id": "fairy",
-        "name": "Fee"
+        "id": "electric",
+        "name": "Elektro"
        }
       ],
       "team": 0,
@@ -95479,25 +95248,6 @@
       "teamFirst": 0,
       "soloFirst": 1,
       "points": 3
-     },
-     {
-      "id": "AERODACTYL_MEGA",
-      "name": "Mega-Aerodactyl",
-      "types": [
-       {
-        "id": "rock",
-        "name": "Gestein"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 1,
-      "solo": 1,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 2
      },
      {
       "id": "VENUSAUR_MEGA",
@@ -95536,6 +95286,82 @@
       "teamFirst": 0,
       "soloFirst": 0,
       "points": 2
+     },
+     {
+      "id": "GARDEVOIR_MEGA",
+      "name": "Mega-Guardevoir",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 1,
+      "points": 2
+     },
+     {
+      "id": "AERODACTYL_MEGA",
+      "name": "Mega-Aerodactyl",
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 1
+     },
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 1
+     },
+     {
+      "id": "GENGAR_MEGA",
+      "name": "Mega-Gengar",
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 1
      }
     ]
    },
@@ -96160,21 +95986,6 @@
     ],
     "mega": [
      {
-      "id": "MEWTWO_MEGA_Y",
-      "name": "Mega-Mewtu Y",
-      "types": [
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       }
-      ],
-      "team": 31,
-      "solo": 28,
-      "teamFirst": 31,
-      "soloFirst": 28,
-      "points": 59
-     },
-     {
       "id": "GROUDON_PRIMAL",
       "name": "Proto-Groudon",
       "types": [
@@ -96187,87 +95998,26 @@
         "name": "Feuer"
        }
       ],
-      "team": 26,
+      "team": 20,
       "solo": 8,
-      "teamFirst": 26,
+      "teamFirst": 20,
       "soloFirst": 8,
-      "points": 34
+      "points": 28
      },
      {
-      "id": "RAYQUAZA_MEGA",
-      "name": "Mega-Rayquaza",
-      "types": [
-       {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 13,
-      "solo": 18,
-      "teamFirst": 13,
-      "soloFirst": 18,
-      "points": 31
-     },
-     {
-      "id": "MEWTWO_MEGA_X",
-      "name": "Mega-Mewtu X",
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
       "types": [
        {
         "id": "psychic",
         "name": "Psycho"
-       },
-       {
-        "id": "fighting",
-        "name": "Kampf"
        }
       ],
-      "team": 8,
-      "solo": 9,
-      "teamFirst": 8,
-      "soloFirst": 9,
-      "points": 17
-     },
-     {
-      "id": "METAGROSS_MEGA",
-      "name": "Mega-Metagross",
-      "types": [
-       {
-        "id": "steel",
-        "name": "Stahl"
-       },
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       }
-      ],
-      "team": 8,
-      "solo": 7,
-      "teamFirst": 8,
-      "soloFirst": 7,
-      "points": 15
-     },
-     {
-      "id": "TYRANITAR_MEGA",
-      "name": "Mega-Despotar",
-      "types": [
-       {
-        "id": "rock",
-        "name": "Gestein"
-       },
-       {
-        "id": "dark",
-        "name": "Unlicht"
-       }
-      ],
-      "team": 4,
-      "solo": 9,
-      "teamFirst": 4,
-      "soloFirst": 9,
-      "points": 13
+      "team": 9,
+      "solo": 12,
+      "teamFirst": 9,
+      "soloFirst": 12,
+      "points": 21
      },
      {
       "id": "BLAZIKEN_MEGA",
@@ -96289,6 +96039,44 @@
       "points": 13
      },
      {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "team": 6,
+      "solo": 7,
+      "teamFirst": 6,
+      "soloFirst": 7,
+      "points": 13
+     },
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ],
+      "team": 2,
+      "solo": 7,
+      "teamFirst": 2,
+      "soloFirst": 7,
+      "points": 9
+     },
+     {
       "id": "LUCARIO_MEGA",
       "name": "Mega-Lucario",
       "types": [
@@ -96302,25 +96090,10 @@
        }
       ],
       "team": 0,
-      "solo": 9,
+      "solo": 7,
       "teamFirst": 0,
-      "soloFirst": 9,
-      "points": 9
-     },
-     {
-      "id": "KYOGRE_PRIMAL",
-      "name": "Proto-Kyogre",
-      "types": [
-       {
-        "id": "water",
-        "name": "Wasser"
-       }
-      ],
-      "team": 4,
-      "solo": 5,
-      "teamFirst": 4,
-      "soloFirst": 5,
-      "points": 9
+      "soloFirst": 7,
+      "points": 7
      },
      {
       "id": "DIANCIE_MEGA",
@@ -96336,29 +96109,44 @@
        }
       ],
       "team": 2,
-      "solo": 5,
+      "solo": 4,
       "teamFirst": 2,
-      "soloFirst": 5,
-      "points": 7
+      "soloFirst": 4,
+      "points": 6
      },
      {
-      "id": "HERACROSS_MEGA",
-      "name": "Mega-Skaraborn",
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
       "types": [
        {
-        "id": "bug",
-        "name": "Käfer"
-       },
-       {
-        "id": "fighting",
-        "name": "Kampf"
+        "id": "water",
+        "name": "Wasser"
        }
       ],
-      "team": 6,
-      "solo": 1,
-      "teamFirst": 6,
-      "soloFirst": 1,
-      "points": 7
+      "team": 2,
+      "solo": 4,
+      "teamFirst": 2,
+      "soloFirst": 4,
+      "points": 6
+     },
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ],
+      "team": 2,
+      "solo": 3,
+      "teamFirst": 2,
+      "soloFirst": 3,
+      "points": 5
      },
      {
       "id": "SCEPTILE_MEGA",
@@ -96373,64 +96161,30 @@
         "name": "Drache"
        }
       ],
-      "team": 2,
-      "solo": 2,
-      "teamFirst": 2,
-      "soloFirst": 2,
-      "points": 4
-     },
-     {
-      "id": "RAICHU_MEGA_Y",
-      "name": "Mega-Raichu Y",
-      "types": [
-       {
-        "id": "electric",
-        "name": "Elektro"
-       }
-      ],
-      "team": 2,
-      "solo": 2,
-      "teamFirst": 2,
-      "soloFirst": 2,
-      "points": 4
-     },
-     {
-      "id": "GENGAR_MEGA",
-      "name": "Mega-Gengar",
-      "types": [
-       {
-        "id": "ghost",
-        "name": "Geist"
-       },
-       {
-        "id": "poison",
-        "name": "Gift"
-       }
-      ],
       "team": 1,
-      "solo": 1,
+      "solo": 2,
       "teamFirst": 1,
-      "soloFirst": 1,
-      "points": 2
+      "soloFirst": 2,
+      "points": 3
      },
      {
-      "id": "BEEDRILL_MEGA",
-      "name": "Mega-Bibor",
+      "id": "HERACROSS_MEGA",
+      "name": "Mega-Skaraborn",
       "types": [
        {
         "id": "bug",
         "name": "Käfer"
        },
        {
-        "id": "poison",
-        "name": "Gift"
+        "id": "fighting",
+        "name": "Kampf"
        }
       ],
-      "team": 0,
+      "team": 2,
       "solo": 1,
-      "teamFirst": 0,
+      "teamFirst": 2,
       "soloFirst": 1,
-      "points": 1
+      "points": 3
      },
      {
       "id": "CHARIZARD_MEGA_Y",
@@ -96471,16 +96225,12 @@
       "points": 1
      },
      {
-      "id": "GARCHOMP_MEGA",
-      "name": "Mega-Knakrack",
+      "id": "RAICHU_MEGA_Y",
+      "name": "Mega-Raichu Y",
       "types": [
        {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "ground",
-        "name": "Boden"
+        "id": "electric",
+        "name": "Elektro"
        }
       ],
       "team": 0,
@@ -99140,11 +98890,11 @@
         "name": "Psycho"
        }
       ],
-      "team": 80,
-      "solo": 82,
-      "teamFirst": 31,
-      "soloFirst": 28,
-      "points": 571
+      "team": 44,
+      "solo": 47,
+      "teamFirst": 8,
+      "soloFirst": 12,
+      "points": 288
      },
      {
       "id": "MEWTWO_MEGA_X",
@@ -99159,30 +98909,11 @@
         "name": "Kampf"
        }
       ],
-      "team": 65,
-      "solo": 76,
-      "teamFirst": 8,
-      "soloFirst": 9,
-      "points": 445
-     },
-     {
-      "id": "RAYQUAZA_MEGA",
-      "name": "Mega-Rayquaza",
-      "types": [
-       {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 34,
-      "solo": 44,
-      "teamFirst": 13,
-      "soloFirst": 18,
-      "points": 278
+      "team": 37,
+      "solo": 45,
+      "teamFirst": 6,
+      "soloFirst": 7,
+      "points": 262
      },
      {
       "id": "GROUDON_PRIMAL",
@@ -99197,11 +98928,30 @@
         "name": "Feuer"
        }
       ],
-      "team": 46,
-      "solo": 31,
-      "teamFirst": 26,
+      "team": 33,
+      "solo": 24,
+      "teamFirst": 17,
       "soloFirst": 8,
-      "points": 265
+      "points": 208
+     },
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ],
+      "team": 19,
+      "solo": 29,
+      "teamFirst": 2,
+      "soloFirst": 7,
+      "points": 158
      },
      {
       "id": "GARCHOMP_MEGA",
@@ -99216,30 +98966,11 @@
         "name": "Boden"
        }
       ],
-      "team": 38,
-      "solo": 27,
+      "team": 19,
+      "solo": 21,
       "teamFirst": 0,
-      "soloFirst": 1,
-      "points": 191
-     },
-     {
-      "id": "TYRANITAR_MEGA",
-      "name": "Mega-Despotar",
-      "types": [
-       {
-        "id": "rock",
-        "name": "Gestein"
-       },
-       {
-        "id": "dark",
-        "name": "Unlicht"
-       }
-      ],
-      "team": 28,
-      "solo": 34,
-      "teamFirst": 4,
-      "soloFirst": 9,
-      "points": 212
+      "soloFirst": 0,
+      "points": 101
      },
      {
       "id": "BLAZIKEN_MEGA",
@@ -99254,30 +98985,30 @@
         "name": "Kampf"
        }
       ],
-      "team": 21,
-      "solo": 29,
-      "teamFirst": 3,
-      "soloFirst": 10,
-      "points": 169
+      "team": 10,
+      "solo": 24,
+      "teamFirst": 0,
+      "soloFirst": 4,
+      "points": 116
      },
      {
-      "id": "GENGAR_MEGA",
-      "name": "Mega-Gengar",
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
       "types": [
        {
-        "id": "ghost",
-        "name": "Geist"
+        "id": "rock",
+        "name": "Gestein"
        },
        {
-        "id": "poison",
-        "name": "Gift"
+        "id": "dark",
+        "name": "Unlicht"
        }
       ],
-      "team": 24,
-      "solo": 23,
+      "team": 8,
+      "solo": 24,
       "teamFirst": 1,
-      "soloFirst": 1,
-      "points": 112
+      "soloFirst": 3,
+      "points": 95
      },
      {
       "id": "LUCARIO_MEGA",
@@ -99292,26 +99023,11 @@
         "name": "Stahl"
        }
       ],
-      "team": 16,
-      "solo": 29,
-      "teamFirst": 0,
-      "soloFirst": 9,
-      "points": 142
-     },
-     {
-      "id": "KYOGRE_PRIMAL",
-      "name": "Proto-Kyogre",
-      "types": [
-       {
-        "id": "water",
-        "name": "Wasser"
-       }
-      ],
-      "team": 18,
+      "team": 6,
       "solo": 18,
-      "teamFirst": 4,
-      "soloFirst": 5,
-      "points": 96
+      "teamFirst": 0,
+      "soloFirst": 7,
+      "points": 72
      },
      {
       "id": "CHARIZARD_MEGA_Y",
@@ -99326,11 +99042,26 @@
         "name": "Flug"
        }
       ],
-      "team": 13,
-      "solo": 19,
-      "teamFirst": 1,
+      "team": 7,
+      "solo": 12,
+      "teamFirst": 0,
       "soloFirst": 0,
-      "points": 89
+      "points": 45
+     },
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       }
+      ],
+      "team": 8,
+      "solo": 10,
+      "teamFirst": 2,
+      "soloFirst": 4,
+      "points": 54
      },
      {
       "id": "HERACROSS_MEGA",
@@ -99345,83 +99076,30 @@
         "name": "Kampf"
        }
       ],
-      "team": 20,
-      "solo": 8,
-      "teamFirst": 6,
+      "team": 12,
+      "solo": 2,
+      "teamFirst": 1,
       "soloFirst": 1,
-      "points": 79
+      "points": 37
      },
      {
-      "id": "DIANCIE_MEGA",
-      "name": "Mega-Diancie",
+      "id": "GENGAR_MEGA",
+      "name": "Mega-Gengar",
       "types": [
        {
-        "id": "rock",
-        "name": "Gestein"
+        "id": "ghost",
+        "name": "Geist"
        },
        {
-        "id": "fairy",
-        "name": "Fee"
+        "id": "poison",
+        "name": "Gift"
        }
       ],
-      "team": 13,
-      "solo": 14,
-      "teamFirst": 2,
-      "soloFirst": 5,
-      "points": 88
-     },
-     {
-      "id": "SALAMENCE_MEGA",
-      "name": "Mega-Brutalanda",
-      "types": [
-       {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 13,
-      "solo": 14,
+      "team": 5,
+      "solo": 8,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 54
-     },
-     {
-      "id": "RAICHU_MEGA_Y",
-      "name": "Mega-Raichu Y",
-      "types": [
-       {
-        "id": "electric",
-        "name": "Elektro"
-       }
-      ],
-      "team": 11,
-      "solo": 13,
-      "teamFirst": 2,
-      "soloFirst": 2,
-      "points": 72
-     },
-     {
-      "id": "GARDEVOIR_MEGA",
-      "name": "Mega-Guardevoir",
-      "types": [
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       },
-       {
-        "id": "fairy",
-        "name": "Fee"
-       }
-      ],
-      "team": 7,
-      "solo": 16,
-      "teamFirst": 0,
-      "soloFirst": 1,
-      "points": 47
+      "points": 26
      },
      {
       "id": "METAGROSS_MEGA",
@@ -99436,64 +99114,30 @@
         "name": "Psycho"
        }
       ],
-      "team": 10,
-      "solo": 11,
-      "teamFirst": 8,
-      "soloFirst": 7,
-      "points": 92
-     },
-     {
-      "id": "SWAMPERT_MEGA",
-      "name": "Mega-Sumpex",
-      "types": [
-       {
-        "id": "water",
-        "name": "Wasser"
-       },
-       {
-        "id": "ground",
-        "name": "Boden"
-       }
-      ],
-      "team": 14,
-      "solo": 7,
+      "team": 5,
+      "solo": 8,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 54
+      "points": 18
      },
      {
-      "id": "DRAGONITE_MEGA",
-      "name": "Mega-Dragoran",
+      "id": "DIANCIE_MEGA",
+      "name": "Mega-Diancie",
       "types": [
        {
-        "id": "dragon",
-        "name": "Drache"
+        "id": "rock",
+        "name": "Gestein"
        },
        {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 13,
-      "solo": 4,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 40
-     },
-     {
-      "id": "ABSOL_MEGA",
-      "name": "Mega-Absol",
-      "types": [
-       {
-        "id": "dark",
-        "name": "Unlicht"
+        "id": "fairy",
+        "name": "Fee"
        }
       ],
       "team": 2,
-      "solo": 15,
+      "solo": 9,
       "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 30
+      "soloFirst": 4,
+      "points": 37
      },
      {
       "id": "SCEPTILE_MEGA",
@@ -99508,68 +99152,45 @@
         "name": "Drache"
        }
       ],
-      "team": 8,
-      "solo": 8,
-      "teamFirst": 2,
-      "soloFirst": 2,
-      "points": 44
-     },
-     {
-      "id": "HOUNDOOM_MEGA",
-      "name": "Mega-Hundemon",
-      "types": [
-       {
-        "id": "dark",
-        "name": "Unlicht"
-       },
-       {
-        "id": "fire",
-        "name": "Feuer"
-       }
-      ],
-      "team": 5,
-      "solo": 11,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 25
-     },
-     {
-      "id": "CHARIZARD_MEGA_X",
-      "name": "Mega-Glurak X",
-      "types": [
-       {
-        "id": "fire",
-        "name": "Feuer"
-       },
-       {
-        "id": "dragon",
-        "name": "Drache"
-       }
-      ],
-      "team": 7,
-      "solo": 7,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 34
-     },
-     {
-      "id": "AERODACTYL_MEGA",
-      "name": "Mega-Aerodactyl",
-      "types": [
-       {
-        "id": "rock",
-        "name": "Gestein"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 5,
+      "team": 4,
       "solo": 5,
+      "teamFirst": 1,
+      "soloFirst": 2,
+      "points": 32
+     },
+     {
+      "id": "RAICHU_MEGA_Y",
+      "name": "Mega-Raichu Y",
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ],
+      "team": 1,
+      "solo": 6,
+      "teamFirst": 0,
+      "soloFirst": 1,
+      "points": 18
+     },
+     {
+      "id": "SWAMPERT_MEGA",
+      "name": "Mega-Sumpex",
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "ground",
+        "name": "Boden"
+       }
+      ],
+      "team": 2,
+      "solo": 3,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 31
+      "points": 18
      },
      {
       "id": "VENUSAUR_MEGA",
@@ -99584,83 +99205,30 @@
         "name": "Gift"
        }
       ],
-      "team": 6,
-      "solo": 4,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 28
-     },
-     {
-      "id": "AGGRON_MEGA",
-      "name": "Mega-Stolloss",
-      "types": [
-       {
-        "id": "steel",
-        "name": "Stahl"
-       }
-      ],
-      "team": 8,
-      "solo": 1,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 16
-     },
-     {
-      "id": "LATIOS_MEGA",
-      "name": "Mega-Latios",
-      "types": [
-       {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       }
-      ],
-      "team": 4,
+      "team": 2,
       "solo": 3,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 12
+      "points": 14
      },
      {
-      "id": "ABOMASNOW_MEGA",
-      "name": "Mega-Rexblisar",
+      "id": "AERODACTYL_MEGA",
+      "name": "Mega-Aerodactyl",
       "types": [
        {
-        "id": "grass",
-        "name": "Pflanze"
+        "id": "rock",
+        "name": "Gestein"
        },
        {
-        "id": "ice",
-        "name": "Eis"
+        "id": "flying",
+        "name": "Flug"
        }
       ],
-      "team": 3,
-      "solo": 4,
+      "team": 1,
+      "solo": 3,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 11
-     },
-     {
-      "id": "BEEDRILL_MEGA",
-      "name": "Mega-Bibor",
-      "types": [
-       {
-        "id": "bug",
-        "name": "Käfer"
-       },
-       {
-        "id": "poison",
-        "name": "Gift"
-       }
-      ],
-      "team": 2,
-      "solo": 4,
-      "teamFirst": 0,
-      "soloFirst": 1,
-      "points": 16
+      "points": 8
      },
      {
       "id": "BLASTOISE_MEGA",
@@ -99671,40 +99239,6 @@
         "name": "Wasser"
        }
       ],
-      "team": 3,
-      "solo": 3,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 14
-     },
-     {
-      "id": "BANETTE_MEGA",
-      "name": "Mega-Banette",
-      "types": [
-       {
-        "id": "ghost",
-        "name": "Geist"
-       }
-      ],
-      "team": 4,
-      "solo": 2,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 6
-     },
-     {
-      "id": "VICTREEBEL_MEGA",
-      "name": "Mega-Sarzenia",
-      "types": [
-       {
-        "id": "grass",
-        "name": "Pflanze"
-       },
-       {
-        "id": "poison",
-        "name": "Gift"
-       }
-      ],
       "team": 2,
       "solo": 2,
       "teamFirst": 0,
@@ -99712,76 +99246,38 @@
       "points": 8
      },
      {
-      "id": "GALLADE_MEGA",
-      "name": "Mega-Galagladi",
+      "id": "SALAMENCE_MEGA",
+      "name": "Mega-Brutalanda",
       "types": [
        {
-        "id": "psychic",
-        "name": "Psycho"
-       },
-       {
-        "id": "fighting",
-        "name": "Kampf"
-       }
-      ],
-      "team": 3,
-      "solo": 1,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 6
-     },
-     {
-      "id": "ALAKAZAM_MEGA",
-      "name": "Mega-Simsala",
-      "types": [
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       }
-      ],
-      "team": 3,
-      "solo": 1,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 6
-     },
-     {
-      "id": "STARMIE_MEGA",
-      "name": "Mega-Starmie",
-      "types": [
-       {
-        "id": "water",
-        "name": "Wasser"
-       },
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       }
-      ],
-      "team": 0,
-      "solo": 4,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 4
-     },
-     {
-      "id": "PIDGEOT_MEGA",
-      "name": "Mega-Tauboss",
-      "types": [
-       {
-        "id": "normal",
-        "name": "Normal"
+        "id": "dragon",
+        "name": "Drache"
        },
        {
         "id": "flying",
         "name": "Flug"
        }
       ],
-      "team": 2,
+      "team": 1,
       "solo": 2,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 4
+      "points": 7
+     },
+     {
+      "id": "ABSOL_MEGA",
+      "name": "Mega-Absol",
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ],
+      "team": 0,
+      "solo": 3,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 3
      },
      {
       "id": "GYARADOS_MEGA",
@@ -99800,22 +99296,7 @@
       "solo": 2,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 6
-     },
-     {
-      "id": "MANECTRIC_MEGA",
-      "name": "Mega-Voltenso",
-      "types": [
-       {
-        "id": "electric",
-        "name": "Elektro"
-       }
-      ],
-      "team": 0,
-      "solo": 3,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 6
+      "points": 3
      },
      {
       "id": "PINSIR_MEGA",
@@ -99834,7 +99315,45 @@
       "solo": 1,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 8
+      "points": 7
+     },
+     {
+      "id": "GARDEVOIR_MEGA",
+      "name": "Mega-Guardevoir",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ],
+      "team": 0,
+      "solo": 2,
+      "teamFirst": 0,
+      "soloFirst": 1,
+      "points": 6
+     },
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 1,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 5
      },
      {
       "id": "SCIZOR_MEGA",
@@ -99853,15 +99372,110 @@
       "solo": 1,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 6
+      "points": 5
      },
      {
-      "id": "RAICHU_MEGA_X",
-      "name": "Mega-Raichu X",
+      "id": "LATIOS_MEGA",
+      "name": "Mega-Latios",
       "types": [
        {
-        "id": "electric",
-        "name": "Elektro"
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ],
+      "team": 1,
+      "solo": 0,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 2
+     },
+     {
+      "id": "DRAGONITE_MEGA",
+      "name": "Mega-Dragoran",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ],
+      "team": 1,
+      "solo": 0,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 1
+     },
+     {
+      "id": "GALLADE_MEGA",
+      "name": "Mega-Galagladi",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "team": 1,
+      "solo": 0,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 1
+     },
+     {
+      "id": "HOUNDOOM_MEGA",
+      "name": "Mega-Hundemon",
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 1
+     },
+     {
+      "id": "VICTREEBEL_MEGA",
+      "name": "Mega-Sarzenia",
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 1
+     },
+     {
+      "id": "ALAKAZAM_MEGA",
+      "name": "Mega-Simsala",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
        }
       ],
       "team": 1,
@@ -101159,11 +100773,11 @@
         "name": "Psycho"
        }
       ],
-      "team": 49,
-      "solo": 45,
-      "teamFirst": 31,
-      "soloFirst": 28,
-      "points": 153
+      "team": 13,
+      "solo": 24,
+      "teamFirst": 8,
+      "soloFirst": 12,
+      "points": 57
      },
      {
       "id": "MEWTWO_MEGA_X",
@@ -101178,30 +100792,11 @@
         "name": "Kampf"
        }
       ],
-      "team": 36,
-      "solo": 31,
-      "teamFirst": 8,
-      "soloFirst": 9,
-      "points": 84
-     },
-     {
-      "id": "RAYQUAZA_MEGA",
-      "name": "Mega-Rayquaza",
-      "types": [
-       {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 18,
-      "solo": 25,
-      "teamFirst": 13,
-      "soloFirst": 18,
-      "points": 74
+      "team": 17,
+      "solo": 20,
+      "teamFirst": 6,
+      "soloFirst": 7,
+      "points": 50
      },
      {
       "id": "GROUDON_PRIMAL",
@@ -101216,49 +100811,30 @@
         "name": "Feuer"
        }
       ],
-      "team": 27,
+      "team": 25,
       "solo": 9,
-      "teamFirst": 26,
+      "teamFirst": 17,
       "soloFirst": 8,
-      "points": 70
+      "points": 59
      },
      {
-      "id": "TYRANITAR_MEGA",
-      "name": "Mega-Despotar",
-      "types": [
-       {
-        "id": "rock",
-        "name": "Gestein"
-       },
-       {
-        "id": "dark",
-        "name": "Unlicht"
-       }
-      ],
-      "team": 12,
-      "solo": 18,
-      "teamFirst": 4,
-      "soloFirst": 9,
-      "points": 43
-     },
-     {
-      "id": "GARCHOMP_MEGA",
-      "name": "Mega-Knakrack",
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
       "types": [
        {
         "id": "dragon",
         "name": "Drache"
        },
        {
-        "id": "ground",
-        "name": "Boden"
+        "id": "flying",
+        "name": "Flug"
        }
       ],
-      "team": 12,
-      "solo": 18,
-      "teamFirst": 0,
-      "soloFirst": 1,
-      "points": 31
+      "team": 4,
+      "solo": 22,
+      "teamFirst": 2,
+      "soloFirst": 7,
+      "points": 35
      },
      {
       "id": "BLAZIKEN_MEGA",
@@ -101273,11 +100849,11 @@
         "name": "Kampf"
        }
       ],
-      "team": 9,
-      "solo": 18,
-      "teamFirst": 3,
-      "soloFirst": 10,
-      "points": 40
+      "team": 3,
+      "solo": 14,
+      "teamFirst": 0,
+      "soloFirst": 4,
+      "points": 21
      },
      {
       "id": "LUCARIO_MEGA",
@@ -101292,49 +100868,64 @@
         "name": "Stahl"
        }
       ],
-      "team": 4,
-      "solo": 16,
+      "team": 0,
+      "solo": 11,
       "teamFirst": 0,
-      "soloFirst": 9,
-      "points": 29
-     },
-     {
-      "id": "METAGROSS_MEGA",
-      "name": "Mega-Metagross",
-      "types": [
-       {
-        "id": "steel",
-        "name": "Stahl"
-       },
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       }
-      ],
-      "team": 8,
-      "solo": 9,
-      "teamFirst": 8,
       "soloFirst": 7,
-      "points": 32
+      "points": 18
      },
      {
-      "id": "CHARIZARD_MEGA_Y",
-      "name": "Mega-Glurak Y",
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
       "types": [
        {
-        "id": "fire",
-        "name": "Feuer"
+        "id": "rock",
+        "name": "Gestein"
        },
        {
-        "id": "flying",
-        "name": "Flug"
+        "id": "dark",
+        "name": "Unlicht"
        }
       ],
-      "team": 4,
+      "team": 1,
       "solo": 10,
       "teamFirst": 1,
-      "soloFirst": 0,
+      "soloFirst": 3,
       "points": 15
+     },
+     {
+      "id": "GARCHOMP_MEGA",
+      "name": "Mega-Knakrack",
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "ground",
+        "name": "Boden"
+       }
+      ],
+      "team": 4,
+      "solo": 4,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 8
+     },
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       }
+      ],
+      "team": 3,
+      "solo": 4,
+      "teamFirst": 2,
+      "soloFirst": 4,
+      "points": 13
      },
      {
       "id": "DIANCIE_MEGA",
@@ -101349,79 +100940,11 @@
         "name": "Fee"
        }
       ],
-      "team": 4,
-      "solo": 8,
-      "teamFirst": 2,
-      "soloFirst": 5,
-      "points": 19
-     },
-     {
-      "id": "RAICHU_MEGA_Y",
-      "name": "Mega-Raichu Y",
-      "types": [
-       {
-        "id": "electric",
-        "name": "Elektro"
-       }
-      ],
-      "team": 5,
+      "team": 1,
       "solo": 5,
-      "teamFirst": 2,
-      "soloFirst": 2,
-      "points": 14
-     },
-     {
-      "id": "GENGAR_MEGA",
-      "name": "Mega-Gengar",
-      "types": [
-       {
-        "id": "ghost",
-        "name": "Geist"
-       },
-       {
-        "id": "poison",
-        "name": "Gift"
-       }
-      ],
-      "team": 7,
-      "solo": 3,
-      "teamFirst": 1,
-      "soloFirst": 1,
-      "points": 12
-     },
-     {
-      "id": "KYOGRE_PRIMAL",
-      "name": "Proto-Kyogre",
-      "types": [
-       {
-        "id": "water",
-        "name": "Wasser"
-       }
-      ],
-      "team": 4,
-      "solo": 5,
-      "teamFirst": 4,
-      "soloFirst": 5,
-      "points": 18
-     },
-     {
-      "id": "HERACROSS_MEGA",
-      "name": "Mega-Skaraborn",
-      "types": [
-       {
-        "id": "bug",
-        "name": "Käfer"
-       },
-       {
-        "id": "fighting",
-        "name": "Kampf"
-       }
-      ],
-      "team": 7,
-      "solo": 1,
-      "teamFirst": 6,
-      "soloFirst": 1,
-      "points": 15
+      "teamFirst": 0,
+      "soloFirst": 4,
+      "points": 10
      },
      {
       "id": "SCEPTILE_MEGA",
@@ -101436,30 +100959,30 @@
         "name": "Drache"
        }
       ],
-      "team": 3,
-      "solo": 3,
-      "teamFirst": 2,
+      "team": 2,
+      "solo": 2,
+      "teamFirst": 1,
       "soloFirst": 2,
-      "points": 10
+      "points": 7
      },
      {
-      "id": "DRAGONITE_MEGA",
-      "name": "Mega-Dragoran",
+      "id": "HERACROSS_MEGA",
+      "name": "Mega-Skaraborn",
       "types": [
        {
-        "id": "dragon",
-        "name": "Drache"
+        "id": "bug",
+        "name": "Käfer"
        },
        {
-        "id": "flying",
-        "name": "Flug"
+        "id": "fighting",
+        "name": "Kampf"
        }
       ],
-      "team": 5,
-      "solo": 0,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 5
+      "team": 3,
+      "solo": 1,
+      "teamFirst": 1,
+      "soloFirst": 1,
+      "points": 6
      },
      {
       "id": "SWAMPERT_MEGA",
@@ -101474,61 +100997,19 @@
         "name": "Boden"
        }
       ],
-      "team": 3,
-      "solo": 2,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 5
-     },
-     {
-      "id": "SALAMENCE_MEGA",
-      "name": "Mega-Brutalanda",
-      "types": [
-       {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 1,
-      "solo": 2,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 3
-     },
-     {
-      "id": "BEEDRILL_MEGA",
-      "name": "Mega-Bibor",
-      "types": [
-       {
-        "id": "bug",
-        "name": "Käfer"
-       },
-       {
-        "id": "poison",
-        "name": "Gift"
-       }
-      ],
-      "team": 1,
+      "team": 2,
       "solo": 1,
       "teamFirst": 0,
-      "soloFirst": 1,
+      "soloFirst": 0,
       "points": 3
      },
      {
-      "id": "GARDEVOIR_MEGA",
-      "name": "Mega-Guardevoir",
+      "id": "RAICHU_MEGA_Y",
+      "name": "Mega-Raichu Y",
       "types": [
        {
-        "id": "psychic",
-        "name": "Psycho"
-       },
-       {
-        "id": "fairy",
-        "name": "Fee"
+        "id": "electric",
+        "name": "Elektro"
        }
       ],
       "team": 0,
@@ -101536,25 +101017,6 @@
       "teamFirst": 0,
       "soloFirst": 1,
       "points": 3
-     },
-     {
-      "id": "AERODACTYL_MEGA",
-      "name": "Mega-Aerodactyl",
-      "types": [
-       {
-        "id": "rock",
-        "name": "Gestein"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 1,
-      "solo": 1,
-      "teamFirst": 0,
-      "soloFirst": 0,
-      "points": 2
      },
      {
       "id": "VENUSAUR_MEGA",
@@ -101576,6 +101038,82 @@
       "points": 2
      },
      {
+      "id": "GARDEVOIR_MEGA",
+      "name": "Mega-Guardevoir",
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 1,
+      "points": 2
+     },
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 1
+     },
+     {
+      "id": "GENGAR_MEGA",
+      "name": "Mega-Gengar",
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "team": 0,
+      "solo": 1,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 1
+     },
+     {
+      "id": "CHARIZARD_MEGA_Y",
+      "name": "Mega-Glurak Y",
+      "types": [
+       {
+        "id": "fire",
+        "name": "Feuer"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ],
+      "team": 1,
+      "solo": 0,
+      "teamFirst": 0,
+      "soloFirst": 0,
+      "points": 1
+     },
+     {
       "id": "PINSIR_MEGA",
       "name": "Mega-Pinsir",
       "types": [
@@ -101588,11 +101126,11 @@
         "name": "Flug"
        }
       ],
-      "team": 1,
+      "team": 0,
       "solo": 1,
       "teamFirst": 0,
       "soloFirst": 0,
-      "points": 2
+      "points": 1
      }
     ]
    },
@@ -102252,21 +101790,6 @@
     ],
     "mega": [
      {
-      "id": "MEWTWO_MEGA_Y",
-      "name": "Mega-Mewtu Y",
-      "types": [
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       }
-      ],
-      "team": 31,
-      "solo": 28,
-      "teamFirst": 31,
-      "soloFirst": 28,
-      "points": 59
-     },
-     {
       "id": "GROUDON_PRIMAL",
       "name": "Proto-Groudon",
       "types": [
@@ -102279,30 +101802,26 @@
         "name": "Feuer"
        }
       ],
-      "team": 26,
+      "team": 17,
       "solo": 8,
-      "teamFirst": 26,
+      "teamFirst": 17,
       "soloFirst": 8,
-      "points": 34
+      "points": 25
      },
      {
-      "id": "RAYQUAZA_MEGA",
-      "name": "Mega-Rayquaza",
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
       "types": [
        {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
+        "id": "psychic",
+        "name": "Psycho"
        }
       ],
-      "team": 13,
-      "solo": 18,
-      "teamFirst": 13,
-      "soloFirst": 18,
-      "points": 31
+      "team": 8,
+      "solo": 12,
+      "teamFirst": 8,
+      "soloFirst": 12,
+      "points": 20
      },
      {
       "id": "MEWTWO_MEGA_X",
@@ -102317,68 +101836,30 @@
         "name": "Kampf"
        }
       ],
-      "team": 8,
-      "solo": 9,
-      "teamFirst": 8,
-      "soloFirst": 9,
-      "points": 17
-     },
-     {
-      "id": "METAGROSS_MEGA",
-      "name": "Mega-Metagross",
-      "types": [
-       {
-        "id": "steel",
-        "name": "Stahl"
-       },
-       {
-        "id": "psychic",
-        "name": "Psycho"
-       }
-      ],
-      "team": 8,
+      "team": 6,
       "solo": 7,
-      "teamFirst": 8,
+      "teamFirst": 6,
       "soloFirst": 7,
-      "points": 15
-     },
-     {
-      "id": "TYRANITAR_MEGA",
-      "name": "Mega-Despotar",
-      "types": [
-       {
-        "id": "rock",
-        "name": "Gestein"
-       },
-       {
-        "id": "dark",
-        "name": "Unlicht"
-       }
-      ],
-      "team": 4,
-      "solo": 9,
-      "teamFirst": 4,
-      "soloFirst": 9,
       "points": 13
      },
      {
-      "id": "BLAZIKEN_MEGA",
-      "name": "Mega-Lohgock",
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
       "types": [
        {
-        "id": "fire",
-        "name": "Feuer"
+        "id": "dragon",
+        "name": "Drache"
        },
        {
-        "id": "fighting",
-        "name": "Kampf"
+        "id": "flying",
+        "name": "Flug"
        }
       ],
-      "team": 3,
-      "solo": 10,
-      "teamFirst": 3,
-      "soloFirst": 10,
-      "points": 13
+      "team": 2,
+      "solo": 7,
+      "teamFirst": 2,
+      "soloFirst": 7,
+      "points": 9
      },
      {
       "id": "LUCARIO_MEGA",
@@ -102394,10 +101875,10 @@
        }
       ],
       "team": 0,
-      "solo": 9,
+      "solo": 7,
       "teamFirst": 0,
-      "soloFirst": 9,
-      "points": 9
+      "soloFirst": 7,
+      "points": 7
      },
      {
       "id": "KYOGRE_PRIMAL",
@@ -102408,11 +101889,30 @@
         "name": "Wasser"
        }
       ],
-      "team": 4,
-      "solo": 5,
-      "teamFirst": 4,
-      "soloFirst": 5,
-      "points": 9
+      "team": 2,
+      "solo": 4,
+      "teamFirst": 2,
+      "soloFirst": 4,
+      "points": 6
+     },
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ],
+      "team": 1,
+      "solo": 3,
+      "teamFirst": 1,
+      "soloFirst": 3,
+      "points": 4
      },
      {
       "id": "DIANCIE_MEGA",
@@ -102427,30 +101927,30 @@
         "name": "Fee"
        }
       ],
-      "team": 2,
-      "solo": 5,
-      "teamFirst": 2,
-      "soloFirst": 5,
-      "points": 7
+      "team": 0,
+      "solo": 4,
+      "teamFirst": 0,
+      "soloFirst": 4,
+      "points": 4
      },
      {
-      "id": "HERACROSS_MEGA",
-      "name": "Mega-Skaraborn",
+      "id": "BLAZIKEN_MEGA",
+      "name": "Mega-Lohgock",
       "types": [
        {
-        "id": "bug",
-        "name": "Käfer"
+        "id": "fire",
+        "name": "Feuer"
        },
        {
         "id": "fighting",
         "name": "Kampf"
        }
       ],
-      "team": 6,
-      "solo": 1,
-      "teamFirst": 6,
-      "soloFirst": 1,
-      "points": 7
+      "team": 0,
+      "solo": 4,
+      "teamFirst": 0,
+      "soloFirst": 4,
+      "points": 4
      },
      {
       "id": "SCEPTILE_MEGA",
@@ -102465,38 +101965,23 @@
         "name": "Drache"
        }
       ],
-      "team": 2,
+      "team": 1,
       "solo": 2,
-      "teamFirst": 2,
+      "teamFirst": 1,
       "soloFirst": 2,
-      "points": 4
+      "points": 3
      },
      {
-      "id": "RAICHU_MEGA_Y",
-      "name": "Mega-Raichu Y",
+      "id": "HERACROSS_MEGA",
+      "name": "Mega-Skaraborn",
       "types": [
        {
-        "id": "electric",
-        "name": "Elektro"
-       }
-      ],
-      "team": 2,
-      "solo": 2,
-      "teamFirst": 2,
-      "soloFirst": 2,
-      "points": 4
-     },
-     {
-      "id": "GENGAR_MEGA",
-      "name": "Mega-Gengar",
-      "types": [
-       {
-        "id": "ghost",
-        "name": "Geist"
+        "id": "bug",
+        "name": "Käfer"
        },
        {
-        "id": "poison",
-        "name": "Gift"
+        "id": "fighting",
+        "name": "Kampf"
        }
       ],
       "team": 1,
@@ -102504,44 +101989,6 @@
       "teamFirst": 1,
       "soloFirst": 1,
       "points": 2
-     },
-     {
-      "id": "BEEDRILL_MEGA",
-      "name": "Mega-Bibor",
-      "types": [
-       {
-        "id": "bug",
-        "name": "Käfer"
-       },
-       {
-        "id": "poison",
-        "name": "Gift"
-       }
-      ],
-      "team": 0,
-      "solo": 1,
-      "teamFirst": 0,
-      "soloFirst": 1,
-      "points": 1
-     },
-     {
-      "id": "CHARIZARD_MEGA_Y",
-      "name": "Mega-Glurak Y",
-      "types": [
-       {
-        "id": "fire",
-        "name": "Feuer"
-       },
-       {
-        "id": "flying",
-        "name": "Flug"
-       }
-      ],
-      "team": 1,
-      "solo": 0,
-      "teamFirst": 1,
-      "soloFirst": 0,
-      "points": 1
      },
      {
       "id": "GARDEVOIR_MEGA",
@@ -102563,16 +102010,12 @@
       "points": 1
      },
      {
-      "id": "GARCHOMP_MEGA",
-      "name": "Mega-Knakrack",
+      "id": "RAICHU_MEGA_Y",
+      "name": "Mega-Raichu Y",
       "types": [
        {
-        "id": "dragon",
-        "name": "Drache"
-       },
-       {
-        "id": "ground",
-        "name": "Boden"
+        "id": "electric",
+        "name": "Elektro"
        }
       ],
       "team": 0,
