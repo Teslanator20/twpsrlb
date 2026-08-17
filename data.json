@@ -798,6 +798,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 0.7534,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 0.7534
+       },
+       {
+        "moves": "Psychoklinge / Psychokinese",
+        "estimator": 0.8295
+       },
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 0.8396
+       }
+      ]
+     },
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 0.8208,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 0.8208
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 0.9433
+       },
+       {
+        "moves": "Dunkelklaue / Blizzard",
+        "estimator": 1.0984
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "estimator": 0.9469,
+      "sets": [
+       {
+        "moves": "Luftschnitt / Zenitstürmer",
+        "estimator": 0.9469
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 1.0357
+       },
+       {
+        "moves": "Luftschnitt / Orkan",
+        "estimator": 1.2684
+       }
+      ]
+     },
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 1.1669,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 1.1669
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 1.3063
+       },
+       {
+        "moves": "Feuerodem / Kreuzflamme",
+        "estimator": 1.5747
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -1597,6 +1679,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 0.6461,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 0.6461
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 0.7105
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 1.1671
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 0.8808,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 0.8808
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 1.0044
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 1.3837
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -2396,6 +2522,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GIGALITH_SHADOW_FORM",
+      "name": "Crypto Brockoloss",
+      "estimator": 0.5578,
+      "sets": [
+       {
+        "moves": "Zielschuss / Meteorstrahl",
+        "estimator": 0.5578
+       },
+       {
+        "moves": "Katapult / Meteorstrahl",
+        "estimator": 0.6491
+       },
+       {
+        "moves": "Katapult / Steinhagel",
+        "estimator": 0.7951
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "DIANCIE_MEGA",
+      "name": "Mega-Diancie",
+      "estimator": 0.7663,
+      "sets": [
+       {
+        "moves": "Steinwurf / Steinhagel",
+        "estimator": 0.7663
+       },
+       {
+        "moves": "Steinwurf / Juwelenkraft",
+        "estimator": 0.7933
+       },
+       {
+        "moves": "Tackle / Steinhagel",
+        "estimator": 1.113
+       }
+      ]
+     },
+     {
+      "id": "RHYPERIOR_SHADOW_FORM",
+      "name": "Crypto Rihornior",
+      "estimator": 0.7902,
+      "sets": [
+       {
+        "moves": "Katapult / Felswerfer",
+        "estimator": 0.7902
+       },
+       {
+        "moves": "Katapult / Steinkante",
+        "estimator": 0.9023
+       },
+       {
+        "moves": "Lehmschelle / Felswerfer",
+        "estimator": 1.0541
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -3191,6 +3380,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.055,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.055
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.1682
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.2347
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 1.3535,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Donnerblitz",
+        "estimator": 1.3535
+       },
+       {
+        "moves": "Konfusion / Donnerblitz",
+        "estimator": 1.4191
+       },
+       {
+        "moves": "Konter / Donnerblitz",
+        "estimator": 1.4605
+       }
+      ]
+     },
+     {
+      "id": "REGIGIGAS_SHADOW_FORM",
+      "name": "Crypto Regigigas",
+      "estimator": 1.4261,
+      "sets": [
+       {
+        "moves": "Kraftreserve / Quetschgriff",
+        "estimator": 1.4261
+       },
+       {
+        "moves": "Kraftreserve / Quetschgriff",
+        "estimator": 1.4261
+       },
+       {
+        "moves": "Zen-Kopfstoß / Quetschgriff",
+        "estimator": 1.6931
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -3606,6 +3858,49 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": null,
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 0.606,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 0.606
+       },
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 0.6173
+       },
+       {
+        "moves": "Psychoklinge / Psychokinese",
+        "estimator": 0.667
+       }
+      ]
+     },
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 0.7406,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 0.7406
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 0.8431
+       },
+       {
+        "moves": "Feuerzahn / Steinkante",
+        "estimator": 0.9698
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -4405,6 +4700,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "REGIELEKI",
+      "name": "Regieleki",
+      "estimator": 0.6592,
+      "sets": [
+       {
+        "moves": "Donnerschock / Blitzgefängnis",
+        "estimator": 0.6592
+       },
+       {
+        "moves": "Zielschuss / Blitzgefängnis",
+        "estimator": 0.6828
+       },
+       {
+        "moves": "Voltwechsel / Blitzgefängnis",
+        "estimator": 0.8782
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 0.9299,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 0.9299
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 1.0408
+       },
+       {
+        "moves": "Stahlflügel / Frosthauch",
+        "estimator": 1.0978
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -5200,6 +5539,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GIRATINA_ORIGIN_SHADOW_FORM",
+      "name": "Crypto-Giratina Origin",
+      "estimator": 0.8357,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schemenkraft",
+        "estimator": 0.8357
+       },
+       {
+        "moves": "Dunkelklaue / Spukball",
+        "estimator": 1.0106
+       },
+       {
+        "moves": "Drachenrute / Schemenkraft",
+        "estimator": 1.1164
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 1.1887,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Spukball",
+        "estimator": 1.1887
+       },
+       {
+        "moves": "Konfusion / Spukball",
+        "estimator": 1.3117
+       },
+       {
+        "moves": "Konter / Spukball",
+        "estimator": 1.3352
+       }
+      ]
+     },
+     {
+      "id": "HYDREIGON_SHADOW_FORM",
+      "name": "Crypto Trikephalo",
+      "estimator": 1.3114,
+      "sets": [
+       {
+        "moves": "Biss / Wirbler",
+        "estimator": 1.3114
+       },
+       {
+        "moves": "Biss / Finsteraura",
+        "estimator": 1.5212
+       },
+       {
+        "moves": "Feuerodem / Wirbler",
+        "estimator": 1.5294
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -5999,6 +6401,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 0.7396,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 0.7396
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 0.7468
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 0.783
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.2025,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.2025
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.2579
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.5013
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -6779,6 +7225,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 0.6357,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 0.6357
+       },
+       {
+        "moves": "Psychoklinge / Psychokinese",
+        "estimator": 0.7135
+       },
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 0.7287
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 0.7389,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.7389
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 0.8527
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.0406
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 0.8297,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 0.8297
+       },
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 0.8481
+       },
+       {
+        "moves": "Konfusion / Psychokinese",
+        "estimator": 0.9224
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.1436,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.1436
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.3213
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.4512
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -7574,6 +8102,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 0.7015,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Fokusstoß",
+        "estimator": 0.7015
+       },
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 0.7123
+       },
+       {
+        "moves": "Konter / Psychostoß",
+        "estimator": 0.9057
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 0.7662,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 0.7662
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 0.9837
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 1.0485
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 0.9559,
+      "sets": [
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 0.9559
+       },
+       {
+        "moves": "Psychoklinge / Fokusstoß",
+        "estimator": 1.0911
+       },
+       {
+        "moves": "Konter / Psychostoß",
+        "estimator": 1.0931
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 1.0767,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 1.0767
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 1.2414
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 1.3396
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -8373,6 +8983,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GIGALITH_SHADOW_FORM",
+      "name": "Crypto Brockoloss",
+      "estimator": 0.689,
+      "sets": [
+       {
+        "moves": "Zielschuss / Meteorstrahl",
+        "estimator": 0.689
+       },
+       {
+        "moves": "Katapult / Meteorstrahl",
+        "estimator": 0.821
+       },
+       {
+        "moves": "Katapult / Steinhagel",
+        "estimator": 0.992
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "DIANCIE_MEGA",
+      "name": "Mega-Diancie",
+      "estimator": 0.8558,
+      "sets": [
+       {
+        "moves": "Steinwurf / Steinhagel",
+        "estimator": 0.8558
+       },
+       {
+        "moves": "Steinwurf / Juwelenkraft",
+        "estimator": 0.8834
+       },
+       {
+        "moves": "Tackle / Steinhagel",
+        "estimator": 1.2118
+       }
+      ]
+     },
+     {
+      "id": "RHYPERIOR_SHADOW_FORM",
+      "name": "Crypto Rihornior",
+      "estimator": 0.9671,
+      "sets": [
+       {
+        "moves": "Katapult / Felswerfer",
+        "estimator": 0.9671
+       },
+       {
+        "moves": "Katapult / Steinkante",
+        "estimator": 1.0542
+       },
+       {
+        "moves": "Lehmschelle / Felswerfer",
+        "estimator": 1.3224
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -9172,6 +9845,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 0.877,
+      "sets": [
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 0.877
+       },
+       {
+        "moves": "Psychoklinge / Fokusstoß",
+        "estimator": 0.9251
+       },
+       {
+        "moves": "Konter / Donnerblitz",
+        "estimator": 1.0403
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 0.8983,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 0.8983
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 1.1334
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 1.2305
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "LUCARIO_MEGA",
+      "name": "Mega-Lucario",
+      "estimator": 1.133,
+      "sets": [
+       {
+        "moves": "Kraftwelle / Aurasphäre",
+        "estimator": 1.133
+       },
+       {
+        "moves": "Konter / Aurasphäre",
+        "estimator": 1.2251
+       },
+       {
+        "moves": "Patronenhieb / Aurasphäre",
+        "estimator": 1.5416
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 1.2117,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 1.2117
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 1.456
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 1.4721
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -9971,6 +10726,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DUSK_MANE_FORM",
+      "name": "Necrozma - Abendmähne",
+      "estimator": 0.5847,
+      "sets": [
+       {
+        "moves": "Metallklaue / Stahlgestirn",
+        "estimator": 0.5847
+       },
+       {
+        "moves": "Psychoklinge / Stahlgestirn",
+        "estimator": 0.6088
+       },
+       {
+        "moves": "Dunkelklaue / Stahlgestirn",
+        "estimator": 0.7051
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "estimator": 0.9299,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenstoß",
+        "estimator": 0.9299
+       },
+       {
+        "moves": "Eiszahn / Gigantenstoß",
+        "estimator": 0.9404
+       },
+       {
+        "moves": "Metallklaue / Nahkampf",
+        "estimator": 1.8723
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -10770,6 +11569,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 0.9898,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 0.9898
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 1.4534
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 1.6719
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "DIANCIE_MEGA",
+      "name": "Mega-Diancie",
+      "estimator": 1.442,
+      "sets": [
+       {
+        "moves": "Steinwurf / Steinhagel",
+        "estimator": 1.442
+       },
+       {
+        "moves": "Steinwurf / Juwelenkraft",
+        "estimator": 1.4984
+       },
+       {
+        "moves": "Steinwurf / Mondgewalt",
+        "estimator": 2.0644
+       }
+      ]
+     },
+     {
+      "id": "RAMPARDOS_SHADOW_FORM",
+      "name": "Crypto Rameidon",
+      "estimator": 1.5551,
+      "sets": [
+       {
+        "moves": "Katapult / Steinhagel",
+        "estimator": 1.5551
+       },
+       {
+        "moves": "Katapult / Flammenwurf",
+        "estimator": 2.0235
+       },
+       {
+        "moves": "Zen-Kopfstoß / Steinhagel",
+        "estimator": 2.1014
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -11569,6 +12431,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 1.0864,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 1.0864
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 1.2013
+       },
+       {
+        "moves": "Dunkelklaue / Blizzard",
+        "estimator": 1.4602
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 1.597,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 1.597
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 1.9068
+       },
+       {
+        "moves": "Eiszahn / Blizzard",
+        "estimator": 2.0106
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -12368,6 +13274,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GIGALITH_SHADOW_FORM",
+      "name": "Crypto Brockoloss",
+      "estimator": 0.8043,
+      "sets": [
+       {
+        "moves": "Zielschuss / Meteorstrahl",
+        "estimator": 0.8043
+       },
+       {
+        "moves": "Katapult / Meteorstrahl",
+        "estimator": 0.9082
+       },
+       {
+        "moves": "Katapult / Steinhagel",
+        "estimator": 1.1384
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "DIANCIE_MEGA",
+      "name": "Mega-Diancie",
+      "estimator": 1.1221,
+      "sets": [
+       {
+        "moves": "Steinwurf / Steinhagel",
+        "estimator": 1.1221
+       },
+       {
+        "moves": "Steinwurf / Juwelenkraft",
+        "estimator": 1.1559
+       },
+       {
+        "moves": "Tackle / Steinhagel",
+        "estimator": 1.6217
+       }
+      ]
+     },
+     {
+      "id": "RHYPERIOR_SHADOW_FORM",
+      "name": "Crypto Rihornior",
+      "estimator": 1.1286,
+      "sets": [
+       {
+        "moves": "Katapult / Felswerfer",
+        "estimator": 1.1286
+       },
+       {
+        "moves": "Katapult / Steinkante",
+        "estimator": 1.2812
+       },
+       {
+        "moves": "Lehmschelle / Felswerfer",
+        "estimator": 1.4804
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -13163,6 +14132,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 0.9022,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 0.9022
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 0.9109
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 0.9474
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.5561,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.5561
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.5616
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.6929
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -13574,6 +14587,30 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": null,
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 2.2682,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 2.2682
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 2.2833
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 2.5598
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -14373,6 +15410,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.6985,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.6985
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.7649
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.8344
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 2.8254,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 2.8254
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 2.9637
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 3.3136
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -15168,6 +16249,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.79,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.79
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.8532
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.8847
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 3.0274,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 3.0274
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 3.2006
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 3.4806
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -15967,6 +17092,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 0.6084,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 0.6084
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 0.6741
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 1.0889
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 0.8411,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 0.8411
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 0.9772
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 1.2986
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -16766,6 +17935,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 0.9829,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.9829
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.0732
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 1.1336
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.0851,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.0851
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.2098
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 1.4675
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 1.4153,
+      "sets": [
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 1.4153
+       },
+       {
+        "moves": "Konter / Flammenwurf",
+        "estimator": 1.5793
+       },
+       {
+        "moves": "Psychoklinge / Fokusstoß",
+        "estimator": 1.839
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 1.6336,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 1.6336
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 2.0028
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 2.1375
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -17527,6 +18778,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 0.5437,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 0.5437
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 0.6042
+       },
+       {
+        "moves": "Feuerodem / Kreuzflamme",
+        "estimator": 0.6636
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 0.7213,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 0.7213
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 0.7986
+       },
+       {
+        "moves": "Feuerzahn / Steinkante",
+        "estimator": 1.1952
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -18326,6 +19621,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "estimator": 0.4477,
+      "sets": [
+       {
+        "moves": "Luftschnitt / Zenitstürmer",
+        "estimator": 0.4477
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 0.5237
+       },
+       {
+        "moves": "Luftschnitt / Orkan",
+        "estimator": 0.5828
+       }
+      ]
+     },
+     {
+      "id": "RAYQUAZA",
+      "name": "Rayquaza",
+      "estimator": 0.6396,
+      "sets": [
+       {
+        "moves": "Luftschnitt / Zenitstürmer",
+        "estimator": 0.6396
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 0.7446
+       },
+       {
+        "moves": "Luftschnitt / Orkan",
+        "estimator": 0.7949
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "estimator": 0.558,
+      "sets": [
+       {
+        "moves": "Luftschnitt / Zenitstürmer",
+        "estimator": 0.558
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 0.659
+       },
+       {
+        "moves": "Luftschnitt / Orkan",
+        "estimator": 0.7593
+       }
+      ]
+     },
+     {
+      "id": "RAYQUAZA",
+      "name": "Rayquaza",
+      "estimator": 0.7795,
+      "sets": [
+       {
+        "moves": "Luftschnitt / Zenitstürmer",
+        "estimator": 0.7795
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 0.9361
+       },
+       {
+        "moves": "Luftschnitt / Orkan",
+        "estimator": 1.0463
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -19125,6 +20502,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 0.6195,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.6195
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 0.6835
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 0.8765
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 0.7175,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 0.7175
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 0.894
+       },
+       {
+        "moves": "Fußkick / Hydropumpe",
+        "estimator": 0.9698
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "BLAZIKEN_MEGA",
+      "name": "Mega-Lohgock",
+      "estimator": 0.8634,
+      "sets": [
+       {
+        "moves": "Konter / Aurasphäre",
+        "estimator": 0.8634
+       },
+       {
+        "moves": "Glut / Aurasphäre",
+        "estimator": 1.0879
+       },
+       {
+        "moves": "Feuerwirbel / Aurasphäre",
+        "estimator": 1.0938
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 0.95,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 0.95
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 1.1182
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 1.1758
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -19920,6 +21379,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 0.9802,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.9802
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.074
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.3941
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.1113,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.1113
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.2466
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.5729
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.5924,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.5924
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.7604
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.9782
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.7423,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.7423
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.9567
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 2.2651
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -20696,6 +22237,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 0.8818,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.8818
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 0.9766
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.2461
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.0692,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.0692
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.2006
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.4897
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "estimator": 1.3956,
+      "sets": [
+       {
+        "moves": "Kaskade / Ursprungswoge",
+        "estimator": 1.3956
+       },
+       {
+        "moves": "Kaskade / Surfer",
+        "estimator": 1.4865
+       },
+       {
+        "moves": "Kaskade / Hydropumpe",
+        "estimator": 1.5275
+       }
+      ]
+     },
+     {
+      "id": "KYOGRE_SHADOW_FORM",
+      "name": "Crypto Kyogre",
+      "estimator": 1.5897,
+      "sets": [
+       {
+        "moves": "Kaskade / Ursprungswoge",
+        "estimator": 1.5897
+       },
+       {
+        "moves": "Kaskade / Surfer",
+        "estimator": 1.6677
+       },
+       {
+        "moves": "Kaskade / Hydropumpe",
+        "estimator": 1.734
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -21491,6 +23114,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "REGIELEKI",
+      "name": "Regieleki",
+      "estimator": 1.3981,
+      "sets": [
+       {
+        "moves": "Donnerschock / Blitzgefängnis",
+        "estimator": 1.3981
+       },
+       {
+        "moves": "Zielschuss / Blitzgefängnis",
+        "estimator": 1.4827
+       },
+       {
+        "moves": "Voltwechsel / Blitzgefängnis",
+        "estimator": 1.9326
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "SCEPTILE_MEGA",
+      "name": "Mega-Gewaldro",
+      "estimator": 2.0688,
+      "sets": [
+       {
+        "moves": "Kugelsaat / Flora-Statue",
+        "estimator": 2.0688
+       },
+       {
+        "moves": "Zornklinge / Flora-Statue",
+        "estimator": 2.0976
+       },
+       {
+        "moves": "Kugelsaat / Laubklinge",
+        "estimator": 2.3556
+       }
+      ]
+     },
+     {
+      "id": "REGIELEKI",
+      "name": "Regieleki",
+      "estimator": 2.2477,
+      "sets": [
+       {
+        "moves": "Donnerschock / Blitzgefängnis",
+        "estimator": 2.2477
+       },
+       {
+        "moves": "Zielschuss / Blitzgefängnis",
+        "estimator": 2.3735
+       },
+       {
+        "moves": "Voltwechsel / Blitzgefängnis",
+        "estimator": 2.4466
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -22290,6 +23976,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 0.6083,
+      "sets": [
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 0.6083
+       },
+       {
+        "moves": "Psychoklinge / Fokusstoß",
+        "estimator": 0.6444
+       },
+       {
+        "moves": "Konfusion / Fokusstoß",
+        "estimator": 1.0726
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 0.6194,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 0.6194
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 0.853
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 0.858
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "BLAZIKEN_MEGA",
+      "name": "Mega-Lohgock",
+      "estimator": 0.7815,
+      "sets": [
+       {
+        "moves": "Konter / Aurasphäre",
+        "estimator": 0.7815
+       },
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 1.0222
+       },
+       {
+        "moves": "Glut / Aurasphäre",
+        "estimator": 1.0503
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 0.8268,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 0.8268
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 1.0237
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 1.0983
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -23089,6 +24857,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.5106,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.5106
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.5571
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.6289
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 2.5462,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 2.5462
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 2.6366
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 2.9206
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -23888,6 +25700,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "estimator": 1.2289,
+      "sets": [
+       {
+        "moves": "Katapult / Steinkante",
+        "estimator": 1.2289
+       },
+       {
+        "moves": "Biss / Steinkante",
+        "estimator": 1.4926
+       },
+       {
+        "moves": "Feuerodem / Steinkante",
+        "estimator": 1.4926
+       }
+      ]
+     },
+     {
+      "id": "TYRANTRUM_SHADOW_FORM",
+      "name": "Crypto Monargoras",
+      "estimator": 1.2355,
+      "sets": [
+       {
+        "moves": "Steinwurf / Meteorstrahl",
+        "estimator": 1.2355
+       },
+       {
+        "moves": "Steinwurf / Steinkante",
+        "estimator": 1.5278
+       },
+       {
+        "moves": "Drachenrute / Meteorstrahl",
+        "estimator": 1.6417
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "estimator": 1.6731,
+      "sets": [
+       {
+        "moves": "Katapult / Steinkante",
+        "estimator": 1.6731
+       },
+       {
+        "moves": "Katapult / Rückkehr",
+        "estimator": 2.1927
+       },
+       {
+        "moves": "Katapult / Wirbler",
+        "estimator": 2.3032
+       }
+      ]
+     },
+     {
+      "id": "TYRANTRUM_SHADOW_FORM",
+      "name": "Crypto Monargoras",
+      "estimator": 1.7021,
+      "sets": [
+       {
+        "moves": "Steinwurf / Meteorstrahl",
+        "estimator": 1.7021
+       },
+       {
+        "moves": "Steinwurf / Steinkante",
+        "estimator": 2.0048
+       },
+       {
+        "moves": "Steinwurf / Felsgrab",
+        "estimator": 2.2676
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -24687,6 +26581,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 0.4508,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 0.4508
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 0.4716
+       },
+       {
+        "moves": "Dunkelklaue / Blizzard",
+        "estimator": 0.6284
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 0.6109,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 0.6109
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 0.7071
+       },
+       {
+        "moves": "Eiszahn / Blizzard",
+        "estimator": 0.7864
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -25486,6 +27424,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 0.5436,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 0.5436
+       },
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 0.6097
+       },
+       {
+        "moves": "Psychoklinge / Psychokinese",
+        "estimator": 0.6116
+       }
+      ]
+     },
+     {
+      "id": "MEWTWO_SHADOW_FORM",
+      "name": "Crypto Mewtu",
+      "estimator": 0.723,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 0.723
+       },
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 0.823
+       },
+       {
+        "moves": "Psychoklinge / Psychokinese",
+        "estimator": 0.825
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 0.6988,
+      "sets": [
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 0.6988
+       },
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 0.7113
+       },
+       {
+        "moves": "Konfusion / Psychokinese",
+        "estimator": 0.762
+       }
+      ]
+     },
+     {
+      "id": "RAYQUAZA",
+      "name": "Rayquaza",
+      "estimator": 0.958,
+      "sets": [
+       {
+        "moves": "Luftschnitt / Zenitstürmer",
+        "estimator": 0.958
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 1.0452
+       },
+       {
+        "moves": "Luftschnitt / Orkan",
+        "estimator": 1.3393
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -26285,6 +28305,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "SCEPTILE_MEGA",
+      "name": "Mega-Gewaldro",
+      "estimator": 0.5738,
+      "sets": [
+       {
+        "moves": "Zornklinge / Flora-Statue",
+        "estimator": 0.5738
+       },
+       {
+        "moves": "Kugelsaat / Flora-Statue",
+        "estimator": 0.6124
+       },
+       {
+        "moves": "Zornklinge / Laubklinge",
+        "estimator": 0.7186
+       }
+      ]
+     },
+     {
+      "id": "TANGROWTH_SHADOW_FORM",
+      "name": "Crypto Tangoloss",
+      "estimator": 0.6392,
+      "sets": [
+       {
+        "moves": "Rankenhieb / Solarstrahl",
+        "estimator": 0.6392
+       },
+       {
+        "moves": "Rankenhieb / Blattgeißel",
+        "estimator": 0.6847
+       },
+       {
+        "moves": "Plage / Blattgeißel",
+        "estimator": 0.938
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "SCEPTILE_MEGA",
+      "name": "Mega-Gewaldro",
+      "estimator": 0.7435,
+      "sets": [
+       {
+        "moves": "Kugelsaat / Flora-Statue",
+        "estimator": 0.7435
+       },
+       {
+        "moves": "Zornklinge / Flora-Statue",
+        "estimator": 0.7825
+       },
+       {
+        "moves": "Kugelsaat / Laubklinge",
+        "estimator": 0.8504
+       }
+      ]
+     },
+     {
+      "id": "SHAYMIN_SKY_FORM",
+      "name": "Shaymin - Zenit",
+      "estimator": 0.8739,
+      "sets": [
+       {
+        "moves": "Zauberblatt / Strauchler",
+        "estimator": 0.8739
+       },
+       {
+        "moves": "Kraftreserve / Strauchler",
+        "estimator": 0.9361
+       },
+       {
+        "moves": "Zauberblatt / Solarstrahl",
+        "estimator": 0.965
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -27084,6 +29186,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 0.6396,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 0.6396
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 0.9429
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 1.0573
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "estimator": 1.0034,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenstoß",
+        "estimator": 1.0034
+       },
+       {
+        "moves": "Eiszahn / Gigantenstoß",
+        "estimator": 1.1219
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 2.0916
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -27883,6 +30029,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 0.8767,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 0.8767
+       },
+       {
+        "moves": "Metallklaue / Knuddler",
+        "estimator": 0.9203
+       },
+       {
+        "moves": "Luftschnitt / Knuddler",
+        "estimator": 1.1297
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "GARDEVOIR_MEGA",
+      "name": "Mega-Guardevoir",
+      "estimator": 1.1999,
+      "sets": [
+       {
+        "moves": "Charme / Zauberschein",
+        "estimator": 1.1999
+       },
+       {
+        "moves": "Ladestrahl / Zauberschein",
+        "estimator": 1.371
+       },
+       {
+        "moves": "Zauberblatt / Zauberschein",
+        "estimator": 1.3959
+       }
+      ]
+     },
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 1.2566,
+      "sets": [
+       {
+        "moves": "Metallklaue / Knuddler",
+        "estimator": 1.2566
+       },
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 1.3849
+       },
+       {
+        "moves": "Luftschnitt / Knuddler",
+        "estimator": 1.4206
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -28678,6 +30887,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 0.9825,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.9825
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.0767
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 1.1287
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.0875,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.0875
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.2324
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 1.5164
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "LUCARIO_MEGA",
+      "name": "Mega-Lucario",
+      "estimator": 1.3718,
+      "sets": [
+       {
+        "moves": "Kraftwelle / Aurasphäre",
+        "estimator": 1.3718
+       },
+       {
+        "moves": "Konter / Aurasphäre",
+        "estimator": 1.5434
+       },
+       {
+        "moves": "Patronenhieb / Aurasphäre",
+        "estimator": 1.9001
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 1.6412,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 1.6412
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 2.0327
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 2.1059
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -29477,6 +31768,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 0.4811,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 0.4811
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 0.4911
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 0.5177
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "estimator": 0.717,
+      "sets": [
+       {
+        "moves": "Luftschnitt / Zenitstürmer",
+        "estimator": 0.717
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 0.7837
+       },
+       {
+        "moves": "Luftschnitt / Orkan",
+        "estimator": 0.9575
+       }
+      ]
+     },
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 0.8133,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 0.8133
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 0.8663
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 0.9244
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -30272,6 +32626,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 0.5482,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.5482
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 0.5978
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 0.7914
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 0.6207,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.6207
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 0.6876
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 0.8788
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 0.8675,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.8675
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 0.961
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.1028
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 0.9984,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.9984
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.1178
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.2406
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -31071,6 +33507,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 0.5325,
+      "sets": [
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 0.5325
+       },
+       {
+        "moves": "Psychoklinge / Fokusstoß",
+        "estimator": 0.5612
+       },
+       {
+        "moves": "Konter / Donnerblitz",
+        "estimator": 0.6215
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 0.5373,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 0.5373
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 0.6861
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 0.7255
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "LUCARIO_MEGA",
+      "name": "Mega-Lucario",
+      "estimator": 0.6783,
+      "sets": [
+       {
+        "moves": "Kraftwelle / Aurasphäre",
+        "estimator": 0.6783
+       },
+       {
+        "moves": "Konter / Aurasphäre",
+        "estimator": 0.7378
+       },
+       {
+        "moves": "Patronenhieb / Aurasphäre",
+        "estimator": 0.9245
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 0.7301,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 0.7301
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 0.8515
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 0.9031
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -31870,6 +34388,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "estimator": 0.4438,
+      "sets": [
+       {
+        "moves": "Kaskade / Ursprungswoge",
+        "estimator": 0.4438
+       },
+       {
+        "moves": "Kaskade / Hydropumpe",
+        "estimator": 0.49
+       },
+       {
+        "moves": "Kaskade / Surfer",
+        "estimator": 0.5101
+       }
+      ]
+     },
+     {
+      "id": "KYOGRE_SHADOW_FORM",
+      "name": "Crypto Kyogre",
+      "estimator": 0.551,
+      "sets": [
+       {
+        "moves": "Kaskade / Ursprungswoge",
+        "estimator": 0.551
+       },
+       {
+        "moves": "Kaskade / Hydropumpe",
+        "estimator": 0.6119
+       },
+       {
+        "moves": "Kaskade / Surfer",
+        "estimator": 0.6158
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "estimator": 0.5834,
+      "sets": [
+       {
+        "moves": "Kaskade / Ursprungswoge",
+        "estimator": 0.5834
+       },
+       {
+        "moves": "Kaskade / Surfer",
+        "estimator": 0.6087
+       },
+       {
+        "moves": "Kaskade / Hydropumpe",
+        "estimator": 0.6393
+       }
+      ]
+     },
+     {
+      "id": "KYOGRE_SHADOW_FORM",
+      "name": "Crypto Kyogre",
+      "estimator": 0.713,
+      "sets": [
+       {
+        "moves": "Kaskade / Ursprungswoge",
+        "estimator": 0.713
+       },
+       {
+        "moves": "Kaskade / Surfer",
+        "estimator": 0.7265
+       },
+       {
+        "moves": "Kaskade / Hydropumpe",
+        "estimator": 0.7818
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -32669,6 +35269,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 0.5703,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 0.5703
+       },
+       {
+        "moves": "Metallklaue / Knuddler",
+        "estimator": 0.837
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 0.839
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 0.912,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 0.912
+       },
+       {
+        "moves": "Metallklaue / Knuddler",
+        "estimator": 1.1323
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 1.2885
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -33464,6 +36108,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GIRATINA_ORIGIN_SHADOW_FORM",
+      "name": "Crypto-Giratina Origin",
+      "estimator": 0.6624,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schemenkraft",
+        "estimator": 0.6624
+       },
+       {
+        "moves": "Dunkelklaue / Spukball",
+        "estimator": 0.8285
+       },
+       {
+        "moves": "Drachenrute / Schemenkraft",
+        "estimator": 0.889
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 0.909,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Spukball",
+        "estimator": 0.909
+       },
+       {
+        "moves": "Konfusion / Spukball",
+        "estimator": 0.9434
+       },
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 1.0764
+       }
+      ]
+     },
+     {
+      "id": "TYRANITAR_SHADOW_FORM",
+      "name": "Crypto Despotar",
+      "estimator": 0.9603,
+      "sets": [
+       {
+        "moves": "Biss / Wirbler",
+        "estimator": 0.9603
+       },
+       {
+        "moves": "Katapult / Wirbler",
+        "estimator": 1.122
+       },
+       {
+        "moves": "Feuerodem / Wirbler",
+        "estimator": 1.154
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -33875,6 +36582,49 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": null,
+    "solo": [
+     {
+      "id": "LUCARIO_MEGA",
+      "name": "Mega-Lucario",
+      "estimator": 0.6014,
+      "sets": [
+       {
+        "moves": "Kraftwelle / Aurasphäre",
+        "estimator": 0.6014
+       },
+       {
+        "moves": "Konter / Aurasphäre",
+        "estimator": 0.6674
+       },
+       {
+        "moves": "Patronenhieb / Aurasphäre",
+        "estimator": 0.7587
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 0.6723,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 0.6723
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 0.773
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 0.8246
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -34286,6 +37036,49 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": null,
+    "solo": [
+     {
+      "id": "LUCARIO_MEGA",
+      "name": "Mega-Lucario",
+      "estimator": 0.7389,
+      "sets": [
+       {
+        "moves": "Kraftwelle / Aurasphäre",
+        "estimator": 0.7389
+       },
+       {
+        "moves": "Konter / Aurasphäre",
+        "estimator": 0.8183
+       },
+       {
+        "moves": "Kraftwelle / Sternenhieb",
+        "estimator": 0.825
+       }
+      ]
+     },
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "estimator": 0.7395,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenstoß",
+        "estimator": 0.7395
+       },
+       {
+        "moves": "Eiszahn / Gigantenstoß",
+        "estimator": 0.8365
+       },
+       {
+        "moves": "Metallklaue / Nahkampf",
+        "estimator": 1.2105
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -35085,6 +37878,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 0.7239,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 0.7239
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 0.7263
+       },
+       {
+        "moves": "Drachenrute / Blizzard",
+        "estimator": 0.9847
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 0.9276,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 0.9276
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 1.0529
+       },
+       {
+        "moves": "Eiszahn / Blizzard",
+        "estimator": 1.2186
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -35884,6 +38721,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 0.8829,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 0.8829
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 0.9203
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.0005
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.5068,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.5068
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.6795
+       },
+       {
+        "moves": "Lehmschuss / Feuerschlag",
+        "estimator": 1.7716
+       }
+      ]
+     },
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.5162,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.5162
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.6575
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.9017
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -36679,6 +39579,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 1.3758,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 1.3758
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 2.1605
+       },
+       {
+        "moves": "Metallklaue / Nahkampf",
+        "estimator": 2.1995
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 2.241,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 2.241
+       },
+       {
+        "moves": "Metallklaue / Nahkampf",
+        "estimator": 3.059
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 3.3933
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -37474,6 +40418,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 1.4541,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 1.4541
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 2.1109
+       },
+       {
+        "moves": "Metallklaue / Nahkampf",
+        "estimator": 2.2904
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "estimator": 2.3041,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenstoß",
+        "estimator": 2.3041
+       },
+       {
+        "moves": "Eiszahn / Gigantenstoß",
+        "estimator": 2.5537
+       },
+       {
+        "moves": "Metallklaue / Nahkampf",
+        "estimator": 3.8781
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -38269,6 +41257,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.3653,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.3653
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.4827
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 1.5616
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.6465,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.6465
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.8324
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 2.2299
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 2.0209,
+      "sets": [
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 2.0209
+       },
+       {
+        "moves": "Konter / Flammenwurf",
+        "estimator": 2.288
+       },
+       {
+        "moves": "Psychoklinge / Fokusstoß",
+        "estimator": 2.4832
+       }
+      ]
+     },
+     {
+      "id": "BLACEPHALON",
+      "name": "Kopplosio",
+      "estimator": 2.2899,
+      "sets": [
+       {
+        "moves": "Einäschern / Mind Blown",
+        "estimator": 2.2899
+       },
+       {
+        "moves": "Erstauner / Mind Blown",
+        "estimator": 2.3969
+       },
+       {
+        "moves": "Einäschern / Magieflamme",
+        "estimator": 2.7747
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -39068,6 +42138,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.1839,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.1839
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.2055
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.2527
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.7953,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.7953
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 2.142
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 2.9147
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -39867,6 +42981,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 2.2666,
+      "sets": [
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 2.2666
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 2.3035
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 2.3096
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 3.4387,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 3.4387
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 3.8761
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 5.5015
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -40666,6 +43824,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.0268,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.0268
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.0291
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.0812
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "estimator": 1.567,
+      "sets": [
+       {
+        "moves": "Drachenrute / Breitseite",
+        "estimator": 1.567
+       },
+       {
+        "moves": "Drachenrute / Wutanfall",
+        "estimator": 1.7838
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 1.8934
+       }
+      ]
+     },
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.5743,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.5743
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 1.8109
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 2.5663
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -41465,6 +44686,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.8954,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.8954
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.9129
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 2.0134
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "estimator": 2.7608,
+      "sets": [
+       {
+        "moves": "Drachenrute / Breitseite",
+        "estimator": 2.7608
+       },
+       {
+        "moves": "Drachenrute / Wutanfall",
+        "estimator": 3.2358
+       },
+       {
+        "moves": "Luftschnitt / Breitseite",
+        "estimator": 3.4442
+       }
+      ]
+     },
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 2.8066,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 2.8066
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 3.2941
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 4.6123
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -42260,6 +45544,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 1.789,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Donnerblitz",
+        "estimator": 1.789
+       },
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 1.9873
+       },
+       {
+        "moves": "Konfusion / Donnerblitz",
+        "estimator": 2.0133
+       }
+      ]
+     },
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 1.8173,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Kreuzdonner",
+        "estimator": 1.8173
+       },
+       {
+        "moves": "Drachenrute / Kreuzdonner",
+        "estimator": 1.9705
+       },
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 2.6696
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 2.2999,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Donnerblitz",
+        "estimator": 2.2999
+       },
+       {
+        "moves": "Konfusion / Donnerblitz",
+        "estimator": 2.3731
+       },
+       {
+        "moves": "Konter / Donnerblitz",
+        "estimator": 2.494
+       }
+      ]
+     },
+     {
+      "id": "ZEKROM",
+      "name": "Zekrom",
+      "estimator": 2.4638,
+      "sets": [
+       {
+        "moves": "Ladestrahl / Kreuzdonner",
+        "estimator": 2.4638
+       },
+       {
+        "moves": "Ladestrahl / Stromstoß",
+        "estimator": 2.5345
+       },
+       {
+        "moves": "Feuerodem / Stromstoß",
+        "estimator": 2.8736
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -43055,6 +46421,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 3.3304,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Donnerblitz",
+        "estimator": 3.3304
+       },
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 3.6928
+       },
+       {
+        "moves": "Konter / Donnerblitz",
+        "estimator": 3.8039
+       }
+      ]
+     },
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 3.404,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Kreuzdonner",
+        "estimator": 3.404
+       },
+       {
+        "moves": "Drachenrute / Kreuzdonner",
+        "estimator": 3.6417
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 4.9554
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 4.2892,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Donnerblitz",
+        "estimator": 4.2892
+       },
+       {
+        "moves": "Konfusion / Donnerblitz",
+        "estimator": 4.4363
+       },
+       {
+        "moves": "Konter / Donnerblitz",
+        "estimator": 4.6622
+       }
+      ]
+     },
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 4.7261,
+      "sets": [
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 4.7261
+       },
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 4.9051
+       },
+       {
+        "moves": "Gifthieb / Matschbombe",
+        "estimator": 6.7872
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -43850,6 +47298,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 1.4547,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 1.4547
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 1.6362
+       },
+       {
+        "moves": "Dunkelklaue / Blizzard",
+        "estimator": 1.9827
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "estimator": 2.0816,
+      "sets": [
+       {
+        "moves": "Kaskade / Ursprungswoge",
+        "estimator": 2.0816
+       },
+       {
+        "moves": "Kaskade / Surfer",
+        "estimator": 2.1488
+       },
+       {
+        "moves": "Kaskade / Hydropumpe",
+        "estimator": 2.2636
+       }
+      ]
+     },
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 2.1531,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 2.1531
+       },
+       {
+        "moves": "Stahlflügel / Frosthauch",
+        "estimator": 2.4928
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 2.5043
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -44649,6 +48160,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "estimator": 2.2204,
+      "sets": [
+       {
+        "moves": "Kaskade / Ursprungswoge",
+        "estimator": 2.2204
+       },
+       {
+        "moves": "Kaskade / Surfer",
+        "estimator": 2.3294
+       },
+       {
+        "moves": "Kaskade / Hydropumpe",
+        "estimator": 2.4389
+       }
+      ]
+     },
+     {
+      "id": "KYOGRE_SHADOW_FORM",
+      "name": "Crypto Kyogre",
+      "estimator": 2.5197,
+      "sets": [
+       {
+        "moves": "Kaskade / Ursprungswoge",
+        "estimator": 2.5197
+       },
+       {
+        "moves": "Kaskade / Surfer",
+        "estimator": 2.625
+       },
+       {
+        "moves": "Kaskade / Hydropumpe",
+        "estimator": 2.8281
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "estimator": 2.902,
+      "sets": [
+       {
+        "moves": "Kaskade / Surfer",
+        "estimator": 2.902
+       },
+       {
+        "moves": "Kaskade / Ursprungswoge",
+        "estimator": 2.9431
+       },
+       {
+        "moves": "Kaskade / Hydropumpe",
+        "estimator": 3.2046
+       }
+      ]
+     },
+     {
+      "id": "KYOGRE_SHADOW_FORM",
+      "name": "Crypto Kyogre",
+      "estimator": 3.2376,
+      "sets": [
+       {
+        "moves": "Kaskade / Surfer",
+        "estimator": 3.2376
+       },
+       {
+        "moves": "Kaskade / Ursprungswoge",
+        "estimator": 3.2957
+       },
+       {
+        "moves": "Kaskade / Hydropumpe",
+        "estimator": 3.6358
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -45448,6 +49041,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 0.7179,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 0.7179
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 0.7728
+       },
+       {
+        "moves": "Drachenrute / Blizzard",
+        "estimator": 1.1094
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 1.0255,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 1.0255
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 1.1572
+       },
+       {
+        "moves": "Stahlflügel / Frosthauch",
+        "estimator": 1.3091
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -46247,6 +49884,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 1.7602,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Eisstrahl",
+        "estimator": 1.7602
+       },
+       {
+        "moves": "Konfusion / Eisstrahl",
+        "estimator": 2.0995
+       },
+       {
+        "moves": "Konter / Eisstrahl",
+        "estimator": 2.1727
+       }
+      ]
+     },
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.8967,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.8967
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 2.1053
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 3.693
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 2.3272,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Eisstrahl",
+        "estimator": 2.3272
+       },
+       {
+        "moves": "Konfusion / Eisstrahl",
+        "estimator": 2.5067
+       },
+       {
+        "moves": "Konter / Eisstrahl",
+        "estimator": 2.7337
+       }
+      ]
+     },
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 2.3273,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 2.3273
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 2.6864
+       },
+       {
+        "moves": "Stahlflügel / Frosthauch",
+        "estimator": 3.1637
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -46658,6 +50377,30 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": null,
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.0045,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.0045
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.0059
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.1038
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -47453,6 +51196,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GIRATINA_ORIGIN_SHADOW_FORM",
+      "name": "Crypto-Giratina Origin",
+      "estimator": 0.4111,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schemenkraft",
+        "estimator": 0.4111
+       },
+       {
+        "moves": "Dunkelklaue / Spukball",
+        "estimator": 0.4684
+       },
+       {
+        "moves": "Drachenrute / Schemenkraft",
+        "estimator": 0.5334
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "estimator": 0.5345,
+      "sets": [
+       {
+        "moves": "Biss / Wirbler",
+        "estimator": 0.5345
+       },
+       {
+        "moves": "Katapult / Wirbler",
+        "estimator": 0.6346
+       },
+       {
+        "moves": "Biss / Knirscher",
+        "estimator": 0.6416
+       }
+      ]
+     },
+     {
+      "id": "HYDREIGON_SHADOW_FORM",
+      "name": "Crypto Trikephalo",
+      "estimator": 0.5435,
+      "sets": [
+       {
+        "moves": "Biss / Wirbler",
+        "estimator": 0.5435
+       },
+       {
+        "moves": "Feuerodem / Wirbler",
+        "estimator": 0.6244
+       },
+       {
+        "moves": "Biss / Finsteraura",
+        "estimator": 0.6403
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -48248,6 +52054,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.4219,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.4219
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.4541
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.5014
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 2.4574,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 2.4574
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 2.5509
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 2.7261
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -49043,6 +52893,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 0.9922,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 0.9922
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.0367
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.0413
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.7083,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.7083
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.7862
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.9084
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -49842,6 +53736,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 0.666,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 0.666
+       },
+       {
+        "moves": "Psychoklinge / Psychokinese",
+        "estimator": 0.729
+       },
+       {
+        "moves": "Konter / Psychostoß",
+        "estimator": 0.7366
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 0.7943,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 0.7943
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 1.0251
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 1.0934
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 0.8557,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 0.8557
+       },
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 0.8655
+       },
+       {
+        "moves": "Konter / Psychostoß",
+        "estimator": 0.9103
+       }
+      ]
+     },
+     {
+      "id": "MEWTWO_SHADOW_FORM",
+      "name": "Crypto Mewtu",
+      "estimator": 1.0481,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 1.0481
+       },
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 1.0608
+       },
+       {
+        "moves": "Konter / Psychostoß",
+        "estimator": 1.1104
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -50641,6 +54617,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 0.5866,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 0.5866
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 0.6108
+       },
+       {
+        "moves": "Drachenrute / Blizzard",
+        "estimator": 0.8491
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 0.8046,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 0.8046
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 0.9383
+       },
+       {
+        "moves": "Stahlflügel / Frosthauch",
+        "estimator": 1.0374
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -51440,6 +55460,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 0.5589,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.5589
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 0.6296
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 0.6648
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 0.6598,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.6598
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 0.7999
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 1.0071
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 0.8391,
+      "sets": [
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 0.8391
+       },
+       {
+        "moves": "Konter / Flammenwurf",
+        "estimator": 0.908
+       },
+       {
+        "moves": "Konter / Psychostoß",
+        "estimator": 0.9479
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 0.9204,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 0.9204
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 1.1503
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 1.1996
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -52239,6 +56341,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 0.4396,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 0.4396
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 0.499
+       },
+       {
+        "moves": "Feuerodem / Kreuzflamme",
+        "estimator": 0.5275
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 0.5947,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 0.5947
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 0.6691
+       },
+       {
+        "moves": "Feuerzahn / Steinkante",
+        "estimator": 0.8876
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -53034,6 +57180,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.2092,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.2092
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.2354
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.25
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 2.1186,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 2.1186
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 2.1414
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 2.2242
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -53829,6 +58019,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 0.9841,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 0.9841
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 0.9924
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.0336
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.7059,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.7059
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.7773
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.9227
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -54624,6 +58858,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 0.7742,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 0.7742
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 0.7815
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 0.807
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.285,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.285
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.343
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.4238
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -55423,6 +59701,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.1517,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.1517
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.263
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.6076
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.3066,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.3066
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.4696
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.8543
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "LUCARIO_MEGA",
+      "name": "Mega-Lucario",
+      "estimator": 1.697,
+      "sets": [
+       {
+        "moves": "Kraftwelle / Aurasphäre",
+        "estimator": 1.697
+       },
+       {
+        "moves": "Konter / Aurasphäre",
+        "estimator": 1.8715
+       },
+       {
+        "moves": "Patronenhieb / Aurasphäre",
+        "estimator": 2.2991
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 1.9205,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 1.9205
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 2.3895
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 2.4435
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -56222,6 +60582,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.2002,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.2002
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.3107
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.6843
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.3681,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.3681
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.5633
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.9733
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "LUCARIO_MEGA",
+      "name": "Mega-Lucario",
+      "estimator": 1.777,
+      "sets": [
+       {
+        "moves": "Kraftwelle / Aurasphäre",
+        "estimator": 1.777
+       },
+       {
+        "moves": "Konter / Aurasphäre",
+        "estimator": 1.9911
+       },
+       {
+        "moves": "Patronenhieb / Aurasphäre",
+        "estimator": 2.4151
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 2.0038,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 2.0038
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 2.4609
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 2.6586
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -57021,6 +61463,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.22,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.22
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 1.3614
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 2.3559
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.7121,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.7121
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 2.0092
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 2.8
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -57820,6 +62306,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.2437,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.2437
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 1.4011
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 2.4381
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.7988,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.7988
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 2.1048
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 2.9476
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -58619,6 +63149,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 0.6896,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.6896
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 0.7699
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.1878
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 0.7878,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.7878
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 0.9106
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.4102
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.1163,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.1163
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.2479
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.8435
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.2813,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.2813
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.4837
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 2.2585
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -59414,6 +64026,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 1.271,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Fokusstoß",
+        "estimator": 1.271
+       },
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 1.2756
+       },
+       {
+        "moves": "Konter / Psychostoß",
+        "estimator": 1.6462
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 1.5278,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 1.5278
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 2.0169
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 2.0336
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 1.7538,
+      "sets": [
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 1.7538
+       },
+       {
+        "moves": "Konter / Psychostoß",
+        "estimator": 2.0194
+       },
+       {
+        "moves": "Psychoklinge / Fokusstoß",
+        "estimator": 2.0611
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 2.1522,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 2.1522
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 2.5731
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 2.5983
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -60213,6 +64907,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.08,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.08
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.1348
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.1716
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.5462,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.5462
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 2.0085
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 2.4274
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -61012,6 +65750,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 0.9868,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 0.9868
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 1.2123
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 1.8778
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.3967,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.3967
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 1.7711
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 2.241
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -61807,6 +66589,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.1856,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.1856
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.1957
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.2447
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 2.0018,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 2.0018
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 2.0699
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 2.1942
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -62602,6 +67428,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 1.2595,
+      "sets": [
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 1.2595
+       },
+       {
+        "moves": "Psychoklinge / Fokusstoß",
+        "estimator": 1.3043
+       },
+       {
+        "moves": "Konter / Hyperstrahl",
+        "estimator": 1.7615
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 1.2805,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 1.2805
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 1.5988
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 1.7508
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "BLAZIKEN_MEGA",
+      "name": "Mega-Lohgock",
+      "estimator": 1.5935,
+      "sets": [
+       {
+        "moves": "Konter / Aurasphäre",
+        "estimator": 1.5935
+       },
+       {
+        "moves": "Feuerwirbel / Aurasphäre",
+        "estimator": 1.8596
+       },
+       {
+        "moves": "Glut / Aurasphäre",
+        "estimator": 1.903
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 1.7252,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 1.7252
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 2.0209
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 2.1373
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -63401,6 +68309,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DUSK_MANE_FORM",
+      "name": "Necrozma - Abendmähne",
+      "estimator": 0.6015,
+      "sets": [
+       {
+        "moves": "Metallklaue / Stahlgestirn",
+        "estimator": 0.6015
+       },
+       {
+        "moves": "Psychoklinge / Stahlgestirn",
+        "estimator": 0.6137
+       },
+       {
+        "moves": "Dunkelklaue / Stahlgestirn",
+        "estimator": 0.8017
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "estimator": 0.9853,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenstoß",
+        "estimator": 0.9853
+       },
+       {
+        "moves": "Eiszahn / Gigantenstoß",
+        "estimator": 1.0907
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 1.854
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -64200,6 +69152,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.1443,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.1443
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.27
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 1.3216
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.333,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.333
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.4876
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 1.8099
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 1.6446,
+      "sets": [
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 1.6446
+       },
+       {
+        "moves": "Konter / Flammenwurf",
+        "estimator": 1.8584
+       },
+       {
+        "moves": "Psychoklinge / Fokusstoß",
+        "estimator": 1.8864
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 1.8962,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 1.8962
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 2.3361
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 2.5448
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -64999,6 +70033,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 0.9693,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 0.9693
+       },
+       {
+        "moves": "Metallklaue / Knuddler",
+        "estimator": 1.4081
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 1.4612
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 1.2797,
+      "sets": [
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 1.2797
+       },
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 1.2895
+       },
+       {
+        "moves": "Konter / Psychostoß",
+        "estimator": 1.3523
+       }
+      ]
+     },
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "estimator": 1.5199,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenstoß",
+        "estimator": 1.5199
+       },
+       {
+        "moves": "Eiszahn / Gigantenstoß",
+        "estimator": 1.6768
+       },
+       {
+        "moves": "Metallklaue / Nahkampf",
+        "estimator": 2.5744
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -65798,6 +70895,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "estimator": 0.7443,
+      "sets": [
+       {
+        "moves": "Luftschnitt / Zenitstürmer",
+        "estimator": 0.7443
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 0.8555
+       },
+       {
+        "moves": "Luftschnitt / Orkan",
+        "estimator": 0.9612
+       }
+      ]
+     },
+     {
+      "id": "RAYQUAZA",
+      "name": "Rayquaza",
+      "estimator": 1.0323,
+      "sets": [
+       {
+        "moves": "Luftschnitt / Zenitstürmer",
+        "estimator": 1.0323
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 1.1807
+       },
+       {
+        "moves": "Luftschnitt / Orkan",
+        "estimator": 1.3032
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "estimator": 0.9439,
+      "sets": [
+       {
+        "moves": "Luftschnitt / Zenitstürmer",
+        "estimator": 0.9439
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 1.1286
+       },
+       {
+        "moves": "Luftschnitt / Orkan",
+        "estimator": 1.2807
+       }
+      ]
+     },
+     {
+      "id": "RAYQUAZA",
+      "name": "Rayquaza",
+      "estimator": 1.3042,
+      "sets": [
+       {
+        "moves": "Luftschnitt / Zenitstürmer",
+        "estimator": 1.3042
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 1.5345
+       },
+       {
+        "moves": "Luftschnitt / Orkan",
+        "estimator": 1.7597
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -66593,6 +71772,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 1.0308,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 1.0308
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 1.1628
+       },
+       {
+        "moves": "Dunkelklaue / Kreuzdonner",
+        "estimator": 1.4109
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 1.5116,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 1.5116
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 1.7341
+       },
+       {
+        "moves": "Stahlflügel / Frosthauch",
+        "estimator": 1.7669
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -67388,6 +72611,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 1.1063,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 1.1063
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 1.2757
+       },
+       {
+        "moves": "Dunkelklaue / Kreuzdonner",
+        "estimator": 1.5005
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 1.6796,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 1.6796
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 1.971
+       },
+       {
+        "moves": "Stahlflügel / Frosthauch",
+        "estimator": 1.9737
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -68187,6 +73454,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 0.9471,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 0.9471
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 1.052
+       },
+       {
+        "moves": "Dunkelklaue / Blizzard",
+        "estimator": 1.2755
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 1.3935,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 1.3935
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 1.6488
+       },
+       {
+        "moves": "Eiszahn / Blizzard",
+        "estimator": 1.7543
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -68986,6 +74297,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 0.9768,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 0.9768
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 1.1107
+       },
+       {
+        "moves": "Dunkelklaue / Blizzard",
+        "estimator": 1.3328
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 1.4808,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 1.4808
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 1.7211
+       },
+       {
+        "moves": "Stahlflügel / Frosthauch",
+        "estimator": 1.9073
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -69785,6 +75140,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.1517,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.1517
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 1.2891
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 2.1615
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.6444,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.6444
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 1.8957
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 2.6277
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -70584,6 +75983,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.0833,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.0833
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.1903
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 1.2681
+       }
+      ]
+     },
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.0907,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.0907
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 1.2083
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 2.0234
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.5652,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 1.5652
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 1.7809
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 2.4866
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -71383,6 +76845,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 0.7904,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 0.7904
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 0.9296
+       },
+       {
+        "moves": "Dunkelklaue / Blizzard",
+        "estimator": 1.0903
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 1.0939,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 1.0939
+       },
+       {
+        "moves": "Stahlflügel / Frosthauch",
+        "estimator": 1.3934
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 1.3938
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -72182,6 +77688,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 0.7719,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 0.7719
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 0.9062
+       },
+       {
+        "moves": "Dunkelklaue / Blizzard",
+        "estimator": 1.0899
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 1.0747,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 1.0747
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 1.3691
+       },
+       {
+        "moves": "Stahlflügel / Frosthauch",
+        "estimator": 1.4115
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -72981,6 +78531,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 0.7387,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 0.7387
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 1.1065
+       },
+       {
+        "moves": "Metallklaue / Knuddler",
+        "estimator": 1.1228
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 1.2409,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 1.2409
+       },
+       {
+        "moves": "Metallklaue / Knuddler",
+        "estimator": 1.5182
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 1.6678
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -73780,6 +79374,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 0.7673,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 0.7673
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 0.8615
+       },
+       {
+        "moves": "Feuerodem / Kreuzflamme",
+        "estimator": 0.9399
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 1.0334,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 1.0334
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 1.1634
+       },
+       {
+        "moves": "Feuerzahn / Steinkante",
+        "estimator": 1.7392
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -74579,6 +80217,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 0.7191,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 0.7191
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 0.7985
+       },
+       {
+        "moves": "Feuerodem / Kreuzflamme",
+        "estimator": 0.8687
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 0.9596,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 0.9596
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 1.0591
+       },
+       {
+        "moves": "Feuerzahn / Steinkante",
+        "estimator": 1.608
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -75378,6 +81060,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 0.7343,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 0.7343
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 0.8215
+       },
+       {
+        "moves": "Feuerodem / Kreuzflamme",
+        "estimator": 0.8974
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "BLAZIKEN_MEGA",
+      "name": "Mega-Lohgock",
+      "estimator": 0.9933,
+      "sets": [
+       {
+        "moves": "Feuerwirbel / Lohekanonade",
+        "estimator": 0.9933
+       },
+       {
+        "moves": "Glut / Lohekanonade",
+        "estimator": 1.0599
+       },
+       {
+        "moves": "Feuerwirbel / Hitzekoller",
+        "estimator": 1.0846
+       }
+      ]
+     },
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 0.9961,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 0.9961
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 1.1131
+       },
+       {
+        "moves": "Feuerzahn / Steinkante",
+        "estimator": 1.6942
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -76177,6 +81922,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 0.7712,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 0.7712
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 0.8961
+       },
+       {
+        "moves": "Feuerodem / Kreuzflamme",
+        "estimator": 0.9464
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 1.0469,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 1.0469
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 1.1929
+       },
+       {
+        "moves": "Feuerzahn / Steinkante",
+        "estimator": 1.7484
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -76976,6 +82765,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 0.7392,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 0.7392
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 0.8237
+       },
+       {
+        "moves": "Feuerodem / Kreuzflamme",
+        "estimator": 0.8933
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 1.0036,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 1.0036
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 1.1171
+       },
+       {
+        "moves": "Feuerzahn / Steinkante",
+        "estimator": 1.6883
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -77771,6 +83604,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 0.8565,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 0.8565
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 1.2589
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 1.4824
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "estimator": 1.4062,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenstoß",
+        "estimator": 1.4062
+       },
+       {
+        "moves": "Eiszahn / Gigantenstoß",
+        "estimator": 1.5258
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 2.8538
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -78570,6 +84447,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "estimator": 1.2464,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Frostvolt",
+        "estimator": 1.2464
+       },
+       {
+        "moves": "Drachenrute / Frostvolt",
+        "estimator": 1.31
+       },
+       {
+        "moves": "Drachenrute / Kreuzdonner",
+        "estimator": 1.7017
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "estimator": 1.7343,
+      "sets": [
+       {
+        "moves": "Eiszahn / Frosthauch",
+        "estimator": 1.7343
+       },
+       {
+        "moves": "Stahlflügel / Frosthauch",
+        "estimator": 2.0321
+       },
+       {
+        "moves": "Feuerodem / Frosthauch",
+        "estimator": 2.0397
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -79331,6 +85252,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "HERACROSS_MEGA",
+      "name": "Mega-Skaraborn",
+      "estimator": 0.8821,
+      "sets": [
+       {
+        "moves": "Zornklinge / Vielender",
+        "estimator": 0.8821
+       },
+       {
+        "moves": "Käfertrutz / Vielender",
+        "estimator": 1.2016
+       },
+       {
+        "moves": "Konter / Vielender",
+        "estimator": 1.387
+       }
+      ]
+     },
+     {
+      "id": "ESCAVALIER_SHADOW_FORM",
+      "name": "Crypto Cavalanzas",
+      "estimator": 1.158,
+      "sets": [
+       {
+        "moves": "Käferbiss / Vielender",
+        "estimator": 1.158
+       },
+       {
+        "moves": "Konter / Vielender",
+        "estimator": 1.7936
+       },
+       {
+        "moves": "Käferbiss / Kalkklinge",
+        "estimator": 2.39
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "HERACROSS_MEGA",
+      "name": "Mega-Skaraborn",
+      "estimator": 1.3425,
+      "sets": [
+       {
+        "moves": "Zornklinge / Vielender",
+        "estimator": 1.3425
+       },
+       {
+        "moves": "Käfertrutz / Vielender",
+        "estimator": 1.4665
+       },
+       {
+        "moves": "Konter / Vielender",
+        "estimator": 1.9451
+       }
+      ]
+     },
+     {
+      "id": "VIKAVOLT_SHADOW_FORM",
+      "name": "Crypto Donarion",
+      "estimator": 1.561,
+      "sets": [
+       {
+        "moves": "Käferbiss / Kreuzschere",
+        "estimator": 1.561
+       },
+       {
+        "moves": "Voltwechsel / Kreuzschere",
+        "estimator": 1.9493
+       },
+       {
+        "moves": "Funkensprung / Kreuzschere",
+        "estimator": 1.9586
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -80130,6 +86133,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 0.9317,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 0.9317
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.0047
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 1.5048
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.0599,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.0599
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.2153
+       },
+       {
+        "moves": "Lehmschuss / Solarstrahl",
+        "estimator": 1.8578
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.457,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.457
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.6112
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 2.2587
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.7456,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.7456
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.9543
+       },
+       {
+        "moves": "Lehmschuss / Solarstrahl",
+        "estimator": 2.8694
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -80929,6 +87014,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DUSK_MANE_FORM",
+      "name": "Necrozma - Abendmähne",
+      "estimator": 0.9505,
+      "sets": [
+       {
+        "moves": "Metallklaue / Stahlgestirn",
+        "estimator": 0.9505
+       },
+       {
+        "moves": "Psychoklinge / Stahlgestirn",
+        "estimator": 0.9906
+       },
+       {
+        "moves": "Dunkelklaue / Stahlgestirn",
+        "estimator": 1.0741
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DUSK_MANE_FORM",
+      "name": "Necrozma - Abendmähne",
+      "estimator": 1.5936,
+      "sets": [
+       {
+        "moves": "Metallklaue / Stahlgestirn",
+        "estimator": 1.5936
+       },
+       {
+        "moves": "Psychoklinge / Stahlgestirn",
+        "estimator": 1.7821
+       },
+       {
+        "moves": "Dunkelklaue / Stahlgestirn",
+        "estimator": 1.8247
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -81728,6 +87857,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 0.9549,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 0.9549
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 1.2892
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 1.6413
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 1.3135,
+      "sets": [
+       {
+        "moves": "Gifthieb / Matschbombe",
+        "estimator": 1.3135
+       },
+       {
+        "moves": "Gifthieb / Flammenwurf",
+        "estimator": 1.9117
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 1.9138
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -82527,6 +88700,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "REGIELEKI",
+      "name": "Regieleki",
+      "estimator": 1.6165,
+      "sets": [
+       {
+        "moves": "Donnerschock / Blitzgefängnis",
+        "estimator": 1.6165
+       },
+       {
+        "moves": "Zielschuss / Blitzgefängnis",
+        "estimator": 1.6551
+       },
+       {
+        "moves": "Voltwechsel / Blitzgefängnis",
+        "estimator": 2.1974
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RAICHU_MEGA_Y",
+      "name": "Mega-Raichu Y",
+      "estimator": 2.3271,
+      "sets": [
+       {
+        "moves": "Donnerschock / Stromstoß",
+        "estimator": 2.3271
+       },
+       {
+        "moves": "Funkensprung / Stromstoß",
+        "estimator": 2.4628
+       },
+       {
+        "moves": "Voltwechsel / Stromstoß",
+        "estimator": 2.476
+       }
+      ]
+     },
+     {
+      "id": "REGIGIGAS_SHADOW_FORM",
+      "name": "Crypto Regigigas",
+      "estimator": 2.5293,
+      "sets": [
+       {
+        "moves": "Kraftreserve / Quetschgriff",
+        "estimator": 2.5293
+       },
+       {
+        "moves": "Kraftreserve / Quetschgriff",
+        "estimator": 2.5293
+       },
+       {
+        "moves": "Kraftreserve / Quetschgriff",
+        "estimator": 2.5293
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -83322,6 +89558,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.0203,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.0203
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.0621
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.1034
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.7142,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.7142
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.755
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.9119
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -84121,6 +90401,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 0.7402,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 0.7402
+       },
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 0.7688
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 0.8145
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "estimator": 1.2481,
+      "sets": [
+       {
+        "moves": "Biss / Wirbler",
+        "estimator": 1.2481
+       },
+       {
+        "moves": "Biss / Knirscher",
+        "estimator": 1.5013
+       },
+       {
+        "moves": "Feuerodem / Wirbler",
+        "estimator": 1.6136
+       }
+      ]
+     },
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.2673,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.2673
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.346
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.5525
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -84920,6 +91263,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.1454,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.1454
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.2903
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 1.3537
+       }
+      ]
+     },
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "estimator": 1.2346,
+      "sets": [
+       {
+        "moves": "Dunkelklaue / Schattenstrahl",
+        "estimator": 1.2346
+       },
+       {
+        "moves": "Psychoklinge / Schattenstrahl",
+        "estimator": 1.2356
+       },
+       {
+        "moves": "Metallklaue / Schattenstrahl",
+        "estimator": 1.2959
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.8092,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.8092
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 2.0464
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 2.1292
+       }
+      ]
+     },
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "estimator": 1.9579,
+      "sets": [
+       {
+        "moves": "Feuerzahn / Kreuzflamme",
+        "estimator": 1.9579
+       },
+       {
+        "moves": "Feuerzahn / Hitzekoller",
+        "estimator": 2.1919
+       },
+       {
+        "moves": "Feuerzahn / Knirscher",
+        "estimator": 2.8013
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -85719,6 +92144,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.3242,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.3242
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.4771
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 1.5397
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 1.7989,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.7989
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 2.3076
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 2.7317
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 2.1314,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 2.1314
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 2.395
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 2.4962
+       }
+      ]
+     },
+     {
+      "id": "HEATRAN_SHADOW_FORM",
+      "name": "Crypto Heatran",
+      "estimator": 2.4472,
+      "sets": [
+       {
+        "moves": "Feuerwirbel / Lavasturm",
+        "estimator": 2.4472
+       },
+       {
+        "moves": "Feuerwirbel / Flammenwurf",
+        "estimator": 2.6863
+       },
+       {
+        "moves": "Feuerwirbel / Feuersturm",
+        "estimator": 2.8145
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -86514,6 +93021,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 1.1001,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 1.1001
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 1.6374
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 1.8978
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "estimator": 1.7429,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenstoß",
+        "estimator": 1.7429
+       },
+       {
+        "moves": "Eiszahn / Gigantenstoß",
+        "estimator": 1.9476
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 3.4462
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -87313,6 +93864,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.5218,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.5218
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 1.6897
+       },
+       {
+        "moves": "Lehmschuss / Feuersturm",
+        "estimator": 1.768
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 1.882,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 1.882
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 2.5546
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 2.5945
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "estimator": 2.3863,
+      "sets": [
+       {
+        "moves": "Konter / Fokusstoß",
+        "estimator": 2.3863
+       },
+       {
+        "moves": "Konter / Flammenwurf",
+        "estimator": 2.6468
+       },
+       {
+        "moves": "Psychoklinge / Fokusstoß",
+        "estimator": 2.698
+       }
+      ]
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "estimator": 2.5233,
+      "sets": [
+       {
+        "moves": "Fußkick / Secret Sword",
+        "estimator": 2.5233
+       },
+       {
+        "moves": "Fußkick / Sanctoklinge",
+        "estimator": 3.056
+       },
+       {
+        "moves": "Gifthieb / Secret Sword",
+        "estimator": 3.3193
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -88108,6 +94741,88 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 1.1644,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 1.1644
+       },
+       {
+        "moves": "Psychoklinge / Psychokinese",
+        "estimator": 1.2869
+       },
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 1.32
+       }
+      ]
+     },
+     {
+      "id": "MEWTWO_SHADOW_FORM",
+      "name": "Crypto Mewtu",
+      "estimator": 1.4747,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 1.4747
+       },
+       {
+        "moves": "Psychoklinge / Psychokinese",
+        "estimator": 1.6302
+       },
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 1.6794
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "estimator": 1.5626,
+      "sets": [
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 1.5626
+       },
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 1.5693
+       },
+       {
+        "moves": "Konfusion / Psychokinese",
+        "estimator": 1.6998
+       }
+      ]
+     },
+     {
+      "id": "MEWTWO_SHADOW_FORM",
+      "name": "Crypto Mewtu",
+      "estimator": 1.9497,
+      "sets": [
+       {
+        "moves": "Psychoklinge / Psychostoß",
+        "estimator": 1.9497
+       },
+       {
+        "moves": "Konfusion / Psychostoß",
+        "estimator": 1.9561
+       },
+       {
+        "moves": "Konfusion / Psychokinese",
+        "estimator": 2.1501
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -88519,6 +95234,49 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": null,
+    "solo": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "estimator": 1.8315,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 1.8315
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 2.0555
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 2.3891
+       }
+      ]
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "estimator": 2.1332,
+      "sets": [
+       {
+        "moves": "Lehmschuss / Abgrundsklinge",
+        "estimator": 2.1332
+       },
+       {
+        "moves": "Lehmschuss / Erdbeben",
+        "estimator": 2.3281
+       },
+       {
+        "moves": "Drachenrute / Abgrundsklinge",
+        "estimator": 2.6666
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -89314,6 +96072,69 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 0.5656,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 0.5656
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 0.6341
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 1.0103
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "estimator": 0.7758,
+      "sets": [
+       {
+        "moves": "Drachenrute / Breitseite",
+        "estimator": 0.7758
+       },
+       {
+        "moves": "Drachenrute / Wutanfall",
+        "estimator": 0.8612
+       },
+       {
+        "moves": "Drachenrute / Zenitstürmer",
+        "estimator": 0.9255
+       }
+      ]
+     },
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "estimator": 0.7857,
+      "sets": [
+       {
+        "moves": "Drachenrute / Dynamax-Kanone",
+        "estimator": 0.7857
+       },
+       {
+        "moves": "Gifthieb / Dynamax-Kanone",
+        "estimator": 0.9019
+       },
+       {
+        "moves": "Drachenrute / Drachenpuls",
+        "estimator": 1.2078
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -90113,6 +96934,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 0.7437,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 0.7437
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 1.0889
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 1.2643
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 1.2092,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 1.2092
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 1.7091
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 1.8701
+       }
+      ]
+     }
+    ]
    }
   },
   {
@@ -90912,6 +97777,50 @@
       }
      ]
     }
+   },
+   "best": {
+    "team": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "estimator": 0.9515,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenhieb",
+        "estimator": 0.9515
+       },
+       {
+        "moves": "Luftschnitt / Gigantenhieb",
+        "estimator": 1.5099
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 1.6874
+       }
+      ]
+     }
+    ],
+    "solo": [
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "estimator": 1.5264,
+      "sets": [
+       {
+        "moves": "Metallklaue / Gigantenstoß",
+        "estimator": 1.5264
+       },
+       {
+        "moves": "Eiszahn / Gigantenstoß",
+        "estimator": 1.6007
+       },
+       {
+        "moves": "Metallklaue / Gigastoß",
+        "estimator": 3.1201
+       }
+      ]
+     }
+    ]
    }
   }
  ],
@@ -102028,6 +108937,762 @@
    }
   }
  },
+ "bestOverall": [
+  {
+   "id": "NECROZMA_DAWN_WINGS_FORM",
+   "name": "Necrozma - Morgenschwingen",
+   "types": [
+    {
+     "id": "psychic",
+     "name": "Psycho"
+    },
+    {
+     "id": "ghost",
+     "name": "Geist"
+    }
+   ],
+   "team": 22,
+   "solo": 17,
+   "teamFirst": 21,
+   "soloFirst": 14,
+   "mega": false
+  },
+  {
+   "id": "GROUDON_PRIMAL",
+   "name": "Proto-Groudon",
+   "types": [
+    {
+     "id": "ground",
+     "name": "Boden"
+    },
+    {
+     "id": "fire",
+     "name": "Feuer"
+    }
+   ],
+   "team": 17,
+   "solo": 8,
+   "teamFirst": 17,
+   "soloFirst": 8,
+   "mega": true
+  },
+  {
+   "id": "ETERNATUS",
+   "name": "Endynalos",
+   "types": [
+    {
+     "id": "poison",
+     "name": "Gift"
+    },
+    {
+     "id": "dragon",
+     "name": "Drache"
+    }
+   ],
+   "team": 9,
+   "solo": 15,
+   "teamFirst": 7,
+   "soloFirst": 11,
+   "mega": false
+  },
+  {
+   "id": "KELDEO",
+   "name": "Keldeo",
+   "types": [
+    {
+     "id": "water",
+     "name": "Wasser"
+    },
+    {
+     "id": "fighting",
+     "name": "Kampf"
+    }
+   ],
+   "team": 9,
+   "solo": 15,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "MEWTWO_MEGA_Y",
+   "name": "Mega-Mewtu Y",
+   "types": [
+    {
+     "id": "psychic",
+     "name": "Psycho"
+    }
+   ],
+   "team": 8,
+   "solo": 12,
+   "teamFirst": 8,
+   "soloFirst": 12,
+   "mega": true
+  },
+  {
+   "id": "GROUDON_SHADOW_FORM",
+   "name": "Crypto Groudon",
+   "types": [
+    {
+     "id": "ground",
+     "name": "Boden"
+    }
+   ],
+   "team": 14,
+   "solo": 6,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "ZACIAN_CROWNED_SWORD_FORM",
+   "name": "Zacian - König des Schwertes",
+   "types": [
+    {
+     "id": "fairy",
+     "name": "Fee"
+    },
+    {
+     "id": "steel",
+     "name": "Stahl"
+    }
+   ],
+   "team": 13,
+   "solo": 5,
+   "teamFirst": 13,
+   "soloFirst": 4,
+   "mega": false
+  },
+  {
+   "id": "RESHIRAM_SHADOW_FORM",
+   "name": "Crypto Reshiram",
+   "types": [
+    {
+     "id": "dragon",
+     "name": "Drache"
+    },
+    {
+     "id": "fire",
+     "name": "Feuer"
+    }
+   ],
+   "team": 7,
+   "solo": 10,
+   "teamFirst": 7,
+   "soloFirst": 6,
+   "mega": false
+  },
+  {
+   "id": "KYUREM_BLACK_FORM",
+   "name": "Schwarzes Kyurem",
+   "types": [
+    {
+     "id": "dragon",
+     "name": "Drache"
+    },
+    {
+     "id": "ice",
+     "name": "Eis"
+    }
+   ],
+   "team": 16,
+   "solo": 0,
+   "teamFirst": 13,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "KYUREM_WHITE_FORM",
+   "name": "Weißes Kyurem",
+   "types": [
+    {
+     "id": "dragon",
+     "name": "Drache"
+    },
+    {
+     "id": "ice",
+     "name": "Eis"
+    }
+   ],
+   "team": 0,
+   "solo": 15,
+   "teamFirst": 0,
+   "soloFirst": 13,
+   "mega": false
+  },
+  {
+   "id": "MEWTWO_MEGA_X",
+   "name": "Mega-Mewtu X",
+   "types": [
+    {
+     "id": "psychic",
+     "name": "Psycho"
+    },
+    {
+     "id": "fighting",
+     "name": "Kampf"
+    }
+   ],
+   "team": 6,
+   "solo": 7,
+   "teamFirst": 6,
+   "soloFirst": 7,
+   "mega": true
+  },
+  {
+   "id": "RAYQUAZA_MEGA",
+   "name": "Mega-Rayquaza",
+   "types": [
+    {
+     "id": "dragon",
+     "name": "Drache"
+    },
+    {
+     "id": "flying",
+     "name": "Flug"
+    }
+   ],
+   "team": 2,
+   "solo": 7,
+   "teamFirst": 2,
+   "soloFirst": 7,
+   "mega": true
+  },
+  {
+   "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+   "name": "Zamazenta - König des Schildes",
+   "types": [
+    {
+     "id": "fighting",
+     "name": "Kampf"
+    },
+    {
+     "id": "steel",
+     "name": "Stahl"
+    }
+   ],
+   "team": 0,
+   "solo": 9,
+   "teamFirst": 0,
+   "soloFirst": 7,
+   "mega": false
+  },
+  {
+   "id": "LUCARIO_MEGA",
+   "name": "Mega-Lucario",
+   "types": [
+    {
+     "id": "fighting",
+     "name": "Kampf"
+    },
+    {
+     "id": "steel",
+     "name": "Stahl"
+    }
+   ],
+   "team": 0,
+   "solo": 7,
+   "teamFirst": 0,
+   "soloFirst": 7,
+   "mega": true
+  },
+  {
+   "id": "KYOGRE_PRIMAL",
+   "name": "Proto-Kyogre",
+   "types": [
+    {
+     "id": "water",
+     "name": "Wasser"
+    }
+   ],
+   "team": 2,
+   "solo": 4,
+   "teamFirst": 2,
+   "soloFirst": 4,
+   "mega": true
+  },
+  {
+   "id": "KYOGRE_SHADOW_FORM",
+   "name": "Crypto Kyogre",
+   "types": [
+    {
+     "id": "water",
+     "name": "Wasser"
+    }
+   ],
+   "team": 2,
+   "solo": 3,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "RAYQUAZA",
+   "name": "Rayquaza",
+   "types": [
+    {
+     "id": "dragon",
+     "name": "Drache"
+    },
+    {
+     "id": "flying",
+     "name": "Flug"
+    }
+   ],
+   "team": 2,
+   "solo": 3,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "TYRANITAR_MEGA",
+   "name": "Mega-Despotar",
+   "types": [
+    {
+     "id": "rock",
+     "name": "Gestein"
+    },
+    {
+     "id": "dark",
+     "name": "Unlicht"
+    }
+   ],
+   "team": 1,
+   "solo": 3,
+   "teamFirst": 1,
+   "soloFirst": 3,
+   "mega": true
+  },
+  {
+   "id": "DIANCIE_MEGA",
+   "name": "Mega-Diancie",
+   "types": [
+    {
+     "id": "rock",
+     "name": "Gestein"
+    },
+    {
+     "id": "fairy",
+     "name": "Fee"
+    }
+   ],
+   "team": 0,
+   "solo": 4,
+   "teamFirst": 0,
+   "soloFirst": 4,
+   "mega": true
+  },
+  {
+   "id": "BLAZIKEN_MEGA",
+   "name": "Mega-Lohgock",
+   "types": [
+    {
+     "id": "fire",
+     "name": "Feuer"
+    },
+    {
+     "id": "fighting",
+     "name": "Kampf"
+    }
+   ],
+   "team": 0,
+   "solo": 4,
+   "teamFirst": 0,
+   "soloFirst": 4,
+   "mega": true
+  },
+  {
+   "id": "NECROZMA_DUSK_MANE_FORM",
+   "name": "Necrozma - Abendmähne",
+   "types": [
+    {
+     "id": "psychic",
+     "name": "Psycho"
+    },
+    {
+     "id": "steel",
+     "name": "Stahl"
+    }
+   ],
+   "team": 3,
+   "solo": 1,
+   "teamFirst": 3,
+   "soloFirst": 1,
+   "mega": false
+  },
+  {
+   "id": "REGIELEKI",
+   "name": "Regieleki",
+   "types": [
+    {
+     "id": "electric",
+     "name": "Elektro"
+    }
+   ],
+   "team": 3,
+   "solo": 1,
+   "teamFirst": 3,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "MEWTWO_SHADOW_FORM",
+   "name": "Crypto Mewtu",
+   "types": [
+    {
+     "id": "psychic",
+     "name": "Psycho"
+    }
+   ],
+   "team": 2,
+   "solo": 2,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "GIGALITH_SHADOW_FORM",
+   "name": "Crypto Brockoloss",
+   "types": [
+    {
+     "id": "rock",
+     "name": "Gestein"
+    }
+   ],
+   "team": 3,
+   "solo": 0,
+   "teamFirst": 3,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "GIRATINA_ORIGIN_SHADOW_FORM",
+   "name": "Crypto-Giratina Origin",
+   "types": [
+    {
+     "id": "ghost",
+     "name": "Geist"
+    },
+    {
+     "id": "dragon",
+     "name": "Drache"
+    }
+   ],
+   "team": 3,
+   "solo": 0,
+   "teamFirst": 3,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "SCEPTILE_MEGA",
+   "name": "Mega-Gewaldro",
+   "types": [
+    {
+     "id": "grass",
+     "name": "Pflanze"
+    },
+    {
+     "id": "dragon",
+     "name": "Drache"
+    }
+   ],
+   "team": 1,
+   "solo": 2,
+   "teamFirst": 1,
+   "soloFirst": 2,
+   "mega": true
+  },
+  {
+   "id": "RHYPERIOR_SHADOW_FORM",
+   "name": "Crypto Rihornior",
+   "types": [
+    {
+     "id": "ground",
+     "name": "Boden"
+    },
+    {
+     "id": "rock",
+     "name": "Gestein"
+    }
+   ],
+   "team": 0,
+   "solo": 3,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "HERACROSS_MEGA",
+   "name": "Mega-Skaraborn",
+   "types": [
+    {
+     "id": "bug",
+     "name": "Käfer"
+    },
+    {
+     "id": "fighting",
+     "name": "Kampf"
+    }
+   ],
+   "team": 1,
+   "solo": 1,
+   "teamFirst": 1,
+   "soloFirst": 1,
+   "mega": true
+  },
+  {
+   "id": "TYRANTRUM_SHADOW_FORM",
+   "name": "Crypto Monargoras",
+   "types": [
+    {
+     "id": "rock",
+     "name": "Gestein"
+    },
+    {
+     "id": "dragon",
+     "name": "Drache"
+    }
+   ],
+   "team": 1,
+   "solo": 1,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "REGIGIGAS_SHADOW_FORM",
+   "name": "Crypto Regigigas",
+   "types": [
+    {
+     "id": "normal",
+     "name": "Normal"
+    }
+   ],
+   "team": 0,
+   "solo": 2,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "HYDREIGON_SHADOW_FORM",
+   "name": "Crypto Trikephalo",
+   "types": [
+    {
+     "id": "dark",
+     "name": "Unlicht"
+    },
+    {
+     "id": "dragon",
+     "name": "Drache"
+    }
+   ],
+   "team": 0,
+   "solo": 2,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "GARDEVOIR_MEGA",
+   "name": "Mega-Guardevoir",
+   "types": [
+    {
+     "id": "psychic",
+     "name": "Psycho"
+    },
+    {
+     "id": "fairy",
+     "name": "Fee"
+    }
+   ],
+   "team": 0,
+   "solo": 1,
+   "teamFirst": 0,
+   "soloFirst": 1,
+   "mega": true
+  },
+  {
+   "id": "RAICHU_MEGA_Y",
+   "name": "Mega-Raichu Y",
+   "types": [
+    {
+     "id": "electric",
+     "name": "Elektro"
+    }
+   ],
+   "team": 0,
+   "solo": 1,
+   "teamFirst": 0,
+   "soloFirst": 1,
+   "mega": true
+  },
+  {
+   "id": "ESCAVALIER_SHADOW_FORM",
+   "name": "Crypto Cavalanzas",
+   "types": [
+    {
+     "id": "bug",
+     "name": "Käfer"
+    },
+    {
+     "id": "steel",
+     "name": "Stahl"
+    }
+   ],
+   "team": 1,
+   "solo": 0,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "TYRANITAR_SHADOW_FORM",
+   "name": "Crypto Despotar",
+   "types": [
+    {
+     "id": "rock",
+     "name": "Gestein"
+    },
+    {
+     "id": "dark",
+     "name": "Unlicht"
+    }
+   ],
+   "team": 0,
+   "solo": 1,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "VIKAVOLT_SHADOW_FORM",
+   "name": "Crypto Donarion",
+   "types": [
+    {
+     "id": "bug",
+     "name": "Käfer"
+    },
+    {
+     "id": "electric",
+     "name": "Elektro"
+    }
+   ],
+   "team": 0,
+   "solo": 1,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "HEATRAN_SHADOW_FORM",
+   "name": "Crypto Heatran",
+   "types": [
+    {
+     "id": "fire",
+     "name": "Feuer"
+    },
+    {
+     "id": "steel",
+     "name": "Stahl"
+    }
+   ],
+   "team": 0,
+   "solo": 1,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "RAMPARDOS_SHADOW_FORM",
+   "name": "Crypto Rameidon",
+   "types": [
+    {
+     "id": "rock",
+     "name": "Gestein"
+    }
+   ],
+   "team": 0,
+   "solo": 1,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "TANGROWTH_SHADOW_FORM",
+   "name": "Crypto Tangoloss",
+   "types": [
+    {
+     "id": "grass",
+     "name": "Pflanze"
+    }
+   ],
+   "team": 1,
+   "solo": 0,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "BLACEPHALON",
+   "name": "Kopplosio",
+   "types": [
+    {
+     "id": "fire",
+     "name": "Feuer"
+    },
+    {
+     "id": "ghost",
+     "name": "Geist"
+    }
+   ],
+   "team": 0,
+   "solo": 1,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "SHAYMIN_SKY_FORM",
+   "name": "Shaymin - Zenit",
+   "types": [
+    {
+     "id": "grass",
+     "name": "Pflanze"
+    },
+    {
+     "id": "flying",
+     "name": "Flug"
+    }
+   ],
+   "team": 0,
+   "solo": 1,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  },
+  {
+   "id": "ZEKROM",
+   "name": "Zekrom",
+   "types": [
+    {
+     "id": "dragon",
+     "name": "Drache"
+    },
+    {
+     "id": "electric",
+     "name": "Elektro"
+    }
+   ],
+   "team": 0,
+   "solo": 1,
+   "teamFirst": 0,
+   "soloFirst": 0,
+   "mega": false
+  }
+ ],
  "covered": {
   "team": 111,
   "solo": 117

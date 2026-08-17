@@ -259,6 +259,7 @@
   /* ---------- Ranglisten ---------- */
 
   .boards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; }
+  .boards.single { grid-template-columns: minmax(0, 680px); }
 
   .board {
     background: var(--surface);
@@ -660,6 +661,20 @@
 
   <section>
     <div class="sec-head">
+      <h2>Der beste Konter pro Boss, ohne Rücksicht auf den Pool</h2>
+      <p>
+        Hier zählt nur, wer bei einem Boss tatsächlich vorn liegt – Mega, Krypto oder normal, alles
+        in einer Reihe. Führt ein Mega, kommt zusätzlich der <b>beste Nicht-Mega</b> in die Liste,
+        damit sichtbar bleibt, was ohne Mega-Energie die Antwort wäre. Diese Liste nutzt immer den
+        vollen Pool, der Krypto-Schalter gilt hier also nicht. Beim Aufklappen steht dabei, wie
+        oft ein Pokémon selbst vorn lag und wie oft es nur als bester Nicht-Mega dazukam.
+      </p>
+    </div>
+    <div class="boards single" id="boards-best"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
       <h2>Alle Bosse im Detail</h2>
       <p>
         Unter jedem Konter stehen seine drei besten Attackensets, jedes mit eigenem
@@ -747,7 +762,7 @@
     dark: "#5c4a3f", steel: "#77808c", fairy: "#c25c96"
   };
 
-  const LABEL = { team: "mit Team-Power", solo: "ohne Boni", mega: "Megas" };
+  const LABEL = { team: "mit Team-Power", solo: "ohne Boni", mega: "Megas", best: "bester Konter" };
 
   /* Zwei Abschnitte mit identischem Aufbau, nur mit anderer Zaehltiefe. */
   const SECTIONS = { top5: 5, top2: 2, top1: 1 };
@@ -763,7 +778,7 @@
 
   const state = {
     more: Object.fromEntries(
-      Object.keys(SECTIONS).map(s => [s, { team: false, solo: false, mega: false }])),
+      [...Object.keys(SECTIONS), "best"].map(s => [s, { team: false, solo: false, mega: false, best: false }])),
     filter: null, query: "", shadows: false
   };
   const el = (id) => document.getElementById(id);
@@ -808,6 +823,13 @@
   /* --- Ranglisten --- */
   /* Die Boards beider Abschnitte kommen aus derselben Vorlage. */
   function renderBoardShells() {
+    el("boards-best").innerHTML =
+      '<div class="board board-mega">' +
+        '<div class="board-head"><b>Bester Konter pro Boss</b>' +
+          '<span>voller Pool · Krypto und Megas inbegriffen</span></div>' +
+        '<div id="list-best"></div>' +
+        '<div class="board-more"><button type="button" data-more="best" data-sec="best"></button></div>' +
+      "</div>";
     for (const sec of Object.keys(SECTIONS)) {
       el("boards-" + sec).innerHTML = BOARDS.map(b =>
         '<div class="board ' + b.cls + '">' +
@@ -886,18 +908,42 @@
     for (const sec of Object.keys(SECTIONS)) {
       for (const b of BOARDS) renderBoard(sec, b.mode);
     }
+    renderBest();
+  }
+
+  /* Die kombinierte Bestenliste steht ausserhalb der Zaehltiefen und kennt keine Pools. */
+  function renderBest() {
+    const rows = DATA.bestOverall;
+    const shown = state.more.best.best ? rows : rows.slice(0, 20);
+    const max = Math.max(...rows.map(r => Math.max(r.team, r.solo)));
+    el("list-best").innerHTML = shown.map((r, i) => rowShell("best", "best", r, i, {
+      bars: '<span class="duo-bars">' +
+        '<span class="bar bar-team"><i style="width:' + (r.team / max * 100).toFixed(1) + '%"></i></span>' +
+        '<span class="bar bar-solo"><i style="width:' + (r.solo / max * 100).toFixed(1) + '%"></i></span></span>',
+      value: '<span class="duo">' +
+        '<div class="v-team"><em>' + r.team + '</em><small>m. Boni</small></div>' +
+        '<div class="v-solo"><em>' + r.solo + '</em><small>o. Boni</small></div></span>'
+    })).join("");
+    const btn = document.querySelector('[data-more="best"][data-sec="best"]');
+    btn.textContent = state.more.best.best ? "Weniger anzeigen" : "Alle " + rows.length + " anzeigen";
   }
 
   /* --- Attackenset-Panel --- */
 
   /* Zaehlt, mit welchem Attackenset ein Pokemon seine Platzierungen geholt hat. */
-  function movesetStats(sec, id, mega) {
+  /* Welche Trefferliste eines Bosses zu welcher Spalte gehoert. */
+  function listFor(boss, mode, kind, sec) {
+    if (kind === "best") return boss.best[mode];
+    if (kind === "mega") return cut(overall(boss, mode), sec);
+    return cut(PICKS(boss)[mode], sec);
+  }
+
+  function movesetStats(sec, id, kind) {
     const out = {};
     for (const mode of ["team", "solo"]) {
       const map = new Map();
       for (const boss of DATA.bosses) {
-        const list = mega ? overall(boss, mode) : PICKS(boss)[mode];
-        for (const p of cut(list, sec) || []) {
+        for (const p of listFor(boss, mode, kind, sec) || []) {
           if (p.id !== id) continue;
           // Gezaehlt wird das Set, mit dem das Pokemon die Platzierung geholt hat.
           const moves = p.sets[0].moves;
@@ -912,7 +958,7 @@
     return out;
   }
 
-  function drawerBlock(mode, sets, withLabel) {
+  function drawerBlock(mode, sets, withLabel, extra) {
     const total = sets.reduce((s, x) => s + x.bosses.length, 0);
     const head = mode === "team" ? "Mit Team-Power &amp; bestem Freund" : "Ohne Boni";
     const body = total === 0
@@ -924,18 +970,33 @@
           '<span class="m">' + s.moves + "</span>" +
           '<span class="c">' + n + "× <small>" + Math.round(n / total * 100) + "%</small></span></li>";
       }).join("") + "</ol>";
+    const note = (total ? total + " Platzierungen" : "") + (extra || "");
     const label = withLabel
-      ? '<span class="dr-label">' + head + (total ? " <i>" + total + " Platzierungen</i>" : "") + "</span>"
-      : '<span class="dr-label">Attackensets <i>' + total + " Platzierungen</i></span>";
+      ? '<span class="dr-label">' + head + (note ? " <i>" + note + "</i>" : "") + "</span>"
+      : '<span class="dr-label">Attackensets <i>' + note + "</i></span>";
     return '<div class="dr-block dr-' + mode + '">' + label + body + "</div>";
   }
 
   /* Die Schublade unter der angeklickten Zeile. In den Konfigurations-Spalten zeigt sie
      deren eigene Wertung, in der Mega-Spalte beide untereinander. */
   function drawer(sec, mode, id) {
-    const stats = movesetStats(sec, id, mode === "mega");
-    const inner = mode === "mega"
-      ? drawerBlock("team", stats.team, true) + drawerBlock("solo", stats.solo, true)
+    const kind = mode === "mega" || mode === "best" ? mode : "plain";
+    const stats = movesetStats(sec, id, kind);
+    /* In der Bestenliste trennt der Zusatz, ob das Pokemon selbst vorn lag oder nur der
+       beste Nicht-Mega hinter einem Mega war. */
+    const extra = (m) => {
+      if (kind !== "best") return "";
+      const r = DATA.bestOverall.find(x => x.id === id);
+      const first = m === "team" ? r.teamFirst : r.soloFirst;
+      const total = m === "team" ? r.team : r.solo;
+      if (!total) return "";
+      if (first === total) return " · immer selbst vorn";
+      if (first === 0) return " · immer nur bester Nicht-Mega";
+      return " · " + first + "× selbst vorn";
+    };
+    const inner = kind !== "plain"
+      ? drawerBlock("team", stats.team, true, extra("team")) +
+        drawerBlock("solo", stats.solo, true, extra("solo"))
       : drawerBlock(mode, stats[mode], false);
     return '<div class="drawer">' + inner + "</div>";
   }
@@ -971,14 +1032,15 @@
   function matchesFilter(boss) {
     const f = state.filter;
     if (!f) return true;
-    if (f.mode === "mega") {
-      return ["team", "solo"].some(mode => {
-        const picks = cut(overall(boss, mode), f.sec);
-        return picks && picks.some(p => p.id === f.id);
-      });
+    const kind = f.mode === "mega" || f.mode === "best" ? f.mode : "plain";
+    if (kind === "plain") {
+      const picks = listFor(boss, f.mode, kind, f.sec);
+      return picks && picks.some(p => p.id === f.id);
     }
-    const picks = cut(PICKS(boss)[f.mode], f.sec);
-    return picks && picks.some(p => p.id === f.id);
+    return ["team", "solo"].some(mode => {
+      const picks = listFor(boss, mode, kind, f.sec);
+      return picks && picks.some(p => p.id === f.id);
+    });
   }
 
   function renderBosses() {
@@ -1007,15 +1069,19 @@
     renderBosses();
   }
 
-  const SEC_NOTE = { top5: "", top2: " · nur Top 2", top1: " · nur Platz 1" };
+  const SEC_NOTE = { top5: "", top2: " · nur Top 2", top1: " · nur Platz 1", best: "" };
+
+  /* Die Bestenliste steht ausserhalb von Variante und Zaehltiefe. */
+  const rowOf = (f) => (f.mode === "best"
+    ? DATA.bestOverall.find(r => r.id === f.id)
+    : RANK(f.sec)[f.mode].find(r => r.id === f.id));
 
   function setFilter(f) {
     state.filter = f;
     const pill = el("pill");
     const sb = el("sb-filter");
     if (f) {
-      const name = RANK(f.sec)[f.mode].find(r => r.id === f.id).name;
-      const text = name + " · " + LABEL[f.mode] + SEC_NOTE[f.sec];
+      const text = rowOf(f).name + " · " + LABEL[f.mode] + SEC_NOTE[f.sec];
       el("pill-text").textContent = text;
       el("sb-filter-text").textContent = text;
       pill.classList.add("on");
@@ -1042,7 +1108,7 @@
     indexRanks();
     // Eine Auswahl, die es in der neuen Wertung nicht mehr gibt, wird aufgehoben.
     const f = state.filter;
-    if (f && !RANK(f.sec)[f.mode].some(r => r.id === f.id)) {
+    if (f && !rowOf(f)) {
       setFilter(null);
       return;
     }

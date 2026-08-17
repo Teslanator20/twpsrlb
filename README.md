@@ -8,7 +8,8 @@ Spalte und zählen dort nur, wenn sie sich auch gegen die normalen Konter durchs
 
 Ergebnis ist eine statische Website (`index.html`, keine Abhängigkeiten, kein Build-Tooling)
 mit drei Ranglisten-Abschnitten – über alle fünf Platzierungen, nur über Platz 1 und 2, und nur
-über Platz 1 – plus einer durchsuchbaren Detailansicht pro Boss.
+über Platz 1 – einer kombinierten Bestenliste über den vollen Pool und einer durchsuchbaren
+Detailansicht pro Boss.
 
 ## Was drin steht
 
@@ -30,6 +31,10 @@ mit drei Ranglisten-Abschnitten – über alle fünf Platzierungen, nur über Pl
   genommen und lassen sich per Klick einblenden. Beide Varianten sind vorberechnet, das
   Umschalten läuft ohne Nachladen. Sobald der Schalter aus dem Blick scrollt, erscheint oben
   eine **mitlaufende Leiste** mit demselben Schalter und der aktiven Auswahl.
+* Eine **kombinierte Bestenliste** ganz unten: pro Boss zählt nur, wer tatsächlich vorn liegt –
+  Mega, Krypto oder normal in einer Reihe. Führt ein Mega, kommt zusätzlich der beste Nicht-Mega
+  dazu. Diese Liste nutzt immer den vollen Pool und ignoriert den Krypto-Schalter; beim Aufklappen
+  steht, wie oft ein Pokémon selbst vorn lag und wie oft es nur als bester Nicht-Mega dazukam.
 * Ein Klick auf ein Pokémon in einer Rangliste öffnet darunter eine **Attackenset-Auswertung**:
   mit welchem Set es seine Platzierungen geholt hat, in beiden Konfigurationen, mit Anzahl,
   Anteil und den zugehörigen Bossen. Bei Mega-Mewtu Y sind das sechs verschiedene Lade-Attacken.

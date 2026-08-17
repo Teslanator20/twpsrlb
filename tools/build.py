@@ -156,6 +156,9 @@ def main():
 
 
     bosses = []
+    # Die kombinierte Bestenliste ist von Variante und Zaehltiefe unabhaengig.
+    best_tally = {m: collections.Counter() for m in MODES}
+    best_first = {m: collections.Counter() for m in MODES}
     # tally[variant][depth][key] - je Krypto-Variante, Zaehltiefe und Pool.
     tally, top1, points = {}, {}, {}
     for variant in VARIANTS:
@@ -175,7 +178,27 @@ def main():
             "tier": tier_label(tier, boss_id),
             "special": tier != "RAID_LEVEL_5",
             "picks": {v: {} for v in VARIANTS},
+            "best": {},
         }
+        # Der beste Konter ueberhaupt - voller Pool, Krypto und Megas inbegriffen.
+        # Fuehrt ein Mega, kommt der beste Nicht-Mega dazu.
+        for mode in MODES:
+            full = raw[boss_id].get(mode)
+            if not full:
+                entry["best"][mode] = None
+                continue
+            plain = select(full, False, True)
+            megas = select(full, True, True)
+            ranked = merge(plain, megas)
+            chosen = [ranked[0]]
+            if is_mega(ranked[0]["pokemonId"]) and plain:
+                chosen.append(plain[0])
+            entry["best"][mode] = [counter(c) for c in chosen]
+            for i, c in enumerate(chosen):
+                pid = c["pokemonId"]
+                best_tally[mode][pid] += 1
+                if i == 0:
+                    best_first[mode][pid] += 1
         for variant, shadows in VARIANTS.items():
             for mode in MODES:
                 full = raw[boss_id].get(mode)
@@ -252,6 +275,29 @@ def main():
     def has(boss, mode):
         return bool(boss["picks"]["withShadow"][mode])
 
+    def best_ranking():
+        """Eine Zeile je Pokemon, mit beiden Konfigurationen nebeneinander."""
+        ids = set(best_tally["team"]) | set(best_tally["solo"])
+        rows = [
+            {
+                "id": pid,
+                "name": pokemon_name(pid),
+                "types": types_of(pid),
+                "team": best_tally["team"][pid],
+                "solo": best_tally["solo"][pid],
+                "teamFirst": best_first["team"][pid],
+                "soloFirst": best_first["solo"][pid],
+                "mega": is_mega(pid),
+            }
+            for pid in ids
+        ]
+        rows.sort(key=lambda r: (
+            -(r["team"] + r["solo"]),
+            -(r["teamFirst"] + r["soloFirst"]),
+            r["name"],
+        ))
+        return rows
+
     covered = {m: sum(1 for b in bosses if has(b, m)) for m in MODES}
     missing = [
         {"id": b["id"], "name": b["name"], "mode": m}
@@ -272,6 +318,7 @@ def main():
             }
             for variant in VARIANTS
         },
+        "bestOverall": best_ranking(),
         "covered": covered,
         "missing": missing,
     }
@@ -280,6 +327,8 @@ def main():
         json.dump(data, fh, ensure_ascii=False, indent=1)
     print("Bosse: %d | solo: %d | team: %d | fehlend: %d"
           % (len(bosses), covered["solo"], covered["team"], len(missing)))
+    print("Bester Konter ueberhaupt:",
+          [(r["name"], r["team"], r["solo"]) for r in data["bestOverall"][:6]])
     for variant in VARIANTS:
         for depth in DEPTHS:
             print("--- %s / %s" % (variant, depth))
