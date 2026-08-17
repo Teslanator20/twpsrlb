@@ -420,6 +420,51 @@
 
   .dr-none { margin: 0; font-size: .84rem; font-style: italic; color: var(--ink-3); }
 
+  /* ---------- Typ-Uebersicht ---------- */
+
+  .typegrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+
+  .typecard {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .typecard-head {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--line-soft);
+    /* Der Typ faerbt nur einen Streifen, nicht die ganze Karte. */
+    box-shadow: inset 3px 0 0 var(--tc);
+    background: var(--surface-2);
+  }
+
+  .typecard-head b { font-family: var(--display); font-size: .95rem; letter-spacing: -.005em; }
+  .typecard-head span { font-family: var(--mono); font-size: 10px; color: var(--ink-3); margin-left: auto; }
+
+  ol.tlist { list-style: none; margin: 0; padding: 8px 14px 12px; display: flex; flex-direction: column; gap: 7px; }
+
+  ol.tlist li { display: grid; grid-template-columns: 16px 1fr auto; gap: 8px; align-items: baseline; }
+
+  ol.tlist .r { font-family: var(--mono); font-size: 10px; color: var(--ink-3); text-align: right; }
+  ol.tlist .who2 { display: flex; flex-direction: column; min-width: 0; }
+  ol.tlist .who2 b { font-weight: 600; font-size: .89rem; }
+  ol.tlist .who2 small { font-size: 11px; color: var(--ink-3); }
+
+  ol.tlist .c {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-2);
+    white-space: nowrap;
+  }
+
   /* ---------- Typ-Chips ---------- */
 
   .chips { display: flex; flex-wrap: wrap; gap: 4px; }
@@ -671,6 +716,19 @@
       </p>
     </div>
     <div class="boards single" id="boards-best"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Die besten Angreifer je Attacken-Typ</h2>
+      <p>
+        Gruppiert nach dem Typ der <b>Lade-Attacke</b>, mit der ein Pokémon seine Platzierung geholt
+        hat – nicht nach seinem eigenen Typ. Mega-Mewtu Y steht dadurch bei Eis, Elektro und Geist,
+        je nachdem was es gegen den Boss auspackt. Gezählt sind alle Top-5-Platzierungen beider
+        Konfigurationen und beider Pools; der Krypto-Schalter oben gilt auch hier.
+      </p>
+    </div>
+    <div class="typegrid" id="typegrid"></div>
   </section>
 
   <section>
@@ -1061,11 +1119,28 @@
       ).join("");
   }
 
+  /* --- Angreifer je Attacken-Typ --- */
+  function renderTypes() {
+    el("typegrid").innerHTML = DATA.byType[variant()].map(t => {
+      const color = TYPE_COLORS[t.id] || "#77808c";
+      const rows = t.rows.map((r, i) =>
+        '<li><span class="r">' + (i + 1) + "</span>" +
+        '<span class="who2"><b>' + r.name + "</b><small>" + r.move + "</small></span>" +
+        '<span class="c">' + r.count + "×</span></li>"
+      ).join("");
+      return '<article class="typecard" style="--tc:' + color + '">' +
+        '<div class="typecard-head"><b>' + t.name + "</b>" +
+        "<span>" + t.pokemon + " Angreifer</span></div>" +
+        '<ol class="tlist">' + rows + "</ol></article>";
+    }).join("");
+  }
+
   /* --- Interaktion --- */
   function renderAll() {
     indexRanks();
     renderTiles();
     renderBoards();
+    renderTypes();
     renderBosses();
   }
 

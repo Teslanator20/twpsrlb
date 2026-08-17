@@ -66,16 +66,25 @@ def main():
     keep = {"pokemonId", "type", "type2", "rarity", "pokedex"}
     slim = {"pokemon": [{k: v for k, v in p.items() if k in keep} for p in pokemon.values()]}
 
+    # Attacken-Typen: die Auswertung gruppiert Angreifer nach dem Typ ihrer Lade-Attacke.
+    move_types = {
+        m["moveId"]: m["type"]
+        for m in fetch("/moves")["move"]
+        if m.get("moveId") and m.get("type")
+    }
+
     os.makedirs(DATA, exist_ok=True)
     with open(os.path.join(DATA, "bosses.json"), "w") as fh:
         json.dump(bosses, fh, indent=1)
     with open(os.path.join(DATA, "pokemon.json"), "w") as fh:
         json.dump(slim, fh)
+    with open(os.path.join(DATA, "move_types.json"), "w") as fh:
+        json.dump(move_types, fh, indent=0, sort_keys=True)
 
     for tier, _, _ in GROUPS:
         ids = [b["id"] for b in bosses if b["tier"] == tier]
         print("%-22s %2d  %s" % (tier, len(ids), ", ".join(ids) if len(ids) < 15 else "…"))
-    print("gesamt: %d" % len(bosses))
+    print("gesamt: %d Bosse, %d Attacken-Typen" % (len(bosses), len(move_types)))
 
 
 if __name__ == "__main__":

@@ -109693,6 +109693,1132 @@
    "mega": false
   }
  ],
+ "byType": {
+  "noShadow": [
+   {
+    "id": "normal",
+    "name": "Normal",
+    "rows": [
+     {
+      "id": "REGIGIGAS",
+      "name": "Regigigas",
+      "count": 1,
+      "move": "Quetschgriff",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 1,
+    "total": 1
+   },
+   {
+    "id": "fire",
+    "name": "Feuer",
+    "rows": [
+     {
+      "id": "RESHIRAM",
+      "name": "Reshiram",
+      "count": 33,
+      "move": "Kreuzflamme",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "CHARIZARD_MEGA_Y",
+      "name": "Mega-Glurak Y",
+      "count": 32,
+      "move": "Lohekanonade",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "BLACEPHALON",
+      "name": "Kopplosio",
+      "count": 21,
+      "move": "Mind Blown",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 17,
+    "total": 196
+   },
+   {
+    "id": "water",
+    "name": "Wasser",
+    "rows": [
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "count": 28,
+      "move": "Ursprungswoge",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "SWAMPERT_MEGA",
+      "name": "Mega-Sumpex",
+      "count": 11,
+      "move": "Aquahaubitze",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "KYOGRE",
+      "name": "Kyogre",
+      "count": 7,
+      "move": "Ursprungswoge",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 14,
+    "total": 76
+   },
+   {
+    "id": "electric",
+    "name": "Elektro",
+    "rows": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "count": 25,
+      "move": "Donnerblitz",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "RAICHU_MEGA_Y",
+      "name": "Mega-Raichu Y",
+      "count": 24,
+      "move": "Stromstoß",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "ZEKROM",
+      "name": "Zekrom",
+      "count": 19,
+      "move": "Kreuzdonner",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 11,
+    "total": 129
+   },
+   {
+    "id": "grass",
+    "name": "Pflanze",
+    "rows": [
+     {
+      "id": "SCEPTILE_MEGA",
+      "name": "Mega-Gewaldro",
+      "count": 15,
+      "move": "Flora-Statue",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "VENUSAUR_MEGA",
+      "name": "Mega-Bisaflor",
+      "count": 10,
+      "move": "Flora-Statue",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "ZARUDE",
+      "name": "Zarude",
+      "count": 8,
+      "move": "Blattgeißel",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 13,
+    "total": 56
+   },
+   {
+    "id": "ice",
+    "name": "Eis",
+    "rows": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "count": 75,
+      "move": "Frostvolt",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "count": 52,
+      "move": "Frosthauch",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "count": 25,
+      "move": "Eisstrahl",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 14,
+    "total": 228
+   },
+   {
+    "id": "fighting",
+    "name": "Kampf",
+    "rows": [
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "count": 42,
+      "move": "Secret Sword",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "count": 42,
+      "move": "Fokusstoß",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "BLAZIKEN_MEGA",
+      "name": "Mega-Lohgock",
+      "count": 32,
+      "move": "Aurasphäre",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 16,
+    "total": 219
+   },
+   {
+    "id": "poison",
+    "name": "Gift",
+    "rows": [
+     {
+      "id": "GENGAR_MEGA",
+      "name": "Mega-Gengar",
+      "count": 18,
+      "move": "Matschbombe",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "count": 12,
+      "move": "Matschbombe",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "count": 4,
+      "move": "Matschbombe",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 6,
+    "total": 40
+   },
+   {
+    "id": "ground",
+    "name": "Boden",
+    "rows": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "count": 60,
+      "move": "Abgrundsklinge",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "LANDORUS_THERIAN_FORM",
+      "name": "Demeteros - Tiergeistform",
+      "count": 38,
+      "move": "Wüstenorkan",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "GARCHOMP_MEGA",
+      "name": "Mega-Knakrack",
+      "count": 35,
+      "move": "Erdbeben",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 11,
+    "total": 193
+   },
+   {
+    "id": "flying",
+    "name": "Flug",
+    "rows": [
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "count": 37,
+      "move": "Zenitstürmer",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "RAYQUAZA",
+      "name": "Rayquaza",
+      "count": 12,
+      "move": "Zenitstürmer",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "ARTICUNO_GALARIAN_FORM",
+      "name": "Galarform Arktos",
+      "count": 10,
+      "move": "Sturzflug",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 11,
+    "total": 89
+   },
+   {
+    "id": "psychic",
+    "name": "Psycho",
+    "rows": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "count": 30,
+      "move": "Psychostoß",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "count": 21,
+      "move": "Psychostoß",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "MEWTWO",
+      "name": "Mewtu",
+      "count": 9,
+      "move": "Psychostoß",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 7,
+    "total": 66
+   },
+   {
+    "id": "bug",
+    "name": "Käfer",
+    "rows": [
+     {
+      "id": "HERACROSS_MEGA",
+      "name": "Mega-Skaraborn",
+      "count": 24,
+      "move": "Vielender",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "GENESECT_CHILL_FORM",
+      "name": "Genesect (Gefriermodul)",
+      "count": 2,
+      "move": "Kreuzschere",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "KARTANA",
+      "name": "Katagami",
+      "count": 2,
+      "move": "Kreuzschere",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 13,
+    "total": 41
+   },
+   {
+    "id": "rock",
+    "name": "Gestein",
+    "rows": [
+     {
+      "id": "DIANCIE_MEGA",
+      "name": "Mega-Diancie",
+      "count": 25,
+      "move": "Steinhagel",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "count": 24,
+      "move": "Steinkante",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "GLIMMORA",
+      "name": "Lumiflora",
+      "count": 12,
+      "move": "Meteorstrahl",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 15,
+    "total": 121
+   },
+   {
+    "id": "ghost",
+    "name": "Geist",
+    "rows": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "count": 86,
+      "move": "Schattenstrahl",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "count": 56,
+      "move": "Spukball",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "count": 42,
+      "move": "Spukball",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 12,
+    "total": 266
+   },
+   {
+    "id": "dragon",
+    "name": "Drache",
+    "rows": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "count": 74,
+      "move": "Dynamax-Kanone",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "count": 38,
+      "move": "Breitseite",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "GARCHOMP_MEGA",
+      "name": "Mega-Knakrack",
+      "count": 27,
+      "move": "Breitseite",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 12,
+    "total": 230
+   },
+   {
+    "id": "dark",
+    "name": "Unlicht",
+    "rows": [
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "count": 38,
+      "move": "Wirbler",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "ABSOL_MEGA",
+      "name": "Mega-Absol",
+      "count": 16,
+      "move": "Wirbler",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "TYRANITAR",
+      "name": "Despotar",
+      "count": 11,
+      "move": "Wirbler",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 8,
+    "total": 83
+   },
+   {
+    "id": "steel",
+    "name": "Stahl",
+    "rows": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "count": 67,
+      "move": "Gigantenhieb",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "NECROZMA_DUSK_MANE_FORM",
+      "name": "Necrozma - Abendmähne",
+      "count": 66,
+      "move": "Stahlgestirn",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "count": 39,
+      "move": "Gigantenstoß",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 7,
+    "total": 216
+   },
+   {
+    "id": "fairy",
+    "name": "Fee",
+    "rows": [
+     {
+      "id": "GARDEVOIR_MEGA",
+      "name": "Mega-Guardevoir",
+      "count": 11,
+      "move": "Zauberschein",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "count": 10,
+      "move": "Knuddler",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "TAPU_KOKO",
+      "name": "Kapu-Riki",
+      "count": 2,
+      "move": "Naturzorn",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 5,
+    "total": 26
+   }
+  ],
+  "withShadow": [
+   {
+    "id": "normal",
+    "name": "Normal",
+    "rows": [
+     {
+      "id": "REGIGIGAS_SHADOW_FORM",
+      "name": "Crypto Regigigas",
+      "count": 24,
+      "move": "Quetschgriff",
+      "mega": false,
+      "shadow": true
+     }
+    ],
+    "pokemon": 1,
+    "total": 24
+   },
+   {
+    "id": "fire",
+    "name": "Feuer",
+    "rows": [
+     {
+      "id": "RESHIRAM_SHADOW_FORM",
+      "name": "Crypto Reshiram",
+      "count": 35,
+      "move": "Kreuzflamme",
+      "mega": false,
+      "shadow": true
+     },
+     {
+      "id": "CHARIZARD_MEGA_Y",
+      "name": "Mega-Glurak Y",
+      "count": 32,
+      "move": "Lohekanonade",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "HEATRAN_SHADOW_FORM",
+      "name": "Crypto Heatran",
+      "count": 18,
+      "move": "Lavasturm",
+      "mega": false,
+      "shadow": true
+     }
+    ],
+    "pokemon": 16,
+    "total": 201
+   },
+   {
+    "id": "water",
+    "name": "Wasser",
+    "rows": [
+     {
+      "id": "KYOGRE_PRIMAL",
+      "name": "Proto-Kyogre",
+      "count": 28,
+      "move": "Ursprungswoge",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "KYOGRE_SHADOW_FORM",
+      "name": "Crypto Kyogre",
+      "count": 12,
+      "move": "Ursprungswoge",
+      "mega": false,
+      "shadow": true
+     },
+     {
+      "id": "SWAMPERT_MEGA",
+      "name": "Mega-Sumpex",
+      "count": 11,
+      "move": "Aquahaubitze",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 16,
+    "total": 81
+   },
+   {
+    "id": "electric",
+    "name": "Elektro",
+    "rows": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "count": 25,
+      "move": "Donnerblitz",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "RAICHU_MEGA_Y",
+      "name": "Mega-Raichu Y",
+      "count": 24,
+      "move": "Stromstoß",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "count": 15,
+      "move": "Donnerblitz",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 14,
+    "total": 123
+   },
+   {
+    "id": "grass",
+    "name": "Pflanze",
+    "rows": [
+     {
+      "id": "SCEPTILE_MEGA",
+      "name": "Mega-Gewaldro",
+      "count": 15,
+      "move": "Flora-Statue",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "VENUSAUR_MEGA",
+      "name": "Mega-Bisaflor",
+      "count": 10,
+      "move": "Flora-Statue",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "ZARUDE",
+      "name": "Zarude",
+      "count": 6,
+      "move": "Blattgeißel",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 14,
+    "total": 52
+   },
+   {
+    "id": "ice",
+    "name": "Eis",
+    "rows": [
+     {
+      "id": "KYUREM_BLACK_FORM",
+      "name": "Schwarzes Kyurem",
+      "count": 60,
+      "move": "Frostvolt",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "KYUREM_WHITE_FORM",
+      "name": "Weißes Kyurem",
+      "count": 44,
+      "move": "Frosthauch",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "count": 25,
+      "move": "Eisstrahl",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 15,
+    "total": 201
+   },
+   {
+    "id": "fighting",
+    "name": "Kampf",
+    "rows": [
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "count": 42,
+      "move": "Fokusstoß",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "KELDEO",
+      "name": "Keldeo",
+      "count": 39,
+      "move": "Secret Sword",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "BLAZIKEN_MEGA",
+      "name": "Mega-Lohgock",
+      "count": 32,
+      "move": "Aurasphäre",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 20,
+    "total": 219
+   },
+   {
+    "id": "poison",
+    "name": "Gift",
+    "rows": [
+     {
+      "id": "GENGAR_MEGA",
+      "name": "Mega-Gengar",
+      "count": 18,
+      "move": "Matschbombe",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "count": 5,
+      "move": "Matschbombe",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "count": 4,
+      "move": "Matschbombe",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 7,
+    "total": 33
+   },
+   {
+    "id": "ground",
+    "name": "Boden",
+    "rows": [
+     {
+      "id": "GROUDON_PRIMAL",
+      "name": "Proto-Groudon",
+      "count": 60,
+      "move": "Abgrundsklinge",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "GROUDON_SHADOW_FORM",
+      "name": "Crypto Groudon",
+      "count": 43,
+      "move": "Abgrundsklinge",
+      "mega": false,
+      "shadow": true
+     },
+     {
+      "id": "GARCHOMP_MEGA",
+      "name": "Mega-Knakrack",
+      "count": 35,
+      "move": "Erdbeben",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 12,
+    "total": 217
+   },
+   {
+    "id": "flying",
+    "name": "Flug",
+    "rows": [
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "count": 37,
+      "move": "Zenitstürmer",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "RAYQUAZA",
+      "name": "Rayquaza",
+      "count": 10,
+      "move": "Zenitstürmer",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "MOLTRES_SHADOW_FORM",
+      "name": "Crypto Lavados",
+      "count": 9,
+      "move": "Fliegen",
+      "mega": false,
+      "shadow": true
+     }
+    ],
+    "pokemon": 12,
+    "total": 85
+   },
+   {
+    "id": "psychic",
+    "name": "Psycho",
+    "rows": [
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "count": 30,
+      "move": "Psychostoß",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "count": 21,
+      "move": "Psychostoß",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "MEWTWO_SHADOW_FORM",
+      "name": "Crypto Mewtu",
+      "count": 11,
+      "move": "Psychostoß",
+      "mega": false,
+      "shadow": true
+     }
+    ],
+    "pokemon": 8,
+    "total": 73
+   },
+   {
+    "id": "bug",
+    "name": "Käfer",
+    "rows": [
+     {
+      "id": "HERACROSS_MEGA",
+      "name": "Mega-Skaraborn",
+      "count": 24,
+      "move": "Vielender",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "VIKAVOLT_SHADOW_FORM",
+      "name": "Crypto Donarion",
+      "count": 2,
+      "move": "Kreuzschere",
+      "mega": false,
+      "shadow": true
+     },
+     {
+      "id": "SCIZOR_SHADOW_FORM",
+      "name": "Crypto Scherox",
+      "count": 2,
+      "move": "Kreuzschere",
+      "mega": false,
+      "shadow": true
+     }
+    ],
+    "pokemon": 11,
+    "total": 39
+   },
+   {
+    "id": "rock",
+    "name": "Gestein",
+    "rows": [
+     {
+      "id": "DIANCIE_MEGA",
+      "name": "Mega-Diancie",
+      "count": 25,
+      "move": "Steinhagel",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "count": 24,
+      "move": "Steinkante",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "RHYPERIOR_SHADOW_FORM",
+      "name": "Crypto Rihornior",
+      "count": 14,
+      "move": "Felswerfer",
+      "mega": false,
+      "shadow": true
+     }
+    ],
+    "pokemon": 18,
+    "total": 134
+   },
+   {
+    "id": "ghost",
+    "name": "Geist",
+    "rows": [
+     {
+      "id": "NECROZMA_DAWN_WINGS_FORM",
+      "name": "Necrozma - Morgenschwingen",
+      "count": 67,
+      "move": "Schattenstrahl",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "count": 56,
+      "move": "Spukball",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "count": 42,
+      "move": "Spukball",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 12,
+    "total": 263
+   },
+   {
+    "id": "dragon",
+    "name": "Drache",
+    "rows": [
+     {
+      "id": "ETERNATUS",
+      "name": "Endynalos",
+      "count": 51,
+      "move": "Dynamax-Kanone",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "RAYQUAZA_MEGA",
+      "name": "Mega-Rayquaza",
+      "count": 38,
+      "move": "Breitseite",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "GARCHOMP_MEGA",
+      "name": "Mega-Knakrack",
+      "count": 27,
+      "move": "Breitseite",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 14,
+    "total": 215
+   },
+   {
+    "id": "dark",
+    "name": "Unlicht",
+    "rows": [
+     {
+      "id": "TYRANITAR_MEGA",
+      "name": "Mega-Despotar",
+      "count": 38,
+      "move": "Wirbler",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "TYRANITAR_SHADOW_FORM",
+      "name": "Crypto Despotar",
+      "count": 23,
+      "move": "Wirbler",
+      "mega": false,
+      "shadow": true
+     },
+     {
+      "id": "HYDREIGON_SHADOW_FORM",
+      "name": "Crypto Trikephalo",
+      "count": 20,
+      "move": "Wirbler",
+      "mega": false,
+      "shadow": true
+     }
+    ],
+    "pokemon": 8,
+    "total": 106
+   },
+   {
+    "id": "steel",
+    "name": "Stahl",
+    "rows": [
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "count": 56,
+      "move": "Gigantenhieb",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "NECROZMA_DUSK_MANE_FORM",
+      "name": "Necrozma - Abendmähne",
+      "count": 52,
+      "move": "Stahlgestirn",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "ZAMAZENTA_CROWNED_SHIELD_FORM",
+      "name": "Zamazenta - König des Schildes",
+      "count": 33,
+      "move": "Gigantenstoß",
+      "mega": false,
+      "shadow": false
+     }
+    ],
+    "pokemon": 7,
+    "total": 192
+   },
+   {
+    "id": "fairy",
+    "name": "Fee",
+    "rows": [
+     {
+      "id": "GARDEVOIR_MEGA",
+      "name": "Mega-Guardevoir",
+      "count": 11,
+      "move": "Zauberschein",
+      "mega": true,
+      "shadow": false
+     },
+     {
+      "id": "ZACIAN_CROWNED_SWORD_FORM",
+      "name": "Zacian - König des Schwertes",
+      "count": 5,
+      "move": "Knuddler",
+      "mega": false,
+      "shadow": false
+     },
+     {
+      "id": "DIANCIE_MEGA",
+      "name": "Mega-Diancie",
+      "count": 2,
+      "move": "Mondgewalt",
+      "mega": true,
+      "shadow": false
+     }
+    ],
+    "pokemon": 5,
+    "total": 20
+   }
+  ]
+ },
  "covered": {
   "team": 111,
   "solo": 117

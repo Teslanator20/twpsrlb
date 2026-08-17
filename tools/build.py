@@ -15,6 +15,7 @@ CONST = json.load(open(os.path.join(DATA, "de_constants.json")))
 NAMES = CONST["pokemon"]
 MOVES = CONST["moves"]
 POKEDEX = {p["pokemonId"]: p for p in json.load(open(os.path.join(DATA, "pokemon.json")))["pokemon"]}
+MOVE_TYPES = json.load(open(os.path.join(DATA, "move_types.json")))
 
 REF = re.compile(r"\$t\(constants:(pokemon|moves)\.([A-Z0-9_]+)\)")
 
@@ -102,6 +103,24 @@ def is_shadow(pid):
     return pid.endswith("_SHADOW_FORM")
 
 
+# Reihenfolge wie im Spiel, damit die Typ-Uebersicht scanbar bleibt.
+TYPE_ORDER = [
+    "normal", "fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground",
+    "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy",
+]
+
+
+def type_of_move(move_id):
+    """Der Typ einer Attacke, klein geschrieben - oder None, wenn unbekannt."""
+    raw = MOVE_TYPES.get(move_id)
+    return raw.replace("POKEMON_TYPE_", "").lower() if raw else None
+
+
+def type_name(type_id):
+    key = "POKEMON_TYPE_" + type_id.upper()
+    return resolve(CONST["types"], key) or type_id.title()
+
+
 TOP_N = 5
 MODES = ("team", "solo")
 # Dieselbe Auswertung in drei Zaehltiefen: alle fuenf Plaetze, nur die ersten zwei, nur Platz 1.
@@ -156,6 +175,9 @@ def main():
 
 
     bosses = []
+    # Angreifer je Typ der Lade-Attacke: zaehlt jede Top-5-Platzierung beider Pools.
+    by_type = {v: collections.defaultdict(collections.Counter) for v in VARIANTS}
+    by_type_move = {v: collections.defaultdict(collections.Counter) for v in VARIANTS}
     # Die kombinierte Bestenliste ist von Variante und Zaehltiefe unabhaengig.
     best_tally = {m: collections.Counter() for m in MODES}
     best_first = {m: collections.Counter() for m in MODES}
@@ -210,6 +232,16 @@ def main():
                         continue
                     pools[mega] = select(full, mega, shadows)
                     entry["picks"][variant][key] = [counter(c) for c in pools[mega]]
+                    # Der Typ ergibt sich aus der Lade-Attacke des besten Sets.
+                    for c in pools[mega]:
+                        best_set = c["movesets"][0]
+                        t = type_of_move(best_set["chargedMove"])
+                        if not t:
+                            continue
+                        by_type[variant][t][c["pokemonId"]] += 1
+                        by_type_move[variant][t][
+                            (c["pokemonId"], move_name(best_set["chargedMove"]))
+                        ] += 1
                 if not full:
                     continue
                 # Ohne Megas: Position innerhalb des eigenen Pools.
@@ -298,6 +330,31 @@ def main():
         ))
         return rows
 
+    def type_ranking(variant, limit=3):
+        out = []
+        for t in TYPE_ORDER:
+            counts = by_type[variant][t]
+            if not counts:
+                continue
+            rows = []
+            for pid, count in sorted(counts.items(), key=lambda kv: (-kv[1], pokemon_name(kv[0])))[:limit]:
+                moves = by_type_move[variant][t]
+                top_move = max(
+                    ((k[1], n) for k, n in moves.items() if k[0] == pid),
+                    key=lambda kv: kv[1],
+                )[0]
+                rows.append({
+                    "id": pid,
+                    "name": pokemon_name(pid),
+                    "count": count,
+                    "move": top_move,
+                    "mega": is_mega(pid),
+                    "shadow": is_shadow(pid),
+                })
+            out.append({"id": t, "name": type_name(t), "rows": rows,
+                        "pokemon": len(counts), "total": sum(counts.values())})
+        return out
+
     covered = {m: sum(1 for b in bosses if has(b, m)) for m in MODES}
     missing = [
         {"id": b["id"], "name": b["name"], "mode": m}
@@ -319,6 +376,7 @@ def main():
             for variant in VARIANTS
         },
         "bestOverall": best_ranking(),
+        "byType": {v: type_ranking(v) for v in VARIANTS},
         "covered": covered,
         "missing": missing,
     }
@@ -327,6 +385,9 @@ def main():
         json.dump(data, fh, ensure_ascii=False, indent=1)
     print("Bosse: %d | solo: %d | team: %d | fehlend: %d"
           % (len(bosses), covered["solo"], covered["team"], len(missing)))
+    for v in VARIANTS:
+        print("Typen (%s):" % v, [(x["name"], x["rows"][0]["name"], x["rows"][0]["count"])
+                                  for x in data["byType"][v][:6]])
     print("Bester Konter ueberhaupt:",
           [(r["name"], r["team"], r["solo"]) for r in data["bestOverall"][:6]])
     for variant in VARIANTS:

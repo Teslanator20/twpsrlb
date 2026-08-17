@@ -8,8 +8,8 @@ Spalte und zählen dort nur, wenn sie sich auch gegen die normalen Konter durchs
 
 Ergebnis ist eine statische Website (`index.html`, keine Abhängigkeiten, kein Build-Tooling)
 mit drei Ranglisten-Abschnitten – über alle fünf Platzierungen, nur über Platz 1 und 2, und nur
-über Platz 1 – einer kombinierten Bestenliste über den vollen Pool und einer durchsuchbaren
-Detailansicht pro Boss.
+über Platz 1 – einer kombinierten Bestenliste über den vollen Pool, einer Übersicht der besten Angreifer je
+Attacken-Typ und einer durchsuchbaren Detailansicht pro Boss.
 
 ## Was drin steht
 
@@ -35,6 +35,10 @@ Detailansicht pro Boss.
   Mega, Krypto oder normal in einer Reihe. Führt ein Mega, kommt zusätzlich der beste Nicht-Mega
   dazu. Diese Liste nutzt immer den vollen Pool und ignoriert den Krypto-Schalter; beim Aufklappen
   steht, wie oft ein Pokémon selbst vorn lag und wie oft es nur als bester Nicht-Mega dazukam.
+* **Die besten Angreifer je Attacken-Typ**: 18 Karten, gruppiert nach dem Typ der Lade-Attacke,
+  mit der ein Pokémon seine Platzierung geholt hat – nicht nach seinem eigenen Typ. Mega-Mewtu Y
+  steht dadurch bei Eis, Elektro, Psycho und Geist. Gezählt sind alle Top-5-Platzierungen beider
+  Konfigurationen und beider Pools; der Krypto-Schalter gilt hier mit.
 * Ein Klick auf ein Pokémon in einer Rangliste öffnet darunter eine **Attackenset-Auswertung**:
   mit welchem Set es seine Platzierungen geholt hat, in beiden Konfigurationen, mit Anzahl,
   Anteil und den zugehörigen Bossen. Bei Mega-Mewtu Y sind das sechs verschiedene Lade-Attacken.
@@ -83,6 +87,7 @@ data.json           dieselben Daten als reines JSON
 data/counters.json  Rohergebnis der API-Abfrage (30 Konter je Boss und Konfiguration)
 data/bosses.json    Liste der ausgewerteten Bosse mit ihrer Raid-Stufe
 data/pokemon.json   abgespeckter Pokedex von Pokebattler (Typen, Nummern, Seltenheit)
+data/move_types.json     Attacke -> Typ, für die Gruppierung nach Lade-Attacke
 data/de_constants.json   deutsche Pokémon- und Attackennamen von Pokebattler
 tools/bosses.py     stellt die Boss-Liste samt Raid-Stufe zusammen und aktualisiert pokemon.json
 tools/scrape.py     holt die Counter von der Pokebattler-API
@@ -138,6 +143,8 @@ npx vercel deploy --prod   # im Repo-Wurzelverzeichnis, fragt beim ersten Mal na
   (aktuelle + Legacy-Listen). Angekündigte, aber unveröffentlichte Mega-Bosse wie Mega-Diancie,
   Mega-Darkrai, Mega-Heatran, Mega-Zeraora und Mega-Zygarde fehlen deshalb.
 * Krypto-Raidbosse sind nicht dabei – die gehören in eine eigene Auswertung.
+* Zwei Lade-Attacken fehlen im deutschen Namensverzeichnis von Pokebattler und stehen deshalb
+  englisch da: „Mind Blown“ (Kopplosio) und „Secret Sword“ (Keldeo).
 * Die Top 5 je Pool stammen aus den 30 gelieferten Kontern. Das reicht fast immer; wo nach
   dem Filtern weniger als 5 übrig bleiben, ist die Liste entsprechend kürzer.
 * Team-Power ist mit Gruppengröße 2 simuliert. `numParty=3` und `numParty=4` beantwortet die
