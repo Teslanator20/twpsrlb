@@ -465,6 +465,85 @@
     white-space: nowrap;
   }
 
+  /* ---------- Typ-Auswahl ---------- */
+
+  .typepick { display: flex; flex-wrap: wrap; gap: 6px; }
+
+  .tchip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font: inherit;
+    font-size: .84rem;
+    padding: 5px 11px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+
+  .tchip i { width: 8px; height: 8px; border-radius: 50%; background: var(--tc); font-style: normal; }
+  .tchip:hover { border-color: var(--ink-3); color: var(--ink); }
+  .tchip:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  .tchip[aria-pressed="true"] {
+    border-color: var(--tc);
+    color: var(--ink);
+    font-weight: 600;
+    box-shadow: inset 0 0 0 1px var(--tc);
+  }
+
+  .typelist {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    max-width: 680px;
+  }
+
+  .typelist-head {
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--line);
+    background: var(--surface-2);
+    box-shadow: inset 4px 0 0 var(--tc);
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+  }
+
+  .typelist-head b { font-family: var(--display); font-size: 1.05rem; letter-spacing: -.01em; }
+  .typelist-head span { font-family: var(--mono); font-size: 11px; color: var(--ink-3); margin-left: auto; }
+
+  ol.tranks { list-style: none; margin: 0; padding: 0; }
+
+  ol.tranks li {
+    display: grid;
+    grid-template-columns: 26px 1fr auto;
+    gap: 11px;
+    align-items: center;
+    padding: 8px 18px;
+    border-top: 1px solid var(--line-soft);
+  }
+
+  ol.tranks li:first-child { border-top: 0; }
+  ol.tranks .r { font-family: var(--mono); font-size: 12px; font-variant-numeric: tabular-nums; color: var(--ink-3); text-align: right; }
+  ol.tranks .who3 { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  ol.tranks .who3 b { font-weight: 600; font-size: .95rem; }
+  ol.tranks .who3 small { font-size: 11.5px; color: var(--ink-3); }
+
+  ol.tranks .c {
+    font-family: var(--mono);
+    font-size: 1.02rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  ol.tranks .tbar { height: 3px; border-radius: 2px; background: var(--line-soft); overflow: hidden; }
+  ol.tranks .tbar i { display: block; height: 100%; border-radius: 2px; background: var(--tc); }
+
   /* ---------- Typ-Chips ---------- */
 
   .chips { display: flex; flex-wrap: wrap; gap: 4px; }
@@ -601,10 +680,28 @@
   .sets .s-est { font-family: var(--mono); font-variant-numeric: tabular-nums; }
   .sets .best { color: var(--ink-2); }
   .sets .best .s-est { font-weight: 600; }
+  /* Innerhalb des Raid-Zeitlimits - ein Trainer wird rechtzeitig fertig. */
+  .sets .s-est.ok { color: var(--ink); font-weight: 600; }
 
   li.hit .pk b { box-shadow: inset 0 -.55em 0 var(--hl, transparent); }
 
-  .no-data { font-size: .88rem; color: var(--ink-3); font-style: italic; margin: 0; }
+  .more-bosses { display: flex; justify-content: center; padding: 4px 0 0; }
+
+  .more-bosses button {
+    font: inherit;
+    font-size: .9rem;
+    padding: 9px 20px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+
+  .more-bosses button:hover { border-color: var(--ink-3); color: var(--ink); }
+  .more-bosses button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  .no-data { margin: 0; font-size: .88rem; color: var(--ink-3); font-style: italic; }
 
   .empty { padding: 28px; text-align: center; color: var(--ink-3); font-family: var(--mono); font-size: 13px; }
 
@@ -652,7 +749,8 @@
     <h1>Welche Angreifer landen am häufigsten in den Top&nbsp;5?</h1>
     <p class="lede">
       Für jeden Raidboss – alle legendären und mysteriösen sowie alle Mega- und Proto-Raids –
-      wurden die fünf besten Konter ermittelt: einmal <b>mit Team-Power und bestem Freund</b>,
+      wurden die fünf schnellsten Konter ermittelt, mit Angreifern auf <b>Level 50</b>:
+      einmal <b>mit Team-Power und bestem Freund</b>,
       einmal <b>ohne beides</b>. Jedes Pokémon zählt dabei als ein Eintrag, unabhängig davon, mit
       welchem Attackenset es punktet; ein Klick zeigt die Verteilung. Die ersten zwei Spalten zeigen,
       was <b>ohne Mega-Energie</b> zur Verfügung steht; die dritte zählt <b>Mega-Entwicklungen nur
@@ -733,11 +831,26 @@
 
   <section>
     <div class="sec-head">
+      <h2>Typ auswählen, beste Angreifer ansehen</h2>
+      <p>
+        Dieselbe Zählung wie oben, nur vollständig statt auf drei gekürzt: wähle einen Typ und du
+        siehst alle Angreifer, die mit einer Lade-Attacke dieses Typs in eine Top 5 gekommen sind.
+        Hinter jedem Namen steht die Attacke, mit der er das meistens geschafft hat.
+      </p>
+    </div>
+    <div class="typepick" id="typepick"></div>
+    <div class="typelist" id="typelist"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
       <h2>Alle Bosse im Detail</h2>
       <p>
-        Unter jedem Konter stehen seine drei besten Attackensets, jedes mit eigenem
-        Pokebattler-Estimator: geschätzte Anzahl Trainer, die den Raid damit schaffen.
-        Kleiner ist besser, <b>#1</b> ist das Set, mit dem das Pokémon seine Platzierung geholt hat.
+        Unter jedem Konter stehen seine drei schnellsten Attackensets mit ihrer
+        <b>Time to win</b> – wie lange der Kampf dauert, wenn du unbegrenzt viele Exemplare
+        dieses Pokémon nachschickst. Kleiner ist besser; <b>#1</b> ist das Set, mit dem das
+        Pokémon seine Platzierung geholt hat. Werte <b>unter 300 s</b> liegen im Raid-Zeitlimit,
+        ein einzelner Trainer wird also rechtzeitig fertig.
       </p>
     </div>
     <div class="toolbar">
@@ -749,6 +862,7 @@
       <span class="count-note" id="count-note"></span>
     </div>
     <div class="bosses" id="bosses"></div>
+    <div class="more-bosses" id="more-bosses"></div>
   </section>
 
   <section>
@@ -758,12 +872,13 @@
         <h3>Abfrage</h3>
         <p>
           Pokebattler-Raid-API, jeder Boss in seiner eigenen Raid-Stufe
-          (<code>RAID_LEVEL_5</code>, <code>RAID_LEVEL_MEGA_5</code>, <code>RAID_LEVEL_ELITE</code>),
-          Angreifer auf Level 40, Strategie
+          (<code>RAID_LEVEL_5</code>, <code>RAID_LEVEL_MEGA</code>, <code>RAID_LEVEL_MEGA_5</code>,
+          <code>RAID_LEVEL_ELITE</code>), Angreifer auf <b>Level 50</b>, sortiert nach
+          <code>TIME</code>, Strategie
           <code>CINEMATIC_ATTACK_WHEN_POSSIBLE</code>, Ausweichen nach Reaktionszeit, kein Wetterbonus,
-          zufälliges Boss-Attackenset, sortiert nach Estimator. Pokebattler liefert je Abfrage die
-          30 besten Konter mit je 6 bis 10 simulierten Attackensets; gespeichert sind daraus die
-          Top 5 Konter je Pool mit ihren jeweils drei besten Sets.
+          zufälliges Boss-Attackenset. Pokebattler liefert je Abfrage die 30 besten Konter mit
+          je 6 bis 10 simulierten Attackensets; gespeichert sind daraus die Top 5 Konter je Pool
+          mit ihren jeweils drei schnellsten Sets.
         </p>
       </div>
       <div>
@@ -799,6 +914,7 @@
           <li>Berücksichtigt sind nur Bosse, die tatsächlich schon in Raids aufgetreten sind. Angekündigte, aber unveröffentlichte Mega-Bosse wie Mega-Diancie oder Mega-Heatran fehlen daher.</li>
           <li>Der übrige Angreifer-Pool ist Pokebattlers Standard und enthält auch noch nicht veröffentlichte Formen.</li>
           <li>Ohne Krypto-Formen bleiben aus den 30 gelieferten Kontern meist 11 nutzbare übrig; wo es weniger als 5 sind, ist die Liste entsprechend kürzer.</li>
+          <li>Die Boss-Liste enthält auch Bosse aus Pokebattlers Vorschau-Listen, die noch nicht im Spiel waren – Lunala stand dort ebenfalls, obwohl es längst Raidboss war.</li>
           <li>Jede Form zählt einzeln: Schwarzes Kyurem und Kyurem sind getrennte Einträge.</li>
           <li>Team-Power ist mit Gruppengröße 2 simuliert; größere Gruppen rechnet die API nicht in der verfügbaren Zeit durch.</li>
         </ul>
@@ -834,10 +950,16 @@
       sub: () => "gegen alle Konter gemessen" }
   ];
 
+  /* Zeitlimit eines Stufe-5- oder Mega-Raids. Darunter schafft es ein Trainer im Timer. */
+  const RAID_SECONDS = 300;
+  const secs = (s) => s.toFixed(1).replace(".", ",") + " s";
+
   const state = {
     more: Object.fromEntries(
       [...Object.keys(SECTIONS), "best"].map(s => [s, { team: false, solo: false, mega: false, best: false }])),
-    filter: null, query: "", shadows: false
+    filter: null, query: "", shadows: false, type: null,
+    /* 241 Bosse komplett im DOM machen die Seite traege - deshalb stueckweise. */
+    bossLimit: 30
   };
   const el = (id) => document.getElementById(id);
 
@@ -855,7 +977,7 @@
     const plain = p[mode];
     const megas = p[mode === "team" ? "teamMega" : "soloMega"];
     if (!plain || !megas) return null;
-    return [...plain, ...megas].sort((a, b) => a.estimator - b.estimator).slice(0, 5);
+    return [...plain, ...megas].sort((a, b) => a.time - b.time).slice(0, 5);
   }
 
   function chips(types) {
@@ -1069,7 +1191,8 @@
       const hit = state.filter && state.filter.id === p.id;
       const sets = p.sets.map((s, i) =>
         '<span class="' + (i === 0 ? "best" : "") + '"><span class="s-rank">#' + (i + 1) + "</span> " +
-        s.moves + ' <span class="s-est">(' + s.estimator.toFixed(2) + ")</span></span>"
+        s.moves + ' <span class="s-est' + (s.time <= RAID_SECONDS ? " ok" : "") + '">' +
+        secs(s.time) + "</span></span>"
       ).join("");
       return "<li" + (hit ? ' class="hit" style="--hl:' + wash + '"' : "") +
         '><span class="pk"><b>' + p.name + '</b><span class="sets">' + sets + "</span></span></li>";
@@ -1108,10 +1231,18 @@
       return (!q || hay.includes(q)) && matchesFilter(b);
     });
 
-    el("count-note").textContent = list.length + " von " + DATA.bosses.length + " Bossen";
-    el("bosses").innerHTML = list.length === 0
+    const shown = list.slice(0, state.bossLimit);
+    el("count-note").textContent = (shown.length < list.length
+      ? shown.length + " von " + list.length + " angezeigt"
+      : list.length + " von " + DATA.bosses.length + " Bossen");
+    el("more-bosses").innerHTML = shown.length < list.length
+      ? '<button type="button" data-more-bosses>Weitere ' +
+        Math.min(30, list.length - shown.length) + " von " + (list.length - shown.length) +
+        " anzeigen</button>"
+      : "";
+    el("bosses").innerHTML = shown.length === 0
       ? '<div class="boss empty">Kein Boss passt zu dieser Auswahl.</div>'
-      : list.map(b =>
+      : shown.map(b =>
         '<article class="boss"><div class="boss-head"><b>' + b.name + "</b>" + chips(b.types) +
         '<span class="tier' + (b.special ? " special" : "") + '">' + b.tier + "</span>" +
         '<span class="dex">Nr. ' + b.num + '</span></div><div class="boss-cols">' +
@@ -1123,7 +1254,7 @@
   function renderTypes() {
     el("typegrid").innerHTML = DATA.byType[variant()].map(t => {
       const color = TYPE_COLORS[t.id] || "#77808c";
-      const rows = t.rows.map((r, i) =>
+      const rows = t.rows.slice(0, 3).map((r, i) =>
         '<li><span class="r">' + (i + 1) + "</span>" +
         '<span class="who2"><b>' + r.name + "</b><small>" + r.move + "</small></span>" +
         '<span class="c">' + r.count + "×</span></li>"
@@ -1135,12 +1266,43 @@
     }).join("");
   }
 
+  /* --- Typ auswaehlen --- */
+  function typeEntries() { return DATA.byType[variant()]; }
+
+  function renderTypePicker() {
+    const list = typeEntries();
+    /* Ohne Auswahl der Typ mit den meisten Angreifern - Normal waere ein oeder Einstieg. */
+    if (!state.type || !list.some(t => t.id === state.type)) {
+      state.type = list.reduce((a, b) => (b.rows.length > a.rows.length ? b : a), list[0]).id;
+    }
+    el("typepick").innerHTML = list.map(t =>
+      '<button type="button" class="tchip" data-type="' + t.id + '" style="--tc:' +
+      (TYPE_COLORS[t.id] || "#77808c") + '" aria-pressed="' +
+      (t.id === state.type ? "true" : "false") + '"><i></i>' + t.name + "</button>"
+    ).join("");
+
+    const sel = list.find(t => t.id === state.type);
+    const max = sel.rows[0].count;
+    const color = TYPE_COLORS[sel.id] || "#77808c";
+    el("typelist").innerHTML =
+      '<div class="typelist-head" style="--tc:' + color + '"><b>' + sel.name +
+        "</b><span>" + sel.rows.length + " Angreifer · " + sel.total + " Platzierungen</span></div>" +
+      '<ol class="tranks" style="--tc:' + color + '">' + sel.rows.map((r, i) =>
+        '<li><span class="r">' + (i + 1) + "</span>" +
+        '<span class="who3"><b>' + r.name + "</b>" + chips(r.types) +
+        "<small>" + r.move + "</small>" +
+        '<span class="tbar"><i style="width:' + (r.count / max * 100).toFixed(1) + '%"></i></span></span>' +
+        '<span class="c">' + r.count + "×</span></li>"
+      ).join("") + "</ol>";
+  }
+
   /* --- Interaktion --- */
   function renderAll() {
     indexRanks();
     renderTiles();
     renderBoards();
     renderTypes();
+    renderTypePicker();
     renderBosses();
   }
 
@@ -1153,6 +1315,7 @@
 
   function setFilter(f) {
     state.filter = f;
+    state.bossLimit = 30;
     const pill = el("pill");
     const sb = el("sb-filter");
     if (f) {
@@ -1191,6 +1354,13 @@
   }
 
   document.addEventListener("click", (ev) => {
+    if (ev.target.closest("[data-more-bosses]")) {
+      state.bossLimit += 30;
+      renderBosses();
+      return;
+    }
+    const tchip = ev.target.closest(".tchip");
+    if (tchip) { state.type = tchip.dataset.type; renderTypePicker(); return; }
     if (ev.target.closest("[data-shadow-toggle]")) { setShadows(!state.shadows); return; }
     if (ev.target.closest("[data-clear-filter]")) { setFilter(null); return; }
     const row = ev.target.closest(".row");
@@ -1223,7 +1393,11 @@
   }
   addEventListener("scroll", syncBar, { passive: true });
   addEventListener("resize", syncBar, { passive: true });
-  el("search").addEventListener("input", (ev) => { state.query = ev.target.value; renderBosses(); });
+  el("search").addEventListener("input", (ev) => {
+    state.query = ev.target.value;
+    state.bossLimit = 30;
+    renderBosses();
+  });
 
   if (DATA.missing.length) {
     el("caveats").insertAdjacentHTML("beforeend", "<li>Ohne Daten in einer Konfiguration: " +

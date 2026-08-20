@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Baut aus counters.json die Auswertung + die statische Website."""
+"""Baut aus counters.json die Auswertung + die statische Website.
+
+Vergleichsgroesse ist die Time to win in Sekunden - kleiner ist besser. Der Estimator
+(geschaetzte Anzahl Trainer) laeuft als Zusatzinfo mit.
+"""
 import collections
 import datetime
 import json
@@ -91,6 +95,8 @@ def tier_label(tier, pid):
         return "Mega-Raid"
     if tier == "RAID_LEVEL_ELITE":
         return "Elite-Raid"
+    if tier == "RAID_LEVEL_ULTRA_BEAST":
+        return "Ultrabestie"
     return "Stufe 5"
 
 
@@ -133,7 +139,7 @@ VARIANTS = {"noShadow": False, "withShadow": True}
 
 
 def select(full, mega, shadows):
-    """Die besten TOP_N Konter aus der 30er-Liste, gefiltert nach Pool."""
+    """Die schnellsten TOP_N Konter aus der 30er-Liste, gefiltert nach Pool."""
     picks = []
     for c in full:
         pid = c["pokemonId"]
@@ -151,7 +157,7 @@ def merge(plain, megas):
     Die Vereinigung der beiden Pool-Spitzen enthaelt die tatsaechlich besten TOP_N,
     deshalb genuegt es, die zwei fertigen Listen zusammenzulegen.
     """
-    return sorted(plain + megas, key=lambda c: c["estimator"])[:TOP_N]
+    return sorted(plain + megas, key=lambda c: c["time"])[:TOP_N]
 
 
 def main():
@@ -159,14 +165,16 @@ def main():
     tiers = {b["id"]: b["tier"] for b in json.load(open(os.path.join(DATA, "bosses.json")))}
 
     def counter(c):
-        """Ein Pokemon = ein Eintrag, darunter seine besten Attackensets mit eigenem Estimator."""
+        """Ein Pokemon = ein Eintrag, darunter seine schnellsten Attackensets."""
         return {
             "id": c["pokemonId"],
             "name": pokemon_name(c["pokemonId"]),
+            "time": c["time"],
             "estimator": c["estimator"],
             "sets": [
                 {
                     "moves": "%s / %s" % (move_name(m["fastMove"]), move_name(m["chargedMove"])),
+                    "time": m["time"],
                     "estimator": m["estimator"],
                 }
                 for m in c["movesets"]
@@ -330,14 +338,15 @@ def main():
         ))
         return rows
 
-    def type_ranking(variant, limit=3):
+    def type_ranking(variant):
+        """Je Typ die komplette Rangliste - die Karten oben zeigen daraus die ersten drei."""
         out = []
         for t in TYPE_ORDER:
             counts = by_type[variant][t]
             if not counts:
                 continue
             rows = []
-            for pid, count in sorted(counts.items(), key=lambda kv: (-kv[1], pokemon_name(kv[0])))[:limit]:
+            for pid, count in sorted(counts.items(), key=lambda kv: (-kv[1], pokemon_name(kv[0]))):
                 moves = by_type_move[variant][t]
                 top_move = max(
                     ((k[1], n) for k, n in moves.items() if k[0] == pid),
@@ -348,6 +357,7 @@ def main():
                     "name": pokemon_name(pid),
                     "count": count,
                     "move": top_move,
+                    "types": types_of(pid),
                     "mega": is_mega(pid),
                     "shadow": is_shadow(pid),
                 })
@@ -386,7 +396,7 @@ def main():
     print("Bosse: %d | solo: %d | team: %d | fehlend: %d"
           % (len(bosses), covered["solo"], covered["team"], len(missing)))
     for v in VARIANTS:
-        print("Typen (%s):" % v, [(x["name"], x["rows"][0]["name"], x["rows"][0]["count"])
+        print("Typen (%s):" % v, [(x["name"], len(x["rows"]), x["rows"][0]["name"])
                                   for x in data["byType"][v][:6]])
     print("Bester Konter ueberhaupt:",
           [(r["name"], r["team"], r["solo"]) for r in data["bestOverall"][:6]])

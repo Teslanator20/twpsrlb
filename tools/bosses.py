@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Baut data/bosses.json: alle legendaeren und mysterioesen Raidbosse mit ihrer Raid-Stufe.
 
-Beruecksichtigt werden nur Bosse, die tatsaechlich schon in Raids aufgetreten sind -
-also die aktuellen Listen und die Legacy-Listen, nicht die FUTURE-Listen mit noch
-unveroeffentlichten Bossen.
+Beruecksichtigt sind die aktuellen Listen, die Legacy-Listen und die FUTURE-Listen.
+Letztere enthalten Bosse, die Pokebattler kennt, bevor sie im Spiel auftauchen - und
+solche, die inzwischen da sind, ohne dass die Liste nachgezogen wurde (Lunala etwa).
 """
 import json
 import os
@@ -14,17 +14,27 @@ ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, "data")
 
 API = "https://fight.pokebattler.com"
-RARITIES = {"POKEMON_RARITY_LEGENDARY", "POKEMON_RARITY_MYTHIC"}
+RARITIES = {"POKEMON_RARITY_LEGENDARY", "POKEMON_RARITY_MYTHIC",
+            "POKEMON_RARITY_ULTRA_BEAST"}
 
 # API-Stufe -> Pokebattler-Listen, die darauf abgebildet werden. Reihenfolge = Prioritaet:
 # ein Boss, der in mehreren Listen steht, bekommt die erste passende Stufe.
 # rare_only=True beschraenkt auf legendaere und mysterioese Pokemon; Mega-Raids nehmen
 # wir vollstaendig mit, dort ist die Mega-Form selbst das Auswahlkriterium.
 GROUPS = [
-    ("RAID_LEVEL_5", ("RAID_LEVEL_5", "RAID_LEVEL_5_LEGACY"), True),
-    ("RAID_LEVEL_MEGA_5", ("RAID_LEVEL_MEGA_5", "RAID_LEVEL_MEGA_5_LEGACY"), True),
-    ("RAID_LEVEL_ELITE", ("RAID_LEVEL_ELITE", "RAID_LEVEL_ELITE_LEGACY"), True),
-    ("RAID_LEVEL_MEGA", ("RAID_LEVEL_MEGA", "RAID_LEVEL_MEGA_LEGACY"), False),
+    ("RAID_LEVEL_5",
+     ("RAID_LEVEL_5", "RAID_LEVEL_5_LEGACY", "RAID_LEVEL_5_FUTURE"), True),
+    ("RAID_LEVEL_MEGA_5",
+     ("RAID_LEVEL_MEGA_5", "RAID_LEVEL_MEGA_5_LEGACY", "RAID_LEVEL_MEGA_5_FUTURE"), True),
+    ("RAID_LEVEL_ELITE",
+     ("RAID_LEVEL_ELITE", "RAID_LEVEL_ELITE_LEGACY", "RAID_LEVEL_ELITE_FUTURE"), True),
+    ("RAID_LEVEL_MEGA",
+     ("RAID_LEVEL_MEGA", "RAID_LEVEL_MEGA_LEGACY", "RAID_LEVEL_MEGA_FUTURE"), False),
+    ("RAID_LEVEL_5_MEGA_ENHANCED",
+     ("RAID_LEVEL_5_MEGA_ENHANCED", "RAID_LEVEL_5_MEGA_ENHANCED_FUTURE"), False),
+    ("RAID_LEVEL_ULTRA_BEAST",
+     ("RAID_LEVEL_ULTRA_BEAST", "RAID_LEVEL_ULTRA_BEAST_LEGACY",
+      "RAID_LEVEL_ULTRA_BEAST_FUTURE"), True),
 ]
 
 # Formen, die nur Alias einer anderen ID in derselben Liste sind.

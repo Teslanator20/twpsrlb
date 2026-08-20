@@ -1,10 +1,102 @@
 [
  {
+  "id": "ARCEUS",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_BUG_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_DARK_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_DRAGON_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_ELECTRIC_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_FAIRY_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_FIGHTING_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_FIRE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_FLYING_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_GHOST_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_GRASS_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_GROUND_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_ICE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_POISON_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_PSYCHIC_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_ROCK_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_STEEL_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ARCEUS_WATER_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
   "id": "ARTICUNO",
   "tier": "RAID_LEVEL_5"
  },
  {
   "id": "AZELF",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "CALYREX",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "CALYREX_ICE_RIDER_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "CALYREX_SHADOW_RIDER_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "CHIENPAO",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "CHIYU",
   "tier": "RAID_LEVEL_5"
  },
  {
@@ -44,6 +136,10 @@
   "tier": "RAID_LEVEL_5"
  },
  {
+  "id": "DIANCIE",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
   "id": "ENAMORUS_INCARNATE_FORM",
   "tier": "RAID_LEVEL_5"
  },
@@ -53,6 +149,10 @@
  },
  {
   "id": "ENTEI",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "FEZANDIPITI",
   "tier": "RAID_LEVEL_5"
  },
  {
@@ -76,11 +176,23 @@
   "tier": "RAID_LEVEL_5"
  },
  {
+  "id": "GIRATINA",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
   "id": "GIRATINA_ALTERED_FORM",
   "tier": "RAID_LEVEL_5"
  },
  {
   "id": "GIRATINA_ORIGIN_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "GLASTRIER",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "GOUGINGFIRE",
   "tier": "RAID_LEVEL_5"
  },
  {
@@ -100,11 +212,43 @@
   "tier": "RAID_LEVEL_5"
  },
  {
+  "id": "IRONBOULDER",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "IRONCROWN",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "IRONLEAVES",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "KORAIDON",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "KORAIDON_APEX_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "KUBFU",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
   "id": "KYOGRE",
   "tier": "RAID_LEVEL_5"
  },
  {
   "id": "KYUREM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "KYUREM_BLACK_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "KYUREM_WHITE_FORM",
   "tier": "RAID_LEVEL_5"
  },
  {
@@ -128,6 +272,22 @@
   "tier": "RAID_LEVEL_5"
  },
  {
+  "id": "LUNALA",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "MAGEARNA",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "MAGEARNA_ORIGINAL_COLOR_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "MANAPHY",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
   "id": "MESPRIT",
   "tier": "RAID_LEVEL_5"
  },
@@ -140,7 +300,19 @@
   "tier": "RAID_LEVEL_5"
  },
  {
+  "id": "MIRAIDON",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "MIRAIDON_ULTIMATE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
   "id": "MOLTRES",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "MUNKIDORI",
   "tier": "RAID_LEVEL_5"
  },
  {
@@ -156,11 +328,35 @@
   "tier": "RAID_LEVEL_5"
  },
  {
+  "id": "NECROZMA_ULTRA_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "OGERPON",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "OKIDOGI",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
   "id": "PALKIA",
   "tier": "RAID_LEVEL_5"
  },
  {
   "id": "PALKIA_ORIGIN_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "PECHARUNT",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "PHIONE",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "RAGINGBOLT",
   "tier": "RAID_LEVEL_5"
  },
  {
@@ -196,6 +392,82 @@
   "tier": "RAID_LEVEL_5"
  },
  {
+  "id": "SILVALLY",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_BUG_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_DARK_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_DRAGON_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_ELECTRIC_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_FAIRY_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_FIGHTING_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_FIRE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_FLYING_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_GHOST_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_GRASS_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_GROUND_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_ICE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_POISON_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_PSYCHIC_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_ROCK_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_STEEL_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SILVALLY_WATER_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "SPECTRIER",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
   "id": "SUICUNE",
   "tier": "RAID_LEVEL_5"
  },
@@ -216,6 +488,10 @@
   "tier": "RAID_LEVEL_5"
  },
  {
+  "id": "TERAPAGOS",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
   "id": "TERRAKION",
   "tier": "RAID_LEVEL_5"
  },
@@ -228,11 +504,31 @@
   "tier": "RAID_LEVEL_5"
  },
  {
+  "id": "TINGLU",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
   "id": "TORNADUS_INCARNATE_FORM",
   "tier": "RAID_LEVEL_5"
  },
  {
   "id": "TORNADUS_THERIAN_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "TYPE_NULL",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "URSHIFU",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "URSHIFU_RAPID_STRIKE_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "URSHIFU_SINGLE_STRIKE_FORM",
   "tier": "RAID_LEVEL_5"
  },
  {
@@ -244,6 +540,18 @@
   "tier": "RAID_LEVEL_5"
  },
  {
+  "id": "VOLCANION",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "WALKINGWAKE",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "WOCHIEN",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
   "id": "XERNEAS",
   "tier": "RAID_LEVEL_5"
  },
@@ -252,11 +560,19 @@
   "tier": "RAID_LEVEL_5"
  },
  {
+  "id": "ZACIAN",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
   "id": "ZACIAN_CROWNED_SWORD_FORM",
   "tier": "RAID_LEVEL_5"
  },
  {
   "id": "ZACIAN_HERO_FORM",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "ZAMAZENTA",
   "tier": "RAID_LEVEL_5"
  },
  {
@@ -276,7 +592,23 @@
   "tier": "RAID_LEVEL_5"
  },
  {
+  "id": "ZERAORA",
+  "tier": "RAID_LEVEL_5"
+ },
+ {
+  "id": "DARKRAI_MEGA",
+  "tier": "RAID_LEVEL_MEGA_5"
+ },
+ {
+  "id": "DIANCIE_MEGA",
+  "tier": "RAID_LEVEL_MEGA_5"
+ },
+ {
   "id": "GROUDON_PRIMAL",
+  "tier": "RAID_LEVEL_MEGA_5"
+ },
+ {
+  "id": "HEATRAN_MEGA",
   "tier": "RAID_LEVEL_MEGA_5"
  },
  {
@@ -301,6 +633,14 @@
  },
  {
   "id": "RAYQUAZA_MEGA",
+  "tier": "RAID_LEVEL_MEGA_5"
+ },
+ {
+  "id": "ZERAORA_MEGA",
+  "tier": "RAID_LEVEL_MEGA_5"
+ },
+ {
+  "id": "ZYGARDE_MEGA_COMPLETE",
   "tier": "RAID_LEVEL_MEGA_5"
  },
  {
@@ -344,6 +684,14 @@
   "tier": "RAID_LEVEL_MEGA"
  },
  {
+  "id": "BARBARACLE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "BAXCALIBUR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
   "id": "BEEDRILL_MEGA",
   "tier": "RAID_LEVEL_MEGA"
  },
@@ -360,11 +708,79 @@
   "tier": "RAID_LEVEL_MEGA"
  },
  {
+  "id": "CHANDELURE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
   "id": "CHARIZARD_MEGA_X",
   "tier": "RAID_LEVEL_MEGA"
  },
  {
   "id": "CHARIZARD_MEGA_Y",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "CHESNAUGHT_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "CHIMECHO_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "CLEFABLE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "CRABOMINABLE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "DELPHOX_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "DRAGALGE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "DRAGONITE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "DRAMPA_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "EELEKTROSS_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "EMBOAR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "EXCADRILL_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "FALINKS_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "FERALIGATR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "FLOETTE_MEGA_ETERNAL",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "FROSLASS_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "GALLADE_MEGA",
   "tier": "RAID_LEVEL_MEGA"
  },
  {
@@ -384,7 +800,27 @@
   "tier": "RAID_LEVEL_MEGA"
  },
  {
+  "id": "GLIMMORA_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "GOLISOPOD_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "GOLURK_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "GRENINJA_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
   "id": "GYARADOS_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "HAWLUCHA_MEGA",
   "tier": "RAID_LEVEL_MEGA"
  },
  {
@@ -408,11 +844,27 @@
   "tier": "RAID_LEVEL_MEGA"
  },
  {
+  "id": "MALAMAR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
   "id": "MANECTRIC_MEGA",
   "tier": "RAID_LEVEL_MEGA"
  },
  {
+  "id": "MAWILE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
   "id": "MEDICHAM_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "MEGANIUM_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "MEOWSTIC_MEGA",
   "tier": "RAID_LEVEL_MEGA"
  },
  {
@@ -425,6 +877,18 @@
  },
  {
   "id": "PINSIR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "PYROAR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "RAICHU_MEGA_X",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "RAICHU_MEGA_Y",
   "tier": "RAID_LEVEL_MEGA"
  },
  {
@@ -444,11 +908,31 @@
   "tier": "RAID_LEVEL_MEGA"
  },
  {
+  "id": "SCOLIPEDE_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "SCOVILLAIN_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
   "id": "SHARPEDO_MEGA",
   "tier": "RAID_LEVEL_MEGA"
  },
  {
+  "id": "SKARMORY_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
   "id": "SLOWBRO_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "STARAPTOR_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "STARMIE_MEGA",
   "tier": "RAID_LEVEL_MEGA"
  },
  {
@@ -460,11 +944,67 @@
   "tier": "RAID_LEVEL_MEGA"
  },
  {
+  "id": "TATSUGIRI_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
   "id": "TYRANITAR_MEGA",
   "tier": "RAID_LEVEL_MEGA"
  },
  {
   "id": "VENUSAUR_MEGA",
   "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "VICTREEBEL_MEGA",
+  "tier": "RAID_LEVEL_MEGA"
+ },
+ {
+  "id": "ZYGARDE_MEGA_C",
+  "tier": "RAID_LEVEL_5_MEGA_ENHANCED"
+ },
+ {
+  "id": "BLACEPHALON",
+  "tier": "RAID_LEVEL_ULTRA_BEAST"
+ },
+ {
+  "id": "BUZZWOLE",
+  "tier": "RAID_LEVEL_ULTRA_BEAST"
+ },
+ {
+  "id": "CELESTEELA",
+  "tier": "RAID_LEVEL_ULTRA_BEAST"
+ },
+ {
+  "id": "GUZZLORD",
+  "tier": "RAID_LEVEL_ULTRA_BEAST"
+ },
+ {
+  "id": "KARTANA",
+  "tier": "RAID_LEVEL_ULTRA_BEAST"
+ },
+ {
+  "id": "NAGANADEL",
+  "tier": "RAID_LEVEL_ULTRA_BEAST"
+ },
+ {
+  "id": "NIHILEGO",
+  "tier": "RAID_LEVEL_ULTRA_BEAST"
+ },
+ {
+  "id": "PHEROMOSA",
+  "tier": "RAID_LEVEL_ULTRA_BEAST"
+ },
+ {
+  "id": "POIPOLE",
+  "tier": "RAID_LEVEL_ULTRA_BEAST"
+ },
+ {
+  "id": "STAKATAKA",
+  "tier": "RAID_LEVEL_ULTRA_BEAST"
+ },
+ {
+  "id": "XURKITREE",
+  "tier": "RAID_LEVEL_ULTRA_BEAST"
  }
 ]

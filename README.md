@@ -1,7 +1,7 @@
 # Pokémon GO – Counter-Rangliste der Raidbosse
 
-Auswertung der **Top-5-Konter aller legendären und mysteriösen Raidbosse sowie aller
-Mega- und Proto-Raids** auf Basis der
+Auswertung der **fünf schnellsten Konter aller legendären, mysteriösen und Ultrabestien-
+Raidbosse sowie aller Mega- und Proto-Raids**, mit Angreifern auf **Level 50**, auf Basis der
 [Pokebattler](https://www.pokebattler.com/)-Simulations-API – einmal **mit Team-Power und
 bestem Freund**, einmal **ohne beides**. Mega-Entwicklungen stehen in einer eigenen dritten
 Spalte und zählen dort nur, wenn sie sich auch gegen die normalen Konter durchsetzen.
@@ -13,13 +13,17 @@ Attacken-Typ und einer durchsuchbaren Detailansicht pro Boss.
 
 ## Was drin steht
 
-* **117 Raidbosse**, die schon in Raids aufgetreten sind, jeder in seiner eigenen Raid-Stufe:
-  * **69 Stufe-5-Bosse** (legendär und mysteriös), inklusive Formen wie Giratina Urform,
-    Necrozma Morgenschwingen, Zacian König des Schwertes oder Deoxys in allen vier Formen
-  * **40 Mega-Raids**: von Mega-Bisaflor bis Mega-Knakrack, auch die nicht-legendären
-  * **7 legendäre Mega- und Proto-Raids**: Proto-Groudon, Proto-Kyogre, Mega-Mewtu X und Y,
-    Mega-Rayquaza, Mega-Latias, Mega-Latios
+* **252 Raidbosse**, jeder in seiner eigenen Raid-Stufe:
+  * **150 Stufe-5-Bosse** (legendär und mysteriös), inklusive aller Arceus- und Silvally-Formen,
+    Giratina Urform, Necrozma Morgenschwingen, Zacian König des Schwertes, Deoxys in allen Formen
+  * **78 Mega-Raids**: von Mega-Bisaflor bis Mega-Knakrack, auch die nicht-legendären
+  * **12 legendäre Mega- und Proto-Raids** plus **1 Mega-Enhanced**
+  * **11 Ultrabestien**: Nihilego, Pheromosa, Kartana, Guzzlord und die anderen
   * **1 Elite-Raid**: Regieleki
+
+  Enthalten sind auch Bosse aus Pokebattlers Vorschau-Listen. Die führen einerseits noch
+  unveröffentlichte Bosse, andererseits solche, die längst im Spiel waren, ohne dass die
+  Liste nachgezogen wurde – Lunala zum Beispiel.
 * Pro Boss die **fünf besten Konter je Konfiguration und Pool** – also vier Listen pro Boss:
   mit/ohne Boni, jeweils ohne Megas und nur Megas. Jedes Pokémon ist **ein Eintrag**; darunter
   stehen seine **drei besten Attackensets mit jeweils eigenem Estimator**.
@@ -51,13 +55,25 @@ Attacken-Typ und einer durchsuchbaren Detailansicht pro Boss.
 | **Ohne Boni** | nein | keine | ohne Megas | `numParty=1`, `friendLevel=FRIENDSHIP_LEVEL_0` |
 | **Megas im Gesamtvergleich** | beide Konfigurationen | | nur Megas, gemessen an allen | – |
 
-Sonst identisch: jeder Boss in seiner eigenen Raid-Stufe (`RAID_LEVEL_5`, `RAID_LEVEL_MEGA`,
-`RAID_LEVEL_MEGA_5` oder `RAID_LEVEL_ELITE`), Angreifer auf Level 40, Strategie
+Sonst identisch: jeder Boss in seiner eigenen Raid-Stufe, Angreifer auf **Level 50**, Strategie
 `CINEMATIC_ATTACK_WHEN_POSSIBLE`, Ausweichen nach Reaktionszeit, kein Wetterbonus,
 zufälliges Boss-Attackenset, sortiert nach Estimator.
 
+## Die Vergleichsgröße: Time to win
+
+Sortiert und gewertet wird nach `TIME` – Pokebattlers „Time to win assuming infinite number
+of Pokemon". Der Gedanke dahinter: mit unbegrenzt vielen Exemplaren schafft jeder Angreifer
+jedes Boss-Attackenset, unterschiedlich ist nur die Dauer. Das macht die Zahlen über Bosse
+hinweg vergleichbar, wo der Estimator (geschätzte Trainer-Anzahl) bei 1,0 abschneidet. Der
+Estimator läuft als Zusatzinfo mit.
+
+Werte **unter 300 s** liegen im Raid-Zeitlimit – dort wird ein einzelner Trainer rechtzeitig
+fertig. Nihilego solo ist mit 297,1 s (Proto-Groudon) genau so ein Grenzfall.
+
+## Erfassung
+
 Pokebattler liefert je Abfrage die 30 besten Konter, jeder mit 6 bis 10 durchsimulierten
-Attackensets. `scrape.py` speichert die 30 Konter mit ihren jeweils **drei besten** Sets,
+Attackensets. `scrape.py` speichert die 30 Konter mit ihren jeweils **drei schnellsten** Sets,
 `build.py` filtert daraus die Top 5 je Pool – und zwar zweimal: einmal ohne Krypto-Formen
 (`noShadow`, die Standardansicht) und einmal mit (`withShadow`). Aus denselben Trefferlisten
 entstehen alle drei Zähltiefen (`top5`, `top2`, `top1`), die strengeren sind also immer
@@ -104,17 +120,21 @@ python3 tools/scrape.py    # nur nötig, wenn die Daten aktualisiert werden soll
 python3 tools/render.py    # ruft build.py mit auf und schreibt data.json + index.html
 ```
 
-`scrape.py` schreibt fortlaufend in `data/counters.json` und überspringt bereits vorhandene
-Einträge – ein abgebrochener Lauf lässt sich einfach neu starten. Fehlgeschlagene Abfragen
-landen als `null` in der Datei und werden dabei ebenfalls übersprungen, damit ein
-Wiederholungslauf nicht jedes Mal in dieselben Timeouts rennt:
+Level-50-Abfragen liegen bei Pokebattler selten im Cache und laufen beim ersten Mal
+reproduzierbar in dessen 30-Sekunden-Timeout. Der Server rechnet danach aber weiter, und ein
+Abbruch nach 3 Sekunden genügt, um die Berechnung anzustoßen. Deshalb läuft die Erfassung in
+zwei Phasen:
 
 ```bash
-RETRY_FAILED=1 python3 tools/scrape.py   # nimmt die null-Einträge erneut in Angriff
+WARMUP=1 python3 tools/scrape.py   # stößt alles an, bricht nach 3 s ab (~25 min)
+python3 tools/scrape.py            # sammelt die Ergebnisse ein
+RETRY_FAILED=1 python3 tools/scrape.py   # für Nachzügler
 ```
 
-Das lohnt sich, weil Pokebattler teure Simulationen nach dem ersten `504` im Hintergrund
-weiterrechnet und beim nächsten Versuch oft sofort ausliefert.
+So kamen alle 504 Abfragen ohne einen einzigen Fehlschlag herein. Ohne Vorwärmen scheitern
+rund 90 % der Level-50-Abfragen dauerhaft. `scrape.py` schreibt fortlaufend in
+`data/counters.json` und überspringt vorhandene Einträge; Fehlschläge landen als `null` und
+werden übersprungen, bis `RETRY_FAILED=1` sie erneut aufgreift.
 
 ## Deployment
 
@@ -147,13 +167,10 @@ npx vercel deploy --prod   # im Repo-Wurzelverzeichnis, fragt beim ersten Mal na
   englisch da: „Mind Blown“ (Kopplosio) und „Secret Sword“ (Keldeo).
 * Die Top 5 je Pool stammen aus den 30 gelieferten Kontern. Das reicht fast immer; wo nach
   dem Filtern weniger als 5 übrig bleiben, ist die Liste entsprechend kürzer.
+* Die Boss-Liste lädt in Blöcken von 30 Karten – 252 Bosse komplett im DOM machen die Seite träge.
 * Team-Power ist mit Gruppengröße 2 simuliert. `numParty=3` und `numParty=4` beantwortet die
   Pokebattler-API nicht innerhalb ihres 30-Sekunden-Timeouts.
-* Für sechs Bosse liefert die API in der Team-Power-Variante dauerhaft eine Zeitüberschreitung:
-  **Rüstungs-Mewtu**, **Deoxys (Normalform)**, **Regieleki**, **Mega-Absol**, **Mega-Bibor** und
-  **Mega-Firnontor**. Bei den drei Megas dürfte der Grund sein, dass sie mit Team-Power und
-  bestem Freund so leicht sind, dass fast der komplette Angreifer-Pool gewinnt und die Simulation
-  ausufert. Diese sechs Felder bleiben leer und sind auf der Seite als solche gekennzeichnet.
+* Der Datensatz ist vollständig: 504 von 504 Abfragen, keine Lücken.
 
 Daten von Pokebattler. Pokémon ist eine Marke von Nintendo/Creatures Inc./GAME FREAK inc.
 Dieses Projekt steht in keiner Verbindung zu Niantic oder Nintendo.
