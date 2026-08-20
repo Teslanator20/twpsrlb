@@ -26,7 +26,7 @@ Attacken-Typ und einer durchsuchbaren Detailansicht pro Boss.
   Liste nachgezogen wurde – Lunala zum Beispiel.
 * Pro Boss die **fünf besten Konter je Konfiguration und Pool** – also vier Listen pro Boss:
   mit/ohne Boni, jeweils ohne Megas und nur Megas. Jedes Pokémon ist **ein Eintrag**; darunter
-  stehen seine **drei besten Attackensets mit jeweils eigenem Estimator**.
+  stehen seine **drei schnellsten Attackensets mit jeweils eigener Zeit**.
 * **Drei Ranglisten-Abschnitte mit identischem Aufbau**, je drei Spalten, nach Zähltiefe:
   alle fünf Platzierungen, nur Platz 1 und 2, nur Platz 1. Sie zeigen, wie oft ein Pokémon
   gelistet ist, wie oft es Platz 1 belegt und wie stark sich sein Rang zwischen den beiden
@@ -57,7 +57,7 @@ Attacken-Typ und einer durchsuchbaren Detailansicht pro Boss.
 
 Sonst identisch: jeder Boss in seiner eigenen Raid-Stufe, Angreifer auf **Level 50**, Strategie
 `CINEMATIC_ATTACK_WHEN_POSSIBLE`, Ausweichen nach Reaktionszeit, kein Wetterbonus,
-zufälliges Boss-Attackenset, sortiert nach Estimator.
+zufälliges Boss-Attackenset, sortiert nach Time to win.
 
 ## Die Vergleichsgröße: Time to win
 
