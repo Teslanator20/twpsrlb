@@ -475,8 +475,13 @@ def main():
         for b in bosses for m in MODES if not has(b, m)
     ]
 
+    # Das Datum gehoert zu den Konter-Daten, nicht zum Renderlauf. Sonst behauptet die
+    # Seite nach jedem Rendern, die Simulationen seien von heute.
+    counters_date = datetime.date.fromtimestamp(
+        os.path.getmtime(os.path.join(DATA, "counters.json"))).isoformat()
+
     data = {
-        "generated": datetime.date.today().isoformat(),
+        "generated": counters_date,
         "bosses": bosses,
         "ranking": {
             variant: {

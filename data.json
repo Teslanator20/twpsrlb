@@ -280686,5 +280686,4420 @@
   "team": 252,
   "solo": 252
  },
- "missing": []
+ "missing": [],
+ "events": {
+  "fetched": "2026-09-01",
+  "events": [
+   {
+    "id": "season-23-forever-forward",
+    "name": "Forever Forward",
+    "type": "season",
+    "label": "Jahreszeit",
+    "link": "https://leekduck.com/events/season-23-forever-forward/",
+    "start": "2026-06-02T10:00:00.000",
+    "end": "2026-09-08T10:00:00.000",
+    "rank": 11
+   },
+   {
+    "id": "lego-pokemon-go-2026",
+    "name": "LEGO Stores and Pokémon GO",
+    "type": "event",
+    "label": "Event",
+    "link": "https://leekduck.com/events/lego-pokemon-go-2026/",
+    "start": "2026-08-03T10:00:00.000",
+    "end": "2026-09-30T23:59:00.000",
+    "rank": 5
+   },
+   {
+    "id": "go-pass-august-2026",
+    "name": "GO Pass: August",
+    "type": "go-pass",
+    "label": "GO-Pass",
+    "link": "https://leekduck.com/events/go-pass-august-2026/",
+    "start": "2026-08-04T10:00:00.000",
+    "end": "2026-09-08T10:00:00.000",
+    "rank": 9
+   },
+   {
+    "id": "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "name": "Shadow Giratina (Altered Forme) in Shadow Raids",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/shadow-giratina-altered-in-shadow-raids-august-2026/",
+    "start": "2026-08-05T06:00:00.000",
+    "end": "2026-09-08T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "10th-anniversary-celebration",
+    "name": "10th Anniversary Celebration - Perfect Mewtwo Timed Research",
+    "type": "event",
+    "label": "Event",
+    "link": "https://leekduck.com/events/10th-anniversary-celebration/",
+    "start": "2026-08-12T16:00:00.000",
+    "end": "2026-09-06T23:59:00.000",
+    "rank": 5
+   },
+   {
+    "id": "mega-gyarados-in-mega-raids-august-2026",
+    "name": "Mega Gyarados in Mega Raids",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/mega-gyarados-in-mega-raids-august-2026/",
+    "start": "2026-08-26T06:00:00.000",
+    "end": "2026-09-08T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "name": "Regirock, Regice, and Registeel in 5-star Raid Battles",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/regirock-regice-registeel-in-5-star-raid-battles-august-2026/",
+    "start": "2026-08-26T06:00:00.000",
+    "end": "2026-09-08T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "mega-ascension",
+    "name": "Mega Ascension",
+    "type": "event",
+    "label": "Event",
+    "link": "https://leekduck.com/events/mega-ascension/",
+    "start": "2026-08-31T10:00:00.000",
+    "end": "2026-09-04T23:59:00.000",
+    "rank": 5
+   },
+   {
+    "id": "raidhour20260902",
+    "name": "Regirock, Regice, and Registeel Raid Hour",
+    "type": "raid-hour",
+    "label": "Raid-Stunde",
+    "link": "https://leekduck.com/events/raidhour20260902/",
+    "start": "2026-09-02T18:00:00.000",
+    "end": "2026-09-02T19:00:00.000",
+    "rank": 3
+   },
+   {
+    "id": "pokemon-go-fest-2026-mega-finale",
+    "name": "Pokémon GO Fest 2026: Mega Finale",
+    "type": "pokemon-go-fest",
+    "label": "GO Fest",
+    "link": "https://leekduck.com/events/pokemon-go-fest-2026-mega-finale/",
+    "start": "2026-09-05T10:00:00.000",
+    "end": "2026-09-06T18:00:00.000",
+    "rank": 0
+   },
+   {
+    "id": "armored-mewtwo-in-5-star-raid-battles-september-2026",
+    "name": "Armored Mewtwo in 5-star Raid Battles",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/armored-mewtwo-in-5-star-raid-battles-september-2026/",
+    "start": "2026-09-05T10:00:00.000",
+    "end": "2026-09-06T18:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "max-mondays-2026-09-07",
+    "name": "Dynamax Ralts during Max Monday",
+    "type": "max-mondays",
+    "label": "Dyna-Montag",
+    "link": "https://leekduck.com/events/max-mondays-2026-09-07/",
+    "start": "2026-09-07T06:00:00.000",
+    "end": "2026-09-07T21:00:00.000",
+    "rank": 7
+   },
+   {
+    "id": "mega-beedrill-in-mega-raids-september-2026",
+    "name": "Mega Beedrill in Mega Raids",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/mega-beedrill-in-mega-raids-september-2026/",
+    "start": "2026-09-08T06:00:00.000",
+    "end": "2026-09-15T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "mega-squads",
+    "name": "Mega Squads",
+    "type": "event",
+    "label": "Event",
+    "link": "https://leekduck.com/events/mega-squads/",
+    "start": "2026-09-08T10:00:00.000",
+    "end": "2026-09-14T20:00:00.000",
+    "rank": 5
+   },
+   {
+    "id": "go-pass-september-2026",
+    "name": "GO Pass: September",
+    "type": "go-pass",
+    "label": "GO-Pass",
+    "link": "https://leekduck.com/events/go-pass-september-2026/",
+    "start": "2026-09-08T10:00:00.000",
+    "end": "2026-10-06T10:00:00.000",
+    "rank": 9
+   },
+   {
+    "id": "season-24-twilight-trails",
+    "name": "Twilight Trails",
+    "type": "season",
+    "label": "Jahreszeit",
+    "link": "https://leekduck.com/events/season-24-twilight-trails/",
+    "start": "2026-09-08T10:00:00.000",
+    "end": "2026-12-01T10:00:00.000",
+    "rank": 11
+   },
+   {
+    "id": "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+    "name": "Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition | Twilight Trails",
+    "type": "go-battle-league",
+    "label": "Kampfliga",
+    "link": "https://leekduck.com/events/gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1/",
+    "start": "2026-09-08T20:00:00.000Z",
+    "end": "2026-09-15T20:00:00.000Z",
+    "rank": 10
+   },
+   {
+    "id": "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "name": "Zacian (Hero of Many Battles) in 5-star Raid Battles",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026/",
+    "start": "2026-09-09T06:00:00.000",
+    "end": "2026-09-15T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "name": "Shadow Thundurus (Incarnate Forme) in Shadow Raids",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026/",
+    "start": "2026-09-09T06:00:00.000",
+    "end": "2026-10-06T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "raidhour20260909",
+    "name": "Zacian (Hero of Many Battles) Raid Hour",
+    "type": "raid-hour",
+    "label": "Raid-Stunde",
+    "link": "https://leekduck.com/events/raidhour20260909/",
+    "start": "2026-09-09T18:00:00.000",
+    "end": "2026-09-09T19:00:00.000",
+    "rank": 3
+   },
+   {
+    "id": "pokemonspotlighthour2026-09-10",
+    "name": "Weedle, Kakuna, and Beedrill Spotlight Hour",
+    "type": "pokemon-spotlight-hour",
+    "label": "Rampenlicht-Stunde",
+    "link": "https://leekduck.com/events/pokemonspotlighthour2026-09-10/",
+    "start": "2026-09-10T18:00:00.000",
+    "end": "2026-09-10T19:00:00.000",
+    "rank": 8
+   },
+   {
+    "id": "mega-houndoom-in-mega-raids-september-2026",
+    "name": "Mega Houndoom in Mega Raids",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/mega-houndoom-in-mega-raids-september-2026/",
+    "start": "2026-09-11T06:00:00.000",
+    "end": "2026-09-15T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "september-communitydayclassic2026",
+    "name": "Gible Community Day Classic",
+    "type": "community-day",
+    "label": "Community Day",
+    "link": "https://leekduck.com/events/september-communitydayclassic2026/",
+    "start": "2026-09-12T14:00:00.000",
+    "end": "2026-09-12T17:00:00.000",
+    "rank": 1
+   },
+   {
+    "id": "pokemonspotlighthour2026-09-13",
+    "name": "Houndour and Houndoom Spotlight Hour",
+    "type": "pokemon-spotlight-hour",
+    "label": "Rampenlicht-Stunde",
+    "link": "https://leekduck.com/events/pokemonspotlighthour2026-09-13/",
+    "start": "2026-09-13T18:00:00.000",
+    "end": "2026-09-13T19:00:00.000",
+    "rank": 8
+   },
+   {
+    "id": "max-mondays-2026-09-14",
+    "name": "Dynamax Rhyhorn during Max Monday",
+    "type": "max-mondays",
+    "label": "Dyna-Montag",
+    "link": "https://leekduck.com/events/max-mondays-2026-09-14/",
+    "start": "2026-09-14T06:00:00.000",
+    "end": "2026-09-14T21:00:00.000",
+    "rank": 7
+   },
+   {
+    "id": "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+    "name": "Great League, Ultra League: Mega Edition, and Willpower Cup: Great League Edition | Twilight Trails",
+    "type": "go-battle-league",
+    "label": "Kampfliga",
+    "link": "https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition/",
+    "start": "2026-09-15T20:00:00.000Z",
+    "end": "2026-09-22T20:00:00.000Z",
+    "rank": 10
+   },
+   {
+    "id": "mega-venusaur-in-mega-raids-september-2026",
+    "name": "Mega Venusaur in Mega Raids",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/mega-venusaur-in-mega-raids-september-2026/",
+    "start": "2026-09-16T06:00:00.000",
+    "end": "2026-09-22T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "name": "Zamazenta (Hero of Many Battles) in 5-star Raid Battles",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026/",
+    "start": "2026-09-16T06:00:00.000",
+    "end": "2026-09-22T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "unannounced-september-event-season-24",
+    "name": "Unannounced Event",
+    "type": "event",
+    "label": "Event",
+    "link": "https://leekduck.com/events/unannounced-september-event-season-24/",
+    "start": "2026-09-16T10:00:00.000",
+    "end": "2026-09-22T20:00:00.000",
+    "rank": 5
+   },
+   {
+    "id": "raidhour20260916",
+    "name": "Zamazenta (Hero of Many Battles) Raid Hour",
+    "type": "raid-hour",
+    "label": "Raid-Stunde",
+    "link": "https://leekduck.com/events/raidhour20260916/",
+    "start": "2026-09-16T18:00:00.000",
+    "end": "2026-09-16T19:00:00.000",
+    "rank": 3
+   },
+   {
+    "id": "pokemonspotlighthour2026-09-17",
+    "name": "Mystery Pokémon Spotlight Hour",
+    "type": "pokemon-spotlight-hour",
+    "label": "Rampenlicht-Stunde",
+    "link": "https://leekduck.com/events/pokemonspotlighthour2026-09-17/",
+    "start": "2026-09-17T18:00:00.000",
+    "end": "2026-09-17T19:00:00.000",
+    "rank": 8
+   },
+   {
+    "id": "super-mega-raid-day-september-2026",
+    "name": "Super Mega Raid Day",
+    "type": "raid-day",
+    "label": "Raid-Tag",
+    "link": "https://leekduck.com/events/super-mega-raid-day-september-2026/",
+    "start": "2026-09-19T14:00:00.000",
+    "end": "2026-09-19T17:00:00.000",
+    "rank": 2
+   },
+   {
+    "id": "max-mondays-2026-09-21",
+    "name": "Dynamax Articuno, Zapdos, and Moltres during Max Monday",
+    "type": "max-mondays",
+    "label": "Dyna-Montag",
+    "link": "https://leekduck.com/events/max-mondays-2026-09-21/",
+    "start": "2026-09-21T06:00:00.000",
+    "end": "2026-09-21T21:00:00.000",
+    "rank": 7
+   },
+   {
+    "id": "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+    "name": "Ultra League, Master League: Mega Edition, and Retro Cup: Great League Edition | Twilight Trails",
+    "type": "go-battle-league",
+    "label": "Kampfliga",
+    "link": "https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition/",
+    "start": "2026-09-22T20:00:00.000Z",
+    "end": "2026-09-29T20:00:00.000Z",
+    "rank": 10
+   },
+   {
+    "id": "mega-malamar-in-mega-raids-september-2026",
+    "name": "Mega Malamar in Mega Raids",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/mega-malamar-in-mega-raids-september-2026/",
+    "start": "2026-09-23T06:00:00.000",
+    "end": "2026-09-29T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+    "name": "Xurkitree, Pheromosa, and Buzzwole in 5-star Raid Battles",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026/",
+    "start": "2026-09-23T06:00:00.000",
+    "end": "2026-09-29T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "raidhour20260923",
+    "name": "Xurkitree, Pheromosa, and Buzzwole Raid Hour",
+    "type": "raid-hour",
+    "label": "Raid-Stunde",
+    "link": "https://leekduck.com/events/raidhour20260923/",
+    "start": "2026-09-23T18:00:00.000",
+    "end": "2026-09-23T19:00:00.000",
+    "rank": 3
+   },
+   {
+    "id": "pokemonspotlighthour2026-09-24",
+    "name": "Rattata Spotlight Hour",
+    "type": "pokemon-spotlight-hour",
+    "label": "Rampenlicht-Stunde",
+    "link": "https://leekduck.com/events/pokemonspotlighthour2026-09-24/",
+    "start": "2026-09-24T18:00:00.000",
+    "end": "2026-09-24T19:00:00.000",
+    "rank": 8
+   },
+   {
+    "id": "catch-mastery-phantump-2026",
+    "name": "Phantump Catch Mastery",
+    "type": "event",
+    "label": "Event",
+    "link": "https://leekduck.com/events/catch-mastery-phantump-2026/",
+    "start": "2026-09-26T10:00:00.000",
+    "end": "2026-09-26T20:00:00.000",
+    "rank": 5
+   },
+   {
+    "id": "max-mondays-2026-09-28",
+    "name": "Dynamax Sobble during Max Monday",
+    "type": "max-mondays",
+    "label": "Dyna-Montag",
+    "link": "https://leekduck.com/events/max-mondays-2026-09-28/",
+    "start": "2026-09-28T06:00:00.000",
+    "end": "2026-09-28T21:00:00.000",
+    "rank": 7
+   },
+   {
+    "id": "harvest-festival-2026",
+    "name": "Harvest Festival",
+    "type": "event",
+    "label": "Event",
+    "link": "https://leekduck.com/events/harvest-festival-2026/",
+    "start": "2026-09-29T10:00:00.000",
+    "end": "2026-10-05T20:00:00.000",
+    "rank": 5
+   },
+   {
+    "id": "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+    "name": "Master League and Mega Color Cup: Great League Edition | Twilight Trails",
+    "type": "go-battle-league",
+    "label": "Kampfliga",
+    "link": "https://leekduck.com/events/gbl-twilight-trails_master-league_mega-color-cup-great-league-edition/",
+    "start": "2026-09-29T20:00:00.000Z",
+    "end": "2026-10-06T20:00:00.000Z",
+    "rank": 10
+   },
+   {
+    "id": "mega-victreebel-in-mega-raids-september-2026",
+    "name": "Mega Victreebel in Mega Raids",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/mega-victreebel-in-mega-raids-september-2026/",
+    "start": "2026-09-30T06:00:00.000",
+    "end": "2026-10-06T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "xerneas-in-5-star-raid-battles-september-2026",
+    "name": "Xerneas in 5-star Raid Battles",
+    "type": "raid-battles",
+    "label": "Raids",
+    "link": "https://leekduck.com/events/xerneas-in-5-star-raid-battles-september-2026/",
+    "start": "2026-09-30T06:00:00.000",
+    "end": "2026-10-06T22:00:00.000",
+    "rank": 4
+   },
+   {
+    "id": "raidhour20260930",
+    "name": "Xerneas Raid Hour",
+    "type": "raid-hour",
+    "label": "Raid-Stunde",
+    "link": "https://leekduck.com/events/raidhour20260930/",
+    "start": "2026-09-30T18:00:00.000",
+    "end": "2026-09-30T19:00:00.000",
+    "rank": 3
+   },
+   {
+    "id": "max-battle-day-october-2026",
+    "name": "Max Battle Day",
+    "type": "max-battles",
+    "label": "Dyna-Kampf",
+    "link": "https://leekduck.com/events/max-battle-day-october-2026/",
+    "start": "2026-10-03T14:00:00.000",
+    "end": "2026-10-03T17:00:00.000",
+    "rank": 6
+   },
+   {
+    "id": "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+    "name": "Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition | Twilight Trails",
+    "type": "go-battle-league",
+    "label": "Kampfliga",
+    "link": "https://leekduck.com/events/gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2/",
+    "start": "2026-10-06T20:00:00.000Z",
+    "end": "2026-10-13T20:00:00.000Z",
+    "rank": 10
+   },
+   {
+    "id": "october-communityday2026",
+    "name": "October Community Day",
+    "type": "community-day",
+    "label": "Community Day",
+    "link": "https://leekduck.com/events/october-communityday2026/",
+    "start": "2026-10-10T14:00:00.000",
+    "end": "2026-10-10T17:00:00.000",
+    "rank": 1
+   },
+   {
+    "id": "gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup",
+    "name": "Great League, Ultra League: Mega Edition, and Little Cup | Twilight Trails",
+    "type": "go-battle-league",
+    "label": "Kampfliga",
+    "link": "https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup/",
+    "start": "2026-10-13T20:00:00.000Z",
+    "end": "2026-10-20T20:00:00.000Z",
+    "rank": 10
+   },
+   {
+    "id": "hatch-day-october-2026",
+    "name": "Hatch Day",
+    "type": "event",
+    "label": "Event",
+    "link": "https://leekduck.com/events/hatch-day-october-2026/",
+    "start": "2026-10-17T11:00:00.000",
+    "end": "2026-10-17T17:00:00.000",
+    "rank": 5
+   },
+   {
+    "id": "gbl-twilight-trails_ultra-league_master-league-mega-edition_fantasy-cup-great-league-edition",
+    "name": "Ultra League, Master League: Mega Edition, and Fantasy Cup: Great League Edition | Twilight Trails",
+    "type": "go-battle-league",
+    "label": "Kampfliga",
+    "link": "https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_fantasy-cup-great-league-edition/",
+    "start": "2026-10-20T20:00:00.000Z",
+    "end": "2026-10-27T20:00:00.000Z",
+    "rank": 10
+   },
+   {
+    "id": "max-battle-day-october-24-2026",
+    "name": "Max Battle Day",
+    "type": "max-battles",
+    "label": "Dyna-Kampf",
+    "link": "https://leekduck.com/events/max-battle-day-october-24-2026/",
+    "start": "2026-10-24T14:00:00.000",
+    "end": "2026-10-24T17:00:00.000",
+    "rank": 6
+   },
+   {
+    "id": "gbl-twilight-trails_master-league_mega-halloween-cup-great-league-edition",
+    "name": "Master League and Mega Halloween Cup: Great League Edition | Twilight Trails",
+    "type": "go-battle-league",
+    "label": "Kampfliga",
+    "link": "https://leekduck.com/events/gbl-twilight-trails_master-league_mega-halloween-cup-great-league-edition/",
+    "start": "2026-10-27T21:00:00.000Z",
+    "end": "2026-11-03T21:00:00.000Z",
+    "rank": 10
+   },
+   {
+    "id": "super-mega-raid-day-october-2026",
+    "name": "Super Mega Raid Day",
+    "type": "raid-day",
+    "label": "Raid-Tag",
+    "link": "https://leekduck.com/events/super-mega-raid-day-october-2026/",
+    "start": "2026-10-31T14:00:00.000",
+    "end": "2026-10-31T17:00:00.000",
+    "rank": 2
+   },
+   {
+    "id": "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-3",
+    "name": "Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition | Twilight Trails",
+    "type": "go-battle-league",
+    "label": "Kampfliga",
+    "link": "https://leekduck.com/events/gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-3/",
+    "start": "2026-11-03T21:00:00.000Z",
+    "end": "2026-11-10T21:00:00.000Z",
+    "rank": 10
+   },
+   {
+    "id": "gbl-twilight-trails_great-league_ultra-league-mega-edition_2026-go-laic-cup",
+    "name": "Great League, Ultra League: Mega Edition, and 2026 GO LAIC Cup | Twilight Trails",
+    "type": "go-battle-league",
+    "label": "Kampfliga",
+    "link": "https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_2026-go-laic-cup/",
+    "start": "2026-11-10T21:00:00.000Z",
+    "end": "2026-11-17T21:00:00.000Z",
+    "rank": 10
+   },
+   {
+    "id": "gbl-twilight-trails_ultra-league_master-league-mega-edition_2026-go-laic-cup",
+    "name": "Ultra League, Master League: Mega Edition, and 2026 GO LAIC Cup | Twilight Trails",
+    "type": "go-battle-league",
+    "label": "Kampfliga",
+    "link": "https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_2026-go-laic-cup/",
+    "start": "2026-11-18T21:00:00.000Z",
+    "end": "2026-11-25T21:00:00.000Z",
+    "rank": 10
+   },
+   {
+    "id": "november-communityday2026",
+    "name": "November Community Day",
+    "type": "community-day",
+    "label": "Community Day",
+    "link": "https://leekduck.com/events/november-communityday2026/",
+    "start": "2026-11-21T14:00:00.000",
+    "end": "2026-11-21T17:00:00.000",
+    "rank": 1
+   },
+   {
+    "id": "gbl-twilight-trails_master-league_mega-catch-cup-great-league-edition",
+    "name": "Master League and Mega Catch Cup: Great League Edition | Twilight Trails",
+    "type": "go-battle-league",
+    "label": "Kampfliga",
+    "link": "https://leekduck.com/events/gbl-twilight-trails_master-league_mega-catch-cup-great-league-edition/",
+    "start": "2026-11-24T21:00:00.000Z",
+    "end": "2026-12-01T21:00:00.000Z",
+    "rank": 10
+   },
+   {
+    "id": "super-mega-raid-day-november-2026",
+    "name": "Super Mega Raid Day",
+    "type": "raid-day",
+    "label": "Raid-Tag",
+    "link": "https://leekduck.com/events/super-mega-raid-day-november-2026/",
+    "start": "2026-11-28T14:00:00.000",
+    "end": "2026-11-28T17:00:00.000",
+    "rank": 2
+   }
+  ],
+  "days": {
+   "2026-08-25": {
+    "events": [
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [],
+    "t5": [],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-08-26": {
+    "events": [
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-08-27": {
+    "events": [
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-08-28": {
+    "events": [
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-08-29": {
+    "events": [
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-08-30": {
+    "events": [
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-08-31": {
+    "events": [
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "mega-ascension",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     },
+     {
+      "id": "VICTREEBEL_MEGA",
+      "name": "Mega-Sarzenia",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     },
+     {
+      "id": "DRAGONITE_MEGA",
+      "name": "Mega-Dragoran",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     },
+     {
+      "id": "MALAMAR_MEGA",
+      "name": "Mega-Calamanero",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     },
+     {
+      "id": "LATIAS_MEGA",
+      "name": "Mega-Latias",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     },
+     {
+      "id": "LATIOS_MEGA",
+      "name": "Mega-Latios",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-01": {
+    "events": [
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "mega-ascension",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     },
+     {
+      "id": "FALINKS_MEGA",
+      "name": "Mega-Legios",
+      "known": true,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     },
+     {
+      "id": "LATIAS_MEGA",
+      "name": "Mega-Latias",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     },
+     {
+      "id": "LATIOS_MEGA",
+      "name": "Mega-Latios",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-02": {
+    "events": [
+     "raidhour20260902",
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "mega-ascension",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     },
+     {
+      "id": "SKARMORY_MEGA",
+      "name": "Mega-Panzaeron",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     },
+     {
+      "id": "LATIAS_MEGA",
+      "name": "Mega-Latias",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     },
+     {
+      "id": "LATIOS_MEGA",
+      "name": "Mega-Latios",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-03": {
+    "events": [
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "mega-ascension",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     },
+     {
+      "id": "STARMIE_MEGA",
+      "name": "Mega-Starmie",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     },
+     {
+      "id": "LATIAS_MEGA",
+      "name": "Mega-Latias",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     },
+     {
+      "id": "LATIOS_MEGA",
+      "name": "Mega-Latios",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-04": {
+    "events": [
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "mega-ascension",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     },
+     {
+      "id": "RAICHU_MEGA_X",
+      "name": "Mega-Raichu X",
+      "known": true,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "RAICHU_MEGA_Y",
+      "name": "Mega-Raichu Y",
+      "known": true,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "LATIAS_MEGA",
+      "name": "Mega-Latias",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     },
+     {
+      "id": "LATIOS_MEGA",
+      "name": "Mega-Latios",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-05": {
+    "events": [
+     "pokemon-go-fest-2026-mega-finale",
+     "armored-mewtwo-in-5-star-raid-battles-september-2026",
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     },
+     {
+      "id": "MEWTWO_MEGA_X",
+      "name": "Mega-Mewtu X",
+      "known": true,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "MEWTWO_A_FORM",
+      "name": "Rüstungs-Mewtu",
+      "known": true,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     },
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-06": {
+    "events": [
+     "pokemon-go-fest-2026-mega-finale",
+     "armored-mewtwo-in-5-star-raid-battles-september-2026",
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "10th-anniversary-celebration",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     },
+     {
+      "id": "MEWTWO_MEGA_Y",
+      "name": "Mega-Mewtu Y",
+      "known": true,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "MEWTWO_A_FORM",
+      "name": "Rüstungs-Mewtu",
+      "known": true,
+      "types": [
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     },
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-07": {
+    "events": [
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "lego-pokemon-go-2026",
+     "max-mondays-2026-09-07",
+     "go-pass-august-2026",
+     "season-23-forever-forward"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-08": {
+    "events": [
+     "shadow-giratina-altered-in-shadow-raids-august-2026",
+     "mega-gyarados-in-mega-raids-august-2026",
+     "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+     "mega-beedrill-in-mega-raids-september-2026",
+     "mega-squads",
+     "lego-pokemon-go-2026",
+     "go-pass-august-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+     "season-23-forever-forward",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "GYARADOS_MEGA",
+      "name": "Mega-Garados",
+      "known": true,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       }
+      ]
+     },
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "REGIROCK",
+      "name": "Regirock",
+      "known": true,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       }
+      ]
+     },
+     {
+      "id": "REGICE",
+      "name": "Regice",
+      "known": true,
+      "types": [
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ]
+     },
+     {
+      "id": "REGISTEEL",
+      "name": "Registeel",
+      "known": true,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-09": {
+    "events": [
+     "raidhour20260909",
+     "mega-beedrill-in-mega-raids-september-2026",
+     "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-squads",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZACIAN",
+      "name": "Zacian",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-10": {
+    "events": [
+     "mega-beedrill-in-mega-raids-september-2026",
+     "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-squads",
+     "lego-pokemon-go-2026",
+     "pokemonspotlighthour2026-09-10",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZACIAN",
+      "name": "Zacian",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-11": {
+    "events": [
+     "mega-beedrill-in-mega-raids-september-2026",
+     "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "mega-houndoom-in-mega-raids-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-squads",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     },
+     {
+      "id": "HOUNDOOM_MEGA",
+      "name": "Mega-Hundemon",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZACIAN",
+      "name": "Zacian",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-12": {
+    "events": [
+     "september-communitydayclassic2026",
+     "mega-beedrill-in-mega-raids-september-2026",
+     "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "mega-houndoom-in-mega-raids-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-squads",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     },
+     {
+      "id": "HOUNDOOM_MEGA",
+      "name": "Mega-Hundemon",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZACIAN",
+      "name": "Zacian",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-13": {
+    "events": [
+     "mega-beedrill-in-mega-raids-september-2026",
+     "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "mega-houndoom-in-mega-raids-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-squads",
+     "lego-pokemon-go-2026",
+     "pokemonspotlighthour2026-09-13",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     },
+     {
+      "id": "HOUNDOOM_MEGA",
+      "name": "Mega-Hundemon",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZACIAN",
+      "name": "Zacian",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-14": {
+    "events": [
+     "mega-beedrill-in-mega-raids-september-2026",
+     "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "mega-houndoom-in-mega-raids-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-squads",
+     "lego-pokemon-go-2026",
+     "max-mondays-2026-09-14",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     },
+     {
+      "id": "HOUNDOOM_MEGA",
+      "name": "Mega-Hundemon",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZACIAN",
+      "name": "Zacian",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-15": {
+    "events": [
+     "mega-beedrill-in-mega-raids-september-2026",
+     "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "mega-houndoom-in-mega-raids-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+     "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "BEEDRILL_MEGA",
+      "name": "Mega-Bibor",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     },
+     {
+      "id": "HOUNDOOM_MEGA",
+      "name": "Mega-Hundemon",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZACIAN",
+      "name": "Zacian",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-16": {
+    "events": [
+     "raidhour20260916",
+     "mega-venusaur-in-mega-raids-september-2026",
+     "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "unannounced-september-event-season-24",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VENUSAUR_MEGA",
+      "name": "Mega-Bisaflor",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZAMAZENTA",
+      "name": "Zamazenta",
+      "known": true,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-17": {
+    "events": [
+     "mega-venusaur-in-mega-raids-september-2026",
+     "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "unannounced-september-event-season-24",
+     "lego-pokemon-go-2026",
+     "pokemonspotlighthour2026-09-17",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VENUSAUR_MEGA",
+      "name": "Mega-Bisaflor",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZAMAZENTA",
+      "name": "Zamazenta",
+      "known": true,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-18": {
+    "events": [
+     "mega-venusaur-in-mega-raids-september-2026",
+     "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "unannounced-september-event-season-24",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VENUSAUR_MEGA",
+      "name": "Mega-Bisaflor",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZAMAZENTA",
+      "name": "Zamazenta",
+      "known": true,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-19": {
+    "events": [
+     "super-mega-raid-day-september-2026",
+     "mega-venusaur-in-mega-raids-september-2026",
+     "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "unannounced-september-event-season-24",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VENUSAUR_MEGA",
+      "name": "Mega-Bisaflor",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZAMAZENTA",
+      "name": "Zamazenta",
+      "known": true,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-20": {
+    "events": [
+     "mega-venusaur-in-mega-raids-september-2026",
+     "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "unannounced-september-event-season-24",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VENUSAUR_MEGA",
+      "name": "Mega-Bisaflor",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZAMAZENTA",
+      "name": "Zamazenta",
+      "known": true,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-21": {
+    "events": [
+     "mega-venusaur-in-mega-raids-september-2026",
+     "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "unannounced-september-event-season-24",
+     "lego-pokemon-go-2026",
+     "max-mondays-2026-09-21",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VENUSAUR_MEGA",
+      "name": "Mega-Bisaflor",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZAMAZENTA",
+      "name": "Zamazenta",
+      "known": true,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-22": {
+    "events": [
+     "mega-venusaur-in-mega-raids-september-2026",
+     "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "unannounced-september-event-season-24",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+     "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VENUSAUR_MEGA",
+      "name": "Mega-Bisaflor",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "ZAMAZENTA",
+      "name": "Zamazenta",
+      "known": true,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-23": {
+    "events": [
+     "raidhour20260923",
+     "mega-malamar-in-mega-raids-september-2026",
+     "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "MALAMAR_MEGA",
+      "name": "Mega-Calamanero",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XURKITREE",
+      "name": "Voltriant",
+      "known": true,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "PHEROMOSA",
+      "name": "Schabelle",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     },
+     {
+      "id": "BUZZWOLE",
+      "name": "Masskito",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-24": {
+    "events": [
+     "mega-malamar-in-mega-raids-september-2026",
+     "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "lego-pokemon-go-2026",
+     "pokemonspotlighthour2026-09-24",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "MALAMAR_MEGA",
+      "name": "Mega-Calamanero",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XURKITREE",
+      "name": "Voltriant",
+      "known": true,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "PHEROMOSA",
+      "name": "Schabelle",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     },
+     {
+      "id": "BUZZWOLE",
+      "name": "Masskito",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-25": {
+    "events": [
+     "mega-malamar-in-mega-raids-september-2026",
+     "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "MALAMAR_MEGA",
+      "name": "Mega-Calamanero",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XURKITREE",
+      "name": "Voltriant",
+      "known": true,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "PHEROMOSA",
+      "name": "Schabelle",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     },
+     {
+      "id": "BUZZWOLE",
+      "name": "Masskito",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-26": {
+    "events": [
+     "mega-malamar-in-mega-raids-september-2026",
+     "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "catch-mastery-phantump-2026",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "MALAMAR_MEGA",
+      "name": "Mega-Calamanero",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XURKITREE",
+      "name": "Voltriant",
+      "known": true,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "PHEROMOSA",
+      "name": "Schabelle",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     },
+     {
+      "id": "BUZZWOLE",
+      "name": "Masskito",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-27": {
+    "events": [
+     "mega-malamar-in-mega-raids-september-2026",
+     "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "lego-pokemon-go-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "MALAMAR_MEGA",
+      "name": "Mega-Calamanero",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XURKITREE",
+      "name": "Voltriant",
+      "known": true,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "PHEROMOSA",
+      "name": "Schabelle",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     },
+     {
+      "id": "BUZZWOLE",
+      "name": "Masskito",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-28": {
+    "events": [
+     "mega-malamar-in-mega-raids-september-2026",
+     "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "lego-pokemon-go-2026",
+     "max-mondays-2026-09-28",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "MALAMAR_MEGA",
+      "name": "Mega-Calamanero",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XURKITREE",
+      "name": "Voltriant",
+      "known": true,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "PHEROMOSA",
+      "name": "Schabelle",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     },
+     {
+      "id": "BUZZWOLE",
+      "name": "Masskito",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-29": {
+    "events": [
+     "mega-malamar-in-mega-raids-september-2026",
+     "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "lego-pokemon-go-2026",
+     "harvest-festival-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+     "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "MALAMAR_MEGA",
+      "name": "Mega-Calamanero",
+      "known": true,
+      "types": [
+       {
+        "id": "dark",
+        "name": "Unlicht"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XURKITREE",
+      "name": "Voltriant",
+      "known": true,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       }
+      ]
+     },
+     {
+      "id": "PHEROMOSA",
+      "name": "Schabelle",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     },
+     {
+      "id": "BUZZWOLE",
+      "name": "Masskito",
+      "known": true,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-09-30": {
+    "events": [
+     "raidhour20260930",
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-victreebel-in-mega-raids-september-2026",
+     "xerneas-in-5-star-raid-battles-september-2026",
+     "lego-pokemon-go-2026",
+     "harvest-festival-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VICTREEBEL_MEGA",
+      "name": "Mega-Sarzenia",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XERNEAS",
+      "name": "Xerneas",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-10-01": {
+    "events": [
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-victreebel-in-mega-raids-september-2026",
+     "xerneas-in-5-star-raid-battles-september-2026",
+     "harvest-festival-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VICTREEBEL_MEGA",
+      "name": "Mega-Sarzenia",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XERNEAS",
+      "name": "Xerneas",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-10-02": {
+    "events": [
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-victreebel-in-mega-raids-september-2026",
+     "xerneas-in-5-star-raid-battles-september-2026",
+     "harvest-festival-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VICTREEBEL_MEGA",
+      "name": "Mega-Sarzenia",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XERNEAS",
+      "name": "Xerneas",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-10-03": {
+    "events": [
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-victreebel-in-mega-raids-september-2026",
+     "xerneas-in-5-star-raid-battles-september-2026",
+     "harvest-festival-2026",
+     "max-battle-day-october-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VICTREEBEL_MEGA",
+      "name": "Mega-Sarzenia",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XERNEAS",
+      "name": "Xerneas",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-10-04": {
+    "events": [
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-victreebel-in-mega-raids-september-2026",
+     "xerneas-in-5-star-raid-battles-september-2026",
+     "harvest-festival-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VICTREEBEL_MEGA",
+      "name": "Mega-Sarzenia",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XERNEAS",
+      "name": "Xerneas",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-10-05": {
+    "events": [
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-victreebel-in-mega-raids-september-2026",
+     "xerneas-in-5-star-raid-battles-september-2026",
+     "harvest-festival-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VICTREEBEL_MEGA",
+      "name": "Mega-Sarzenia",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XERNEAS",
+      "name": "Xerneas",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-10-06": {
+    "events": [
+     "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+     "mega-victreebel-in-mega-raids-september-2026",
+     "xerneas-in-5-star-raid-battles-september-2026",
+     "go-pass-september-2026",
+     "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+     "season-24-twilight-trails"
+    ],
+    "mega": [
+     {
+      "id": "VICTREEBEL_MEGA",
+      "name": "Mega-Sarzenia",
+      "known": true,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ]
+     }
+    ],
+    "t5": [
+     {
+      "id": "XERNEAS",
+      "name": "Xerneas",
+      "known": true,
+      "types": [
+       {
+        "id": "fairy",
+        "name": "Fee"
+       }
+      ]
+     }
+    ],
+    "shadow": [
+     {
+      "id": "THUNDURUS_SHADOW_FORM",
+      "name": "Crypto Voltolos",
+      "known": false,
+      "types": [
+       {
+        "id": "electric",
+        "name": "Elektro"
+       },
+       {
+        "id": "flying",
+        "name": "Flug"
+       }
+      ]
+     }
+    ]
+   },
+   "2026-10-07": {
+    "events": [
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+     "season-24-twilight-trails"
+    ],
+    "mega": [],
+    "t5": [],
+    "shadow": []
+   },
+   "2026-10-08": {
+    "events": [
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+     "season-24-twilight-trails"
+    ],
+    "mega": [],
+    "t5": [],
+    "shadow": []
+   },
+   "2026-10-09": {
+    "events": [
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+     "season-24-twilight-trails"
+    ],
+    "mega": [],
+    "t5": [],
+    "shadow": []
+   },
+   "2026-10-10": {
+    "events": [
+     "october-communityday2026",
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+     "season-24-twilight-trails"
+    ],
+    "mega": [],
+    "t5": [],
+    "shadow": []
+   },
+   "2026-10-11": {
+    "events": [
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+     "season-24-twilight-trails"
+    ],
+    "mega": [],
+    "t5": [],
+    "shadow": []
+   },
+   "2026-10-12": {
+    "events": [
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+     "season-24-twilight-trails"
+    ],
+    "mega": [],
+    "t5": [],
+    "shadow": []
+   },
+   "2026-10-13": {
+    "events": [
+     "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+     "gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup",
+     "season-24-twilight-trails"
+    ],
+    "mega": [],
+    "t5": [],
+    "shadow": []
+   },
+   "2026-10-14": {
+    "events": [
+     "gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup",
+     "season-24-twilight-trails"
+    ],
+    "mega": [],
+    "t5": [],
+    "shadow": []
+   },
+   "2026-10-15": {
+    "events": [
+     "gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup",
+     "season-24-twilight-trails"
+    ],
+    "mega": [],
+    "t5": [],
+    "shadow": []
+   },
+   "2026-10-16": {
+    "events": [
+     "gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup",
+     "season-24-twilight-trails"
+    ],
+    "mega": [],
+    "t5": [],
+    "shadow": []
+   }
+  },
+  "raids": [
+   {
+    "tier": "5-Star Raids",
+    "label": "Stufe 5",
+    "bosses": [
+     {
+      "id": "GIRATINA_SHADOW_FORM",
+      "name": "Crypto Giratina",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ],
+      "shiny": true
+     }
+    ]
+   },
+   {
+    "tier": "Mega Raids",
+    "label": "Mega-Raid",
+    "bosses": [
+     {
+      "id": "FALINKS_MEGA",
+      "name": "Mega-Legios",
+      "known": true,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "LATIAS_MEGA",
+      "name": "Mega-Latias",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "LATIOS_MEGA",
+      "name": "Mega-Latios",
+      "known": true,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ],
+      "shiny": true
+     }
+    ]
+   },
+   {
+    "tier": "3-Star Raids",
+    "label": "Stufe 3",
+    "bosses": [
+     {
+      "id": "SNEASEL_HISUIAN_FORM",
+      "name": "Hisui Sniebel",
+      "known": false,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       },
+       {
+        "id": "poison",
+        "name": "Gift"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "LILLIGANT_HISUIAN_FORM",
+      "name": "Hisui Dressella",
+      "known": false,
+      "types": [
+       {
+        "id": "grass",
+        "name": "Pflanze"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "PASSIMIAN",
+      "name": "Quartermak",
+      "known": false,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "SNORLAX_SHADOW_FORM",
+      "name": "Crypto Relaxo",
+      "known": false,
+      "types": [
+       {
+        "id": "normal",
+        "name": "Normal"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "HITMONTOP_SHADOW_FORM",
+      "name": "Crypto Kapoera",
+      "known": false,
+      "types": [
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "LAMPENT_SHADOW_FORM",
+      "name": "Crypto Laternecto",
+      "known": false,
+      "types": [
+       {
+        "id": "ghost",
+        "name": "Geist"
+       },
+       {
+        "id": "fire",
+        "name": "Feuer"
+       }
+      ],
+      "shiny": true
+     }
+    ]
+   },
+   {
+    "tier": "1-Star Raids",
+    "label": "Stufe 1",
+    "bosses": [
+     {
+      "id": "DRATINI",
+      "name": "Dratini",
+      "known": false,
+      "types": [
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "HONEDGE",
+      "name": "Gramokles",
+      "known": false,
+      "types": [
+       {
+        "id": "steel",
+        "name": "Stahl"
+       },
+       {
+        "id": "ghost",
+        "name": "Geist"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "TYRUNT",
+      "name": "Balgoras",
+      "known": false,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "dragon",
+        "name": "Drache"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "AMAURA",
+      "name": "Amarino",
+      "known": false,
+      "types": [
+       {
+        "id": "rock",
+        "name": "Gestein"
+       },
+       {
+        "id": "ice",
+        "name": "Eis"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "SLOWPOKE_SHADOW_FORM",
+      "name": "Crypto Flegmon",
+      "known": false,
+      "types": [
+       {
+        "id": "water",
+        "name": "Wasser"
+       },
+       {
+        "id": "psychic",
+        "name": "Psycho"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "AIPOM_SHADOW_FORM",
+      "name": "Crypto Griffel",
+      "known": false,
+      "types": [
+       {
+        "id": "normal",
+        "name": "Normal"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "CROAGUNK_SHADOW_FORM",
+      "name": "Crypto Glibunkel",
+      "known": false,
+      "types": [
+       {
+        "id": "poison",
+        "name": "Gift"
+       },
+       {
+        "id": "fighting",
+        "name": "Kampf"
+       }
+      ],
+      "shiny": true
+     },
+     {
+      "id": "GRUBBIN_SHADOW_FORM",
+      "name": "Crypto Mabula",
+      "known": false,
+      "types": [
+       {
+        "id": "bug",
+        "name": "Käfer"
+       }
+      ],
+      "shiny": true
+     }
+    ]
+   }
+  ]
+ }
 }
