@@ -1,0 +1,51 @@
+{
+ "hinweis": "Tagesgenaue Raid-Bosse, die ScrapedDuck nicht liefert. Mehrtaegige Events stehen dort als ein Block, obwohl der Boss taeglich wechselt. IDs sind Pokebattler-IDs, damit der Kalender auf die Konter verlinken kann. 'days' setzt einen einzelnen Tag, 'ranges' (Format JJJJ-MM-TT/JJJJ-MM-TT) einen Zeitraum.",
+ "days": {
+  "2026-08-31": {
+   "mega": [
+    "VICTREEBEL_MEGA",
+    "DRAGONITE_MEGA",
+    "MALAMAR_MEGA"
+   ]
+  },
+  "2026-09-01": {
+   "mega": [
+    "FALINKS_MEGA"
+   ]
+  },
+  "2026-09-02": {
+   "mega": [
+    "SKARMORY_MEGA"
+   ]
+  },
+  "2026-09-03": {
+   "mega": [
+    "STARMIE_MEGA"
+   ]
+  },
+  "2026-09-04": {
+   "mega": [
+    "RAICHU_MEGA_X",
+    "RAICHU_MEGA_Y"
+   ]
+  },
+  "2026-09-05": {
+   "mega": [
+    "MEWTWO_MEGA_X"
+   ]
+  },
+  "2026-09-06": {
+   "mega": [
+    "MEWTWO_MEGA_Y"
+   ]
+  }
+ },
+ "ranges": {
+  "2026-08-31/2026-09-04": {
+   "mega": [
+    "LATIAS_MEGA",
+    "LATIOS_MEGA"
+   ]
+  }
+ }
+}

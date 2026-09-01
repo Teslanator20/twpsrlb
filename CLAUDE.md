@@ -13,6 +13,7 @@ Zeit spart.
 python3 tools/bosses.py    # Boss-Liste + Pokedex + Attacken-Typen von Pokebattler holen
 python3 tools/scrape.py    # Counter je Boss holen (siehe Vorwärmen)
 python3 tools/render.py    # ruft build.py auf, schreibt data.json und index.html
+python3 tools/events.py   # Event-Kalender (unabhaengig vom Scrape)
 ```
 
 `render.py` importiert `build.py` – nie einzeln laufen lassen, wenn beide Ausgaben gebraucht
@@ -96,6 +97,31 @@ Seite hebt solche Werte hervor (`.s-est.ok`).
 * Die **Boss-Liste lädt in Blöcken von 30** (`state.bossLimit`). 252 Bosse komplett im DOM
   kosten 71.000 Knoten und zwei Sekunden Ladezeit. Suche und Filter greifen auf alle Bosse zu,
   nur die Darstellung ist begrenzt.
+
+## Event-Kalender
+
+```bash
+python3 tools/events.py    # data/events.json aus ScrapedDuck (Leek-Duck-Abzug)
+```
+
+Der Kalender ist unabhängig von der Konter-Auswertung und braucht keinen Scrape – nur
+`data/pokemon.json` für die Namenszuordnung. Zwei Quellen:
+
+* **Automatisch:** Die Raid-Rotation steht in den Event-Namen (`Mega Venusaur in Mega
+  Raids`, `Xurkitree, Pheromosa, and Buzzwole in 5-star Raid Battles`). `parse_raid_event()`
+  zerlegt sie und füllt damit den ganzen Monat.
+* **Von Hand:** `data/events_extra.json` für das, was der Feed nicht ausdrücken kann –
+  tagesgenaue Bosse **innerhalb** eines mehrtägigen Events. „Mega Ascension" steht dort als
+  ein Block vom 31.08. bis 04.09., obwohl jeden Tag ein anderes Mega dran ist. `days` setzt
+  einen Tag, `ranges` (`JJJJ-MM-TT/JJJJ-MM-TT`) einen Zeitraum. IDs sind Pokebattler-IDs;
+  `events.py` meldet unbekannte, sonst würde ein Tippfehler als leerer Tag durchgehen.
+
+Die Namenszuordnung (`make_matcher()`) ist der fehleranfällige Teil, weil Leek Duck anders
+schreibt als Pokebattler: Regionalformen stehen vorne statt hinten (`Hisuian Sneasel` →
+`SNEASEL_HISUIAN_FORM`), „Forme" heißt in der ID „FORM", `Mega X Raichu` meint
+`RAICHU_MEGA_X`, und **Krypto-Formen gibt es nicht zu jeder Unterform** – Pokebattler kennt
+`GIRATINA_SHADOW_FORM`, aber kein `GIRATINA_ALTERED_FORM_SHADOW_FORM`. Jeder Lauf meldet, was
+er nicht zuordnen konnte; diese Zeilen nicht überlesen.
 
 ## Prüfen
 

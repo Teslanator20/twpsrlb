@@ -12,7 +12,9 @@ import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-DATA = os.path.join(ROOT, "data")
+# DATA_DIR erlaubt es, gegen einen anderen Datenstand zu bauen, ohne den laufenden
+# Scrape zu stoeren - der schreibt data/counters.json fortlaufend neu.
+DATA = os.environ.get("DATA_DIR", os.path.join(ROOT, "data"))
 OUT = os.environ.get("OUT_DIR", ROOT)
 
 CONST = json.load(open(os.path.join(DATA, "de_constants.json")))
@@ -20,6 +22,41 @@ NAMES = CONST["pokemon"]
 MOVES = CONST["moves"]
 POKEDEX = {p["pokemonId"]: p for p in json.load(open(os.path.join(DATA, "pokemon.json")))["pokemon"]}
 MOVE_TYPES = json.load(open(os.path.join(DATA, "move_types.json")))
+
+_EVENTS_PATH = os.path.join(DATA, "events.json")
+EVENTS = json.load(open(_EVENTS_PATH)) if os.path.exists(_EVENTS_PATH) else None
+
+# Leek Ducks Stufenbezeichnungen und Event-Arten auf Deutsch.
+TIER_LABELS = {
+    "1-Star Raids": "Stufe 1",
+    "3-Star Raids": "Stufe 3",
+    "5-Star Raids": "Stufe 5",
+    "Mega Raids": "Mega-Raid",
+    "Shadow Raids": "Krypto-Raid",
+    "Elite Raids": "Elite-Raid",
+    "Ultra Beast Raids": "Ultrabestie",
+}
+TIER_ORDER = ["5-Star Raids", "Mega Raids", "Elite Raids", "Ultra Beast Raids",
+              "Shadow Raids", "3-Star Raids", "1-Star Raids"]
+EVENT_LABELS = {
+    "raid-battles": "Raids",
+    "raid-hour": "Raid-Stunde",
+    "raid-day": "Raid-Tag",
+    "community-day": "Community Day",
+    "pokemon-spotlight-hour": "Rampenlicht-Stunde",
+    "pokemon-go-fest": "GO Fest",
+    "go-battle-league": "Kampfliga",
+    "go-pass": "GO-Pass",
+    "max-battles": "Dyna-Kampf",
+    "max-mondays": "Dyna-Montag",
+    "season": "Jahreszeit",
+    "event": "Event",
+}
+# Welche Event-Arten im Kalender optisch hervorstechen. Alles andere ist Hintergrund.
+EVENT_RANK = {"pokemon-go-fest": 0, "community-day": 1, "raid-day": 2, "raid-hour": 3,
+              "raid-battles": 4, "event": 5, "max-battles": 6, "max-mondays": 7,
+              "pokemon-spotlight-hour": 8, "go-pass": 9, "go-battle-league": 10,
+              "season": 11}
 
 REF = re.compile(r"\$t\(constants:(pokemon|moves)\.([A-Z0-9_]+)\)")
 
@@ -167,6 +204,64 @@ def merge(plain, megas):
     deshalb genuegt es, die zwei fertigen Listen zusammenzulegen.
     """
     return sorted(plain + megas, key=lambda c: c["time"])[:TOP_N]
+
+
+def event_data(boss_index):
+    """Bereitet den Kalender auf: deutsche Namen, Sortierung, Verweis auf die Bosse.
+
+    boss_index bildet Pokebattler-IDs auf die Bosse dieser Auswertung ab. Nur was dort
+    steht, kann im Kalender angeklickt werden - ein Mega-Raid-Boss, den wir nicht
+    ausgewertet haben, bleibt reiner Text.
+    """
+    if not EVENTS:
+        return None
+
+    def boss_chip(pid):
+        return {
+            "id": pid,
+            "name": pokemon_name(pid),
+            "known": pid in boss_index,
+            "types": types_of(pid),
+        }
+
+    events = []
+    for e in EVENTS["events"]:
+        events.append({
+            "id": e["id"],
+            "name": e["name"],
+            "type": e["type"],
+            "label": EVENT_LABELS.get(e["type"], e.get("heading") or e["type"]),
+            "link": e["link"],
+            "start": e["start"],
+            "end": e["end"],
+            "rank": EVENT_RANK.get(e["type"], 99),
+        })
+    by_id = {e["id"]: e for e in events}
+
+    days = {}
+    for key, day in EVENTS["days"].items():
+        ids = sorted(day["events"], key=lambda i: by_id[i]["rank"] if i in by_id else 99)
+        days[key] = {
+            "events": ids,
+            "mega": [boss_chip(p) for p in dict.fromkeys(day["mega"])],
+            "t5": [boss_chip(p) for p in dict.fromkeys(day["t5"])],
+            "shadow": [boss_chip(p) for p in dict.fromkeys(day.get("shadow", []))],
+        }
+
+    raids = []
+    for tier in sorted(EVENTS["raids"], key=lambda t: (TIER_ORDER + [t]).index(t)):
+        raids.append({
+            "tier": tier,
+            "label": TIER_LABELS.get(tier, tier),
+            "bosses": [
+                dict(boss_chip(b["id"]) if b["id"] else
+                     {"id": None, "name": b["name"], "known": False, "types": []},
+                     shiny=b["shiny"])
+                for b in EVENTS["raids"][tier]
+            ],
+        })
+
+    return {"fetched": EVENTS["fetched"], "events": events, "days": days, "raids": raids}
 
 
 def main():
@@ -398,6 +493,7 @@ def main():
         "byType": {v: type_ranking(v) for v in VARIANTS},
         "covered": covered,
         "missing": missing,
+        "events": event_data({b["id"] for b in bosses}),
     }
     os.makedirs(OUT, exist_ok=True)
     with open(os.path.join(OUT, "data.json"), "w") as fh:

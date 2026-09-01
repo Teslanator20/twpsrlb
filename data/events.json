@@ -1,0 +1,1780 @@
+{
+ "fetched": "2026-09-01",
+ "events": [
+  {
+   "id": "season-23-forever-forward",
+   "name": "Forever Forward",
+   "type": "season",
+   "heading": "Season",
+   "link": "https://leekduck.com/events/season-23-forever-forward/",
+   "start": "2026-06-02T10:00:00.000",
+   "end": "2026-09-08T10:00:00.000"
+  },
+  {
+   "id": "lego-pokemon-go-2026",
+   "name": "LEGO Stores and Pokémon GO",
+   "type": "event",
+   "heading": "Event",
+   "link": "https://leekduck.com/events/lego-pokemon-go-2026/",
+   "start": "2026-08-03T10:00:00.000",
+   "end": "2026-09-30T23:59:00.000"
+  },
+  {
+   "id": "go-pass-august-2026",
+   "name": "GO Pass: August",
+   "type": "go-pass",
+   "heading": "GO Pass",
+   "link": "https://leekduck.com/events/go-pass-august-2026/",
+   "start": "2026-08-04T10:00:00.000",
+   "end": "2026-09-08T10:00:00.000"
+  },
+  {
+   "id": "shadow-giratina-altered-in-shadow-raids-august-2026",
+   "name": "Shadow Giratina (Altered Forme) in Shadow Raids",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/shadow-giratina-altered-in-shadow-raids-august-2026/",
+   "start": "2026-08-05T06:00:00.000",
+   "end": "2026-09-08T22:00:00.000"
+  },
+  {
+   "id": "10th-anniversary-celebration",
+   "name": "10th Anniversary Celebration - Perfect Mewtwo Timed Research",
+   "type": "event",
+   "heading": "Event",
+   "link": "https://leekduck.com/events/10th-anniversary-celebration/",
+   "start": "2026-08-12T16:00:00.000",
+   "end": "2026-09-06T23:59:00.000"
+  },
+  {
+   "id": "mega-gyarados-in-mega-raids-august-2026",
+   "name": "Mega Gyarados in Mega Raids",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/mega-gyarados-in-mega-raids-august-2026/",
+   "start": "2026-08-26T06:00:00.000",
+   "end": "2026-09-08T22:00:00.000"
+  },
+  {
+   "id": "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+   "name": "Regirock, Regice, and Registeel in 5-star Raid Battles",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/regirock-regice-registeel-in-5-star-raid-battles-august-2026/",
+   "start": "2026-08-26T06:00:00.000",
+   "end": "2026-09-08T22:00:00.000"
+  },
+  {
+   "id": "mega-ascension",
+   "name": "Mega Ascension",
+   "type": "event",
+   "heading": "Event",
+   "link": "https://leekduck.com/events/mega-ascension/",
+   "start": "2026-08-31T10:00:00.000",
+   "end": "2026-09-04T23:59:00.000"
+  },
+  {
+   "id": "raidhour20260902",
+   "name": "Regirock, Regice, and Registeel Raid Hour",
+   "type": "raid-hour",
+   "heading": "Raid Hour",
+   "link": "https://leekduck.com/events/raidhour20260902/",
+   "start": "2026-09-02T18:00:00.000",
+   "end": "2026-09-02T19:00:00.000"
+  },
+  {
+   "id": "pokemon-go-fest-2026-mega-finale",
+   "name": "Pokémon GO Fest 2026: Mega Finale",
+   "type": "pokemon-go-fest",
+   "heading": "Pokémon GO Fest",
+   "link": "https://leekduck.com/events/pokemon-go-fest-2026-mega-finale/",
+   "start": "2026-09-05T10:00:00.000",
+   "end": "2026-09-06T18:00:00.000"
+  },
+  {
+   "id": "armored-mewtwo-in-5-star-raid-battles-september-2026",
+   "name": "Armored Mewtwo in 5-star Raid Battles",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/armored-mewtwo-in-5-star-raid-battles-september-2026/",
+   "start": "2026-09-05T10:00:00.000",
+   "end": "2026-09-06T18:00:00.000"
+  },
+  {
+   "id": "max-mondays-2026-09-07",
+   "name": "Dynamax Ralts during Max Monday",
+   "type": "max-mondays",
+   "heading": "Max Mondays",
+   "link": "https://leekduck.com/events/max-mondays-2026-09-07/",
+   "start": "2026-09-07T06:00:00.000",
+   "end": "2026-09-07T21:00:00.000"
+  },
+  {
+   "id": "mega-beedrill-in-mega-raids-september-2026",
+   "name": "Mega Beedrill in Mega Raids",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/mega-beedrill-in-mega-raids-september-2026/",
+   "start": "2026-09-08T06:00:00.000",
+   "end": "2026-09-15T22:00:00.000"
+  },
+  {
+   "id": "mega-squads",
+   "name": "Mega Squads",
+   "type": "event",
+   "heading": "Event",
+   "link": "https://leekduck.com/events/mega-squads/",
+   "start": "2026-09-08T10:00:00.000",
+   "end": "2026-09-14T20:00:00.000"
+  },
+  {
+   "id": "go-pass-september-2026",
+   "name": "GO Pass: September",
+   "type": "go-pass",
+   "heading": "GO Pass",
+   "link": "https://leekduck.com/events/go-pass-september-2026/",
+   "start": "2026-09-08T10:00:00.000",
+   "end": "2026-10-06T10:00:00.000"
+  },
+  {
+   "id": "season-24-twilight-trails",
+   "name": "Twilight Trails",
+   "type": "season",
+   "heading": "Season",
+   "link": "https://leekduck.com/events/season-24-twilight-trails/",
+   "start": "2026-09-08T10:00:00.000",
+   "end": "2026-12-01T10:00:00.000"
+  },
+  {
+   "id": "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+   "name": "Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "heading": "GO Battle League",
+   "link": "https://leekduck.com/events/gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1/",
+   "start": "2026-09-08T20:00:00.000Z",
+   "end": "2026-09-15T20:00:00.000Z"
+  },
+  {
+   "id": "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+   "name": "Zacian (Hero of Many Battles) in 5-star Raid Battles",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026/",
+   "start": "2026-09-09T06:00:00.000",
+   "end": "2026-09-15T22:00:00.000"
+  },
+  {
+   "id": "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+   "name": "Shadow Thundurus (Incarnate Forme) in Shadow Raids",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026/",
+   "start": "2026-09-09T06:00:00.000",
+   "end": "2026-10-06T22:00:00.000"
+  },
+  {
+   "id": "raidhour20260909",
+   "name": "Zacian (Hero of Many Battles) Raid Hour",
+   "type": "raid-hour",
+   "heading": "Raid Hour",
+   "link": "https://leekduck.com/events/raidhour20260909/",
+   "start": "2026-09-09T18:00:00.000",
+   "end": "2026-09-09T19:00:00.000"
+  },
+  {
+   "id": "pokemonspotlighthour2026-09-10",
+   "name": "Weedle, Kakuna, and Beedrill Spotlight Hour",
+   "type": "pokemon-spotlight-hour",
+   "heading": "Pokémon Spotlight Hour",
+   "link": "https://leekduck.com/events/pokemonspotlighthour2026-09-10/",
+   "start": "2026-09-10T18:00:00.000",
+   "end": "2026-09-10T19:00:00.000"
+  },
+  {
+   "id": "mega-houndoom-in-mega-raids-september-2026",
+   "name": "Mega Houndoom in Mega Raids",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/mega-houndoom-in-mega-raids-september-2026/",
+   "start": "2026-09-11T06:00:00.000",
+   "end": "2026-09-15T22:00:00.000"
+  },
+  {
+   "id": "september-communitydayclassic2026",
+   "name": "Gible Community Day Classic",
+   "type": "community-day",
+   "heading": "Community Day",
+   "link": "https://leekduck.com/events/september-communitydayclassic2026/",
+   "start": "2026-09-12T14:00:00.000",
+   "end": "2026-09-12T17:00:00.000"
+  },
+  {
+   "id": "pokemonspotlighthour2026-09-13",
+   "name": "Houndour and Houndoom Spotlight Hour",
+   "type": "pokemon-spotlight-hour",
+   "heading": "Pokémon Spotlight Hour",
+   "link": "https://leekduck.com/events/pokemonspotlighthour2026-09-13/",
+   "start": "2026-09-13T18:00:00.000",
+   "end": "2026-09-13T19:00:00.000"
+  },
+  {
+   "id": "max-mondays-2026-09-14",
+   "name": "Dynamax Rhyhorn during Max Monday",
+   "type": "max-mondays",
+   "heading": "Max Mondays",
+   "link": "https://leekduck.com/events/max-mondays-2026-09-14/",
+   "start": "2026-09-14T06:00:00.000",
+   "end": "2026-09-14T21:00:00.000"
+  },
+  {
+   "id": "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+   "name": "Great League, Ultra League: Mega Edition, and Willpower Cup: Great League Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "heading": "GO Battle League",
+   "link": "https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition/",
+   "start": "2026-09-15T20:00:00.000Z",
+   "end": "2026-09-22T20:00:00.000Z"
+  },
+  {
+   "id": "mega-venusaur-in-mega-raids-september-2026",
+   "name": "Mega Venusaur in Mega Raids",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/mega-venusaur-in-mega-raids-september-2026/",
+   "start": "2026-09-16T06:00:00.000",
+   "end": "2026-09-22T22:00:00.000"
+  },
+  {
+   "id": "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+   "name": "Zamazenta (Hero of Many Battles) in 5-star Raid Battles",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026/",
+   "start": "2026-09-16T06:00:00.000",
+   "end": "2026-09-22T22:00:00.000"
+  },
+  {
+   "id": "unannounced-september-event-season-24",
+   "name": "Unannounced Event",
+   "type": "event",
+   "heading": "Event",
+   "link": "https://leekduck.com/events/unannounced-september-event-season-24/",
+   "start": "2026-09-16T10:00:00.000",
+   "end": "2026-09-22T20:00:00.000"
+  },
+  {
+   "id": "raidhour20260916",
+   "name": "Zamazenta (Hero of Many Battles) Raid Hour",
+   "type": "raid-hour",
+   "heading": "Raid Hour",
+   "link": "https://leekduck.com/events/raidhour20260916/",
+   "start": "2026-09-16T18:00:00.000",
+   "end": "2026-09-16T19:00:00.000"
+  },
+  {
+   "id": "pokemonspotlighthour2026-09-17",
+   "name": "Mystery Pokémon Spotlight Hour",
+   "type": "pokemon-spotlight-hour",
+   "heading": "Pokémon Spotlight Hour",
+   "link": "https://leekduck.com/events/pokemonspotlighthour2026-09-17/",
+   "start": "2026-09-17T18:00:00.000",
+   "end": "2026-09-17T19:00:00.000"
+  },
+  {
+   "id": "super-mega-raid-day-september-2026",
+   "name": "Super Mega Raid Day",
+   "type": "raid-day",
+   "heading": "Raid Day",
+   "link": "https://leekduck.com/events/super-mega-raid-day-september-2026/",
+   "start": "2026-09-19T14:00:00.000",
+   "end": "2026-09-19T17:00:00.000"
+  },
+  {
+   "id": "max-mondays-2026-09-21",
+   "name": "Dynamax Articuno, Zapdos, and Moltres during Max Monday",
+   "type": "max-mondays",
+   "heading": "Max Mondays",
+   "link": "https://leekduck.com/events/max-mondays-2026-09-21/",
+   "start": "2026-09-21T06:00:00.000",
+   "end": "2026-09-21T21:00:00.000"
+  },
+  {
+   "id": "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+   "name": "Ultra League, Master League: Mega Edition, and Retro Cup: Great League Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "heading": "GO Battle League",
+   "link": "https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition/",
+   "start": "2026-09-22T20:00:00.000Z",
+   "end": "2026-09-29T20:00:00.000Z"
+  },
+  {
+   "id": "mega-malamar-in-mega-raids-september-2026",
+   "name": "Mega Malamar in Mega Raids",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/mega-malamar-in-mega-raids-september-2026/",
+   "start": "2026-09-23T06:00:00.000",
+   "end": "2026-09-29T22:00:00.000"
+  },
+  {
+   "id": "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+   "name": "Xurkitree, Pheromosa, and Buzzwole in 5-star Raid Battles",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026/",
+   "start": "2026-09-23T06:00:00.000",
+   "end": "2026-09-29T22:00:00.000"
+  },
+  {
+   "id": "raidhour20260923",
+   "name": "Xurkitree, Pheromosa, and Buzzwole Raid Hour",
+   "type": "raid-hour",
+   "heading": "Raid Hour",
+   "link": "https://leekduck.com/events/raidhour20260923/",
+   "start": "2026-09-23T18:00:00.000",
+   "end": "2026-09-23T19:00:00.000"
+  },
+  {
+   "id": "pokemonspotlighthour2026-09-24",
+   "name": "Rattata Spotlight Hour",
+   "type": "pokemon-spotlight-hour",
+   "heading": "Pokémon Spotlight Hour",
+   "link": "https://leekduck.com/events/pokemonspotlighthour2026-09-24/",
+   "start": "2026-09-24T18:00:00.000",
+   "end": "2026-09-24T19:00:00.000"
+  },
+  {
+   "id": "catch-mastery-phantump-2026",
+   "name": "Phantump Catch Mastery",
+   "type": "event",
+   "heading": "Event",
+   "link": "https://leekduck.com/events/catch-mastery-phantump-2026/",
+   "start": "2026-09-26T10:00:00.000",
+   "end": "2026-09-26T20:00:00.000"
+  },
+  {
+   "id": "max-mondays-2026-09-28",
+   "name": "Dynamax Sobble during Max Monday",
+   "type": "max-mondays",
+   "heading": "Max Mondays",
+   "link": "https://leekduck.com/events/max-mondays-2026-09-28/",
+   "start": "2026-09-28T06:00:00.000",
+   "end": "2026-09-28T21:00:00.000"
+  },
+  {
+   "id": "harvest-festival-2026",
+   "name": "Harvest Festival",
+   "type": "event",
+   "heading": "Event",
+   "link": "https://leekduck.com/events/harvest-festival-2026/",
+   "start": "2026-09-29T10:00:00.000",
+   "end": "2026-10-05T20:00:00.000"
+  },
+  {
+   "id": "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+   "name": "Master League and Mega Color Cup: Great League Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "heading": "GO Battle League",
+   "link": "https://leekduck.com/events/gbl-twilight-trails_master-league_mega-color-cup-great-league-edition/",
+   "start": "2026-09-29T20:00:00.000Z",
+   "end": "2026-10-06T20:00:00.000Z"
+  },
+  {
+   "id": "mega-victreebel-in-mega-raids-september-2026",
+   "name": "Mega Victreebel in Mega Raids",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/mega-victreebel-in-mega-raids-september-2026/",
+   "start": "2026-09-30T06:00:00.000",
+   "end": "2026-10-06T22:00:00.000"
+  },
+  {
+   "id": "xerneas-in-5-star-raid-battles-september-2026",
+   "name": "Xerneas in 5-star Raid Battles",
+   "type": "raid-battles",
+   "heading": "Raid Battles",
+   "link": "https://leekduck.com/events/xerneas-in-5-star-raid-battles-september-2026/",
+   "start": "2026-09-30T06:00:00.000",
+   "end": "2026-10-06T22:00:00.000"
+  },
+  {
+   "id": "raidhour20260930",
+   "name": "Xerneas Raid Hour",
+   "type": "raid-hour",
+   "heading": "Raid Hour",
+   "link": "https://leekduck.com/events/raidhour20260930/",
+   "start": "2026-09-30T18:00:00.000",
+   "end": "2026-09-30T19:00:00.000"
+  },
+  {
+   "id": "max-battle-day-october-2026",
+   "name": "Max Battle Day",
+   "type": "max-battles",
+   "heading": "Max Battles",
+   "link": "https://leekduck.com/events/max-battle-day-october-2026/",
+   "start": "2026-10-03T14:00:00.000",
+   "end": "2026-10-03T17:00:00.000"
+  },
+  {
+   "id": "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+   "name": "Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "heading": "GO Battle League",
+   "link": "https://leekduck.com/events/gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2/",
+   "start": "2026-10-06T20:00:00.000Z",
+   "end": "2026-10-13T20:00:00.000Z"
+  },
+  {
+   "id": "october-communityday2026",
+   "name": "October Community Day",
+   "type": "community-day",
+   "heading": "Community Day",
+   "link": "https://leekduck.com/events/october-communityday2026/",
+   "start": "2026-10-10T14:00:00.000",
+   "end": "2026-10-10T17:00:00.000"
+  },
+  {
+   "id": "gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup",
+   "name": "Great League, Ultra League: Mega Edition, and Little Cup | Twilight Trails",
+   "type": "go-battle-league",
+   "heading": "GO Battle League",
+   "link": "https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup/",
+   "start": "2026-10-13T20:00:00.000Z",
+   "end": "2026-10-20T20:00:00.000Z"
+  },
+  {
+   "id": "hatch-day-october-2026",
+   "name": "Hatch Day",
+   "type": "event",
+   "heading": "Event",
+   "link": "https://leekduck.com/events/hatch-day-october-2026/",
+   "start": "2026-10-17T11:00:00.000",
+   "end": "2026-10-17T17:00:00.000"
+  },
+  {
+   "id": "gbl-twilight-trails_ultra-league_master-league-mega-edition_fantasy-cup-great-league-edition",
+   "name": "Ultra League, Master League: Mega Edition, and Fantasy Cup: Great League Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "heading": "GO Battle League",
+   "link": "https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_fantasy-cup-great-league-edition/",
+   "start": "2026-10-20T20:00:00.000Z",
+   "end": "2026-10-27T20:00:00.000Z"
+  },
+  {
+   "id": "max-battle-day-october-24-2026",
+   "name": "Max Battle Day",
+   "type": "max-battles",
+   "heading": "Max Battles",
+   "link": "https://leekduck.com/events/max-battle-day-october-24-2026/",
+   "start": "2026-10-24T14:00:00.000",
+   "end": "2026-10-24T17:00:00.000"
+  },
+  {
+   "id": "gbl-twilight-trails_master-league_mega-halloween-cup-great-league-edition",
+   "name": "Master League and Mega Halloween Cup: Great League Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "heading": "GO Battle League",
+   "link": "https://leekduck.com/events/gbl-twilight-trails_master-league_mega-halloween-cup-great-league-edition/",
+   "start": "2026-10-27T21:00:00.000Z",
+   "end": "2026-11-03T21:00:00.000Z"
+  },
+  {
+   "id": "super-mega-raid-day-october-2026",
+   "name": "Super Mega Raid Day",
+   "type": "raid-day",
+   "heading": "Raid Day",
+   "link": "https://leekduck.com/events/super-mega-raid-day-october-2026/",
+   "start": "2026-10-31T14:00:00.000",
+   "end": "2026-10-31T17:00:00.000"
+  },
+  {
+   "id": "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-3",
+   "name": "Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "heading": "GO Battle League",
+   "link": "https://leekduck.com/events/gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-3/",
+   "start": "2026-11-03T21:00:00.000Z",
+   "end": "2026-11-10T21:00:00.000Z"
+  },
+  {
+   "id": "gbl-twilight-trails_great-league_ultra-league-mega-edition_2026-go-laic-cup",
+   "name": "Great League, Ultra League: Mega Edition, and 2026 GO LAIC Cup | Twilight Trails",
+   "type": "go-battle-league",
+   "heading": "GO Battle League",
+   "link": "https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_2026-go-laic-cup/",
+   "start": "2026-11-10T21:00:00.000Z",
+   "end": "2026-11-17T21:00:00.000Z"
+  },
+  {
+   "id": "gbl-twilight-trails_ultra-league_master-league-mega-edition_2026-go-laic-cup",
+   "name": "Ultra League, Master League: Mega Edition, and 2026 GO LAIC Cup | Twilight Trails",
+   "type": "go-battle-league",
+   "heading": "GO Battle League",
+   "link": "https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_2026-go-laic-cup/",
+   "start": "2026-11-18T21:00:00.000Z",
+   "end": "2026-11-25T21:00:00.000Z"
+  },
+  {
+   "id": "november-communityday2026",
+   "name": "November Community Day",
+   "type": "community-day",
+   "heading": "Community Day",
+   "link": "https://leekduck.com/events/november-communityday2026/",
+   "start": "2026-11-21T14:00:00.000",
+   "end": "2026-11-21T17:00:00.000"
+  },
+  {
+   "id": "gbl-twilight-trails_master-league_mega-catch-cup-great-league-edition",
+   "name": "Master League and Mega Catch Cup: Great League Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "heading": "GO Battle League",
+   "link": "https://leekduck.com/events/gbl-twilight-trails_master-league_mega-catch-cup-great-league-edition/",
+   "start": "2026-11-24T21:00:00.000Z",
+   "end": "2026-12-01T21:00:00.000Z"
+  },
+  {
+   "id": "super-mega-raid-day-november-2026",
+   "name": "Super Mega Raid Day",
+   "type": "raid-day",
+   "heading": "Raid Day",
+   "link": "https://leekduck.com/events/super-mega-raid-day-november-2026/",
+   "start": "2026-11-28T14:00:00.000",
+   "end": "2026-11-28T17:00:00.000"
+  }
+ ],
+ "raids": {
+  "1-Star Raids": [
+   {
+    "name": "Dratini",
+    "id": "DRATINI",
+    "shiny": true,
+    "types": [
+     "dragon"
+    ]
+   },
+   {
+    "name": "Honedge",
+    "id": "HONEDGE",
+    "shiny": true,
+    "types": [
+     "steel",
+     "ghost"
+    ]
+   },
+   {
+    "name": "Tyrunt",
+    "id": "TYRUNT",
+    "shiny": true,
+    "types": [
+     "rock",
+     "dragon"
+    ]
+   },
+   {
+    "name": "Amaura",
+    "id": "AMAURA",
+    "shiny": true,
+    "types": [
+     "rock",
+     "ice"
+    ]
+   },
+   {
+    "name": "Shadow Slowpoke",
+    "id": "SLOWPOKE_SHADOW_FORM",
+    "shiny": true,
+    "types": [
+     "water",
+     "psychic"
+    ]
+   },
+   {
+    "name": "Shadow Aipom",
+    "id": "AIPOM_SHADOW_FORM",
+    "shiny": true,
+    "types": [
+     "normal"
+    ]
+   },
+   {
+    "name": "Shadow Croagunk",
+    "id": "CROAGUNK_SHADOW_FORM",
+    "shiny": true,
+    "types": [
+     "poison",
+     "fighting"
+    ]
+   },
+   {
+    "name": "Shadow Grubbin",
+    "id": "GRUBBIN_SHADOW_FORM",
+    "shiny": true,
+    "types": [
+     "bug"
+    ]
+   }
+  ],
+  "3-Star Raids": [
+   {
+    "name": "Hisuian Sneasel",
+    "id": "SNEASEL_HISUIAN_FORM",
+    "shiny": true,
+    "types": [
+     "fighting",
+     "poison"
+    ]
+   },
+   {
+    "name": "Hisuian Lilligant",
+    "id": "LILLIGANT_HISUIAN_FORM",
+    "shiny": true,
+    "types": [
+     "grass",
+     "fighting"
+    ]
+   },
+   {
+    "name": "Passimian",
+    "id": "PASSIMIAN",
+    "shiny": true,
+    "types": [
+     "fighting"
+    ]
+   },
+   {
+    "name": "Shadow Snorlax",
+    "id": "SNORLAX_SHADOW_FORM",
+    "shiny": true,
+    "types": [
+     "normal"
+    ]
+   },
+   {
+    "name": "Shadow Hitmontop",
+    "id": "HITMONTOP_SHADOW_FORM",
+    "shiny": true,
+    "types": [
+     "fighting"
+    ]
+   },
+   {
+    "name": "Shadow Lampent",
+    "id": "LAMPENT_SHADOW_FORM",
+    "shiny": true,
+    "types": [
+     "ghost",
+     "fire"
+    ]
+   }
+  ],
+  "Mega Raids": [
+   {
+    "name": "Mega Falinks",
+    "id": "FALINKS_MEGA",
+    "shiny": true,
+    "types": [
+     "fighting"
+    ]
+   },
+   {
+    "name": "Mega Latias",
+    "id": "LATIAS_MEGA",
+    "shiny": true,
+    "types": [
+     "dragon",
+     "psychic"
+    ]
+   },
+   {
+    "name": "Mega Latios",
+    "id": "LATIOS_MEGA",
+    "shiny": true,
+    "types": [
+     "dragon",
+     "psychic"
+    ]
+   }
+  ],
+  "5-Star Raids": [
+   {
+    "name": "Shadow Giratina (Altered)",
+    "id": "GIRATINA_SHADOW_FORM",
+    "shiny": true,
+    "types": [
+     "ghost",
+     "dragon"
+    ]
+   }
+  ]
+ },
+ "days": {
+  "2026-08-25": {
+   "events": [
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [],
+   "t5": [],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-08-26": {
+   "events": [
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA"
+   ],
+   "t5": [
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-08-27": {
+   "events": [
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA"
+   ],
+   "t5": [
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-08-28": {
+   "events": [
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA"
+   ],
+   "t5": [
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-08-29": {
+   "events": [
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA"
+   ],
+   "t5": [
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-08-30": {
+   "events": [
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA"
+   ],
+   "t5": [
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-08-31": {
+   "events": [
+    "mega-ascension",
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA",
+    "VICTREEBEL_MEGA",
+    "DRAGONITE_MEGA",
+    "MALAMAR_MEGA",
+    "LATIAS_MEGA",
+    "LATIOS_MEGA"
+   ],
+   "t5": [
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-09-01": {
+   "events": [
+    "mega-ascension",
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA",
+    "FALINKS_MEGA",
+    "LATIAS_MEGA",
+    "LATIOS_MEGA"
+   ],
+   "t5": [
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-09-02": {
+   "events": [
+    "raidhour20260902",
+    "mega-ascension",
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA",
+    "SKARMORY_MEGA",
+    "LATIAS_MEGA",
+    "LATIOS_MEGA"
+   ],
+   "t5": [
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-09-03": {
+   "events": [
+    "mega-ascension",
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA",
+    "STARMIE_MEGA",
+    "LATIAS_MEGA",
+    "LATIOS_MEGA"
+   ],
+   "t5": [
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-09-04": {
+   "events": [
+    "mega-ascension",
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA",
+    "RAICHU_MEGA_X",
+    "RAICHU_MEGA_Y",
+    "LATIAS_MEGA",
+    "LATIOS_MEGA"
+   ],
+   "t5": [
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-09-05": {
+   "events": [
+    "pokemon-go-fest-2026-mega-finale",
+    "armored-mewtwo-in-5-star-raid-battles-september-2026",
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA",
+    "MEWTWO_MEGA_X"
+   ],
+   "t5": [
+    "MEWTWO_A_FORM",
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-09-06": {
+   "events": [
+    "pokemon-go-fest-2026-mega-finale",
+    "armored-mewtwo-in-5-star-raid-battles-september-2026",
+    "10th-anniversary-celebration",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA",
+    "MEWTWO_MEGA_Y"
+   ],
+   "t5": [
+    "MEWTWO_A_FORM",
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-09-07": {
+   "events": [
+    "max-mondays-2026-09-07",
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "lego-pokemon-go-2026"
+   ],
+   "mega": [
+    "GYARADOS_MEGA"
+   ],
+   "t5": [
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-09-08": {
+   "events": [
+    "season-23-forever-forward",
+    "go-pass-august-2026",
+    "shadow-giratina-altered-in-shadow-raids-august-2026",
+    "mega-gyarados-in-mega-raids-august-2026",
+    "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+    "mega-squads",
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+    "mega-beedrill-in-mega-raids-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "GYARADOS_MEGA",
+    "BEEDRILL_MEGA"
+   ],
+   "t5": [
+    "REGIROCK",
+    "REGICE",
+    "REGISTEEL"
+   ],
+   "shadow": [
+    "GIRATINA_SHADOW_FORM"
+   ]
+  },
+  "2026-09-09": {
+   "events": [
+    "raidhour20260909",
+    "mega-squads",
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+    "mega-beedrill-in-mega-raids-september-2026",
+    "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "BEEDRILL_MEGA"
+   ],
+   "t5": [
+    "ZACIAN"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-10": {
+   "events": [
+    "pokemonspotlighthour2026-09-10",
+    "mega-squads",
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+    "mega-beedrill-in-mega-raids-september-2026",
+    "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "BEEDRILL_MEGA"
+   ],
+   "t5": [
+    "ZACIAN"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-11": {
+   "events": [
+    "mega-squads",
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+    "mega-beedrill-in-mega-raids-september-2026",
+    "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "mega-houndoom-in-mega-raids-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "BEEDRILL_MEGA",
+    "HOUNDOOM_MEGA"
+   ],
+   "t5": [
+    "ZACIAN"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-12": {
+   "events": [
+    "september-communitydayclassic2026",
+    "mega-squads",
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+    "mega-beedrill-in-mega-raids-september-2026",
+    "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "mega-houndoom-in-mega-raids-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "BEEDRILL_MEGA",
+    "HOUNDOOM_MEGA"
+   ],
+   "t5": [
+    "ZACIAN"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-13": {
+   "events": [
+    "pokemonspotlighthour2026-09-13",
+    "mega-squads",
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+    "mega-beedrill-in-mega-raids-september-2026",
+    "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "mega-houndoom-in-mega-raids-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "BEEDRILL_MEGA",
+    "HOUNDOOM_MEGA"
+   ],
+   "t5": [
+    "ZACIAN"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-14": {
+   "events": [
+    "mega-squads",
+    "max-mondays-2026-09-14",
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+    "mega-beedrill-in-mega-raids-september-2026",
+    "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "mega-houndoom-in-mega-raids-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "BEEDRILL_MEGA",
+    "HOUNDOOM_MEGA"
+   ],
+   "t5": [
+    "ZACIAN"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-15": {
+   "events": [
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+    "mega-beedrill-in-mega-raids-september-2026",
+    "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "mega-houndoom-in-mega-raids-september-2026",
+    "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "BEEDRILL_MEGA",
+    "HOUNDOOM_MEGA"
+   ],
+   "t5": [
+    "ZACIAN"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-16": {
+   "events": [
+    "raidhour20260916",
+    "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+    "unannounced-september-event-season-24",
+    "mega-venusaur-in-mega-raids-september-2026",
+    "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VENUSAUR_MEGA"
+   ],
+   "t5": [
+    "ZAMAZENTA"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-17": {
+   "events": [
+    "pokemonspotlighthour2026-09-17",
+    "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+    "unannounced-september-event-season-24",
+    "mega-venusaur-in-mega-raids-september-2026",
+    "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VENUSAUR_MEGA"
+   ],
+   "t5": [
+    "ZAMAZENTA"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-18": {
+   "events": [
+    "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+    "unannounced-september-event-season-24",
+    "mega-venusaur-in-mega-raids-september-2026",
+    "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VENUSAUR_MEGA"
+   ],
+   "t5": [
+    "ZAMAZENTA"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-19": {
+   "events": [
+    "super-mega-raid-day-september-2026",
+    "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+    "unannounced-september-event-season-24",
+    "mega-venusaur-in-mega-raids-september-2026",
+    "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VENUSAUR_MEGA"
+   ],
+   "t5": [
+    "ZAMAZENTA"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-20": {
+   "events": [
+    "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+    "unannounced-september-event-season-24",
+    "mega-venusaur-in-mega-raids-september-2026",
+    "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VENUSAUR_MEGA"
+   ],
+   "t5": [
+    "ZAMAZENTA"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-21": {
+   "events": [
+    "max-mondays-2026-09-21",
+    "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+    "unannounced-september-event-season-24",
+    "mega-venusaur-in-mega-raids-september-2026",
+    "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VENUSAUR_MEGA"
+   ],
+   "t5": [
+    "ZAMAZENTA"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-22": {
+   "events": [
+    "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+    "unannounced-september-event-season-24",
+    "mega-venusaur-in-mega-raids-september-2026",
+    "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+    "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VENUSAUR_MEGA"
+   ],
+   "t5": [
+    "ZAMAZENTA"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-23": {
+   "events": [
+    "raidhour20260923",
+    "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+    "mega-malamar-in-mega-raids-september-2026",
+    "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "MALAMAR_MEGA"
+   ],
+   "t5": [
+    "XURKITREE",
+    "PHEROMOSA",
+    "BUZZWOLE"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-24": {
+   "events": [
+    "pokemonspotlighthour2026-09-24",
+    "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+    "mega-malamar-in-mega-raids-september-2026",
+    "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "MALAMAR_MEGA"
+   ],
+   "t5": [
+    "XURKITREE",
+    "PHEROMOSA",
+    "BUZZWOLE"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-25": {
+   "events": [
+    "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+    "mega-malamar-in-mega-raids-september-2026",
+    "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "MALAMAR_MEGA"
+   ],
+   "t5": [
+    "XURKITREE",
+    "PHEROMOSA",
+    "BUZZWOLE"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-26": {
+   "events": [
+    "catch-mastery-phantump-2026",
+    "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+    "mega-malamar-in-mega-raids-september-2026",
+    "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "MALAMAR_MEGA"
+   ],
+   "t5": [
+    "XURKITREE",
+    "PHEROMOSA",
+    "BUZZWOLE"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-27": {
+   "events": [
+    "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+    "mega-malamar-in-mega-raids-september-2026",
+    "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "MALAMAR_MEGA"
+   ],
+   "t5": [
+    "XURKITREE",
+    "PHEROMOSA",
+    "BUZZWOLE"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-28": {
+   "events": [
+    "max-mondays-2026-09-28",
+    "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+    "mega-malamar-in-mega-raids-september-2026",
+    "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "go-pass-september-2026",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "MALAMAR_MEGA"
+   ],
+   "t5": [
+    "XURKITREE",
+    "PHEROMOSA",
+    "BUZZWOLE"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-29": {
+   "events": [
+    "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+    "mega-malamar-in-mega-raids-september-2026",
+    "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+    "lego-pokemon-go-2026",
+    "harvest-festival-2026",
+    "go-pass-september-2026",
+    "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "MALAMAR_MEGA"
+   ],
+   "t5": [
+    "XURKITREE",
+    "PHEROMOSA",
+    "BUZZWOLE"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-09-30": {
+   "events": [
+    "raidhour20260930",
+    "lego-pokemon-go-2026",
+    "harvest-festival-2026",
+    "go-pass-september-2026",
+    "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "mega-victreebel-in-mega-raids-september-2026",
+    "xerneas-in-5-star-raid-battles-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VICTREEBEL_MEGA"
+   ],
+   "t5": [
+    "XERNEAS"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-10-01": {
+   "events": [
+    "harvest-festival-2026",
+    "go-pass-september-2026",
+    "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "mega-victreebel-in-mega-raids-september-2026",
+    "xerneas-in-5-star-raid-battles-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VICTREEBEL_MEGA"
+   ],
+   "t5": [
+    "XERNEAS"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-10-02": {
+   "events": [
+    "harvest-festival-2026",
+    "go-pass-september-2026",
+    "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "mega-victreebel-in-mega-raids-september-2026",
+    "xerneas-in-5-star-raid-battles-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VICTREEBEL_MEGA"
+   ],
+   "t5": [
+    "XERNEAS"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-10-03": {
+   "events": [
+    "max-battle-day-october-2026",
+    "harvest-festival-2026",
+    "go-pass-september-2026",
+    "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "mega-victreebel-in-mega-raids-september-2026",
+    "xerneas-in-5-star-raid-battles-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VICTREEBEL_MEGA"
+   ],
+   "t5": [
+    "XERNEAS"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-10-04": {
+   "events": [
+    "harvest-festival-2026",
+    "go-pass-september-2026",
+    "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "mega-victreebel-in-mega-raids-september-2026",
+    "xerneas-in-5-star-raid-battles-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VICTREEBEL_MEGA"
+   ],
+   "t5": [
+    "XERNEAS"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-10-05": {
+   "events": [
+    "harvest-festival-2026",
+    "go-pass-september-2026",
+    "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "mega-victreebel-in-mega-raids-september-2026",
+    "xerneas-in-5-star-raid-battles-september-2026",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VICTREEBEL_MEGA"
+   ],
+   "t5": [
+    "XERNEAS"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-10-06": {
+   "events": [
+    "go-pass-september-2026",
+    "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+    "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+    "mega-victreebel-in-mega-raids-september-2026",
+    "xerneas-in-5-star-raid-battles-september-2026",
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+    "season-24-twilight-trails"
+   ],
+   "mega": [
+    "VICTREEBEL_MEGA"
+   ],
+   "t5": [
+    "XERNEAS"
+   ],
+   "shadow": [
+    "THUNDURUS_SHADOW_FORM"
+   ]
+  },
+  "2026-10-07": {
+   "events": [
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+    "season-24-twilight-trails"
+   ],
+   "mega": [],
+   "t5": [],
+   "shadow": []
+  },
+  "2026-10-08": {
+   "events": [
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+    "season-24-twilight-trails"
+   ],
+   "mega": [],
+   "t5": [],
+   "shadow": []
+  },
+  "2026-10-09": {
+   "events": [
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+    "season-24-twilight-trails"
+   ],
+   "mega": [],
+   "t5": [],
+   "shadow": []
+  },
+  "2026-10-10": {
+   "events": [
+    "october-communityday2026",
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+    "season-24-twilight-trails"
+   ],
+   "mega": [],
+   "t5": [],
+   "shadow": []
+  },
+  "2026-10-11": {
+   "events": [
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+    "season-24-twilight-trails"
+   ],
+   "mega": [],
+   "t5": [],
+   "shadow": []
+  },
+  "2026-10-12": {
+   "events": [
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+    "season-24-twilight-trails"
+   ],
+   "mega": [],
+   "t5": [],
+   "shadow": []
+  },
+  "2026-10-13": {
+   "events": [
+    "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+    "gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup",
+    "season-24-twilight-trails"
+   ],
+   "mega": [],
+   "t5": [],
+   "shadow": []
+  },
+  "2026-10-14": {
+   "events": [
+    "gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup",
+    "season-24-twilight-trails"
+   ],
+   "mega": [],
+   "t5": [],
+   "shadow": []
+  },
+  "2026-10-15": {
+   "events": [
+    "gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup",
+    "season-24-twilight-trails"
+   ],
+   "mega": [],
+   "t5": [],
+   "shadow": []
+  },
+  "2026-10-16": {
+   "events": [
+    "gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup",
+    "season-24-twilight-trails"
+   ],
+   "mega": [],
+   "t5": [],
+   "shadow": []
+  }
+ }
+}

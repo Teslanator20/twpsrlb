@@ -559,6 +559,194 @@
     white-space: nowrap;
   }
 
+  /* ---------- Event-Kalender ---------- */
+  /* Eigenes Praefix cal-/ev-, damit nichts mit .n, .c, .r der Ranglisten kollidiert. */
+
+  .cal-wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 360px); gap: 18px; align-items: stretch; }
+
+  .cal {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 14px 14px 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cal-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .cal-head b { font-family: var(--display); font-size: 1.05rem; letter-spacing: -.01em; }
+  .cal-head .cal-nav { margin-left: auto; display: flex; gap: 6px; }
+
+  .cal-nav button {
+    font: inherit;
+    font-size: .85rem;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+    background: var(--surface-2);
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+  .cal-nav button:hover:not(:disabled) { border-color: var(--ink-3); color: var(--ink); }
+  .cal-nav button:disabled { opacity: .4; cursor: default; }
+  .cal-nav button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  /* Die Wochentagszeile bleibt schmal, die Wochen fuellen die restliche Hoehe - sonst
+     steht neben dem langen Tagesdetail eine halbe Bildschirmhoehe Leerraum. */
+  .cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-rows: auto;
+    grid-auto-rows: minmax(62px, 1fr);
+    gap: 4px;
+    flex: 1;
+  }
+
+  .cal-dow {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    text-align: center;
+    padding-bottom: 4px;
+  }
+
+  .cal-day {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 5px 5px 6px;
+    border: 1px solid var(--line-soft);
+    border-radius: 7px;
+    background: var(--surface-2);
+    color: var(--ink-2);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+  .cal-day.pad { visibility: hidden; }
+  .cal-day.out { opacity: .38; cursor: default; }
+  .cal-day .cal-num { font-family: var(--mono); font-size: 12px; line-height: 1; }
+  .cal-day:hover:not(.out) { border-color: var(--ink-3); }
+  .cal-day:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+
+  .cal-day.today { border-color: var(--ink); }
+  .cal-day.today .cal-num { font-weight: 700; color: var(--ink); }
+  .cal-day[aria-pressed="true"] { background: var(--surface); border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+
+  /* Ein Punkt je Mega-Raid, ein Balken je Stufe-5-Boss, plus Event-Marker. */
+  .cal-marks { display: flex; flex-wrap: wrap; gap: 2px; margin-top: auto; }
+  .cal-marks i {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--tc, var(--ink-3));
+    font-style: normal;
+  }
+  .cal-marks i.ev { border-radius: 1px; width: 10px; height: 3px; background: var(--ink-3); }
+  .cal-marks i.t5 { border-radius: 1px; width: 6px; height: 6px; }
+
+  .cal-wrap > .ev-card { position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow: auto; }
+
+  .cal-now { margin-top: 18px; }
+  .cal-now .ev-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px 20px; }
+  .cal-now .ev-group { margin-top: 0; }
+  /* Die Vorschau laeuft ueber die volle Breite und bricht in Spalten um, sonst wird
+     aus acht Terminen eine sehr lange, sehr schmale Liste. */
+  .cal-now .ev-soon { margin-top: 18px; border-top: 1px solid var(--line-soft); padding-top: 14px; }
+  .cal-now .ev-soon .ev-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 9px 22px; }
+
+  .ev-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 13px 14px 14px;
+  }
+  .ev-card > h3 {
+    margin: 0 0 2px;
+    font-family: var(--display);
+    font-size: .98rem;
+    letter-spacing: -.005em;
+  }
+  .ev-card > .ev-sub {
+    margin: 0 0 10px;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+
+  .ev-group { margin-top: 11px; }
+  .ev-group:first-of-type { margin-top: 0; }
+  .ev-group > b {
+    display: block;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+
+  .ev-bosses { display: flex; flex-wrap: wrap; gap: 5px; }
+
+  .ev-boss {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 9px 4px 7px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface-2);
+    color: var(--ink);
+    font: inherit;
+    font-size: .84rem;
+    cursor: pointer;
+    text-align: left;
+  }
+  .ev-boss i { width: 8px; height: 8px; border-radius: 50%; background: var(--tc, var(--ink-3)); font-style: normal; flex: none; }
+  .ev-boss:hover { border-color: var(--ink-3); }
+  .ev-boss:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .ev-boss.plain { cursor: default; color: var(--ink-2); }
+  .ev-boss.plain:hover { border-color: var(--line); }
+  .ev-boss small { font-family: var(--mono); font-size: 10px; color: var(--ink-3); }
+
+  .ev-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+  .ev-list li { display: flex; gap: 9px; align-items: baseline; font-size: .87rem; line-height: 1.4; }
+  .ev-list .ev-kind {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    flex: none;
+    width: 84px;
+    padding-top: 2px;
+  }
+  .ev-list a { color: var(--ink); text-decoration-color: var(--line); }
+  .ev-list a:hover { text-decoration-color: var(--ink-3); }
+  .ev-list .ev-when { display: block; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
+  .ev-empty { color: var(--ink-3); font-size: .87rem; }
+
+  @media (max-width: 900px) {
+    .cal-wrap { grid-template-columns: minmax(0, 1fr); }
+    .cal-wrap > .ev-card { position: static; max-height: none; }
+    .cal-grid { grid-auto-rows: minmax(54px, auto); }
+  }
+
+  @media (max-width: 520px) {
+    .cal { padding: 10px 8px 12px; }
+    .cal-grid { gap: 3px; }
+    .cal-grid { grid-auto-rows: minmax(46px, auto); }
+    .cal-day { padding: 4px 3px 5px; }
+    .ev-list .ev-kind { width: 70px; }
+  }
+
   /* ---------- Boss-Liste ---------- */
 
   .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
@@ -758,6 +946,33 @@
     </p>
     <div class="tiles" id="tiles"></div>
   </header>
+
+  <section id="events" data-events-section hidden>
+    <div class="sec-head">
+      <h2>Event-Kalender</h2>
+      <p>
+        Was an welchem Tag im Raid steht. Mehrtägige Events wie <b>Mega Ascension</b> tauchen in den
+        üblichen Kalendern als ein Block auf, obwohl <b>jeden Tag ein anderes Mega</b> dran ist –
+        diese Tagesangaben sind hier nachgetragen. Über einen Tag fahren zeigt ihn rechts an, ein
+        Klick hält ihn fest. Ein Klick auf einen Boss springt zu seinen Kontern.
+      </p>
+    </div>
+    <div class="cal-wrap">
+      <div class="cal">
+        <div class="cal-head">
+          <b id="cal-title"></b>
+          <span class="cal-nav">
+            <button type="button" data-cal-step="-1" aria-label="Vorheriger Monat">‹</button>
+            <button type="button" data-cal-today>Heute</button>
+            <button type="button" data-cal-step="1" aria-label="Nächster Monat">›</button>
+          </span>
+        </div>
+        <div class="cal-grid" id="cal-grid"></div>
+      </div>
+      <div class="ev-card" id="cal-detail"></div>
+    </div>
+    <div class="ev-card cal-now" id="cal-now"></div>
+  </section>
 
   <section>
     <div class="sec-head">
@@ -1250,6 +1465,194 @@
       ).join("");
   }
 
+  /* --- Event-Kalender --- */
+
+  const EV = DATA.events;
+  const MONTHS = ["Januar", "Februar", "März", "April", "Mai", "Juni",
+    "Juli", "August", "September", "Oktober", "November", "Dezember"];
+  const DOW = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+
+  const iso = (d) => d.getFullYear() + "-" +
+    String(d.getMonth() + 1).padStart(2, "0") + "-" +
+    String(d.getDate()).padStart(2, "0");
+  const deDate = (key) => key.split("-").reverse().join(".");
+
+  /* Der Kalender kennt nur die Tage, die events.py aufgespannt hat. Alles ausserhalb
+     bleibt sichtbar, aber stumm - sonst wirkt ein leerer Tag wie ein Datenfehler. */
+  const evDay = (key) => (EV && EV.days[key]) || null;
+
+  const evToday = iso(new Date());
+  const calState = { month: null, picked: null, hover: null };
+
+  function evTime(stamp) {
+    if (!stamp) return "";
+    const t = stamp.slice(11, 16);
+    return t && t !== "00:00" ? t : "";
+  }
+
+  function evWhen(e) {
+    const a = (e.start || "").slice(0, 10), b = (e.end || "").slice(0, 10);
+    const ta = evTime(e.start), tb = evTime(e.end);
+    if (a === b) return deDate(a) + (ta ? ", " + ta + (tb ? "–" + tb : "") + " Uhr" : "");
+    return deDate(a) + (ta ? " " + ta : "") + " – " + deDate(b) + (tb ? " " + tb : "");
+  }
+
+  const evById = EV ? Object.fromEntries(EV.events.map(e => [e.id, e])) : {};
+
+  /* Jahreszeit, GO-Pass und Kampfliga laufen wochenlang durch. Wuerden sie mitzaehlen,
+     traegt jeder einzelne Tag dieselben drei Eintraege und der Kalender sagt nichts mehr. */
+  const EV_BACKGROUND = new Set(["season", "go-battle-league", "go-pass"]);
+  const evOf = (day) => (day ? day.events.map(id => evById[id]).filter(Boolean) : []);
+  const evNotable = (day) => evOf(day).filter(e => !EV_BACKGROUND.has(e.type));
+
+  function bossChip(b) {
+    const color = TYPE_COLORS[(b.types[0] || {}).id] || "#77808c";
+    if (!b.known) {
+      return '<span class="ev-boss plain" style="--tc:' + color + '"><i></i>' + b.name +
+        (b.shiny ? " <small>✦</small>" : "") + "</span>";
+    }
+    return '<button type="button" class="ev-boss" style="--tc:' + color + '" data-ev-boss="' +
+      b.id + '"><i></i>' + b.name + (b.shiny ? ' <small>✦</small>' : "") + "</button>";
+  }
+
+  function renderCalendar() {
+    if (!EV) return;
+    const first = new Date(calState.month + "-01T12:00:00");
+    el("cal-title").textContent = MONTHS[first.getMonth()] + " " + first.getFullYear();
+
+    // Montag als erster Wochentag; getDay() liefert Sonntag als 0.
+    const lead = (first.getDay() + 6) % 7;
+    const days = new Date(first.getFullYear(), first.getMonth() + 1, 0).getDate();
+
+    let html = DOW.map(d => '<span class="cal-dow">' + d + "</span>").join("");
+    for (let i = 0; i < lead; i++) html += '<span class="cal-day pad"></span>';
+
+    for (let n = 1; n <= days; n++) {
+      const key = iso(new Date(first.getFullYear(), first.getMonth(), n));
+      const day = evDay(key);
+      let marks = "";
+      if (day) {
+        const dot = (cls) => (b) => '<i class="' + cls + '" style="--tc:' +
+          (TYPE_COLORS[(b.types[0] || {}).id] || "#77808c") + '"></i>';
+        marks = day.t5.map(dot("t5")).join("") +
+          day.shadow.map(dot("t5")).join("") +
+          day.mega.map(dot("")).join("") +
+          (evNotable(day).length ? '<i class="ev"></i>' : "");
+      }
+      html += '<button type="button" class="cal-day' +
+        (day ? "" : " out") + (key === evToday ? " today" : "") +
+        '" data-cal-day="' + key + '" aria-pressed="' +
+        (key === calState.picked ? "true" : "false") + '">' +
+        '<span class="cal-num">' + n + "</span>" +
+        '<span class="cal-marks">' + marks + "</span></button>";
+    }
+    el("cal-grid").innerHTML = html;
+
+    const span = Object.keys(EV.days);
+    const lo = span[0].slice(0, 7), hi = span[span.length - 1].slice(0, 7);
+    document.querySelector('[data-cal-step="-1"]').disabled = calState.month <= lo;
+    document.querySelector('[data-cal-step="1"]').disabled = calState.month >= hi;
+  }
+
+  const evListHtml = (list) => '<ul class="ev-list">' + list.map(e =>
+    '<li><span class="ev-kind">' + e.label + "</span><span>" +
+    (e.link ? '<a href="' + e.link + '" target="_blank" rel="noopener">' + e.name + "</a>" : e.name) +
+    '<span class="ev-when">' + evWhen(e) + "</span></span></li>").join("") + "</ul>";
+
+  function renderCalDetail() {
+    if (!EV) return;
+    const key = calState.hover || calState.picked;
+    const day = evDay(key);
+    const head = '<h3>' + (key === evToday ? "Heute, " : "") + deDate(key) + "</h3>" +
+      '<p class="ev-sub">' + (calState.hover && calState.hover !== calState.picked
+        ? "Vorschau · Klick hält den Tag fest" : "ausgewählter Tag") + "</p>";
+
+    if (!day) {
+      el("cal-detail").innerHTML = head +
+        '<p class="ev-empty">Für diesen Tag liegen keine Daten vor.</p>';
+      return;
+    }
+
+    let body = "";
+    if (day.t5.length) {
+      body += '<div class="ev-group"><b>Stufe 5</b><div class="ev-bosses">' +
+        day.t5.map(bossChip).join("") + "</div></div>";
+    }
+    if (day.mega.length) {
+      body += '<div class="ev-group"><b>Mega-Raids</b><div class="ev-bosses">' +
+        day.mega.map(bossChip).join("") + "</div></div>";
+    }
+    if (day.shadow.length) {
+      body += '<div class="ev-group"><b>Krypto-Raids</b><div class="ev-bosses">' +
+        day.shadow.map(bossChip).join("") + "</div></div>";
+    }
+    const evs = evNotable(day);
+    if (evs.length) {
+      body += '<div class="ev-group"><b>Events</b>' + evListHtml(evs) + "</div>";
+    }
+    const bg = evOf(day).filter(e => EV_BACKGROUND.has(e.type));
+    if (bg.length) {
+      body += '<div class="ev-group"><b>Läuft nebenher</b><p class="ev-empty">' +
+        bg.map(e => e.name).join(" · ") + "</p></div>";
+    }
+    if (!body) body = '<p class="ev-empty">An diesem Tag ist nichts eingetragen.</p>';
+    el("cal-detail").innerHTML = head + body;
+  }
+
+  function renderCalNow() {
+    if (!EV) return;
+    const groups = EV.raids.map(t =>
+      '<div class="ev-group"><b>' + t.label + "</b>" +
+      '<div class="ev-bosses">' + t.bosses.map(bossChip).join("") + "</div></div>");
+
+    // Was heute schon laeuft, steht im Tagesdetail. Hier interessiert, was kommt.
+    const soon = EV.events
+      .filter(e => !EV_BACKGROUND.has(e.type) && (e.start || "").slice(0, 10) > evToday)
+      .slice(0, 8);
+
+    el("cal-now").innerHTML = "<h3>Gerade in Raids</h3>" +
+      '<p class="ev-sub">Stand ' + deDate(EV.fetched) +
+      " · ✦ heißt schillernd möglich</p>" +
+      '<div class="ev-groups">' + groups.join("") + "</div>" +
+      '<div class="ev-group ev-soon"><b>Demnächst</b>' + (soon.length
+        ? evListHtml(soon) : '<p class="ev-empty">Nichts angekündigt.</p>') + "</div>";
+  }
+
+  /* Ein Boss aus dem Kalender fuehrt in die Boss-Liste weiter unten. */
+  function focusBoss(id) {
+    const boss = DATA.bosses.find(b => b.id === id);
+    if (!boss) return;
+    setFilter(null);           // ein aktiver Ranglisten-Filter wuerde den Boss verstecken
+    state.query = boss.name;
+    state.bossLimit = 30;
+    el("search").value = boss.name;
+    renderBosses();
+    el("bosses").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function setupCalendar() {
+    if (!EV) return;
+    document.querySelector("[data-events-section]").hidden = false;
+    calState.picked = EV.days[evToday] ? evToday : Object.keys(EV.days)[0];
+    calState.month = calState.picked.slice(0, 7);
+    renderCalendar();
+    renderCalDetail();
+    renderCalNow();
+
+    const grid = el("cal-grid");
+    grid.addEventListener("mouseover", (ev) => {
+      const d = ev.target.closest("[data-cal-day]");
+      if (!d || d.dataset.calDay === calState.hover) return;
+      calState.hover = d.dataset.calDay;
+      renderCalDetail();
+    });
+    grid.addEventListener("mouseleave", () => {
+      if (calState.hover === null) return;
+      calState.hover = null;
+      renderCalDetail();
+    });
+  }
+
   /* --- Angreifer je Attacken-Typ --- */
   function renderTypes() {
     el("typegrid").innerHTML = DATA.byType[variant()].map(t => {
@@ -1359,6 +1762,32 @@
       renderBosses();
       return;
     }
+    const calDay = ev.target.closest("[data-cal-day]");
+    if (calDay) {
+      calState.picked = calDay.dataset.calDay;
+      calState.hover = null;
+      renderCalendar();
+      renderCalDetail();
+      return;
+    }
+    const calStep = ev.target.closest("[data-cal-step]");
+    if (calStep) {
+      const [y, m] = calState.month.split("-").map(Number);
+      const d = new Date(y, m - 1 + Number(calStep.dataset.calStep), 1);
+      calState.month = iso(d).slice(0, 7);
+      renderCalendar();
+      return;
+    }
+    if (ev.target.closest("[data-cal-today]")) {
+      calState.month = evToday.slice(0, 7);
+      calState.picked = evToday;
+      calState.hover = null;
+      renderCalendar();
+      renderCalDetail();
+      return;
+    }
+    const evBoss = ev.target.closest("[data-ev-boss]");
+    if (evBoss) { focusBoss(evBoss.dataset.evBoss); return; }
     const tchip = ev.target.closest(".tchip");
     if (tchip) { state.type = tchip.dataset.type; renderTypePicker(); return; }
     if (ev.target.closest("[data-shadow-toggle]")) { setShadows(!state.shadows); return; }
@@ -1407,6 +1836,7 @@
   el("footer").innerHTML = "Simulationsdaten von <a href='https://www.pokebattler.com/'>Pokebattler</a>, abgerufen am " +
     DATA.generated.split("-").reverse().join(".") + ". Pokémon ist eine Marke von Nintendo/Creatures Inc./GAME FREAK inc.";
 
+  setupCalendar();
   renderBoardShells();
   setShadows(false);
   syncBar();
