@@ -66,7 +66,16 @@ def pokemon_name(pid):
 
 
 def move_name(mid):
-    return resolve(MOVES, mid) or mid.replace("_FAST", "").replace("_", " ").title()
+    name = resolve(MOVES, mid)
+    if name:
+        return name
+    # Die Plus-Attacken der Mega-Stufe 4 fehlen in Pokebattlers Lokalisierung. Sie heissen
+    # im Spiel wie die Basis-Attacke mit angehaengtem "+", das laesst sich komponieren.
+    if mid.endswith("_PLUS"):
+        base = move_name(mid[: -len("_PLUS")])
+        if base:
+            return base + "+"
+    return mid.replace("_FAST", "").replace("_", " ").title()
 
 
 def types_of(pid):

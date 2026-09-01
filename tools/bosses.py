@@ -42,6 +42,11 @@ ALIASES = {"TORNADUS", "THUNDURUS", "LANDORUS", "ENAMORUS"}
 # Krypto-Bosse gehoeren in eine eigene Auswertung, hier nicht mitzaehlen.
 EXCLUDE_SUFFIX = ("_SHADOW_FORM",)
 
+# Bosse, die im Spiel sind, aber in keiner Pokebattler-Liste (mehr) stehen. Die Listen
+# rotieren; ohne diese Klammer verschwindet ein Boss aus der Auswertung, sobald Pokebattler
+# ihn aus der FUTURE-Liste nimmt, ohne ihn in die aktuelle zu uebernehmen.
+PINNED = {"LUNALA": "RAID_LEVEL_5"}
+
 
 def fetch(path):
     req = urllib.request.Request(API + path, headers={"User-Agent": "counter-stats/1.0"})
@@ -66,6 +71,9 @@ def main():
                     continue
                 assigned[pid] = tier
 
+    for pid, tier in PINNED.items():
+        assigned.setdefault(pid, tier)
+
     order = {tier: i for i, (tier, _, _) in enumerate(GROUPS)}
     bosses = [
         {"id": pid, "tier": tier}
@@ -83,7 +91,17 @@ def main():
         if m.get("moveId") and m.get("type")
     }
 
+    # Deutsche Namen fuer Pokemon und Attacken. Muss mitwandern, sonst stehen neue
+    # Attacken (etwa die Plus-Attacken der Mega-Stufe 4) englisch in der Oberflaeche.
+    req = urllib.request.Request(
+        "https://static.pokebattler.com/locales/de-DE/constants.json",
+        headers={"User-Agent": "counter-stats/1.0"})
+    with urllib.request.urlopen(req, timeout=90) as resp:
+        de_constants = json.load(resp)
+
     os.makedirs(DATA, exist_ok=True)
+    with open(os.path.join(DATA, "de_constants.json"), "w") as fh:
+        json.dump(de_constants, fh, ensure_ascii=False)
     with open(os.path.join(DATA, "bosses.json"), "w") as fh:
         json.dump(bosses, fh, indent=1)
     with open(os.path.join(DATA, "pokemon.json"), "w") as fh:

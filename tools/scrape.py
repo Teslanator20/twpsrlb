@@ -123,24 +123,37 @@ def top_counters(payload, n=TOP_N):
 
 
 def warmup(bosses, results):
-    """Stoesst jede noch fehlende Berechnung an, ohne auf das Ergebnis zu warten."""
-    n = 0
-    for entry in bosses:
-        boss, tier = entry["id"], entry["tier"]
-        for name, cfg in CONFIGS.items():
-            if results.get(boss, {}).get(name):
-                continue
-            n += 1
+    """Stoesst jede noch fehlende Berechnung an, ohne auf das Ergebnis zu warten.
+
+    Ein 429 stoesst nichts an - die Abfrage erreicht die Simulation gar nicht. Deshalb
+    wird gewartet und derselbe Boss erneut versucht, sonst laeuft ein ganzer Vorwaerm-
+    Durchlauf ins Leere, waehrend Pokebattler unter Last steht.
+    """
+    todo = [(e["id"], e["tier"], name, cfg)
+            for e in bosses for name, cfg in CONFIGS.items()
+            if not results.get(e["id"], {}).get(name)]
+    n = limited = 0
+    for boss, tier, name, cfg in todo:
+        while True:
             try:
                 req = urllib.request.Request(
                     build_url(boss, tier, cfg), headers={"User-Agent": "counter-stats/1.0"})
                 urllib.request.urlopen(req, timeout=3).read(1)
+            except urllib.error.HTTPError as exc:
+                if exc.code == 429:
+                    limited += 1
+                    print("429 nach %d - warte 60 s" % n)
+                    sys.stdout.flush()
+                    time.sleep(60)
+                    continue  # denselben Boss erneut, sonst faellt er durch
             except Exception:
-                pass
-            if n % 25 == 0:
-                print("angestossen: %d" % n)
-                sys.stdout.flush()
-    print("Vorwaermen fertig: %d Abfragen angestossen" % n)
+                pass  # Timeout ist der Normalfall und genau das Ziel
+            break
+        n += 1
+        if n % 25 == 0:
+            print("angestossen: %d/%d" % (n, len(todo)))
+            sys.stdout.flush()
+    print("Vorwaermen fertig: %d Abfragen angestossen, %d Drosselungen" % (n, limited))
 
 
 def main():
